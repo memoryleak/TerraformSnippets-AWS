@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_licensemanager_association" "aws_licensemanager_association_${1:suffix}" {
+	${2:license_configuration_arn} = "${3:value}"
+	${4:resource_arn} = "${5:value}"
+}
+]]></content>
+<tabTrigger>aws_licensemanager_association</tabTrigger>
+</snippet>

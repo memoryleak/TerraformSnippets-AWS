@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ssm_activation" "aws_ssm_activation_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:description} = "${5:value}"
+	${6:expiration_date} = "${7:value}"
+	${8:iam_role} = "${9:value}"
+	${10:registration_limit} = "${11:value}"
+}
+]]></content>
+<tabTrigger>aws_ssm_activation</tabTrigger>
+</snippet>

@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_opsworks_static_web_layer" "aws_opsworks_static_web_layer_${1:suffix}" {
+	${2:stack_id} = "${3:value}"
+	${4:auto_assign_elastic_ips} = "${5:value}"
+	${6:auto_assign_public_ips} = "${7:value}"
+	${8:custom_instance_profile_arn} = "${9:value}"
+	${10:custom_security_group_ids} = "${11:value}"
+	${12:install_updates_on_boot} = "${13:value}"
+	${14:instance_shutdown_timeout} = "${15:value}"
+	${16:elastic_load_balancer} = "${17:value}"
+	${18:drain_elb_on_shutdown} = "${19:value}"
+	${20:system_packages} = "${21:value}"
+	${22:ebs_volume} = "${23:value}"
+}
+]]></content>
+<tabTrigger>aws_opsworks_static_web_layer</tabTrigger>
+</snippet>

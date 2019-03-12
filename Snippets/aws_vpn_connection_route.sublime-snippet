@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpn_connection_route" "aws_vpn_connection_route_${1:suffix}" {
+	${2:destination_cidr_block} = "${3:value}"
+	${4:vpn_connection_id} = "${5:value}"
+}
+]]></content>
+<tabTrigger>aws_vpn_connection_route</tabTrigger>
+</snippet>

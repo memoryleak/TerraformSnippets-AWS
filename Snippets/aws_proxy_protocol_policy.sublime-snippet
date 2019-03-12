@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_proxy_protocol_policy" "aws_proxy_protocol_policy_${1:suffix}" {
+	${2:load_balancer} = "${3:value}"
+	${4:instance_ports} = "${5:value}"
+}
+]]></content>
+<tabTrigger>aws_proxy_protocol_policy</tabTrigger>
+</snippet>

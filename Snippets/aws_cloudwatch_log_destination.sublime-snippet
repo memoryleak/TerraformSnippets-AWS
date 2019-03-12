@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_log_destination" "aws_cloudwatch_log_destination_${1:suffix}" {
+	${2:name} = "${3:Required}"
+	${4:role_arn} = "${5:Required}"
+	${6:target_arn} = "${7:Required}"
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_log_destination</tabTrigger>
+</snippet>

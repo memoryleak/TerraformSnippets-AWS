@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ssm_patch_baseline" "aws_ssm_patch_baseline_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:description} = "${5:value}"
+	${6:operating_system} = "${7:value}"
+	${8:approved_patches_compliance_level} = "${9:value}"
+	${10:approved_patches} = "${11:value}"
+	${12:rejected_patches} = "${13:value}"
+	${14:global_filter} = "${15:value}"
+	${16:approval_rule} = "${17:value}"
+}
+]]></content>
+<tabTrigger>aws_ssm_patch_baseline</tabTrigger>
+</snippet>

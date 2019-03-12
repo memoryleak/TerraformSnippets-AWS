@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_transit_gateway_route" "aws_ec2_transit_gateway_route_${1:suffix}" {
+	${2:destination_cidr_block} = "${3:value}"
+	${4:transit_gateway_attachment_id} = "${5:value}"
+	${6:transit_gateway_route_table_id} = "${7:value}"
+}
+]]></content>
+<tabTrigger>aws_ec2_transit_gateway_route</tabTrigger>
+</snippet>

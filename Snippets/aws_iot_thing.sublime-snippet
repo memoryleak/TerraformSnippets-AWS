@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iot_thing" "aws_iot_thing_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:attributes} = "${5:value}"
+	${6:thing_type_name} = "${7:value}"
+}
+]]></content>
+<tabTrigger>aws_iot_thing</tabTrigger>
+</snippet>

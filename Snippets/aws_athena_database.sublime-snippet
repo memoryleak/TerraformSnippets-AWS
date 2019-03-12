@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_athena_database" "aws_athena_database_${1:suffix}" {
+	${2:name} = "${3:Required}"
+	${4:bucket} = "${5:Required}"
+	${6:encryption_configuration} = "${7:Optional}"
+	${8:force_destroy} = "${9:Optional}"
+}
+]]></content>
+<tabTrigger>aws_athena_database</tabTrigger>
+</snippet>

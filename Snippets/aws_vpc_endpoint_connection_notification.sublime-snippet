@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpc_endpoint_connection_notification" "aws_vpc_endpoint_connection_notification_${1:suffix}" {
+	${2:vpc_endpoint_service_id} = "${3:value}"
+	${4:vpc_endpoint_id} = "${5:value}"
+	${6:connection_notification_arn} = "${7:value}"
+	${8:connection_events} = "${9:value}"
+}
+]]></content>
+<tabTrigger>aws_vpc_endpoint_connection_notification</tabTrigger>
+</snippet>

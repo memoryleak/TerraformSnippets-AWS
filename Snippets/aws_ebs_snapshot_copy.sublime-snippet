@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ebs_snapshot_copy" "aws_ebs_snapshot_copy_${1:suffix}" {
+	${2:description} = "${3:value}"
+	${4:encrypted} = "${5:value}"
+	${6:kms_key_id} = "${7:value}"
+	${8:tags} = "${9:value}"
+}
+]]></content>
+<tabTrigger>aws_ebs_snapshot_copy</tabTrigger>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lightsail_instance" "aws_lightsail_instance_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:availability_zone} = "${5:value}"
+	${6:blueprint_id} = "${7:value}"
+	${8:bundle_id} = "${9:value}"
+	${10:key_pair_name} = "${11:value}"
+	${12:user_data} = "${13:value}"
+}
+]]></content>
+<tabTrigger>aws_lightsail_instance</tabTrigger>
+</snippet>

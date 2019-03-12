@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_client_vpn_network_association" "aws_ec2_client_vpn_network_association_${1:suffix}" {
+	${2:client_vpn_endpoint_id} = "${3:value}"
+	${4:subnet_id} = "${5:value}"
+}
+]]></content>
+<tabTrigger>aws_ec2_client_vpn_network_association</tabTrigger>
+</snippet>

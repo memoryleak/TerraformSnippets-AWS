@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_alb_listener" "aws_alb_listener_${1:suffix}" {
+	${2:load_balancer_arn} = "${3:Required}"
+	${4:port} = "${5:Required}"
+	${6:protocol} = "${7:Optional}"
+	${8:ssl_policy} = "${9:Optional}"
+	${10:certificate_arn} = "${11:Optional}"
+	${12:default_action} = "${13:Required}"
+}
+]]></content>
+<tabTrigger>aws_alb_listener</tabTrigger>
+</snippet>

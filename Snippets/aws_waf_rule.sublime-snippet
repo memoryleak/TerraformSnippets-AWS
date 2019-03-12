@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_waf_rule" "aws_waf_rule_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:predicates} = "${5:value}"
+}
+]]></content>
+<tabTrigger>aws_waf_rule</tabTrigger>
+</snippet>

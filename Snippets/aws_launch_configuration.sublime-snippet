@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_launch_configuration" "aws_launch_configuration_${1:suffix}" {
+	${2:name_prefix} = "${3:value}"
+	${4:image_id} = "${5:value}"
+	${6:instance_type} = "${7:value}"
+	${8:iam_instance_profile} = "${9:value}"
+	${10:key_name} = "${11:value}"
+	${12:security_groups} = "${13:value}"
+	${14:associate_public_ip_address} = "${15:value}"
+	${16:enable_monitoring} = "${17:value}"
+	${18:root_block_device} = "${19:value}"
+	${20:ebs_block_device} = "${21:value}"
+	${22:ephemeral_block_device} = "${23:value}"
+	${24:placement_tenancy} = "${25:value}"
+}
+]]></content>
+<tabTrigger>aws_launch_configuration</tabTrigger>
+</snippet>

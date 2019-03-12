@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dms_replication_task" "aws_dms_replication_task_${1:suffix}" {
+	${2:cdc_start_time} = "${3:Optional}"
+	${4:replication_instance_arn} = "${5:Required}"
+	${6:replication_task_id} = "${7:Required}"
+	${8:replication_task_settings} = "${9:Optional}"
+	${10:source_endpoint_arn} = "${11:Required}"
+	${12:table_mappings} = "${13:Required}"
+	${14:tags} = "${15:Optional}"
+	${16:target_endpoint_arn} = "${17:Required}"
+}
+]]></content>
+<tabTrigger>aws_dms_replication_task</tabTrigger>
+</snippet>

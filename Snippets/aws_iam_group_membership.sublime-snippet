@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iam_group_membership" "aws_iam_group_membership_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:users} = "${5:value}"
+}
+]]></content>
+<tabTrigger>aws_iam_group_membership</tabTrigger>
+</snippet>

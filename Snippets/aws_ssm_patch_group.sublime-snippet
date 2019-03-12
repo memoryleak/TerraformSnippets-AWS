@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ssm_patch_group" "aws_ssm_patch_group_${1:suffix}" {
+	${2:baseline_id} = "${3:value}"
+	${4:patch_group} = "${5:value}"
+}
+]]></content>
+<tabTrigger>aws_ssm_patch_group</tabTrigger>
+</snippet>

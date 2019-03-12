@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ses_domain_identity" "aws_ses_domain_identity_${1:suffix}" {
+	${2:domain} = "${3:value}"
+}
+]]></content>
+<tabTrigger>aws_ses_domain_identity</tabTrigger>
+</snippet>

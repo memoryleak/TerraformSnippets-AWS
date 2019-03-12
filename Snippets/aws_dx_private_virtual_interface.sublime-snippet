@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dx_private_virtual_interface" "aws_dx_private_virtual_interface_${1:suffix}" {
+	${2:address_family} = "${3:Required}"
+	${4:bgp_asn} = "${5:Required}"
+	${6:connection_id} = "${7:Required}"
+	${8:name} = "${9:Required}"
+	${10:vlan} = "${11:Required}"
+	${12:amazon_address} = "${13:Optional}"
+	${14:mtu} = "${15:Optional}"
+	${16:bgp_auth_key} = "${17:Optional}"
+	${18:customer_address} = "${19:Optional}"
+	${20:dx_gateway_id} = "${21:Optional}"
+	${22:tags} = "${23:Optional}"
+	${24:vpn_gateway_id} = "${25:Optional}"
+}
+]]></content>
+<tabTrigger>aws_dx_private_virtual_interface</tabTrigger>
+</snippet>

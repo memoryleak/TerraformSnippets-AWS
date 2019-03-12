@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudfront_public_key" "aws_cloudfront_public_key_${1:suffix}" {
+	${2:comment} = "${3:Optional}"
+	${4:name} = "${5:Optional}"
+	${6:name_prefix} = "${7:Optional}"
+}
+]]></content>
+<tabTrigger>aws_cloudfront_public_key</tabTrigger>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iam_policy" "aws_iam_policy_${1:suffix}" {
+	${2:description} = "${3:value}"
+	${4:name} = "${5:value}"
+	${6:name_prefix} = "${7:value}"
+	${8:path} = "${9:value}"
+	${10:policy} = "${11:value}"
+}
+]]></content>
+<tabTrigger>aws_iam_policy</tabTrigger>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_autoscaling_lifecycle_hook" "aws_autoscaling_lifecycle_hook_${1:suffix}" {
+	${2:name} = "${3:Required}"
+	${4:autoscaling_group_name} = "${5:Required}"
+	${6:default_result} = "${7:Optional}"
+	${8:heartbeat_timeout} = "${9:Optional}"
+	${10:notification_metadata} = "${11:Optional}"
+	${12:notification_target_arn} = "${13:Optional}"
+	${14:role_arn} = "${15:Optional}"
+}
+]]></content>
+<tabTrigger>aws_autoscaling_lifecycle_hook</tabTrigger>
+</snippet>

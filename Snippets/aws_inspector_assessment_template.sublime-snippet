@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_inspector_assessment_template" "aws_inspector_assessment_template_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:target_arn} = "${5:value}"
+	${6:duration} = "${7:value}"
+	${8:rules_package_arns} = "${9:value}"
+}
+]]></content>
+<tabTrigger>aws_inspector_assessment_template</tabTrigger>
+</snippet>

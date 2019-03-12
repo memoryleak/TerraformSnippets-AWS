@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_acm_certificate_validation" "aws_acm_certificate_validation_${1:suffix}" {
+	${2:certificate_arn} = "${3:Required}"
+	${4:validation_record_fqdns} = "${5:Optional}"
+}
+]]></content>
+<tabTrigger>aws_acm_certificate_validation</tabTrigger>
+</snippet>

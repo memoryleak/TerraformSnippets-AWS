@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_kinesis_firehose_delivery_stream" "aws_kinesis_firehose_delivery_stream_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:tags} = "${5:value}"
+	${6:kinesis_source_configuration} = "${7:value}"
+	${8:extended_s3_configuration} = "${9:value}"
+	${10:redshift_configuration} = "${11:value}"
+}
+]]></content>
+<tabTrigger>aws_kinesis_firehose_delivery_stream</tabTrigger>
+</snippet>

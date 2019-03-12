@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_opsworks_ganglia_layer" "aws_opsworks_ganglia_layer_${1:suffix}" {
+	${2:stack_id} = "${3:value}"
+	${4:password} = "${5:value}"
+	${6:auto_assign_elastic_ips} = "${7:value}"
+	${8:auto_assign_public_ips} = "${9:value}"
+	${10:custom_instance_profile_arn} = "${11:value}"
+	${12:custom_security_group_ids} = "${13:value}"
+	${14:install_updates_on_boot} = "${15:value}"
+	${16:instance_shutdown_timeout} = "${17:value}"
+	${18:elastic_load_balancer} = "${19:value}"
+	${20:drain_elb_on_shutdown} = "${21:value}"
+	${22:system_packages} = "${23:value}"
+	${24:url} = "${25:value}"
+	${26:username} = "${27:value}"
+	${28:ebs_volume} = "${29:value}"
+	${30:custom_json} = "${31:value}"
+}
+]]></content>
+<tabTrigger>aws_opsworks_ganglia_layer</tabTrigger>
+</snippet>

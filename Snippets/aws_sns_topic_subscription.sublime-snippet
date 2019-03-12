@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sns_topic_subscription" "aws_sns_topic_subscription_${1:suffix}" {
+	${2:topic_arn} = "${3:value}"
+	${4:protocol} = "${5:value}"
+	${6:endpoint} = "${7:value}"
+	${8:endpoint_auto_confirms} = "${9:value}"
+	${10:confirmation_timeout_in_minutes} = "${11:value}"
+	${12:raw_message_delivery} = "${13:value}"
+	${14:filter_policy} = "${15:value}"
+}
+]]></content>
+<tabTrigger>aws_sns_topic_subscription</tabTrigger>
+</snippet>

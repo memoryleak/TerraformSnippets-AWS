@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dx_gateway" "aws_dx_gateway_${1:suffix}" {
+	${2:name} = "${3:Required}"
+	${4:amazon_side_asn} = "${5:Required}"
+}
+]]></content>
+<tabTrigger>aws_dx_gateway</tabTrigger>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_eip_association" "aws_eip_association_${1:suffix}" {
+	${2:network_interface_id} = "${3:value}"
+	${4:private_ip_address} = "${5:value}"
+}
+]]></content>
+<tabTrigger>aws_eip_association</tabTrigger>
+</snippet>

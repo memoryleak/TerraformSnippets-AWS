@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_fleet" "aws_ec2_fleet_${1:suffix}" {
+	${2:launch_template_config} = "${3:value}"
+	${4:target_capacity_specification} = "${5:value}"
+	${6:replace_unhealthy_instances} = "${7:value}"
+	${8:spot_options} = "${9:value}"
+	${10:tags} = "${11:value}"
+	${12:terminate_instances} = "${13:value}"
+	${14:terminate_instances_with_expiration} = "${15:value}"
+	${16:type} = "${17:value}"
+}
+]]></content>
+<tabTrigger>aws_ec2_fleet</tabTrigger>
+</snippet>

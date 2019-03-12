@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_neptune_cluster_parameter_group" "aws_neptune_cluster_parameter_group_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:name_prefix} = "${5:value}"
+	${6:family} = "${7:value}"
+	${8:description} = "${9:value}"
+	${10:parameter} = "${11:value}"
+	${12:tags} = "${13:value}"
+}
+]]></content>
+<tabTrigger>aws_neptune_cluster_parameter_group</tabTrigger>
+</snippet>

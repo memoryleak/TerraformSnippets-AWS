@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iam_user_policy_attachment" "aws_iam_user_policy_attachment_${1:suffix}" {
+	${2:user (Required)} = "${3:value}"
+	${4:policy_arn (Required)} = "${5:value}"
+}
+]]></content>
+<tabTrigger>aws_iam_user_policy_attachment</tabTrigger>
+</snippet>

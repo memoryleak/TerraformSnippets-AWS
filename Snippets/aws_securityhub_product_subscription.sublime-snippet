@@ -1,0 +1,7 @@
+<snippet>
+<content><![CDATA[
+resource "aws_securityhub_product_subscription" "aws_securityhub_product_subscription_${1:suffix}" {
+}
+]]></content>
+<tabTrigger>aws_securityhub_product_subscription</tabTrigger>
+</snippet>

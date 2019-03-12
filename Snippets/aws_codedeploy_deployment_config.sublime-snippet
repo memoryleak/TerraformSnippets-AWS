@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_codedeploy_deployment_config" "aws_codedeploy_deployment_config_${1:suffix}" {
+	${2:deployment_config_name} = "${3:Required}"
+	${4:compute_platform} = "${5:Optional}"
+	${6:minimum_healthy_hosts} = "${7:Optional}"
+	${8:traffic_routing_config} = "${9:Optional}"
+}
+]]></content>
+<tabTrigger>aws_codedeploy_deployment_config</tabTrigger>
+</snippet>

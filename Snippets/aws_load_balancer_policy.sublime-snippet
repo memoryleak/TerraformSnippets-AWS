@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_load_balancer_policy" "aws_load_balancer_policy_${1:suffix}" {
+	${2:load_balancer_name} = "${3:value}"
+	${4:policy_name} = "${5:value}"
+	${6:policy_type_name} = "${7:value}"
+	${8:policy_attribute} = "${9:value}"
+}
+]]></content>
+<tabTrigger>aws_load_balancer_policy</tabTrigger>
+</snippet>

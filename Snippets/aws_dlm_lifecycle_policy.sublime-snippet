@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dlm_lifecycle_policy" "aws_dlm_lifecycle_policy_${1:suffix}" {
+	${2:description} = "${3:Required}"
+	${4:execution_role_arn} = "${5:Required}"
+	${6:policy_details} = "${7:Required}"
+	${8:state} = "${9:Optional}"
+}
+]]></content>
+<tabTrigger>aws_dlm_lifecycle_policy</tabTrigger>
+</snippet>

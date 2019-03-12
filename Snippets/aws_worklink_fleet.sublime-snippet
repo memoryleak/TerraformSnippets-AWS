@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_worklink_fleet" "aws_worklink_fleet_${1:suffix}" {
+	${2:audit_stream_arn} = "${3:value}"
+	${4:device_ca_certificate} = "${5:value}"
+	${6:identity_provider} = "${7:value}"
+	${8:display_name} = "${9:value}"
+	${10:network} = "${11:value}"
+	${12:optimize_for_end_user_location} = "${13:value}"
+}
+]]></content>
+<tabTrigger>aws_worklink_fleet</tabTrigger>
+</snippet>

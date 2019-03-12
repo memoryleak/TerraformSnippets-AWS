@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_codecommit_trigger" "aws_codecommit_trigger_${1:suffix}" {
+	${2:repository_name} = "${3:Required}"
+	${4:name} = "${5:Required}"
+	${6:destination_arn} = "${7:Required}"
+	${8:custom_data} = "${9:Optional}"
+	${10:branches} = "${11:Optional}"
+	${12:events} = "${13:Required}"
+}
+]]></content>
+<tabTrigger>aws_codecommit_trigger</tabTrigger>
+</snippet>

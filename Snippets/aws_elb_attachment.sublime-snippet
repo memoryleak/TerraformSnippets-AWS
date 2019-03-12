@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_elb_attachment" "aws_elb_attachment_${1:suffix}" {
+	${2:elb} = "${3:value}"
+	${4:instance} = "${5:value}"
+}
+]]></content>
+<tabTrigger>aws_elb_attachment</tabTrigger>
+</snippet>

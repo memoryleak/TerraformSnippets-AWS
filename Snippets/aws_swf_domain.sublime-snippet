@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_swf_domain" "aws_swf_domain_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:name_prefix} = "${5:value}"
+	${6:description} = "${7:value}"
+	${8:workflow_execution_retention_period_in_days} = "${9:value}"
+}
+]]></content>
+<tabTrigger>aws_swf_domain</tabTrigger>
+</snippet>

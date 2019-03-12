@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_gamelift_build" "aws_gamelift_build_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:operating_system} = "${5:value}"
+	${6:storage_location} = "${7:value}"
+	${8:version} = "${9:value}"
+}
+]]></content>
+<tabTrigger>aws_gamelift_build</tabTrigger>
+</snippet>

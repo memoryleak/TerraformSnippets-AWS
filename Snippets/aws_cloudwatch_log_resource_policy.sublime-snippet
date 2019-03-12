@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_log_resource_policy" "aws_cloudwatch_log_resource_policy_${1:suffix}" {
+	${2:policy_document} = "${3:Required}"
+	${4:policy_name} = "${5:Required}"
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_log_resource_policy</tabTrigger>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_volume_attachment" "aws_volume_attachment_${1:suffix}" {
+	${2:device_name} = "${3:value}"
+	${4:instance_id} = "${5:value}"
+	${6:volume_id} = "${7:value}"
+	${8:force_detach} = "${9:value}"
+	${10:skip_destroy} = "${11:value}"
+}
+]]></content>
+<tabTrigger>aws_volume_attachment</tabTrigger>
+</snippet>

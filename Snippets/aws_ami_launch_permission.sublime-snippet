@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ami_launch_permission" "aws_ami_launch_permission_${1:suffix}" {
+	${2:account_id} = "${3:Required}"
+}
+]]></content>
+<tabTrigger>aws_ami_launch_permission</tabTrigger>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iam_group" "aws_iam_group_${1:suffix}" {
+	${2:path} = "${3:value}"
+}
+]]></content>
+<tabTrigger>aws_iam_group</tabTrigger>
+</snippet>

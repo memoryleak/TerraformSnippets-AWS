@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_db_security_group" "aws_db_security_group_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:description} = "${5:value}"
+	${6:ingress} = "${7:value}"
+	${8:tags} = "${9:value}"
+}
+]]></content>
+<tabTrigger>aws_db_security_group</tabTrigger>
+</snippet>

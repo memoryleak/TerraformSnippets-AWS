@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+resource "aws_organizations_organization" "aws_organizations_organization_${1:suffix}" {
+	${2:feature_set} = "${3:value}"
+}
+]]></content>
+<tabTrigger>aws_organizations_organization</tabTrigger>
+</snippet>

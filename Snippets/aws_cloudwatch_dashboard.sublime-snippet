@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_dashboard" "aws_cloudwatch_dashboard_${1:suffix}" {
+	${2:dashboard_name} = "${3:Required}"
+	${4:dashboard_body} = "${5:Required}"
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_dashboard</tabTrigger>
+</snippet>

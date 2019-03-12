@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_api_gateway_stage resource" "aws_api_gateway_stage resource_${1:suffix}" {
+	${2:rest_api_id} = "${3:value}"
+	${4:stage_name} = "${5:value}"
+	${6:deployment_id} = "${7:value}"
+	${8:access_log_settings} = "${9:value}"
+	${10:cache_cluster_enabled} = "${11:value}"
+	${12:cache_cluster_size} = "${13:value}"
+	${14:client_certificate_id} = "${15:value}"
+	${16:description} = "${17:value}"
+	${18:documentation_version} = "${19:value}"
+	${20:variables} = "${21:value}"
+	${22:tags} = "${23:value}"
+}
+]]></content>
+<tabTrigger>aws_api_gateway_stage resource</tabTrigger>
+</snippet>

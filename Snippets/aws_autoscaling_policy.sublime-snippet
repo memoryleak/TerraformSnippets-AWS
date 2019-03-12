@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_autoscaling_policy" "aws_autoscaling_policy_${1:suffix}" {
+	${2:name} = "${3:Required}"
+	${4:autoscaling_group_name} = "${5:Required}"
+	${6:adjustment_type} = "${7:Optional}"
+	${8:policy_type} = "${9:Optional}"
+	${10:estimated_instance_warmup} = "${11:Optional}"
+}
+]]></content>
+<tabTrigger>aws_autoscaling_policy</tabTrigger>
+</snippet>

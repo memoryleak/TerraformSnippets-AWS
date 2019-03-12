@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_default_vpc" "aws_default_vpc_${1:suffix}" {
+	${2:enable_dns_support} = "${3:value}"
+	${4:enable_dns_hostnames} = "${5:value}"
+	${6:enable_classiclink} = "${7:value}"
+	${8:tags} = "${9:value}"
+}
+]]></content>
+<tabTrigger>aws_default_vpc</tabTrigger>
+</snippet>

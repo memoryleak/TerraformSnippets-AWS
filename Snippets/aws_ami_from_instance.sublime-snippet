@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ami_from_instance" "aws_ami_from_instance_${1:suffix}" {
+	${2:source_instance_id} = "${3:Required}"
+	${4:snapshot_without_reboot} = "${5:Optional}"
+	${6:tags} = "${7:Optional}"
+}
+]]></content>
+<tabTrigger>aws_ami_from_instance</tabTrigger>
+</snippet>

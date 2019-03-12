@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_storagegateway_gateway" "aws_storagegateway_gateway_${1:suffix}" {
+	${2:gateway_name} = "${3:value}"
+	${4:activation_key} = "${5:value}"
+	${6:gateway_ip_address} = "${7:value}"
+	${8:gateway_type} = "${9:value}"
+	${10:smb_active_directory_settings} = "${11:value}"
+	${12:smb_guest_password} = "${13:value}"
+}
+]]></content>
+<tabTrigger>aws_storagegateway_gateway</tabTrigger>
+</snippet>

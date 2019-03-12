@@ -1,0 +1,25 @@
+<snippet>
+<content><![CDATA[
+resource "aws_opsworks_rails_app_layer" "aws_opsworks_rails_app_layer_${1:suffix}" {
+	${2:stack_id} = "${3:value}"
+	${4:app_server} = "${5:value}"
+	${6:auto_assign_elastic_ips} = "${7:value}"
+	${8:auto_assign_public_ips} = "${9:value}"
+	${10:bundler_version} = "${11:value}"
+	${12:custom_instance_profile_arn} = "${13:value}"
+	${14:custom_security_group_ids} = "${15:value}"
+	${16:install_updates_on_boot} = "${17:value}"
+	${18:instance_shutdown_timeout} = "${19:value}"
+	${20:elastic_load_balancer} = "${21:value}"
+	${22:drain_elb_on_shutdown} = "${23:value}"
+	${24:manage_bundler} = "${25:value}"
+	${26:passenger_version} = "${27:value}"
+	${28:ruby_version} = "${29:value}"
+	${30:rubygems_version} = "${31:value}"
+	${32:system_packages} = "${33:value}"
+	${34:ebs_volume} = "${35:value}"
+	${36:custom_json} = "${37:value}"
+}
+]]></content>
+<tabTrigger>aws_opsworks_rails_app_layer</tabTrigger>
+</snippet>

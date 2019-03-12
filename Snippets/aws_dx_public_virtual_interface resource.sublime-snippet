@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dx_public_virtual_interface resource" "aws_dx_public_virtual_interface resource_${1:suffix}" {
+	${2:address_family} = "${3:value}"
+	${4:bgp_asn} = "${5:value}"
+	${6:connection_id} = "${7:value}"
+	${8:name} = "${9:value}"
+	${10:vlan} = "${11:value}"
+	${12:amazon_address} = "${13:value}"
+	${14:bgp_auth_key} = "${15:value}"
+	${16:customer_address} = "${17:value}"
+	${18:route_filter_prefixes} = "${19:value}"
+	${20:tags} = "${21:value}"
+}
+]]></content>
+<tabTrigger>aws_dx_public_virtual_interface resource</tabTrigger>
+</snippet>

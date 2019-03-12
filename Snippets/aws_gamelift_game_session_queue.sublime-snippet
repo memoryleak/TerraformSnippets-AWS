@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_gamelift_game_session_queue" "aws_gamelift_game_session_queue_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:timeout_in_seconds} = "${5:value}"
+	${6:destinations} = "${7:value}"
+	${8:player_latency_policy} = "${9:value}"
+}
+]]></content>
+<tabTrigger>aws_gamelift_game_session_queue</tabTrigger>
+</snippet>

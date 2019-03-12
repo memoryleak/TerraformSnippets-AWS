@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ses_active_receipt_rule_set" "aws_ses_active_receipt_rule_set_${1:suffix}" {
+	${2:rule_set_name} = "${3:value}"
+}
+]]></content>
+<tabTrigger>aws_ses_active_receipt_rule_set</tabTrigger>
+</snippet>

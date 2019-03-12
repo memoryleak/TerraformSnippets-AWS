@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iot_role_alias" "aws_iot_role_alias_${1:suffix}" {
+	${2:alias} = "${3:value}"
+	${4:role_arn} = "${5:value}"
+	${6:credential_duration} = "${7:value}"
+}
+]]></content>
+<tabTrigger>aws_iot_role_alias</tabTrigger>
+</snippet>

@@ -1,0 +1,27 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_metric_alarm" "aws_cloudwatch_metric_alarm_${1:suffix}" {
+	${2:alarm_name} = "${3:Required}"
+	${4:arn} = "${5:Required}"
+	${6:comparison_operator} = "${7:Required}"
+	${8:evaluation_periods} = "${9:Required}"
+	${10:metric_name} = "${11:Optional}"
+	${12:namespace} = "${13:Optional}"
+	${14:period} = "${15:Optional}"
+	${16:statistic} = "${17:Optional}"
+	${18:threshold} = "${19:Required}"
+	${20:actions_enabled} = "${21:Optional}"
+	${22:alarm_actions} = "${23:Optional}"
+	${24:alarm_description} = "${25:Optional}"
+	${26:datapoints_to_alarm} = "${27:Optional}"
+	${28:dimensions} = "${29:Optional}"
+	${30:insufficient_data_actions} = "${31:Optional}"
+	${32:ok_actions} = "${33:Optional}"
+	${34:unit} = "${35:Optional}"
+	${36:extended_statistic} = "${37:Optional}"
+	${38:treat_missing_data} = "${39:Optional}"
+	${40:evaluate_low_sample_count_percentiles} = "${41:Optional}"
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_metric_alarm</tabTrigger>
+</snippet>

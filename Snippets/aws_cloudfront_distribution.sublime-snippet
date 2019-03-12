@@ -1,0 +1,24 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudfront_distribution" "aws_cloudfront_distribution_${1:suffix}" {
+	${2:aliases (Optional)} = "${3:Required}"
+	${4:comment (Optional)} = "${5:Required}"
+	${6:custom_error_response (Optional)} = "${7:Required}"
+	${8:default_cache_behavior (Required)} = "${9:Required}"
+	${10:default_root_object (Optional)} = "${11:Required}"
+	${12:enabled (Required)} = "${13:Required}"
+	${14:is_ipv6_enabled (Optional)} = "${15:Required}"
+	${16:http_version (Optional)} = "${17:Required}"
+	${18:logging_config (Optional)} = "${19:Required}"
+	${20:ordered_cache_behavior (Optional)} = "${21:Required}"
+	${22:origin (Required)} = "${23:Required}"
+	${24:price_class (Optional)} = "${25:Required}"
+	${26:restrictions (Required)} = "${27:Required}"
+	${28:tags} = "${29:Optional}"
+	${30:viewer_certificate (Required)} = "${31:Required}"
+	${32:web_acl_id (Optional)} = "${33:Required}"
+	${34:retain_on_delete (Optional)} = "${35:Required}"
+}
+]]></content>
+<tabTrigger>aws_cloudfront_distribution</tabTrigger>
+</snippet>

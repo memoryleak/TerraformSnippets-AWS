@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ssm_association" "aws_ssm_association_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:association_name} = "${5:value}"
+	${6:document_version} = "${7:value}"
+	${8:instance_id} = "${9:value}"
+	${10:output_location} = "${11:value}"
+	${12:parameters} = "${13:value}"
+	${14:schedule_expression} = "${15:value}"
+	${16:targets} = "${17:value}"
+}
+]]></content>
+<tabTrigger>aws_ssm_association</tabTrigger>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_transfer_user" "aws_transfer_user_${1:suffix}" {
+	${2:user_name} = "${3:value}"
+	${4:role} = "${5:value}"
+	${6:tags} = "${7:value}"
+}
+]]></content>
+<tabTrigger>aws_transfer_user</tabTrigger>
+</snippet>

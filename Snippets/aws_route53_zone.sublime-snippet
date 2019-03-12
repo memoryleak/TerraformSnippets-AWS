@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_route53_zone" "aws_route53_zone_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:comment} = "${5:value}"
+	${6:delegation_set_id} = "${7:value}"
+	${8:force_destroy} = "${9:value}"
+	${10:tags} = "${11:value}"
+	${12:vpc} = "${13:value}"
+}
+]]></content>
+<tabTrigger>aws_route53_zone</tabTrigger>
+</snippet>

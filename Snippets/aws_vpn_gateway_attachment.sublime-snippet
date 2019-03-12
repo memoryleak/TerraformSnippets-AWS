@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpn_gateway_attachment" "aws_vpn_gateway_attachment_${1:suffix}" {
+	${2:vpc_id} = "${3:value}"
+	${4:vpn_gateway_id} = "${5:value}"
+}
+]]></content>
+<tabTrigger>aws_vpn_gateway_attachment</tabTrigger>
+</snippet>

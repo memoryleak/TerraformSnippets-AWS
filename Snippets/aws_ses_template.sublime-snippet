@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ses_template" "aws_ses_template_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:html} = "${5:value}"
+	${6:subject} = "${7:value}"
+	${8:text} = "${9:value}"
+}
+]]></content>
+<tabTrigger>aws_ses_template</tabTrigger>
+</snippet>

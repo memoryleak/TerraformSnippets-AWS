@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_network_acl" "aws_network_acl_${1:suffix}" {
+	${2:vpc_id} = "${3:value}"
+	${4:subnet_ids} = "${5:value}"
+	${6:ingress} = "${7:value}"
+	${8:egress} = "${9:value}"
+	${10:tags} = "${11:value}"
+}
+]]></content>
+<tabTrigger>aws_network_acl</tabTrigger>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dx_hosted_public_virtual_interface_accepter" "aws_dx_hosted_public_virtual_interface_accepter_${1:suffix}" {
+	${2:virtual_interface_id} = "${3:Required}"
+	${4:tags} = "${5:Optional}"
+}
+]]></content>
+<tabTrigger>aws_dx_hosted_public_virtual_interface_accepter</tabTrigger>
+</snippet>

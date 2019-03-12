@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cur_report_definition" "aws_cur_report_definition_${1:suffix}" {
+	${2:report_name} = "${3:Required}"
+	${4:time_unit} = "${5:Required}"
+	${6:format} = "${7:Required}"
+	${8:compression} = "${9:Required}"
+	${10:additional_schema_elements} = "${11:Required}"
+	${12:s3_bucket} = "${13:Required}"
+	${14:s3_prefix} = "${15:Optional}"
+	${16:s3_region} = "${17:Required}"
+	${18:additional_artifacts} = "${19:Required}"
+}
+]]></content>
+<tabTrigger>aws_cur_report_definition</tabTrigger>
+</snippet>

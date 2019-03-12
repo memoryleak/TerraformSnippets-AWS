@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_customer_gateway" "aws_customer_gateway_${1:suffix}" {
+	${2:bgp_asn} = "${3:value}"
+	${4:type} = "${5:value}"
+	${6:tags} = "${7:value}"
+}
+]]></content>
+<tabTrigger>aws_customer_gateway</tabTrigger>
+</snippet>

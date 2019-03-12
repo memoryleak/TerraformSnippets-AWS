@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_backup_vault" "aws_backup_vault_${1:suffix}" {
+	${2:name} = "${3:Required}"
+	${4:tags} = "${5:Optional}"
+}
+]]></content>
+<tabTrigger>aws_backup_vault</tabTrigger>
+</snippet>

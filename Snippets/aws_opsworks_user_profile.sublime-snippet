@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_opsworks_user_profile" "aws_opsworks_user_profile_${1:suffix}" {
+	${2:user_arn} = "${3:value}"
+	${4:allow_self_management} = "${5:value}"
+	${6:ssh_username} = "${7:value}"
+	${8:ssh_public_key} = "${9:value}"
+}
+]]></content>
+<tabTrigger>aws_opsworks_user_profile</tabTrigger>
+</snippet>

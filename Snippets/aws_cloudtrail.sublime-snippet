@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudtrail" "aws_cloudtrail_${1:suffix}" {
+	${2:name} = "${3:Required}"
+	${4:s3_bucket_name} = "${5:Required}"
+	${6:s3_key_prefix} = "${7:Optional}"
+	${8:cloud_watch_logs_role_arn} = "${9:Optional}"
+	${10:cloud_watch_logs_group_arn} = "${11:Optional}"
+	${12:enable_logging} = "${13:Optional}"
+	${14:include_global_service_events} = "${15:Optional}"
+	${16:is_multi_region_trail} = "${17:Optional}"
+	${18:is_organization_trail} = "${19:Optional}"
+	${20:sns_topic_name} = "${21:Optional}"
+	${22:enable_log_file_validation} = "${23:Optional}"
+	${24:kms_key_id} = "${25:Optional}"
+	${26:event_selector} = "${27:Optional}"
+	${28:tags} = "${29:Optional}"
+}
+]]></content>
+<tabTrigger>aws_cloudtrail</tabTrigger>
+</snippet>

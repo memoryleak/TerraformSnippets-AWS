@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+resource "aws_media_store_container" "aws_media_store_container_${1:suffix}" {
+	${2:name} = "${3:value}"
+}
+]]></content>
+<tabTrigger>aws_media_store_container</tabTrigger>
+</snippet>

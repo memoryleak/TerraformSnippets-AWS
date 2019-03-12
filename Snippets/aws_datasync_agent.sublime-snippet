@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_datasync_agent" "aws_datasync_agent_${1:suffix}" {
+	${2:name} = "${3:Required}"
+	${4:activation_key} = "${5:Optional}"
+	${6:ip_address} = "${7:Optional}"
+}
+]]></content>
+<tabTrigger>aws_datasync_agent</tabTrigger>
+</snippet>

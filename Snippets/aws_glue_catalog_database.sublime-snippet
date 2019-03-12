@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_glue_catalog_database" "aws_glue_catalog_database_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:catalog_id} = "${5:value}"
+	${6:description} = "${7:value}"
+	${8:location_uri} = "${9:value}"
+}
+]]></content>
+<tabTrigger>aws_glue_catalog_database</tabTrigger>
+</snippet>

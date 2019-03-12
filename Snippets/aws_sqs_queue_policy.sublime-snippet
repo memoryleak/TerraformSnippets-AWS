@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sqs_queue_policy" "aws_sqs_queue_policy_${1:suffix}" {
+	${2:queue_url} = "${3:value}"
+	${4:policy} = "${5:value}"
+}
+]]></content>
+<tabTrigger>aws_sqs_queue_policy</tabTrigger>
+</snippet>

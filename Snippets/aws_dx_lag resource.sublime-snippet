@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dx_lag resource" "aws_dx_lag resource_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:connections_bandwidth} = "${5:value}"
+	${6:location} = "${7:value}"
+	${8:force_destroy} = "${9:value}"
+	${10:tags} = "${11:value}"
+}
+]]></content>
+<tabTrigger>aws_dx_lag resource</tabTrigger>
+</snippet>

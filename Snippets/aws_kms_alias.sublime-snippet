@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_kms_alias" "aws_kms_alias_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:name_prefix} = "${5:value}"
+	${6:target_key_id} = "${7:value}"
+}
+]]></content>
+<tabTrigger>aws_kms_alias</tabTrigger>
+</snippet>

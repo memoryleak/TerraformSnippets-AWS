@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_datasync_location_s3" "aws_datasync_location_s3_${1:suffix}" {
+	${2:s3_bucket_arn} = "${3:Required}"
+	${4:s3_config} = "${5:Required}"
+	${6:subdirectory} = "${7:Required}"
+}
+]]></content>
+<tabTrigger>aws_datasync_location_s3</tabTrigger>
+</snippet>

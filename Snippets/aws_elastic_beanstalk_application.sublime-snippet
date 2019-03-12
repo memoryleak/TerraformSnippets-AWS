@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_elastic_beanstalk_application" "aws_elastic_beanstalk_application_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:description} = "${5:value}"
+}
+]]></content>
+<tabTrigger>aws_elastic_beanstalk_application</tabTrigger>
+</snippet>

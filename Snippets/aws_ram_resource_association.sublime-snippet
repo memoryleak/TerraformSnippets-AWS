@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ram_resource_association" "aws_ram_resource_association_${1:suffix}" {
+	${2:resource_arn} = "${3:value}"
+	${4:resource_share_arn} = "${5:value}"
+}
+]]></content>
+<tabTrigger>aws_ram_resource_association</tabTrigger>
+</snippet>

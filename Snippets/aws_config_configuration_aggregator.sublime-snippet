@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_config_configuration_aggregator" "aws_config_configuration_aggregator_${1:suffix}" {
+	${2:name} = "${3:Required}"
+	${4:account_aggregation_source} = "${5:Optional}"
+	${6:organization_aggregation_source} = "${7:Optional}"
+}
+]]></content>
+<tabTrigger>aws_config_configuration_aggregator</tabTrigger>
+</snippet>

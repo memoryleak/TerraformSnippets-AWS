@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ecs_cluster" "aws_ecs_cluster_${1:suffix}" {
+	${2:name} = "${3:value}"
+}
+]]></content>
+<tabTrigger>aws_ecs_cluster</tabTrigger>
+</snippet>

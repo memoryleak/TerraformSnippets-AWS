@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iam_saml_provider" "aws_iam_saml_provider_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:saml_metadata_document} = "${5:value}"
+}
+]]></content>
+<tabTrigger>aws_iam_saml_provider</tabTrigger>
+</snippet>

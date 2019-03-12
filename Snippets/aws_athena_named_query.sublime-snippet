@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_athena_named_query" "aws_athena_named_query_${1:suffix}" {
+	${2:name} = "${3:Required}"
+	${4:database} = "${5:Required}"
+	${6:query} = "${7:Required}"
+	${8:description} = "${9:Optional}"
+}
+]]></content>
+<tabTrigger>aws_athena_named_query</tabTrigger>
+</snippet>

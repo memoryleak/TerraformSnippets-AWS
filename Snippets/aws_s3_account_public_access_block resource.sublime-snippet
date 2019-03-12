@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3_account_public_access_block resource" "aws_s3_account_public_access_block resource_${1:suffix}" {
+	${2:account_id} = "${3:value}"
+	${4:block_public_acls} = "${5:value}"
+	${6:block_public_policy} = "${7:value}"
+	${8:ignore_public_acls} = "${9:value}"
+}
+]]></content>
+<tabTrigger>aws_s3_account_public_access_block resource</tabTrigger>
+</snippet>

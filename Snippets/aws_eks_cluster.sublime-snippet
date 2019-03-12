@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_eks_cluster" "aws_eks_cluster_${1:suffix}" {
+	${2:role_arn} = "${3:value}"
+	${4:vpc_config} = "${5:value}"
+}
+]]></content>
+<tabTrigger>aws_eks_cluster</tabTrigger>
+</snippet>

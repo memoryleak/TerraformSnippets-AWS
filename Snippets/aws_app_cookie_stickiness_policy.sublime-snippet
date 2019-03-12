@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_app_cookie_stickiness_policy" "aws_app_cookie_stickiness_policy_${1:suffix}" {
+	${2:name} = "${3:Required}"
+	${4:load_balancer} = "${5:Required}"
+	${6:lb_port} = "${7:Required}"
+	${8:cookie_name} = "${9:Required}"
+}
+]]></content>
+<tabTrigger>aws_app_cookie_stickiness_policy</tabTrigger>
+</snippet>

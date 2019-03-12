@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpc_dhcp_options_association" "aws_vpc_dhcp_options_association_${1:suffix}" {
+	${2:vpc_id} = "${3:value}"
+	${4:dhcp_options_id} = "${5:value}"
+}
+]]></content>
+<tabTrigger>aws_vpc_dhcp_options_association</tabTrigger>
+</snippet>

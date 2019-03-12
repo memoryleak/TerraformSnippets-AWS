@@ -1,0 +1,25 @@
+<snippet>
+<content><![CDATA[
+resource "aws_opsworks_instance" "aws_opsworks_instance_${1:suffix}" {
+	${2:instance_type} = "${3:value}"
+	${4:stack_id} = "${5:value}"
+	${6:layer_ids} = "${7:value}"
+	${8:state} = "${9:value}"
+	${10:install_updates_on_boot} = "${11:value}"
+	${12:availability_zone} = "${13:value}"
+	${14:hostname} = "${15:value}"
+	${16:architecture} = "${17:value}"
+	${18:ami_id} = "${19:value}"
+	${20:os} = "${21:value}"
+	${22:ssh_key_name} = "${23:value}"
+	${24:agent_version} = "${25:value}"
+	${26:subnet_id} = "${27:value}"
+	${28:tenancy} = "${29:value}"
+	${30:virtualization_type} = "${31:value}"
+	${32:root_block_device} = "${33:value}"
+	${34:ebs_block_device} = "${35:value}"
+	${36:ephemeral_block_device} = "${37:value}"
+}
+]]></content>
+<tabTrigger>aws_opsworks_instance</tabTrigger>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sns_sms_preferences" "aws_sns_sms_preferences_${1:suffix}" {
+	${2:monthly_spend_limit} = "${3:value}"
+	${4:delivery_status_iam_role_arn} = "${5:value}"
+	${6:delivery_status_success_sampling_rate} = "${7:value}"
+	${8:default_sender_id} = "${9:value}"
+	${10:default_sms_type} = "${11:value}"
+	${12:usage_report_s3_bucket} = "${13:value}"
+}
+]]></content>
+<tabTrigger>aws_sns_sms_preferences</tabTrigger>
+</snippet>

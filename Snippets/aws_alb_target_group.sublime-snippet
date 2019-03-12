@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_alb_target_group" "aws_alb_target_group_${1:suffix}" {
+	${2:name} = "${3:Optional}"
+	${4:name_prefix} = "${5:Optional}"
+	${6:port} = "${7:Optional}"
+	${8:protocol} = "${9:Optional}"
+	${10:vpc_id} = "${11:Optional}"
+	${12:lambda_multi_value_headers_enabled} = "${13:Optional}"
+	${14:proxy_protocol_v2} = "${15:Optional}"
+	${16:stickiness} = "${17:Optional}"
+	${18:health_check} = "${19:Optional}"
+	${20:target_type} = "${21:Optional}"
+	${22:tags} = "${23:Optional}"
+}
+]]></content>
+<tabTrigger>aws_alb_target_group</tabTrigger>
+</snippet>

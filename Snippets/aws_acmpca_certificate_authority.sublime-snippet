@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_acmpca_certificate_authority" "aws_acmpca_certificate_authority_${1:suffix}" {
+	${2:certificate_authority_configuration} = "${3:Required}"
+	${4:enabled} = "${5:Optional}"
+	${6:revocation_configuration} = "${7:Optional}"
+	${8:type} = "${9:Optional}"
+}
+]]></content>
+<tabTrigger>aws_acmpca_certificate_authority</tabTrigger>
+</snippet>

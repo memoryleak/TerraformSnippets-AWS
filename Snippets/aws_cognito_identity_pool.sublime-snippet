@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cognito_identity_pool" "aws_cognito_identity_pool_${1:suffix}" {
+	${2:identity_pool_name (Required)} = "${3:Required}"
+	${4:allow_unauthenticated_identities (Required)} = "${5:Required}"
+	${6:developer_provider_name (Optional)} = "${7:Required}"
+	${8:cognito_identity_providers (Optional)} = "${9:Required}"
+	${10:openid_connect_provider_arns (Optional)} = "${11:Required}"
+	${12:saml_provider_arns (Optional)} = "${13:Required}"
+}
+]]></content>
+<tabTrigger>aws_cognito_identity_pool</tabTrigger>
+</snippet>

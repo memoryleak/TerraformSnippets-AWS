@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sagemaker_model" "aws_sagemaker_model_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:primary_container} = "${5:value}"
+	${6:execution_role_arn} = "${7:value}"
+	${8:container (Optional)} = "${9:value}"
+	${10:enable_network_isolation (Optional)} = "${11:value}"
+	${12:vpc_config (Optional)} = "${13:value}"
+	${14:tags} = "${15:value}"
+}
+]]></content>
+<tabTrigger>aws_sagemaker_model</tabTrigger>
+</snippet>

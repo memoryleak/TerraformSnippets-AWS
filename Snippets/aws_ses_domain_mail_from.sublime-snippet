@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ses_domain_mail_from" "aws_ses_domain_mail_from_${1:suffix}" {
+	${2:domain} = "${3:value}"
+	${4:mail_from_domain} = "${5:value}"
+}
+]]></content>
+<tabTrigger>aws_ses_domain_mail_from</tabTrigger>
+</snippet>

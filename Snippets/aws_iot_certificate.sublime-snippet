@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iot_certificate" "aws_iot_certificate_${1:suffix}" {
+	${2:active} = "${3:value}"
+	${4:csr} = "${5:value}"
+}
+]]></content>
+<tabTrigger>aws_iot_certificate</tabTrigger>
+</snippet>

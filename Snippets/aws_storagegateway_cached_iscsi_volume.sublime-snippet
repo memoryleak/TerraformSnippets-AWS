@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_storagegateway_cached_iscsi_volume" "aws_storagegateway_cached_iscsi_volume_${1:suffix}" {
+	${2:gateway_arn} = "${3:value}"
+	${4:network_interface_id} = "${5:value}"
+	${6:target_name} = "${7:value}"
+	${8:volume_size_in_bytes} = "${9:value}"
+	${10:source_volume_arn} = "${11:value}"
+}
+]]></content>
+<tabTrigger>aws_storagegateway_cached_iscsi_volume</tabTrigger>
+</snippet>

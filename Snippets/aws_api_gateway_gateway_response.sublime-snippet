@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_api_gateway_gateway_response" "aws_api_gateway_gateway_response_${1:suffix}" {
+	${2:rest_api_id} = "${3:Required}"
+	${4:response_type} = "${5:Required}"
+	${6:status_code} = "${7:Optional}"
+	${8:response_parameters} = "${9:Optional}"
+	${10:response_templates} = "${11:Optional}"
+}
+]]></content>
+<tabTrigger>aws_api_gateway_gateway_response</tabTrigger>
+</snippet>

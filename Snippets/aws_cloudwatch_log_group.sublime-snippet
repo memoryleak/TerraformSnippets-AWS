@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_log_group" "aws_cloudwatch_log_group_${1:suffix}" {
+	${2:name} = "${3:Optional}"
+	${4:name_prefix} = "${5:Optional}"
+	${6:retention_in_days} = "${7:Optional}"
+	${8:kms_key_id} = "${9:Optional}"
+	${10:tags} = "${11:Optional}"
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_log_group</tabTrigger>
+</snippet>

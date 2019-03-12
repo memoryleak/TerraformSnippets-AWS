@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lb" "aws_lb_${1:suffix}" {
+	${2:name_prefix} = "${3:value}"
+	${4:internal} = "${5:value}"
+	${6:load_balancer_type} = "${7:value}"
+	${8:security_groups} = "${9:value}"
+	${10:access_logs} = "${11:value}"
+	${12:subnets} = "${13:value}"
+	${14:subnet_mapping} = "${15:value}"
+	${16:idle_timeout} = "${17:value}"
+	${18:enable_deletion_protection} = "${19:value}"
+	${20:enable_http2} = "${21:value}"
+	${22:ip_address_type} = "${23:value}"
+	${24:tags} = "${25:value}"
+}
+]]></content>
+<tabTrigger>aws_lb</tabTrigger>
+</snippet>

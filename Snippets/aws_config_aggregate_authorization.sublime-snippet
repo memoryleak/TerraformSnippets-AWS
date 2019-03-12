@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_config_aggregate_authorization" "aws_config_aggregate_authorization_${1:suffix}" {
+	${2:account_id} = "${3:Required}"
+	${4:region} = "${5:Required}"
+}
+]]></content>
+<tabTrigger>aws_config_aggregate_authorization</tabTrigger>
+</snippet>

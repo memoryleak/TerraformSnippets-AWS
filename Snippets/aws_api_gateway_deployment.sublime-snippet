@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_api_gateway_deployment" "aws_api_gateway_deployment_${1:suffix}" {
+	${2:rest_api_id} = "${3:Required}"
+	${4:stage_name} = "${5:Required}"
+	${6:description} = "${7:Optional}"
+	${8:stage_description} = "${9:Optional}"
+	${10:variables} = "${11:Optional}"
+}
+]]></content>
+<tabTrigger>aws_api_gateway_deployment</tabTrigger>
+</snippet>

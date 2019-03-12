@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ram_resource_share" "aws_ram_resource_share_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:allow_external_principals} = "${5:value}"
+	${6:tags} = "${7:value}"
+}
+]]></content>
+<tabTrigger>aws_ram_resource_share</tabTrigger>
+</snippet>

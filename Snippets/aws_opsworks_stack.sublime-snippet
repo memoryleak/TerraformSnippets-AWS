@@ -1,0 +1,29 @@
+<snippet>
+<content><![CDATA[
+resource "aws_opsworks_stack" "aws_opsworks_stack_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:region} = "${5:value}"
+	${6:service_role_arn} = "${7:value}"
+	${8:default_instance_profile_arn} = "${9:value}"
+	${10:agent_version} = "${11:value}"
+	${12:berkshelf_version} = "${13:value}"
+	${14:color} = "${15:value}"
+	${16:default_availability_zone} = "${17:value}"
+	${18:configuration_manager_name} = "${19:value}"
+	${20:configuration_manager_version} = "${21:value}"
+	${22:custom_json} = "${23:value}"
+	${24:default_os} = "${25:value}"
+	${26:default_root_device_type} = "${27:value}"
+	${28:default_ssh_key_name} = "${29:value}"
+	${30:default_subnet_id} = "${31:value}"
+	${32:hostname_theme} = "${33:value}"
+	${34:manage_berkshelf} = "${35:value}"
+	${36:tags} = "${37:value}"
+	${38:use_custom_cookbooks} = "${39:value}"
+	${40:use_opsworks_security_groups} = "${41:value}"
+	${42:vpc_id} = "${43:value}"
+	${44:custom_json} = "${45:value}"
+}
+]]></content>
+<tabTrigger>aws_opsworks_stack</tabTrigger>
+</snippet>

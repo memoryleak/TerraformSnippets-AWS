@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_main_route_table_association" "aws_main_route_table_association_${1:suffix}" {
+	${2:vpc_id} = "${3:value}"
+	${4:route_table_id} = "${5:value}"
+}
+]]></content>
+<tabTrigger>aws_main_route_table_association</tabTrigger>
+</snippet>

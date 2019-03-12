@@ -1,0 +1,24 @@
+<snippet>
+<content><![CDATA[
+resource "aws_autoscaling_group" "aws_autoscaling_group_${1:suffix}" {
+	${2:name} = "${3:Optional}"
+	${4:name_prefix} = "${5:Optional}"
+	${6:max_size} = "${7:Required}"
+	${8:min_size} = "${9:Required}"
+	${10:default_cooldown} = "${11:Optional}"
+	${12:launch_configuration} = "${13:Optional}"
+	${14:launch_template} = "${15:Optional}"
+	${16:health_check_grace_period} = "${17:Optional}"
+	${18:health_check_type} = "${19:Optional}"
+	${20:desired_capacity} = "${21:Optional}"
+	${22:force_delete} = "${23:Optional}"
+	${24:suspended_processes} = "${25:Optional}"
+	${26:metrics_granularity} = "${27:Optional}"
+	${28:enabled_metrics} = "${29:Optional}"
+	${30:min_elb_capacity} = "${31:Optional}"
+	${32:wait_for_elb_capacity} = "${33:Optional}"
+	${34:service_linked_role_arn (Optional) The ARN of the service} = "${35:Required}"
+}
+]]></content>
+<tabTrigger>aws_autoscaling_group</tabTrigger>
+</snippet>

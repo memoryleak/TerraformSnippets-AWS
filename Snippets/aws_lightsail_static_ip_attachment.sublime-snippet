@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lightsail_static_ip_attachment" "aws_lightsail_static_ip_attachment_${1:suffix}" {
+	${2:static_ip_name} = "${3:value}"
+	${4:instance_name} = "${5:value}"
+}
+]]></content>
+<tabTrigger>aws_lightsail_static_ip_attachment</tabTrigger>
+</snippet>

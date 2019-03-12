@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_internet_gateway" "aws_internet_gateway_${1:suffix}" {
+	${2:vpc_id} = "${3:value}"
+	${4:tags} = "${5:value}"
+}
+]]></content>
+<tabTrigger>aws_internet_gateway</tabTrigger>
+</snippet>

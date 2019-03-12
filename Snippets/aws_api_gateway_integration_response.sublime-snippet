@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_api_gateway_integration_response" "aws_api_gateway_integration_response_${1:suffix}" {
+	${2:rest_api_id} = "${3:Required}"
+	${4:resource_id} = "${5:Required}"
+	${6:http_method} = "${7:Required}"
+	${8:status_code} = "${9:Required}"
+	${10:response_templates} = "${11:Optional}"
+	${12:content_handling} = "${13:Optional}"
+}
+]]></content>
+<tabTrigger>aws_api_gateway_integration_response</tabTrigger>
+</snippet>

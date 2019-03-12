@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_elb resource" "aws_elb resource_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:name_prefix} = "${5:value}"
+	${6:access_logs} = "${7:value}"
+	${8:security_groups} = "${9:value}"
+	${10:subnets} = "${11:value}"
+	${12:instances} = "${13:value}"
+	${14:internal} = "${15:value}"
+	${16:listener} = "${17:value}"
+	${18:health_check} = "${19:value}"
+	${20:idle_timeout} = "${21:value}"
+	${22:connection_draining} = "${23:value}"
+	${24:connection_draining_timeout} = "${25:value}"
+	${26:tags} = "${27:value}"
+}
+]]></content>
+<tabTrigger>aws_elb resource</tabTrigger>
+</snippet>

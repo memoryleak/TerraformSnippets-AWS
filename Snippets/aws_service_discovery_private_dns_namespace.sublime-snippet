@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_service_discovery_private_dns_namespace" "aws_service_discovery_private_dns_namespace_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:vpc} = "${5:value}"
+	${6:description} = "${7:value}"
+}
+]]></content>
+<tabTrigger>aws_service_discovery_private_dns_namespace</tabTrigger>
+</snippet>

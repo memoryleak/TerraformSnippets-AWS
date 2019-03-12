@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_network_acl_rule" "aws_network_acl_rule_${1:suffix}" {
+	${2:network_acl_id} = "${3:value}"
+	${4:rule_number} = "${5:value}"
+	${6:egress} = "${7:value}"
+	${8:rule_action} = "${9:value}"
+	${10:cidr_block} = "${11:value}"
+	${12:ipv6_cidr_block} = "${13:value}"
+	${14:from_port} = "${15:value}"
+	${16:to_port} = "${17:value}"
+}
+]]></content>
+<tabTrigger>aws_network_acl_rule</tabTrigger>
+</snippet>

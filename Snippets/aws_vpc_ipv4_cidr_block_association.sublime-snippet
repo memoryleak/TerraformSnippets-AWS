@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpc_ipv4_cidr_block_association" "aws_vpc_ipv4_cidr_block_association_${1:suffix}" {
+	${2:cidr_block} = "${3:value}"
+	${4:vpc_id} = "${5:value}"
+}
+]]></content>
+<tabTrigger>aws_vpc_ipv4_cidr_block_association</tabTrigger>
+</snippet>

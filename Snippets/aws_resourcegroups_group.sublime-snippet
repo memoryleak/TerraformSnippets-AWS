@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_resourcegroups_group" "aws_resourcegroups_group_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:description} = "${5:value}"
+	${6:resource_query} = "${7:value}"
+}
+]]></content>
+<tabTrigger>aws_resourcegroups_group</tabTrigger>
+</snippet>

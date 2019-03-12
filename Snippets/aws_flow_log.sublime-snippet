@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_flow_log" "aws_flow_log_${1:suffix}" {
+	${2:traffic_type} = "${3:value}"
+	${4:eni_id} = "${5:value}"
+	${6:iam_role_arn} = "${7:value}"
+	${8:log_destination} = "${9:value}"
+	${10:log_group_name} = "${11:value}"
+	${12:subnet_id} = "${13:value}"
+	${14:vpc_id} = "${15:value}"
+}
+]]></content>
+<tabTrigger>aws_flow_log</tabTrigger>
+</snippet>

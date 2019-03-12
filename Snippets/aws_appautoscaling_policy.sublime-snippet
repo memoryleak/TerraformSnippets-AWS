@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appautoscaling_policy" "aws_appautoscaling_policy_${1:suffix}" {
+	${2:name} = "${3:Required}"
+	${4:policy_type} = "${5:Optional}"
+	${6:resource_id} = "${7:Required}"
+	${8:scalable_dimension} = "${9:Required}"
+	${10:service_namespace} = "${11:Required}"
+	${12:step_scaling_policy_configuration} = "${13:Optional}"
+	${14:target_tracking_scaling_policy_configuration} = "${15:Optional}"
+}
+]]></content>
+<tabTrigger>aws_appautoscaling_policy</tabTrigger>
+</snippet>

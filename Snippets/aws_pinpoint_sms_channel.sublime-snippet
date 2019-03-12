@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_pinpoint_sms_channel" "aws_pinpoint_sms_channel_${1:suffix}" {
+	${2:application_id} = "${3:value}"
+	${4:enabled} = "${5:value}"
+	${6:sender_id} = "${7:value}"
+	${8:short_code} = "${9:value}"
+}
+]]></content>
+<tabTrigger>aws_pinpoint_sms_channel</tabTrigger>
+</snippet>

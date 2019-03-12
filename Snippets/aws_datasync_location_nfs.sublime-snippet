@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_datasync_location_nfs" "aws_datasync_location_nfs_${1:suffix}" {
+	${2:on_prem_config} = "${3:Required}"
+	${4:server_hostname} = "${5:Required}"
+	${6:subdirectory} = "${7:Required}"
+}
+]]></content>
+<tabTrigger>aws_datasync_location_nfs</tabTrigger>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_api_gateway_usage_plan_key" "aws_api_gateway_usage_plan_key_${1:suffix}" {
+	${2:key_id} = "${3:Required}"
+	${4:key_type} = "${5:Required}"
+	${6:usage_plan_id} = "${7:Required}"
+}
+]]></content>
+<tabTrigger>aws_api_gateway_usage_plan_key</tabTrigger>
+</snippet>

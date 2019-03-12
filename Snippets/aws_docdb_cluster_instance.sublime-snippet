@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_docdb_cluster_instance" "aws_docdb_cluster_instance_${1:suffix}" {
+	${2:apply_immediately} = "${3:Optional}"
+	${4:auto_minor_version_upgrade} = "${5:Optional}"
+	${6:availability_zone} = "${7:Optional}"
+	${8:cluster_identifier} = "${9:Required}"
+	${10:engine} = "${11:Optional}"
+	${12:identifier} = "${13:Optional}"
+	${14:identifier_prefix} = "${15:Optional}"
+	${16:instance_class} = "${17:Required}"
+	${18:promotion_tier} = "${19:Optional}"
+	${20:tags} = "${21:Optional}"
+}
+]]></content>
+<tabTrigger>aws_docdb_cluster_instance</tabTrigger>
+</snippet>

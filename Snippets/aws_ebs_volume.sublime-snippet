@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ebs_volume" "aws_ebs_volume_${1:suffix}" {
+	${2:availability_zone} = "${3:value}"
+	${4:encrypted} = "${5:value}"
+	${6:iops} = "${7:value}"
+	${8:size} = "${9:value}"
+	${10:type} = "${11:value}"
+	${12:kms_key_id} = "${13:value}"
+	${14:tags} = "${15:value}"
+}
+]]></content>
+<tabTrigger>aws_ebs_volume</tabTrigger>
+</snippet>

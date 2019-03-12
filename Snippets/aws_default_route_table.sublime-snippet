@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_default_route_table" "aws_default_route_table_${1:suffix}" {
+	${2:default_route_table_id} = "${3:value}"
+	${4:route} = "${5:value}"
+	${6:tags} = "${7:value}"
+	${8:propagating_vgws} = "${9:value}"
+}
+]]></content>
+<tabTrigger>aws_default_route_table</tabTrigger>
+</snippet>

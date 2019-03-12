@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+resource "aws_simpledb_domain" "aws_simpledb_domain_${1:suffix}" {
+	${2:name} = "${3:value}"
+}
+]]></content>
+<tabTrigger>aws_simpledb_domain</tabTrigger>
+</snippet>

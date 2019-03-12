@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_elasticache_cluster" "aws_elasticache_cluster_${1:suffix}" {
+	${2:replication_group_id} = "${3:value}"
+	${4:apply_immediately} = "${5:value}"
+	${6:snapshot_arns – (Optional) A single} = "${7:value}"
+	${8:snapshot_name} = "${9:value}"
+	${10:snapshot_retention_limit} = "${11:value}"
+	${12:preferred_availability_zones} = "${13:value}"
+	${14:tags} = "${15:value}"
+}
+]]></content>
+<tabTrigger>aws_elasticache_cluster</tabTrigger>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+resource "aws_elasticache_replication_group" "aws_elasticache_replication_group_${1:suffix}" {
+	${2:Adjusting number_cache_clusters directly. This will attempt to automatically add or remove replicas, but provides no granular control (e.g. preferred availability zone, cache cluster ID) for the added or removed replicas. This also currently expects cache cluster IDs in the form of replication_group_id} = "${3:value}"
+}
+]]></content>
+<tabTrigger>aws_elasticache_replication_group</tabTrigger>
+</snippet>

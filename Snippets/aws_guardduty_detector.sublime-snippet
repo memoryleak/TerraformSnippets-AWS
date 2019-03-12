@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_guardduty_detector" "aws_guardduty_detector_${1:suffix}" {
+	${2:enable} = "${3:value}"
+	${4:finding_publishing_frequency} = "${5:value}"
+}
+]]></content>
+<tabTrigger>aws_guardduty_detector</tabTrigger>
+</snippet>

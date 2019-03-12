@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_batch_job_queue" "aws_batch_job_queue_${1:suffix}" {
+	${2:name} = "${3:Required}"
+	${4:compute_environments} = "${5:Required}"
+	${6:priority} = "${7:Required}"
+	${8:state} = "${9:Required}"
+}
+]]></content>
+<tabTrigger>aws_batch_job_queue</tabTrigger>
+</snippet>

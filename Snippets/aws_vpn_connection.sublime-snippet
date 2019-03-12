@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpn_connection" "aws_vpn_connection_${1:suffix}" {
+	${2:customer_gateway_id} = "${3:value}"
+	${4:type} = "${5:value}"
+}
+]]></content>
+<tabTrigger>aws_vpn_connection</tabTrigger>
+</snippet>

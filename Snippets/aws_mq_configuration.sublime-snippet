@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_mq_configuration" "aws_mq_configuration_${1:suffix}" {
+	${2:data} = "${3:value}"
+	${4:description} = "${5:value}"
+	${6:engine_type} = "${7:value}"
+	${8:engine_version} = "${9:value}"
+	${10:name} = "${11:value}"
+	${12:tags} = "${13:value}"
+}
+]]></content>
+<tabTrigger>aws_mq_configuration</tabTrigger>
+</snippet>

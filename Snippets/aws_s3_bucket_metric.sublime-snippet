@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3_bucket_metric" "aws_s3_bucket_metric_${1:suffix}" {
+	${2:bucket} = "${3:value}"
+	${4:name} = "${5:value}"
+	${6:filter} = "${7:value}"
+}
+]]></content>
+<tabTrigger>aws_s3_bucket_metric</tabTrigger>
+</snippet>

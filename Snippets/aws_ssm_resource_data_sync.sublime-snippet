@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ssm_resource_data_sync" "aws_ssm_resource_data_sync_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:s3_destination} = "${5:value}"
+}
+]]></content>
+<tabTrigger>aws_ssm_resource_data_sync</tabTrigger>
+</snippet>

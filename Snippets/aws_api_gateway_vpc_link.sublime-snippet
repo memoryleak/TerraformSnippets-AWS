@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_api_gateway_vpc_link" "aws_api_gateway_vpc_link_${1:suffix}" {
+	${2:name} = "${3:Required}"
+	${4:description} = "${5:Optional}"
+	${6:target_arns} = "${7:Required}"
+}
+]]></content>
+<tabTrigger>aws_api_gateway_vpc_link</tabTrigger>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_service_discovery_service" "aws_service_discovery_service_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:description} = "${5:value}"
+	${6:dns_config} = "${7:value}"
+	${8:health_check_config} = "${9:value}"
+	${10:health_check_custom_config} = "${11:value}"
+}
+]]></content>
+<tabTrigger>aws_service_discovery_service</tabTrigger>
+</snippet>

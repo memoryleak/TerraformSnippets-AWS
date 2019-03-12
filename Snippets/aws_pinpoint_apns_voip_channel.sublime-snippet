@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_pinpoint_apns_voip_channel" "aws_pinpoint_apns_voip_channel_${1:suffix}" {
+	${2:application_id} = "${3:value}"
+	${4:enabled} = "${5:value}"
+	${6:default_authentication_method} = "${7:value}"
+}
+]]></content>
+<tabTrigger>aws_pinpoint_apns_voip_channel</tabTrigger>
+</snippet>

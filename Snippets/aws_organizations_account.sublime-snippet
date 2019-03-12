@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_organizations_account" "aws_organizations_account_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:email} = "${5:value}"
+	${6:iam_user_access_to_billing} = "${7:value}"
+	${8:role_name} = "${9:value}"
+}
+]]></content>
+<tabTrigger>aws_organizations_account</tabTrigger>
+</snippet>

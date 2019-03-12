@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_log_stream" "aws_cloudwatch_log_stream_${1:suffix}" {
+	${2:name} = "${3:Required}"
+	${4:log_group_name} = "${5:Required}"
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_log_stream</tabTrigger>
+</snippet>

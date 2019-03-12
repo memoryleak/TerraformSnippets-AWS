@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_transit_gateway_route_table" "aws_ec2_transit_gateway_route_table_${1:suffix}" {
+	${2:transit_gateway_id} = "${3:value}"
+}
+]]></content>
+<tabTrigger>aws_ec2_transit_gateway_route_table</tabTrigger>
+</snippet>

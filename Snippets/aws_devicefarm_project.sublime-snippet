@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+resource "aws_devicefarm_project" "aws_devicefarm_project_${1:suffix}" {
+	${2:name} = "${3:Required}"
+}
+]]></content>
+<tabTrigger>aws_devicefarm_project</tabTrigger>
+</snippet>

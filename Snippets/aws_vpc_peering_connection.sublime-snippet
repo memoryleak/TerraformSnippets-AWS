@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpc_peering_connection" "aws_vpc_peering_connection_${1:suffix}" {
+	${2:peer_owner_id} = "${3:value}"
+	${4:peer_vpc_id} = "${5:value}"
+	${6:vpc_id} = "${7:value}"
+	${8:auto_accept} = "${9:value}"
+	${10:peer_region} = "${11:value}"
+	${12:accepter (Optional)} = "${13:value}"
+	${14:requester (Optional)} = "${15:value}"
+	${16:tags} = "${17:value}"
+}
+]]></content>
+<tabTrigger>aws_vpc_peering_connection</tabTrigger>
+</snippet>

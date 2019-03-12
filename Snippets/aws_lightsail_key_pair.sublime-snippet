@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lightsail_key_pair" "aws_lightsail_key_pair_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:public_key} = "${5:value}"
+}
+]]></content>
+<tabTrigger>aws_lightsail_key_pair</tabTrigger>
+</snippet>

@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_glue_catalog_table" "aws_glue_catalog_table_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:database_name} = "${5:value}"
+	${6:catalog_id} = "${7:value}"
+	${8:description} = "${9:value}"
+	${10:owner} = "${11:value}"
+	${12:retention} = "${13:value}"
+	${14:storage_descriptor} = "${15:value}"
+	${16:partition_keys} = "${17:value}"
+	${18:view_original_text} = "${19:value}"
+	${20:view_expanded_text} = "${21:value}"
+	${22:table_type} = "${23:value}"
+}
+]]></content>
+<tabTrigger>aws_glue_catalog_table</tabTrigger>
+</snippet>

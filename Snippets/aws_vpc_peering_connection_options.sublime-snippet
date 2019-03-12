@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpc_peering_connection_options" "aws_vpc_peering_connection_options_${1:suffix}" {
+	${2:vpc_peering_connection_id} = "${3:value}"
+	${4:accepter (Optional)} = "${5:value}"
+	${6:requester (Optional)} = "${7:value}"
+}
+]]></content>
+<tabTrigger>aws_vpc_peering_connection_options</tabTrigger>
+</snippet>

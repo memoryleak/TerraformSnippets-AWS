@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_organizations_policy" "aws_organizations_policy_${1:suffix}" {
+	${2:content} = "${3:value}"
+	${4:name} = "${5:value}"
+	${6:description} = "${7:value}"
+	${8:type} = "${9:value}"
+}
+]]></content>
+<tabTrigger>aws_organizations_policy</tabTrigger>
+</snippet>

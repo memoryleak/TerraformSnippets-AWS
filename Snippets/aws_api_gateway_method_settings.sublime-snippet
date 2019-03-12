@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_api_gateway_method_settings" "aws_api_gateway_method_settings_${1:suffix}" {
+	${2:rest_api_id} = "${3:Required}"
+	${4:stage_name} = "${5:Required}"
+	${6:method_path} = "${7:Required}"
+	${8:settings} = "${9:Required}"
+}
+]]></content>
+<tabTrigger>aws_api_gateway_method_settings</tabTrigger>
+</snippet>

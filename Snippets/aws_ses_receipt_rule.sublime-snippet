@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ses_receipt_rule" "aws_ses_receipt_rule_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:rule_set_name} = "${5:value}"
+	${6:after} = "${7:value}"
+	${8:enabled} = "${9:value}"
+	${10:recipients} = "${11:value}"
+	${12:scan_enabled} = "${13:value}"
+	${14:tls_policy} = "${15:value}"
+	${16:add_header_action} = "${17:value}"
+	${18:bounce_action} = "${19:value}"
+	${20:lambda_action} = "${21:value}"
+	${22:s3_action} = "${23:value}"
+	${24:sns_action} = "${25:value}"
+	${26:stop_action} = "${27:value}"
+	${28:workmail_action} = "${29:value}"
+}
+]]></content>
+<tabTrigger>aws_ses_receipt_rule</tabTrigger>
+</snippet>

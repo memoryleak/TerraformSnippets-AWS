@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_elastictranscoder_pipeline" "aws_elastictranscoder_pipeline_${1:suffix}" {
+	${2:aws_kms_key_arn} = "${3:value}"
+	${4:content_config} = "${5:value}"
+	${6:content_config_permissions} = "${7:value}"
+	${8:input_bucket} = "${9:value}"
+	${10:name} = "${11:value}"
+	${12:notifications} = "${13:value}"
+	${14:output_bucket} = "${15:value}"
+	${16:role} = "${17:value}"
+	${18:thumbnail_config} = "${19:value}"
+	${20:thumbnail_config_permissions} = "${21:value}"
+}
+]]></content>
+<tabTrigger>aws_elastictranscoder_pipeline</tabTrigger>
+</snippet>

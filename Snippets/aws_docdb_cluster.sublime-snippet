@@ -1,0 +1,25 @@
+<snippet>
+<content><![CDATA[
+resource "aws_docdb_cluster" "aws_docdb_cluster_${1:suffix}" {
+	${2:apply_immediately} = "${3:Optional}"
+	${4:availability_zones} = "${5:Optional}"
+	${6:backup_retention_period} = "${7:Optional}"
+	${8:cluster_identifier_prefix} = "${9:Optional}"
+	${10:cluster_identifier} = "${11:Optional}"
+	${12:enabled_cloudwatch_logs_exports} = "${13:Optional}"
+	${14:engine_version} = "${15:Optional}"
+	${16:engine} = "${17:Optional}"
+	${18:final_snapshot_identifier} = "${19:Optional}"
+	${20:kms_key_id} = "${21:Optional}"
+	${22:master_password} = "${23:Required}"
+	${24:master_username} = "${25:Required}"
+	${26:port} = "${27:Optional}"
+	${28:skip_final_snapshot} = "${29:Optional}"
+	${30:snapshot_identifier} = "${31:Optional}"
+	${32:storage_encrypted} = "${33:Optional}"
+	${34:tags} = "${35:Optional}"
+	${36:vpc_security_group_ids} = "${37:Optional}"
+}
+]]></content>
+<tabTrigger>aws_docdb_cluster</tabTrigger>
+</snippet>

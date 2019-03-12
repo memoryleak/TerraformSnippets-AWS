@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appmesh_route" "aws_appmesh_route_${1:suffix}" {
+	${2:name} = "${3:Required}"
+	${4:mesh_name} = "${5:Required}"
+	${6:virtual_route_name} = "${7:Required}"
+	${8:spec} = "${9:Required}"
+}
+]]></content>
+<tabTrigger>aws_appmesh_route</tabTrigger>
+</snippet>

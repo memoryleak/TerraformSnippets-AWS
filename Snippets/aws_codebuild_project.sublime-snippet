@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_codebuild_project" "aws_codebuild_project_${1:suffix}" {
+	${2:artifacts} = "${3:Required}"
+	${4:environment} = "${5:Required}"
+	${6:name} = "${7:Required}"
+	${8:source} = "${9:Required}"
+	${10:build_timeout} = "${11:Optional}"
+	${12:cache} = "${13:Optional}"
+	${14:description} = "${15:Optional}"
+	${16:encryption_key} = "${17:Optional}"
+	${18:service_role} = "${19:Required}"
+	${20:tags} = "${21:Optional}"
+	${22:vpc_config} = "${23:Optional}"
+	${24:secondary_artifacts} = "${25:Optional}"
+	${26:secondary_sources} = "${27:Optional}"
+}
+]]></content>
+<tabTrigger>aws_codebuild_project</tabTrigger>
+</snippet>

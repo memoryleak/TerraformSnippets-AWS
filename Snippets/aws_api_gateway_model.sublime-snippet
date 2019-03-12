@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_api_gateway_model" "aws_api_gateway_model_${1:suffix}" {
+	${2:rest_api_id} = "${3:Required}"
+	${4:name} = "${5:Required}"
+	${6:description} = "${7:Optional}"
+	${8:content_type} = "${9:Required}"
+	${10:schema} = "${11:Required}"
+}
+]]></content>
+<tabTrigger>aws_api_gateway_model</tabTrigger>
+</snippet>

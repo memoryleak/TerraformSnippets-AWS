@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudhsm_v2_cluster" "aws_cloudhsm_v2_cluster_${1:suffix}" {
+	${2:source_backup_identifier} = "${3:Optional}"
+	${4:hsm_type} = "${5:Required}"
+	${6:subnet_ids} = "${7:Required}"
+	${8:tags} = "${9:Optional}"
+}
+]]></content>
+<tabTrigger>aws_cloudhsm_v2_cluster</tabTrigger>
+</snippet>

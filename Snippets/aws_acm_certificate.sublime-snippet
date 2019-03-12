@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_acm_certificate" "aws_acm_certificate_${1:suffix}" {
+	${2:domain_name} = "${3:Required}"
+	${4:subject_alternative_names} = "${5:Optional}"
+	${6:validation_method} = "${7:Required}"
+	${8:tags} = "${9:Optional}"
+}
+]]></content>
+<tabTrigger>aws_acm_certificate</tabTrigger>
+</snippet>

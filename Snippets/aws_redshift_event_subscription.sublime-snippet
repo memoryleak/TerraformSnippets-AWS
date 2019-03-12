@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_redshift_event_subscription" "aws_redshift_event_subscription_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:sns_topic_arn} = "${5:value}"
+	${6:source_ids} = "${7:value}"
+	${8:severity} = "${9:value}"
+	${10:enabled} = "${11:value}"
+	${12:tags} = "${13:value}"
+}
+]]></content>
+<tabTrigger>aws_redshift_event_subscription</tabTrigger>
+</snippet>

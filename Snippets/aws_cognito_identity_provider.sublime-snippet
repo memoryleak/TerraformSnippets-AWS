@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cognito_identity_provider" "aws_cognito_identity_provider_${1:suffix}" {
+	${2:user_pool_id (Required)} = "${3:Required}"
+	${4:provider_name (Required)} = "${5:Required}"
+	${6:provider_type (Required)} = "${7:Required}"
+	${8:attribute_mapping (Optional)} = "${9:Required}"
+	${10:idp_identifiers (Optional)} = "${11:Required}"
+	${12:provider_details (Optional)} = "${13:Required}"
+}
+]]></content>
+<tabTrigger>aws_cognito_identity_provider</tabTrigger>
+</snippet>

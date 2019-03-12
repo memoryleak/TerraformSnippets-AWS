@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dynamodb_global_table" "aws_dynamodb_global_table_${1:suffix}" {
+	${2:name} = "${3:Required}"
+	${4:replica} = "${5:Required}"
+}
+]]></content>
+<tabTrigger>aws_dynamodb_global_table</tabTrigger>
+</snippet>

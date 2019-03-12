@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_codepipeline" "aws_codepipeline_${1:suffix}" {
+	${2:name} = "${3:Required}"
+	${4:role_arn} = "${5:Required}"
+}
+]]></content>
+<tabTrigger>aws_codepipeline</tabTrigger>
+</snippet>

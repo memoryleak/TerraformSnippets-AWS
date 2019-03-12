@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_wafregional_rule_group" "aws_wafregional_rule_group_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:metric_name} = "${5:value}"
+	${6:activated_rule} = "${7:value}"
+}
+]]></content>
+<tabTrigger>aws_wafregional_rule_group</tabTrigger>
+</snippet>

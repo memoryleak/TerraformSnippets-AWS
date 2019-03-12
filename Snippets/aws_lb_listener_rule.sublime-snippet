@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lb_listener_rule" "aws_lb_listener_rule_${1:suffix}" {
+	${2:listener_arn} = "${3:value}"
+	${4:priority} = "${5:value}"
+	${6:action} = "${7:value}"
+	${8:condition} = "${9:value}"
+}
+]]></content>
+<tabTrigger>aws_lb_listener_rule</tabTrigger>
+</snippet>

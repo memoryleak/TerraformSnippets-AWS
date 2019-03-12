@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+resource "aws_api_gateway_documentation_part" "aws_api_gateway_documentation_part_${1:suffix}" {
+	${2:rest_api_id} = "${3:Required}"
+}
+]]></content>
+<tabTrigger>aws_api_gateway_documentation_part</tabTrigger>
+</snippet>

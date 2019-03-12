@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dx_bgp_peer" "aws_dx_bgp_peer_${1:suffix}" {
+	${2:address_family} = "${3:Required}"
+	${4:bgp_asn} = "${5:Required}"
+	${6:virtual_interface_id} = "${7:Required}"
+	${8:amazon_address} = "${9:Optional}"
+	${10:bgp_auth_key} = "${11:Optional}"
+	${12:customer_address} = "${13:Optional}"
+}
+]]></content>
+<tabTrigger>aws_dx_bgp_peer</tabTrigger>
+</snippet>

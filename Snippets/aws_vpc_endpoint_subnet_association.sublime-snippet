@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpc_endpoint_subnet_association" "aws_vpc_endpoint_subnet_association_${1:suffix}" {
+	${2:vpc_endpoint_id} = "${3:value}"
+	${4:subnet_id} = "${5:value}"
+}
+]]></content>
+<tabTrigger>aws_vpc_endpoint_subnet_association</tabTrigger>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dx_connection" "aws_dx_connection_${1:suffix}" {
+	${2:name} = "${3:Required}"
+	${4:bandwidth} = "${5:Required}"
+	${6:location} = "${7:Required}"
+	${8:tags} = "${9:Optional}"
+}
+]]></content>
+<tabTrigger>aws_dx_connection</tabTrigger>
+</snippet>

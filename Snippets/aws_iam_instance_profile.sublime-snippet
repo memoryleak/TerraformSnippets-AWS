@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iam_instance_profile" "aws_iam_instance_profile_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:name_prefix} = "${5:value}"
+	${6:path} = "${7:value}"
+	${8:roles} = "${9:value}"
+	${10:role} = "${11:value}"
+}
+]]></content>
+<tabTrigger>aws_iam_instance_profile</tabTrigger>
+</snippet>

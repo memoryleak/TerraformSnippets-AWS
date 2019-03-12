@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appsync_datasource" "aws_appsync_datasource_${1:suffix}" {
+	${2:api_id} = "${3:Required}"
+	${4:type} = "${5:Required}"
+	${6:description} = "${7:Optional}"
+	${8:service_role_arn} = "${9:Optional}"
+	${10:dynamodb_config} = "${11:Optional}"
+	${12:elasticsearch_config} = "${13:Optional}"
+	${14:http_config} = "${15:Optional}"
+	${16:lambda_config} = "${17:Optional}"
+}
+]]></content>
+<tabTrigger>aws_appsync_datasource</tabTrigger>
+</snippet>

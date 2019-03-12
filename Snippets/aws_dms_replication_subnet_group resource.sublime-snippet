@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dms_replication_subnet_group resource" "aws_dms_replication_subnet_group resource_${1:suffix}" {
+	${2:replication_subnet_group_description} = "${3:value}"
+	${4:replication_subnet_group_id} = "${5:value}"
+	${6:subnet_ids} = "${7:value}"
+	${8:tags} = "${9:value}"
+}
+]]></content>
+<tabTrigger>aws_dms_replication_subnet_group resource</tabTrigger>
+</snippet>

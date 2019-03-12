@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_api_gateway_stage" "aws_api_gateway_stage_${1:suffix}" {
+	${2:rest_api_id} = "${3:Required}"
+	${4:stage_name} = "${5:Required}"
+	${6:deployment_id} = "${7:Required}"
+	${8:access_log_settings} = "${9:Optional}"
+	${10:cache_cluster_enabled} = "${11:Optional}"
+	${12:cache_cluster_size} = "${13:Optional}"
+	${14:client_certificate_id} = "${15:Optional}"
+	${16:description} = "${17:Optional}"
+	${18:documentation_version} = "${19:Optional}"
+	${20:variables} = "${21:Optional}"
+	${22:tags} = "${23:Optional}"
+}
+]]></content>
+<tabTrigger>aws_api_gateway_stage</tabTrigger>
+</snippet>

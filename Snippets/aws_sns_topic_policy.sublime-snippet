@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sns_topic_policy" "aws_sns_topic_policy_${1:suffix}" {
+	${2:arn} = "${3:value}"
+}
+]]></content>
+<tabTrigger>aws_sns_topic_policy</tabTrigger>
+</snippet>

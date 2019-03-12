@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3_bucket_policy" "aws_s3_bucket_policy_${1:suffix}" {
+	${2:bucket} = "${3:value}"
+	${4:policy} = "${5:value}"
+}
+]]></content>
+<tabTrigger>aws_s3_bucket_policy</tabTrigger>
+</snippet>

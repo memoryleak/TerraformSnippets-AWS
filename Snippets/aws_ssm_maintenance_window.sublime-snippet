@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ssm_maintenance_window" "aws_ssm_maintenance_window_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:schedule} = "${5:value}"
+	${6:cutoff} = "${7:value}"
+	${8:duration} = "${9:value}"
+	${10:allow_unassociated_targets} = "${11:value}"
+	${12:enabled} = "${13:value}"
+	${14:schedule_timezone} = "${15:value}"
+}
+]]></content>
+<tabTrigger>aws_ssm_maintenance_window</tabTrigger>
+</snippet>

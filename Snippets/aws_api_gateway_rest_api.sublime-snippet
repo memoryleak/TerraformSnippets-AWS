@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_api_gateway_rest_api" "aws_api_gateway_rest_api_${1:suffix}" {
+	${2:name} = "${3:Required}"
+	${4:description} = "${5:Optional}"
+	${6:endpoint_configuration} = "${7:Optional}"
+	${8:body} = "${9:Optional}"
+	${10:policy} = "${11:Optional}"
+	${12:api_key_source} = "${13:Optional}"
+}
+]]></content>
+<tabTrigger>aws_api_gateway_rest_api</tabTrigger>
+</snippet>

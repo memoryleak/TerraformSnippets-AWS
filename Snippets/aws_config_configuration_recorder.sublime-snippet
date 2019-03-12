@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_config_configuration_recorder" "aws_config_configuration_recorder_${1:suffix}" {
+	${2:name} = "${3:Optional}"
+	${4:role_arn} = "${5:Required}"
+}
+]]></content>
+<tabTrigger>aws_config_configuration_recorder</tabTrigger>
+</snippet>

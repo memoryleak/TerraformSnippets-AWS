@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_emr_security_configuration" "aws_emr_security_configuration_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:name_prefix} = "${5:value}"
+	${6:configuration} = "${7:value}"
+}
+]]></content>
+<tabTrigger>aws_emr_security_configuration</tabTrigger>
+</snippet>

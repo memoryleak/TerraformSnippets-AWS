@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_placement_group" "aws_placement_group_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:strategy} = "${5:value}"
+}
+]]></content>
+<tabTrigger>aws_placement_group</tabTrigger>
+</snippet>

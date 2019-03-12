@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lambda_event_source_mapping" "aws_lambda_event_source_mapping_${1:suffix}" {
+	${2:batch_size} = "${3:value}"
+	${4:enabled} = "${5:value}"
+	${6:function_name} = "${7:value}"
+	${8:starting_position} = "${9:value}"
+	${10:starting_position_timestamp} = "${11:value}"
+}
+]]></content>
+<tabTrigger>aws_lambda_event_source_mapping</tabTrigger>
+</snippet>

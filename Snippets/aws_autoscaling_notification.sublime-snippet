@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_autoscaling_notification" "aws_autoscaling_notification_${1:suffix}" {
+	${2:group_names} = "${3:Required}"
+	${4:notifications} = "${5:Required}"
+	${6:topic_arn} = "${7:Required}"
+}
+]]></content>
+<tabTrigger>aws_autoscaling_notification</tabTrigger>
+</snippet>

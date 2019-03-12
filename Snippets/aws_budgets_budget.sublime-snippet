@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_budgets_budget" "aws_budgets_budget_${1:suffix}" {
+	${2:account_id} = "${3:Optional}"
+	${4:name} = "${5:Optional}"
+	${6:name_prefix} = "${7:Optional}"
+	${8:budget_type} = "${9:Required}"
+	${10:cost_filters} = "${11:Optional}"
+	${12:cost_types} = "${13:Optional}"
+	${14:limit_amount} = "${15:Required}"
+	${16:limit_unit} = "${17:Required}"
+	${18:time_unit} = "${19:Required}"
+}
+]]></content>
+<tabTrigger>aws_budgets_budget</tabTrigger>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3_bucket_notification" "aws_s3_bucket_notification_${1:suffix}" {
+	${2:bucket} = "${3:value}"
+	${4:topic} = "${5:value}"
+	${6:queue} = "${7:value}"
+	${8:lambda_function} = "${9:value}"
+}
+]]></content>
+<tabTrigger>aws_s3_bucket_notification</tabTrigger>
+</snippet>

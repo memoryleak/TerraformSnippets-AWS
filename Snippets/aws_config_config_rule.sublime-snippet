@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_config_config_rule" "aws_config_config_rule_${1:suffix}" {
+	${2:name} = "${3:Required}"
+	${4:description} = "${5:Optional}"
+	${6:input_parameters} = "${7:Optional}"
+	${8:maximum_execution_frequency} = "${9:Optional}"
+	${10:scope} = "${11:Optional}"
+	${12:source} = "${13:Required}"
+}
+]]></content>
+<tabTrigger>aws_config_config_rule</tabTrigger>
+</snippet>

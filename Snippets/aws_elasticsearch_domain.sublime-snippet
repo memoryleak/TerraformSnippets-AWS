@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_elasticsearch_domain" "aws_elasticsearch_domain_${1:suffix}" {
+	${2:domain_name} = "${3:value}"
+	${4:access_policies} = "${5:value}"
+	${6:ebs_options} = "${7:value}"
+	${8:encrypt_at_rest} = "${9:value}"
+	${10:cluster_config} = "${11:value}"
+	${12:snapshot_options} = "${13:value}"
+	${14:vpc_options} = "${15:value}"
+	${16:log_publishing_options} = "${17:value}"
+	${18:elasticsearch_version} = "${19:value}"
+	${20:tags} = "${21:value}"
+}
+]]></content>
+<tabTrigger>aws_elasticsearch_domain</tabTrigger>
+</snippet>

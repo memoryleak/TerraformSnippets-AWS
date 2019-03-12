@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_kms_key" "aws_kms_key_${1:suffix}" {
+	${2:description} = "${3:value}"
+	${4:key_usage} = "${5:value}"
+	${6:policy} = "${7:value}"
+	${8:deletion_window_in_days} = "${9:value}"
+	${10:is_enabled} = "${11:value}"
+	${12:enable_key_rotation} = "${13:value}"
+	${14:tags} = "${15:value}"
+}
+]]></content>
+<tabTrigger>aws_kms_key</tabTrigger>
+</snippet>

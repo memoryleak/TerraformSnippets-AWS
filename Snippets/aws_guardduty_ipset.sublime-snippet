@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_guardduty_ipset" "aws_guardduty_ipset_${1:suffix}" {
+	${2:activate} = "${3:value}"
+	${4:detector_id} = "${5:value}"
+	${6:format} = "${7:value}"
+	${8:location} = "${9:value}"
+	${10:name} = "${11:value}"
+}
+]]></content>
+<tabTrigger>aws_guardduty_ipset</tabTrigger>
+</snippet>

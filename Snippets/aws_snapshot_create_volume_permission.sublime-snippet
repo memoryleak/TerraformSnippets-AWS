@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_snapshot_create_volume_permission" "aws_snapshot_create_volume_permission_${1:suffix}" {
+	${2:snapshot_id} = "${3:value}"
+	${4:account_id} = "${5:value}"
+}
+]]></content>
+<tabTrigger>aws_snapshot_create_volume_permission</tabTrigger>
+</snippet>

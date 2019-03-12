@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_directory_service_directory" "aws_directory_service_directory_${1:suffix}" {
+	${2:name} = "${3:Required}"
+	${4:password} = "${5:Required}"
+	${6:size} = "${7:Required}"
+	${8:vpc_settings} = "${9:Required}"
+	${10:connect_settings} = "${11:Required}"
+	${12:alias} = "${13:Optional}"
+	${14:description} = "${15:Optional}"
+	${16:short_name} = "${17:Optional}"
+	${18:type (Optional)} = "${19:Required}"
+	${20:edition} = "${21:Optional}"
+	${22:tags} = "${23:Optional}"
+}
+]]></content>
+<tabTrigger>aws_directory_service_directory</tabTrigger>
+</snippet>

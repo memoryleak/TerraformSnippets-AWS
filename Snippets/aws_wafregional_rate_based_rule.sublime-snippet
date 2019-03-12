@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_wafregional_rate_based_rule" "aws_wafregional_rate_based_rule_${1:suffix}" {
+	${2:metric_name} = "${3:value}"
+	${4:name} = "${5:value}"
+	${6:rate_key} = "${7:value}"
+	${8:predicate} = "${9:value}"
+}
+]]></content>
+<tabTrigger>aws_wafregional_rate_based_rule</tabTrigger>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_log_subscription_filter" "aws_cloudwatch_log_subscription_filter_${1:suffix}" {
+	${2:name} = "${3:Required}"
+	${4:destination_arn} = "${5:Required}"
+	${6:filter_pattern} = "${7:Required}"
+	${8:log_group_name} = "${9:Required}"
+	${10:role_arn} = "${11:Optional}"
+	${12:distribution} = "${13:Optional}"
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_log_subscription_filter</tabTrigger>
+</snippet>

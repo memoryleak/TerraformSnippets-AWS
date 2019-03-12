@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_autoscaling_attachment" "aws_autoscaling_attachment_${1:suffix}" {
+	${2:autoscaling_group_name} = "${3:Required}"
+	${4:elb} = "${5:Optional}"
+	${6:alb_target_group_arn} = "${7:Optional}"
+}
+]]></content>
+<tabTrigger>aws_autoscaling_attachment</tabTrigger>
+</snippet>

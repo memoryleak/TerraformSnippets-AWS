@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+resource "aws_glue_trigger" "aws_glue_trigger_${1:suffix}" {
+	${2:schedule – (Optional) A cron expression used to specify the schedule. Time} = "${3:value}"
+}
+]]></content>
+<tabTrigger>aws_glue_trigger</tabTrigger>
+</snippet>

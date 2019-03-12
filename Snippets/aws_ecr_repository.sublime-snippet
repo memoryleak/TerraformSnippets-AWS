@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ecr_repository" "aws_ecr_repository_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:tags} = "${5:value}"
+}
+]]></content>
+<tabTrigger>aws_ecr_repository</tabTrigger>
+</snippet>

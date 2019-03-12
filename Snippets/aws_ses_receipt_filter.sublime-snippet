@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ses_receipt_filter" "aws_ses_receipt_filter_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:cidr} = "${5:value}"
+	${6:policy} = "${7:value}"
+}
+]]></content>
+<tabTrigger>aws_ses_receipt_filter</tabTrigger>
+</snippet>

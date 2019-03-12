@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_instance" "aws_instance_${1:suffix}" {
+	${2:ami} = "${3:value}"
+	${4:availability_zone} = "${5:value}"
+	${6:placement_group} = "${7:value}"
+	${8:host_id} = "${9:value}"
+}
+]]></content>
+<tabTrigger>aws_instance</tabTrigger>
+</snippet>

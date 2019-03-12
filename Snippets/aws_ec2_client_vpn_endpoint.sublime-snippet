@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_client_vpn_endpoint" "aws_ec2_client_vpn_endpoint_${1:suffix}" {
+	${2:description} = "${3:value}"
+	${4:client_cidr_block} = "${5:value}"
+	${6:dns_servers} = "${7:value}"
+	${8:server_certificate_arn} = "${9:value}"
+	${10:transport_protocol} = "${11:value}"
+	${12:authentication_options} = "${13:value}"
+	${14:connection_log_options} = "${15:value}"
+	${16:tags} = "${17:value}"
+}
+]]></content>
+<tabTrigger>aws_ec2_client_vpn_endpoint</tabTrigger>
+</snippet>

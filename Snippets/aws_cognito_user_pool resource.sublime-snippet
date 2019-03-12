@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cognito_user_pool resource" "aws_cognito_user_pool resource_${1:suffix}" {
+	${2:admin_create_user_config (Optional)} = "${3:value}"
+	${4:alias_attributes} = "${5:value}"
+	${6:device_configuration (Optional)} = "${7:value}"
+	${8:email_configuration (Optional)} = "${9:value}"
+	${10:name} = "${11:value}"
+	${12:email_verification_subject} = "${13:value}"
+	${14:email_verification_message} = "${15:value}"
+	${16:lambda_config (Optional)} = "${17:value}"
+	${18:password_policy (Optional)} = "${19:value}"
+	${20:schema (Optional)} = "${21:value}"
+	${22:sms_authentication_message} = "${23:value}"
+	${24:sms_configuration (Optional)} = "${25:value}"
+	${26:sms_verification_message} = "${27:value}"
+	${28:tags} = "${29:value}"
+	${30:username_attributes} = "${31:value}"
+	${32:verification_message_template (Optional)} = "${33:value}"
+}
+]]></content>
+<tabTrigger>aws_cognito_user_pool resource</tabTrigger>
+</snippet>

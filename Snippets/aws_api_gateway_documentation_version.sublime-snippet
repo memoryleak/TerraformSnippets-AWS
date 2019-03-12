@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_api_gateway_documentation_version" "aws_api_gateway_documentation_version_${1:suffix}" {
+	${2:version} = "${3:Required}"
+	${4:rest_api_id} = "${5:Required}"
+	${6:description} = "${7:Optional}"
+}
+]]></content>
+<tabTrigger>aws_api_gateway_documentation_version</tabTrigger>
+</snippet>

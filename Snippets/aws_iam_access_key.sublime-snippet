@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iam_access_key" "aws_iam_access_key_${1:suffix}" {
+	${2:user} = "${3:value}"
+}
+]]></content>
+<tabTrigger>aws_iam_access_key</tabTrigger>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dynamodb_table_item" "aws_dynamodb_table_item_${1:suffix}" {
+	${2:table_name} = "${3:Required}"
+	${4:hash_key} = "${5:Required}"
+	${6:range_key} = "${7:Optional}"
+}
+]]></content>
+<tabTrigger>aws_dynamodb_table_item</tabTrigger>
+</snippet>

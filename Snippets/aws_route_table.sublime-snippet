@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_route_table" "aws_route_table_${1:suffix}" {
+	${2:vpc_id} = "${3:value}"
+	${4:route} = "${5:value}"
+	${6:tags} = "${7:value}"
+	${8:propagating_vgws} = "${9:value}"
+}
+]]></content>
+<tabTrigger>aws_route_table</tabTrigger>
+</snippet>

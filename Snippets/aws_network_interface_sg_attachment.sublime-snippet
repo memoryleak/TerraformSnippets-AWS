@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_network_interface_sg_attachment" "aws_network_interface_sg_attachment_${1:suffix}" {
+	${2:security_group_id} = "${3:value}"
+	${4:network_interface_id} = "${5:value}"
+}
+]]></content>
+<tabTrigger>aws_network_interface_sg_attachment</tabTrigger>
+</snippet>

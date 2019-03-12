@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_eip" "aws_eip_${1:suffix}" {
+	${2:vpc} = "${3:value}"
+	${4:instance} = "${5:value}"
+	${6:network_interface} = "${7:value}"
+	${8:associate_with_private_ip} = "${9:value}"
+	${10:tags} = "${11:value}"
+	${12:public_ipv4_pool} = "${13:value}"
+}
+]]></content>
+<tabTrigger>aws_eip</tabTrigger>
+</snippet>

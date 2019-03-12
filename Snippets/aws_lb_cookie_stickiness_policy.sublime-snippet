@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lb_cookie_stickiness_policy" "aws_lb_cookie_stickiness_policy_${1:suffix}" {
+	${2:name} = "${3:value}"
+	${4:load_balancer} = "${5:value}"
+	${6:lb_port} = "${7:value}"
+	${8:cookie_expiration_period} = "${9:value}"
+}
+]]></content>
+<tabTrigger>aws_lb_cookie_stickiness_policy</tabTrigger>
+</snippet>

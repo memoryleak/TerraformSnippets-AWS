@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sfn_activity" "aws_sfn_activity_${1:suffix}" {
+	${2:name} = "${3:value}"
+}
+]]></content>
+<tabTrigger>aws_sfn_activity</tabTrigger>
+</snippet>

@@ -1,0 +1,25 @@
+<snippet>
+<content><![CDATA[
+resource "aws_route53_health_check" "aws_route53_health_check_${1:suffix}" {
+	${2:reference_name} = "${3:value}"
+	${4:fqdn} = "${5:value}"
+	${6:ip_address} = "${7:value}"
+	${8:port} = "${9:value}"
+	${10:type} = "${11:value}"
+	${12:failure_threshold} = "${13:value}"
+	${14:resource_path} = "${15:value}"
+	${16:search_string} = "${17:value}"
+	${18:measure_latency} = "${19:value}"
+	${20:invert_healthcheck} = "${21:value}"
+	${22:enable_sni} = "${23:value}"
+	${24:child_healthchecks} = "${25:value}"
+	${26:child_health_threshold} = "${27:value}"
+	${28:cloudwatch_alarm_name} = "${29:value}"
+	${30:cloudwatch_alarm_region} = "${31:value}"
+	${32:insufficient_data_health_status} = "${33:value}"
+	${34:regions} = "${35:value}"
+	${36:tags} = "${37:value}"
+}
+]]></content>
+<tabTrigger>aws_route53_health_check</tabTrigger>
+</snippet>

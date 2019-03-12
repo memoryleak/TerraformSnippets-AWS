@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dx_connection_association" "aws_dx_connection_association_${1:suffix}" {
+	${2:connection_id} = "${3:Required}"
+	${4:lag_id} = "${5:Required}"
+}
+]]></content>
+<tabTrigger>aws_dx_connection_association</tabTrigger>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lambda_alias" "aws_lambda_alias_${1:suffix}" {
+	${2:description} = "${3:value}"
+	${4:function_name} = "${5:value}"
+	${6:routing_config} = "${7:value}"
+}
+]]></content>
+<tabTrigger>aws_lambda_alias</tabTrigger>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_media_package_channel" "aws_media_package_channel_${1:suffix}" {
+	${2:channel_id} = "${3:value}"
+	${4:description} = "${5:value}"
+}
+]]></content>
+<tabTrigger>aws_media_package_channel</tabTrigger>
+</snippet>

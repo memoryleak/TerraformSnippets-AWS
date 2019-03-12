@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+resource "aws_storagegateway_working_storage" "aws_storagegateway_working_storage_${1:suffix}" {
+	${2:gateway_arn} = "${3:value}"
+}
+]]></content>
+<tabTrigger>aws_storagegateway_working_storage</tabTrigger>
+</snippet>

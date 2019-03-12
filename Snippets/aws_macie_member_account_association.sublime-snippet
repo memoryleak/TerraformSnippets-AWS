@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+resource "aws_macie_member_account_association" "aws_macie_member_account_association_${1:suffix}" {
+	${2:member_account_id} = "${3:value}"
+}
+]]></content>
+<tabTrigger>aws_macie_member_account_association</tabTrigger>
+</snippet>

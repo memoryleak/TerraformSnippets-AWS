@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_api_gateway_usage_plan" "aws_api_gateway_usage_plan_${1:suffix}" {
+	${2:name} = "${3:Required}"
+	${4:description} = "${5:Optional}"
+	${6:api_stages} = "${7:Optional}"
+	${8:quota_settings} = "${9:Optional}"
+	${10:throttle_settings} = "${11:Optional}"
+	${12:product_code} = "${13:Optional}"
+}
+]]></content>
+<tabTrigger>aws_api_gateway_usage_plan</tabTrigger>
+</snippet>

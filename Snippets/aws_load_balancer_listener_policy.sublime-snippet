@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_load_balancer_listener_policy" "aws_load_balancer_listener_policy_${1:suffix}" {
+	${2:load_balancer_name} = "${3:value}"
+	${4:load_balancer_port} = "${5:value}"
+	${6:policy_names} = "${7:value}"
+}
+]]></content>
+<tabTrigger>aws_load_balancer_listener_policy</tabTrigger>
+</snippet>

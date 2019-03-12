@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_datasync_task" "aws_datasync_task_${1:suffix}" {
+	${2:destination_location_arn} = "${3:Required}"
+	${4:source_location_arn} = "${5:Required}"
+	${6:cloudwatch_log_group_arn} = "${7:Optional}"
+	${8:name} = "${9:Optional}"
+	${10:options} = "${11:Optional}"
+}
+]]></content>
+<tabTrigger>aws_datasync_task</tabTrigger>
+</snippet>

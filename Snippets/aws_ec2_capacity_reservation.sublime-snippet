@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_capacity_reservation" "aws_ec2_capacity_reservation_${1:suffix}" {
+	${2:availability_zone} = "${3:value}"
+	${4:end_date_type} = "${5:value}"
+	${6:instance_count} = "${7:value}"
+	${8:instance_match_criteria} = "${9:value}"
+	${10:instance_platform} = "${11:value}"
+	${12:instance_type} = "${13:value}"
+	${14:tags} = "${15:value}"
+	${16:tenancy} = "${17:value}"
+}
+]]></content>
+<tabTrigger>aws_ec2_capacity_reservation</tabTrigger>
+</snippet>

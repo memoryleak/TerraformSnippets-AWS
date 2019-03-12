@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_api_gateway_request_validator" "aws_api_gateway_request_validator_${1:suffix}" {
+	${2:name} = "${3:Required}"
+	${4:rest_api_id} = "${5:Required}"
+	${6:validate_request_body} = "${7:Optional}"
+	${8:validate_request_parameters} = "${9:Optional}"
+}
+]]></content>
+<tabTrigger>aws_api_gateway_request_validator</tabTrigger>
+</snippet>

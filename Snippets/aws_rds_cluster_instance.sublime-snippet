@@ -1,0 +1,25 @@
+<snippet>
+<content><![CDATA[
+resource "aws_rds_cluster_instance" "aws_rds_cluster_instance_${1:suffix}" {
+	${2:identifier} = "${3:value}"
+	${4:identifier_prefix} = "${5:value}"
+	${6:cluster_identifier} = "${7:value}"
+	${8:engine_version} = "${9:value}"
+	${10:instance_class} = "${11:value}"
+	${12:publicly_accessible} = "${13:value}"
+	${14:db_subnet_group_name} = "${15:value}"
+	${16:db_parameter_group_name} = "${17:value}"
+	${18:apply_immediately} = "${19:value}"
+	${20:monitoring_role_arn} = "${21:value}"
+	${22:monitoring_interval} = "${23:value}"
+	${24:promotion_tier} = "${25:value}"
+	${26:availability_zone} = "${27:value}"
+	${28:auto_minor_version_upgrade} = "${29:value}"
+	${30:performance_insights_enabled} = "${31:value}"
+	${32:performance_insights_kms_key_id} = "${33:value}"
+	${34:copy_tags_to_snapshot – (Optional, boolean) Indicates whether to copy all of the user} = "${35:value}"
+	${36:tags} = "${37:value}"
+}
+]]></content>
+<tabTrigger>aws_rds_cluster_instance</tabTrigger>
+</snippet>
