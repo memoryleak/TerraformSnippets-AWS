@@ -1,11 +1,12 @@
 <snippet>
 <content><![CDATA[
 resource "aws_globalaccelerator_accelerator" "aws_globalaccelerator_accelerator_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:ip_address_type} = "${5:value}"
-	${6:enabled} = "${7:value}"
-	${8:attributes} = "${9:value}"
+	name = "${3:Required}"
+	ip_address_type = "${4:Optional}"
+	enabled = "${5:Optional}"
+	attributes = "${6:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_globalaccelerator_accelerator</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

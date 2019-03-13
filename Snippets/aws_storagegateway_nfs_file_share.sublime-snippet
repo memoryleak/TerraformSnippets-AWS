@@ -1,20 +1,21 @@
 <snippet>
 <content><![CDATA[
 resource "aws_storagegateway_nfs_file_share" "aws_storagegateway_nfs_file_share_${1:suffix}" {
-	${2:client_list} = "${3:value}"
-	${4:gateway_arn} = "${5:value}"
-	${6:location_arn} = "${7:value}"
-	${8:role_arn} = "${9:value}"
-	${10:default_storage_class} = "${11:value}"
-	${12:guess_mime_type_enabled} = "${13:value}"
-	${14:kms_encrypted} = "${15:value}"
-	${16:kms_key_arn} = "${17:value}"
-	${18:nfs_file_share_defaults} = "${19:value}"
-	${20:object_acl} = "${21:value}"
-	${22:read_only} = "${23:value}"
-	${24:requester_pays} = "${25:value}"
-	${26:squash} = "${27:value}"
+	client_list = "${3:Required}"
+	gateway_arn = "${4:Required}"
+	location_arn = "${5:Required}"
+	role_arn = "${6:Required}"
+	default_storage_class = "${7:Optional}"
+	guess_mime_type_enabled = "${8:Optional}"
+	kms_encrypted = "${9:Optional}"
+	kms_key_arn = "${10:Optional}"
+	nfs_file_share_defaults = "${11:Optional}"
+	object_acl = "${12:Optional}"
+	read_only = "${13:Optional}"
+	requester_pays = "${14:Optional}"
+	squash = "${15:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_storagegateway_nfs_file_share</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

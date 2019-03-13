@@ -1,13 +1,14 @@
 <snippet>
 <content><![CDATA[
 resource "aws_ssm_document resource" "aws_ssm_document resource_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:content} = "${5:value}"
-	${6:document_format} = "${7:value}"
-	${8:document_type} = "${9:value}"
-	${10:permissions} = "${11:value}"
-	${12:tags} = "${13:value}"
+	name = "${3:Required}"
+	content = "${4:Required}"
+	document_format = "${5:Optional}"
+	document_type = "${6:Required}"
+	permissions = "${7:Optional}"
+	tags = "${8:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_ssm_document resource</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

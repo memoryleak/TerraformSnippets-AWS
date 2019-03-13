@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_media_store_container_policy" "aws_media_store_container_policy_${1:suffix}" {
-	${2:container_name} = "${3:value}"
-	${4:policy} = "${5:value}"
+	container_name = "${3:Required}"
+	policy = "${4:Required}"
 }
 ]]></content>
 <tabTrigger>aws_media_store_container_policy</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

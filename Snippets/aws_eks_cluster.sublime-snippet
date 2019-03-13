@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_eks_cluster" "aws_eks_cluster_${1:suffix}" {
-	${2:role_arn} = "${3:value}"
-	${4:vpc_config} = "${5:value}"
+	role_arn = "${3:Required}"
+	vpc_config = "${4:Required}"
 }
 ]]></content>
 <tabTrigger>aws_eks_cluster</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

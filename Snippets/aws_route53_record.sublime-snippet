@@ -1,19 +1,20 @@
 <snippet>
 <content><![CDATA[
 resource "aws_route53_record" "aws_route53_record_${1:suffix}" {
-	${2:zone_id} = "${3:value}"
-	${4:name} = "${5:value}"
-	${6:type} = "${7:value}"
-	${8:set_identifier} = "${9:value}"
-	${10:health_check_id} = "${11:value}"
-	${12:alias} = "${13:value}"
-	${14:failover_routing_policy} = "${15:value}"
-	${16:geolocation_routing_policy} = "${17:value}"
-	${18:latency_routing_policy} = "${19:value}"
-	${20:weighted_routing_policy} = "${21:value}"
-	${22:multivalue_answer_routing_policy} = "${23:value}"
-	${24:allow_overwrite} = "${25:value}"
+	zone_id = "${3:Required}"
+	name = "${4:Required}"
+	type = "${5:Required}"
+	set_identifier = "${6:Optional}"
+	health_check_id = "${7:Optional}"
+	alias = "${8:Optional}"
+	failover_routing_policy = "${9:Optional}"
+	geolocation_routing_policy = "${10:Optional}"
+	latency_routing_policy = "${11:Optional}"
+	weighted_routing_policy = "${12:Optional}"
+	multivalue_answer_routing_policy = "${13:Optional}"
+	allow_overwrite = "${14:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_route53_record</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

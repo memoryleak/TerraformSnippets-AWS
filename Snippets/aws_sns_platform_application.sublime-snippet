@@ -1,17 +1,18 @@
 <snippet>
 <content><![CDATA[
 resource "aws_sns_platform_application" "aws_sns_platform_application_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:platform} = "${5:value}"
-	${6:platform_credential} = "${7:value}"
-	${8:event_delivery_failure_topic_arn} = "${9:value}"
-	${10:event_endpoint_created_topic_arn} = "${11:value}"
-	${12:event_endpoint_deleted_topic_arn} = "${13:value}"
-	${14:event_endpoint_updated_topic_arn} = "${15:value}"
-	${16:failure_feedback_role_arn} = "${17:value}"
-	${18:platform_principal} = "${19:value}"
-	${20:success_feedback_role_arn} = "${21:value}"
+	name = "${3:Required}"
+	platform = "${4:Required}"
+	platform_credential = "${5:Required}"
+	event_delivery_failure_topic_arn = "${6:Optional}"
+	event_endpoint_created_topic_arn = "${7:Optional}"
+	event_endpoint_deleted_topic_arn = "${8:Optional}"
+	event_endpoint_updated_topic_arn = "${9:Optional}"
+	failure_feedback_role_arn = "${10:Optional}"
+	platform_principal = "${11:Optional}"
+	success_feedback_role_arn = "${12:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_sns_platform_application</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

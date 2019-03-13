@@ -1,14 +1,15 @@
 <snippet>
 <content><![CDATA[
 resource "aws_vpc" "aws_vpc_${1:suffix}" {
-	${2:cidr_block} = "${3:value}"
-	${4:instance_tenancy} = "${5:value}"
-	${6:enable_dns_support} = "${7:value}"
-	${8:enable_dns_hostnames} = "${9:value}"
-	${10:enable_classiclink} = "${11:value}"
-	${12:enable_classiclink_dns_support} = "${13:value}"
-	${14:tags} = "${15:value}"
+	cidr_block = "${3:Required}"
+	instance_tenancy = "${4:Optional}"
+	enable_dns_support = "${5:Optional}"
+	enable_dns_hostnames = "${6:Optional}"
+	enable_classiclink = "${7:Optional}"
+	enable_classiclink_dns_support = "${8:Optional}"
+	tags = "${9:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_vpc</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

@@ -1,10 +1,11 @@
 <snippet>
 <content><![CDATA[
 resource "aws_codecommit_repository" "aws_codecommit_repository_${1:suffix}" {
-	${2:repository_name} = "${3:Required}"
-	${4:description} = "${5:Optional}"
-	${6:default_branch} = "${7:Optional}"
+	repository_name = "${3:Required}"
+	description = "${4:Optional}"
+	default_branch = "${5:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_codecommit_repository</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

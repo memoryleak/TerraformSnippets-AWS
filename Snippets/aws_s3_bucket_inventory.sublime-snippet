@@ -1,15 +1,16 @@
 <snippet>
 <content><![CDATA[
 resource "aws_s3_bucket_inventory" "aws_s3_bucket_inventory_${1:suffix}" {
-	${2:bucket} = "${3:value}"
-	${4:name} = "${5:value}"
-	${6:included_object_versions} = "${7:value}"
-	${8:schedule} = "${9:value}"
-	${10:destination} = "${11:value}"
-	${12:enabled} = "${13:value}"
-	${14:filter} = "${15:value}"
-	${16:optional_fields} = "${17:value}"
+	bucket = "${3:Required}"
+	name = "${4:Required}"
+	included_object_versions = "${5:Required}"
+	schedule = "${6:Required}"
+	destination = "${7:Required}"
+	enabled = "${8:Optional}"
+	filter = "${9:Optional}"
+	optional_fields = "${10:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_s3_bucket_inventory</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

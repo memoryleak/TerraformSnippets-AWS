@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_guardduty_detector" "aws_guardduty_detector_${1:suffix}" {
-	${2:enable} = "${3:value}"
-	${4:finding_publishing_frequency} = "${5:value}"
+	enable = "${3:Optional}"
+	finding_publishing_frequency = "${4:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_guardduty_detector</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

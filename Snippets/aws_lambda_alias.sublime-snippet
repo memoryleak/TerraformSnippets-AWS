@@ -1,10 +1,11 @@
 <snippet>
 <content><![CDATA[
 resource "aws_lambda_alias" "aws_lambda_alias_${1:suffix}" {
-	${2:description} = "${3:value}"
-	${4:function_name} = "${5:value}"
-	${6:routing_config} = "${7:value}"
+	description = "${3:Optional}"
+	function_name = "${4:Required}"
+	routing_config = "${5:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_lambda_alias</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

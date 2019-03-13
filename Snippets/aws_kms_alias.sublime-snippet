@@ -1,10 +1,11 @@
 <snippet>
 <content><![CDATA[
 resource "aws_kms_alias" "aws_kms_alias_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:name_prefix} = "${5:value}"
-	${6:target_key_id} = "${7:value}"
+	name = "${3:Optional}"
+	name_prefix = "${4:Optional}"
+	target_key_id = "${5:Required}"
 }
 ]]></content>
 <tabTrigger>aws_kms_alias</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

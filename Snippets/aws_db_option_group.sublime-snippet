@@ -1,14 +1,15 @@
 <snippet>
 <content><![CDATA[
 resource "aws_db_option_group" "aws_db_option_group_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:name_prefix} = "${5:value}"
-	${6:option_group_description} = "${7:value}"
-	${8:engine_name} = "${9:value}"
-	${10:major_engine_version} = "${11:value}"
-	${12:option} = "${13:value}"
-	${14:tags} = "${15:value}"
+	name = "${3:Optional}"
+	name_prefix = "${4:Optional}"
+	option_group_description = "${5:Optional}"
+	engine_name = "${6:Required}"
+	major_engine_version = "${7:Required}"
+	option = "${8:Optional}"
+	tags = "${9:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_db_option_group</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

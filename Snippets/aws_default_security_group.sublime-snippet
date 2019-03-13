@@ -1,11 +1,12 @@
 <snippet>
 <content><![CDATA[
 resource "aws_default_security_group" "aws_default_security_group_${1:suffix}" {
-	${2:ingress} = "${3:value}"
-	${4:egress} = "${5:value}"
-	${6:vpc_id} = "${7:value}"
-	${8:tags} = "${9:value}"
+	ingress = "${3:Optional}"
+	egress = "${4:Optional}"
+	vpc_id = "${5:Optional}"
+	tags = "${6:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_default_security_group</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

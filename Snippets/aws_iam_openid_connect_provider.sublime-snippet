@@ -1,10 +1,11 @@
 <snippet>
 <content><![CDATA[
 resource "aws_iam_openid_connect_provider" "aws_iam_openid_connect_provider_${1:suffix}" {
-	${2:url} = "${3:value}"
-	${4:client_id_list} = "${5:value}"
-	${6:thumbprint_list} = "${7:value}"
+	url = "${3:Required}"
+	client_id_list = "${4:Required}"
+	thumbprint_list = "${5:Required}"
 }
 ]]></content>
 <tabTrigger>aws_iam_openid_connect_provider</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

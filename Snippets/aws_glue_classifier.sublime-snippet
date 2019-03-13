@@ -4,4 +4,5 @@ resource "aws_glue_classifier" "aws_glue_classifier_${1:suffix}" {
 }
 ]]></content>
 <tabTrigger>aws_glue_classifier</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

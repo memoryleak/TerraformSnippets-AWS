@@ -1,12 +1,13 @@
 <snippet>
 <content><![CDATA[
 resource "aws_batch_compute_environment" "aws_batch_compute_environment_${1:suffix}" {
-	${2:compute_environment_name} = "${3:Required}"
-	${4:compute_resources} = "${5:Optional}"
-	${6:service_role} = "${7:Required}"
-	${8:state} = "${9:Optional}"
-	${10:type} = "${11:Required}"
+	compute_environment_name = "${3:Required}"
+	compute_resources = "${4:Optional}"
+	service_role = "${5:Required}"
+	state = "${6:Optional}"
+	type = "${7:Required}"
 }
 ]]></content>
 <tabTrigger>aws_batch_compute_environment</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

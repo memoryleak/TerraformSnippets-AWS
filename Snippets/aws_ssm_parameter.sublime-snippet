@@ -1,15 +1,16 @@
 <snippet>
 <content><![CDATA[
 resource "aws_ssm_parameter" "aws_ssm_parameter_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:type} = "${5:value}"
-	${6:value} = "${7:value}"
-	${8:description} = "${9:value}"
-	${10:key_id} = "${11:value}"
-	${12:overwrite} = "${13:value}"
-	${14:allowed_pattern} = "${15:value}"
-	${16:tags} = "${17:value}"
+	name = "${3:Required}"
+	type = "${4:Required}"
+	value = "${5:Required}"
+	description = "${6:Optional}"
+	key_id = "${7:Optional}"
+	overwrite = "${8:Optional}"
+	allowed_pattern = "${9:Optional}"
+	tags = "${10:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_ssm_parameter</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_elasticsearch_domain_policy" "aws_elasticsearch_domain_policy_${1:suffix}" {
-	${2:domain_name} = "${3:value}"
-	${4:access_policies} = "${5:value}"
+	domain_name = "${3:Required}"
+	access_policies = "${4:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_elasticsearch_domain_policy</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

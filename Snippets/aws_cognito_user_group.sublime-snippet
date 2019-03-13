@@ -1,12 +1,13 @@
 <snippet>
 <content><![CDATA[
 resource "aws_cognito_user_group" "aws_cognito_user_group_${1:suffix}" {
-	${2:name} = "${3:Required}"
-	${4:user_pool_id} = "${5:Required}"
-	${6:description} = "${7:Optional}"
-	${8:precedence} = "${9:Optional}"
-	${10:role_arn} = "${11:Optional}"
+	name = "${3:Required}"
+	user_pool_id = "${4:Required}"
+	description = "${5:Optional}"
+	precedence = "${6:Optional}"
+	role_arn = "${7:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_cognito_user_group</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

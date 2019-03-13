@@ -1,13 +1,14 @@
 <snippet>
 <content><![CDATA[
 resource "aws_cloud9_environment_ec2" "aws_cloud9_environment_ec2_${1:suffix}" {
-	${2:name} = "${3:Required}"
-	${4:instance_type} = "${5:Required}"
-	${6:automatic_stop_time_minutes} = "${7:Optional}"
-	${8:description} = "${9:Optional}"
-	${10:owner_arn} = "${11:Optional}"
-	${12:subnet_id} = "${13:Optional}"
+	name = "${3:Required}"
+	instance_type = "${4:Required}"
+	automatic_stop_time_minutes = "${5:Optional}"
+	description = "${6:Optional}"
+	owner_arn = "${7:Optional}"
+	subnet_id = "${8:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_cloud9_environment_ec2</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

@@ -1,10 +1,11 @@
 <snippet>
 <content><![CDATA[
 resource "aws_customer_gateway" "aws_customer_gateway_${1:suffix}" {
-	${2:bgp_asn} = "${3:value}"
-	${4:type} = "${5:value}"
-	${6:tags} = "${7:value}"
+	bgp_asn = "${3:Required}"
+	type = "${4:Required}"
+	tags = "${5:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_customer_gateway</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

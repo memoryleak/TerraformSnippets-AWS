@@ -1,13 +1,14 @@
 <snippet>
 <content><![CDATA[
 resource "aws_eip" "aws_eip_${1:suffix}" {
-	${2:vpc} = "${3:value}"
-	${4:instance} = "${5:value}"
-	${6:network_interface} = "${7:value}"
-	${8:associate_with_private_ip} = "${9:value}"
-	${10:tags} = "${11:value}"
-	${12:public_ipv4_pool} = "${13:value}"
+	vpc = "${3:Optional}"
+	instance = "${4:Optional}"
+	network_interface = "${5:Optional}"
+	associate_with_private_ip = "${6:Optional}"
+	tags = "${7:Optional}"
+	public_ipv4_pool = "${8:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_eip</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

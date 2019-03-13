@@ -1,10 +1,11 @@
 <snippet>
 <content><![CDATA[
 resource "aws_glacier_vault" "aws_glacier_vault_${1:suffix}" {
-	${2:access_policy} = "${3:value}"
-	${4:notification} = "${5:value}"
-	${6:tags} = "${7:value}"
+	access_policy = "${3:Optional}"
+	notification = "${4:Optional}"
+	tags = "${5:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_glacier_vault</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

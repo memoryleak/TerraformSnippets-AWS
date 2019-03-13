@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_cloudwatch_log_destination_policy" "aws_cloudwatch_log_destination_policy_${1:suffix}" {
-	${2:destination_name} = "${3:Required}"
-	${4:access_policy} = "${5:Required}"
+	destination_name = "${3:Required}"
+	access_policy = "${4:Required}"
 }
 ]]></content>
 <tabTrigger>aws_cloudwatch_log_destination_policy</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

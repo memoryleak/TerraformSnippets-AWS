@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_cloudwatch_dashboard" "aws_cloudwatch_dashboard_${1:suffix}" {
-	${2:dashboard_name} = "${3:Required}"
-	${4:dashboard_body} = "${5:Required}"
+	dashboard_name = "${3:Required}"
+	dashboard_body = "${4:Required}"
 }
 ]]></content>
 <tabTrigger>aws_cloudwatch_dashboard</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

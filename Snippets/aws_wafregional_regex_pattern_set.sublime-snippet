@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_wafregional_regex_pattern_set" "aws_wafregional_regex_pattern_set_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:regex_pattern_strings} = "${5:value}"
+	name = "${3:Required}"
+	regex_pattern_strings = "${4:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_wafregional_regex_pattern_set</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

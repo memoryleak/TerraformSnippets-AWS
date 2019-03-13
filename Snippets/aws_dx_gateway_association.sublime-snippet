@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_dx_gateway_association" "aws_dx_gateway_association_${1:suffix}" {
-	${2:dx_gateway_id} = "${3:Required}"
-	${4:vpn_gateway_id} = "${5:Required}"
+	dx_gateway_id = "${3:Required}"
+	vpn_gateway_id = "${4:Required}"
 }
 ]]></content>
 <tabTrigger>aws_dx_gateway_association</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

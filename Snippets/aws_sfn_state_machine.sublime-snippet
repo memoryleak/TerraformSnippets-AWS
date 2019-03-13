@@ -1,10 +1,11 @@
 <snippet>
 <content><![CDATA[
 resource "aws_sfn_state_machine" "aws_sfn_state_machine_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:definition} = "${5:value}"
-	${6:role_arn} = "${7:value}"
+	name = "${3:Required}"
+	definition = "${4:Required}"
+	role_arn = "${5:Required}"
 }
 ]]></content>
 <tabTrigger>aws_sfn_state_machine</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

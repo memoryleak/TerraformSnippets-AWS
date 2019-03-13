@@ -1,12 +1,13 @@
 <snippet>
 <content><![CDATA[
 resource "aws_pinpoint_app" "aws_pinpoint_app_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:name_prefix} = "${5:value}"
-	${6:campaign_hook} = "${7:value}"
-	${8:limits} = "${9:value}"
-	${10:quiet_time} = "${11:value}"
+	name = "${3:Optional}"
+	name_prefix = "${4:Optional}"
+	campaign_hook = "${5:Optional}"
+	limits = "${6:Optional}"
+	quiet_time = "${7:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_pinpoint_app</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

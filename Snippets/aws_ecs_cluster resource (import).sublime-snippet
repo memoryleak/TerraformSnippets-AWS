@@ -1,8 +1,9 @@
 <snippet>
 <content><![CDATA[
 resource "aws_ecs_cluster resource (import)" "aws_ecs_cluster resource (import)_${1:suffix}" {
-	${2:name} = "${3:value}"
+	name = "${3:Required}"
 }
 ]]></content>
 <tabTrigger>aws_ecs_cluster resource (import)</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

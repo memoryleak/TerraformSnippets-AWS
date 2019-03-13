@@ -1,10 +1,11 @@
 <snippet>
 <content><![CDATA[
 resource "aws_dms_certificate" "aws_dms_certificate_${1:suffix}" {
-	${2:certificate_id} = "${3:Required}"
-	${4:certificate_pem} = "${5:Optional}"
-	${6:certificate_wallet} = "${7:Optional}"
+	certificate_id = "${3:Required}"
+	certificate_pem = "${4:Optional}"
+	certificate_wallet = "${5:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_dms_certificate</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

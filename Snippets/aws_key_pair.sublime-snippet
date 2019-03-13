@@ -4,4 +4,5 @@ resource "aws_key_pair" "aws_key_pair_${1:suffix}" {
 }
 ]]></content>
 <tabTrigger>aws_key_pair</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

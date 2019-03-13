@@ -1,10 +1,11 @@
 <snippet>
 <content><![CDATA[
 resource "aws_directory_service_conditional_forwarder" "aws_directory_service_conditional_forwarder_${1:suffix}" {
-	${2:directory_id} = "${3:Required}"
-	${4:dns_ips} = "${5:Required}"
-	${6:remote_domain_name} = "${7:Required}"
+	directory_id = "${3:Required}"
+	dns_ips = "${4:Required}"
+	remote_domain_name = "${5:Required}"
 }
 ]]></content>
 <tabTrigger>aws_directory_service_conditional_forwarder</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

@@ -1,8 +1,9 @@
 <snippet>
 <content><![CDATA[
 resource "aws_api_gateway_account" "aws_api_gateway_account_${1:suffix}" {
-	${2:cloudwatch_role_arn} = "${3:Optional}"
+	cloudwatch_role_arn = "${3:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_api_gateway_account</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

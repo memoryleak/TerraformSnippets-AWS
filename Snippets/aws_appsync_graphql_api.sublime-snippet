@@ -1,11 +1,12 @@
 <snippet>
 <content><![CDATA[
 resource "aws_appsync_graphql_api" "aws_appsync_graphql_api_${1:suffix}" {
-	${2:authentication_type} = "${3:Required}"
-	${4:log_config} = "${5:Optional}"
-	${6:openid_connect_config} = "${7:Optional}"
-	${8:user_pool_config} = "${9:Optional}"
+	authentication_type = "${3:Required}"
+	log_config = "${4:Optional}"
+	openid_connect_config = "${5:Optional}"
+	user_pool_config = "${6:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_appsync_graphql_api</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

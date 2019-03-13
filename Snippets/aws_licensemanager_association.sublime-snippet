@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_licensemanager_association" "aws_licensemanager_association_${1:suffix}" {
-	${2:license_configuration_arn} = "${3:value}"
-	${4:resource_arn} = "${5:value}"
+	license_configuration_arn = "${3:Required}"
+	resource_arn = "${4:Required}"
 }
 ]]></content>
 <tabTrigger>aws_licensemanager_association</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

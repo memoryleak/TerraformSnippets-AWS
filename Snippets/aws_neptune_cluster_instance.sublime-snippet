@@ -1,22 +1,23 @@
 <snippet>
 <content><![CDATA[
 resource "aws_neptune_cluster_instance" "aws_neptune_cluster_instance_${1:suffix}" {
-	${2:apply_immediately} = "${3:value}"
-	${4:auto_minor_version_upgrade} = "${5:value}"
-	${6:availability_zone} = "${7:value}"
-	${8:cluster_identifier} = "${9:value}"
-	${10:engine} = "${11:value}"
-	${12:engine_version} = "${13:value}"
-	${14:identifier} = "${15:value}"
-	${16:identifier_prefix} = "${17:value}"
-	${18:instance_class} = "${19:value}"
-	${20:neptune_subnet_group_name} = "${21:value}"
-	${22:neptune_parameter_group_name} = "${23:value}"
-	${24:port} = "${25:value}"
-	${26:promotion_tier} = "${27:value}"
-	${28:publicly_accessible} = "${29:value}"
-	${30:tags} = "${31:value}"
+	apply_immediately = "${3:Optional}"
+	auto_minor_version_upgrade = "${4:Optional}"
+	availability_zone = "${5:Optional}"
+	cluster_identifier = "${6:Required}"
+	engine = "${7:Optional}"
+	engine_version = "${8:Optional}"
+	identifier = "${9:Optional}"
+	identifier_prefix = "${10:Optional}"
+	instance_class = "${11:Required}"
+	neptune_subnet_group_name = "${12:Optional}"
+	neptune_parameter_group_name = "${13:Optional}"
+	port = "${14:Optional}"
+	promotion_tier = "${15:Optional}"
+	publicly_accessible = "${16:Optional}"
+	tags = "${17:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_neptune_cluster_instance</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

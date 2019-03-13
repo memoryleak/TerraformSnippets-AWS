@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_cognito_user_pool_domain" "aws_cognito_user_pool_domain_${1:suffix}" {
-	${2:domain} = "${3:Required}"
-	${4:user_pool_id} = "${5:Required}"
+	domain = "${3:Required}"
+	user_pool_id = "${4:Required}"
 }
 ]]></content>
 <tabTrigger>aws_cognito_user_pool_domain</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

@@ -1,11 +1,12 @@
 <snippet>
 <content><![CDATA[
 resource "aws_load_balancer_policy" "aws_load_balancer_policy_${1:suffix}" {
-	${2:load_balancer_name} = "${3:value}"
-	${4:policy_name} = "${5:value}"
-	${6:policy_type_name} = "${7:value}"
-	${8:policy_attribute} = "${9:value}"
+	load_balancer_name = "${3:Required}"
+	policy_name = "${4:Required}"
+	policy_type_name = "${5:Required}"
+	policy_attribute = "${6:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_load_balancer_policy</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

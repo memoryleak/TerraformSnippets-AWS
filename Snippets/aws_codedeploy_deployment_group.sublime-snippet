@@ -1,21 +1,22 @@
 <snippet>
 <content><![CDATA[
 resource "aws_codedeploy_deployment_group" "aws_codedeploy_deployment_group_${1:suffix}" {
-	${2:app_name} = "${3:Required}"
-	${4:deployment_group_name} = "${5:Required}"
-	${6:service_role_arn} = "${7:Required}"
-	${8:alarm_configuration} = "${9:Optional}"
-	${10:auto_rollback_configuration} = "${11:Optional}"
-	${12:autoscaling_groups} = "${13:Optional}"
-	${14:blue_green_deployment_config} = "${15:Optional}"
-	${16:deployment_config_name} = "${17:Optional}"
-	${18:ec2_tag_filter} = "${19:Optional}"
-	${20:ec2_tag_set} = "${21:Optional}"
-	${22:ecs_service} = "${23:Optional}"
-	${24:load_balancer_info} = "${25:Optional}"
-	${26:on_premises_instance_tag_filter} = "${27:Optional}"
-	${28:trigger_configuration} = "${29:Optional}"
+	app_name = "${3:Required}"
+	deployment_group_name = "${4:Required}"
+	service_role_arn = "${5:Required}"
+	alarm_configuration = "${6:Optional}"
+	auto_rollback_configuration = "${7:Optional}"
+	autoscaling_groups = "${8:Optional}"
+	blue_green_deployment_config = "${9:Optional}"
+	deployment_config_name = "${10:Optional}"
+	ec2_tag_filter = "${11:Optional}"
+	ec2_tag_set = "${12:Optional}"
+	ecs_service = "${13:Optional}"
+	load_balancer_info = "${14:Optional}"
+	on_premises_instance_tag_filter = "${15:Optional}"
+	trigger_configuration = "${16:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_codedeploy_deployment_group</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

@@ -1,25 +1,26 @@
 <snippet>
 <content><![CDATA[
 resource "aws_dynamodb_table" "aws_dynamodb_table_${1:suffix}" {
-	${2:name} = "${3:Required}"
-	${4:billing_mode} = "${5:Optional}"
-	${6:hash_key} = "${7:Required}"
-	${8:range_key} = "${9:Optional}"
-	${10:write_capacity} = "${11:Optional}"
-	${12:read_capacity} = "${13:Optional}"
-	${14:attribute} = "${15:Required}"
-	${16:name} = "${17:Required}"
-	${18:type} = "${19:Required}"
-	${20:ttl} = "${21:Optional}"
-	${22:enabled} = "${23:Required}"
-	${24:attribute_name} = "${25:Required}"
-	${26:local_secondary_index} = "${27:Optional}"
-	${28:global_secondary_index} = "${29:Optional}"
-	${30:stream_enabled} = "${31:Optional}"
-	${32:stream_view_type} = "${33:Optional}"
-	${34:server_side_encryption} = "${35:Optional}"
-	${36:tags} = "${37:Optional}"
+	name = "${3:Required}"
+	billing_mode = "${4:Optional}"
+	hash_key = "${5:Required}"
+	range_key = "${6:Optional}"
+	write_capacity = "${7:Optional}"
+	read_capacity = "${8:Optional}"
+	attribute = "${9:Required}"
+	name = "${10:Required}"
+	type = "${11:Required}"
+	ttl = "${12:Optional}"
+	enabled = "${13:Required}"
+	attribute_name = "${14:Required}"
+	local_secondary_index = "${15:Optional}"
+	global_secondary_index = "${16:Optional}"
+	stream_enabled = "${17:Optional}"
+	stream_view_type = "${18:Optional}"
+	server_side_encryption = "${19:Optional}"
+	tags = "${20:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_dynamodb_table</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

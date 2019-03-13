@@ -1,8 +1,9 @@
 <snippet>
 <content><![CDATA[
 resource "aws_emr_instance_group" "aws_emr_instance_group_${1:suffix}" {
-	${2:ebs_optimized (Optional) Indicates whether an Amazon EBS volume is EBS} = "${3:value}"
+	ebs_optimized (Optional) Indicates whether an Amazon EBS volume is EBS = "${3:Required}"
 }
 ]]></content>
 <tabTrigger>aws_emr_instance_group</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_transfer_ssh_key" "aws_transfer_ssh_key_${1:suffix}" {
-	${2:user_name} = "${3:value}"
-	${4:body} = "${5:value}"
+	user_name = "${3:Required}"
+	body = "${4:Required}"
 }
 ]]></content>
 <tabTrigger>aws_transfer_ssh_key</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

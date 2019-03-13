@@ -1,22 +1,23 @@
 <snippet>
 <content><![CDATA[
 resource "aws_dms_replication_instance" "aws_dms_replication_instance_${1:suffix}" {
-	${2:allocated_storage} = "${3:Optional}"
-	${4:apply_immediately} = "${5:Optional}"
-	${6:auto_minor_version_upgrade} = "${7:Optional}"
-	${8:availability_zone} = "${9:Optional}"
-	${10:engine_version} = "${11:Optional}"
-	${12:kms_key_arn} = "${13:Optional}"
-	${14:preferred_maintenance_window} = "${15:Optional}"
-	${16:Format: ddd:hh24:mi} = "${17:Required}"
-	${18:Constraints: Minimum 30} = "${19:Required}"
-	${20:publicly_accessible} = "${21:Optional}"
-	${22:replication_instance_class} = "${23:Required}"
-	${24:replication_instance_id} = "${25:Required}"
-	${26:replication_subnet_group_id} = "${27:Optional}"
-	${28:tags} = "${29:Optional}"
-	${30:vpc_security_group_ids} = "${31:Optional}"
+	allocated_storage = "${3:Optional}"
+	apply_immediately = "${4:Optional}"
+	auto_minor_version_upgrade = "${5:Optional}"
+	availability_zone = "${6:Optional}"
+	engine_version = "${7:Optional}"
+	kms_key_arn = "${8:Optional}"
+	preferred_maintenance_window = "${9:Optional}"
+	Format: ddd:hh24:mi = "${10:Required}"
+	Constraints: Minimum 30 = "${11:Required}"
+	publicly_accessible = "${12:Optional}"
+	replication_instance_class = "${13:Required}"
+	replication_instance_id = "${14:Required}"
+	replication_subnet_group_id = "${15:Optional}"
+	tags = "${16:Optional}"
+	vpc_security_group_ids = "${17:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_dms_replication_instance</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

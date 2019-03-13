@@ -1,11 +1,12 @@
 <snippet>
 <content><![CDATA[
 resource "aws_opsworks_user_profile" "aws_opsworks_user_profile_${1:suffix}" {
-	${2:user_arn} = "${3:value}"
-	${4:allow_self_management} = "${5:value}"
-	${6:ssh_username} = "${7:value}"
-	${8:ssh_public_key} = "${9:value}"
+	user_arn = "${3:Required}"
+	allow_self_management = "${4:Optional}"
+	ssh_username = "${5:Required}"
+	ssh_public_key = "${6:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_opsworks_user_profile</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

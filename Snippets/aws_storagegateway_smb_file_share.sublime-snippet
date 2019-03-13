@@ -1,21 +1,22 @@
 <snippet>
 <content><![CDATA[
 resource "aws_storagegateway_smb_file_share" "aws_storagegateway_smb_file_share_${1:suffix}" {
-	${2:gateway_arn} = "${3:value}"
-	${4:location_arn} = "${5:value}"
-	${6:role_arn} = "${7:value}"
-	${8:authentication} = "${9:value}"
-	${10:default_storage_class} = "${11:value}"
-	${12:guess_mime_type_enabled} = "${13:value}"
-	${14:invalid_user_list} = "${15:value}"
-	${16:kms_encrypted} = "${17:value}"
-	${18:kms_key_arn} = "${19:value}"
-	${20:smb_file_share_defaults} = "${21:value}"
-	${22:object_acl} = "${23:value}"
-	${24:read_only} = "${25:value}"
-	${26:requester_pays} = "${27:value}"
-	${28:valid_user_list} = "${29:value}"
+	gateway_arn = "${3:Required}"
+	location_arn = "${4:Required}"
+	role_arn = "${5:Required}"
+	authentication = "${6:Optional}"
+	default_storage_class = "${7:Optional}"
+	guess_mime_type_enabled = "${8:Optional}"
+	invalid_user_list = "${9:Optional}"
+	kms_encrypted = "${10:Optional}"
+	kms_key_arn = "${11:Optional}"
+	smb_file_share_defaults = "${12:Optional}"
+	object_acl = "${13:Optional}"
+	read_only = "${14:Optional}"
+	requester_pays = "${15:Optional}"
+	valid_user_list = "${16:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_storagegateway_smb_file_share</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

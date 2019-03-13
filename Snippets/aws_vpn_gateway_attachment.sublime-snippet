@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_vpn_gateway_attachment" "aws_vpn_gateway_attachment_${1:suffix}" {
-	${2:vpc_id} = "${3:value}"
-	${4:vpn_gateway_id} = "${5:value}"
+	vpc_id = "${3:Required}"
+	vpn_gateway_id = "${4:Required}"
 }
 ]]></content>
 <tabTrigger>aws_vpn_gateway_attachment</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

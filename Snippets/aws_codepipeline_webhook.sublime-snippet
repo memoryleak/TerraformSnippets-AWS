@@ -1,12 +1,13 @@
 <snippet>
 <content><![CDATA[
 resource "aws_codepipeline_webhook" "aws_codepipeline_webhook_${1:suffix}" {
-	${2:name} = "${3:Required}"
-	${4:authentication} = "${5:Required}"
-	${6:authentication_configuration} = "${7:Optional}"
-	${8:target_action} = "${9:Required}"
-	${10:target_pipeline} = "${11:Required}"
+	name = "${3:Required}"
+	authentication = "${4:Required}"
+	authentication_configuration = "${5:Optional}"
+	target_action = "${6:Required}"
+	target_pipeline = "${7:Required}"
 }
 ]]></content>
 <tabTrigger>aws_codepipeline_webhook</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

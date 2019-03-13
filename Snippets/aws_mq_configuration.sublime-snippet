@@ -1,13 +1,14 @@
 <snippet>
 <content><![CDATA[
 resource "aws_mq_configuration" "aws_mq_configuration_${1:suffix}" {
-	${2:data} = "${3:value}"
-	${4:description} = "${5:value}"
-	${6:engine_type} = "${7:value}"
-	${8:engine_version} = "${9:value}"
-	${10:name} = "${11:value}"
-	${12:tags} = "${13:value}"
+	data = "${3:Required}"
+	description = "${4:Optional}"
+	engine_type = "${5:Required}"
+	engine_version = "${6:Required}"
+	name = "${7:Required}"
+	tags = "${8:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_mq_configuration</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

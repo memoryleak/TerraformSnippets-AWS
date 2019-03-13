@@ -1,18 +1,19 @@
 <snippet>
 <content><![CDATA[
 resource "aws_s3_bucket_object" "aws_s3_bucket_object_${1:suffix}" {
-	${2:bucket} = "${3:value}"
-	${4:key} = "${5:value}"
-	${6:source} = "${7:value}"
-	${8:acl} = "${9:value}"
-	${10:cache_control} = "${11:value}"
-	${12:content_disposition} = "${13:value}"
-	${14:website_redirect} = "${15:value}"
-	${16:storage_class} = "${17:value}"
-	${18:etag} = "${19:value}"
-	${20:kms_key_id} = "${21:value}"
-	${22:tags} = "${23:value}"
+	bucket = "${3:Required}"
+	key = "${4:Required}"
+	source = "${5:Required}"
+	acl = "${6:Optional}"
+	cache_control = "${7:Optional}"
+	content_disposition = "${8:Optional}"
+	website_redirect = "${9:Optional}"
+	storage_class = "${10:Optional}"
+	etag = "${11:Optional}"
+	kms_key_id = "${12:Optional}"
+	tags = "${13:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_s3_bucket_object</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

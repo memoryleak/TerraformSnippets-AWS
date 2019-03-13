@@ -1,12 +1,13 @@
 <snippet>
 <content><![CDATA[
 resource "aws_db_subnet_group" "aws_db_subnet_group_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:name_prefix} = "${5:value}"
-	${6:description} = "${7:value}"
-	${8:subnet_ids} = "${9:value}"
-	${10:tags} = "${11:value}"
+	name = "${3:Optional}"
+	name_prefix = "${4:Optional}"
+	description = "${5:Optional}"
+	subnet_ids = "${6:Required}"
+	tags = "${7:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_db_subnet_group</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

@@ -4,4 +4,5 @@ resource "aws_elasticache_subnet_group" "aws_elasticache_subnet_group_${1:suffix
 }
 ]]></content>
 <tabTrigger>aws_elasticache_subnet_group</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

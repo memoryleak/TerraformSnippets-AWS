@@ -1,13 +1,14 @@
 <snippet>
 <content><![CDATA[
 resource "aws_lb_ssl_negotiation_policy" "aws_lb_ssl_negotiation_policy_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:load_balancer} = "${5:value}"
-	${6:lb_port} = "${7:value}"
-	${8:attribute} = "${9:value}"
-	${10:name} = "${11:value}"
-	${12:value} = "${13:value}"
+	name = "${3:Required}"
+	load_balancer = "${4:Required}"
+	lb_port = "${5:Required}"
+	attribute = "${6:Optional}"
+	name = "${7:Required}"
+	value = "${8:Required}"
 }
 ]]></content>
 <tabTrigger>aws_lb_ssl_negotiation_policy</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

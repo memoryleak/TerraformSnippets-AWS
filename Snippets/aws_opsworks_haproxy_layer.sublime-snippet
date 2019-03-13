@@ -1,25 +1,26 @@
 <snippet>
 <content><![CDATA[
 resource "aws_opsworks_haproxy_layer" "aws_opsworks_haproxy_layer_${1:suffix}" {
-	${2:stack_id} = "${3:value}"
-	${4:stats_password} = "${5:value}"
-	${6:auto_assign_elastic_ips} = "${7:value}"
-	${8:auto_assign_public_ips} = "${9:value}"
-	${10:custom_instance_profile_arn} = "${11:value}"
-	${12:custom_security_group_ids} = "${13:value}"
-	${14:healthcheck_method} = "${15:value}"
-	${16:healthcheck_url} = "${17:value}"
-	${18:install_updates_on_boot} = "${19:value}"
-	${20:instance_shutdown_timeout} = "${21:value}"
-	${22:elastic_load_balancer} = "${23:value}"
-	${24:drain_elb_on_shutdown} = "${25:value}"
-	${26:stats_enabled} = "${27:value}"
-	${28:stats_url} = "${29:value}"
-	${30:stats_user} = "${31:value}"
-	${32:system_packages} = "${33:value}"
-	${34:ebs_volume} = "${35:value}"
-	${36:custom_json} = "${37:value}"
+	stack_id = "${3:Required}"
+	stats_password = "${4:Required}"
+	auto_assign_elastic_ips = "${5:Optional}"
+	auto_assign_public_ips = "${6:Optional}"
+	custom_instance_profile_arn = "${7:Optional}"
+	custom_security_group_ids = "${8:Optional}"
+	healthcheck_method = "${9:Optional}"
+	healthcheck_url = "${10:Optional}"
+	install_updates_on_boot = "${11:Optional}"
+	instance_shutdown_timeout = "${12:Optional}"
+	elastic_load_balancer = "${13:Optional}"
+	drain_elb_on_shutdown = "${14:Optional}"
+	stats_enabled = "${15:Optional}"
+	stats_url = "${16:Optional}"
+	stats_user = "${17:Optional}"
+	system_packages = "${18:Optional}"
+	ebs_volume = "${19:Optional}"
+	custom_json = "${20:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_opsworks_haproxy_layer</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

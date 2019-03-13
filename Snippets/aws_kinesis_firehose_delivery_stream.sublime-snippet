@@ -1,12 +1,13 @@
 <snippet>
 <content><![CDATA[
 resource "aws_kinesis_firehose_delivery_stream" "aws_kinesis_firehose_delivery_stream_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:tags} = "${5:value}"
-	${6:kinesis_source_configuration} = "${7:value}"
-	${8:extended_s3_configuration} = "${9:value}"
-	${10:redshift_configuration} = "${11:value}"
+	name = "${3:Required}"
+	tags = "${4:Optional}"
+	kinesis_source_configuration = "${5:Optional}"
+	extended_s3_configuration = "${6:Optional}"
+	redshift_configuration = "${7:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_kinesis_firehose_delivery_stream</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

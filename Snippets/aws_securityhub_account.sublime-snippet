@@ -1,8 +1,9 @@
 <snippet>
 <content><![CDATA[
 resource "aws_securityhub_account" "aws_securityhub_account_${1:suffix}" {
-	${2:id} = "${3:value}"
+	id = "${3:Required}"
 }
 ]]></content>
 <tabTrigger>aws_securityhub_account</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

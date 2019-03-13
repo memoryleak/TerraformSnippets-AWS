@@ -20,3 +20,5 @@ for resource in terraformResources:
     resource.parse()
     with open('Snippets/' + resource.name + ".sublime-snippet", 'w') as src:
         src.write(resource.get_snippet())
+
+    print(resource.name)

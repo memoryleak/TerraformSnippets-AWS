@@ -1,11 +1,12 @@
 <snippet>
 <content><![CDATA[
 resource "aws_dlm_lifecycle_policy" "aws_dlm_lifecycle_policy_${1:suffix}" {
-	${2:description} = "${3:Required}"
-	${4:execution_role_arn} = "${5:Required}"
-	${6:policy_details} = "${7:Required}"
-	${8:state} = "${9:Optional}"
+	description = "${3:Required}"
+	execution_role_arn = "${4:Required}"
+	policy_details = "${5:Required}"
+	state = "${6:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_dlm_lifecycle_policy</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

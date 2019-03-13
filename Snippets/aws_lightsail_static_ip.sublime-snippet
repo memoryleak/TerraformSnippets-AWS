@@ -1,8 +1,9 @@
 <snippet>
 <content><![CDATA[
 resource "aws_lightsail_static_ip" "aws_lightsail_static_ip_${1:suffix}" {
-	${2:name} = "${3:value}"
+	name = "${3:Required}"
 }
 ]]></content>
 <tabTrigger>aws_lightsail_static_ip</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

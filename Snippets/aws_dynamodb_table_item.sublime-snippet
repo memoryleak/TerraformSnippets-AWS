@@ -1,10 +1,11 @@
 <snippet>
 <content><![CDATA[
 resource "aws_dynamodb_table_item" "aws_dynamodb_table_item_${1:suffix}" {
-	${2:table_name} = "${3:Required}"
-	${4:hash_key} = "${5:Required}"
-	${6:range_key} = "${7:Optional}"
+	table_name = "${3:Required}"
+	hash_key = "${4:Required}"
+	range_key = "${5:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_dynamodb_table_item</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

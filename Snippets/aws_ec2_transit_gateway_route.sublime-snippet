@@ -1,10 +1,11 @@
 <snippet>
 <content><![CDATA[
 resource "aws_ec2_transit_gateway_route" "aws_ec2_transit_gateway_route_${1:suffix}" {
-	${2:destination_cidr_block} = "${3:value}"
-	${4:transit_gateway_attachment_id} = "${5:value}"
-	${6:transit_gateway_route_table_id} = "${7:value}"
+	destination_cidr_block = "${3:Required}"
+	transit_gateway_attachment_id = "${4:Required}"
+	transit_gateway_route_table_id = "${5:Required}"
 }
 ]]></content>
 <tabTrigger>aws_ec2_transit_gateway_route</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

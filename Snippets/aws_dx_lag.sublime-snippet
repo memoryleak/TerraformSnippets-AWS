@@ -1,12 +1,13 @@
 <snippet>
 <content><![CDATA[
 resource "aws_dx_lag" "aws_dx_lag_${1:suffix}" {
-	${2:name} = "${3:Required}"
-	${4:connections_bandwidth} = "${5:Required}"
-	${6:location} = "${7:Required}"
-	${8:force_destroy} = "${9:Optional}"
-	${10:tags} = "${11:Optional}"
+	name = "${3:Required}"
+	connections_bandwidth = "${4:Required}"
+	location = "${5:Required}"
+	force_destroy = "${6:Optional}"
+	tags = "${7:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_dx_lag</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

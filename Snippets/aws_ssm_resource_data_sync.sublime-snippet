@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_ssm_resource_data_sync" "aws_ssm_resource_data_sync_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:s3_destination} = "${5:value}"
+	name = "${3:Required}"
+	s3_destination = "${4:Required}"
 }
 ]]></content>
 <tabTrigger>aws_ssm_resource_data_sync</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

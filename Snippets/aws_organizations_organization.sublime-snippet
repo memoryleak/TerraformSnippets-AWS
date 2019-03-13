@@ -1,8 +1,9 @@
 <snippet>
 <content><![CDATA[
 resource "aws_organizations_organization" "aws_organizations_organization_${1:suffix}" {
-	${2:feature_set} = "${3:value}"
+	feature_set = "${3:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_organizations_organization</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

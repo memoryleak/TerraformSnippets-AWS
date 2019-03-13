@@ -1,27 +1,28 @@
 <snippet>
 <content><![CDATA[
 resource "aws_neptune_cluster" "aws_neptune_cluster_${1:suffix}" {
-	${2:apply_immediately} = "${3:value}"
-	${4:availability_zones} = "${5:value}"
-	${6:backup_retention_period} = "${7:value}"
-	${8:cluster_identifier} = "${9:value}"
-	${10:cluster_identifier_prefix} = "${11:value}"
-	${12:engine} = "${13:value}"
-	${14:engine_version} = "${15:value}"
-	${16:final_snapshot_identifier} = "${17:value}"
-	${18:iam_roles} = "${19:value}"
-	${20:iam_database_authentication_enabled} = "${21:value}"
-	${22:kms_key_arn} = "${23:value}"
-	${24:neptune_subnet_group_name} = "${25:value}"
-	${26:neptune_cluster_parameter_group_name} = "${27:value}"
-	${28:port} = "${29:value}"
-	${30:replication_source_identifier} = "${31:value}"
-	${32:skip_final_snapshot} = "${33:value}"
-	${34:snapshot_identifier} = "${35:value}"
-	${36:storage_encrypted} = "${37:value}"
-	${38:tags} = "${39:value}"
-	${40:vpc_security_group_ids} = "${41:value}"
+	apply_immediately = "${3:Optional}"
+	availability_zones = "${4:Optional}"
+	backup_retention_period = "${5:Optional}"
+	cluster_identifier = "${6:Optional}"
+	cluster_identifier_prefix = "${7:Optional}"
+	engine = "${8:Optional}"
+	engine_version = "${9:Optional}"
+	final_snapshot_identifier = "${10:Optional}"
+	iam_roles = "${11:Optional}"
+	iam_database_authentication_enabled = "${12:Optional}"
+	kms_key_arn = "${13:Optional}"
+	neptune_subnet_group_name = "${14:Optional}"
+	neptune_cluster_parameter_group_name = "${15:Optional}"
+	port = "${16:Optional}"
+	replication_source_identifier = "${17:Optional}"
+	skip_final_snapshot = "${18:Optional}"
+	snapshot_identifier = "${19:Optional}"
+	storage_encrypted = "${20:Optional}"
+	tags = "${21:Optional}"
+	vpc_security_group_ids = "${22:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_neptune_cluster</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

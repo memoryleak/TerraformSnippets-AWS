@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_spot_datafeed_subscription" "aws_spot_datafeed_subscription_${1:suffix}" {
-	${2:bucket} = "${3:value}"
-	${4:prefix} = "${5:value}"
+	bucket = "${3:Required}"
+	prefix = "${4:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_spot_datafeed_subscription</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

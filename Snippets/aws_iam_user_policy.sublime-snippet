@@ -1,11 +1,12 @@
 <snippet>
 <content><![CDATA[
 resource "aws_iam_user_policy" "aws_iam_user_policy_${1:suffix}" {
-	${2:policy} = "${3:value}"
-	${4:name} = "${5:value}"
-	${6:name_prefix} = "${7:value}"
-	${8:user} = "${9:value}"
+	policy = "${3:Required}"
+	name = "${4:Optional}"
+	name_prefix = "${5:Optional}"
+	user = "${6:Required}"
 }
 ]]></content>
 <tabTrigger>aws_iam_user_policy</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

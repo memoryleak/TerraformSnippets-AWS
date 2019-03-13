@@ -1,10 +1,11 @@
 <snippet>
 <content><![CDATA[
 resource "aws_nat_gateway" "aws_nat_gateway_${1:suffix}" {
-	${2:allocation_id} = "${3:value}"
-	${4:subnet_id} = "${5:value}"
-	${6:tags} = "${7:value}"
+	allocation_id = "${3:Required}"
+	subnet_id = "${4:Required}"
+	tags = "${5:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_nat_gateway</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

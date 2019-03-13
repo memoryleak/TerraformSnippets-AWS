@@ -1,8 +1,9 @@
 <snippet>
 <content><![CDATA[
 resource "aws_glue_trigger" "aws_glue_trigger_${1:suffix}" {
-	${2:schedule – (Optional) A cron expression used to specify the schedule. Time} = "${3:value}"
+	schedule – (Optional) A cron expression used to specify the schedule. Time = "${3:Required}"
 }
 ]]></content>
 <tabTrigger>aws_glue_trigger</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

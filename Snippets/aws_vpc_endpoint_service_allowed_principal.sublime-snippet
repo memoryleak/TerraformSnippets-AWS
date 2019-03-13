@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_vpc_endpoint_service_allowed_principal" "aws_vpc_endpoint_service_allowed_principal_${1:suffix}" {
-	${2:vpc_endpoint_service_id} = "${3:value}"
-	${4:principal_arn} = "${5:value}"
+	vpc_endpoint_service_id = "${3:Required}"
+	principal_arn = "${4:Required}"
 }
 ]]></content>
 <tabTrigger>aws_vpc_endpoint_service_allowed_principal</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

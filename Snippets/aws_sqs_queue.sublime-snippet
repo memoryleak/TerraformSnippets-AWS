@@ -1,18 +1,19 @@
 <snippet>
 <content><![CDATA[
 resource "aws_sqs_queue" "aws_sqs_queue_${1:suffix}" {
-	${2:name_prefix} = "${3:value}"
-	${4:visibility_timeout_seconds} = "${5:value}"
-	${6:message_retention_seconds} = "${7:value}"
-	${8:max_message_size} = "${9:value}"
-	${10:delay_seconds} = "${11:value}"
-	${12:receive_wait_time_seconds} = "${13:value}"
-	${14:policy} = "${15:value}"
-	${16:redrive_policy} = "${17:value}"
-	${18:fifo_queue} = "${19:value}"
-	${20:kms_data_key_reuse_period_seconds} = "${21:value}"
-	${22:tags} = "${23:value}"
+	name_prefix = "${3:Optional}"
+	visibility_timeout_seconds = "${4:Optional}"
+	message_retention_seconds = "${5:Optional}"
+	max_message_size = "${6:Optional}"
+	delay_seconds = "${7:Optional}"
+	receive_wait_time_seconds = "${8:Optional}"
+	policy = "${9:Optional}"
+	redrive_policy = "${10:Optional}"
+	fifo_queue = "${11:Optional}"
+	kms_data_key_reuse_period_seconds = "${12:Optional}"
+	tags = "${13:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_sqs_queue</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

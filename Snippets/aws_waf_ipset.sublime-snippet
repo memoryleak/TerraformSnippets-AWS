@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_waf_ipset" "aws_waf_ipset_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:ip_set_descriptors} = "${5:value}"
+	name = "${3:Required}"
+	ip_set_descriptors = "${4:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_waf_ipset</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

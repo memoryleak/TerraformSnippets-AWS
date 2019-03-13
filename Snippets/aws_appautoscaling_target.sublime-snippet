@@ -1,13 +1,14 @@
 <snippet>
 <content><![CDATA[
 resource "aws_appautoscaling_target" "aws_appautoscaling_target_${1:suffix}" {
-	${2:max_capacity} = "${3:Required}"
-	${4:min_capacity} = "${5:Required}"
-	${6:resource_id} = "${7:Required}"
-	${8:role_arn} = "${9:Optional}"
-	${10:scalable_dimension} = "${11:Required}"
-	${12:service_namespace} = "${13:Required}"
+	max_capacity = "${3:Required}"
+	min_capacity = "${4:Required}"
+	resource_id = "${5:Required}"
+	role_arn = "${6:Optional}"
+	scalable_dimension = "${7:Required}"
+	service_namespace = "${8:Required}"
 }
 ]]></content>
 <tabTrigger>aws_appautoscaling_target</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

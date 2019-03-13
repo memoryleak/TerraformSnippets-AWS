@@ -1,20 +1,21 @@
 <snippet>
 <content><![CDATA[
 resource "aws_opsworks_application" "aws_opsworks_application_${1:suffix}" {
-	${2:stack_id} = "${3:value}"
-	${4:description} = "${5:value}"
-	${6:environment} = "${7:value}"
-	${8:enable_ssl} = "${9:value}"
-	${10:ssl_configuration} = "${11:value}"
-	${12:app_source} = "${13:value}"
-	${14:data_source_arn} = "${15:value}"
-	${16:data_source_type} = "${17:value}"
-	${18:data_source_database_name} = "${19:value}"
-	${20:domains} = "${21:value}"
-	${22:document_root} = "${23:value}"
-	${24:auto_bundle_on_deploy} = "${25:value}"
-	${26:rails_env} = "${27:value}"
+	stack_id = "${3:Required}"
+	description = "${4:Optional}"
+	environment = "${5:Optional}"
+	enable_ssl = "${6:Optional}"
+	ssl_configuration = "${7:Optional}"
+	app_source = "${8:Optional}"
+	data_source_arn = "${9:Optional}"
+	data_source_type = "${10:Optional}"
+	data_source_database_name = "${11:Optional}"
+	domains = "${12:Optional}"
+	document_root = "${13:Optional}"
+	auto_bundle_on_deploy = "${14:Optional}"
+	rails_env = "${15:Required}"
 }
 ]]></content>
 <tabTrigger>aws_opsworks_application</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

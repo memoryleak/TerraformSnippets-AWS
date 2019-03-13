@@ -1,13 +1,14 @@
 <snippet>
 <content><![CDATA[
 resource "aws_elastic_beanstalk_application_version" "aws_elastic_beanstalk_application_version_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:application} = "${5:value}"
-	${6:description} = "${7:value}"
-	${8:bucket} = "${9:value}"
-	${10:key} = "${11:value}"
-	${12:force_delete} = "${13:value}"
+	name = "${3:Required}"
+	application = "${4:Required}"
+	description = "${5:Optional}"
+	bucket = "${6:Required}"
+	key = "${7:Required}"
+	force_delete = "${8:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_elastic_beanstalk_application_version</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

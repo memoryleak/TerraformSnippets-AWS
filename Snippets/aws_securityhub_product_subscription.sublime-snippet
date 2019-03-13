@@ -4,4 +4,5 @@ resource "aws_securityhub_product_subscription" "aws_securityhub_product_subscri
 }
 ]]></content>
 <tabTrigger>aws_securityhub_product_subscription</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

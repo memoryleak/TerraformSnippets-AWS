@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_iam_group_policy_attachment" "aws_iam_group_policy_attachment_${1:suffix}" {
-	${2:group (Required)} = "${3:value}"
-	${4:policy_arn (Required)} = "${5:value}"
+	group (Required) = "${3:Required}"
+	policy_arn (Required) = "${4:Required}"
 }
 ]]></content>
 <tabTrigger>aws_iam_group_policy_attachment</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

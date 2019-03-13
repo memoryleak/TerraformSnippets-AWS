@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_config_configuration_recorder_status" "aws_config_configuration_recorder_status_${1:suffix}" {
-	${2:name} = "${3:Required}"
-	${4:is_enabled} = "${5:Required}"
+	name = "${3:Required}"
+	is_enabled = "${4:Required}"
 }
 ]]></content>
 <tabTrigger>aws_config_configuration_recorder_status</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

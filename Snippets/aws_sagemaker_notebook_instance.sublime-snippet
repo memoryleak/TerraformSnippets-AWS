@@ -1,13 +1,14 @@
 <snippet>
 <content><![CDATA[
 resource "aws_sagemaker_notebook_instance" "aws_sagemaker_notebook_instance_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:role_arn} = "${5:value}"
-	${6:instance_type} = "${7:value}"
-	${8:subnet_id} = "${9:value}"
-	${10:security_groups} = "${11:value}"
-	${12:tags} = "${13:value}"
+	name = "${3:Required}"
+	role_arn = "${4:Required}"
+	instance_type = "${5:Required}"
+	subnet_id = "${6:Optional}"
+	security_groups = "${7:Optional}"
+	tags = "${8:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_sagemaker_notebook_instance</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

@@ -1,12 +1,13 @@
 <snippet>
 <content><![CDATA[
 resource "aws_config_delivery_channel" "aws_config_delivery_channel_${1:suffix}" {
-	${2:name} = "${3:Optional}"
-	${4:s3_bucket_name} = "${5:Required}"
-	${6:s3_key_prefix} = "${7:Optional}"
-	${8:sns_topic_arn} = "${9:Optional}"
-	${10:snapshot_delivery_properties} = "${11:Optional}"
+	name = "${3:Optional}"
+	s3_bucket_name = "${4:Required}"
+	s3_key_prefix = "${5:Optional}"
+	sns_topic_arn = "${6:Optional}"
+	snapshot_delivery_properties = "${7:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_config_delivery_channel</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

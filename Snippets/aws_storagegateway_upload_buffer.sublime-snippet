@@ -1,8 +1,9 @@
 <snippet>
 <content><![CDATA[
 resource "aws_storagegateway_upload_buffer" "aws_storagegateway_upload_buffer_${1:suffix}" {
-	${2:gateway_arn} = "${3:value}"
+	gateway_arn = "${3:Required}"
 }
 ]]></content>
 <tabTrigger>aws_storagegateway_upload_buffer</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

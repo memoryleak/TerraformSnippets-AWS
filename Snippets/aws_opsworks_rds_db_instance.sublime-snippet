@@ -1,11 +1,12 @@
 <snippet>
 <content><![CDATA[
 resource "aws_opsworks_rds_db_instance" "aws_opsworks_rds_db_instance_${1:suffix}" {
-	${2:stack_id} = "${3:value}"
-	${4:rds_db_instance_arn} = "${5:value}"
-	${6:db_user} = "${7:value}"
-	${8:db_password} = "${9:value}"
+	stack_id = "${3:Required}"
+	rds_db_instance_arn = "${4:Required}"
+	db_user = "${5:Required}"
+	db_password = "${6:Required}"
 }
 ]]></content>
 <tabTrigger>aws_opsworks_rds_db_instance</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

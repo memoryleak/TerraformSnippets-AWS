@@ -1,15 +1,16 @@
 <snippet>
 <content><![CDATA[
 resource "aws_elastictranscoder_preset" "aws_elastictranscoder_preset_${1:suffix}" {
-	${2:audio} = "${3:value}"
-	${4:audio_codec_options} = "${5:value}"
-	${6:container} = "${7:value}"
-	${8:description} = "${9:value}"
-	${10:name} = "${11:value}"
-	${12:thumbnails} = "${13:value}"
-	${14:video} = "${15:value}"
-	${16:video_watermarks} = "${17:value}"
+	audio = "${3:Optional}"
+	audio_codec_options = "${4:Optional}"
+	container = "${5:Required}"
+	description = "${6:Optional}"
+	name = "${7:Optional}"
+	thumbnails = "${8:Optional}"
+	video = "${9:Optional}"
+	video_watermarks = "${10:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_elastictranscoder_preset</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

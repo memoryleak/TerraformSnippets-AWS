@@ -1,21 +1,22 @@
 <snippet>
 <content><![CDATA[
 resource "aws_opsworks_mysql_layer" "aws_opsworks_mysql_layer_${1:suffix}" {
-	${2:stack_id} = "${3:value}"
-	${4:auto_assign_elastic_ips} = "${5:value}"
-	${6:auto_assign_public_ips} = "${7:value}"
-	${8:custom_instance_profile_arn} = "${9:value}"
-	${10:custom_security_group_ids} = "${11:value}"
-	${12:install_updates_on_boot} = "${13:value}"
-	${14:instance_shutdown_timeout} = "${15:value}"
-	${16:elastic_load_balancer} = "${17:value}"
-	${18:drain_elb_on_shutdown} = "${19:value}"
-	${20:root_password} = "${21:value}"
-	${22:root_password_on_all_instances} = "${23:value}"
-	${24:system_packages} = "${25:value}"
-	${26:ebs_volume} = "${27:value}"
-	${28:custom_json} = "${29:value}"
+	stack_id = "${3:Required}"
+	auto_assign_elastic_ips = "${4:Optional}"
+	auto_assign_public_ips = "${5:Optional}"
+	custom_instance_profile_arn = "${6:Optional}"
+	custom_security_group_ids = "${7:Optional}"
+	install_updates_on_boot = "${8:Optional}"
+	instance_shutdown_timeout = "${9:Optional}"
+	elastic_load_balancer = "${10:Optional}"
+	drain_elb_on_shutdown = "${11:Optional}"
+	root_password = "${12:Optional}"
+	root_password_on_all_instances = "${13:Optional}"
+	system_packages = "${14:Optional}"
+	ebs_volume = "${15:Optional}"
+	custom_json = "${16:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_opsworks_mysql_layer</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

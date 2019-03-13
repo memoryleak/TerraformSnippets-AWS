@@ -1,24 +1,25 @@
 <snippet>
 <content><![CDATA[
 resource "aws_lambda_function" "aws_lambda_function_${1:suffix}" {
-	${2:s3_bucket} = "${3:value}"
-	${4:s3_key} = "${5:value}"
-	${6:s3_object_version} = "${7:value}"
-	${8:function_name} = "${9:value}"
-	${10:dead_letter_config} = "${11:value}"
-	${12:handler} = "${13:value}"
-	${14:role} = "${15:value}"
-	${16:description} = "${17:value}"
-	${18:layers} = "${19:value}"
-	${20:memory_size} = "${21:value}"
-	${22:runtime} = "${23:value}"
-	${24:timeout} = "${25:value}"
-	${26:publish} = "${27:value}"
-	${28:vpc_config} = "${29:value}"
-	${30:environment} = "${31:value}"
-	${32:kms_key_arn} = "${33:value}"
-	${34:tags} = "${35:value}"
+	s3_bucket = "${3:Optional}"
+	s3_key = "${4:Optional}"
+	s3_object_version = "${5:Optional}"
+	function_name = "${6:Required}"
+	dead_letter_config = "${7:Optional}"
+	handler = "${8:Required}"
+	role = "${9:Required}"
+	description = "${10:Optional}"
+	layers = "${11:Optional}"
+	memory_size = "${12:Optional}"
+	runtime = "${13:Required}"
+	timeout = "${14:Optional}"
+	publish = "${15:Optional}"
+	vpc_config = "${16:Optional}"
+	environment = "${17:Optional}"
+	kms_key_arn = "${18:Optional}"
+	tags = "${19:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_lambda_function</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

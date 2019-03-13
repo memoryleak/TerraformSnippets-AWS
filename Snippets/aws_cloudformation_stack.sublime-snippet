@@ -1,20 +1,21 @@
 <snippet>
 <content><![CDATA[
 resource "aws_cloudformation_stack" "aws_cloudformation_stack_${1:suffix}" {
-	${2:name} = "${3:Required}"
-	${4:template_body} = "${5:Optional}"
-	${6:template_url} = "${7:Optional}"
-	${8:capabilities} = "${9:Optional}"
-	${10:disable_rollback} = "${11:Optional}"
-	${12:notification_arns} = "${13:Optional}"
-	${14:on_failure} = "${15:Optional}"
-	${16:parameters} = "${17:Optional}"
-	${18:policy_body} = "${19:Optional}"
-	${20:policy_url} = "${21:Optional}"
-	${22:tags} = "${23:Optional}"
-	${24:iam_role_arn} = "${25:Optional}"
-	${26:timeout_in_minutes} = "${27:Optional}"
+	name = "${3:Required}"
+	template_body = "${4:Optional}"
+	template_url = "${5:Optional}"
+	capabilities = "${6:Optional}"
+	disable_rollback = "${7:Optional}"
+	notification_arns = "${8:Optional}"
+	on_failure = "${9:Optional}"
+	parameters = "${10:Optional}"
+	policy_body = "${11:Optional}"
+	policy_url = "${12:Optional}"
+	tags = "${13:Optional}"
+	iam_role_arn = "${14:Optional}"
+	timeout_in_minutes = "${15:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_cloudformation_stack</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

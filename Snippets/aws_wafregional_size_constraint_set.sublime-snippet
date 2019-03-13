@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_wafregional_size_constraint_set" "aws_wafregional_size_constraint_set_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:size_constraints} = "${5:value}"
+	name = "${3:Required}"
+	size_constraints = "${4:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_wafregional_size_constraint_set</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

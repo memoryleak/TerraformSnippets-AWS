@@ -1,10 +1,11 @@
 <snippet>
 <content><![CDATA[
 resource "aws_vpc_peering_connection_accepter" "aws_vpc_peering_connection_accepter_${1:suffix}" {
-	${2:vpc_peering_connection_id} = "${3:value}"
-	${4:auto_accept} = "${5:value}"
-	${6:tags} = "${7:value}"
+	vpc_peering_connection_id = "${3:Required}"
+	auto_accept = "${4:Optional}"
+	tags = "${5:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_vpc_peering_connection_accepter</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

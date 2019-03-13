@@ -1,20 +1,21 @@
 <snippet>
 <content><![CDATA[
 resource "aws_elb" "aws_elb_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:name_prefix} = "${5:value}"
-	${6:access_logs} = "${7:value}"
-	${8:security_groups} = "${9:value}"
-	${10:subnets} = "${11:value}"
-	${12:instances} = "${13:value}"
-	${14:internal} = "${15:value}"
-	${16:listener} = "${17:value}"
-	${18:health_check} = "${19:value}"
-	${20:idle_timeout} = "${21:value}"
-	${22:connection_draining} = "${23:value}"
-	${24:connection_draining_timeout} = "${25:value}"
-	${26:tags} = "${27:value}"
+	name = "${3:Optional}"
+	name_prefix = "${4:Optional}"
+	access_logs = "${5:Optional}"
+	security_groups = "${6:Optional}"
+	subnets = "${7:Required}"
+	instances = "${8:Optional}"
+	internal = "${9:Optional}"
+	listener = "${10:Required}"
+	health_check = "${11:Optional}"
+	idle_timeout = "${12:Optional}"
+	connection_draining = "${13:Optional}"
+	connection_draining_timeout = "${14:Optional}"
+	tags = "${15:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_elb</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

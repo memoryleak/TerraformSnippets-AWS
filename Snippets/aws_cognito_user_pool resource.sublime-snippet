@@ -1,23 +1,24 @@
 <snippet>
 <content><![CDATA[
 resource "aws_cognito_user_pool resource" "aws_cognito_user_pool resource_${1:suffix}" {
-	${2:admin_create_user_config (Optional)} = "${3:value}"
-	${4:alias_attributes} = "${5:value}"
-	${6:device_configuration (Optional)} = "${7:value}"
-	${8:email_configuration (Optional)} = "${9:value}"
-	${10:name} = "${11:value}"
-	${12:email_verification_subject} = "${13:value}"
-	${14:email_verification_message} = "${15:value}"
-	${16:lambda_config (Optional)} = "${17:value}"
-	${18:password_policy (Optional)} = "${19:value}"
-	${20:schema (Optional)} = "${21:value}"
-	${22:sms_authentication_message} = "${23:value}"
-	${24:sms_configuration (Optional)} = "${25:value}"
-	${26:sms_verification_message} = "${27:value}"
-	${28:tags} = "${29:value}"
-	${30:username_attributes} = "${31:value}"
-	${32:verification_message_template (Optional)} = "${33:value}"
+	admin_create_user_config (Optional) = "${3:Required}"
+	alias_attributes = "${4:Optional}"
+	device_configuration (Optional) = "${5:Required}"
+	email_configuration (Optional) = "${6:Required}"
+	name = "${7:Required}"
+	email_verification_subject = "${8:Optional}"
+	email_verification_message = "${9:Optional}"
+	lambda_config (Optional) = "${10:Required}"
+	password_policy (Optional) = "${11:Required}"
+	schema (Optional) = "${12:Required}"
+	sms_authentication_message = "${13:Optional}"
+	sms_configuration (Optional) = "${14:Required}"
+	sms_verification_message = "${15:Optional}"
+	tags = "${16:Optional}"
+	username_attributes = "${17:Optional}"
+	verification_message_template (Optional) = "${18:Required}"
 }
 ]]></content>
 <tabTrigger>aws_cognito_user_pool resource</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

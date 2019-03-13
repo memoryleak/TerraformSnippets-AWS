@@ -1,15 +1,16 @@
 <snippet>
 <content><![CDATA[
 resource "aws_subnet" "aws_subnet_${1:suffix}" {
-	${2:availability_zone} = "${3:value}"
-	${4:availability_zone_id} = "${5:value}"
-	${6:cidr_block} = "${7:value}"
-	${8:ipv6_cidr_block} = "${9:value}"
-	${10:map_public_ip_on_launch} = "${11:value}"
-	${12:assign_ipv6_address_on_creation} = "${13:value}"
-	${14:vpc_id} = "${15:value}"
-	${16:tags} = "${17:value}"
+	availability_zone = "${3:Optional}"
+	availability_zone_id = "${4:Optional}"
+	cidr_block = "${5:Required}"
+	ipv6_cidr_block = "${6:Optional}"
+	map_public_ip_on_launch = "${7:Optional}"
+	assign_ipv6_address_on_creation = "${8:Optional}"
+	vpc_id = "${9:Required}"
+	tags = "${10:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_subnet</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

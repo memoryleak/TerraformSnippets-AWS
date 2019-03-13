@@ -1,10 +1,11 @@
 <snippet>
 <content><![CDATA[
 resource "aws_resourcegroups_group" "aws_resourcegroups_group_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:description} = "${5:value}"
-	${6:resource_query} = "${7:value}"
+	name = "${3:Required}"
+	description = "${4:Optional}"
+	resource_query = "${5:Required}"
 }
 ]]></content>
 <tabTrigger>aws_resourcegroups_group</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

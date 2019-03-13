@@ -1,13 +1,14 @@
 <snippet>
 <content><![CDATA[
 resource "aws_redshift_event_subscription" "aws_redshift_event_subscription_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:sns_topic_arn} = "${5:value}"
-	${6:source_ids} = "${7:value}"
-	${8:severity} = "${9:value}"
-	${10:enabled} = "${11:value}"
-	${12:tags} = "${13:value}"
+	name = "${3:Required}"
+	sns_topic_arn = "${4:Required}"
+	source_ids = "${5:Optional}"
+	severity = "${6:Optional}"
+	enabled = "${7:Optional}"
+	tags = "${8:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_redshift_event_subscription</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

@@ -1,14 +1,15 @@
 <snippet>
 <content><![CDATA[
 resource "aws_autoscaling_lifecycle_hook" "aws_autoscaling_lifecycle_hook_${1:suffix}" {
-	${2:name} = "${3:Required}"
-	${4:autoscaling_group_name} = "${5:Required}"
-	${6:default_result} = "${7:Optional}"
-	${8:heartbeat_timeout} = "${9:Optional}"
-	${10:notification_metadata} = "${11:Optional}"
-	${12:notification_target_arn} = "${13:Optional}"
-	${14:role_arn} = "${15:Optional}"
+	name = "${3:Required}"
+	autoscaling_group_name = "${4:Required}"
+	default_result = "${5:Optional}"
+	heartbeat_timeout = "${6:Optional}"
+	notification_metadata = "${7:Optional}"
+	notification_target_arn = "${8:Optional}"
+	role_arn = "${9:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_autoscaling_lifecycle_hook</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

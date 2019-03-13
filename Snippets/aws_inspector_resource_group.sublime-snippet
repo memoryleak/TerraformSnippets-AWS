@@ -1,8 +1,9 @@
 <snippet>
 <content><![CDATA[
 resource "aws_inspector_resource_group" "aws_inspector_resource_group_${1:suffix}" {
-	${2:tags} = "${3:value}"
+	tags = "${3:Required}"
 }
 ]]></content>
 <tabTrigger>aws_inspector_resource_group</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

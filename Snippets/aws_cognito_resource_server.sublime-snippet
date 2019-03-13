@@ -1,10 +1,11 @@
 <snippet>
 <content><![CDATA[
 resource "aws_cognito_resource_server" "aws_cognito_resource_server_${1:suffix}" {
-	${2:identifier} = "${3:Required}"
-	${4:name} = "${5:Required}"
-	${6:scope} = "${7:Optional}"
+	identifier = "${3:Required}"
+	name = "${4:Required}"
+	scope = "${5:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_cognito_resource_server</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

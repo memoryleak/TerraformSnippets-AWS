@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_dx_connection_association" "aws_dx_connection_association_${1:suffix}" {
-	${2:connection_id} = "${3:Required}"
-	${4:lag_id} = "${5:Required}"
+	connection_id = "${3:Required}"
+	lag_id = "${4:Required}"
 }
 ]]></content>
 <tabTrigger>aws_dx_connection_association</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

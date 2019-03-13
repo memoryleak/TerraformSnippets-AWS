@@ -1,10 +1,11 @@
 <snippet>
 <content><![CDATA[
 resource "aws_cloudwatch_event_permission" "aws_cloudwatch_event_permission_${1:suffix}" {
-	${2:statement_id} = "${3:Required}"
-	${4:action} = "${5:Optional}"
-	${6:condition} = "${7:Optional}"
+	statement_id = "${3:Required}"
+	action = "${4:Optional}"
+	condition = "${5:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_cloudwatch_event_permission</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

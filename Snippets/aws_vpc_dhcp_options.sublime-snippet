@@ -1,13 +1,14 @@
 <snippet>
 <content><![CDATA[
 resource "aws_vpc_dhcp_options" "aws_vpc_dhcp_options_${1:suffix}" {
-	${2:domain_name} = "${3:value}"
-	${4:domain_name_servers} = "${5:value}"
-	${6:ntp_servers} = "${7:value}"
-	${8:netbios_name_servers} = "${9:value}"
-	${10:netbios_node_type} = "${11:value}"
-	${12:tags} = "${13:value}"
+	domain_name = "${3:Optional}"
+	domain_name_servers = "${4:Optional}"
+	ntp_servers = "${5:Optional}"
+	netbios_name_servers = "${6:Optional}"
+	netbios_node_type = "${7:Optional}"
+	tags = "${8:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_vpc_dhcp_options</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

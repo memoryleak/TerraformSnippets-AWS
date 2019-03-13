@@ -1,8 +1,9 @@
 <snippet>
 <content><![CDATA[
 resource "aws_lightsail_domain" "aws_lightsail_domain_${1:suffix}" {
-	${2:domain_name} = "${3:value}"
+	domain_name = "${3:Required}"
 }
 ]]></content>
 <tabTrigger>aws_lightsail_domain</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

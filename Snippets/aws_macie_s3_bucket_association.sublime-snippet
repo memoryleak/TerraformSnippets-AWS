@@ -1,11 +1,12 @@
 <snippet>
 <content><![CDATA[
 resource "aws_macie_s3_bucket_association" "aws_macie_s3_bucket_association_${1:suffix}" {
-	${2:bucket_name} = "${3:value}"
-	${4:classification_type} = "${5:value}"
-	${6:member_account_id} = "${7:value}"
-	${8:prefix} = "${9:value}"
+	bucket_name = "${3:Required}"
+	classification_type = "${4:Optional}"
+	member_account_id = "${5:Optional}"
+	prefix = "${6:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_macie_s3_bucket_association</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

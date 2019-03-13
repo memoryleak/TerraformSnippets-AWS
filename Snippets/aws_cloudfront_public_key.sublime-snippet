@@ -1,10 +1,11 @@
 <snippet>
 <content><![CDATA[
 resource "aws_cloudfront_public_key" "aws_cloudfront_public_key_${1:suffix}" {
-	${2:comment} = "${3:Optional}"
-	${4:name} = "${5:Optional}"
-	${6:name_prefix} = "${7:Optional}"
+	comment = "${3:Optional}"
+	name = "${4:Optional}"
+	name_prefix = "${5:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_cloudfront_public_key</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

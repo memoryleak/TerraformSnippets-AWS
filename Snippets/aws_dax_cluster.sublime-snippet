@@ -1,12 +1,13 @@
 <snippet>
 <content><![CDATA[
 resource "aws_dax_cluster" "aws_dax_cluster_${1:suffix}" {
-	${2:iam_role_arn} = "${3:Required}"
-	${4:replication_factor – (Required) The number of nodes in the DAX cluster. A replication factor of 1 will create a single} = "${5:Required}"
-	${6:availability_zones} = "${7:Optional}"
-	${8:server_side_encryption} = "${9:Optional}"
-	${10:tags} = "${11:Optional}"
+	iam_role_arn = "${3:Required}"
+	replication_factor – (Required) The number of nodes in the DAX cluster. A replication factor of 1 will create a single = "${4:Required}"
+	availability_zones = "${5:Optional}"
+	server_side_encryption = "${6:Optional}"
+	tags = "${7:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_dax_cluster</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

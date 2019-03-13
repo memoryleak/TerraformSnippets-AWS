@@ -4,4 +4,5 @@ resource "aws_iam_server_certificate" "aws_iam_server_certificate_${1:suffix}" {
 }
 ]]></content>
 <tabTrigger>aws_iam_server_certificate</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

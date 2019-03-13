@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_wafregional_web_acl_association" "aws_wafregional_web_acl_association_${1:suffix}" {
-	${2:web_acl_id} = "${3:value}"
-	${4:resource_arn} = "${5:value}"
+	web_acl_id = "${3:Required}"
+	resource_arn = "${4:Required}"
 }
 ]]></content>
 <tabTrigger>aws_wafregional_web_acl_association</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

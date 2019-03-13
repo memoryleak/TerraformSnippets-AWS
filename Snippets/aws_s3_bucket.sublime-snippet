@@ -1,22 +1,23 @@
 <snippet>
 <content><![CDATA[
 resource "aws_s3_bucket" "aws_s3_bucket_${1:suffix}" {
-	${2:bucket} = "${3:value}"
-	${4:bucket_prefix} = "${5:value}"
-	${6:acl} = "${7:value}"
-	${8:policy} = "${9:value}"
-	${10:tags} = "${11:value}"
-	${12:force_destroy} = "${13:value}"
-	${14:website} = "${15:value}"
-	${16:versioning} = "${17:value}"
-	${18:logging} = "${19:value}"
-	${20:lifecycle_rule} = "${21:value}"
-	${22:acceleration_status} = "${23:value}"
-	${24:region} = "${25:value}"
-	${26:request_payer} = "${27:value}"
-	${28:replication_configuration} = "${29:value}"
-	${30:object_lock_configuration} = "${31:value}"
+	bucket = "${3:Optional}"
+	bucket_prefix = "${4:Optional}"
+	acl = "${5:Optional}"
+	policy = "${6:Optional}"
+	tags = "${7:Optional}"
+	force_destroy = "${8:Optional}"
+	website = "${9:Optional}"
+	versioning = "${10:Optional}"
+	logging = "${11:Optional}"
+	lifecycle_rule = "${12:Optional}"
+	acceleration_status = "${13:Optional}"
+	region = "${14:Optional}"
+	request_payer = "${15:Optional}"
+	replication_configuration = "${16:Optional}"
+	object_lock_configuration = "${17:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_s3_bucket</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

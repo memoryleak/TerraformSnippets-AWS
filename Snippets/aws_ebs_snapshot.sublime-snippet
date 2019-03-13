@@ -1,10 +1,11 @@
 <snippet>
 <content><![CDATA[
 resource "aws_ebs_snapshot" "aws_ebs_snapshot_${1:suffix}" {
-	${2:volume_id} = "${3:value}"
-	${4:description} = "${5:value}"
-	${6:tags} = "${7:value}"
+	volume_id = "${3:Required}"
+	description = "${4:Optional}"
+	tags = "${5:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_ebs_snapshot</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

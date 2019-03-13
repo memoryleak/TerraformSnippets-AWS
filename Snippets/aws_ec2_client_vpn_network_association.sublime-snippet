@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_ec2_client_vpn_network_association" "aws_ec2_client_vpn_network_association_${1:suffix}" {
-	${2:client_vpn_endpoint_id} = "${3:value}"
-	${4:subnet_id} = "${5:value}"
+	client_vpn_endpoint_id = "${3:Required}"
+	subnet_id = "${4:Required}"
 }
 ]]></content>
 <tabTrigger>aws_ec2_client_vpn_network_association</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

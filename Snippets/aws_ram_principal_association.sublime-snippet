@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_ram_principal_association" "aws_ram_principal_association_${1:suffix}" {
-	${2:principal} = "${3:value}"
-	${4:resource_share_arn} = "${5:value}"
+	principal = "${3:Required}"
+	resource_share_arn = "${4:Required}"
 }
 ]]></content>
 <tabTrigger>aws_ram_principal_association</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

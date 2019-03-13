@@ -1,12 +1,13 @@
 <snippet>
 <content><![CDATA[
 resource "aws_autoscaling_policy" "aws_autoscaling_policy_${1:suffix}" {
-	${2:name} = "${3:Required}"
-	${4:autoscaling_group_name} = "${5:Required}"
-	${6:adjustment_type} = "${7:Optional}"
-	${8:policy_type} = "${9:Optional}"
-	${10:estimated_instance_warmup} = "${11:Optional}"
+	name = "${3:Required}"
+	autoscaling_group_name = "${4:Required}"
+	adjustment_type = "${5:Optional}"
+	policy_type = "${6:Optional}"
+	estimated_instance_warmup = "${7:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_autoscaling_policy</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

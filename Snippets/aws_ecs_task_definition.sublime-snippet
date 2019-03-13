@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_ecs_task_definition" "aws_ecs_task_definition_${1:suffix}" {
-	${2:family} = "${3:value}"
-	${4:container_definitions} = "${5:value}"
+	family = "${3:Required}"
+	container_definitions = "${4:Required}"
 }
 ]]></content>
 <tabTrigger>aws_ecs_task_definition</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

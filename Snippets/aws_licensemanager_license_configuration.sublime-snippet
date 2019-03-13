@@ -1,14 +1,15 @@
 <snippet>
 <content><![CDATA[
 resource "aws_licensemanager_license_configuration" "aws_licensemanager_license_configuration_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:description} = "${5:value}"
-	${6:license_count} = "${7:value}"
-	${8:license_count_hard_limit} = "${9:value}"
-	${10:license_counting_type} = "${11:value}"
-	${12:license_rules} = "${13:value}"
-	${14:tags} = "${15:value}"
+	name = "${3:Required}"
+	description = "${4:Optional}"
+	license_count = "${5:Optional}"
+	license_count_hard_limit = "${6:Optional}"
+	license_counting_type = "${7:Required}"
+	license_rules = "${8:Optional}"
+	tags = "${9:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_licensemanager_license_configuration</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

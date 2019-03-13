@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_waf_byte_match_set" "aws_waf_byte_match_set_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:byte_match_tuples} = "${5:value}"
+	name = "${3:Required}"
+	byte_match_tuples = "${4:Required}"
 }
 ]]></content>
 <tabTrigger>aws_waf_byte_match_set</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

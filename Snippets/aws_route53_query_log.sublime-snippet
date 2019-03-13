@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_route53_query_log" "aws_route53_query_log_${1:suffix}" {
-	${2:cloudwatch_log_group_arn} = "${3:value}"
-	${4:zone_id} = "${5:value}"
+	cloudwatch_log_group_arn = "${3:Required}"
+	zone_id = "${4:Required}"
 }
 ]]></content>
 <tabTrigger>aws_route53_query_log</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

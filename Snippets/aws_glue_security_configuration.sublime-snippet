@@ -4,4 +4,5 @@ resource "aws_glue_security_configuration" "aws_glue_security_configuration_${1:
 }
 ]]></content>
 <tabTrigger>aws_glue_security_configuration</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

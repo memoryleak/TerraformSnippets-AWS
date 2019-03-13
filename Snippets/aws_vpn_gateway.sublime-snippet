@@ -1,11 +1,12 @@
 <snippet>
 <content><![CDATA[
 resource "aws_vpn_gateway" "aws_vpn_gateway_${1:suffix}" {
-	${2:vpc_id} = "${3:value}"
-	${4:availability_zone} = "${5:value}"
-	${6:tags} = "${7:value}"
-	${8:amazon_side_asn} = "${9:value}"
+	vpc_id = "${3:Optional}"
+	availability_zone = "${4:Optional}"
+	tags = "${5:Optional}"
+	amazon_side_asn = "${6:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_vpn_gateway</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

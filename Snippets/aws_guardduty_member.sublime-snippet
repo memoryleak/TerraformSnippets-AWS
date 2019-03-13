@@ -1,12 +1,13 @@
 <snippet>
 <content><![CDATA[
 resource "aws_guardduty_member" "aws_guardduty_member_${1:suffix}" {
-	${2:account_id} = "${3:value}"
-	${4:detector_id} = "${5:value}"
-	${6:email} = "${7:value}"
-	${8:invitation_message} = "${9:value}"
-	${10:disable_email_notification} = "${11:value}"
+	account_id = "${3:Required}"
+	detector_id = "${4:Required}"
+	email = "${5:Required}"
+	invitation_message = "${6:Optional}"
+	disable_email_notification = "${7:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_guardduty_member</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

@@ -1,12 +1,13 @@
 <snippet>
 <content><![CDATA[
 resource "aws_wafregional_web_acl" "aws_wafregional_web_acl_${1:suffix}" {
-	${2:default_action} = "${3:value}"
-	${4:metric_name} = "${5:value}"
-	${6:name} = "${7:value}"
-	${8:logging_configuration} = "${9:value}"
-	${10:rule} = "${11:value}"
+	default_action = "${3:Required}"
+	metric_name = "${4:Required}"
+	name = "${5:Required}"
+	logging_configuration = "${6:Optional}"
+	rule = "${7:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_wafregional_web_acl</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

@@ -1,15 +1,16 @@
 <snippet>
 <content><![CDATA[
 resource "aws_network_acl_rule" "aws_network_acl_rule_${1:suffix}" {
-	${2:network_acl_id} = "${3:value}"
-	${4:rule_number} = "${5:value}"
-	${6:egress} = "${7:value}"
-	${8:rule_action} = "${9:value}"
-	${10:cidr_block} = "${11:value}"
-	${12:ipv6_cidr_block} = "${13:value}"
-	${14:from_port} = "${15:value}"
-	${16:to_port} = "${17:value}"
+	network_acl_id = "${3:Required}"
+	rule_number = "${4:Required}"
+	egress = "${5:Optional}"
+	rule_action = "${6:Required}"
+	cidr_block = "${7:Optional}"
+	ipv6_cidr_block = "${8:Optional}"
+	from_port = "${9:Optional}"
+	to_port = "${10:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_network_acl_rule</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_vpc_endpoint_service" "aws_vpc_endpoint_service_${1:suffix}" {
-	${2:network_load_balancer_arns} = "${3:value}"
-	${4:allowed_principals} = "${5:value}"
+	network_load_balancer_arns = "${3:Required}"
+	allowed_principals = "${4:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_vpc_endpoint_service</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

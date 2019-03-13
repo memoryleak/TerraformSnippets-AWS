@@ -1,12 +1,13 @@
 <snippet>
 <content><![CDATA[
 resource "aws_ami_copy" "aws_ami_copy_${1:suffix}" {
-	${2:source_ami_id} = "${3:Required}"
-	${4:source_ami_region} = "${5:Required}"
-	${6:encrypted} = "${7:Optional}"
-	${8:kms_key_id} = "${9:Optional}"
-	${10:tags} = "${11:Optional}"
+	source_ami_id = "${3:Required}"
+	source_ami_region = "${4:Required}"
+	encrypted = "${5:Optional}"
+	kms_key_id = "${6:Optional}"
+	tags = "${7:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_ami_copy</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

@@ -1,18 +1,19 @@
 <snippet>
 <content><![CDATA[
 resource "aws_lb_target_group" "aws_lb_target_group_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:name_prefix} = "${5:value}"
-	${6:port} = "${7:value}"
-	${8:protocol} = "${9:value}"
-	${10:vpc_id} = "${11:value}"
-	${12:lambda_multi_value_headers_enabled} = "${13:value}"
-	${14:proxy_protocol_v2} = "${15:value}"
-	${16:stickiness} = "${17:value}"
-	${18:health_check} = "${19:value}"
-	${20:target_type} = "${21:value}"
-	${22:tags} = "${23:value}"
+	name = "${3:Optional}"
+	name_prefix = "${4:Optional}"
+	port = "${5:Optional}"
+	protocol = "${6:Optional}"
+	vpc_id = "${7:Optional}"
+	lambda_multi_value_headers_enabled = "${8:Optional}"
+	proxy_protocol_v2 = "${9:Optional}"
+	stickiness = "${10:Optional}"
+	health_check = "${11:Optional}"
+	target_type = "${12:Optional}"
+	tags = "${13:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_lb_target_group</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

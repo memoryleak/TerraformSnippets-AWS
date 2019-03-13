@@ -1,10 +1,11 @@
 <snippet>
 <content><![CDATA[
 resource "aws_iam_user_login_profile" "aws_iam_user_login_profile_${1:suffix}" {
-	${2:user} = "${3:value}"
-	${4:password_length} = "${5:value}"
-	${6:password_reset_required} = "${7:value}"
+	user = "${3:Required}"
+	password_length = "${4:Optional}"
+	password_reset_required = "${5:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_iam_user_login_profile</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

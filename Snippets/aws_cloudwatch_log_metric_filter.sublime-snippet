@@ -1,11 +1,12 @@
 <snippet>
 <content><![CDATA[
 resource "aws_cloudwatch_log_metric_filter" "aws_cloudwatch_log_metric_filter_${1:suffix}" {
-	${2:name} = "${3:Required}"
-	${4:pattern} = "${5:Required}"
-	${6:log_group_name} = "${7:Required}"
-	${8:metric_transformation} = "${9:Required}"
+	name = "${3:Required}"
+	pattern = "${4:Required}"
+	log_group_name = "${5:Required}"
+	metric_transformation = "${6:Required}"
 }
 ]]></content>
 <tabTrigger>aws_cloudwatch_log_metric_filter</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

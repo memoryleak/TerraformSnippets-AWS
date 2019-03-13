@@ -1,14 +1,15 @@
 <snippet>
 <content><![CDATA[
 resource "aws_elasticache_cluster" "aws_elasticache_cluster_${1:suffix}" {
-	${2:replication_group_id} = "${3:value}"
-	${4:apply_immediately} = "${5:value}"
-	${6:snapshot_arns – (Optional) A single} = "${7:value}"
-	${8:snapshot_name} = "${9:value}"
-	${10:snapshot_retention_limit} = "${11:value}"
-	${12:preferred_availability_zones} = "${13:value}"
-	${14:tags} = "${15:value}"
+	replication_group_id = "${3:Optional}"
+	apply_immediately = "${4:Optional}"
+	snapshot_arns – (Optional) A single = "${5:Required}"
+	snapshot_name = "${6:Optional}"
+	snapshot_retention_limit = "${7:Optional}"
+	preferred_availability_zones = "${8:Optional}"
+	tags = "${9:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_elasticache_cluster</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

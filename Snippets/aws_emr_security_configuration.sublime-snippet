@@ -1,10 +1,11 @@
 <snippet>
 <content><![CDATA[
 resource "aws_emr_security_configuration" "aws_emr_security_configuration_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:name_prefix} = "${5:value}"
-	${6:configuration} = "${7:value}"
+	name = "${3:Optional}"
+	name_prefix = "${4:Optional}"
+	configuration = "${5:Required}"
 }
 ]]></content>
 <tabTrigger>aws_emr_security_configuration</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

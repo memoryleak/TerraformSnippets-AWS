@@ -1,11 +1,12 @@
 <snippet>
 <content><![CDATA[
 resource "aws_efs_mount_target" "aws_efs_mount_target_${1:suffix}" {
-	${2:file_system_id} = "${3:value}"
-	${4:subnet_id} = "${5:value}"
-	${6:ip_address} = "${7:value}"
-	${8:security_groups} = "${9:value}"
+	file_system_id = "${3:Required}"
+	subnet_id = "${4:Required}"
+	ip_address = "${5:Optional}"
+	security_groups = "${6:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_efs_mount_target</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

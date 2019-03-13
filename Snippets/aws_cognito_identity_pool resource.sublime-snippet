@@ -1,13 +1,14 @@
 <snippet>
 <content><![CDATA[
 resource "aws_cognito_identity_pool resource" "aws_cognito_identity_pool resource_${1:suffix}" {
-	${2:identity_pool_name (Required)} = "${3:value}"
-	${4:allow_unauthenticated_identities (Required)} = "${5:value}"
-	${6:developer_provider_name (Optional)} = "${7:value}"
-	${8:cognito_identity_providers (Optional)} = "${9:value}"
-	${10:openid_connect_provider_arns (Optional)} = "${11:value}"
-	${12:saml_provider_arns (Optional)} = "${13:value}"
+	identity_pool_name (Required) = "${3:Required}"
+	allow_unauthenticated_identities (Required) = "${4:Required}"
+	developer_provider_name (Optional) = "${5:Required}"
+	cognito_identity_providers (Optional) = "${6:Required}"
+	openid_connect_provider_arns (Optional) = "${7:Required}"
+	saml_provider_arns (Optional) = "${8:Required}"
 }
 ]]></content>
 <tabTrigger>aws_cognito_identity_pool resource</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

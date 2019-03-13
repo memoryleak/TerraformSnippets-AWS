@@ -1,13 +1,14 @@
 <snippet>
 <content><![CDATA[
 resource "aws_ec2_transit_gateway" "aws_ec2_transit_gateway_${1:suffix}" {
-	${2:auto_accept_shared_attachments} = "${3:value}"
-	${4:default_route_table_association} = "${5:value}"
-	${6:default_route_table_propagation} = "${7:value}"
-	${8:description} = "${9:value}"
-	${10:dns_support} = "${11:value}"
-	${12:vpn_ecmp_support} = "${13:value}"
+	auto_accept_shared_attachments = "${3:Optional}"
+	default_route_table_association = "${4:Optional}"
+	default_route_table_propagation = "${5:Optional}"
+	description = "${6:Optional}"
+	dns_support = "${7:Optional}"
+	vpn_ecmp_support = "${8:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_ec2_transit_gateway</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

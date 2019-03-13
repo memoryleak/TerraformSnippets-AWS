@@ -1,18 +1,19 @@
 <snippet>
 <content><![CDATA[
 resource "aws_api_gateway_stage" "aws_api_gateway_stage_${1:suffix}" {
-	${2:rest_api_id} = "${3:Required}"
-	${4:stage_name} = "${5:Required}"
-	${6:deployment_id} = "${7:Required}"
-	${8:access_log_settings} = "${9:Optional}"
-	${10:cache_cluster_enabled} = "${11:Optional}"
-	${12:cache_cluster_size} = "${13:Optional}"
-	${14:client_certificate_id} = "${15:Optional}"
-	${16:description} = "${17:Optional}"
-	${18:documentation_version} = "${19:Optional}"
-	${20:variables} = "${21:Optional}"
-	${22:tags} = "${23:Optional}"
+	rest_api_id = "${3:Required}"
+	stage_name = "${4:Required}"
+	deployment_id = "${5:Required}"
+	access_log_settings = "${6:Optional}"
+	cache_cluster_enabled = "${7:Optional}"
+	cache_cluster_size = "${8:Optional}"
+	client_certificate_id = "${9:Optional}"
+	description = "${10:Optional}"
+	documentation_version = "${11:Optional}"
+	variables = "${12:Optional}"
+	tags = "${13:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_api_gateway_stage</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

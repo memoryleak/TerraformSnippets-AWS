@@ -1,22 +1,23 @@
 <snippet>
 <content><![CDATA[
 resource "aws_dms_endpoint" "aws_dms_endpoint_${1:suffix}" {
-	${2:certificate_arn} = "${3:Optional}"
-	${4:database_name} = "${5:Optional}"
-	${6:endpoint_id} = "${7:Required}"
-	${8:endpoint_type} = "${9:Required}"
-	${10:engine_name} = "${11:Required}"
-	${12:extra_connection_attributes} = "${13:Optional}"
-	${14:kms_key_arn} = "${15:Required}"
-	${16:password} = "${17:Optional}"
-	${18:port} = "${19:Optional}"
-	${20:server_name} = "${21:Optional}"
-	${22:tags} = "${23:Optional}"
-	${24:username} = "${25:Optional}"
-	${26:service_access_role} = "${27:Optional}"
-	${28:mongodb_settings} = "${29:Optional}"
-	${30:s3_settings} = "${31:Optional}"
+	certificate_arn = "${3:Optional}"
+	database_name = "${4:Optional}"
+	endpoint_id = "${5:Required}"
+	endpoint_type = "${6:Required}"
+	engine_name = "${7:Required}"
+	extra_connection_attributes = "${8:Optional}"
+	kms_key_arn = "${9:Required}"
+	password = "${10:Optional}"
+	port = "${11:Optional}"
+	server_name = "${12:Optional}"
+	tags = "${13:Optional}"
+	username = "${14:Optional}"
+	service_access_role = "${15:Optional}"
+	mongodb_settings = "${16:Optional}"
+	s3_settings = "${17:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_dms_endpoint</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

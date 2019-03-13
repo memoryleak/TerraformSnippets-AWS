@@ -1,11 +1,12 @@
 <snippet>
 <content><![CDATA[
 resource "aws_api_gateway_api_key" "aws_api_gateway_api_key_${1:suffix}" {
-	${2:name} = "${3:Required}"
-	${4:description} = "${5:Optional}"
-	${6:enabled} = "${7:Optional}"
-	${8:value} = "${9:Optional}"
+	name = "${3:Required}"
+	description = "${4:Optional}"
+	enabled = "${5:Optional}"
+	value = "${6:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_api_gateway_api_key</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

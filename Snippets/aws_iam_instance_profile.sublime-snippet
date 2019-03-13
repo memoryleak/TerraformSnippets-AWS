@@ -1,12 +1,13 @@
 <snippet>
 <content><![CDATA[
 resource "aws_iam_instance_profile" "aws_iam_instance_profile_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:name_prefix} = "${5:value}"
-	${6:path} = "${7:value}"
-	${8:roles} = "${9:value}"
-	${10:role} = "${11:value}"
+	name = "${3:Optional}"
+	name_prefix = "${4:Optional}"
+	path = "${5:Optional}"
+	roles = "${6:Required}"
+	role = "${7:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_iam_instance_profile</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

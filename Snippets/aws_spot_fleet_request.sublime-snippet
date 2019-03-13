@@ -1,18 +1,19 @@
 <snippet>
 <content><![CDATA[
 resource "aws_spot_fleet_request" "aws_spot_fleet_request_${1:suffix}" {
-	${2:iam_fleet_role} = "${3:value}"
-	${4:replace_unhealthy_instances} = "${5:value}"
-	${6:wait_for_fulfillment} = "${7:value}"
-	${8:target_capacity} = "${9:value}"
-	${10:allocation_strategy} = "${11:value}"
-	${12:instance_pools_to_use_count} = "${13:value}"
-	${14:excess_capacity_termination_policy} = "${15:value}"
-	${16:terminate_instances_with_expiration} = "${17:value}"
-	${18:instance_interruption_behaviour} = "${19:value}"
-	${20:fleet_type} = "${21:value}"
-	${22:tags} = "${23:value}"
+	iam_fleet_role = "${3:Required}"
+	replace_unhealthy_instances = "${4:Optional}"
+	wait_for_fulfillment = "${5:Optional}"
+	target_capacity = "${6:Required}"
+	allocation_strategy = "${7:Required}"
+	instance_pools_to_use_count = "${8:Optional}"
+	excess_capacity_termination_policy = "${9:Required}"
+	terminate_instances_with_expiration = "${10:Required}"
+	instance_interruption_behaviour = "${11:Optional}"
+	fleet_type = "${12:Optional}"
+	tags = "${13:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_spot_fleet_request</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

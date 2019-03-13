@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_alb_listener_certificate" "aws_alb_listener_certificate_${1:suffix}" {
-	${2:listener_arn} = "${3:Required}"
-	${4:certificate_arn} = "${5:Required}"
+	listener_arn = "${3:Required}"
+	certificate_arn = "${4:Required}"
 }
 ]]></content>
 <tabTrigger>aws_alb_listener_certificate</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

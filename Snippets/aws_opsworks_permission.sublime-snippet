@@ -1,12 +1,13 @@
 <snippet>
 <content><![CDATA[
 resource "aws_opsworks_permission" "aws_opsworks_permission_${1:suffix}" {
-	${2:allow_ssh} = "${3:value}"
-	${4:allow_sudo} = "${5:value}"
-	${6:user_arn} = "${7:value}"
-	${8:level} = "${9:value}"
-	${10:stack_id} = "${11:value}"
+	allow_ssh = "${3:Optional}"
+	allow_sudo = "${4:Optional}"
+	user_arn = "${5:Required}"
+	level = "${6:Optional}"
+	stack_id = "${7:Required}"
 }
 ]]></content>
 <tabTrigger>aws_opsworks_permission</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

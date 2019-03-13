@@ -1,18 +1,19 @@
 <snippet>
 <content><![CDATA[
 resource "aws_security_group_rule" "aws_security_group_rule_${1:suffix}" {
-	${2:type} = "${3:value}"
-	${4:cidr_blocks} = "${5:value}"
-	${6:ipv6_cidr_blocks} = "${7:value}"
-	${8:prefix_list_ids} = "${9:value}"
-	${10:from_port} = "${11:value}"
-	${12:protocol} = "${13:value}"
-	${14:security_group_id} = "${15:value}"
-	${16:source_security_group_id} = "${17:value}"
-	${18:self} = "${19:value}"
-	${20:to_port} = "${21:value}"
-	${22:description} = "${23:value}"
+	type = "${3:Required}"
+	cidr_blocks = "${4:Optional}"
+	ipv6_cidr_blocks = "${5:Optional}"
+	prefix_list_ids = "${6:Optional}"
+	from_port = "${7:Required}"
+	protocol = "${8:Required}"
+	security_group_id = "${9:Required}"
+	source_security_group_id = "${10:Optional}"
+	self = "${11:Optional}"
+	to_port = "${12:Required}"
+	description = "${13:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_security_group_rule</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

@@ -1,13 +1,14 @@
 <snippet>
 <content><![CDATA[
 resource "aws_db_event_subscription" "aws_db_event_subscription_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:name_prefix} = "${5:value}"
-	${6:sns_topic} = "${7:value}"
-	${8:source_ids} = "${9:value}"
-	${10:enabled} = "${11:value}"
-	${12:tags} = "${13:value}"
+	name = "${3:Optional}"
+	name_prefix = "${4:Optional}"
+	sns_topic = "${5:Required}"
+	source_ids = "${6:Optional}"
+	enabled = "${7:Optional}"
+	tags = "${8:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_db_event_subscription</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

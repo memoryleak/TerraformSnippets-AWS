@@ -1,13 +1,14 @@
 <snippet>
 <content><![CDATA[
 resource "aws_docdb_cluster_parameter_group" "aws_docdb_cluster_parameter_group_${1:suffix}" {
-	${2:name} = "${3:Optional}"
-	${4:name_prefix} = "${5:Optional}"
-	${6:family} = "${7:Required}"
-	${8:description} = "${9:Optional}"
-	${10:parameter} = "${11:Optional}"
-	${12:tags} = "${13:Optional}"
+	name = "${3:Optional}"
+	name_prefix = "${4:Optional}"
+	family = "${5:Required}"
+	description = "${6:Optional}"
+	parameter = "${7:Optional}"
+	tags = "${8:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_docdb_cluster_parameter_group</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

@@ -1,14 +1,15 @@
 <snippet>
 <content><![CDATA[
 resource "aws_kinesis_analytics_application" "aws_kinesis_analytics_application_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:code} = "${5:value}"
-	${6:description} = "${7:value}"
-	${8:cloudwatch_logging_options} = "${9:value}"
-	${10:inputs} = "${11:value}"
-	${12:outputs} = "${13:value}"
-	${14:reference_data_sources} = "${15:value}"
+	name = "${3:Required}"
+	code = "${4:Optional}"
+	description = "${5:Optional}"
+	cloudwatch_logging_options = "${6:Optional}"
+	inputs = "${7:Optional}"
+	outputs = "${8:Optional}"
+	reference_data_sources = "${9:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_kinesis_analytics_application</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

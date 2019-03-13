@@ -1,19 +1,20 @@
 <snippet>
 <content><![CDATA[
 resource "aws_cloudwatch_event_target" "aws_cloudwatch_event_target_${1:suffix}" {
-	${2:rule} = "${3:Required}"
-	${4:target_id} = "${5:Optional}"
-	${6:arn} = "${7:Required}"
-	${8:input} = "${9:Optional}"
-	${10:input_path} = "${11:Optional}"
-	${12:role_arn} = "${13:Optional}"
-	${14:run_command_targets} = "${15:Optional}"
-	${16:ecs_target} = "${17:Optional}"
-	${18:batch_target} = "${19:Optional}"
-	${20:kinesis_target} = "${21:Optional}"
-	${22:sqs_target} = "${23:Optional}"
-	${24:input_transformer} = "${25:Optional}"
+	rule = "${3:Required}"
+	target_id = "${4:Optional}"
+	arn = "${5:Required}"
+	input = "${6:Optional}"
+	input_path = "${7:Optional}"
+	role_arn = "${8:Optional}"
+	run_command_targets = "${9:Optional}"
+	ecs_target = "${10:Optional}"
+	batch_target = "${11:Optional}"
+	kinesis_target = "${12:Optional}"
+	sqs_target = "${13:Optional}"
+	input_transformer = "${14:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_cloudwatch_event_target</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

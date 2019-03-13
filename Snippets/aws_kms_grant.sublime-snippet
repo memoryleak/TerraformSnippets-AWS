@@ -1,15 +1,16 @@
 <snippet>
 <content><![CDATA[
 resource "aws_kms_grant" "aws_kms_grant_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:key_id} = "${5:value}"
-	${6:grantee_principal} = "${7:value}"
-	${8:operations} = "${9:value}"
-	${10:retiree_principal} = "${11:value}"
-	${12:constraints} = "${13:value}"
-	${14:grant_creation_tokens} = "${15:value}"
-	${16:retire_on_delete} = "${17:value}"
+	name = "${3:Optional}"
+	key_id = "${4:Required}"
+	grantee_principal = "${5:Required}"
+	operations = "${6:Required}"
+	retiree_principal = "${7:Optional}"
+	constraints = "${8:Optional}"
+	grant_creation_tokens = "${9:Optional}"
+	retire_on_delete = "${10:Required}"
 }
 ]]></content>
 <tabTrigger>aws_kms_grant</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

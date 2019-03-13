@@ -1,10 +1,11 @@
 <snippet>
 <content><![CDATA[
 resource "aws_ssm_maintenance_window_target" "aws_ssm_maintenance_window_target_${1:suffix}" {
-	${2:window_id} = "${3:value}"
-	${4:resource_type} = "${5:value}"
-	${6:targets} = "${7:value}"
+	window_id = "${3:Required}"
+	resource_type = "${4:Required}"
+	targets = "${5:Required}"
 }
 ]]></content>
 <tabTrigger>aws_ssm_maintenance_window_target</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

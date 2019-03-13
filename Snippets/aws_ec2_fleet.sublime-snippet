@@ -1,15 +1,16 @@
 <snippet>
 <content><![CDATA[
 resource "aws_ec2_fleet" "aws_ec2_fleet_${1:suffix}" {
-	${2:launch_template_config} = "${3:value}"
-	${4:target_capacity_specification} = "${5:value}"
-	${6:replace_unhealthy_instances} = "${7:value}"
-	${8:spot_options} = "${9:value}"
-	${10:tags} = "${11:value}"
-	${12:terminate_instances} = "${13:value}"
-	${14:terminate_instances_with_expiration} = "${15:value}"
-	${16:type} = "${17:value}"
+	launch_template_config = "${3:Required}"
+	target_capacity_specification = "${4:Required}"
+	replace_unhealthy_instances = "${5:Optional}"
+	spot_options = "${6:Optional}"
+	tags = "${7:Optional}"
+	terminate_instances = "${8:Optional}"
+	terminate_instances_with_expiration = "${9:Optional}"
+	type = "${10:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_ec2_fleet</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

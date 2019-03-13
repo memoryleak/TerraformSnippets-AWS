@@ -1,13 +1,14 @@
 <snippet>
 <content><![CDATA[
 resource "aws_route53_zone" "aws_route53_zone_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:comment} = "${5:value}"
-	${6:delegation_set_id} = "${7:value}"
-	${8:force_destroy} = "${9:value}"
-	${10:tags} = "${11:value}"
-	${12:vpc} = "${13:value}"
+	name = "${3:Required}"
+	comment = "${4:Optional}"
+	delegation_set_id = "${5:Optional}"
+	force_destroy = "${6:Optional}"
+	tags = "${7:Optional}"
+	vpc = "${8:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_route53_zone</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

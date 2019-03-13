@@ -1,14 +1,15 @@
 <snippet>
 <content><![CDATA[
 resource "aws_lambda_layer_version" "aws_lambda_layer_version_${1:suffix}" {
-	${2:filename (Optional) The path to the function's deployment package within the local filesystem. If defined, The s3_} = "${3:value}"
-	${4:s3_bucket} = "${5:value}"
-	${6:s3_key} = "${7:value}"
-	${8:s3_object_version} = "${9:value}"
-	${10:compatible_runtimes} = "${11:value}"
-	${12:description} = "${13:value}"
-	${14:license_info} = "${15:value}"
+	filename (Optional) The path to the function's deployment package within the local filesystem. If defined, The s3_ = "${3:Required}"
+	s3_bucket = "${4:Optional}"
+	s3_key = "${5:Optional}"
+	s3_object_version = "${6:Optional}"
+	compatible_runtimes = "${7:Optional}"
+	description = "${8:Optional}"
+	license_info = "${9:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_lambda_layer_version</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

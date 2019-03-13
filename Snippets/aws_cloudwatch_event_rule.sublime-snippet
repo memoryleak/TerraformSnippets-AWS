@@ -1,14 +1,15 @@
 <snippet>
 <content><![CDATA[
 resource "aws_cloudwatch_event_rule" "aws_cloudwatch_event_rule_${1:suffix}" {
-	${2:name} = "${3:Optional}"
-	${4:name_prefix} = "${5:Optional}"
-	${6:schedule_expression} = "${7:Required}"
-	${8:event_pattern} = "${9:Required}"
-	${10:description} = "${11:Optional}"
-	${12:role_arn} = "${13:Optional}"
-	${14:is_enabled} = "${15:Optional}"
+	name = "${3:Optional}"
+	name_prefix = "${4:Optional}"
+	schedule_expression = "${5:Required}"
+	event_pattern = "${6:Required}"
+	description = "${7:Optional}"
+	role_arn = "${8:Optional}"
+	is_enabled = "${9:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_cloudwatch_event_rule</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

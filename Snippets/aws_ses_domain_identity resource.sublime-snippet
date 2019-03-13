@@ -1,8 +1,9 @@
 <snippet>
 <content><![CDATA[
 resource "aws_ses_domain_identity resource" "aws_ses_domain_identity resource_${1:suffix}" {
-	${2:domain} = "${3:value}"
+	domain = "${3:Required}"
 }
 ]]></content>
 <tabTrigger>aws_ses_domain_identity resource</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

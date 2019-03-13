@@ -1,8 +1,9 @@
 <snippet>
 <content><![CDATA[
 resource "aws_inspector_assessment_target" "aws_inspector_assessment_target_${1:suffix}" {
-	${2:name} = "${3:value}"
+	name = "${3:Required}"
 }
 ]]></content>
 <tabTrigger>aws_inspector_assessment_target</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

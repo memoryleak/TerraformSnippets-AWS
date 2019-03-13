@@ -1,10 +1,11 @@
 <snippet>
 <content><![CDATA[
 resource "aws_datasync_location_nfs" "aws_datasync_location_nfs_${1:suffix}" {
-	${2:on_prem_config} = "${3:Required}"
-	${4:server_hostname} = "${5:Required}"
-	${6:subdirectory} = "${7:Required}"
+	on_prem_config = "${3:Required}"
+	server_hostname = "${4:Required}"
+	subdirectory = "${5:Required}"
 }
 ]]></content>
 <tabTrigger>aws_datasync_location_nfs</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

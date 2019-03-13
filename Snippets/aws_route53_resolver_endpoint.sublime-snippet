@@ -1,12 +1,13 @@
 <snippet>
 <content><![CDATA[
 resource "aws_route53_resolver_endpoint" "aws_route53_resolver_endpoint_${1:suffix}" {
-	${2:direction} = "${3:value}"
-	${4:ip_address} = "${5:value}"
-	${6:security_group_ids} = "${7:value}"
-	${8:name} = "${9:value}"
-	${10:tags} = "${11:value}"
+	direction = "${3:Required}"
+	ip_address = "${4:Required}"
+	security_group_ids = "${5:Required}"
+	name = "${6:Optional}"
+	tags = "${7:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_route53_resolver_endpoint</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

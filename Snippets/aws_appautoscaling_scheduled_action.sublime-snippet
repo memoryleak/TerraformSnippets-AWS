@@ -1,12 +1,13 @@
 <snippet>
 <content><![CDATA[
 resource "aws_appautoscaling_scheduled_action" "aws_appautoscaling_scheduled_action_${1:suffix}" {
-	${2:name} = "${3:Required}"
-	${4:service_namespace} = "${5:Required}"
-	${6:resource_id} = "${7:Required}"
-	${8:scalable_dimension} = "${9:Optional}"
-	${10:scalable_target_action} = "${11:Optional}"
+	name = "${3:Required}"
+	service_namespace = "${4:Required}"
+	resource_id = "${5:Required}"
+	scalable_dimension = "${6:Optional}"
+	scalable_target_action = "${7:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_appautoscaling_scheduled_action</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

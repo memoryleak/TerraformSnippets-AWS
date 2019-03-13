@@ -8,8 +8,21 @@ class TerraformResourceArgument:
         self.optional = optional
 
     def get_snippet(self, index):
-        return "${" + str(index) + ":" + self.name + "} = \"${" + str((index + 1)) + ":" + (
-            "Optional" if self.optional else "Required") + "}\"\n"
+        return self.name + " = \"${" + str((index + 1)) + ":" + (
+            "Optional" if self.optional is True else "Required"
+        ) + "}\"\n"
+
+
+class TerraformResourceAttribute:
+    def __init__(self, name, description, optional):
+        self.name = name
+        self.description = description
+        self.optional = optional
+
+    def get_snippet(self, index):
+        return self.name + " = \"${" + str((index + 1)) + ":" + (
+            "Optional" if self.optional is True else "Required"
+        ) + "}\"\n"
 
 
 class TerraformResource:
@@ -42,7 +55,8 @@ class TerraformResource:
 
         for argument in self.arguments:
             snippets += "\t" + argument.get_snippet(index)
-            index += 2
+            index += 1
 
-        snippets += "}\n]]></content>\n<tabTrigger>" + self.name + "</tabTrigger>\n</snippet>\n"
+        snippets += "}\n]]></content>\n<tabTrigger>" + self.name + "</tabTrigger>\n<scope>source.terraform</scope>\n" \
+                                                                   "</snippet>\n"
         return snippets

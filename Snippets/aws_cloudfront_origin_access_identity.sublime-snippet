@@ -1,8 +1,9 @@
 <snippet>
 <content><![CDATA[
 resource "aws_cloudfront_origin_access_identity" "aws_cloudfront_origin_access_identity_${1:suffix}" {
-	${2:comment (Optional)} = "${3:Required}"
+	comment (Optional) = "${3:Required}"
 }
 ]]></content>
 <tabTrigger>aws_cloudfront_origin_access_identity</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

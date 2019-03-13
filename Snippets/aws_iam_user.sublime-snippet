@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_iam_user" "aws_iam_user_${1:suffix}" {
-	${2:path} = "${3:value}"
-	${4:permissions_boundary} = "${5:value}"
+	path = "${3:Optional}"
+	permissions_boundary = "${4:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_iam_user</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

@@ -1,8 +1,9 @@
 <snippet>
 <content><![CDATA[
 resource "aws_dax_parameter_group" "aws_dax_parameter_group_${1:suffix}" {
-	${2:description} = "${3:Optional}"
+	description = "${3:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_dax_parameter_group</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

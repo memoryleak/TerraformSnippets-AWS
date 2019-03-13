@@ -1,25 +1,26 @@
 <snippet>
 <content><![CDATA[
 resource "aws_ecs_service resource (import)" "aws_ecs_service resource (import)_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:task_definition} = "${5:value}"
-	${6:desired_count} = "${7:value}"
-	${8:launch_type} = "${9:value}"
-	${10:platform_version} = "${11:value}"
-	${12:scheduling_strategy} = "${13:value}"
-	${14:cluster} = "${15:value}"
-	${16:deployment_controller} = "${17:value}"
-	${18:deployment_maximum_percent} = "${19:value}"
-	${20:deployment_minimum_healthy_percent} = "${21:value}"
-	${22:enable_ecs_managed_tags} = "${23:value}"
-	${24:propagate_tags} = "${25:value}"
-	${26:ordered_placement_strategy} = "${27:value}"
-	${28:health_check_grace_period_seconds} = "${29:value}"
-	${30:load_balancer} = "${31:value}"
-	${32:placement_constraints} = "${33:value}"
-	${34:network_configuration} = "${35:value}"
-	${36:service_registries} = "${37:value}"
+	name = "${3:Required}"
+	task_definition = "${4:Required}"
+	desired_count = "${5:Optional}"
+	launch_type = "${6:Optional}"
+	platform_version = "${7:Optional}"
+	scheduling_strategy = "${8:Optional}"
+	cluster = "${9:Optional}"
+	deployment_controller = "${10:Optional}"
+	deployment_maximum_percent = "${11:Optional}"
+	deployment_minimum_healthy_percent = "${12:Optional}"
+	enable_ecs_managed_tags = "${13:Optional}"
+	propagate_tags = "${14:Optional}"
+	ordered_placement_strategy = "${15:Optional}"
+	health_check_grace_period_seconds = "${16:Optional}"
+	load_balancer = "${17:Optional}"
+	placement_constraints = "${18:Optional}"
+	network_configuration = "${19:Optional}"
+	service_registries = "${20:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_ecs_service resource (import)</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

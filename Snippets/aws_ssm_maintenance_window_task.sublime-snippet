@@ -1,18 +1,19 @@
 <snippet>
 <content><![CDATA[
 resource "aws_ssm_maintenance_window_task" "aws_ssm_maintenance_window_task_${1:suffix}" {
-	${2:window_id} = "${3:value}"
-	${4:max_concurrency} = "${5:value}"
-	${6:max_errors} = "${7:value}"
-	${8:task_type} = "${9:value}"
-	${10:task_arn} = "${11:value}"
-	${12:service_role_arn} = "${13:value}"
-	${14:name} = "${15:value}"
-	${16:description} = "${17:value}"
-	${18:targets} = "${19:value}"
-	${20:priority} = "${21:value}"
-	${22:task_parameters} = "${23:value}"
+	window_id = "${3:Required}"
+	max_concurrency = "${4:Required}"
+	max_errors = "${5:Required}"
+	task_type = "${6:Required}"
+	task_arn = "${7:Required}"
+	service_role_arn = "${8:Required}"
+	name = "${9:Optional}"
+	description = "${10:Optional}"
+	targets = "${11:Required}"
+	priority = "${12:Optional}"
+	task_parameters = "${13:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_ssm_maintenance_window_task</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

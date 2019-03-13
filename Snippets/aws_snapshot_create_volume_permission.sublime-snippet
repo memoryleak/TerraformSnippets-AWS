@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_snapshot_create_volume_permission" "aws_snapshot_create_volume_permission_${1:suffix}" {
-	${2:snapshot_id} = "${3:value}"
-	${4:account_id} = "${5:value}"
+	snapshot_id = "${3:Required}"
+	account_id = "${4:Required}"
 }
 ]]></content>
 <tabTrigger>aws_snapshot_create_volume_permission</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

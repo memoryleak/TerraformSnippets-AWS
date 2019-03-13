@@ -1,12 +1,13 @@
 <snippet>
 <content><![CDATA[
 resource "aws_neptune_parameter_group" "aws_neptune_parameter_group_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:family} = "${5:value}"
-	${6:description} = "${7:value}"
-	${8:parameter} = "${9:value}"
-	${10:tags} = "${11:value}"
+	name = "${3:Required}"
+	family = "${4:Required}"
+	description = "${5:Optional}"
+	parameter = "${6:Optional}"
+	tags = "${7:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_neptune_parameter_group</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

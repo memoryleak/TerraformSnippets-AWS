@@ -1,11 +1,12 @@
 <snippet>
 <content><![CDATA[
 resource "aws_spot_instance_request" "aws_spot_instance_request_${1:suffix}" {
-	${2:wait_for_fulfillment} = "${3:value}"
-	${4:launch_group} = "${5:value}"
-	${6:instance_interruption_behaviour} = "${7:value}"
-	${8:tags} = "${9:value}"
+	wait_for_fulfillment = "${3:Optional}"
+	launch_group = "${4:Optional}"
+	instance_interruption_behaviour = "${5:Optional}"
+	tags = "${6:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_spot_instance_request</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

@@ -1,10 +1,11 @@
 <snippet>
 <content><![CDATA[
 resource "aws_lb_target_group_attachment" "aws_lb_target_group_attachment_${1:suffix}" {
-	${2:target_group_arn} = "${3:value}"
-	${4:port} = "${5:value}"
-	${6:availability_zone} = "${7:value}"
+	target_group_arn = "${3:Required}"
+	port = "${4:Optional}"
+	availability_zone = "${5:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_lb_target_group_attachment</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

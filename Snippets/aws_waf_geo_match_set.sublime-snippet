@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_waf_geo_match_set" "aws_waf_geo_match_set_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:geo_match_constraint} = "${5:value}"
+	name = "${3:Required}"
+	geo_match_constraint = "${4:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_waf_geo_match_set</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

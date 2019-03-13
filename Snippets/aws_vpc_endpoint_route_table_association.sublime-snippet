@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_vpc_endpoint_route_table_association" "aws_vpc_endpoint_route_table_association_${1:suffix}" {
-	${2:route_table_id} = "${3:value}"
-	${4:vpc_endpoint_id} = "${5:value}"
+	route_table_id = "${3:Required}"
+	vpc_endpoint_id = "${4:Required}"
 }
 ]]></content>
 <tabTrigger>aws_vpc_endpoint_route_table_association</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

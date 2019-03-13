@@ -1,13 +1,14 @@
 <snippet>
 <content><![CDATA[
 resource "aws_batch_job_definition" "aws_batch_job_definition_${1:suffix}" {
-	${2:name} = "${3:Required}"
-	${4:container_properties} = "${5:Optional}"
-	${6:parameters} = "${7:Optional}"
-	${8:retry_strategy} = "${9:Optional}"
-	${10:timeout} = "${11:Optional}"
-	${12:type} = "${13:Required}"
+	name = "${3:Required}"
+	container_properties = "${4:Optional}"
+	parameters = "${5:Optional}"
+	retry_strategy = "${6:Optional}"
+	timeout = "${7:Optional}"
+	type = "${8:Required}"
 }
 ]]></content>
 <tabTrigger>aws_batch_job_definition</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

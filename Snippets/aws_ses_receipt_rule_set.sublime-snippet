@@ -1,8 +1,9 @@
 <snippet>
 <content><![CDATA[
 resource "aws_ses_receipt_rule_set" "aws_ses_receipt_rule_set_${1:suffix}" {
-	${2:rule_set_name} = "${3:value}"
+	rule_set_name = "${3:Required}"
 }
 ]]></content>
 <tabTrigger>aws_ses_receipt_rule_set</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

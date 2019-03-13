@@ -1,15 +1,16 @@
 <snippet>
 <content><![CDATA[
 resource "aws_security_group" "aws_security_group_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:name_prefix} = "${5:value}"
-	${6:description} = "${7:value}"
-	${8:ingress} = "${9:value}"
-	${10:egress} = "${11:value}"
-	${12:revoke_rules_on_delete} = "${13:value}"
-	${14:vpc_id} = "${15:value}"
-	${16:tags} = "${17:value}"
+	name = "${3:Optional}"
+	name_prefix = "${4:Optional}"
+	description = "${5:Optional}"
+	ingress = "${6:Optional}"
+	egress = "${7:Optional}"
+	revoke_rules_on_delete = "${8:Optional}"
+	vpc_id = "${9:Optional}"
+	tags = "${10:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_security_group</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

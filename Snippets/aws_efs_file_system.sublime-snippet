@@ -1,14 +1,15 @@
 <snippet>
 <content><![CDATA[
 resource "aws_efs_file_system" "aws_efs_file_system_${1:suffix}" {
-	${2:creation_token} = "${3:value}"
-	${4:encrypted} = "${5:value}"
-	${6:kms_key_id} = "${7:value}"
-	${8:performance_mode} = "${9:value}"
-	${10:provisioned_throughput_in_mibps} = "${11:value}"
-	${12:tags} = "${13:value}"
-	${14:throughput_mode} = "${15:value}"
+	creation_token = "${3:Optional}"
+	encrypted = "${4:Optional}"
+	kms_key_id = "${5:Optional}"
+	performance_mode = "${6:Optional}"
+	provisioned_throughput_in_mibps = "${7:Optional}"
+	tags = "${8:Optional}"
+	throughput_mode = "${9:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_efs_file_system</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

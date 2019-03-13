@@ -1,11 +1,12 @@
 <snippet>
 <content><![CDATA[
 resource "aws_glacier_vault_lock" "aws_glacier_vault_lock_${1:suffix}" {
-	${2:complete_lock} = "${3:value}"
-	${4:policy} = "${5:value}"
-	${6:vault_name} = "${7:value}"
-	${8:ignore_deletion_error} = "${9:value}"
+	complete_lock = "${3:Required}"
+	policy = "${4:Required}"
+	vault_name = "${5:Required}"
+	ignore_deletion_error = "${6:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_glacier_vault_lock</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

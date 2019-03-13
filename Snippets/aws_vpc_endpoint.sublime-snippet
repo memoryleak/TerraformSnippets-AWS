@@ -1,16 +1,17 @@
 <snippet>
 <content><![CDATA[
 resource "aws_vpc_endpoint" "aws_vpc_endpoint_${1:suffix}" {
-	${2:vpc_id} = "${3:value}"
-	${4:vpc_endpoint_type} = "${5:value}"
-	${6:service_name} = "${7:value}"
-	${8:auto_accept} = "${9:value}"
-	${10:policy} = "${11:value}"
-	${12:route_table_ids} = "${13:value}"
-	${14:subnet_ids} = "${15:value}"
-	${16:security_group_ids} = "${17:value}"
-	${18:private_dns_enabled} = "${19:value}"
+	vpc_id = "${3:Required}"
+	vpc_endpoint_type = "${4:Optional}"
+	service_name = "${5:Required}"
+	auto_accept = "${6:Optional}"
+	policy = "${7:Optional}"
+	route_table_ids = "${8:Optional}"
+	subnet_ids = "${9:Optional}"
+	security_group_ids = "${10:Optional}"
+	private_dns_enabled = "${11:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_vpc_endpoint</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

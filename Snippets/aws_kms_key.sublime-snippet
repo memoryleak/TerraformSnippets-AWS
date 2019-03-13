@@ -1,14 +1,15 @@
 <snippet>
 <content><![CDATA[
 resource "aws_kms_key" "aws_kms_key_${1:suffix}" {
-	${2:description} = "${3:value}"
-	${4:key_usage} = "${5:value}"
-	${6:policy} = "${7:value}"
-	${8:deletion_window_in_days} = "${9:value}"
-	${10:is_enabled} = "${11:value}"
-	${12:enable_key_rotation} = "${13:value}"
-	${14:tags} = "${15:value}"
+	description = "${3:Optional}"
+	key_usage = "${4:Optional}"
+	policy = "${5:Optional}"
+	deletion_window_in_days = "${6:Optional}"
+	is_enabled = "${7:Optional}"
+	enable_key_rotation = "${8:Optional}"
+	tags = "${9:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_kms_key</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

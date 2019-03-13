@@ -1,10 +1,11 @@
 <snippet>
 <content><![CDATA[
 resource "aws_cognito_identity_pool_roles_attachment" "aws_cognito_identity_pool_roles_attachment_${1:suffix}" {
-	${2:identity_pool_id (Required)} = "${3:Required}"
-	${4:role_mapping (Optional)} = "${5:Required}"
-	${6:roles (Required)} = "${7:Required}"
+	identity_pool_id (Required) = "${3:Required}"
+	role_mapping (Optional) = "${4:Required}"
+	roles (Required) = "${5:Required}"
 }
 ]]></content>
 <tabTrigger>aws_cognito_identity_pool_roles_attachment</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

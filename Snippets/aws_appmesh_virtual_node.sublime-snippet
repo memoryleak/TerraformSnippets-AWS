@@ -1,10 +1,11 @@
 <snippet>
 <content><![CDATA[
 resource "aws_appmesh_virtual_node" "aws_appmesh_virtual_node_${1:suffix}" {
-	${2:name} = "${3:Required}"
-	${4:mesh_name} = "${5:Required}"
-	${6:spec} = "${7:Required}"
+	name = "${3:Required}"
+	mesh_name = "${4:Required}"
+	spec = "${5:Required}"
 }
 ]]></content>
 <tabTrigger>aws_appmesh_virtual_node</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

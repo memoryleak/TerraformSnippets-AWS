@@ -1,15 +1,16 @@
 <snippet>
 <content><![CDATA[
 resource "aws_ec2_client_vpn_endpoint" "aws_ec2_client_vpn_endpoint_${1:suffix}" {
-	${2:description} = "${3:value}"
-	${4:client_cidr_block} = "${5:value}"
-	${6:dns_servers} = "${7:value}"
-	${8:server_certificate_arn} = "${9:value}"
-	${10:transport_protocol} = "${11:value}"
-	${12:authentication_options} = "${13:value}"
-	${14:connection_log_options} = "${15:value}"
-	${16:tags} = "${17:value}"
+	description = "${3:Optional}"
+	client_cidr_block = "${4:Required}"
+	dns_servers = "${5:Optional}"
+	server_certificate_arn = "${6:Required}"
+	transport_protocol = "${7:Optional}"
+	authentication_options = "${8:Required}"
+	connection_log_options = "${9:Required}"
+	tags = "${10:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_ec2_client_vpn_endpoint</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

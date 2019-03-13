@@ -1,10 +1,11 @@
 <snippet>
 <content><![CDATA[
 resource "aws_wafregional_rule" "aws_wafregional_rule_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:metric_name} = "${5:value}"
-	${6:predicate} = "${7:value}"
+	name = "${3:Required}"
+	metric_name = "${4:Required}"
+	predicate = "${5:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_wafregional_rule</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

@@ -1,15 +1,16 @@
 <snippet>
 <content><![CDATA[
 resource "aws_gamelift_fleet" "aws_gamelift_fleet_${1:suffix}" {
-	${2:build_id} = "${3:value}"
-	${4:ec2_instance_type} = "${5:value}"
-	${6:name} = "${7:value}"
-	${8:ec2_inbound_permission} = "${9:value}"
-	${10:metric_groups} = "${11:value}"
-	${12:new_game_session_protection_policy} = "${13:value}"
-	${14:resource_creation_limit_policy} = "${15:value}"
-	${16:runtime_configuration} = "${17:value}"
+	build_id = "${3:Required}"
+	ec2_instance_type = "${4:Required}"
+	name = "${5:Required}"
+	ec2_inbound_permission = "${6:Optional}"
+	metric_groups = "${7:Optional}"
+	new_game_session_protection_policy = "${8:Optional}"
+	resource_creation_limit_policy = "${9:Optional}"
+	runtime_configuration = "${10:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_gamelift_fleet</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

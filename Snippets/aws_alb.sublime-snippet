@@ -1,19 +1,20 @@
 <snippet>
 <content><![CDATA[
 resource "aws_alb" "aws_alb_${1:suffix}" {
-	${2:name_prefix} = "${3:Optional}"
-	${4:internal} = "${5:Optional}"
-	${6:load_balancer_type} = "${7:Optional}"
-	${8:security_groups} = "${9:Optional}"
-	${10:access_logs} = "${11:Optional}"
-	${12:subnets} = "${13:Optional}"
-	${14:subnet_mapping} = "${15:Optional}"
-	${16:idle_timeout} = "${17:Optional}"
-	${18:enable_deletion_protection} = "${19:Optional}"
-	${20:enable_http2} = "${21:Optional}"
-	${22:ip_address_type} = "${23:Optional}"
-	${24:tags} = "${25:Optional}"
+	name_prefix = "${3:Optional}"
+	internal = "${4:Optional}"
+	load_balancer_type = "${5:Optional}"
+	security_groups = "${6:Optional}"
+	access_logs = "${7:Optional}"
+	subnets = "${8:Optional}"
+	subnet_mapping = "${9:Optional}"
+	idle_timeout = "${10:Optional}"
+	enable_deletion_protection = "${11:Optional}"
+	enable_http2 = "${12:Optional}"
+	ip_address_type = "${13:Optional}"
+	tags = "${14:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_alb</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

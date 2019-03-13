@@ -1,21 +1,22 @@
 <snippet>
 <content><![CDATA[
 resource "aws_ses_receipt_rule" "aws_ses_receipt_rule_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:rule_set_name} = "${5:value}"
-	${6:after} = "${7:value}"
-	${8:enabled} = "${9:value}"
-	${10:recipients} = "${11:value}"
-	${12:scan_enabled} = "${13:value}"
-	${14:tls_policy} = "${15:value}"
-	${16:add_header_action} = "${17:value}"
-	${18:bounce_action} = "${19:value}"
-	${20:lambda_action} = "${21:value}"
-	${22:s3_action} = "${23:value}"
-	${24:sns_action} = "${25:value}"
-	${26:stop_action} = "${27:value}"
-	${28:workmail_action} = "${29:value}"
+	name = "${3:Required}"
+	rule_set_name = "${4:Required}"
+	after = "${5:Optional}"
+	enabled = "${6:Optional}"
+	recipients = "${7:Optional}"
+	scan_enabled = "${8:Optional}"
+	tls_policy = "${9:Optional}"
+	add_header_action = "${10:Optional}"
+	bounce_action = "${11:Optional}"
+	lambda_action = "${12:Optional}"
+	s3_action = "${13:Optional}"
+	sns_action = "${14:Optional}"
+	stop_action = "${15:Optional}"
+	workmail_action = "${16:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_ses_receipt_rule</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

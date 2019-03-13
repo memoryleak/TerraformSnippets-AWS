@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_proxy_protocol_policy" "aws_proxy_protocol_policy_${1:suffix}" {
-	${2:load_balancer} = "${3:value}"
-	${4:instance_ports} = "${5:value}"
+	load_balancer = "${3:Required}"
+	instance_ports = "${4:Required}"
 }
 ]]></content>
 <tabTrigger>aws_proxy_protocol_policy</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

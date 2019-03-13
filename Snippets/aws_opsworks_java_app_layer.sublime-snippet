@@ -1,24 +1,25 @@
 <snippet>
 <content><![CDATA[
 resource "aws_opsworks_java_app_layer" "aws_opsworks_java_app_layer_${1:suffix}" {
-	${2:stack_id} = "${3:value}"
-	${4:app_server} = "${5:value}"
-	${6:app_server_version} = "${7:value}"
-	${8:auto_assign_elastic_ips} = "${9:value}"
-	${10:auto_assign_public_ips} = "${11:value}"
-	${12:custom_instance_profile_arn} = "${13:value}"
-	${14:custom_security_group_ids} = "${15:value}"
-	${16:install_updates_on_boot} = "${17:value}"
-	${18:instance_shutdown_timeout} = "${19:value}"
-	${20:jvm_type} = "${21:value}"
-	${22:jvm_options} = "${23:value}"
-	${24:jvm_version} = "${25:value}"
-	${26:elastic_load_balancer} = "${27:value}"
-	${28:drain_elb_on_shutdown} = "${29:value}"
-	${30:system_packages} = "${31:value}"
-	${32:ebs_volume} = "${33:value}"
-	${34:custom_json} = "${35:value}"
+	stack_id = "${3:Required}"
+	app_server = "${4:Optional}"
+	app_server_version = "${5:Optional}"
+	auto_assign_elastic_ips = "${6:Optional}"
+	auto_assign_public_ips = "${7:Optional}"
+	custom_instance_profile_arn = "${8:Optional}"
+	custom_security_group_ids = "${9:Optional}"
+	install_updates_on_boot = "${10:Optional}"
+	instance_shutdown_timeout = "${11:Optional}"
+	jvm_type = "${12:Optional}"
+	jvm_options = "${13:Optional}"
+	jvm_version = "${14:Optional}"
+	elastic_load_balancer = "${15:Optional}"
+	drain_elb_on_shutdown = "${16:Optional}"
+	system_packages = "${17:Optional}"
+	ebs_volume = "${18:Optional}"
+	custom_json = "${19:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_opsworks_java_app_layer</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

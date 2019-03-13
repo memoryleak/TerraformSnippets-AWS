@@ -1,12 +1,13 @@
 <snippet>
 <content><![CDATA[
 resource "aws_transfer_server" "aws_transfer_server_${1:suffix}" {
-	${2:invocation_role} = "${3:value}"
-	${4:identity_provider_type} = "${5:value}"
-	${6:logging_role} = "${7:value}"
-	${8:force_destroy} = "${9:value}"
-	${10:tags} = "${11:value}"
+	invocation_role = "${3:Optional}"
+	identity_provider_type = "${4:Optional}"
+	logging_role = "${5:Optional}"
+	force_destroy = "${6:Optional}"
+	tags = "${7:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_transfer_server</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

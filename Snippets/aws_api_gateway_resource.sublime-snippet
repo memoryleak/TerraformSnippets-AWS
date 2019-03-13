@@ -1,10 +1,11 @@
 <snippet>
 <content><![CDATA[
 resource "aws_api_gateway_resource" "aws_api_gateway_resource_${1:suffix}" {
-	${2:rest_api_id} = "${3:Required}"
-	${4:parent_id} = "${5:Required}"
-	${6:path_part} = "${7:Required}"
+	rest_api_id = "${3:Required}"
+	parent_id = "${4:Required}"
+	path_part = "${5:Required}"
 }
 ]]></content>
 <tabTrigger>aws_api_gateway_resource</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

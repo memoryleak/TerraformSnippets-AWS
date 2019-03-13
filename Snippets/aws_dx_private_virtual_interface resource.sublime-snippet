@@ -1,19 +1,20 @@
 <snippet>
 <content><![CDATA[
 resource "aws_dx_private_virtual_interface resource" "aws_dx_private_virtual_interface resource_${1:suffix}" {
-	${2:address_family} = "${3:value}"
-	${4:bgp_asn} = "${5:value}"
-	${6:connection_id} = "${7:value}"
-	${8:name} = "${9:value}"
-	${10:vlan} = "${11:value}"
-	${12:amazon_address} = "${13:value}"
-	${14:mtu} = "${15:value}"
-	${16:bgp_auth_key} = "${17:value}"
-	${18:customer_address} = "${19:value}"
-	${20:dx_gateway_id} = "${21:value}"
-	${22:tags} = "${23:value}"
-	${24:vpn_gateway_id} = "${25:value}"
+	address_family = "${3:Required}"
+	bgp_asn = "${4:Required}"
+	connection_id = "${5:Required}"
+	name = "${6:Required}"
+	vlan = "${7:Required}"
+	amazon_address = "${8:Optional}"
+	mtu = "${9:Optional}"
+	bgp_auth_key = "${10:Optional}"
+	customer_address = "${11:Optional}"
+	dx_gateway_id = "${12:Optional}"
+	tags = "${13:Optional}"
+	vpn_gateway_id = "${14:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_dx_private_virtual_interface resource</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

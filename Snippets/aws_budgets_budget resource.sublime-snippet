@@ -1,16 +1,17 @@
 <snippet>
 <content><![CDATA[
 resource "aws_budgets_budget resource" "aws_budgets_budget resource_${1:suffix}" {
-	${2:account_id} = "${3:value}"
-	${4:name} = "${5:value}"
-	${6:name_prefix} = "${7:value}"
-	${8:budget_type} = "${9:value}"
-	${10:cost_filters} = "${11:value}"
-	${12:cost_types} = "${13:value}"
-	${14:limit_amount} = "${15:value}"
-	${16:limit_unit} = "${17:value}"
-	${18:time_unit} = "${19:value}"
+	account_id = "${3:Optional}"
+	name = "${4:Optional}"
+	name_prefix = "${5:Optional}"
+	budget_type = "${6:Required}"
+	cost_filters = "${7:Optional}"
+	cost_types = "${8:Optional}"
+	limit_amount = "${9:Required}"
+	limit_unit = "${10:Required}"
+	time_unit = "${11:Required}"
 }
 ]]></content>
 <tabTrigger>aws_budgets_budget resource</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

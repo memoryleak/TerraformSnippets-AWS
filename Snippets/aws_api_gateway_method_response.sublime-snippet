@@ -1,12 +1,13 @@
 <snippet>
 <content><![CDATA[
 resource "aws_api_gateway_method_response" "aws_api_gateway_method_response_${1:suffix}" {
-	${2:rest_api_id} = "${3:Required}"
-	${4:resource_id} = "${5:Required}"
-	${6:http_method} = "${7:Required}"
-	${8:status_code} = "${9:Required}"
-	${10:response_models} = "${11:Optional}"
+	rest_api_id = "${3:Required}"
+	resource_id = "${4:Required}"
+	http_method = "${5:Required}"
+	status_code = "${6:Required}"
+	response_models = "${7:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_api_gateway_method_response</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

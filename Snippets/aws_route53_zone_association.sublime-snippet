@@ -1,10 +1,11 @@
 <snippet>
 <content><![CDATA[
 resource "aws_route53_zone_association" "aws_route53_zone_association_${1:suffix}" {
-	${2:zone_id} = "${3:value}"
-	${4:vpc_id} = "${5:value}"
-	${6:vpc_region} = "${7:value}"
+	zone_id = "${3:Required}"
+	vpc_id = "${4:Required}"
+	vpc_region = "${5:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_route53_zone_association</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

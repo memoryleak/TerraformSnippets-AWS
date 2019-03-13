@@ -1,15 +1,16 @@
 <snippet>
 <content><![CDATA[
 resource "aws_network_interface" "aws_network_interface_${1:suffix}" {
-	${2:subnet_id} = "${3:value}"
-	${4:description} = "${5:value}"
-	${6:private_ips} = "${7:value}"
-	${8:private_ips_count} = "${9:value}"
-	${10:security_groups} = "${11:value}"
-	${12:attachment} = "${13:value}"
-	${14:source_dest_check} = "${15:value}"
-	${16:tags} = "${17:value}"
+	subnet_id = "${3:Required}"
+	description = "${4:Optional}"
+	private_ips = "${5:Optional}"
+	private_ips_count = "${6:Optional}"
+	security_groups = "${7:Optional}"
+	attachment = "${8:Optional}"
+	source_dest_check = "${9:Optional}"
+	tags = "${10:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_network_interface</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

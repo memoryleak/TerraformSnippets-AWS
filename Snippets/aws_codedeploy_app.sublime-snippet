@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_codedeploy_app" "aws_codedeploy_app_${1:suffix}" {
-	${2:name} = "${3:Required}"
-	${4:compute_platform} = "${5:Optional}"
+	name = "${3:Required}"
+	compute_platform = "${4:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_codedeploy_app</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

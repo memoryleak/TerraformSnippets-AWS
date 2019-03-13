@@ -1,20 +1,21 @@
 <snippet>
 <content><![CDATA[
 resource "aws_api_gateway_integration" "aws_api_gateway_integration_${1:suffix}" {
-	${2:rest_api_id} = "${3:Required}"
-	${4:resource_id} = "${5:Required}"
-	${6:http_method} = "${7:Required}"
-	${8:integration_http_method} = "${9:Optional}"
-	${10:type} = "${11:Required}"
-	${12:connection_type} = "${13:Optional}"
-	${14:connection_id} = "${15:Optional}"
-	${16:credentials} = "${17:Optional}"
-	${18:request_templates} = "${19:Optional}"
-	${20:passthrough_behavior} = "${21:Optional}"
-	${22:cache_key_parameters} = "${23:Optional}"
-	${24:cache_namespace} = "${25:Optional}"
-	${26:timeout_milliseconds} = "${27:Optional}"
+	rest_api_id = "${3:Required}"
+	resource_id = "${4:Required}"
+	http_method = "${5:Required}"
+	integration_http_method = "${6:Optional}"
+	type = "${7:Required}"
+	connection_type = "${8:Optional}"
+	connection_id = "${9:Optional}"
+	credentials = "${10:Optional}"
+	request_templates = "${11:Optional}"
+	passthrough_behavior = "${12:Optional}"
+	cache_key_parameters = "${13:Optional}"
+	cache_namespace = "${14:Optional}"
+	timeout_milliseconds = "${15:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_api_gateway_integration</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

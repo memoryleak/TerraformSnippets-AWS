@@ -1,25 +1,26 @@
 <snippet>
 <content><![CDATA[
 resource "aws_emr_cluster" "aws_emr_cluster_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:release_label} = "${5:value}"
-	${6:master_instance_type} = "${7:value}"
-	${8:additional_info} = "${9:value}"
-	${10:service_role} = "${11:value}"
-	${12:security_configuration} = "${13:value}"
-	${14:core_instance_type} = "${15:value}"
-	${16:instance_group} = "${17:value}"
-	${18:log_uri} = "${19:value}"
-	${20:applications} = "${21:value}"
-	${22:termination_protection} = "${23:value}"
-	${24:keep_job_flow_alive_when_no_steps} = "${25:value}"
-	${26:ec2_attributes} = "${27:value}"
-	${28:kerberos_attributes} = "${29:value}"
-	${30:ebs_root_volume_size} = "${31:value}"
-	${32:bootstrap_action} = "${33:value}"
-	${34:configurations} = "${35:value}"
-	${36:configurations_json} = "${37:value}"
+	name = "${3:Required}"
+	release_label = "${4:Required}"
+	master_instance_type = "${5:Optional}"
+	additional_info = "${6:Optional}"
+	service_role = "${7:Required}"
+	security_configuration = "${8:Optional}"
+	core_instance_type = "${9:Optional}"
+	instance_group = "${10:Optional}"
+	log_uri = "${11:Optional}"
+	applications = "${12:Optional}"
+	termination_protection = "${13:Optional}"
+	keep_job_flow_alive_when_no_steps = "${14:Optional}"
+	ec2_attributes = "${15:Optional}"
+	kerberos_attributes = "${16:Optional}"
+	ebs_root_volume_size = "${17:Optional}"
+	bootstrap_action = "${18:Optional}"
+	configurations = "${19:Optional}"
+	configurations_json = "${20:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_emr_cluster</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

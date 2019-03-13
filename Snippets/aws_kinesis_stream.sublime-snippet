@@ -1,11 +1,12 @@
 <snippet>
 <content><![CDATA[
 resource "aws_kinesis_stream" "aws_kinesis_stream_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:retention_period} = "${5:value}"
-	${6:encryption_type} = "${7:value}"
-	${8:tags} = "${9:value}"
+	name = "${3:Required}"
+	retention_period = "${4:Optional}"
+	encryption_type = "${5:Optional}"
+	tags = "${6:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_kinesis_stream</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

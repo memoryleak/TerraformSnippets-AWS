@@ -1,10 +1,11 @@
 <snippet>
 <content><![CDATA[
 resource "aws_pinpoint_event_stream" "aws_pinpoint_event_stream_${1:suffix}" {
-	${2:application_id} = "${3:value}"
-	${4:destination_stream_arn} = "${5:value}"
-	${6:role_arn} = "${7:value}"
+	application_id = "${3:Required}"
+	destination_stream_arn = "${4:Required}"
+	role_arn = "${5:Required}"
 }
 ]]></content>
 <tabTrigger>aws_pinpoint_event_stream</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

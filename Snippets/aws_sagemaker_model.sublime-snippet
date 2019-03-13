@@ -1,14 +1,15 @@
 <snippet>
 <content><![CDATA[
 resource "aws_sagemaker_model" "aws_sagemaker_model_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:primary_container} = "${5:value}"
-	${6:execution_role_arn} = "${7:value}"
-	${8:container (Optional)} = "${9:value}"
-	${10:enable_network_isolation (Optional)} = "${11:value}"
-	${12:vpc_config (Optional)} = "${13:value}"
-	${14:tags} = "${15:value}"
+	name = "${3:Optional}"
+	primary_container = "${4:Optional}"
+	execution_role_arn = "${5:Required}"
+	container (Optional) = "${6:Required}"
+	enable_network_isolation (Optional) = "${7:Required}"
+	vpc_config (Optional) = "${8:Required}"
+	tags = "${9:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_sagemaker_model</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

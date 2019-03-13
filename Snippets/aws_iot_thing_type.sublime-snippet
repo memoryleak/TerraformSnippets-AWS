@@ -1,11 +1,12 @@
 <snippet>
 <content><![CDATA[
 resource "aws_iot_thing_type" "aws_iot_thing_type_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:description} = "${5:value}"
-	${6:deprecated} = "${7:value}"
-	${8:searchable_attributes} = "${9:value}"
+	name = "${3:Required}"
+	description = "${4:Optional}"
+	deprecated = "${5:Optional}"
+	searchable_attributes = "${6:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_iot_thing_type</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

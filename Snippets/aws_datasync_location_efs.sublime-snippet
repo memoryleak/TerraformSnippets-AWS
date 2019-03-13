@@ -1,10 +1,11 @@
 <snippet>
 <content><![CDATA[
 resource "aws_datasync_location_efs" "aws_datasync_location_efs_${1:suffix}" {
-	${2:ec2_config} = "${3:Required}"
-	${4:efs_file_system_arn} = "${5:Required}"
-	${6:subdirectory} = "${7:Optional}"
+	ec2_config = "${3:Required}"
+	efs_file_system_arn = "${4:Required}"
+	subdirectory = "${5:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_datasync_location_efs</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

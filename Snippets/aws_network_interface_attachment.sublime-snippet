@@ -1,10 +1,11 @@
 <snippet>
 <content><![CDATA[
 resource "aws_network_interface_attachment" "aws_network_interface_attachment_${1:suffix}" {
-	${2:instance_id} = "${3:value}"
-	${4:network_interface_id} = "${5:value}"
-	${6:device_index} = "${7:value}"
+	instance_id = "${3:Required}"
+	network_interface_id = "${4:Required}"
+	device_index = "${5:Required}"
 }
 ]]></content>
 <tabTrigger>aws_network_interface_attachment</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

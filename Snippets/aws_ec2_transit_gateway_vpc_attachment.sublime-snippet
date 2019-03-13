@@ -1,14 +1,15 @@
 <snippet>
 <content><![CDATA[
 resource "aws_ec2_transit_gateway_vpc_attachment" "aws_ec2_transit_gateway_vpc_attachment_${1:suffix}" {
-	${2:subnet_ids} = "${3:value}"
-	${4:transit_gateway_id} = "${5:value}"
-	${6:vpc_id} = "${7:value}"
-	${8:dns_support} = "${9:value}"
-	${10:ipv6_support} = "${11:value}"
-	${12:transit_gateway_default_route_table_association} = "${13:value}"
-	${14:transit_gateway_default_route_table_propagation} = "${15:value}"
+	subnet_ids = "${3:Required}"
+	transit_gateway_id = "${4:Required}"
+	vpc_id = "${5:Required}"
+	dns_support = "${6:Optional}"
+	ipv6_support = "${7:Optional}"
+	transit_gateway_default_route_table_association = "${8:Optional}"
+	transit_gateway_default_route_table_propagation = "${9:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_ec2_transit_gateway_vpc_attachment</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

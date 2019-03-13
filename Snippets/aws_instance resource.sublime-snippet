@@ -1,11 +1,12 @@
 <snippet>
 <content><![CDATA[
 resource "aws_instance resource" "aws_instance resource_${1:suffix}" {
-	${2:ami} = "${3:value}"
-	${4:availability_zone} = "${5:value}"
-	${6:placement_group} = "${7:value}"
-	${8:host_id} = "${9:value}"
+	ami = "${3:Required}"
+	availability_zone = "${4:Optional}"
+	placement_group = "${5:Optional}"
+	host_id = "${6:Required}"
 }
 ]]></content>
 <tabTrigger>aws_instance resource</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

@@ -1,8 +1,9 @@
 <snippet>
 <content><![CDATA[
 resource "aws_iam_account_alias" "aws_iam_account_alias_${1:suffix}" {
-	${2:account_alias} = "${3:value}"
+	account_alias = "${3:Required}"
 }
 ]]></content>
 <tabTrigger>aws_iam_account_alias</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

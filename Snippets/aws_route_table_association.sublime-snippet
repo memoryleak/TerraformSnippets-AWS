@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_route_table_association" "aws_route_table_association_${1:suffix}" {
-	${2:subnet_id} = "${3:value}"
-	${4:route_table_id} = "${5:value}"
+	subnet_id = "${3:Required}"
+	route_table_id = "${4:Required}"
 }
 ]]></content>
 <tabTrigger>aws_route_table_association</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

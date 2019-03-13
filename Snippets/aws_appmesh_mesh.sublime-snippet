@@ -1,8 +1,9 @@
 <snippet>
 <content><![CDATA[
 resource "aws_appmesh_mesh" "aws_appmesh_mesh_${1:suffix}" {
-	${2:name} = "${3:Required}"
+	name = "${3:Required}"
 }
 ]]></content>
 <tabTrigger>aws_appmesh_mesh</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

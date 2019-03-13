@@ -1,13 +1,14 @@
 <snippet>
 <content><![CDATA[
 resource "aws_elastic_beanstalk_environment" "aws_elastic_beanstalk_environment_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:cname_prefix} = "${5:value}"
-	${6:description} = "${7:value}"
-	${8:tier} = "${9:value}"
-	${10:wait_for_ready_timeout} = "${11:value}"
-	${12:version_label} = "${13:value}"
+	name = "${3:Required}"
+	cname_prefix = "${4:Optional}"
+	description = "${5:Optional}"
+	tier = "${6:Optional}"
+	wait_for_ready_timeout = "${7:Required}"
+	version_label = "${8:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_elastic_beanstalk_environment</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

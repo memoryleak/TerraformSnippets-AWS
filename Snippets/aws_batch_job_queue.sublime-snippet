@@ -1,11 +1,12 @@
 <snippet>
 <content><![CDATA[
 resource "aws_batch_job_queue" "aws_batch_job_queue_${1:suffix}" {
-	${2:name} = "${3:Required}"
-	${4:compute_environments} = "${5:Required}"
-	${6:priority} = "${7:Required}"
-	${8:state} = "${9:Required}"
+	name = "${3:Required}"
+	compute_environments = "${4:Required}"
+	priority = "${5:Required}"
+	state = "${6:Required}"
 }
 ]]></content>
 <tabTrigger>aws_batch_job_queue</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

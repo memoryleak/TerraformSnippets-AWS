@@ -1,8 +1,9 @@
 <snippet>
 <content><![CDATA[
 resource "aws_sns_topic_policy" "aws_sns_topic_policy_${1:suffix}" {
-	${2:arn} = "${3:value}"
+	arn = "${3:Required}"
 }
 ]]></content>
 <tabTrigger>aws_sns_topic_policy</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

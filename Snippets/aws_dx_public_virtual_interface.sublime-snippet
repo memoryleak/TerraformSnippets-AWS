@@ -1,17 +1,18 @@
 <snippet>
 <content><![CDATA[
 resource "aws_dx_public_virtual_interface" "aws_dx_public_virtual_interface_${1:suffix}" {
-	${2:address_family} = "${3:Required}"
-	${4:bgp_asn} = "${5:Required}"
-	${6:connection_id} = "${7:Required}"
-	${8:name} = "${9:Required}"
-	${10:vlan} = "${11:Required}"
-	${12:amazon_address} = "${13:Optional}"
-	${14:bgp_auth_key} = "${15:Optional}"
-	${16:customer_address} = "${17:Optional}"
-	${18:route_filter_prefixes} = "${19:Required}"
-	${20:tags} = "${21:Optional}"
+	address_family = "${3:Required}"
+	bgp_asn = "${4:Required}"
+	connection_id = "${5:Required}"
+	name = "${6:Required}"
+	vlan = "${7:Required}"
+	amazon_address = "${8:Optional}"
+	bgp_auth_key = "${9:Optional}"
+	customer_address = "${10:Optional}"
+	route_filter_prefixes = "${11:Required}"
+	tags = "${12:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_dx_public_virtual_interface</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

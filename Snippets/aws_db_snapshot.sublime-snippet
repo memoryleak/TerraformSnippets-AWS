@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_db_snapshot" "aws_db_snapshot_${1:suffix}" {
-	${2:db_instance_identifier} = "${3:value}"
-	${4:db_snapshot_identifier} = "${5:value}"
+	db_instance_identifier = "${3:Required}"
+	db_snapshot_identifier = "${4:Required}"
 }
 ]]></content>
 <tabTrigger>aws_db_snapshot</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

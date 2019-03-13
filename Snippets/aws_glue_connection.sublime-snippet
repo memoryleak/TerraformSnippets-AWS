@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_glue_connection" "aws_glue_connection_${1:suffix}" {
-	${2:connection_properties – (Required) A map of key} = "${3:value}"
-	${4:physical_connection_requirements} = "${5:value}"
+	connection_properties – (Required) A map of key = "${3:Required}"
+	physical_connection_requirements = "${4:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_glue_connection</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

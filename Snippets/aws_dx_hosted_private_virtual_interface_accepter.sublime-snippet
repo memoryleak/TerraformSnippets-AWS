@@ -1,11 +1,12 @@
 <snippet>
 <content><![CDATA[
 resource "aws_dx_hosted_private_virtual_interface_accepter" "aws_dx_hosted_private_virtual_interface_accepter_${1:suffix}" {
-	${2:virtual_interface_id} = "${3:Required}"
-	${4:dx_gateway_id} = "${5:Optional}"
-	${6:tags} = "${7:Optional}"
-	${8:vpn_gateway_id} = "${9:Optional}"
+	virtual_interface_id = "${3:Required}"
+	dx_gateway_id = "${4:Optional}"
+	tags = "${5:Optional}"
+	vpn_gateway_id = "${6:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_dx_hosted_private_virtual_interface_accepter</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

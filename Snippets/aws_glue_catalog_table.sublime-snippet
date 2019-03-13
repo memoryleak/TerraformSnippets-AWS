@@ -1,18 +1,19 @@
 <snippet>
 <content><![CDATA[
 resource "aws_glue_catalog_table" "aws_glue_catalog_table_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:database_name} = "${5:value}"
-	${6:catalog_id} = "${7:value}"
-	${8:description} = "${9:value}"
-	${10:owner} = "${11:value}"
-	${12:retention} = "${13:value}"
-	${14:storage_descriptor} = "${15:value}"
-	${16:partition_keys} = "${17:value}"
-	${18:view_original_text} = "${19:value}"
-	${20:view_expanded_text} = "${21:value}"
-	${22:table_type} = "${23:value}"
+	name = "${3:Required}"
+	database_name = "${4:Required}"
+	catalog_id = "${5:Optional}"
+	description = "${6:Optional}"
+	owner = "${7:Optional}"
+	retention = "${8:Optional}"
+	storage_descriptor = "${9:Optional}"
+	partition_keys = "${10:Optional}"
+	view_original_text = "${11:Optional}"
+	view_expanded_text = "${12:Optional}"
+	table_type = "${13:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_glue_catalog_table</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

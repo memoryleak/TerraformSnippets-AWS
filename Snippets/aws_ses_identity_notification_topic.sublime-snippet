@@ -1,10 +1,11 @@
 <snippet>
 <content><![CDATA[
 resource "aws_ses_identity_notification_topic" "aws_ses_identity_notification_topic_${1:suffix}" {
-	${2:topic_arn} = "${3:value}"
-	${4:notification_type} = "${5:value}"
-	${6:identity} = "${7:value}"
+	topic_arn = "${3:Optional}"
+	notification_type = "${4:Required}"
+	identity = "${5:Required}"
 }
 ]]></content>
 <tabTrigger>aws_ses_identity_notification_topic</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

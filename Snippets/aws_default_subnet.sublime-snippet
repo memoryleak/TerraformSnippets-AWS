@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_default_subnet" "aws_default_subnet_${1:suffix}" {
-	${2:map_public_ip_on_launch} = "${3:value}"
-	${4:tags} = "${5:value}"
+	map_public_ip_on_launch = "${3:Optional}"
+	tags = "${4:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_default_subnet</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

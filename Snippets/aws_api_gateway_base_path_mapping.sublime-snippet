@@ -1,10 +1,11 @@
 <snippet>
 <content><![CDATA[
 resource "aws_api_gateway_base_path_mapping" "aws_api_gateway_base_path_mapping_${1:suffix}" {
-	${2:api_id} = "${3:Required}"
-	${4:stage_name} = "${5:Optional}"
-	${6:base_path} = "${7:Optional}"
+	api_id = "${3:Required}"
+	stage_name = "${4:Optional}"
+	base_path = "${5:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_api_gateway_base_path_mapping</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

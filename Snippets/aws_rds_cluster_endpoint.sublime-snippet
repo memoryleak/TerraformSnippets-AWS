@@ -1,12 +1,13 @@
 <snippet>
 <content><![CDATA[
 resource "aws_rds_cluster_endpoint" "aws_rds_cluster_endpoint_${1:suffix}" {
-	${2:cluster_identifier} = "${3:value}"
-	${4:cluster_endpoint_identifier} = "${5:value}"
-	${6:custom_endpoint_type} = "${7:value}"
-	${8:static_members} = "${9:value}"
-	${10:excluded_members} = "${11:value}"
+	cluster_identifier = "${3:Required}"
+	cluster_endpoint_identifier = "${4:Required}"
+	custom_endpoint_type = "${5:Required}"
+	static_members = "${6:Optional}"
+	excluded_members = "${7:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_rds_cluster_endpoint</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

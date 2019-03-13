@@ -1,11 +1,12 @@
 <snippet>
 <content><![CDATA[
 resource "aws_pinpoint_adm_channel" "aws_pinpoint_adm_channel_${1:suffix}" {
-	${2:application_id} = "${3:value}"
-	${4:client_id} = "${5:value}"
-	${6:client_secret} = "${7:value}"
-	${8:enabled} = "${9:value}"
+	application_id = "${3:Required}"
+	client_id = "${4:Required}"
+	client_secret = "${5:Required}"
+	enabled = "${6:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_pinpoint_adm_channel</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

@@ -1,15 +1,16 @@
 <snippet>
 <content><![CDATA[
 resource "aws_appsync_datasource" "aws_appsync_datasource_${1:suffix}" {
-	${2:api_id} = "${3:Required}"
-	${4:type} = "${5:Required}"
-	${6:description} = "${7:Optional}"
-	${8:service_role_arn} = "${9:Optional}"
-	${10:dynamodb_config} = "${11:Optional}"
-	${12:elasticsearch_config} = "${13:Optional}"
-	${14:http_config} = "${15:Optional}"
-	${16:lambda_config} = "${17:Optional}"
+	api_id = "${3:Required}"
+	type = "${4:Required}"
+	description = "${5:Optional}"
+	service_role_arn = "${6:Optional}"
+	dynamodb_config = "${7:Optional}"
+	elasticsearch_config = "${8:Optional}"
+	http_config = "${9:Optional}"
+	lambda_config = "${10:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_appsync_datasource</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

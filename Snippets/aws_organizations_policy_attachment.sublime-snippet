@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_organizations_policy_attachment" "aws_organizations_policy_attachment_${1:suffix}" {
-	${2:policy_id} = "${3:value}"
-	${4:target_id} = "${5:value}"
+	policy_id = "${3:Required}"
+	target_id = "${4:Required}"
 }
 ]]></content>
 <tabTrigger>aws_organizations_policy_attachment</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

@@ -1,14 +1,15 @@
 <snippet>
 <content><![CDATA[
 resource "aws_ssm_maintenance_window" "aws_ssm_maintenance_window_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:schedule} = "${5:value}"
-	${6:cutoff} = "${7:value}"
-	${8:duration} = "${9:value}"
-	${10:allow_unassociated_targets} = "${11:value}"
-	${12:enabled} = "${13:value}"
-	${14:schedule_timezone} = "${15:value}"
+	name = "${3:Required}"
+	schedule = "${4:Required}"
+	cutoff = "${5:Required}"
+	duration = "${6:Required}"
+	allow_unassociated_targets = "${7:Optional}"
+	enabled = "${8:Optional}"
+	schedule_timezone = "${9:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_ssm_maintenance_window</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

@@ -1,8 +1,9 @@
 <snippet>
 <content><![CDATA[
 resource "aws_api_gateway_client_certificate" "aws_api_gateway_client_certificate_${1:suffix}" {
-	${2:description} = "${3:Optional}"
+	description = "${3:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_api_gateway_client_certificate</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

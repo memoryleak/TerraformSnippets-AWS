@@ -1,10 +1,11 @@
 <snippet>
 <content><![CDATA[
 resource "aws_redshift_snapshot_copy_grant" "aws_redshift_snapshot_copy_grant_${1:suffix}" {
-	${2:snapshot_copy_grant_name} = "${3:value}"
-	${4:kms_key_id} = "${5:value}"
-	${6:tags} = "${7:value}"
+	snapshot_copy_grant_name = "${3:Required}"
+	kms_key_id = "${4:Optional}"
+	tags = "${5:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_redshift_snapshot_copy_grant</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

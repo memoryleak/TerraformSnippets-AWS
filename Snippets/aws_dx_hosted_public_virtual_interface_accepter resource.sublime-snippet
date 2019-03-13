@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_dx_hosted_public_virtual_interface_accepter resource" "aws_dx_hosted_public_virtual_interface_accepter resource_${1:suffix}" {
-	${2:virtual_interface_id} = "${3:value}"
-	${4:tags} = "${5:value}"
+	virtual_interface_id = "${3:Required}"
+	tags = "${4:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_dx_hosted_public_virtual_interface_accepter resource</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

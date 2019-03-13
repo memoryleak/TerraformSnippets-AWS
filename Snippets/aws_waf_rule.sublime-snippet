@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_waf_rule" "aws_waf_rule_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:predicates} = "${5:value}"
+	name = "${3:Required}"
+	predicates = "${4:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_waf_rule</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

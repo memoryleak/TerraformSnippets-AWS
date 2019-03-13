@@ -1,12 +1,13 @@
 <snippet>
 <content><![CDATA[
 resource "aws_rds_global_cluster" "aws_rds_global_cluster_${1:suffix}" {
-	${2:database_name} = "${3:value}"
-	${4:deletion_protection} = "${5:value}"
-	${6:engine} = "${7:value}"
-	${8:engine_version} = "${9:value}"
-	${10:storage_encrypted} = "${11:value}"
+	database_name = "${3:Optional}"
+	deletion_protection = "${4:Optional}"
+	engine = "${5:Optional}"
+	engine_version = "${6:Optional}"
+	storage_encrypted = "${7:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_rds_global_cluster</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

@@ -1,8 +1,9 @@
 <snippet>
 <content><![CDATA[
 resource "aws_macie_member_account_association" "aws_macie_member_account_association_${1:suffix}" {
-	${2:member_account_id} = "${3:value}"
+	member_account_id = "${3:Required}"
 }
 ]]></content>
 <tabTrigger>aws_macie_member_account_association</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_ec2_transit_gateway_route_table_association" "aws_ec2_transit_gateway_route_table_association_${1:suffix}" {
-	${2:transit_gateway_attachment_id} = "${3:value}"
-	${4:transit_gateway_route_table_id} = "${5:value}"
+	transit_gateway_attachment_id = "${3:Required}"
+	transit_gateway_route_table_id = "${4:Required}"
 }
 ]]></content>
 <tabTrigger>aws_ec2_transit_gateway_route_table_association</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

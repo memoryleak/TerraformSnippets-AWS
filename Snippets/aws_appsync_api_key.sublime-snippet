@@ -1,10 +1,11 @@
 <snippet>
 <content><![CDATA[
 resource "aws_appsync_api_key" "aws_appsync_api_key_${1:suffix}" {
-	${2:api_id} = "${3:Required}"
-	${4:description} = "${5:Optional}"
-	${6:expires} = "${7:Optional}"
+	api_id = "${3:Required}"
+	description = "${4:Optional}"
+	expires = "${5:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_appsync_api_key</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

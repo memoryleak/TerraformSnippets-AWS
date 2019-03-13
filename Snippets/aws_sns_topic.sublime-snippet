@@ -1,23 +1,24 @@
 <snippet>
 <content><![CDATA[
 resource "aws_sns_topic" "aws_sns_topic_${1:suffix}" {
-	${2:name} = "${3:value}"
-	${4:name_prefix} = "${5:value}"
-	${6:display_name} = "${7:value}"
-	${8:delivery_policy} = "${9:value}"
-	${10:application_success_feedback_role_arn} = "${11:value}"
-	${12:application_success_feedback_sample_rate} = "${13:value}"
-	${14:application_failure_feedback_role_arn} = "${15:value}"
-	${16:http_success_feedback_role_arn} = "${17:value}"
-	${18:http_success_feedback_sample_rate} = "${19:value}"
-	${20:http_failure_feedback_role_arn} = "${21:value}"
-	${22:lambda_success_feedback_role_arn} = "${23:value}"
-	${24:lambda_success_feedback_sample_rate} = "${25:value}"
-	${26:lambda_failure_feedback_role_arn} = "${27:value}"
-	${28:sqs_success_feedback_role_arn} = "${29:value}"
-	${30:sqs_success_feedback_sample_rate} = "${31:value}"
-	${32:sqs_failure_feedback_role_arn} = "${33:value}"
+	name = "${3:Optional}"
+	name_prefix = "${4:Optional}"
+	display_name = "${5:Optional}"
+	delivery_policy = "${6:Optional}"
+	application_success_feedback_role_arn = "${7:Optional}"
+	application_success_feedback_sample_rate = "${8:Optional}"
+	application_failure_feedback_role_arn = "${9:Optional}"
+	http_success_feedback_role_arn = "${10:Optional}"
+	http_success_feedback_sample_rate = "${11:Optional}"
+	http_failure_feedback_role_arn = "${12:Optional}"
+	lambda_success_feedback_role_arn = "${13:Optional}"
+	lambda_success_feedback_sample_rate = "${14:Optional}"
+	lambda_failure_feedback_role_arn = "${15:Optional}"
+	sqs_success_feedback_role_arn = "${16:Optional}"
+	sqs_success_feedback_sample_rate = "${17:Optional}"
+	sqs_failure_feedback_role_arn = "${18:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_sns_topic</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

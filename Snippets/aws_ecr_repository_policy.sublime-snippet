@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_ecr_repository_policy" "aws_ecr_repository_policy_${1:suffix}" {
-	${2:repository} = "${3:value}"
-	${4:policy} = "${5:value}"
+	repository = "${3:Required}"
+	policy = "${4:Required}"
 }
 ]]></content>
 <tabTrigger>aws_ecr_repository_policy</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

@@ -1,13 +1,14 @@
 <snippet>
 <content><![CDATA[
 resource "aws_api_gateway_authorizer" "aws_api_gateway_authorizer_${1:suffix}" {
-	${2:name} = "${3:Required}"
-	${4:rest_api_id} = "${5:Required}"
-	${6:type} = "${7:Optional}"
-	${8:authorizer_credentials} = "${9:Optional}"
-	${10:authorizer_result_ttl_in_seconds} = "${11:Optional}"
-	${12:identity_validation_expression} = "${13:Optional}"
+	name = "${3:Required}"
+	rest_api_id = "${4:Required}"
+	type = "${5:Optional}"
+	authorizer_credentials = "${6:Optional}"
+	authorizer_result_ttl_in_seconds = "${7:Optional}"
+	identity_validation_expression = "${8:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_api_gateway_authorizer</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

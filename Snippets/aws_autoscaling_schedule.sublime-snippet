@@ -1,10 +1,11 @@
 <snippet>
 <content><![CDATA[
 resource "aws_autoscaling_schedule" "aws_autoscaling_schedule_${1:suffix}" {
-	${2:autoscaling_group_name} = "${3:Required}"
-	${4:scheduled_action_name} = "${5:Required}"
-	${6:recurrence} = "${7:Optional}"
+	autoscaling_group_name = "${3:Required}"
+	scheduled_action_name = "${4:Required}"
+	recurrence = "${5:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_autoscaling_schedule</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

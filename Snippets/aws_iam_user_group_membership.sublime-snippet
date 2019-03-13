@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_iam_user_group_membership" "aws_iam_user_group_membership_${1:suffix}" {
-	${2:user} = "${3:value}"
-	${4:groups} = "${5:value}"
+	user = "${3:Required}"
+	groups = "${4:Required}"
 }
 ]]></content>
 <tabTrigger>aws_iam_user_group_membership</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>

@@ -1,9 +1,10 @@
 <snippet>
 <content><![CDATA[
 resource "aws_codebuild_webhook" "aws_codebuild_webhook_${1:suffix}" {
-	${2:project_name} = "${3:Required}"
-	${4:branch_filter} = "${5:Optional}"
+	project_name = "${3:Required}"
+	branch_filter = "${4:Optional}"
 }
 ]]></content>
 <tabTrigger>aws_codebuild_webhook</tabTrigger>
+<scope>source.terraform</scope>
 </snippet>
