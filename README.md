@@ -27,6 +27,7 @@ The "Packages" directory is located at:
 - None
 
 # Generator
+* Make sure you have Geckodriver installed: https://github.com/mozilla/geckodriver/releases
 ```
 virtualenv .venv
 source .venv/bin/activate
