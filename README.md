@@ -2,7 +2,7 @@
 Terraform snippets for Sublime Text 2/3 for the AWS provider.
 
 ## Requirements
-Install package control by following instructions at https://packagecontrol.io/installation. 
+Install package control by following instructions at https://packagecontrol.io/installation.
 
 ## Installation
 Install `TerraformSnippets-AWS` with [Package Control](https://packagecontrol.io) and restart Sublime Text.
@@ -11,7 +11,7 @@ Install `TerraformSnippets-AWS` with [Package Control](https://packagecontrol.io
 ### Manual
 Clone the repository in your Sublime Text "Packages" directory:
 
-    git clonehttps://github.com/memoryleak/TerraformSnippets-AWS.git TerraformSnippets-AWS
+    git clone https://github.com/memoryleak/TerraformSnippets-AWS.git TerraformSnippets-AWS
 
 The "Packages" directory is located at:
 
