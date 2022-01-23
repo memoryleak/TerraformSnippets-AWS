@@ -1,5 +1,5 @@
 from selenium.webdriver.firefox.webdriver import WebDriver
-
+from selenium.webdriver.common.by import By
 
 class TerraformResourceArgument:
     def __init__(self, name, description, optional):
@@ -36,8 +36,10 @@ class TerraformResource:
 
     def parse(self):
         self.driver.get(self.url)
-        ul_element = self.driver.find_element_by_xpath("/html/body/div[4]/div/div[2]/ul[1]")
+        ul_element = self.driver.find_element(By.XPATH, "/html/body/div[2]/div[2]/div[2]/div/div/article/div[2]/div/div/ul[1]")
         lines = ul_element.text.split("\n")
+
+        print("Arguments >>> {}".format(lines))
 
         for line in lines:
             line_option = line.split('-')
