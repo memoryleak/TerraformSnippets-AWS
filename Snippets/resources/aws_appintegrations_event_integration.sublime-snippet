@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appintegrations_event_integration" "${1:name}" {
+  eventbridge_bus = "${2:eventbridge_bus}"  # EventBridge bus.
+  name            = "${3:name}"             # Name of the Event Integration.
+  event_filter {
+    source = "${4:source}"
+  }
+
+  # description = ""  # Description of the Event Integration.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Tags to apply to the Event Integration.
+}
+]]></content>
+<tabTrigger>aws_appintegrations_event_integration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides details about a specific Amazon AppIntegrations Event Integration</description>
+</snippet>

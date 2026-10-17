@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+data "aws_ce_tags" "${1:name}" {
+  time_period {
+    end   = "${2:end}"
+    start = "${3:start}"
+  }
+
+  # search_string = ""  # Value that you want to search for.
+  # tag_key       = ""  # Key of the tag that you want to return values for.
+  # filter {}  # Configuration block for the Expression object used to categorize costs.
+  # sort_by {}  # Configuration block for the value by which you want to sort the data.
+}
+]]></content>
+<tabTrigger>data_aws_ce_tags</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides the available cost allocation tag keys and tag values for a specified period.</description>
+</snippet>

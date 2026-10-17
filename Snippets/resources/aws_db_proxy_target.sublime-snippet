@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_db_proxy_target" "${1:name}" {
+  db_proxy_name     = "${2:db_proxy_name}"      # Name of the DB proxy.
+  target_group_name = "${3:target_group_name}"  # Name of the target group.
+
+  # db_cluster_identifier  = ""  # DB cluster identifier.
+  # db_instance_identifier = ""  # DB instance identifier.
+  # region                 = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_db_proxy_target</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an RDS DB proxy target resource.</description>
+</snippet>

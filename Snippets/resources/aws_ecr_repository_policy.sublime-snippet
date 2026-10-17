@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ecr_repository_policy" "${1:name}" {
+  policy     = "${2:policy}"      # The policy document.
+  repository = "${3:repository}"  # Name of the repository to apply the policy.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_ecr_repository_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Elastic Container Registry Repository Policy.</description>
+</snippet>

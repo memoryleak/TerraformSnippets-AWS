@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_route53_resolver_query_log_config_association" "${1:name}" {
+  resolver_query_log_config_id = "${2:resolver_query_log_config_id}"  # The ID of the Route 53 Resolver query logging configuration that you want to associate a VPC with.
+  resource_id                  = "${3:resource_id}"                   # The ID of a VPC that you want this query logging configuration to log queries for.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_route53_resolver_query_log_config_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Route 53 Resolver query logging configuration association resource.</description>
+</snippet>

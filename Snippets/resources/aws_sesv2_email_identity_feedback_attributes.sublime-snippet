@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sesv2_email_identity_feedback_attributes" "${1:name}" {
+  email_identity = "${2:email_identity}"  # Email identity.
+
+  # email_forwarding_enabled = false  # Sets the feedback forwarding configuration for the identity.
+  # region                   = ""     # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_sesv2_email_identity_feedback_attributes</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS SESv2 (Simple Email V2) Email Identity Feedback Attributes.</description>
+</snippet>

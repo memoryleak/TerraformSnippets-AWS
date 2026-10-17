@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3control_object_lambda_access_point_policy" "${1:name}" {
+  name   = "${2:name}"    # Name of the Object Lambda Access Point.
+  policy = "${3:policy}"  # Object Lambda Access Point resource policy document.
+
+  # account_id = ""  # AWS account ID for the account that owns the Object Lambda Access Point.
+  # region     = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_s3control_object_lambda_access_point_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage an S3 Object Lambda Access Point resource policy.</description>
+</snippet>

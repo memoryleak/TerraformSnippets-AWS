@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_glacier_vault" "${1:name}" {
+  name = "${2:name}"  # Name of the Vault.
+
+  # access_policy = ""  # Policy document.
+  # region        = ""  # Region where this resource will be managed.
+  # tags          = {}  # Map of tags to assign to the resource.
+  # notification {}  # Notifications for the Vault.
+}
+]]></content>
+<tabTrigger>aws_glacier_vault</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Glacier Vault.</description>
+</snippet>

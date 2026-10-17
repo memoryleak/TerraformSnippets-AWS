@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ebs_encryption_by_default" "${1:name}" {
+  # enabled = false  # Whether or not default EBS encryption is enabled.
+  # region  = ""     # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_ebs_encryption_by_default</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages whether default EBS encryption is enabled for your AWS account in the current AWS region.</description>
+</snippet>

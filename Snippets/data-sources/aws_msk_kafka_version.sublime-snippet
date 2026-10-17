@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_msk_kafka_version" "${1:name}" {
+  # preferred_versions = []  # Ordered list of preferred Kafka versions.
+  # region             = ""  # Region where this resource will be managed.
+  # version            = ""  # Version of MSK Kafka.
+}
+]]></content>
+<tabTrigger>data_aws_msk_kafka_version</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on a Amazon MSK Kafka Version</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ssoadmin_application_assignment_configuration" "${1:name}" {
+  application_arn     = "${2:application_arn}"  # ARN of the application.
+  assignment_required = ${3:false}              # Indicates whether users must have an explicit assignment to access the application.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_ssoadmin_application_assignment_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS SSO Admin Application Assignment Configuration.</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lightsail_disk" "${1:name}" {
+  availability_zone = "${2:availability_zone}"  # Availability Zone in which to create the disk.
+  name              = "${3:name}"               # Name of the disk.
+  size_in_gb        = ${4:0}                    # Size of the disk in GB.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_lightsail_disk</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Lightsail block storage disk.</description>
+</snippet>

@@ -1,0 +1,26 @@
+<snippet>
+<content><![CDATA[
+resource "aws_gamelift_game_server_group" "${1:name}" {
+  game_server_group_name = "${2:game_server_group_name}"  # Name of the game server group.
+  max_size               = ${3:0}                         # Maximum number of instances allowed in the EC2 Auto Scaling group.
+  min_size               = ${4:0}                         # Minimum number of instances allowed in the EC2 Auto Scaling group.
+  role_arn               = "${5:role_arn}"                # ARN for an IAM role that allows Amazon GameLift to access your EC2 Auto Scaling groups.
+  instance_definition {
+    instance_type = "${6:instance_type}"
+  }
+  launch_template {
+  }
+
+  # balancing_strategy            = ""  # How GameLift FleetIQ balances the use of Spot Instances and On-Demand Instances.
+  # game_server_protection_policy = ""  # Whether instances in the game server group are protected from early termination.
+  # region                        = ""  # Region where this resource will be managed.
+  # tags                          = {}  # Key-value map of resource tags
+  # vpc_subnets                   = []  # List of VPC subnets to use with instances in the game server group.
+  # auto_scaling_policy {}
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_gamelift_game_server_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a GameLift Game Server Group resource.</description>
+</snippet>

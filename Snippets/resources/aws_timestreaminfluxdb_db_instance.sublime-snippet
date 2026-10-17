@@ -1,0 +1,30 @@
+<snippet>
+<content><![CDATA[
+resource "aws_timestreaminfluxdb_db_instance" "${1:name}" {
+  allocated_storage      = ${2:0}                   # Amount of storage in GiB (gibibytes).
+  bucket                 = "${3:bucket}"            # Name of the initial InfluxDB bucket.
+  db_instance_type       = "${4:db_instance_type}"  # Timestream for InfluxDB DB instance type to run InfluxDB on.
+  name                   = "${5:name}"              # Name that uniquely identifies the DB instance when interacting with the Amazon Timestream for Inf...
+  organization           = "${6:organization}"      # Name of the initial organization for the initial admin user in InfluxDB.
+  password               = "${7:password}"          # Password of the initial admin user created in InfluxDB.
+  username               = "${8:username}"          # Username of the initial admin user created in InfluxDB.
+  vpc_security_group_ids = [${9}]                   # List of VPC security group IDs to associate with the DB instance.
+  vpc_subnet_ids         = [${10}]                  # List of VPC subnet IDs to associate with the DB instance.
+
+  # db_parameter_group_identifier = ""     # ID of the DB parameter group assigned to your DB instance.
+  # db_storage_type               = ""     # Timestream for InfluxDB DB storage type to read and write InfluxDB data.
+  # deployment_type               = ""     # Whether the DB instance will be deployed as a standalone instance or with a Multi-AZ standby for...
+  # network_type                  = ""     # Network type of the Timestream for InfluxDB instance.
+  # port                          = 0      # Port on which the instance accepts connections.
+  # publicly_accessible           = false  # Whether to configure the DB instance with a public IP to facilitate access.
+  # region                        = ""     # Region where this resource will be managed.
+  # tags                          = {}     # Map of tags assigned to the resource.
+  # log_delivery_configuration {}  # Configuration for sending InfluxDB engine logs to a specified S3 bucket.
+  # maintenance_schedule {}  # Maintenance schedule for the DB instance, including the preferred maintenance window and timezone.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_timestreaminfluxdb_db_instance</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an Amazon Timestream for InfluxDB Db Instance.</description>
+</snippet>

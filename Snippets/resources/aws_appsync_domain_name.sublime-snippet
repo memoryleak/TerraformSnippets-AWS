@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appsync_domain_name" "${1:name}" {
+  certificate_arn = "${2:certificate_arn}"  # ARN of the certificate.
+  domain_name     = "${3:domain_name}"      # Domain name.
+
+  # description = ""  # Description of the Domain Name.
+  # region      = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_appsync_domain_name</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AppSync Domain Name.</description>
+</snippet>

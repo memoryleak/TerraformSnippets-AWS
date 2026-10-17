@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_oam_link" "${1:name}" {
+  link_identifier = "${2:link_identifier}"  # ARN of the link.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_oam_link</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS CloudWatch Observability Access Manager Link.</description>
+</snippet>

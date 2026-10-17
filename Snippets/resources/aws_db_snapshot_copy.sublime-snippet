@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_db_snapshot_copy" "${1:name}" {
+  source_db_snapshot_identifier = "${2:source_db_snapshot_identifier}"  # Snapshot identifier of the source snapshot.
+  target_db_snapshot_identifier = "${3:target_db_snapshot_identifier}"  # Identifier for the snapshot.
+
+  # copy_tags                       = false  # Whether to copy existing tags.
+  # destination_region              = ""     # Destination Region to place snapshot copy.
+  # kms_key_id                      = ""     # KMS key ID.
+  # option_group_name               = ""     # Name of an option group to associate with the copy of the snapshot.
+  # presigned_url                   = ""     # URL that contains a Signature Version 4 signed request.
+  # region                          = ""     # Region where this resource will be managed.
+  # shared_accounts                 = []     # List of AWS Account IDs to share the snapshot with.
+  # tags                            = {}     # Key-value map of resource tags.
+  # target_custom_availability_zone = ""     # External custom Availability Zone.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_db_snapshot_copy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an RDS database instance snapshot copy.</description>
+</snippet>

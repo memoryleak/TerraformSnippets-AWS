@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_guardduty_organization_configuration" "${1:name}" {
+  auto_enable_organization_members = "${2:auto_enable_organization_members}"  # Auto-enablement configuration of GuardDuty for the member accounts in the organization.
+  detector_id                      = "${3:detector_id}"                       # Detector ID of the GuardDuty account.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_guardduty_organization_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages the GuardDuty Organization Configuration</description>
+</snippet>

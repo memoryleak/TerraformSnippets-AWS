@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_storagegateway_file_system_association" "${1:name}" {
+  gateway_arn  = "${2:gateway_arn}"   # ARN of the gateway.
+  location_arn = "${3:location_arn}"  # ARN of the Amazon FSx file system to associate with the FSx File Gateway.
+  password     = "${4:password}"      # The password of the user credential.
+  username     = "${5:username}"      # The user name of the user credential that has permission to access the root share of the Amazon F...
+
+  # audit_destination_arn = ""  # ARN of the storage used for the audit logs.
+  # region                = ""  # Region where this resource will be managed.
+  # tags                  = {}  # Key-value map of resource tags.
+  # cache_attributes {}  # Refresh cache information.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_storagegateway_file_system_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an association between an Amazon FSx file system and an Amazon FSx File Gateway.</description>
+</snippet>

@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_workspacesweb_session_logger" "${1:name}" {
+  # additional_encryption_context = {}  # Map of additional encryption context key-value pairs.
+  # customer_managed_key          = ""  # ARN of the customer managed KMS key used to encrypt sensitive information.
+  # display_name                  = ""  # Human-readable display name for the session logger resource.
+  # region                        = ""  # Region where this resource will be managed.
+  # tags                          = {}  # Map of tags to assign to the resource.
+  # event_filter {}  # Event filter that determines which events are logged.
+  # log_configuration {}  # Configuration block for specifying where logs are delivered.
+}
+]]></content>
+<tabTrigger>aws_workspacesweb_session_logger</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS WorkSpaces Web Session Logger.</description>
+</snippet>

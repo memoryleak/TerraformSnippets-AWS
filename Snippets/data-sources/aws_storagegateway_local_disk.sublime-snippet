@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_storagegateway_local_disk" "${1:name}" {
+  gateway_arn = "${2:gateway_arn}"  # ARN of the gateway.
+
+  # disk_node = ""  # Device node of the local disk to retrieve.
+  # disk_path = ""  # Device path of the local disk to retrieve.
+  # region    = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_storagegateway_local_disk</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Retrieve information about a Storage Gateway local disk</description>
+</snippet>

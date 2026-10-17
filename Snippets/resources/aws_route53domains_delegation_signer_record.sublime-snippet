@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_route53domains_delegation_signer_record" "${1:name}" {
+  domain_name = "${2:domain_name}"  # The name of the domain that will have its parent DNS zone updated with the Delegation Signer record.
+
+  # signing_attributes {}  # The information about a key, including the algorithm, public key-value, and flags.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_route53domains_delegation_signer_record</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage a delegation signer record in the parent DNS zone for domains regis...</description>
+</snippet>

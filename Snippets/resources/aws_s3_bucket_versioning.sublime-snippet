@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3_bucket_versioning" "${1:name}" {
+  bucket = "${2:bucket}"  # Name of the S3 bucket.
+  versioning_configuration {
+    status = "${3:status}"
+  }
+
+  # mfa    = ""  # Concatenation of the authentication device's serial number, a space, and the value that is displa...
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_s3_bucket_versioning</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an S3 bucket versioning resource.</description>
+</snippet>

@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrockagent_agent_knowledge_base_association" "${1:name}" {
+  agent_id             = "${2:agent_id}"              # Unique identifier of the agent with which you want to associate the knowledge base.
+  description          = "${3:description}"           # Description of what the agent should use the knowledge base for.
+  knowledge_base_id    = "${4:knowledge_base_id}"     # Unique identifier of the knowledge base to associate with the agent.
+  knowledge_base_state = "${5:knowledge_base_state}"  # Whether to use the knowledge base when sending an InvokeAgent request.
+
+  # agent_version = ""  # Version of the agent with which you want to associate the knowledge base.
+  # region        = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_bedrockagent_agent_knowledge_base_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Agents for Amazon Bedrock Agent Knowledge Base Association.</description>
+</snippet>

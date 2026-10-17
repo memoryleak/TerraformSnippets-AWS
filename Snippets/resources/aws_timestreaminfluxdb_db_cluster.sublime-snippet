@@ -1,0 +1,31 @@
+<snippet>
+<content><![CDATA[
+resource "aws_timestreaminfluxdb_db_cluster" "${1:name}" {
+  db_instance_type       = "${2:db_instance_type}"  # Timestream for InfluxDB DB instance type to run InfluxDB on.
+  name                   = "${3:name}"              # Name that uniquely identifies the DB cluster when interacting with the Amazon Timestream for Infl...
+  vpc_security_group_ids = [${4}]                   # List of VPC security group IDs to associate with the cluster.
+  vpc_subnet_ids         = [${5}]                   # List of VPC subnet IDs to associate with the cluster.
+
+  # allocated_storage             = 0      # Amount of storage in GiB (gibibytes).
+  # bucket                        = ""     # Name of the initial InfluxDB bucket.
+  # db_parameter_group_identifier = ""     # ID of the DB parameter group assigned to your cluster.
+  # db_storage_type               = ""     # Timestream for InfluxDB DB storage type to read and write InfluxDB data.
+  # deployment_type               = ""     # Type of cluster to create.
+  # failover_mode                 = ""     # Behavior of failure recovery when the primary node of the cluster fails.
+  # network_type                  = ""     # Network type of the Timestream for InfluxDB cluster.
+  # organization                  = ""     # Name of the initial organization for the initial admin user in InfluxDB.
+  # password                      = ""     # Password of the initial admin user created in InfluxDB.
+  # port                          = 0      # Port on which the cluster accepts connections.
+  # publicly_accessible           = false  # Whether to configure the DB cluster with a public IP to facilitate access.
+  # region                        = ""     # Region where this resource will be managed.
+  # tags                          = {}     # Map of tags assigned to the resource.
+  # username                      = ""     # Username of the initial admin user created in InfluxDB.
+  # log_delivery_configuration {}  # Configuration for sending InfluxDB engine logs to a specified S3 bucket.
+  # maintenance_schedule {}  # Maintenance schedule for the DB cluster, including the preferred maintenance window and timezone.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_timestreaminfluxdb_db_cluster</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an Amazon Timestream for InfluxDB read-replica cluster.</description>
+</snippet>

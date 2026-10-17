@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_networkfirewall_tls_inspection_configuration" "${1:name}" {
+  name = "${2:name}"  # Descriptive name of the TLS inspection configuration.
+
+  # description              = ""  # Description of the TLS inspection configuration.
+  # encryption_configuration = []  # Encryption configuration block.
+  # region                   = ""  # Region where this resource will be managed.
+  # tags                     = {}
+  # timeouts {}
+  # tls_inspection_configuration {}  # TLS inspection configuration block.
+}
+]]></content>
+<tabTrigger>aws_networkfirewall_tls_inspection_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Network Firewall TLS Inspection Configuration.</description>
+</snippet>

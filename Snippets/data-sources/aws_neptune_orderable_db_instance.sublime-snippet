@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+data "aws_neptune_orderable_db_instance" "${1:name}" {
+  # engine                     = ""     # DB engine.
+  # engine_version             = ""     # Version of the DB engine.
+  # instance_class             = ""     # DB instance class.
+  # license_model              = ""     # License model.
+  # preferred_instance_classes = []     # Ordered list of preferred Neptune DB instance classes.
+  # region                     = ""     # Region where this resource will be managed.
+  # vpc                        = false  # Enable to show only VPC offerings.
+}
+]]></content>
+<tabTrigger>data_aws_neptune_orderable_db_instance</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Information about Neptune orderable DB instances.</description>
+</snippet>

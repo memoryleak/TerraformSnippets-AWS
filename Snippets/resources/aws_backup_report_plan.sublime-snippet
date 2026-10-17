@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_backup_report_plan" "${1:name}" {
+  name = "${2:name}"  # Unique name of the report plan.
+  report_delivery_channel {
+    s3_bucket_name = "${3:s3_bucket_name}"
+  }
+  report_setting {
+    report_template = "${4:report_template}"
+  }
+
+  # description = ""  # Description of the report plan with a maximum of 1,024 characters.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Metadata that you can assign to help organize the report plans you create.
+}
+]]></content>
+<tabTrigger>aws_backup_report_plan</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AWS Backup Report Plan resource.</description>
+</snippet>

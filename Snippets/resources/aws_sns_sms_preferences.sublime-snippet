@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sns_sms_preferences" "${1:name}" {
+  # default_sender_id                     = ""  # A string, such as your business brand, that is displayed as the sender on the receiving device.
+  # default_sms_type                      = ""  # The type of SMS message that you will send by default.
+  # delivery_status_iam_role_arn          = ""  # The ARN of the IAM role that allows Amazon SNS to write logs about SMS deliveries in CloudWatch L...
+  # delivery_status_success_sampling_rate = ""  # The percentage of successful SMS deliveries for which Amazon SNS will write logs in CloudWatch Logs.
+  # monthly_spend_limit                   = 0   # The maximum amount in USD that you are willing to spend each month to send SMS messages.
+  # region                                = ""  # Region where this resource will be managed.
+  # usage_report_s3_bucket                = ""  # The name of the Amazon S3 bucket to receive daily SMS usage reports from Amazon SNS.
+}
+]]></content>
+<tabTrigger>aws_sns_sms_preferences</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a way to set SNS SMS preferences.</description>
+</snippet>

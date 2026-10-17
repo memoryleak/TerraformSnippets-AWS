@@ -1,0 +1,32 @@
+<snippet>
+<content><![CDATA[
+resource "aws_route53_health_check" "${1:name}" {
+  type = "${2:type}"  # The protocol to use when performing health checks.
+
+  # child_health_threshold          = 0      # The minimum number of child health checks that must be healthy for Route 53 to consider the paren...
+  # child_healthchecks              = []     # For a specified parent health check, a list of HealthCheckId values for the associated child heal...
+  # cloudwatch_alarm_name           = ""     # The name of the CloudWatch alarm.
+  # cloudwatch_alarm_region         = ""     # The region that the CloudWatch alarm was created in.
+  # disabled                        = false  # A boolean value that stops Route 53 from performing health checks.
+  # enable_sni                      = false  # A boolean value that indicates whether Route53 should send the fqdn to the endpoint when performi...
+  # failure_threshold               = 0      # The number of consecutive health checks that an endpoint must pass or fail.
+  # fqdn                            = ""     # The fully qualified domain name of the endpoint to be checked.
+  # insufficient_data_health_status = ""     # The status of the health check when CloudWatch has insufficient data about the state of associate...
+  # invert_healthcheck              = false  # A boolean value that indicates whether the status of health check should be inverted.
+  # ip_address                      = ""     # The IP address of the endpoint to be checked.
+  # measure_latency                 = false  # A Boolean value that indicates whether you want Route 53 to measure the latency between health ch...
+  # port                            = 0      # The port of the endpoint to be checked.
+  # reference_name                  = ""     # This is a reference name used in Caller Reference
+  # regions                         = []     # List of AWS Regions from which Amazon Route 53 health checkers check the specified endpoint.
+  # request_interval                = 0      # The number of seconds between the time that Amazon Route 53 gets a response from your endpoint an...
+  # resource_path                   = ""     # The path that you want Amazon Route 53 to request when performing health checks.
+  # routing_control_arn             = ""     # ARN for the Route 53 Application Recovery Controller routing control.
+  # search_string                   = ""     # String searched in the first 5120 bytes of the response body for check to be considered healthy.
+  # tags                            = {}     # A map of tags to assign to the health check.
+  # triggers                        = {}     # Map of arbitrary keys and values that, when changed, will trigger an in-place update of the Cloud...
+}
+]]></content>
+<tabTrigger>aws_route53_health_check</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Route53 health check.</description>
+</snippet>

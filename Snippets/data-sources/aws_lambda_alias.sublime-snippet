@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_lambda_alias" "${1:name}" {
+  function_name = "${2:function_name}"  # Name of the aliased Lambda function.
+  name          = "${3:name}"           # Name of the Lambda alias.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_lambda_alias</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an AWS Lambda Alias.</description>
+</snippet>

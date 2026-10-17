@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_grafana_license_association" "${1:name}" {
+  license_type = "${2:license_type}"  # Type of license for the workspace license association.
+  workspace_id = "${3:workspace_id}"  # Workspace ID.
+
+  # grafana_token = ""  # Token from Grafana Labs that ties your AWS account with a Grafana Labs account.
+  # region        = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_grafana_license_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Amazon Managed Grafana workspace license association resource.</description>
+</snippet>

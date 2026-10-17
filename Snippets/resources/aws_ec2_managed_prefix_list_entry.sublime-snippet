@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_managed_prefix_list_entry" "${1:name}" {
+  cidr           = "${2:cidr}"            # CIDR block of this entry.
+  prefix_list_id = "${3:prefix_list_id}"  # The ID of the prefix list.
+
+  # description = ""  # Description of this entry.
+  # region      = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_ec2_managed_prefix_list_entry</tabTrigger>
+<scope>source.terraform</scope>
+<description>Use the aws_ec2_managed_prefix_list_entry resource to manage a managed prefix list entry.</description>
+</snippet>

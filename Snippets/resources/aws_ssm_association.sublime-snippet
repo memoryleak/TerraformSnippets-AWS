@@ -1,0 +1,27 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ssm_association" "${1:name}" {
+  name = "${2:name}"  # The name of the SSM document to apply.
+
+  # apply_only_at_cron_interval      = false  # By default, when you create a new or update associations, the system runs it immediately and then...
+  # association_name                 = ""     # The descriptive name for the association.
+  # automation_target_parameter_name = ""     # Specify the target for the association.
+  # calendar_names                   = []     # One or more Systems Manager Change Calendar names.
+  # compliance_severity              = ""     # The compliance severity for the association.
+  # document_version                 = ""     # The document version you want to associate with the target(s).
+  # max_concurrency                  = ""     # The maximum number of targets allowed to run the association at the same time.
+  # max_errors                       = ""     # The number of errors that are allowed before the system stops sending requests to run the associa...
+  # parameters                       = {}     # A block of arbitrary string parameters to pass to the SSM document.
+  # region                           = ""     # Region where this resource will be managed.
+  # schedule_expression              = ""     # A cron or rate expression that specifies when the association runs.
+  # sync_compliance                  = ""     # The mode for generating association compliance.
+  # tags                             = {}     # A map of tags to assign to the object.
+  # wait_for_success_timeout_seconds = 0      # The number of seconds to wait for the association status to be Success.
+  # output_location {}  # An output location block.
+  # targets {}  # A block containing the targets of the SSM association.
+}
+]]></content>
+<tabTrigger>aws_ssm_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Associates an SSM Document to an instance or EC2 tag.</description>
+</snippet>

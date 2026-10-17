@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudfrontkeyvaluestore_keys_exclusive" "${1:name}" {
+  key_value_store_arn = "${2:key_value_store_arn}"  # ARN of the Key Value Store.
+
+  # max_batch_size = 0  # Maximum resource key values pairs that will update in a single API request.
+  # resource_key_value_pair {}  # A list of all resource key value pairs associated with the KeyValueStore.
+}
+]]></content>
+<tabTrigger>aws_cloudfrontkeyvaluestore_keys_exclusive</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for maintaining exclusive management of resource key value pairs defined in an...</description>
+</snippet>

@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_resiliencehubv2_service" "${1:name}" {
+  name    = "${2:name}"  # Name of the service.
+  regions = [${3}]       # List of AWS regions where the service operates.
+
+  # dependency_discovery = ""  # Dependency discovery.
+  # description          = ""  # Description of the service.
+  # kms_key_id           = ""  # KMS key ARN.
+  # policy_arn           = ""  # ARN of the resilience policy to associate with this service.
+  # region               = ""  # Region where this resource will be managed.
+  # tags                 = {}  # Map of tags to assign to the resource.
+  # associated_system {}  # Systems to associate with the service.
+  # permission_model {}  # Permission model for resource discovery.
+}
+]]></content>
+<tabTrigger>aws_resiliencehubv2_service</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Resilience Hub V2 Service.</description>
+</snippet>

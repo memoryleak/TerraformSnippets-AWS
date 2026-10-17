@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+data "aws_glue_catalog_table" "${1:name}" {
+  database_name = "${2:database_name}"  # Name of the metadata database where the table metadata resides.
+  name          = "${3:name}"           # Name of the table.
+
+  # catalog_id       = ""  # ID of the Glue Catalog and database where the table metadata resides.
+  # query_as_of_time = ""  # Time as of when to read the table contents.
+  # region           = ""  # Region where this resource will be managed.
+  # transaction_id   = 0   # Transaction ID at which to read the table contents.
+}
+]]></content>
+<tabTrigger>data_aws_glue_catalog_table</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on AWS Glue Data Catalog Table</description>
+</snippet>

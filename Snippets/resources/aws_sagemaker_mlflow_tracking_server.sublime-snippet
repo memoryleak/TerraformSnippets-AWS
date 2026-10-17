@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sagemaker_mlflow_tracking_server" "${1:name}" {
+  artifact_store_uri   = "${2:artifact_store_uri}"    # The S3 URI for a general purpose bucket to use as the MLflow Tracking Server artifact store.
+  role_arn             = "${3:role_arn}"              # ARN for an IAM role in your account that the MLflow Tracking Server uses to access the artifact s...
+  tracking_server_name = "${4:tracking_server_name}"  # A unique string identifying the tracking server name.
+
+  # automatic_model_registration    = false  # Whether to enable or disable automatic registration of new MLflow models to the SageMaker Model R...
+  # mlflow_version                  = ""     # The version of MLflow that the tracking server uses.
+  # region                          = ""     # Region where this resource will be managed.
+  # tags                            = {}     # A map of tags to assign to the resource.
+  # tracking_server_size            = ""     # The size of the tracking server you want to create.
+  # weekly_maintenance_window_start = ""     # The day and time of the week in Coordinated Universal Time (UTC) 24-hour standard time that weekl...
+}
+]]></content>
+<tabTrigger>aws_sagemaker_mlflow_tracking_server</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a SageMaker AI MLFlow Tracking Server resource.</description>
+</snippet>

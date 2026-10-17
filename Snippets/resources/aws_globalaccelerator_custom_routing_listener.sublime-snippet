@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_globalaccelerator_custom_routing_listener" "${1:name}" {
+  accelerator_arn = "${2:accelerator_arn}"  # ARN of a custom routing accelerator.
+  port_range {
+  }
+
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_globalaccelerator_custom_routing_listener</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Global Accelerator custom routing listener.</description>
+</snippet>

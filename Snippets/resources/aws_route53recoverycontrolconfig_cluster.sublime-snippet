@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_route53recoverycontrolconfig_cluster" "${1:name}" {
+  name = "${2:name}"  # Unique name describing the cluster.
+
+  # network_type = ""  # Network type of cluster.
+  # tags         = {}  # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_route53recoverycontrolconfig_cluster</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AWS Route 53 Recovery Control Config Cluster</description>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_sfn_activity" "${1:name}" {
+  # arn    = ""  # ARN that identifies the activity.
+  # name   = ""  # Name that identifies the activity.
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_sfn_activity</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Use this data source to get information about a Step Functions Activity.</description>
+</snippet>

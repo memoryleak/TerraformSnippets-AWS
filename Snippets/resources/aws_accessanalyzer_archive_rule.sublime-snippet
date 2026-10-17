@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_accessanalyzer_archive_rule" "${1:name}" {
+  analyzer_name = "${2:analyzer_name}"  # Analyzer name.
+  rule_name     = "${3:rule_name}"      # Rule name.
+  filter {
+    criteria = "${4:criteria}"
+  }
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_accessanalyzer_archive_rule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS AccessAnalyzer Archive Rule.</description>
+</snippet>

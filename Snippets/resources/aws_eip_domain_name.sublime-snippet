@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_eip_domain_name" "${1:name}" {
+  allocation_id = "${2:allocation_id}"  # The allocation ID.
+  domain_name   = "${3:domain_name}"    # The domain name to modify for the IP address.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_eip_domain_name</tabTrigger>
+<scope>source.terraform</scope>
+<description>Assigns a static reverse DNS record to an Elastic IP addresses</description>
+</snippet>

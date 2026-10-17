@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_evidently_segment" "${1:name}" {
+  name    = "${2:name}"     # A name for the segment.
+  pattern = "${3:pattern}"  # The pattern to use for the segment.
+
+  # description = ""  # Specifies the description of the segment.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Tags to apply to the segment.
+}
+]]></content>
+<tabTrigger>aws_evidently_segment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudWatch Evidently Segment resource.</description>
+</snippet>

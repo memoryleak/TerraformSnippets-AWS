@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sesv2_configuration_set_event_destination" "${1:name}" {
+  configuration_set_name = "${2:configuration_set_name}"  # Name of the configuration set.
+  event_destination_name = "${3:event_destination_name}"  # Name that identifies the event destination within the configuration set.
+  event_destination {
+    matching_event_types = [${4}]
+  }
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_sesv2_configuration_set_event_destination</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS SESv2 (Simple Email V2) Configuration Set Event Destination.</description>
+</snippet>

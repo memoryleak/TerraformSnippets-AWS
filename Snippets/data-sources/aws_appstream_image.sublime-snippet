@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+data "aws_appstream_image" "${1:name}" {
+  # arn         = ""     # ARN of the image being searched for.
+  # most_recent = false  # Boolean that if it is set to true and there are multiple images returned the most recent will be...
+  # name        = ""     # Name of the image being searched for.
+  # name_regex  = ""     # Regular expression name of the image being searched for.
+  # region      = ""     # Region where this resource will be managed.
+  # type        = ""     # Type of image which must be (PUBLIC, PRIVATE, or SHARED).
+}
+]]></content>
+<tabTrigger>data_aws_appstream_image</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for describing an AWS AppStream 2.0 Appstream Image.</description>
+</snippet>

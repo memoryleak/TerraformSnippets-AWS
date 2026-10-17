@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_controltower_controls" "${1:name}" {
+  target_identifier = "${2:target_identifier}"  # The ARN of the organizational unit.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_controltower_controls</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: List of Control Tower controls applied to an OU.</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lakeformation_identity_center_configuration" "${1:name}" {
+  instance_arn = "${2:instance_arn}"  # ARN of the IAM Identity Center Instance to associate.
+
+  # catalog_id = ""  # Identifier for the Data Catalog.
+  # region     = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_lakeformation_identity_center_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Lake Formation Identity Center Configuration.</description>
+</snippet>

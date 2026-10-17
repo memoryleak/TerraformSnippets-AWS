@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lb_trust_store" "${1:name}" {
+  ca_certificates_bundle_s3_bucket = "${2:ca_certificates_bundle_s3_bucket}"  # S3 Bucket name holding the client certificate CA bundle.
+  ca_certificates_bundle_s3_key    = "${3:ca_certificates_bundle_s3_key}"     # S3 object key holding the client certificate CA bundle.
+
+  # ca_certificates_bundle_s3_object_version = ""  # Version ID of CA bundle S3 bucket object, if versioned, defaults to latest if omitted.
+  # name                                     = ""  # Name of the Trust Store.
+  # name_prefix                              = ""  # Creates a unique name beginning with the specified prefix.
+  # region                                   = ""  # Region where this resource will be managed.
+  # tags                                     = {}  # Map of tags to assign to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_lb_trust_store</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Trust Store resource for use with Load Balancers.</description>
+</snippet>

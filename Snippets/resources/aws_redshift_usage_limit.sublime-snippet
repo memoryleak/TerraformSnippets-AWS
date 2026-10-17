@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_redshift_usage_limit" "${1:name}" {
+  amount             = ${2:0}                     # The limit amount.
+  cluster_identifier = "${3:cluster_identifier}"  # The identifier of the cluster that you want to limit usage.
+  feature_type       = "${4:feature_type}"        # The Amazon Redshift feature that you want to limit.
+  limit_type         = "${5:limit_type}"          # The type of limit.
+
+  # breach_action = ""  # The action that Amazon Redshift takes when the limit is reached.
+  # period        = ""  # The time period that the amount applies to.
+  # region        = ""  # Region where this resource will be managed.
+  # tags          = {}  # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_redshift_usage_limit</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Redshift Usage Limit resource.</description>
+</snippet>

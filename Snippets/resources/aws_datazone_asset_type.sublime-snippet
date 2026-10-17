@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_datazone_asset_type" "${1:name}" {
+  domain_identifier         = "${2:domain_identifier}"          # The unique identifier of the Amazon DataZone domain where the custom asset type is being created.
+  name                      = "${3:name}"                       # The name of the custom asset type.
+  owning_project_identifier = "${4:owning_project_identifier}"  # The unique identifier of the Amazon DataZone project that owns the custom asset type.
+
+  # description = ""  # The description of the custom asset type.
+  # region      = ""  # Region where this resource will be managed.
+  # forms_input {}  # The metadata forms that are to be attached to the custom asset type.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_datazone_asset_type</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS DataZone Asset Type.</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_odb_iam_role_association" "${1:name}" {
+  iam_role_arn = "${2:iam_role_arn}"  # IAM role ARN to look up.
+  resource_arn = "${3:resource_arn}"  # Oracle Database@AWS resource ARN associated with the IAM role.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_odb_iam_role_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an AWS Oracle Database@AWS Associate Disassociate IAM Role.</description>
+</snippet>

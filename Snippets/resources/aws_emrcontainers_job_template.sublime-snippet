@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_emrcontainers_job_template" "${1:name}" {
+  name = "${2:name}"  # The specified name of the job template.
+  job_template_data {
+    execution_role_arn = "${3:execution_role_arn}"
+    release_label      = "${4:release_label}"
+    job_driver {
+    }
+  }
+
+  # kms_key_arn = ""  # The KMS key ARN used to encrypt the job template.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Key-value mapping of resource tags.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_emrcontainers_job_template</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an EMR Containers (EMR on EKS) Job Template</description>
+</snippet>

@@ -1,0 +1,26 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ecs_task_set" "${1:name}" {
+  cluster         = "${2:cluster}"          # Short name or ARN of the cluster that hosts the service to create the task set in.
+  service         = "${3:service}"          # Short name or ARN of the ECS service.
+  task_definition = "${4:task_definition}"  # Family and revision (family:revision) or full ARN of the task definition to run in your service.
+
+  # external_id               = ""     # External ID associated with the task set.
+  # force_delete              = false  # Whether to allow deleting the task set without waiting for scaling down to 0.
+  # launch_type               = ""     # Launch type on which to run your service.
+  # platform_version          = ""     # Platform version on which to run your service.
+  # region                    = ""     # Region where this resource will be managed.
+  # tags                      = {}     # Map of tags to assign to the file system.
+  # wait_until_stable         = false  # Whether terraform should wait until the task set has reached STEADY_STATE.
+  # wait_until_stable_timeout = ""     # Wait timeout for task set to reach STEADY_STATE.
+  # capacity_provider_strategy {}  # Capacity provider strategy to use for the service.
+  # load_balancer {}  # Details on load balancers that are used with a task set.
+  # network_configuration {}  # Network configuration for the service.
+  # scale {}  # Floating-point percentage of the desired number of tasks to place and keep running in the task set.
+  # service_registries {}  # Service discovery registries for the service.
+}
+]]></content>
+<tabTrigger>aws_ecs_task_set</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an ECS task set.</description>
+</snippet>

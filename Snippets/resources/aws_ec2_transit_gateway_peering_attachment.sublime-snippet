@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_transit_gateway_peering_attachment" "${1:name}" {
+  peer_region             = "${2:peer_region}"              # Region of EC2 Transit Gateway to peer with.
+  peer_transit_gateway_id = "${3:peer_transit_gateway_id}"  # Identifier of EC2 Transit Gateway to peer with.
+  transit_gateway_id      = "${4:transit_gateway_id}"       # Identifier of EC2 Transit Gateway.
+
+  # peer_account_id = ""  # Account ID of EC2 Transit Gateway to peer with.
+  # region          = ""  # Region where this resource will be managed.
+  # tags            = {}  # Key-value tags for the EC2 Transit Gateway Peering Attachment.
+  # options {}  # Block describing whether dynamic routing is enabled or disabled for the transit gateway peering r...
+}
+]]></content>
+<tabTrigger>aws_ec2_transit_gateway_peering_attachment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an EC2 Transit Gateway Peering Attachment</description>
+</snippet>

@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lambda_capacity_provider" "${1:name}" {
+  name = "${2:name}"  # Name of the Capacity Provider.
+
+  # capacity_provider_scaling_config = []  # Configuration block for scaling policy settings.
+  # instance_requirements            = []  # Configuration block for instance requirements settings.
+  # kms_key_arn                      = ""  # ARN of the KMS key used to encrypt the Capacity Provider.
+  # region                           = ""  # Region where this resource will be managed.
+  # tags                             = {}  # Map of tags assigned to the resource.
+  # permissions_config {}  # Configuration block for permissions settings.
+  # timeouts {}
+  # vpc_config {}  # Configuration block for VPC settings.
+}
+]]></content>
+<tabTrigger>aws_lambda_capacity_provider</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Lambda Capacity Provider.</description>
+</snippet>

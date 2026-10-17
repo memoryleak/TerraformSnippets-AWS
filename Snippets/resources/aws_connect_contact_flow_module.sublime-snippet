@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_connect_contact_flow_module" "${1:name}" {
+  instance_id = "${2:instance_id}"  # Specifies the identifier of the hosting Amazon Connect Instance.
+  name        = "${3:name}"         # Specifies the name of the Contact Flow Module.
+
+  # content      = ""  # Specifies the content of the Contact Flow Module, provided as a JSON string, written in Amazon Co...
+  # content_hash = ""  # Used to trigger updates.
+  # description  = ""  # Specifies the description of the Contact Flow Module.
+  # filename     = ""  # The path to the Contact Flow Module source within the local filesystem.
+  # region       = ""  # Region where this resource will be managed.
+  # tags         = {}  # Tags to apply to the Contact Flow Module.
+}
+]]></content>
+<tabTrigger>aws_connect_contact_flow_module</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides details about a specific Amazon Connect Contact Flow Module.</description>
+</snippet>

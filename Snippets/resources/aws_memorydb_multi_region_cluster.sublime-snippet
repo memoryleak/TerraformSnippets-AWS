@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_memorydb_multi_region_cluster" "${1:name}" {
+  multi_region_cluster_name_suffix = "${2:multi_region_cluster_name_suffix}"  # Suffix to be added to the multi-region cluster name.
+  node_type                        = "${3:node_type}"                         # Node type to be used for the multi-region cluster.
+
+  # description                       = ""     # Description for the multi-region cluster.
+  # engine                            = ""     # Name of the engine to be used for the multi-region cluster.
+  # engine_version                    = ""     # Version of the engine to be used for the multi-region cluster.
+  # multi_region_parameter_group_name = ""     # Name of the multi-region parameter group to be associated with the cluster.
+  # num_shards                        = 0      # Number of shards for the multi-region cluster.
+  # region                            = ""     # Region where this resource will be managed.
+  # tags                              = {}     # Map of tags to assign to the resource.
+  # tls_enabled                       = false  # Whether to enable in-transit encryption on the cluster.
+  # update_strategy                   = ""     # Strategy to use for the multi-region cluster update.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_memorydb_multi_region_cluster</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a MemoryDB Multi Region Cluster.</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_dms_replication_subnet_group" "${1:name}" {
+  replication_subnet_group_id = "${2:replication_subnet_group_id}"  # Name for the replication subnet group.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_dms_replication_subnet_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS DMS (Database Migration) Replication Subnet Group.</description>
+</snippet>

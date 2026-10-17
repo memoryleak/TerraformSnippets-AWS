@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_nat_gateway" "${1:name}" {
+  # allocation_id                      = ""  # The Allocation ID of the Elastic IP address for the NAT Gateway.
+  # availability_mode                  = ""  # Specifies whether to create a zonal (single-AZ) or regional (multi-AZ) NAT gateway.
+  # connectivity_type                  = ""  # Connectivity type for the NAT Gateway.
+  # private_ip                         = ""  # The private IPv4 address to assign to the NAT Gateway.
+  # region                             = ""  # Region where this resource will be managed.
+  # secondary_allocation_ids           = []  # A list of secondary allocation EIP IDs for this NAT Gateway.
+  # secondary_private_ip_address_count = 0   # The number of secondary private IPv4 addresses you want to assign to the NAT Gateway.
+  # secondary_private_ip_addresses     = []  # A list of secondary private IPv4 addresses to assign to the NAT Gateway.
+  # subnet_id                          = ""  # The Subnet ID of the subnet in which to place the NAT Gateway.
+  # tags                               = {}  # A map of tags to assign to the resource.
+  # vpc_id                             = ""  # VPC ID where this NAT Gateway will be created.
+  # availability_zone_address {}  # Repeatable configuration block for the Elastic IP addresses (EIPs) and availability zones for the...
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_nat_gateway</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to create a VPC NAT Gateway.</description>
+</snippet>

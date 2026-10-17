@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_resiliencehubv2_assertion" "${1:name}" {
+  service_arn = "${2:service_arn}"  # ARN of the service this assertion belongs to.
+  text        = "${3:text}"         # Text of the resilience assertion.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_resiliencehubv2_assertion</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Resilience Hub V2 Assertion.</description>
+</snippet>

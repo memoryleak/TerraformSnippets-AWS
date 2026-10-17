@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_location_tracker" "${1:name}" {
+  tracker_name = "${2:tracker_name}"  # Name of the tracker resource.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_location_tracker</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Retrieve information about a Location Service Tracker.</description>
+</snippet>

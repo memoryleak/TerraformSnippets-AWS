@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_service_principal" "${1:name}" {
+  service_name = "${2:service_name}"  # Name of the service you want to generate a Service Principal Name for.
+
+  # region = ""  # Region you'd like the SPN for.
+}
+]]></content>
+<tabTrigger>data_aws_service_principal</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Compose a Service Principal Name.</description>
+</snippet>

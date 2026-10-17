@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_prometheus_workspace" "${1:name}" {
+  # alias       = ""  # Alias of the prometheus workspace.
+  # kms_key_arn = ""  # ARN for the KMS encryption key.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Map of tags to assign to the resource.
+  # logging_configuration {}  # Logging configuration for the workspace.
+}
+]]></content>
+<tabTrigger>aws_prometheus_workspace</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Amazon Managed Service for Prometheus (AMP) Workspace</description>
+</snippet>

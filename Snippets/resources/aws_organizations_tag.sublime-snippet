@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_organizations_tag" "${1:name}" {
+  key         = "${2:key}"          # Tag name.
+  resource_id = "${3:resource_id}"  # ID of the Organizations resource to tag.
+  value       = "${4:value}"        # Tag value.
+}
+]]></content>
+<tabTrigger>aws_organizations_tag</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an individual Organizations resource tag</description>
+</snippet>

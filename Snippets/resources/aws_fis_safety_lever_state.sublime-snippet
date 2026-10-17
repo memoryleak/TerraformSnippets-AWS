@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_fis_safety_lever_state" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # state {}  # State of the safety lever.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_fis_safety_lever_state</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages the state of an AWS FIS (Fault Injection Simulator) account safety lever.</description>
+</snippet>

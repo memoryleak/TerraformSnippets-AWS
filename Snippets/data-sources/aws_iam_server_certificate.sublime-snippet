@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_iam_server_certificate" "${1:name}" {
+  # latest      = false  # sort results by expiration date.
+  # name        = ""     # exact name of the cert to lookup
+  # name_prefix = ""     # prefix of cert to filter by
+  # path_prefix = ""     # prefix of path to filter by
+}
+]]></content>
+<tabTrigger>data_aws_iam_server_certificate</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information about a server certificate</description>
+</snippet>

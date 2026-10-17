@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_detective_invitation_accepter" "${1:name}" {
+  graph_arn = "${2:graph_arn}"  # ARN of the behavior graph that the member account is accepting the invitation for.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_detective_invitation_accepter</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage an Amazon Detective member invitation accepter.</description>
+</snippet>

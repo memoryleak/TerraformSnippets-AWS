@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_workspacesweb_ip_access_settings_association" "${1:name}" {
+  ip_access_settings_arn = "${2:ip_access_settings_arn}"  # ARN of the IP access settings to associate with the portal.
+  portal_arn             = "${3:portal_arn}"              # ARN of the portal to associate with the IP access settings.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_workspacesweb_ip_access_settings_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS WorkSpaces Web IP Access Settings Association.</description>
+</snippet>

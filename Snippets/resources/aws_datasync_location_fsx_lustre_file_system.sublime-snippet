@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_datasync_location_fsx_lustre_file_system" "${1:name}" {
+  fsx_filesystem_arn  = "${2:fsx_filesystem_arn}"  # ARN for the FSx for Lustre file system.
+  security_group_arns = [${3}]                     # ARNs of the security groups that are to use to configure the FSx for Lustre file system.
+
+  # region       = ""  # Region where this resource will be managed.
+  # subdirectory = ""  # Subdirectory to perform actions as source or destination.
+  # tags         = {}  # Key-value pairs of resource tags to assign to the DataSync Location.
+}
+]]></content>
+<tabTrigger>aws_datasync_location_fsx_lustre_file_system</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an FSx Lustre Location within AWS DataSync.</description>
+</snippet>

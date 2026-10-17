@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+data "aws_connect_routing_profile" "${1:name}" {
+  instance_id = "${2:instance_id}"  # Reference to the hosting Amazon Connect Instance
+
+  # name               = ""  # Returns information on a specific Routing Profile by name
+  # region             = ""  # Region where this resource will be managed.
+  # routing_profile_id = ""  # Returns information on a specific Routing Profile by Routing Profile ID
+  # tags               = {}
+}
+]]></content>
+<tabTrigger>data_aws_connect_routing_profile</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific Amazon Connect Routing Profile.</description>
+</snippet>

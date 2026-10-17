@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+data "aws_vpc_endpoint" "${1:name}" {
+  # region            = ""  # Region where this resource will be managed.
+  # service_name      = ""  # Service name of the specific VPC Endpoint to retrieve.
+  # service_region    = ""  # AWS region of the VPC Endpoint Service.
+  # state             = ""  # State of the specific VPC Endpoint to retrieve.
+  # tags              = {}  # Map of tags, each pair of which must exactly match a pair on the specific VPC Endpoint to retrieve.
+  # vpc_endpoint_type = ""  # VPC Endpoint type.
+  # vpc_id            = ""  # ID of the VPC in which the specific VPC Endpoint is used.
+  # filter {}  # Custom filter block as described below.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_vpc_endpoint</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific VPC endpoint.</description>
+</snippet>

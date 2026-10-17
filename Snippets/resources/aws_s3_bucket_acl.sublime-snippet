@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3_bucket_acl" "${1:name}" {
+  bucket = "${2:bucket}"  # Bucket to which to apply the ACL.
+
+  # acl    = ""  # Canned ACL to apply to the bucket.
+  # region = ""  # Region where this resource will be managed.
+  # access_control_policy {}  # Configuration block that sets the ACL permissions for an object per grantee.
+}
+]]></content>
+<tabTrigger>aws_s3_bucket_acl</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an S3 bucket ACL resource.</description>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_networkmanager_global_network" "${1:name}" {
+  global_network_id = "${2:global_network_id}"  # ID of the specific global network to retrieve.
+
+  # tags = {}
+}
+]]></content>
+<tabTrigger>data_aws_networkmanager_global_network</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an existing Network Manager global network.</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_redshift_cluster" "${1:name}" {
+  cluster_identifier = "${2:cluster_identifier}"  # Cluster identifier
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_redshift_cluster</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific redshift cluster</description>
+</snippet>

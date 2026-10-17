@@ -1,0 +1,26 @@
+<snippet>
+<content><![CDATA[
+resource "aws_docdbelastic_cluster" "${1:name}" {
+  admin_user_name     = "${2:admin_user_name}"      # Name of the Elastic DocumentDB cluster administrator
+  admin_user_password = "${3:admin_user_password}"  # Password for the Elastic DocumentDB cluster administrator.
+  auth_type           = "${4:auth_type}"            # Authentication type for the Elastic DocumentDB cluster.
+  name                = "${5:name}"                 # Name of the Elastic DocumentDB cluster
+  shard_capacity      = ${6:0}                      # Number of vCPUs assigned to each elastic cluster shard.
+  shard_count         = ${7:0}                      # Number of shards assigned to the elastic cluster.
+
+  # backup_retention_period      = 0   # The number of days for which automatic snapshots are retained.
+  # kms_key_id                   = ""  # ARN of a KMS key that is used to encrypt the Elastic DocumentDB cluster.
+  # preferred_backup_window      = ""  # The daily time range during which automated backups are created if automated backups are enabled,...
+  # preferred_maintenance_window = ""  # Weekly time range during which system maintenance can occur in UTC.
+  # region                       = ""  # Region where this resource will be managed.
+  # shard_instance_count         = 0   # Number of replica instances applying to all shards in the elastic cluster.
+  # subnet_ids                   = []  # IDs of subnets in which the Elastic DocumentDB Cluster operates.
+  # tags                         = {}  # A map of tags to assign to the collection.
+  # vpc_security_group_ids       = []  # List of VPC security groups to associate with the Elastic DocumentDB Cluster
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_docdbelastic_cluster</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS DocDB (DocumentDB) Elastic Cluster.</description>
+</snippet>

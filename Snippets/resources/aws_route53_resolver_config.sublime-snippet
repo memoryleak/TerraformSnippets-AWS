@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_route53_resolver_config" "${1:name}" {
+  autodefined_reverse_flag = "${2:autodefined_reverse_flag}"  # Indicates whether or not the Resolver will create autodefined rules for reverse DNS lookups.
+  resource_id              = "${3:resource_id}"               # The ID of the VPC that the configuration is for.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_route53_resolver_config</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Route 53 Resolver config resource.</description>
+</snippet>

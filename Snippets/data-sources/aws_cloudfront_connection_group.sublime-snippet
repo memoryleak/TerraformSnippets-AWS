@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_cloudfront_connection_group" "${1:name}" {
+  # routing_endpoint = ""
+}
+]]></content>
+<tabTrigger>data_aws_cloudfront_connection_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides a CloudFront connection group data source.</description>
+</snippet>

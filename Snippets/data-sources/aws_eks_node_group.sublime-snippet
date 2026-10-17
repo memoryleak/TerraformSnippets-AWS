@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_eks_node_group" "${1:name}" {
+  cluster_name    = "${2:cluster_name}"     # Name of the cluster.
+  node_group_name = "${3:node_group_name}"  # Name of the node group.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_eks_node_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Retrieve information about an EKS Node Group</description>
+</snippet>

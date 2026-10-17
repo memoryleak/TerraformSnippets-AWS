@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_regions" "${1:name}" {
+  # all_regions = false  # If true the source will query all regions regardless of availability.
+  # filter {}  # Configuration block(s) to use as filters.
+}
+]]></content>
+<tabTrigger>data_aws_regions</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides information about AWS Regions.</description>
+</snippet>

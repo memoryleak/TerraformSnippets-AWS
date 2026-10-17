@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_devicefarm_instance_profile" "${1:name}" {
+  name = "${2:name}"  # The name for the instance profile.
+
+  # description                       = ""     # The description of the instance profile.
+  # exclude_app_packages_from_cleanup = []     # An array of strings that specifies the list of app packages that should not be cleaned up from th...
+  # package_cleanup                   = false  # When set to true, Device Farm removes app packages after a test run.
+  # reboot_after_use                  = false  # When set to true, Device Farm reboots the instance after a test run.
+  # region                            = ""     # Region where this resource will be managed.
+  # tags                              = {}     # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_devicefarm_instance_profile</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Devicefarm instance profile</description>
+</snippet>

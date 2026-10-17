@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+resource "aws_imagebuilder_image" "${1:name}" {
+  infrastructure_configuration_arn = "${2:infrastructure_configuration_arn}"  # ARN of the Image Builder Infrastructure Configuration.
+
+  # container_recipe_arn            = ""     # - ARN of the container recipe.
+  # distribution_configuration_arn  = ""     # ARN of the Image Builder Distribution Configuration.
+  # enhanced_image_metadata_enabled = false  # Whether additional information about the image being created is collected.
+  # execution_role                  = ""     # ARN of the service-linked role to be used by Image Builder to execute workflows.
+  # image_recipe_arn                = ""     # ARN of the image recipe.
+  # region                          = ""     # Region where this resource will be managed.
+  # tags                            = {}     # Key-value map of resource tags for the Image Builder Image.
+  # image_scanning_configuration {}  # Configuration block with image scanning configuration.
+  # image_tests_configuration {}  # Configuration block with image tests configuration.
+  # logging_configuration {}  # Configuration block with logging configuration.
+  # timeouts {}
+  # workflow {}  # Configuration block with the workflow configuration.
+}
+]]></content>
+<tabTrigger>aws_imagebuilder_image</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Image Builder Image</description>
+</snippet>

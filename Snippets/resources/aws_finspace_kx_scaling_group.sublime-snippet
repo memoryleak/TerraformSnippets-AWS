@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_finspace_kx_scaling_group" "${1:name}" {
+  availability_zone_id = "${2:availability_zone_id}"  # Availability zone identifiers for the requested regions.
+  environment_id       = "${3:environment_id}"        # Unique identifier for the kdb environment, where you want to create the scaling group.
+  host_type            = "${4:host_type}"             # Memory and CPU capabilities of the scaling group host on which FinSpace Managed kdb clusters will...
+  name                 = "${5:name}"                  # Unique name for the scaling group that you want to create.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value mapping of resource tags.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_finspace_kx_scaling_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS FinSpace Kx Scaling Group.</description>
+</snippet>

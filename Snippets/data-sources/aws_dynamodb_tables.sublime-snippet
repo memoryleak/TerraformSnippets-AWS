@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_dynamodb_tables" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_dynamodb_tables</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides a list of all AWS DynamoDB Table Names in a Region</description>
+</snippet>

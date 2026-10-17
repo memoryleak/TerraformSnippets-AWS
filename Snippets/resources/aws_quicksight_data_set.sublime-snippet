@@ -1,0 +1,27 @@
+<snippet>
+<content><![CDATA[
+resource "aws_quicksight_data_set" "${1:name}" {
+  data_set_id = "${2:data_set_id}"  # Identifier for the data set.
+  import_mode = "${3:import_mode}"  # Whether to import the data into SPICE.
+  name        = "${4:name}"         # Display name for the dataset.
+
+  # aws_account_id = ""  # AWS account ID.
+  # region         = ""  # Region where this resource will be managed.
+  # tags           = {}  # Key-value map of resource tags.
+  # use_as         = ""  # Purpose of the data set.
+  # column_groups {}  # Groupings of columns that work together in certain Amazon QuickSight features.
+  # column_level_permission_rules {}  # Set of 1 or more definitions of a ColumnLevelPermissionRule.
+  # data_set_usage_configuration {}  # Usage configuration to apply to child datasets that reference this dataset as a source.
+  # field_folders {}  # Folder that contains fields and nested subfolders for your dataset.
+  # logical_table_map {}  # Configures the combination and transformation of the data from the physical tables.
+  # permissions {}  # Set of resource permissions on the data source.
+  # physical_table_map {}  # Declares the physical tables that are available in the underlying data sources.
+  # refresh_properties {}  # Refresh properties for the data set.
+  # row_level_permission_data_set {}  # Row-level security configuration for the data that you want to create.
+  # row_level_permission_tag_configuration {}  # Configuration of tags on a dataset to set row-level security.
+}
+]]></content>
+<tabTrigger>aws_quicksight_data_set</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Resource QuickSight Data Set.</description>
+</snippet>

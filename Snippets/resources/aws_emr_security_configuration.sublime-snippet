@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_emr_security_configuration" "${1:name}" {
+  configuration = "${2:configuration}"  # A JSON formatted Security Configuration
+
+  # name        = ""  # The name of the EMR Security Configuration.
+  # name_prefix = ""  # Creates a unique name beginning with the specified
+  # region      = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_emr_security_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage AWS EMR Security Configurations</description>
+</snippet>

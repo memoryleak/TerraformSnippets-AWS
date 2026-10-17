@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lambda_code_signing_config" "${1:name}" {
+  allowed_publishers {
+    signing_profile_version_arns = [${2}]
+  }
+
+  # description = ""  # Descriptive name for this code signing configuration.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Map of tags to assign to the object.
+  # policies {}  # Configuration block of code signing policies that define the actions to take if the validation ch...
+}
+]]></content>
+<tabTrigger>aws_lambda_code_signing_config</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Lambda Code Signing Config.</description>
+</snippet>

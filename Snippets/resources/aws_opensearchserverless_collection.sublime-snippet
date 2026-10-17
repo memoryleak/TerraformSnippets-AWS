@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_opensearchserverless_collection" "${1:name}" {
+  name = "${2:name}"  # Name of the collection.
+
+  # collection_group_name = ""  # Name of the collection group to associate with this collection.
+  # description           = ""  # Description of the collection.
+  # encryption_config     = []  # Configuration block for direct collection encryption settings.
+  # region                = ""  # Region where this resource will be managed.
+  # standby_replicas      = ""  # Whether standby replicas should be used for a collection.
+  # tags                  = {}  # Map of tags assigned to the resource.
+  # type                  = ""  # Type of collection.
+  # vector_options        = []  # Configuration block for vector search options.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_opensearchserverless_collection</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS OpenSearch Serverless Collection.</description>
+</snippet>

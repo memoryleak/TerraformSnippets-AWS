@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_chimesdkvoice_global_settings" "${1:name}" {
+  voice_connector {
+  }
+}
+]]></content>
+<tabTrigger>aws_chimesdkvoice_global_settings</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing Amazon Chime SDK Voice Global Settings.</description>
+</snippet>

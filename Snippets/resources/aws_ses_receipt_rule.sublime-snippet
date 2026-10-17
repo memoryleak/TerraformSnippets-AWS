@@ -1,0 +1,25 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ses_receipt_rule" "${1:name}" {
+  name          = "${2:name}"           # Name of the rule.
+  rule_set_name = "${3:rule_set_name}"  # Name of the rule set.
+
+  # after        = ""     # Name of the rule to place this rule after.
+  # enabled      = false  # If true, the rule will be enabled.
+  # recipients   = []     # List of email addresses.
+  # region       = ""     # Region where this resource will be managed.
+  # scan_enabled = false  # If true, incoming emails will be scanned for spam and viruses.
+  # tls_policy   = ""     # Require or Optional.
+  # add_header_action {}  # Configuration block for adding a header to received emails.
+  # bounce_action {}  # Configuration block for rejecting received emails.
+  # lambda_action {}  # Configuration block for calling an AWS Lambda function.
+  # s3_action {}  # Configuration block for storing received emails in an S3 bucket.
+  # sns_action {}  # Configuration block for publishing to an SNS topic.
+  # stop_action {}  # Configuration block for terminating the evaluation of the receipt rule set.
+  # workmail_action {}  # Configuration block for calling Amazon WorkMail.
+}
+]]></content>
+<tabTrigger>aws_ses_receipt_rule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an SES receipt rule resource</description>
+</snippet>

@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudfront_connection_group" "${1:name}" {
+  name = "${2:name}"
+
+  # anycast_ip_list_id  = ""
+  # enabled             = false
+  # ipv6_enabled        = false
+  # tags                = {}     # A map of tags to assign to the resource.
+  # wait_for_deployment = false
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_cloudfront_connection_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudFront connection group resource.</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ssmcontacts_contact" "${1:name}" {
+  alias = "${2:alias}"  # A unique and identifiable alias for the contact or escalation plan.
+  type  = "${3:type}"   # The type of contact engaged.
+
+  # display_name = ""  # Full friendly name of the contact or escalation plan.
+  # region       = ""  # Region where this resource will be managed.
+  # tags         = {}  # Key-value tags for the monitor.
+}
+]]></content>
+<tabTrigger>aws_ssmcontacts_contact</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS SSM Contact.</description>
+</snippet>

@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_codebuild_webhook" "${1:name}" {
+  project_name = "${2:project_name}"  # The name of the build project.
+
+  # branch_filter   = ""     # A regular expression used to determine which branches get built.
+  # build_type      = ""     # The type of build this webhook will trigger.
+  # manual_creation = false  # If true, CodeBuild doesn't create a webhook in GitHub and instead returns payload_url and secret...
+  # region          = ""     # Region where this resource will be managed.
+  # filter_group {}  # Information about the webhook's trigger.
+  # pull_request_build_policy {}  # Defines comment-based approval requirements for triggering builds on pull requests.
+  # scope_configuration {}  # Scope configuration for global or organization webhooks.
+}
+]]></content>
+<tabTrigger>aws_codebuild_webhook</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CodeBuild Webhook resource.</description>
+</snippet>

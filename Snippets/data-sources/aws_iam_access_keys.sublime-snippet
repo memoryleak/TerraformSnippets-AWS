@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_iam_access_keys" "${1:name}" {
+  user = "${2:user}"  # Name of the IAM user associated with the access keys.
+}
+]]></content>
+<tabTrigger>data_aws_iam_access_keys</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on IAM access keys associated with the specified IAM user.</description>
+</snippet>

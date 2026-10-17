@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lightsail_domain_entry" "${1:name}" {
+  domain_name = "${2:domain_name}"  # Name of the Lightsail domain in which to create the entry.
+  name        = "${3:name}"         # Name of the entry record.
+  target      = "${4:target}"       # Target of the domain entry.
+  type        = "${5:type}"         # Type of record.
+
+  # is_alias = false  # Whether the entry should be an alias.
+  # region   = ""     # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_lightsail_domain_entry</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Lightsail domain entry (DNS record).</description>
+</snippet>

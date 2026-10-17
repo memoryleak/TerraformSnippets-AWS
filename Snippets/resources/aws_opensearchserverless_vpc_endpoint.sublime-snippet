@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_opensearchserverless_vpc_endpoint" "${1:name}" {
+  name       = "${2:name}"    # Name of the interface endpoint.
+  subnet_ids = [${3}]         # One or more subnet IDs from which you'll access OpenSearch Serverless.
+  vpc_id     = "${4:vpc_id}"  # ID of the VPC from which you'll access OpenSearch Serverless.
+
+  # region             = ""  # Region where this resource will be managed.
+  # security_group_ids = []  # One or more security groups that define the ports, protocols, and sources for inbound traffic tha...
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_opensearchserverless_vpc_endpoint</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS OpenSearch Serverless VPC Endpoint.</description>
+</snippet>

@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ami_from_instance" "${1:name}" {
+  name               = "${2:name}"                # Region-unique name for the AMI.
+  source_instance_id = "${3:source_instance_id}"  # ID of the instance to use as the basis of the AMI.
+
+  # deprecation_time        = ""
+  # description             = ""
+  # region                  = ""     # Region where this resource will be managed.
+  # snapshot_without_reboot = false  # Boolean that overrides the behavior of stopping
+  # tags                    = {}     # Map of tags to assign to the resource.
+  # ebs_block_device {}
+  # ephemeral_block_device {}
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ami_from_instance</tabTrigger>
+<scope>source.terraform</scope>
+<description>Creates an Amazon Machine Image (AMI) from an EBS-backed EC2 instance</description>
+</snippet>

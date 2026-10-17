@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_opensearch_inbound_connection_accepter" "${1:name}" {
+  connection_id = "${2:connection_id}"  # Specifies the ID of the connection to accept.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_opensearch_inbound_connection_accepter</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS OpenSearch Inbound Connection Accepter.</description>
+</snippet>

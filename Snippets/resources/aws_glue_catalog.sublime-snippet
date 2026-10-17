@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+resource "aws_glue_catalog" "${1:name}" {
+  name = "${2:name}"  # Name of the catalog.
+
+  # allow_full_table_external_data_access             = ""  # Whether third-party engines can access data in Amazon S3 locations that are registered with Lake...
+  # description                                       = ""  # Description of the catalog.
+  # overwrite_child_resource_permissions_with_default = ""  # Whether to overwrite existing Lake Formation permissions on child resources with the default perm...
+  # parameters                                        = {}  # Map of key-value pairs that define parameters and properties of the catalog.
+  # region                                            = ""  # Region where this resource will be managed.
+  # tags                                              = {}  # Key-value map of resource tags.
+  # catalog_properties {}  # Configuration block of properties for the catalog.
+  # create_database_default_permissions {}  # List of default permissions on databases for principals.
+  # create_table_default_permissions {}  # List of default permissions on tables for principals.
+  # federated_catalog {}  # Configuration block for a federated catalog.
+  # target_redshift_catalog {}  # Configuration block for a target Redshift catalog.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_glue_catalog</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Glue Catalog.</description>
+</snippet>

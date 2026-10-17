@@ -1,0 +1,24 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3control_object_lambda_access_point" "${1:name}" {
+  name = "${2:name}"  # Name for this Object Lambda Access Point.
+  configuration {
+    supporting_access_point = "${3:supporting_access_point}"
+    transformation_configuration {
+      actions = [${4}]
+      content_transformation {
+        aws_lambda {
+          function_arn = "${5:function_arn}"
+        }
+      }
+    }
+  }
+
+  # account_id = ""  # AWS account ID for the owner of the bucket for which you want to create an Object Lambda Access P...
+  # region     = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_s3control_object_lambda_access_point</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage an S3 Object Lambda Access Point.</description>
+</snippet>

@@ -1,0 +1,24 @@
+<snippet>
+<content><![CDATA[
+resource "aws_autoscalingplans_scaling_plan" "${1:name}" {
+  name = "${2:name}"  # Name of the scaling plan.
+  application_source {
+  }
+  scaling_instruction {
+    max_capacity       = ${3:0}
+    min_capacity       = ${4:0}
+    resource_id        = "${5:resource_id}"
+    scalable_dimension = "${6:scalable_dimension}"
+    service_namespace  = "${7:service_namespace}"
+    target_tracking_configuration {
+      target_value = ${8:0}
+    }
+  }
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_autoscalingplans_scaling_plan</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Auto Scaling scaling plan.</description>
+</snippet>

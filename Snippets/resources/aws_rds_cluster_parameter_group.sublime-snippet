@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_rds_cluster_parameter_group" "${1:name}" {
+  family = "${2:family}"  # Family of the DB cluster parameter group.
+
+  # description = ""  # Description of the DB cluster parameter group.
+  # name        = ""  # Name of the DB cluster parameter group.
+  # name_prefix = ""  # Creates a unique name beginning with the specified prefix.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Map of tags to assign to the resource.
+  # parameter {}  # Set of DB parameters to apply.
+}
+]]></content>
+<tabTrigger>aws_rds_cluster_parameter_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an RDS DB cluster parameter group resource.</description>
+</snippet>

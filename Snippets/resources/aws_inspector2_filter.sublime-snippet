@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_inspector2_filter" "${1:name}" {
+  action = "${2:action}"  # Action to be applied to the findings that maatch the filter.
+  name   = "${3:name}"    # Name of the filter.
+
+  # description = ""  # Description
+  # reason      = ""  # Reason for creating the filter
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Map of tags assigned to the resource.
+  # filter_criteria {}  # Details on the filter criteria.
+}
+]]></content>
+<tabTrigger>aws_inspector2_filter</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Inspector Filter.</description>
+</snippet>

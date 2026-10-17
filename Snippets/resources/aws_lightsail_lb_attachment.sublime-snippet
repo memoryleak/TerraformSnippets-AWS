@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lightsail_lb_attachment" "${1:name}" {
+  instance_name = "${2:instance_name}"  # Name of the instance to attach to the load balancer.
+  lb_name       = "${3:lb_name}"        # Name of the Lightsail load balancer.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_lightsail_lb_attachment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Lightsail Load Balancer Attachment.</description>
+</snippet>

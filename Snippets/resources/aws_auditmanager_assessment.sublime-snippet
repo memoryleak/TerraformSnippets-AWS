@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_auditmanager_assessment" "${1:name}" {
+  framework_id = "${2:framework_id}"  # Unique identifier of the framework the assessment will be created from.
+  name         = "${3:name}"          # Name of the assessment.
+
+  # description = ""  # Description of the assessment.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # A map of tags to assign to the assessment.
+  # assessment_reports_destination {}  # Assessment report storage destination configuration.
+  # roles {}  # List of roles for the assessment.
+  # scope {}  # Amazon Web Services accounts and services that are in scope for the assessment.
+}
+]]></content>
+<tabTrigger>aws_auditmanager_assessment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Audit Manager Assessment.</description>
+</snippet>

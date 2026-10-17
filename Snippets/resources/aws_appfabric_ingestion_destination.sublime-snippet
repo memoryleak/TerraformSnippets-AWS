@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appfabric_ingestion_destination" "${1:name}" {
+  app_bundle_arn = "${2:app_bundle_arn}"  # ARN of the app bundle to use for the request.
+  ingestion_arn  = "${3:ingestion_arn}"   # ARN of the ingestion to use for the request.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags to assign to the resource.
+  # destination_configuration {}  # Configuration for the destination of ingested data.
+  # processing_configuration {}  # Configuration for how ingested data is processed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_appfabric_ingestion_destination</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS AppFabric Ingestion Destination.</description>
+</snippet>

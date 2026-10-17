@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iot_thing" "${1:name}" {
+  name = "${2:name}"  # The name of the thing.
+
+  # attributes      = {}  # Map of attributes of the thing.
+  # region          = ""  # Region where this resource will be managed.
+  # thing_type_name = ""  # The thing type name.
+}
+]]></content>
+<tabTrigger>aws_iot_thing</tabTrigger>
+<scope>source.terraform</scope>
+<description>Creates and manages an AWS IoT Thing.</description>
+</snippet>

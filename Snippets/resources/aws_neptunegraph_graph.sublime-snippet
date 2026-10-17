@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_neptunegraph_graph" "${1:name}" {
+  provisioned_memory = ${2:0}
+
+  # deletion_protection = false
+  # graph_name          = ""
+  # graph_name_prefix   = ""
+  # kms_key_identifier  = ""
+  # public_connectivity = false
+  # region              = ""     # Region where this resource will be managed.
+  # replica_count       = 0
+  # tags                = {}     # Key-value tags for the graph.
+  # timeouts {}
+  # vector_search_configuration {}
+}
+]]></content>
+<tabTrigger>aws_neptunegraph_graph</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Amazon Neptune Analytics Graph</description>
+</snippet>

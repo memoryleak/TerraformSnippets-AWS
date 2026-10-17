@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+resource "aws_pinpointsmsvoicev2_pool" "${1:name}" {
+  message_type           = "${2:message_type}"  # Type of message.
+  origination_identities = [${3}]               # Set of origination identity ARNs (phone number ARNs or sender ID ARNs) associated with the pool.
+
+  # deletion_protection_enabled   = false  # Whether deletion protection is enabled.
+  # iso_country_code              = ""     # Two-character code, in ISO 3166-1 alpha-2 format, for the country or region of the pool.
+  # opt_out_list_name             = ""     # Name of the opt-out list associated with the pool.
+  # region                        = ""     # Region where this resource will be managed.
+  # self_managed_opt_outs_enabled = false  # Whether the pool relies on self-managed opt-out handling.
+  # shared_routes_enabled         = false  # Whether shared routes are enabled for the pool.
+  # tags                          = {}     # Map of tags to assign to the resource.
+  # two_way_channel_arn           = ""     # Destination for incoming messages.
+  # two_way_channel_role          = ""     # ARN of the IAM role that End User Messaging SMS assumes to publish inbound messages to the two-wa...
+  # two_way_enabled               = false  # Whether inbound message reception is enabled for the pool.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_pinpointsmsvoicev2_pool</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS End User Messaging SMS Pool.</description>
+</snippet>

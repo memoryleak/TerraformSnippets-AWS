@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_log_anomaly_detector" "${1:name}" {
+  enabled            = ${2:false}
+  log_group_arn_list = [${3}]      # Array containing the ARN of the log group that this anomaly detector will watch.
+
+  # anomaly_visibility_time = 0   # Number of days to have visibility on an anomaly.
+  # detector_name           = ""  # Name for this anomaly detector.
+  # evaluation_frequency    = ""  # Specifies how often the anomaly detector is to run and look for anomalies.
+  # filter_pattern          = ""  # You can use this parameter to limit the anomaly detection model to examine only log events that m...
+  # kms_key_id              = ""  # Optionally assigns a AWS KMS key to secure this anomaly detector and its findings.
+  # region                  = ""  # Region where this resource will be managed.
+  # tags                    = {}
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_log_anomaly_detector</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS CloudWatch Log Anomaly Detector.</description>
+</snippet>

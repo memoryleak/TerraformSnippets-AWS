@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_devopsguru_resource_collection" "${1:name}" {
+  type = "${2:type}"  # Type of AWS resource collection to create.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_devopsguru_resource_collection</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS DevOps Guru Resource Collection.</description>
+</snippet>

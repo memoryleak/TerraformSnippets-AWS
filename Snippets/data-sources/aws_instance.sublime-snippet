@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+data "aws_instance" "${1:name}" {
+  # get_password_data = false  # If true, wait for password data to become available and retrieve it.
+  # get_user_data     = false  # Retrieve Base64 encoded User Data contents into the user_data_base64 attribute.
+  # instance_id       = ""     # Specify the exact Instance ID with which to populate the data source.
+  # instance_tags     = {}     # Map of tags, each pair of which must
+  # region            = ""     # Region where this resource will be managed.
+  # tags              = {}
+  # filter {}  # One or more filters to apply to the search.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_instance</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on an Amazon EC2 Instance.</description>
+</snippet>

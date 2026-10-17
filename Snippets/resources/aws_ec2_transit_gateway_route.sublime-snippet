@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_transit_gateway_route" "${1:name}" {
+  destination_cidr_block         = "${2:destination_cidr_block}"          # IPv4 or IPv6 RFC1924 CIDR used for destination matches.
+  transit_gateway_route_table_id = "${3:transit_gateway_route_table_id}"  # Identifier of EC2 Transit Gateway Route Table.
+
+  # blackhole                     = false  # Indicates whether to drop traffic that matches this route (default to false).
+  # region                        = ""     # Region where this resource will be managed.
+  # transit_gateway_attachment_id = ""     # Identifier of EC2 Transit Gateway Attachment (required if blackhole is set to false).
+}
+]]></content>
+<tabTrigger>aws_ec2_transit_gateway_route</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an EC2 Transit Gateway Route</description>
+</snippet>

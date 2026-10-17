@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_elasticache_replication_group" "${1:name}" {
+  replication_group_id = "${2:replication_group_id}"  # Identifier for the replication group.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_elasticache_replication_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on an ElastiCache Replication Group resource.</description>
+</snippet>

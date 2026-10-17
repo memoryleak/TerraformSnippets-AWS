@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_route53_cidr_location" "${1:name}" {
+  cidr_blocks        = [${2}]                     # CIDR blocks for the location.
+  cidr_collection_id = "${3:cidr_collection_id}"  # The ID of the CIDR collection to update.
+  name               = "${4:name}"                # Name for the CIDR location.
+}
+]]></content>
+<tabTrigger>aws_route53_cidr_location</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Route53 CIDR location resource.</description>
+</snippet>

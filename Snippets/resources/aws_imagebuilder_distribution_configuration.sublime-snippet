@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_imagebuilder_distribution_configuration" "${1:name}" {
+  name = "${2:name}"  # Name of the distribution configuration.
+  distribution {
+    region = "${3:region}"
+  }
+
+  # description = ""  # Description of the distribution configuration.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Key-value map of resource tags for the distribution configuration.
+}
+]]></content>
+<tabTrigger>aws_imagebuilder_distribution_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manage an Image Builder Distribution Configuration</description>
+</snippet>

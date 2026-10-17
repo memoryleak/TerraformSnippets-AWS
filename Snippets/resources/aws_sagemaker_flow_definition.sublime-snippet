@@ -1,0 +1,26 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sagemaker_flow_definition" "${1:name}" {
+  flow_definition_name = "${2:flow_definition_name}"  # The name of your flow definition.
+  role_arn             = "${3:role_arn}"              # ARN of the role needed to call other services on your behalf.
+  human_loop_config {
+    human_task_ui_arn = "${4:human_task_ui_arn}"
+    task_count        = ${5:0}
+    task_description  = "${6:task_description}"
+    task_title        = "${7:task_title}"
+    workteam_arn      = "${8:workteam_arn}"
+  }
+  output_config {
+    s3_output_path = "${9:s3_output_path}"
+  }
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # A map of tags to assign to the resource.
+  # human_loop_activation_config {}  # An object containing information about the events that trigger a human workflow.
+  # human_loop_request_source {}  # Container for configuring the source of human task requests.
+}
+]]></content>
+<tabTrigger>aws_sagemaker_flow_definition</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a SageMaker AI Flow Definition resource.</description>
+</snippet>

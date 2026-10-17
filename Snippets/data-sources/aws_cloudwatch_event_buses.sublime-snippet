@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_cloudwatch_event_buses" "${1:name}" {
+  # name_prefix = ""  # Specifying this limits the results to only those event buses with names that start with the speci...
+  # region      = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_cloudwatch_event_buses</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS EventBridge (Cloudwatch) Event Buses.</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_servicecatalogappregistry_attribute_group" "${1:name}" {
+  attributes = "${2:attributes}"  # A JSON string of nested key-value pairs that represents the attributes of the group.
+  name       = "${3:name}"        # Name of the Attribute Group.
+
+  # description = ""  # Description of the Attribute Group.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # A map of tags assigned to the Attribute Group.
+}
+]]></content>
+<tabTrigger>aws_servicecatalogappregistry_attribute_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Service Catalog AppRegistry Attribute Group.</description>
+</snippet>

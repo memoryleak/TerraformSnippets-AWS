@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appconfig_deployment_strategy" "${1:name}" {
+  deployment_duration_in_minutes = ${2:0}               # Total amount of time for a deployment to last.
+  growth_factor                  = ${3:0}               # Percentage of targets to receive a deployed configuration during each interval.
+  name                           = "${4:name}"          # Name for the deployment strategy.
+  replicate_to                   = "${5:replicate_to}"  # Where to save the deployment strategy.
+
+  # description                = ""  # Description of the deployment strategy.
+  # final_bake_time_in_minutes = 0   # Amount of time AWS AppConfig monitors for alarms before considering the deployment to be complete...
+  # growth_type                = ""  # Algorithm used to define how percentage grows over time.
+  # region                     = ""  # Region where this resource will be managed.
+  # tags                       = {}  # Map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_appconfig_deployment_strategy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AppConfig Deployment Strategy resource.</description>
+</snippet>

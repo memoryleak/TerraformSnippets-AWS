@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_athena_database" "${1:name}" {
+  name = "${2:name}"  # Name of the database to create.
+
+  # bucket                = ""     # Name of S3 bucket to save the results of the query execution.
+  # comment               = ""     # Description of the database.
+  # expected_bucket_owner = ""     # AWS account ID that you expect to be the owner of the Amazon S3 bucket.
+  # force_destroy         = false  # Boolean that indicates all tables should be deleted from the database so that the database can be...
+  # properties            = {}     # Key-value map of custom metadata properties for the database definition.
+  # region                = ""     # Region where this resource will be managed.
+  # workgroup             = ""     # Name of the workgroup.
+  # acl_configuration {}  # That an Amazon S3 canned ACL should be set to control ownership of stored query results.
+  # encryption_configuration {}  # Encryption key block AWS Athena uses to decrypt the data in S3, such as a KMS key.
+}
+]]></content>
+<tabTrigger>aws_athena_database</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Athena database.</description>
+</snippet>

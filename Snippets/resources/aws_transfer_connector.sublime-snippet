@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_transfer_connector" "${1:name}" {
+  access_role = "${2:access_role}"  # IAM Role which provides read and write access to the parent directory of the file location mentio...
+
+  # logging_role         = ""  # IAM Role which is required for allowing the connector to turn on CloudWatch logging for Amazon S3...
+  # region               = ""  # Region where this resource will be managed.
+  # security_policy_name = ""  # Name of the security policy for the connector.
+  # tags                 = {}  # Map of tags to assign to the resource.
+  # url                  = ""  # URL of the partners AS2 endpoint or SFTP endpoint.
+  # as2_config {}  # Either SFTP or AS2 is configured.
+  # egress_config {}  # Egress configuration for the connector.
+  # sftp_config {}  # Either SFTP or AS2 is configured.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_transfer_connector</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a AWS Transfer AS2 Connector Resource</description>
+</snippet>

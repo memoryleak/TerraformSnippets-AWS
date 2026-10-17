@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_imagebuilder_lifecycle_policy" "${1:name}" {
+  execution_role = "${2:execution_role}"  # ARN for the IAM role you create that grants Image Builder access to run lifecycle actions.
+  name           = "${3:name}"            # The name of the lifecycle policy to create.
+  resource_type  = "${4:resource_type}"   # The type of Image Builder resource that the lifecycle policy applies to.
+
+  # description = ""  # description for the lifecycle policy.
+  # region      = ""  # Region where this resource will be managed.
+  # status      = ""
+  # tags        = {}  # Key-value map of resource tags for the Image Builder Lifecycle Policy.
+  # policy_detail {}  # Configuration block with policy details.
+  # resource_selection {}  # Selection criteria for the resources that the lifecycle policy applies to.
+}
+]]></content>
+<tabTrigger>aws_imagebuilder_lifecycle_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Image Builder Lifecycle Policy</description>
+</snippet>

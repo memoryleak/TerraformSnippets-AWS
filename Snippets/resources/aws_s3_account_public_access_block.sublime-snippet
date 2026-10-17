@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3_account_public_access_block" "${1:name}" {
+  # account_id              = ""     # AWS account ID to configure.
+  # block_public_acls       = false  # Whether Amazon S3 should block public ACLs for buckets in this account.
+  # block_public_policy     = false  # Whether Amazon S3 should block public bucket policies for buckets in this account.
+  # ignore_public_acls      = false  # Whether Amazon S3 should ignore public ACLs for buckets in this account.
+  # restrict_public_buckets = false  # Whether Amazon S3 should restrict public bucket policies for buckets in this account.
+}
+]]></content>
+<tabTrigger>aws_s3_account_public_access_block</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages S3 account-level Public Access Block Configuration</description>
+</snippet>

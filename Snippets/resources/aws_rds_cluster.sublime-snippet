@@ -1,0 +1,79 @@
+<snippet>
+<content><![CDATA[
+resource "aws_rds_cluster" "${1:name}" {
+  engine = "${2:engine}"  # Name of the database engine to be used for this DB cluster.
+
+  # allocated_storage                     = 0      # Amount of storage in gibibytes (GiB) to allocate to each DB instance in the Multi-AZ DB cluster.
+  # allow_major_version_upgrade           = false  # Enable to allow major engine version upgrades when changing engine versions.
+  # apply_immediately                     = false  # Whether any cluster modifications are applied immediately, or during the next maintenance window.
+  # auto_minor_version_upgrade            = false  # Whether to apply minor engine upgrades automatically to the DB cluster during the maintenance win...
+  # availability_zones                    = []     # List of EC2 Availability Zones for the DB cluster storage where DB cluster instances can be created.
+  # backtrack_window                      = 0      # Target backtrack window, in seconds.
+  # backup_retention_period               = 0      # Days to retain backups for.
+  # ca_certificate_identifier             = ""     # CA certificate identifier to use for the DB cluster's server certificate.
+  # cluster_identifier                    = ""     # Cluster identifier.
+  # cluster_identifier_prefix             = ""     # Creates a unique cluster identifier beginning with the specified prefix.
+  # cluster_members                       = []
+  # cluster_scalability_type              = ""     # Scalability mode of the Aurora DB cluster.
+  # copy_tags_to_snapshot                 = false  # Copy all Cluster tags to snapshots.
+  # database_insights_mode                = ""     # Mode of Database Insights to enable for the DB cluster.
+  # database_name                         = ""     # Name for an automatically created database on cluster creation.
+  # db_cluster_instance_class             = ""     # Compute and memory capacity of each DB instance in the Multi-AZ DB cluster, for example db.m6g.xl...
+  # db_cluster_parameter_group_name       = ""     # Cluster parameter group to associate with the cluster.
+  # db_instance_parameter_group_name      = ""     # Instance parameter group to associate with all instances of the DB cluster.
+  # db_subnet_group_name                  = ""     # DB subnet group to associate with this DB cluster.
+  # db_system_id                          = ""     # For use with RDS Custom.
+  # delete_automated_backups              = false  # Whether to remove automated backups immediately after the DB cluster is deleted.
+  # deletion_protection                   = false  # If the DB cluster should have deletion protection enabled.
+  # domain                                = ""     # ID of the Directory Service Active Directory domain to create the cluster in.
+  # domain_iam_role_name                  = ""     # Name of the IAM role to be used when making API calls to the Directory Service.
+  # enable_global_write_forwarding        = false  # Whether cluster should forward writes to an associated global cluster.
+  # enable_http_endpoint                  = false  # Enable HTTP endpoint (data API).
+  # enable_local_write_forwarding         = false  # Whether read replicas can forward write operations to the writer DB instance in the DB cluster.
+  # enabled_cloudwatch_logs_exports       = []     # Set of log types to export to CloudWatch.
+  # engine_lifecycle_support              = ""     # Life cycle type for this DB instance.
+  # engine_mode                           = ""     # Database engine mode.
+  # engine_version                        = ""     # Database engine version.
+  # final_snapshot_identifier             = ""     # Name of your final DB snapshot when this DB cluster is deleted.
+  # global_cluster_identifier             = ""     # Global cluster identifier specified on aws_rds_global_cluster.
+  # iam_database_authentication_enabled   = false  # Whether mappings of AWS Identity and Access Management (IAM) accounts to database accounts is ena...
+  # iam_roles                             = []     # List of ARNs for the IAM roles to associate to the RDS Cluster.
+  # iops                                  = 0      # Amount of Provisioned IOPS (input/output operations per second) to be initially allocated for eac...
+  # kms_key_id                            = ""     # ARN for the KMS encryption key.
+  # manage_master_user_password           = false  # Set to true to allow RDS to manage the master user password in Secrets Manager.
+  # master_password                       = ""     # Password for the master DB user.
+  # master_password_wo                    = ""     # Password for the master DB user.
+  # master_password_wo_version            = 0      # Required when master_password_wo is set.
+  # master_user_secret_kms_key_id         = ""     # Amazon Web Services KMS key identifier is the key ARN, key ID, alias ARN, or alias name for the K...
+  # master_username                       = ""     # Username for the master DB user.
+  # monitoring_interval                   = 0      # Interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB cl...
+  # monitoring_role_arn                   = ""     # ARN for the IAM role that permits RDS to send enhanced monitoring metrics to CloudWatch Logs.
+  # network_type                          = ""     # Network type of the cluster.
+  # performance_insights_enabled          = false  # Enables Performance Insights.
+  # performance_insights_kms_key_id       = ""     # KMS Key ID to encrypt Performance Insights data.
+  # performance_insights_retention_period = 0      # Amount of time to retain performance insights data for.
+  # port                                  = 0      # Port on which the DB accepts connections.
+  # preferred_backup_window               = ""     # Daily time range during which automated backups are created if automated backups are enabled usin...
+  # preferred_maintenance_window          = ""     # Weekly time range during which system maintenance can occur, in (UTC) e.g., wed:04:00-wed:04:30
+  # publicly_accessible                   = false  # Whether the DB cluster is publicly accessible.
+  # region                                = ""     # Region where this resource will be managed.
+  # replication_source_identifier         = ""     # ARN of a source DB cluster or DB instance if this DB cluster is to be created as a Read Replica.
+  # skip_final_snapshot                   = false  # Whether a final DB snapshot is created before the DB cluster is deleted.
+  # snapshot_identifier                   = ""     # Whether to create this cluster from a snapshot.
+  # source_region                         = ""     # Source region for an encrypted replica DB cluster.
+  # storage_encrypted                     = false  # Whether the DB cluster is encrypted.
+  # storage_type                          = ""     # (Forces new for Multi-AZ DB clusters) Specifies the storage type to be associated with the DB clu...
+  # tags                                  = {}     # Map of tags to assign to the DB cluster.
+  # vpc_security_group_ids                = []     # List of VPC security groups to associate with the Cluster
+  # warning_event_categories              = []     # Set of RDS event categories (for example failure, maintenance) to check for after create and upda...
+  # restore_to_point_in_time {}  # Nested attribute for point in time restore.
+  # s3_import {}
+  # scaling_configuration {}  # Nested attribute with scaling properties.
+  # serverlessv2_scaling_configuration {}  # Nested attribute with scaling properties for ServerlessV2.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_rds_cluster</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an RDS Aurora Cluster or a RDS Multi-AZ DB Cluster</description>
+</snippet>

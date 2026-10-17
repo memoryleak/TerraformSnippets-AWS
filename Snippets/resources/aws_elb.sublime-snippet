@@ -1,0 +1,34 @@
+<snippet>
+<content><![CDATA[
+resource "aws_elb" "${1:name}" {
+  listener {
+    instance_port     = ${2:0}
+    instance_protocol = "${3:instance_protocol}"
+    lb_port           = ${4:0}
+    lb_protocol       = "${5:lb_protocol}"
+  }
+
+  # availability_zones          = []     # The AZ's to serve traffic in.
+  # connection_draining         = false  # Boolean to enable connection draining.
+  # connection_draining_timeout = 0      # The time in seconds to allow for connections to drain.
+  # cross_zone_load_balancing   = false  # Enable cross-zone load balancing.
+  # desync_mitigation_mode      = ""     # Determines how the load balancer handles requests that might pose a security risk to an applicati...
+  # idle_timeout                = 0      # The time in seconds that the connection is allowed to be idle.
+  # instances                   = []     # A list of instance IDs to place in the ELB pool.
+  # internal                    = false  # If true, ELB will be an internal ELB.
+  # name                        = ""     # The name of the ELB.
+  # name_prefix                 = ""     # Creates a unique name beginning with the specified
+  # region                      = ""     # Region where this resource will be managed.
+  # security_groups             = []     # A list of security group IDs to assign to the ELB.
+  # source_security_group       = ""
+  # subnets                     = []     # A list of subnet IDs to attach to the ELB.
+  # tags                        = {}     # A map of tags to assign to the resource.
+  # access_logs {}  # An Access Logs block.
+  # health_check {}  # A health_check block.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_elb</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Elastic Load Balancer resource.</description>
+</snippet>

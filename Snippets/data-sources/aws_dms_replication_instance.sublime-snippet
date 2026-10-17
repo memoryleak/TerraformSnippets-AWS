@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_dms_replication_instance" "${1:name}" {
+  replication_instance_id = "${2:replication_instance_id}"  # The replication instance identifier.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_dms_replication_instance</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS DMS (Database Migration) Replication Instance.</description>
+</snippet>

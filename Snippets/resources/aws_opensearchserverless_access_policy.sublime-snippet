@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_opensearchserverless_access_policy" "${1:name}" {
+  name   = "${2:name}"    # Name of the policy.
+  policy = "${3:policy}"  # JSON policy document to use as the content for the new policy
+  type   = "${4:type}"    # Type of access policy.
+
+  # description = ""  # Description of the policy.
+  # region      = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_opensearchserverless_access_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS OpenSearch Serverless Access Policy.</description>
+</snippet>

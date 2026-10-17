@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appfabric_ingestion" "${1:name}" {
+  app            = "${2:app}"             # Name of the application.
+  app_bundle_arn = "${3:app_bundle_arn}"  # ARN of the app bundle to use for the request.
+  ingestion_type = "${4:ingestion_type}"  # Ingestion type.
+  tenant_id      = "${5:tenant_id}"       # ID of the application tenant.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_appfabric_ingestion</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS AppFabric Ingestion.</description>
+</snippet>

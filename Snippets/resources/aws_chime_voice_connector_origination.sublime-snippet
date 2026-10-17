@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_chime_voice_connector_origination" "${1:name}" {
+  voice_connector_id = "${2:voice_connector_id}"  # The Amazon Chime Voice Connector ID.
+  route {
+    host     = "${3:host}"
+    priority = ${4:0}
+    protocol = "${5:protocol}"
+    weight   = ${6:0}
+  }
+
+  # disabled = false  # When origination settings are disabled, inbound calls are not enabled for your Amazon Chime Voice...
+  # region   = ""     # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_chime_voice_connector_origination</tabTrigger>
+<scope>source.terraform</scope>
+<description>Enable origination settings to control inbound calling to your SIP infrastructure.</description>
+</snippet>

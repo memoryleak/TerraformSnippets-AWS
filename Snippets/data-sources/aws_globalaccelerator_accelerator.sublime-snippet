@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_globalaccelerator_accelerator" "${1:name}" {
+  # arn  = ""  # Full ARN of the Global Accelerator.
+  # name = ""  # Unique name of the Global Accelerator.
+}
+]]></content>
+<tabTrigger>data_aws_globalaccelerator_accelerator</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides a Global Accelerator accelerator data source.</description>
+</snippet>

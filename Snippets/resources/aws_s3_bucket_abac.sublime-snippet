@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3_bucket_abac" "${1:name}" {
+  bucket = "${2:bucket}"  # General purpose bucket that you want to create the metadata configuration for.
+
+  # region = ""  # Region where this resource will be managed.
+  # abac_status {}  # ABAC status configuration.
+}
+]]></content>
+<tabTrigger>aws_s3_bucket_abac</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages ABAC (Attribute Based Access Control) for an AWS S3 (Simple Storage) Bucket.</description>
+</snippet>

@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_memorydb_user" "${1:name}" {
+  access_string = "${2:access_string}"  # Access permissions string used for this user.
+  user_name     = "${3:user_name}"      # Name of the MemoryDB user.
+  authentication_mode {
+    type = "${4:type}"
+  }
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_memorydb_user</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a MemoryDB User.</description>
+</snippet>

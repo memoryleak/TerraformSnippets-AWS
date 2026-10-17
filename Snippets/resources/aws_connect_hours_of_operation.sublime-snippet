@@ -1,0 +1,27 @@
+<snippet>
+<content><![CDATA[
+resource "aws_connect_hours_of_operation" "${1:name}" {
+  instance_id = "${2:instance_id}"  # Specifies the identifier of the hosting Amazon Connect Instance.
+  name        = "${3:name}"         # Specifies the name of the Hours of Operation.
+  time_zone   = "${4:time_zone}"    # Specifies the time zone of the Hours of Operation.
+  config {
+    day = "${5:day}"
+    end_time {
+      hours   = ${6:0}
+      minutes = ${7:0}
+    }
+    start_time {
+      hours   = ${8:0}
+      minutes = ${9:0}
+    }
+  }
+
+  # description = ""  # Specifies the description of the Hours of Operation.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Tags to apply to the Hours of Operation.
+}
+]]></content>
+<tabTrigger>aws_connect_hours_of_operation</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides details about a specific Amazon Connect Hours of Operation.</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_wafv2_api_key" "${1:name}" {
+  scope         = "${2:scope}"  # Specifies whether this is for an AWS CloudFront distribution or for a regional application.
+  token_domains = [${3}]        # The domains that you want to be able to use the API key with, for example example.com.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_wafv2_api_key</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a WAFv2 API Key resource.</description>
+</snippet>

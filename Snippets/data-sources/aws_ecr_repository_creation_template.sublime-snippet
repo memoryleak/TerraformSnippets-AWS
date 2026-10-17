@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_ecr_repository_creation_template" "${1:name}" {
+  prefix = "${2:prefix}"  # The repository name prefix that the template matches against.
+
+  # region        = ""  # Region where this resource will be managed.
+  # resource_tags = {}
+}
+]]></content>
+<tabTrigger>data_aws_ecr_repository_creation_template</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an ECR Repository Creation Template</description>
+</snippet>

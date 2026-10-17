@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_account_alternate_contact" "${1:name}" {
+  alternate_contact_type = "${2:alternate_contact_type}"  # Type of the alternate contact.
+  email_address          = "${3:email_address}"           # An email address for the alternate contact.
+  name                   = "${4:name}"                    # Name of the alternate contact.
+  phone_number           = "${5:phone_number}"            # Phone number for the alternate contact.
+  title                  = "${6:title}"                   # Title for the alternate contact.
+
+  # account_id = ""  # ID of the target account when managing member accounts.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_account_alternate_contact</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages the specified alternate contact attached to an AWS Account.</description>
+</snippet>

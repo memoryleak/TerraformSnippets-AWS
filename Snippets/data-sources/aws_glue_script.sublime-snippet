@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+data "aws_glue_script" "${1:name}" {
+  dag_edge {
+    source = "${2:source}"
+    target = "${3:target}"
+  }
+  dag_node {
+    node_type = "${4:node_type}"
+    args {
+      name  = "${5:name}"
+      value = "${6:value}"
+    }
+  }
+
+  # language = ""  # Programming language of the resulting code from the DAG.
+  # region   = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_glue_script</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Generate Glue script from Directed Acyclic Graph</description>
+</snippet>

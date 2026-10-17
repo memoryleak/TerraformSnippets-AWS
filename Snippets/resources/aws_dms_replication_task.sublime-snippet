@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dms_replication_task" "${1:name}" {
+  migration_type           = "${2:migration_type}"            # Migration type.
+  replication_instance_arn = "${3:replication_instance_arn}"  # ARN of the replication instance.
+  replication_task_id      = "${4:replication_task_id}"       # Replication task identifier which must contain from 1 to 255 alphanumeric characters or hyphens,...
+  source_endpoint_arn      = "${5:source_endpoint_arn}"       # ARN that uniquely identifies the source endpoint.
+  table_mappings           = "${6:table_mappings}"            # Escaped JSON string that contains the table mappings.
+  target_endpoint_arn      = "${7:target_endpoint_arn}"       # ARN that uniquely identifies the target endpoint.
+
+  # cdc_start_position        = ""     # Indicates when you want a change data capture (CDC) operation to start.
+  # cdc_start_time            = ""     # RFC3339 formatted date string or UNIX timestamp for the start of the Change Data Capture (CDC) op...
+  # region                    = ""     # Region where this resource will be managed.
+  # replication_task_settings = ""     # Escaped JSON string that contains the task settings.
+  # resource_identifier       = ""     # A friendly name for the resource identifier at the end of the EndpointArn response parameter that...
+  # start_replication_task    = false  # Whether to run or stop the replication task.
+  # tags                      = {}     # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_dms_replication_task</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a DMS (Data Migration Service) replication task resource.</description>
+</snippet>

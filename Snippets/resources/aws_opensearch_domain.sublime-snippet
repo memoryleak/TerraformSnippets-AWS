@@ -1,0 +1,34 @@
+<snippet>
+<content><![CDATA[
+resource "aws_opensearch_domain" "${1:name}" {
+  domain_name = "${2:domain_name}"  # Name of the domain.
+
+  # access_policies  = ""  # IAM policy document specifying the access policies for the domain.
+  # advanced_options = {}  # Key-value string pairs to specify advanced configuration options.
+  # engine_version   = ""  # Either Elasticsearch_X.Y or OpenSearch_X.Y to specify the engine version for the Amazon OpenSearc...
+  # ip_address_type  = ""  # The IP address type for the endpoint.
+  # region           = ""  # Region where this resource will be managed.
+  # tags             = {}  # Map of tags to assign to the resource.
+  # advanced_security_options {}  # Configuration block for fine-grained access control.
+  # aiml_options {}  # Configuration block for parameters required to enable all machine learning features.
+  # auto_tune_options {}  # Configuration block for the Auto-Tune options of the domain.
+  # cluster_config {}  # Configuration block for the cluster of the domain.
+  # cognito_options {}  # Configuration block for authenticating dashboard with Cognito.
+  # deployment_strategy_options {}  # Configuration block for the deployment strategy options of the domain.
+  # domain_endpoint_options {}  # Configuration block for domain endpoint HTTP(S) related options.
+  # ebs_options {}  # Configuration block for EBS related options, may be required based on chosen instance size.
+  # encrypt_at_rest {}  # Configuration block for encrypt at rest options.
+  # identity_center_options {}  # Configuration block for enabling and managing IAM Identity Center integration within a domain.
+  # log_publishing_options {}  # Configuration block for publishing slow and application logs to CloudWatch Logs.
+  # node_to_node_encryption {}  # Configuration block for node-to-node encryption options.
+  # off_peak_window_options {}  # Configuration to add Off Peak update options.
+  # snapshot_options {}  # Configuration block for snapshot related options.
+  # software_update_options {}  # Software update options for the domain.
+  # timeouts {}
+  # vpc_options {}  # Configuration block for VPC related options.
+}
+]]></content>
+<tabTrigger>aws_opensearch_domain</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS OpenSearch Domain.</description>
+</snippet>

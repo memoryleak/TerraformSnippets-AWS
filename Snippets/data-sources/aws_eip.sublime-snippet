@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_eip" "${1:name}" {
+  # public_ip = ""  # Public IP of the specific EIP to retrieve.
+  # region    = ""  # Region where this resource will be managed.
+  # tags      = {}  # Map of tags, each pair of which must exactly match a pair on the desired Elastic IP.
+  # filter {}  # One or more name/value pairs to use as filters.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_eip</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific Elastic IP</description>
+</snippet>

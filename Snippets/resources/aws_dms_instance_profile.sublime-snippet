@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dms_instance_profile" "${1:name}" {
+  # availability_zone       = ""     # Availability Zone where the instance profile runs.
+  # description             = ""     # Description for the instance profile.
+  # kms_key_arn             = ""     # ARN of the KMS key used to encrypt the connection parameters for the instance profile.
+  # name                    = ""     # Name for the instance profile.
+  # network_type            = ""     # Network type for the instance profile.
+  # publicly_accessible     = false  # Whether the instance profile is publicly accessible.
+  # region                  = ""     # Region where this resource will be managed.
+  # subnet_group_identifier = ""     # Subnet group to associate with the instance profile.
+  # tags                    = {}     # Map of tags assigned to the resource.
+  # vpc_security_group_ids  = []     # VPC security group IDs to be used with the instance profile.
+}
+]]></content>
+<tabTrigger>aws_dms_instance_profile</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS DMS (Database Migration) Instance Profile.</description>
+</snippet>

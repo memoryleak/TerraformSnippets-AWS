@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_quicksight_vpc_connection" "${1:name}" {
+  name               = "${2:name}"               # Display name for the VPC connection.
+  role_arn           = "${3:role_arn}"           # IAM role to associate with the VPC connection.
+  security_group_ids = [${4}]                    # List of security group IDs for the VPC connection.
+  subnet_ids         = [${5}]                    # List of subnet IDs for the VPC connection.
+  vpc_connection_id  = "${6:vpc_connection_id}"  # ID of the VPC connection.
+
+  # aws_account_id = ""  # AWS account ID.
+  # dns_resolvers  = []  # List of IP addresses of DNS resolver endpoints for the VPC connection.
+  # region         = ""  # Region where this resource will be managed.
+  # tags           = {}  # Key-value map of resource tags.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_quicksight_vpc_connection</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS QuickSight VPC Connection.</description>
+</snippet>

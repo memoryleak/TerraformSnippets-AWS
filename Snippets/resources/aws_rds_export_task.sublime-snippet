@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_rds_export_task" "${1:name}" {
+  export_task_identifier = "${2:export_task_identifier}"  # Unique identifier for the snapshot export task.
+  iam_role_arn           = "${3:iam_role_arn}"            # ARN of the IAM role to use for writing to the Amazon S3 bucket.
+  kms_key_id             = "${4:kms_key_id}"              # ID of the Amazon Web Services KMS key to use to encrypt the snapshot.
+  s3_bucket_name         = "${5:s3_bucket_name}"          # Name of the Amazon S3 bucket to export the snapshot to.
+  source_arn             = "${6:source_arn}"              # ARN of the snapshot to export.
+
+  # export_only = []  # Data to be exported from the snapshot.
+  # region      = ""  # Region where this resource will be managed.
+  # s3_prefix   = ""  # Amazon S3 bucket prefix to use as the file name and path of the exported snapshot.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_rds_export_task</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS RDS (Relational Database) Export Task.</description>
+</snippet>

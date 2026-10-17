@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_cloudfront_distribution" "${1:name}" {
+  # tags = {}
+}
+]]></content>
+<tabTrigger>data_aws_cloudfront_distribution</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides a CloudFront web distribution data source.</description>
+</snippet>

@@ -1,0 +1,24 @@
+<snippet>
+<content><![CDATA[
+resource "aws_glue_trigger" "${1:name}" {
+  name = "${2:name}"  # Name of the trigger.
+  type = "${3:type}"  # Type of trigger.
+  actions {
+  }
+
+  # description       = ""     # Description of the new trigger.
+  # enabled           = false  # Start the trigger.
+  # region            = ""     # Region where this resource will be managed.
+  # schedule          = ""     # Cron expression used to specify the schedule.
+  # start_on_creation = false  # Set to true to start SCHEDULED and CONDITIONAL triggers when created.
+  # tags              = {}     # Key-value map of resource tags.
+  # workflow_name     = ""     # Workflow to which the trigger should be associated to.
+  # event_batching_condition {}  # Batch condition that must be met (specified number of events received or batch time window expire...
+  # predicate {}  # Predicate to specify when the new trigger should fire.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_glue_trigger</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Glue Trigger resource.</description>
+</snippet>

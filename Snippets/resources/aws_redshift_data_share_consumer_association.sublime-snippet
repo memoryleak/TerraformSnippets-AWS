@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_redshift_data_share_consumer_association" "${1:name}" {
+  data_share_arn = "${2:data_share_arn}"  # ARN of the datashare that the consumer is to use with the account or the namespace.
+
+  # allow_writes             = false  # Whether to allow write operations for a datashare.
+  # associate_entire_account = false  # Whether the datashare is associated with the entire account.
+  # consumer_arn             = ""     # ARN of the consumer that is associated with the datashare.
+  # consumer_region          = ""     # From a datashare consumer account, associates a datashare with all existing and future namespaces...
+  # region                   = ""     # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_redshift_data_share_consumer_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Redshift Data Share Consumer Association.</description>
+</snippet>

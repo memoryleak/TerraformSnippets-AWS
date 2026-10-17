@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_waf_sql_injection_match_set" "${1:name}" {
+  name = "${2:name}"  # The name or description of the SQL Injection Match Set.
+
+  # sql_injection_match_tuples {}  # The parts of web requests that you want AWS WAF to inspect for malicious SQL code and, if you wan...
+}
+]]></content>
+<tabTrigger>aws_waf_sql_injection_match_set</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a AWS WAF SQL Injection Match Set resource.</description>
+</snippet>

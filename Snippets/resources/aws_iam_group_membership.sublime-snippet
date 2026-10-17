@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iam_group_membership" "${1:name}" {
+  group = "${2:group}"  # The IAM Group name to attach the list of users to
+  name  = "${3:name}"   # The name to identify the Group Membership
+  users = [${4}]        # A list of IAM User names to associate with the Group
+}
+]]></content>
+<tabTrigger>aws_iam_group_membership</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a top level resource to manage IAM Group membership for IAM Users.</description>
+</snippet>

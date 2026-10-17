@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_odb_networks" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_odb_networks</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source to odb networks for Oracle Database@AWS.</description>
+</snippet>

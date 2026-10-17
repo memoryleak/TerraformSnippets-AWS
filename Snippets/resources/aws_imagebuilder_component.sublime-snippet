@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_imagebuilder_component" "${1:name}" {
+  name     = "${2:name}"      # Name of the component.
+  platform = "${3:platform}"  # Platform of the component.
+  version  = "${4:version}"   # Version of the component.
+
+  # change_description    = ""     # Change description of the component.
+  # data                  = ""     # Inline YAML string with data of the component.
+  # description           = ""     # Description of the component.
+  # kms_key_id            = ""     # ARN of the KMS Key used to encrypt the component.
+  # region                = ""     # Region where this resource will be managed.
+  # skip_destroy          = false  # Whether to retain the old version when the resource is destroyed or replacement is necessary.
+  # supported_os_versions = []     # Set of Operating Systems (OS) supported by the component.
+  # tags                  = {}     # Key-value map of resource tags for the component.
+  # uri                   = ""     # S3 URI with data of the component.
+}
+]]></content>
+<tabTrigger>aws_imagebuilder_component</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manage an Image Builder Component</description>
+</snippet>

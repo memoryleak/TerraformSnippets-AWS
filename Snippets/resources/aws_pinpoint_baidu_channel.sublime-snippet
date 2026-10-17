@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_pinpoint_baidu_channel" "${1:name}" {
+  api_key        = "${2:api_key}"         # Platform credential API key from Baidu.
+  application_id = "${3:application_id}"  # Application ID.
+  secret_key     = "${4:secret_key}"      # Platform credential Secret key from Baidu.
+
+  # enabled = false  # Whether to enable the channel.
+  # region  = ""     # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_pinpoint_baidu_channel</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an End User Messaging Baidu Channel resource.</description>
+</snippet>

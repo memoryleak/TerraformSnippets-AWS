@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_ecr_repository" "${1:name}" {
+  name = "${2:name}"  # Name of the ECR Repository.
+
+  # region      = ""  # Region where this resource will be managed.
+  # registry_id = ""  # Registry ID where the repository was created.
+  # tags        = {}
+}
+]]></content>
+<tabTrigger>data_aws_ecr_repository</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an ECR Repository</description>
+</snippet>

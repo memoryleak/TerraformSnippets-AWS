@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_redshiftserverless_snapshot" "${1:name}" {
+  namespace_name = "${2:namespace_name}"  # The namespace to create a snapshot for.
+  snapshot_name  = "${3:snapshot_name}"   # The name of the snapshot.
+
+  # region           = ""  # Region where this resource will be managed.
+  # retention_period = 0   # How long to retain the created snapshot.
+}
+]]></content>
+<tabTrigger>aws_redshiftserverless_snapshot</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Redshift Serverless Snapshot resource.</description>
+</snippet>

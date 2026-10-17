@@ -1,0 +1,25 @@
+<snippet>
+<content><![CDATA[
+resource "aws_default_subnet" "${1:name}" {
+  availability_zone = "${2:availability_zone}"
+
+  # assign_ipv6_address_on_creation                = false
+  # customer_owned_ipv4_pool                       = ""
+  # enable_dns64                                   = false
+  # enable_resource_name_dns_a_record_on_launch    = false
+  # enable_resource_name_dns_aaaa_record_on_launch = false
+  # force_destroy                                  = false  # Whether destroying the resource deletes the default subnet.
+  # ipv6_cidr_block                                = ""
+  # ipv6_native                                    = false
+  # map_customer_owned_ip_on_launch                = false
+  # map_public_ip_on_launch                        = false
+  # private_dns_hostname_type_on_launch            = ""
+  # region                                         = ""
+  # tags                                           = {}
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_default_subnet</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manage a default subnet resource.</description>
+</snippet>

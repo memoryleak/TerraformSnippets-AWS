@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_event_bus_policy" "${1:name}" {
+  policy = "${2:policy}"  # The text of the policy.
+
+  # event_bus_name = ""  # The name of the event bus to set the permissions on.
+  # region         = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_event_bus_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to create an EventBridge policy to support cross-account events.</description>
+</snippet>

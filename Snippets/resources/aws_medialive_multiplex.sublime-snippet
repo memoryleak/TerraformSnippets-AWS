@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_medialive_multiplex" "${1:name}" {
+  availability_zones = [${2}]       # List of availability zones.
+  name               = "${3:name}"  # name of Multiplex.
+
+  # region          = ""     # Region where this resource will be managed.
+  # start_multiplex = false  # Whether to start the Multiplex.
+  # tags            = {}     # Map of tags to assign to the Multiplex.
+  # multiplex_settings {}  # Multiplex settings.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_medialive_multiplex</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS MediaLive Multiplex.</description>
+</snippet>

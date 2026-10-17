@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_vpc_dhcp_options" "${1:name}" {
+  # dhcp_options_id = ""  # EC2 DHCP Options ID.
+  # region          = ""  # Region where this resource will be managed.
+  # tags            = {}
+  # filter {}  # List of custom filters as described below.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_vpc_dhcp_options</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Retrieve information about an EC2 DHCP Options configuration</description>
+</snippet>

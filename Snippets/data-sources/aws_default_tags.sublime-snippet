@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+data "aws_default_tags" "${1:name}" {
+}
+]]></content>
+<tabTrigger>data_aws_default_tags</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Access the default tags configured on the provider.</description>
+</snippet>

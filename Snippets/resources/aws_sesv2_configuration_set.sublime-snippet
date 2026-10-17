@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sesv2_configuration_set" "${1:name}" {
+  configuration_set_name = "${2:configuration_set_name}"  # Name of the configuration set.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags to assign to the service.
+  # delivery_options {}  # Object that defines the dedicated IP pool that is used to send emails that you send using the con...
+  # reputation_options {}  # Object that defines whether or not Amazon SES collects reputation metrics for the emails that you...
+  # sending_options {}  # Object that defines whether or not Amazon SES can send email that you send using the configuratio...
+  # suppression_options {}  # Object that contains information about the suppression list preferences for your account.
+  # tracking_options {}  # Object that defines the open and click tracking options for emails that you send using the config...
+  # vdm_options {}  # Object that defines the VDM settings that apply to emails that you send using the configuration set.
+}
+]]></content>
+<tabTrigger>aws_sesv2_configuration_set</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS SESv2 (Simple Email V2) Configuration Set.</description>
+</snippet>

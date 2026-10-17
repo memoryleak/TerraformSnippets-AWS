@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrock_foundation_model_agreement" "${1:name}" {
+  model_id    = "${2:model_id}"     # Model ID for the access request.
+  offer_token = "${3:offer_token}"  # Offer token encapsulates information for an offer.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_bedrock_foundation_model_agreement</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Bedrock Foundation Model Agreement.</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_accountaccess_application" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags to assign to the Application.
+  # identity_source {}  # Identity source for the application.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_accountaccess_application</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Account Access Application bound to an IAM Identity Center instance.</description>
+</snippet>

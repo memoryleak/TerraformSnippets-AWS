@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iam_policy_attachment" "${1:name}" {
+  name       = "${2:name}"
+  policy_arn = "${3:policy_arn}"
+
+  # groups = []
+  # roles  = []
+  # users  = []
+}
+]]></content>
+<tabTrigger>aws_iam_policy_attachment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Attaches a Managed IAM Policy to user(s), role(s), and/or group(s)</description>
+</snippet>

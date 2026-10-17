@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_contributor_managed_insight_rule" "${1:name}" {
+  resource_arn  = "${2:resource_arn}"   # ARN of an Amazon Web Services resource that has managed Contributor Insights rules.
+  template_name = "${3:template_name}"  # Template name for the managed Contributor Insights rule, as returned by ListManagedInsightRules.
+
+  # region = ""  # Region where this resource will be managed.
+  # state  = ""
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_contributor_managed_insight_rule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS CloudWatch Contributor Managed Insight Rule.</description>
+</snippet>

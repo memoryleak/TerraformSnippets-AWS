@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sagemaker_image" "${1:name}" {
+  image_name = "${2:image_name}"  # The name of the image.
+  role_arn   = "${3:role_arn}"    # ARN of an IAM role that enables Amazon SageMaker AI to perform tasks on your behalf.
+
+  # description  = ""  # The description of the image.
+  # display_name = ""  # The display name of the image.
+  # region       = ""  # Region where this resource will be managed.
+  # tags         = {}  # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_sagemaker_image</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a SageMaker AI Image resource.</description>
+</snippet>

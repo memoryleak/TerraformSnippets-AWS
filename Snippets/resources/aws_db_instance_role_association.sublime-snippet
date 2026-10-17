@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_db_instance_role_association" "${1:name}" {
+  db_instance_identifier = "${2:db_instance_identifier}"  # DB Instance Identifier to associate with the IAM Role.
+  feature_name           = "${3:feature_name}"            # Name of the feature for association.
+  role_arn               = "${4:role_arn}"                # ARN of the IAM Role to associate with the DB Instance.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_db_instance_role_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an RDS DB Instance association with an IAM Role.</description>
+</snippet>

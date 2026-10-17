@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_apprunner_service" "${1:name}" {
+  service_name = "${2:service_name}"  # Name of the service.
+  source_configuration {
+  }
+
+  # auto_scaling_configuration_arn = ""  # ARN of an App Runner automatic scaling configuration resource that you want to associate with you...
+  # region                         = ""  # Region where this resource will be managed.
+  # tags                           = {}  # Key-value map of resource tags.
+  # encryption_configuration {}  # Custom encryption key that App Runner uses to encrypt the copy of your source repository that it...
+  # health_check_configuration {}  # Settings of the health check that AWS App Runner performs to monitor the health of your service.
+  # instance_configuration {}  # Runtime configuration of instances (scaling units) of the App Runner service.
+  # network_configuration {}  # Configuration settings related to network traffic of the web application that the App Runner serv...
+  # observability_configuration {}  # Observability configuration of your service.
+}
+]]></content>
+<tabTrigger>aws_apprunner_service</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an App Runner Service.</description>
+</snippet>

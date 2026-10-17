@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_location_geofence_collection" "${1:name}" {
+  collection_name = "${2:collection_name}"  # Name of the geofence collection.
+
+  # kms_key_id = ""
+  # region     = ""  # Region where this resource will be managed.
+  # tags       = {}
+}
+]]></content>
+<tabTrigger>data_aws_location_geofence_collection</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Retrieve information about a Location Service Geofence Collection.</description>
+</snippet>

@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudfront_distribution_tenant" "${1:name}" {
+  distribution_id = "${2:distribution_id}"
+  name            = "${3:name}"
+
+  # connection_group_id = ""
+  # enabled             = false
+  # tags                = {}
+  # wait_for_deployment = false
+  # customizations {}
+  # domain {}
+  # managed_certificate_request {}
+  # parameter {}
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_cloudfront_distribution_tenant</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudFront distribution tenant resource.</description>
+</snippet>

@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_servicecatalog_portfolio" "${1:name}" {
+  name          = "${2:name}"           # The name of the portfolio.
+  provider_name = "${3:provider_name}"  # Name of the person or organization who owns the portfolio.
+
+  # description = ""  # Description of the portfolio
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Tags to apply to the connection.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_servicecatalog_portfolio</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to create a Service Catalog portfolio</description>
+</snippet>

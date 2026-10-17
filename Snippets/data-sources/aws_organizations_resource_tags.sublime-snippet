@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_organizations_resource_tags" "${1:name}" {
+  resource_id = "${2:resource_id}"  # ID of the resource with the tags to list.
+
+  # tags = {}
+}
+]]></content>
+<tabTrigger>data_aws_organizations_resource_tags</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get tags attached to the specified AWS Organizations resource.</description>
+</snippet>

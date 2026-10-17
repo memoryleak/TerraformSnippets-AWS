@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_securitylake_subscriber_notification" "${1:name}" {
+  subscriber_id = "${2:subscriber_id}"  # The subscriber ID for the notification subscription.
+
+  # region = ""  # Region where this resource will be managed.
+  # configuration {}  # Specify the configuration using which you want to create the subscriber notification..
+}
+]]></content>
+<tabTrigger>aws_securitylake_subscriber_notification</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Security Lake Subscriber Notification.</description>
+</snippet>

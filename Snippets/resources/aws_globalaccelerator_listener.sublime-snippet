@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_globalaccelerator_listener" "${1:name}" {
+  accelerator_arn = "${2:accelerator_arn}"  # ARN of your accelerator.
+  protocol        = "${3:protocol}"         # Protocol for the connections from clients to the accelerator.
+  port_range {
+  }
+
+  # client_affinity = ""  # Direct all requests from a user to the same endpoint.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_globalaccelerator_listener</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Global Accelerator listener.</description>
+</snippet>

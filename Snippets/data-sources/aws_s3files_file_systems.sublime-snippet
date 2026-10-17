@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_s3files_file_systems" "${1:name}" {
+  # region = ""  # Region where this data source will be managed.
+  # file_systems {}
+}
+]]></content>
+<tabTrigger>data_aws_s3files_file_systems</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about S3 Files File Systems.</description>
+</snippet>

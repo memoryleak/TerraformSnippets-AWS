@@ -1,0 +1,43 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lb_listener" "${1:name}" {
+  load_balancer_arn = "${2:load_balancer_arn}"  # ARN of the load balancer.
+  default_action {
+    type = "${3:type}"
+  }
+
+  # alpn_policy                                                           = ""     # Name of the Application-Layer Protocol Negotiation (ALPN) policy.
+  # certificate_arn                                                       = ""     # ARN of the default SSL server certificate.
+  # port                                                                  = 0      # Port on which the load balancer is listening.
+  # protocol                                                              = ""     # Protocol for connections from clients to the load balancer.
+  # region                                                                = ""     # Region where this resource will be managed.
+  # routing_http_request_x_amzn_mtls_clientcert_header_name               = ""     # Enables you to modify the header name of the X-Amzn-Mtls-Clientcert HTTP request header.
+  # routing_http_request_x_amzn_mtls_clientcert_issuer_header_name        = ""     # Enables you to modify the header name of the X-Amzn-Mtls-Clientcert-Issuer HTTP request header.
+  # routing_http_request_x_amzn_mtls_clientcert_leaf_header_name          = ""     # Enables you to modify the header name of the X-Amzn-Mtls-Clientcert-Leaf HTTP request header.
+  # routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name = ""     # Enables you to modify the header name of the X-Amzn-Mtls-Clientcert-Serial-Number HTTP request he...
+  # routing_http_request_x_amzn_mtls_clientcert_subject_header_name       = ""     # Enables you to modify the header name of the X-Amzn-Mtls-Clientcert-Subject HTTP request header.
+  # routing_http_request_x_amzn_mtls_clientcert_validity_header_name      = ""     # Enables you to modify the header name of the X-Amzn-Mtls-Clientcert-Validity HTTP request header.
+  # routing_http_request_x_amzn_tls_cipher_suite_header_name              = ""     # Enables you to modify the header name of the X-Amzn-Tls-Cipher-Suite HTTP request header.
+  # routing_http_request_x_amzn_tls_version_header_name                   = ""     # Enables you to modify the header name of the X-Amzn-Tls-Version HTTP request header.
+  # routing_http_response_access_control_allow_credentials_header_value   = ""     # Specifies which headers the browser can expose to the requesting client.
+  # routing_http_response_access_control_allow_headers_header_value       = ""     # Specifies which headers can be used during the request.
+  # routing_http_response_access_control_allow_methods_header_value       = ""     # Set which HTTP methods are allowed when accessing the server from a different origin.
+  # routing_http_response_access_control_allow_origin_header_value        = ""     # Specifies which origins are allowed to access the server.
+  # routing_http_response_access_control_expose_headers_header_value      = ""     # Specifies whether the browser should include credentials such as cookies or authentication when m...
+  # routing_http_response_access_control_max_age_header_value             = ""     # Specifies how long the results of a preflight request can be cached, in seconds.
+  # routing_http_response_content_security_policy_header_value            = ""     # Specifies restrictions enforced by the browser to help minimize the risk of certain types of secu...
+  # routing_http_response_server_enabled                                  = false  # Enables you to allow or remove the HTTP response server header.
+  # routing_http_response_strict_transport_security_header_value          = ""     # Informs browsers that the site should only be accessed using HTTPS, and that any future attempts...
+  # routing_http_response_x_content_type_options_header_value             = ""     # Indicates whether the MIME types advertised in the Content-Type headers should be followed and no...
+  # routing_http_response_x_frame_options_header_value                    = ""     # Indicates whether the browser is allowed to render a page in a frame, iframe, embed or object.
+  # ssl_policy                                                            = ""     # Name of the SSL Policy for the listener.
+  # tags                                                                  = {}     # A map of tags to assign to the resource.
+  # tcp_idle_timeout_seconds                                              = 0      # TCP idle timeout value in seconds.
+  # mutual_authentication {}  # The mutual authentication configuration information.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_lb_listener</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Load Balancer Listener resource.</description>
+</snippet>

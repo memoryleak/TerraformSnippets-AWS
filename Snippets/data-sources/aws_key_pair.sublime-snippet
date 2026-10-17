@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+data "aws_key_pair" "${1:name}" {
+  # include_public_key = false  # Whether to include the public key material in the response.
+  # key_name           = ""     # Key Pair name.
+  # key_pair_id        = ""     # Key Pair ID.
+  # region             = ""     # Region where this resource will be managed.
+  # tags               = {}
+  # filter {}  # Custom filter block as described below.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_key_pair</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific EC2 Key Pair.</description>
+</snippet>

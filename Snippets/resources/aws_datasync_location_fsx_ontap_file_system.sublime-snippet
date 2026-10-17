@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_datasync_location_fsx_ontap_file_system" "${1:name}" {
+  security_group_arns         = [${2}]                              # The security groups that provide access to your file system's preferred subnet.
+  storage_virtual_machine_arn = "${3:storage_virtual_machine_arn}"  # The ARN of the SVM in your file system where you want to copy data to of from.
+  protocol {
+  }
+
+  # region       = ""  # Region where this resource will be managed.
+  # subdirectory = ""  # Path to the file share in the SVM where you'll copy your data.
+  # tags         = {}  # Key-value pairs of resource tags to assign to the DataSync Location.
+}
+]]></content>
+<tabTrigger>aws_datasync_location_fsx_ontap_file_system</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS DataSync Location FSx Ontap File System.</description>
+</snippet>

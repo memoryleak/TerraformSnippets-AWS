@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_docdb_subnet_group" "${1:name}" {
+  subnet_ids = [${2}]  # A list of VPC subnet IDs.
+
+  # description = ""  # The description of the DocDB subnet group.
+  # name        = ""  # The name of the DocDB subnet group.
+  # name_prefix = ""  # Creates a unique name beginning with the specified prefix.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_docdb_subnet_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an DocumentDB subnet group resource.</description>
+</snippet>

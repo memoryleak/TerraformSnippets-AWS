@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_fsx_file_cache" "${1:name}" {
+  file_cache_type         = "${2:file_cache_type}"          # Type of cache to create.
+  file_cache_type_version = "${3:file_cache_type_version}"  # Version for the type of cache to create.
+  storage_capacity        = ${4:0}                          # Storage capacity of the cache in gibibytes (GiB).
+  subnet_ids              = [${5}]                          # Subnet IDs that the cache is accessible from.
+
+  # copy_tags_to_data_repository_associations = false  # Whether to copy tags for the cache to data repository associations.
+  # kms_key_id                                = ""     # ID of the KMS key to use for encrypting data on the cache.
+  # region                                    = ""     # Region where this resource will be managed.
+  # security_group_ids                        = []     # IDs of the security groups to apply to all network interfaces created for cache access.
+  # tags                                      = {}     # Map of tags to assign to the file cache.
+  # data_repository_association {}  # Configurations for up to 8 data repository associations (DRAs) to create during cache creation.
+  # lustre_configuration {}  # Configuration for the Lustre cache.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_fsx_file_cache</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an Amazon File Cache cache.</description>
+</snippet>

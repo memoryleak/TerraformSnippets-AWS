@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dx_connection" "${1:name}" {
+  bandwidth = "${2:bandwidth}"  # The bandwidth of the connection.
+  location  = "${3:location}"   # The AWS Direct Connect location where the connection is located.
+  name      = "${4:name}"       # The name of the connection.
+
+  # encryption_mode = ""     # The connection MAC Security (MACsec) encryption mode.
+  # provider_name   = ""     # The name of the service provider associated with the connection.
+  # region          = ""     # Region where this resource will be managed.
+  # request_macsec  = false  # Boolean value indicating whether you want the connection to support MAC Security (MACsec).
+  # skip_destroy    = false  # Set to true if you do not wish the connection to be deleted at destroy time, and instead just rem...
+  # tags            = {}     # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_dx_connection</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Connection of Direct Connect.</description>
+</snippet>

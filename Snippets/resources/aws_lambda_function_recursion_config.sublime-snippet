@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lambda_function_recursion_config" "${1:name}" {
+  function_name  = "${2:function_name}"   # Name of the Lambda function.
+  recursive_loop = "${3:recursive_loop}"  # Lambda function recursion configuration.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_lambda_function_recursion_config</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Lambda Function Recursion Config.</description>
+</snippet>

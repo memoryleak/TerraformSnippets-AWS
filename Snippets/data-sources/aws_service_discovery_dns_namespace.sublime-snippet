@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_service_discovery_dns_namespace" "${1:name}" {
+  name = "${2:name}"  # Name of the namespace.
+  type = "${3:type}"  # Type of the namespace.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_service_discovery_dns_namespace</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Retrieves information about a Service Discovery private or public DNS namespace.</description>
+</snippet>

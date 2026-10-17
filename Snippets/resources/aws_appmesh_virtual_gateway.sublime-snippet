@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appmesh_virtual_gateway" "${1:name}" {
+  mesh_name = "${2:mesh_name}"  # Name of the service mesh in which to create the virtual gateway.
+  name      = "${3:name}"       # Name to use for the virtual gateway.
+  spec {
+    listener {
+      port_mapping {
+        port     = ${4:0}
+        protocol = "${5:protocol}"
+      }
+    }
+  }
+
+  # mesh_owner = ""  # AWS account ID of the service mesh's owner.
+  # region     = ""  # Region where this resource will be managed.
+  # tags       = {}  # Map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_appmesh_virtual_gateway</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AWS App Mesh virtual gateway resource.</description>
+</snippet>

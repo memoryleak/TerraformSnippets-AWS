@@ -1,0 +1,26 @@
+<snippet>
+<content><![CDATA[
+resource "aws_fsx_openzfs_volume" "${1:name}" {
+  name             = "${2:name}"              # Name of the volume.
+  parent_volume_id = "${3:parent_volume_id}"  # Volume ID of the volume that will be the parent volume for the volume being created, this could b...
+
+  # copy_tags_to_snapshots           = false  # Whether tags for the file system should be copied to snapshots.
+  # data_compression_type            = ""     # Method used to compress the data on the volume.
+  # delete_volume_options            = []     # Whether to delete all child volumes and snapshots.
+  # read_only                        = false  # Whether the volume is read-only.
+  # record_size_kib                  = 0      # Record size of an OpenZFS volume, in kibibytes (KiB).
+  # region                           = ""     # Region where this resource will be managed.
+  # storage_capacity_quota_gib       = 0      # Maximum amount of storage in gibibytes (GiB) that the volume can use from its parent.
+  # storage_capacity_reservation_gib = 0      # Amount of storage in gibibytes (GiB) to reserve from the parent volume.
+  # tags                             = {}     # Map of tags to assign to the file system.
+  # volume_type                      = ""     # Volume type.
+  # nfs_exports {}  # NFS export configuration for the root volume.
+  # origin_snapshot {}  # Configuration to use when creating the OpenZFS volume.
+  # timeouts {}
+  # user_and_group_quotas {}  # - Specify how much storage users or groups can use on the volume.
+}
+]]></content>
+<tabTrigger>aws_fsx_openzfs_volume</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Amazon FSx for OpenZFS volume.</description>
+</snippet>

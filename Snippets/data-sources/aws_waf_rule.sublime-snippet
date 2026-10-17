@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_waf_rule" "${1:name}" {
+  name = "${2:name}"  # Name of the WAF rule.
+}
+]]></content>
+<tabTrigger>data_aws_waf_rule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Retrieves an AWS WAF rule id.</description>
+</snippet>

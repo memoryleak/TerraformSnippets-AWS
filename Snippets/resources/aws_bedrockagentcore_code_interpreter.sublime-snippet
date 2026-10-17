@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrockagentcore_code_interpreter" "${1:name}" {
+  name = "${2:name}"  # Name of the code interpreter.
+
+  # description        = ""  # Description of the code interpreter.
+  # execution_role_arn = ""  # ARN of the IAM role that the code interpreter assumes for execution.
+  # region             = ""  # Region where this resource will be managed.
+  # tags               = {}  # Key-value map of resource tags.
+  # certificate {}  # Certificates to install in the code interpreter.
+  # network_configuration {}  # Network configuration for the code interpreter.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_bedrockagentcore_code_interpreter</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Bedrock AgentCore Code Interpreter.</description>
+</snippet>

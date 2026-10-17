@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iam_organizations_features" "${1:name}" {
+  enabled_features = [${2}]  # List of IAM features to enable.
+}
+]]></content>
+<tabTrigger>aws_iam_organizations_features</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages centralized root access features.</description>
+</snippet>

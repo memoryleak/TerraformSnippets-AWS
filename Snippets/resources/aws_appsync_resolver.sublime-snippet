@@ -1,0 +1,24 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appsync_resolver" "${1:name}" {
+  api_id = "${2:api_id}"  # API ID for the GraphQL API.
+  field  = "${3:field}"   # Field name from the schema defined in the GraphQL API.
+  type   = "${4:type}"    # Type name from the schema defined in the GraphQL API.
+
+  # code              = ""  # Function code that contains the request and response functions.
+  # data_source       = ""  # Data source name.
+  # kind              = ""  # Resolver type.
+  # max_batch_size    = 0   # Maximum batching size for a resolver.
+  # region            = ""  # Region where this resource will be managed.
+  # request_template  = ""  # Request mapping template for UNIT resolver or 'before mapping template' for PIPELINE resolver.
+  # response_template = ""  # Response mapping template for UNIT resolver or 'after mapping template' for PIPELINE resolver.
+  # caching_config {}  # Caching Config.
+  # pipeline_config {}  # Caching configuration for the resolver.
+  # runtime {}  # Runtime used by an AWS AppSync pipeline resolver or AWS AppSync function.
+  # sync_config {}  # Sync configuration for a resolver.
+}
+]]></content>
+<tabTrigger>aws_appsync_resolver</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AppSync Resolver.</description>
+</snippet>

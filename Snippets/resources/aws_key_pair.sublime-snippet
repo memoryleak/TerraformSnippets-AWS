@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_key_pair" "${1:name}" {
+  public_key = "${2:public_key}"  # Public key material.
+
+  # key_name        = ""  # Name for the key pair.
+  # key_name_prefix = ""  # Creates a unique name beginning with the specified prefix.
+  # region          = ""  # Region where this resource will be managed.
+  # tags            = {}  # Key-value map of resource tags.
+}
+]]></content>
+<tabTrigger>aws_key_pair</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Key Pair resource.</description>
+</snippet>

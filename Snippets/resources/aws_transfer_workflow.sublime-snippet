@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_transfer_workflow" "${1:name}" {
+  steps {
+    type = "${2:type}"
+  }
+
+  # description = ""  # Textual description for the workflow.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Map of tags to assign to the resource.
+  # on_exception_steps {}  # Steps (actions) to take if errors are encountered during execution of the workflow.
+}
+]]></content>
+<tabTrigger>aws_transfer_workflow</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a AWS Transfer Workflow resource.</description>
+</snippet>

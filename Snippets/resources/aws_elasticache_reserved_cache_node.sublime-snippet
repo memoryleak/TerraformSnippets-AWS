@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_elasticache_reserved_cache_node" "${1:name}" {
+  reserved_cache_nodes_offering_id = "${2:reserved_cache_nodes_offering_id}"  # ID of the reserved cache node offering to purchase.
+
+  # cache_node_count = 0   # Number of cache node instances to reserve.
+  # region           = ""  # Region where this resource will be managed.
+  # tags             = {}  # Map of tags to assign to the reservation.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_elasticache_reserved_cache_node</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an ElastiCache Reserved Cache Node</description>
+</snippet>

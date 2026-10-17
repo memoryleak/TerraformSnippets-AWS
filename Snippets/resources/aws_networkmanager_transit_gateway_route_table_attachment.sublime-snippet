@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_networkmanager_transit_gateway_route_table_attachment" "${1:name}" {
+  peering_id                      = "${2:peering_id}"                       # ID of the peer for the attachment.
+  transit_gateway_route_table_arn = "${3:transit_gateway_route_table_arn}"  # ARN of the transit gateway route table for the attachment.
+
+  # routing_policy_label = ""  # The routing policy label to apply to the Transit Gateway route table attachment for traffic routi...
+  # tags                 = {}  # Key-value tags for the attachment.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_networkmanager_transit_gateway_route_table_attachment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Network Manager transit gateway route table attachment.</description>
+</snippet>

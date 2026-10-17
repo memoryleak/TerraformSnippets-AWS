@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iam_account_alias" "${1:name}" {
+  account_alias = "${2:account_alias}"  # The account alias
+}
+]]></content>
+<tabTrigger>aws_iam_account_alias</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages the account alias for the AWS Account.</description>
+</snippet>

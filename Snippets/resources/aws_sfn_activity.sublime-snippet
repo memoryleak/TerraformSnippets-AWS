@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sfn_activity" "${1:name}" {
+  name = "${2:name}"  # The name of the activity to create.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value map of resource tags.
+  # encryption_configuration {}  # Defines what encryption configuration is used to encrypt data in the Activity.
+}
+]]></content>
+<tabTrigger>aws_sfn_activity</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Step Function Activity resource.</description>
+</snippet>

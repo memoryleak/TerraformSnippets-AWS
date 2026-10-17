@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appstream_user_stack_association" "${1:name}" {
+  authentication_type = "${2:authentication_type}"  # Authentication type for the user.
+  stack_name          = "${3:stack_name}"           # Name of the stack that is associated with the user.
+  user_name           = "${4:user_name}"            # Email address of the user who is associated with the stack.
+
+  # region                  = ""     # Region where this resource will be managed.
+  # send_email_notification = false  # Whether a welcome email is sent to a user after the user is created in the user pool.
+}
+]]></content>
+<tabTrigger>aws_appstream_user_stack_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AppStream User Stack association.</description>
+</snippet>

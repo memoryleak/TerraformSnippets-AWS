@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_codecommit_repository" "${1:name}" {
+  repository_name = "${2:repository_name}"  # Name for the repository.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_codecommit_repository</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about CodeCommit Repository.</description>
+</snippet>

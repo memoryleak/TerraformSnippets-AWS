@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appsync_function" "${1:name}" {
+  api_id      = "${2:api_id}"       # ID of the associated AppSync API.
+  data_source = "${3:data_source}"  # Function data source name.
+  name        = "${4:name}"         # Function name.
+
+  # code                      = ""  # Function code that contains the request and response functions.
+  # description               = ""  # Function description.
+  # function_version          = ""  # Version of the request mapping template.
+  # max_batch_size            = 0   # Maximum batching size for a resolver.
+  # region                    = ""  # Region where this resource will be managed.
+  # request_mapping_template  = ""  # Function request mapping template.
+  # response_mapping_template = ""  # Function response mapping template.
+  # runtime {}  # Runtime used by an AWS AppSync pipeline resolver or AWS AppSync function.
+  # sync_config {}  # Sync configuration for a resolver.
+}
+]]></content>
+<tabTrigger>aws_appsync_function</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AppSync Function.</description>
+</snippet>

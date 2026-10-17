@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_ec2_network_insights_analysis" "${1:name}" {
+  # network_insights_analysis_id = ""  # ID of the Network Insights Analysis to select.
+  # region                       = ""  # Region where this resource will be managed.
+  # tags                         = {}
+  # filter {}  # Configuration block(s) for filtering.
+}
+]]></content>
+<tabTrigger>data_aws_ec2_network_insights_analysis</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific Network Insights Analysis.</description>
+</snippet>

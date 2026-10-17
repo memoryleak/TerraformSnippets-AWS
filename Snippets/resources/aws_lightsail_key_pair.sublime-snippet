@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lightsail_key_pair" "${1:name}" {
+  # name        = ""  # Name of the Lightsail Key Pair.
+  # name_prefix = ""  # Creates a unique name beginning with the specified prefix.
+  # pgp_key     = ""  # PGP key to encrypt the resulting private key material.
+  # public_key  = ""  # Public key material.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_lightsail_key_pair</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Lightsail Key Pair.</description>
+</snippet>

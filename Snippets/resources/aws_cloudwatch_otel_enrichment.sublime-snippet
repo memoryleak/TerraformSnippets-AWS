@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_otel_enrichment" "${1:name}" {
+  # region = ""  # AWS region where this resource is managed.
+  # exclude_filter {}  # Namespaces and metric names to leave unenriched.
+  # include_filter {}  # Namespaces and metric names to enrich.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_otel_enrichment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages AWS CloudWatch OTel enrichment.</description>
+</snippet>

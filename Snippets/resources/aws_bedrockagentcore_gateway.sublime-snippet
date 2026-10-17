@@ -1,0 +1,24 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrockagentcore_gateway" "${1:name}" {
+  authorizer_type = "${2:authorizer_type}"  # Type of authorizer to use.
+  name            = "${3:name}"             # Name of the gateway.
+  role_arn        = "${4:role_arn}"         # ARN of the IAM role that the gateway assumes to access AWS services.
+
+  # description     = ""  # Description of the gateway.
+  # exception_level = ""  # Exception level for the gateway.
+  # kms_key_arn     = ""  # ARN of the KMS key used to encrypt the gateway data.
+  # protocol_type   = ""  # Protocol type for the gateway.
+  # region          = ""  # Region where this resource will be managed.
+  # tags            = {}  # Key-value map of resource tags.
+  # authorizer_configuration {}  # Configuration for request authorization.
+  # interceptor_configuration {}  # List of interceptor configurations for the gateway.
+  # policy_engine_configuration {}  # Configuration for a policy engine associated with the gateway.
+  # protocol_configuration {}  # Protocol-specific configuration for the gateway.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_bedrockagentcore_gateway</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Bedrock AgentCore Gateway.</description>
+</snippet>

@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_api_gateway_integration_response" "${1:name}" {
+  http_method = "${2:http_method}"  # HTTP method (GET, POST, PUT, DELETE, HEAD, OPTIONS, ANY).
+  resource_id = "${3:resource_id}"  # API resource ID.
+  rest_api_id = "${4:rest_api_id}"  # ID of the associated REST API.
+  status_code = "${5:status_code}"  # HTTP status code.
+
+  # content_handling    = ""  # How to handle request payload content type conversions.
+  # region              = ""  # Region where this resource will be managed.
+  # response_parameters = {}  # Map of response parameters that can be read from the backend response.
+  # response_templates  = {}  # Map of templates used to transform the integration response body.
+  # selection_pattern   = ""  # Regular expression pattern used to choose an integration response based on the response from the...
+}
+]]></content>
+<tabTrigger>aws_api_gateway_integration_response</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an HTTP Method Integration Response for an API Gateway Resource.</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_schemas_registry_policy" "${1:name}" {
+  policy        = "${2:policy}"         # Resource Policy for EventBridge Schema Registry
+  registry_name = "${3:registry_name}"  # Name of EventBridge Schema Registry
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_schemas_registry_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS EventBridge Schemas Registry Policy.</description>
+</snippet>

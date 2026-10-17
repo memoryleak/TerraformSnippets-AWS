@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_transit_gateway_multicast_domain" "${1:name}" {
+  transit_gateway_id = "${2:transit_gateway_id}"  # EC2 Transit Gateway identifier.
+
+  # auto_accept_shared_associations = ""  # Whether to automatically accept cross-account subnet associations that are associated with the EC...
+  # igmpv2_support                  = ""  # Whether to enable Internet Group Management Protocol (IGMP) version 2 for the EC2 Transit Gateway...
+  # region                          = ""  # Region where this resource will be managed.
+  # static_sources_support          = ""  # Whether to enable support for statically configuring multicast group sources for the EC2 Transit...
+  # tags                            = {}  # Key-value tags for the EC2 Transit Gateway Multicast Domain.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ec2_transit_gateway_multicast_domain</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an EC2 Transit Gateway Multicast Domain</description>
+</snippet>

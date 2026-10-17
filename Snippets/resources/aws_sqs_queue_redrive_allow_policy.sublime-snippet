@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sqs_queue_redrive_allow_policy" "${1:name}" {
+  queue_url            = "${2:queue_url}"             # The URL of the SQS Queue to which to attach the policy
+  redrive_allow_policy = "${3:redrive_allow_policy}"  # The JSON redrive allow policy for the SQS queue.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_sqs_queue_redrive_allow_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a SQS Queue Redrive Allow Policy resource.</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_quicksight_ingestion" "${1:name}" {
+  data_set_id    = "${2:data_set_id}"     # ID of the dataset used in the ingestion.
+  ingestion_id   = "${3:ingestion_id}"    # ID for the ingestion.
+  ingestion_type = "${4:ingestion_type}"  # Type of ingestion to be created.
+
+  # aws_account_id = ""  # AWS account ID.
+  # region         = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_quicksight_ingestion</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS QuickSight Ingestion.</description>
+</snippet>

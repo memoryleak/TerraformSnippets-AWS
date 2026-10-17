@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_alb" "${1:name}" {
+  # arn    = ""
+  # name   = ""
+  # region = ""
+  # tags   = {}
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_alb</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: aws_alb</description>
+</snippet>

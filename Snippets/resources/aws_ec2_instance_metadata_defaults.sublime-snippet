@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_instance_metadata_defaults" "${1:name}" {
+  # http_endpoint               = ""  # Whether the metadata service is available.
+  # http_put_response_hop_limit = 0   # The desired HTTP PUT response hop limit for instance metadata requests.
+  # http_tokens                 = ""  # Whether the metadata service requires session tokens, also referred to as _Instance Metadata Serv...
+  # instance_metadata_tags      = ""  # Enables or disables access to instance tags from the instance metadata service.
+  # region                      = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_ec2_instance_metadata_defaults</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages regional EC2 instance metadata default settings.</description>
+</snippet>

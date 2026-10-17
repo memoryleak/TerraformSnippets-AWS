@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_wafv2_rule_group" "${1:name}" {
+  name  = "${2:name}"   # Name of the WAFv2 Rule Group.
+  scope = "${3:scope}"  # Specifies whether this is for an AWS CloudFront distribution or for a regional application.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_wafv2_rule_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Retrieves the summary of a WAFv2 Rule Group.</description>
+</snippet>

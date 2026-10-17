@@ -1,0 +1,28 @@
+<snippet>
+<content><![CDATA[
+resource "aws_elasticsearch_domain" "${1:name}" {
+  domain_name = "${2:domain_name}"  # Name of the domain.
+
+  # access_policies       = ""  # IAM policy document specifying the access policies for the domain.
+  # advanced_options      = {}  # Key-value string pairs to specify advanced configuration options.
+  # elasticsearch_version = ""  # Version of Elasticsearch to deploy.
+  # region                = ""  # Region where this resource will be managed.
+  # tags                  = {}  # Map of tags to assign to the resource.
+  # advanced_security_options {}  # Configuration block for fine-grained access control.
+  # auto_tune_options {}  # Configuration block for the Auto-Tune options of the domain.
+  # cluster_config {}  # Configuration block for the cluster of the domain.
+  # cognito_options {}  # Configuration block for authenticating Kibana with Cognito.
+  # domain_endpoint_options {}  # Configuration block for domain endpoint HTTP(S) related options.
+  # ebs_options {}  # Configuration block for EBS related options, may be required based on chosen instance size.
+  # encrypt_at_rest {}  # Configuration block for encrypt at rest options.
+  # log_publishing_options {}  # Configuration block for publishing slow and application logs to CloudWatch Logs.
+  # node_to_node_encryption {}  # Configuration block for node-to-node encryption options.
+  # snapshot_options {}  # Configuration block for snapshot related options.
+  # timeouts {}
+  # vpc_options {}  # Configuration block for VPC related options.
+}
+]]></content>
+<tabTrigger>aws_elasticsearch_domain</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Elasticsearch Domain.</description>
+</snippet>

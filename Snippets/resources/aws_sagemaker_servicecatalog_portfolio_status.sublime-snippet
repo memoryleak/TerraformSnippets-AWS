@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sagemaker_servicecatalog_portfolio_status" "${1:name}" {
+  status = "${2:status}"  # Whether Service Catalog is enabled or disabled in SageMaker.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_sagemaker_servicecatalog_portfolio_status</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages status of Service Catalog in SageMaker.</description>
+</snippet>

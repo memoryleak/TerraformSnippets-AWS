@@ -1,0 +1,25 @@
+<snippet>
+<content><![CDATA[
+resource "aws_codepipeline_custom_action_type" "${1:name}" {
+  category      = "${2:category}"       # The category of the custom action.
+  provider_name = "${3:provider_name}"  # The provider of the service used in the custom action
+  version       = "${4:version}"        # The version identifier of the custom action.
+  input_artifact_details {
+    maximum_count = ${5:0}
+    minimum_count = ${6:0}
+  }
+  output_artifact_details {
+    maximum_count = ${7:0}
+    minimum_count = ${8:0}
+  }
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags to assign to this resource.
+  # configuration_property {}  # The configuration properties for the custom action.
+  # settings {}  # The settings for an action type.
+}
+]]></content>
+<tabTrigger>aws_codepipeline_custom_action_type</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CodePipeline CustomActionType.</description>
+</snippet>

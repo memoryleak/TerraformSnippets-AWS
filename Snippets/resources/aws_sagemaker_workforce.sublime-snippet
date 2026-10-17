@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sagemaker_workforce" "${1:name}" {
+  workforce_name = "${2:workforce_name}"  # The name of the Workforce (must be unique).
+
+  # region = ""  # Region where this resource will be managed.
+  # cognito_config {}  # Use this parameter to configure an Amazon Cognito private workforce.
+  # oidc_config {}  # Use this parameter to configure a private workforce using your own OIDC Identity Provider.
+  # source_ip_config {}  # A list of IP address ranges Used to create an allow list of IP addresses for a private workforce.
+  # workforce_vpc_config {}  # configure a workforce using VPC.
+}
+]]></content>
+<tabTrigger>aws_sagemaker_workforce</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a SageMaker AI Workforce resource.</description>
+</snippet>

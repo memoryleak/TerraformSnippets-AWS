@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_api_gateway_api_key" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_api_gateway_api_key</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on an API Gateway REST API Key</description>
+</snippet>

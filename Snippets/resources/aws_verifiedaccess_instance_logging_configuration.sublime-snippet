@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_verifiedaccess_instance_logging_configuration" "${1:name}" {
+  verifiedaccess_instance_id = "${2:verifiedaccess_instance_id}"  # ID of the Verified Access instance.
+  access_logs {
+  }
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_verifiedaccess_instance_logging_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing a Verified Access Instance Logging Configuration.</description>
+</snippet>

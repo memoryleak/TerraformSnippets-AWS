@@ -1,0 +1,34 @@
+<snippet>
+<content><![CDATA[
+resource "aws_mq_broker" "${1:name}" {
+  broker_name        = "${2:broker_name}"         # Name of the broker.
+  engine_type        = "${3:engine_type}"         # Type of broker engine.
+  engine_version     = "${4:engine_version}"      # Version of the broker engine.
+  host_instance_type = "${5:host_instance_type}"  # Broker's instance type.
+
+  # apply_immediately                   = false  # Whether to apply broker modifications immediately.
+  # authentication_strategy             = ""     # Authentication strategy used to secure the broker.
+  # auto_minor_version_upgrade          = false  # Whether to automatically upgrade to new minor versions of brokers as Amazon MQ makes releases ava...
+  # data_replication_mode               = ""     # Whether this broker is part of a data replication pair.
+  # data_replication_primary_broker_arn = ""     # ARN of the primary broker used to replicate data in a data replication pair.
+  # deployment_mode                     = ""     # Deployment mode of the broker.
+  # publicly_accessible                 = false  # Whether to enable connections from applications outside of the VPC that hosts the broker's subnets.
+  # region                              = ""     # Region where this resource will be managed.
+  # resource_share_arns                 = []     # Set of AWS RAM resource share ARNs that grant the broker access to shared resources for private n...
+  # security_groups                     = []     # List of security group IDs assigned to the broker.
+  # storage_type                        = ""     # Storage type of the broker.
+  # subnet_ids                          = []     # List of subnet IDs in which to launch the broker.
+  # tags                                = {}     # Map of tags to assign to the broker.
+  # configuration {}  # Configuration block for broker configuration.
+  # encryption_options {}  # Configuration block containing encryption options.
+  # ldap_server_metadata {}  # Configuration block for the LDAP server used to authenticate and authorize connections.
+  # logs {}  # Configuration block for the logging configuration.
+  # maintenance_window_start_time {}  # Configuration block for the maintenance window start time.
+  # timeouts {}
+  # user {}  # Configuration block for broker users.
+}
+]]></content>
+<tabTrigger>aws_mq_broker</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS MQ broker</description>
+</snippet>

@@ -1,0 +1,27 @@
+<snippet>
+<content><![CDATA[
+resource "aws_emrserverless_application" "${1:name}" {
+  name          = "${2:name}"           # The name of the application.
+  release_label = "${3:release_label}"  # The EMR release version associated with the application.
+  type          = "${4:type}"           # The type of application you want to start, such as spark or hive.
+
+  # architecture = ""  # The CPU architecture of an application.
+  # region       = ""  # Region where this resource will be managed.
+  # tags         = {}  # Key-value mapping of resource tags.
+  # auto_start_configuration {}  # The configuration for an application to automatically start on job submission.
+  # auto_stop_configuration {}  # The configuration for an application to automatically stop after a certain amount of time being i...
+  # image_configuration {}  # The image configuration applied to all worker types.
+  # initial_capacity {}  # The capacity to initialize when the application is created.
+  # interactive_configuration {}  # Enables the interactive use cases to use when running an application.
+  # job_level_cost_allocation_configuration {}
+  # maximum_capacity {}  # The maximum capacity to allocate when the application is created.
+  # monitoring_configuration {}  # The configuration setting for monitoring.
+  # network_configuration {}  # The network configuration for customer VPC connectivity.
+  # runtime_configuration {}  # A configuration specification to be used when provisioning an application.
+  # scheduler_configuration {}  # Scheduler configuration for batch and streaming jobs running on this application.
+}
+]]></content>
+<tabTrigger>aws_emrserverless_application</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an EMR Serverless Application</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpn_gateway_attachment" "${1:name}" {
+  vpc_id         = "${2:vpc_id}"          # ID of the VPC.
+  vpn_gateway_id = "${3:vpn_gateway_id}"  # ID of the Virtual Private Gateway.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_vpn_gateway_attachment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Virtual Private Gateway attachment resource.</description>
+</snippet>

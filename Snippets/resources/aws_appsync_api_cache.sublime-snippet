@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appsync_api_cache" "${1:name}" {
+  api_caching_behavior = "${2:api_caching_behavior}"  # Caching behavior.
+  api_id               = "${3:api_id}"                # GraphQL API ID.
+  ttl                  = ${4:0}                       # TTL in seconds for cache entries.
+  type                 = "${5:type}"                  # Cache instance type.
+
+  # at_rest_encryption_enabled = false  # At-rest encryption flag for cache.
+  # region                     = ""     # Region where this resource will be managed.
+  # transit_encryption_enabled = false  # Transit encryption flag when connecting to cache.
+}
+]]></content>
+<tabTrigger>aws_appsync_api_cache</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AppSync API Cache.</description>
+</snippet>

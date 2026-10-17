@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_workspacesweb_network_settings_association" "${1:name}" {
+  network_settings_arn = "${2:network_settings_arn}"  # ARN of the network settings to associate with the portal.
+  portal_arn           = "${3:portal_arn}"            # ARN of the portal to associate with the network settings.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_workspacesweb_network_settings_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS WorkSpaces Web Network Settings Association.</description>
+</snippet>

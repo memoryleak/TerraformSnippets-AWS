@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_proxy_protocol_policy" "${1:name}" {
+  instance_ports = [${2}]                # List of instance ports to which the policy should be applied.
+  load_balancer  = "${3:load_balancer}"  # Load balancer to which the policy should be attached.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_proxy_protocol_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a proxy protocol policy, which allows an ELB to carry a client connection information to...</description>
+</snippet>

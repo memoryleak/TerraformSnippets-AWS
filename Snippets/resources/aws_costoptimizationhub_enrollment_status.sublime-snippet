@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_costoptimizationhub_enrollment_status" "${1:name}" {
+  # include_member_accounts = false  # Flag to enroll member accounts of the organization if the account is the management account.
+}
+]]></content>
+<tabTrigger>aws_costoptimizationhub_enrollment_status</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing AWS Cost Optimization Hub Enrollment Status.</description>
+</snippet>

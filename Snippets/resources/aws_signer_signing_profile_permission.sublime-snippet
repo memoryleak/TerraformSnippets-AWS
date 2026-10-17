@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_signer_signing_profile_permission" "${1:name}" {
+  action       = "${2:action}"        # An AWS Signer action permitted as part of cross-account permissions.
+  principal    = "${3:principal}"     # The AWS principal to be granted a cross-account permission.
+  profile_name = "${4:profile_name}"  # Name of the signing profile to add the cross-account permissions.
+
+  # profile_version     = ""  # The signing profile version that a permission applies to.
+  # region              = ""  # Region where this resource will be managed.
+  # statement_id        = ""  # A unique statement identifier.
+  # statement_id_prefix = ""  # A statement identifier prefix.
+}
+]]></content>
+<tabTrigger>aws_signer_signing_profile_permission</tabTrigger>
+<scope>source.terraform</scope>
+<description>Creates a Signer Signing Profile Permission.</description>
+</snippet>

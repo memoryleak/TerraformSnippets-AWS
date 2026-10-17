@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_wafregional_rule" "${1:name}" {
+  metric_name = "${2:metric_name}"  # The name or description for the Amazon CloudWatch metric of this rule.
+  name        = "${3:name}"         # The name or description of the rule.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value map of resource tags.
+  # predicate {}  # The objects to include in a rule (documented below).
+}
+]]></content>
+<tabTrigger>aws_wafregional_rule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AWS WAF Regional rule resource for use with ALB.</description>
+</snippet>

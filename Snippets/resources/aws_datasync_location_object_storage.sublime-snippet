@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_datasync_location_object_storage" "${1:name}" {
+  bucket_name     = "${2:bucket_name}"      # The bucket on the self-managed object storage server that is used to read data from.
+  server_hostname = "${3:server_hostname}"  # The name of the self-managed object storage server.
+
+  # access_key         = ""  # The access key is used if credentials are required to access the self-managed object storage server.
+  # agent_arns         = []  # A list of DataSync Agent ARNs with which this location will be associated.
+  # region             = ""  # Region where this resource will be managed.
+  # secret_key         = ""  # The secret key is used if credentials are required to access the self-managed object storage server.
+  # server_certificate = ""  # Specifies a certificate to authenticate with an object storage system that uses a private or self...
+  # server_port        = 0   # The port that your self-managed object storage server accepts inbound network traffic on.
+  # server_protocol    = ""  # The protocol that the object storage server uses to communicate.
+  # subdirectory       = ""  # A subdirectory in the HDFS cluster.
+  # tags               = {}  # Key-value pairs of resource tags to assign to the DataSync Location.
+}
+]]></content>
+<tabTrigger>aws_datasync_location_object_storage</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS DataSync Object Storage Location</description>
+</snippet>

@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ecs_capacity_provider" "${1:name}" {
+  name = "${2:name}"  # Name of the capacity provider.
+
+  # cluster = ""  # Name of the ECS cluster.
+  # region  = ""  # Region where this resource will be managed.
+  # tags    = {}  # Key-value map of resource tags.
+  # auto_scaling_group_provider {}  # Configuration block for the provider for the ECS Auto Scaling group.
+  # managed_instances_provider {}  # Configuration block for the managed instances provider.
+}
+]]></content>
+<tabTrigger>aws_ecs_capacity_provider</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an ECS cluster capacity provider.</description>
+</snippet>

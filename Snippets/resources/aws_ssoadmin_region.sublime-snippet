@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ssoadmin_region" "${1:name}" {
+  instance_arn = "${2:instance_arn}"  # ARN of the IAM Identity Center instance.
+  region_name  = "${3:region_name}"   # AWS Region to add (for example, us-east-1).
+
+  # region = ""  # Region where Terraform calls the SSO Admin API for this resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ssoadmin_region</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS SSO Admin Region.</description>
+</snippet>

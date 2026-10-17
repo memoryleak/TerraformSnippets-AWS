@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_elasticache_service_updates" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # status = []  # Set of one or more Service Update statuses.
+}
+]]></content>
+<tabTrigger>data_aws_elasticache_service_updates</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about AWS ElastiCache Service Updates.</description>
+</snippet>

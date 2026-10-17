@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ecs_cluster" "${1:name}" {
+  name = "${2:name}"  # Name of the cluster (up to 255 letters, numbers, hyphens, and underscores)
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value map of resource tags.
+  # configuration {}  # Execute command configuration for the cluster.
+  # service_connect_defaults {}  # Default Service Connect namespace.
+  # setting {}  # Configuration block(s) with cluster settings.
+}
+]]></content>
+<tabTrigger>aws_ecs_cluster</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an ECS cluster.</description>
+</snippet>

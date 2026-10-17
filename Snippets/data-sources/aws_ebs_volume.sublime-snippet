@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_ebs_volume" "${1:name}" {
+  # most_recent = false  # If more than one result is returned, use the most
+  # region      = ""     # Region where this resource will be managed.
+  # tags        = {}
+  # filter {}  # One or more name/value pairs to filter off of.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_ebs_volume</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on an EBS volume.</description>
+</snippet>

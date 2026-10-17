@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_apigatewayv2_routing_rule" "${1:name}" {
+  domain_name = "${2:domain_name}"  # Domain name.
+  priority    = ${3:0}              # Order of rule evaluation.
+
+  # region = ""  # Region where this resource will be managed.
+  # action {}  # Configuration of resulting action based on matching routing rules condition.
+  # condition {}  # Conditions configuration.
+}
+]]></content>
+<tabTrigger>aws_apigatewayv2_routing_rule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS API Gateway V2 Routing Rule.</description>
+</snippet>

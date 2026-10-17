@@ -1,0 +1,26 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudfront_multitenant_distribution" "${1:name}" {
+  comment = "${2:comment}"  # Any comments you want to include about the distribution.
+  enabled = ${3:false}      # Whether the distribution is enabled to accept end user requests for content.
+
+  # default_root_object = ""  # Object that you want CloudFront to return when an end user requests the root URL.
+  # http_version        = ""  # Maximum HTTP version to support on the distribution.
+  # tags                = {}  # Map of tags to assign to the resource.
+  # web_acl_id          = ""  # Unique identifier that specifies the AWS WAF v2 web ACL to associate with this distribution.
+  # active_trusted_key_groups {}
+  # cache_behavior {}  # Ordered list of cache behaviors resource for this distribution.
+  # custom_error_response {}  # One or more custom error response elements.
+  # default_cache_behavior {}  # Default cache behavior for this distribution.
+  # origin {}  # One or more origins for this distribution (multiples allowed).
+  # origin_group {}  # One or more origin_group for this distribution (multiples allowed).
+  # restrictions {}  # Restriction configuration for this distribution.
+  # tenant_config {}  # Tenant configuration that contains parameter definitions for multi-tenant distributions.
+  # timeouts {}
+  # viewer_certificate {}  # SSL configuration for this distribution.
+}
+]]></content>
+<tabTrigger>aws_cloudfront_multitenant_distribution</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudFront multi-tenant distribution resource.</description>
+</snippet>

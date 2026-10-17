@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_workspaces_ip_group" "${1:name}" {
+  name = "${2:name}"  # The name of the IP group.
+
+  # description = ""  # The description of the IP group.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # A map of tags assigned to the WorkSpaces directory.
+  # rules {}  # One or more pairs specifying the IP group rule (in CIDR format) from which web requests originate.
+}
+]]></content>
+<tabTrigger>aws_workspaces_ip_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an IP access control group in AWS WorkSpaces Service.</description>
+</snippet>

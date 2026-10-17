@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ssm_patch_group" "${1:name}" {
+  baseline_id = "${2:baseline_id}"  # The ID of the patch baseline to register the patch group with.
+  patch_group = "${3:patch_group}"  # The name of the patch group that should be registered with the patch baseline.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_ssm_patch_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an SSM Patch Group resource</description>
+</snippet>

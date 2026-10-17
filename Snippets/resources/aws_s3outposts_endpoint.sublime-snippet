@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3outposts_endpoint" "${1:name}" {
+  outpost_id        = "${2:outpost_id}"         # Identifier of the Outpost to contain this endpoint.
+  security_group_id = "${3:security_group_id}"  # Identifier of the EC2 Security Group.
+  subnet_id         = "${4:subnet_id}"          # Identifier of the EC2 Subnet.
+
+  # access_type              = ""  # Type of access for the network connectivity.
+  # customer_owned_ipv4_pool = ""  # ID of a Customer Owned IP Pool.
+  # region                   = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_s3outposts_endpoint</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an S3 Outposts Endpoint.</description>
+</snippet>

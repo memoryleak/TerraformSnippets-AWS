@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_client_vpn_authorization_rule" "${1:name}" {
+  client_vpn_endpoint_id = "${2:client_vpn_endpoint_id}"  # The ID of the Client VPN endpoint.
+  target_network_cidr    = "${3:target_network_cidr}"     # The IPv4 or IPv6 address range, in CIDR notation, of the network to which the authorization rule...
+
+  # access_group_id      = ""     # The ID of the group to which the authorization rule grants access.
+  # authorize_all_groups = false  # Indicates whether the authorization rule grants access to all clients.
+  # description          = ""     # A brief description of the authorization rule.
+  # region               = ""     # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ec2_client_vpn_authorization_rule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides authorization rules for AWS Client VPN endpoints.</description>
+</snippet>

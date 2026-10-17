@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpc_security_group_rules_exclusive" "${1:name}" {
+  egress_rule_ids   = [${2}]                    # Egress rule IDs.
+  ingress_rule_ids  = [${3}]                    # Ingress rule IDs.
+  security_group_id = "${4:security_group_id}"  # ID of the security group.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_vpc_security_group_rules_exclusive</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an exclusive set of AWS VPC (Virtual Private Cloud) Security Grou...</description>
+</snippet>

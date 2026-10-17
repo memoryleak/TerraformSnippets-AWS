@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ram_sharing_with_organization" "${1:name}" {
+}
+]]></content>
+<tabTrigger>aws_ram_sharing_with_organization</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages Resource Access Manager (RAM) Resource Sharing with AWS Organizations.</description>
+</snippet>

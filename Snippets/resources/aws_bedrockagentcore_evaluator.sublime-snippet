@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrockagentcore_evaluator" "${1:name}" {
+  evaluator_name = "${2:evaluator_name}"  # Name of the evaluator.
+  level          = "${3:level}"           # Evaluation level that determines the scope of evaluation.
+
+  # description = ""  # Description of the evaluator.
+  # kms_key_arn = ""  # ARN of a customer-managed KMS key used to encrypt the evaluator's sensitive data.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Map of tags assigned to the resource.
+  # evaluator_config {}  # Configuration that defines how the evaluator assesses agent performance.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_bedrockagentcore_evaluator</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Bedrock AgentCore Evaluator.</description>
+</snippet>

@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ssm_maintenance_window" "${1:name}" {
+  cutoff   = ${2:0}           # The number of hours before the end of the Maintenance Window that Systems Manager stops schedulin...
+  duration = ${3:0}           # The duration of the Maintenance Window in hours.
+  name     = "${4:name}"      # The name of the maintenance window.
+  schedule = "${5:schedule}"  # The schedule of the Maintenance Window in the form of a cron or rate expression.
+
+  # allow_unassociated_targets = false  # Whether targets must be registered with the Maintenance Window before tasks can be defined for th...
+  # description                = ""     # A description for the maintenance window.
+  # enabled                    = false  # Whether the maintenance window is enabled.
+  # end_date                   = ""     # Timestamp in ISO-8601 extended format when to no longer run the maintenance window.
+  # region                     = ""     # Region where this resource will be managed.
+  # schedule_offset            = 0      # The number of days to wait after the date and time specified by a CRON expression before running...
+  # schedule_timezone          = ""     # Timezone for schedule in Internet Assigned Numbers Authority (IANA) Time Zone Database format.
+  # start_date                 = ""     # Timestamp in ISO-8601 extended format when to begin the maintenance window.
+  # tags                       = {}     # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_ssm_maintenance_window</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an SSM Maintenance Window resource</description>
+</snippet>

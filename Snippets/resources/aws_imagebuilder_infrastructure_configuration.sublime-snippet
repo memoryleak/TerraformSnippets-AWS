@@ -1,0 +1,25 @@
+<snippet>
+<content><![CDATA[
+resource "aws_imagebuilder_infrastructure_configuration" "${1:name}" {
+  instance_profile_name = "${2:instance_profile_name}"  # Name of IAM Instance Profile.
+  name                  = "${3:name}"                   # Name for the configuration.
+
+  # description                   = ""     # Description for the configuration.
+  # instance_types                = []     # Set of EC2 Instance Types.
+  # key_pair                      = ""     # Name of EC2 Key Pair.
+  # region                        = ""     # Region where this resource will be managed.
+  # resource_tags                 = {}     # Key-value map of resource tags to assign to infrastructure created by the configuration.
+  # security_group_ids            = []     # Set of EC2 Security Group identifiers.
+  # sns_topic_arn                 = ""     # ARN of SNS Topic.
+  # subnet_id                     = ""     # EC2 Subnet identifier.
+  # tags                          = {}     # Key-value map of resource tags to assign to the configuration.
+  # terminate_instance_on_failure = false  # Enable if the instance should be terminated when the pipeline fails.
+  # instance_metadata_options {}  # Configuration block with instance metadata options for the HTTP requests that pipeline builds use...
+  # logging {}  # Configuration block with logging settings.
+  # placement {}  # Configuration block with placement settings that define where the instances that are launched fro...
+}
+]]></content>
+<tabTrigger>aws_imagebuilder_infrastructure_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Image Builder Infrastructure Configuration</description>
+</snippet>

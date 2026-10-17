@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iot_thing_group_membership" "${1:name}" {
+  thing_group_name = "${2:thing_group_name}"  # The name of the group to which you are adding a thing.
+  thing_name       = "${3:thing_name}"        # The name of the thing to add to a group.
+
+  # override_dynamic_group = false  # Override dynamic thing groups with static thing groups when 10-group limit is reached.
+  # region                 = ""     # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_iot_thing_group_membership</tabTrigger>
+<scope>source.terraform</scope>
+<description>Adds an IoT Thing to an IoT Thing Group.</description>
+</snippet>

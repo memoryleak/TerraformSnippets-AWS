@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iot_indexing_configuration" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # thing_group_indexing_configuration {}  # Thing group indexing configuration.
+  # thing_indexing_configuration {}  # Thing indexing configuration.
+}
+]]></content>
+<tabTrigger>aws_iot_indexing_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Managing IoT Thing indexing.</description>
+</snippet>

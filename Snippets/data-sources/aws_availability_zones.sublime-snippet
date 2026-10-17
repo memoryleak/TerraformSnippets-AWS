@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+data "aws_availability_zones" "${1:name}" {
+  # all_availability_zones = false  # Set to true to include all Availability Zones and Local Zones regardless of your opt in status.
+  # exclude_names          = []     # List of Availability Zone names to exclude.
+  # exclude_zone_ids       = []     # List of Availability Zone IDs to exclude.
+  # region                 = ""     # Region where this resource will be managed.
+  # state                  = ""     # Allows to filter list of Availability Zones based on their current state.
+  # filter {}  # Configuration block(s) for filtering.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_availability_zones</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides a list of Availability Zones which can be used by an AWS account.</description>
+</snippet>

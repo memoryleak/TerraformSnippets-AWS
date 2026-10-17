@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrockagent_knowledge_base" "${1:name}" {
+  name     = "${2:name}"      # Name of the knowledge base.
+  role_arn = "${3:role_arn}"  # ARN of the IAM role with permissions to invoke API operations on the knowledge base.
+
+  # description = ""  # Description of the knowledge base.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Map of tags assigned to the resource.
+  # knowledge_base_configuration {}  # Details about the embeddings configuration of the knowledge base.
+  # storage_configuration {}  # Details about the storage configuration of the knowledge base.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_bedrockagent_knowledge_base</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Agents for Amazon Bedrock Knowledge Base.</description>
+</snippet>

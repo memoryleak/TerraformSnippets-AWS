@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sfn_state_machine" "${1:name}" {
+  definition = "${2:definition}"  # The Amazon States Language definition of the state machine.
+  role_arn   = "${3:role_arn}"    # ARN of the IAM role to use for this state machine.
+
+  # name        = ""     # The name of the state machine.
+  # name_prefix = ""     # Creates a unique name beginning with the specified prefix.
+  # publish     = false  # Set to true to publish a version of the state machine during creation.
+  # region      = ""     # Region where this resource will be managed.
+  # tags        = {}     # Key-value map of resource tags.
+  # type        = ""     # Determines whether a Standard or Express state machine is created.
+  # encryption_configuration {}  # Defines what encryption configuration is used to encrypt data in the State Machine.
+  # logging_configuration {}  # Defines what execution history events are logged and where they are logged.
+  # timeouts {}
+  # tracing_configuration {}  # Selects whether AWS X-Ray tracing is enabled.
+}
+]]></content>
+<tabTrigger>aws_sfn_state_machine</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Step Function State Machine resource.</description>
+</snippet>

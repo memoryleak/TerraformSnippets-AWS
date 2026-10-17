@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ram_resource_share_associations_exclusive" "${1:name}" {
+  resource_share_arn = "${2:resource_share_arn}"  # ARN of the resource share.
+
+  # principals    = []  # Set of principals to associate with the resource share.
+  # region        = ""  # Region where this resource will be managed.
+  # resource_arns = []  # Set of ARNs of resources to associate with the resource share.
+  # sources       = []  # Set of AWS account IDs that restrict which accounts a service principal can access resources from.
+}
+]]></content>
+<tabTrigger>aws_ram_resource_share_associations_exclusive</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for maintaining exclusive management of principal and resource associations fo...</description>
+</snippet>

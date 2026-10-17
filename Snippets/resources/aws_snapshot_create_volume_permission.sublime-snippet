@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_snapshot_create_volume_permission" "${1:name}" {
+  account_id  = "${2:account_id}"   # An AWS Account ID to add create volume permissions.
+  snapshot_id = "${3:snapshot_id}"  # A snapshot ID
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_snapshot_create_volume_permission</tabTrigger>
+<scope>source.terraform</scope>
+<description>Adds create volume permission to an EBS Snapshot</description>
+</snippet>

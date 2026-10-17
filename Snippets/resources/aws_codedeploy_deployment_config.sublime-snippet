@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_codedeploy_deployment_config" "${1:name}" {
+  deployment_config_name = "${2:deployment_config_name}"  # The name of the deployment config.
+
+  # compute_platform = ""  # The compute platform can be Server, Lambda, or ECS.
+  # region           = ""  # Region where this resource will be managed.
+  # minimum_healthy_hosts {}  # A minimum_healthy_hosts block.
+  # traffic_routing_config {}  # A traffic_routing_config block.
+  # zonal_config {}  # A zonal_config block.
+}
+]]></content>
+<tabTrigger>aws_codedeploy_deployment_config</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CodeDeploy deployment config.</description>
+</snippet>

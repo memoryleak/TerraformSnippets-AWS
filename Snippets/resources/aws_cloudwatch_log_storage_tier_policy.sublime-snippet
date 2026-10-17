@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_log_storage_tier_policy" "${1:name}" {
+  storage_tier = "${2:storage_tier}"  # Storage tier to set for the account.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_log_storage_tier_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a CloudWatch Logs account-level storage tier policy.</description>
+</snippet>

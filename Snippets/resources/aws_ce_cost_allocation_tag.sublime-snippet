@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ce_cost_allocation_tag" "${1:name}" {
+  status  = "${2:status}"   # The status of a cost allocation tag.
+  tag_key = "${3:tag_key}"  # The key for the cost allocation tag.
+}
+]]></content>
+<tabTrigger>aws_ce_cost_allocation_tag</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CE Cost Allocation Tag</description>
+</snippet>

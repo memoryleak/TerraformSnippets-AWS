@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_servicequotas_service_quota" "${1:name}" {
+  service_code = "${2:service_code}"  # Service code for the quota.
+
+  # quota_code = ""  # Quota code within the service.
+  # quota_name = ""  # Quota name within the service.
+  # region     = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_servicequotas_service_quota</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Retrieve information about a Service Quota</description>
+</snippet>

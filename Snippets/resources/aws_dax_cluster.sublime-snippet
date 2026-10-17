@@ -1,0 +1,26 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dax_cluster" "${1:name}" {
+  cluster_name       = "${2:cluster_name}"  # Group identifier.
+  iam_role_arn       = "${3:iam_role_arn}"  # Valid ARN that identifies
+  node_type          = "${4:node_type}"     # The compute and memory capacity of the nodes.
+  replication_factor = ${5:0}               # The number of nodes in the DAX cluster.
+
+  # availability_zones               = []  # List of Availability Zones in which the
+  # cluster_endpoint_encryption_type = ""  # The type of encryption the
+  # description                      = ""  # Description for the cluster
+  # maintenance_window               = ""  # Specifies the weekly time range for when
+  # notification_topic_arn           = ""  # ARN of an
+  # parameter_group_name             = ""  # Name of the parameter group to associate
+  # region                           = ""  # Region where this resource will be managed.
+  # security_group_ids               = []  # One or more VPC security groups associated
+  # subnet_group_name                = ""  # Name of the subnet group to be used for the
+  # tags                             = {}  # A map of tags to assign to the resource.
+  # server_side_encryption {}  # Encrypt at rest options
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_dax_cluster</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an DAX Cluster resource.</description>
+</snippet>

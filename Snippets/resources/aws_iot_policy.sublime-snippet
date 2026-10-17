@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iot_policy" "${1:name}" {
+  name   = "${2:name}"    # The name of the policy.
+  policy = "${3:policy}"  # The policy document.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value mapping of resource tags.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_iot_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an IoT policy.</description>
+</snippet>

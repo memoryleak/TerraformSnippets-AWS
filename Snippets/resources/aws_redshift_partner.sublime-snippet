@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_redshift_partner" "${1:name}" {
+  account_id         = "${2:account_id}"          # The Amazon Web Services account ID that owns the cluster.
+  cluster_identifier = "${3:cluster_identifier}"  # The cluster identifier of the cluster that receives data from the partner.
+  database_name      = "${4:database_name}"       # The name of the database that receives data from the partner.
+  partner_name       = "${5:partner_name}"        # The name of the partner that is authorized to send data.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_redshift_partner</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Redshift Partner resource.</description>
+</snippet>

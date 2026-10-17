@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_resource_metrics_configuration" "${1:name}" {
+  resource_arn = "${2:resource_arn}"  # ARN of the AWS resource to enable detailed monitoring for.
+
+  # region = ""  # Region where this resource will be managed.
+  # metric_selection {}  # Configuration block that limits which metrics CloudWatch collects.
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_resource_metrics_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a CloudWatch resource metrics configuration, which enables detailed metric collection for...</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_prometheus_workspace" "${1:name}" {
+  workspace_id = "${2:workspace_id}"  # Prometheus workspace ID.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_prometheus_workspace</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Gets information on an Amazon Managed Prometheus workspace.</description>
+</snippet>

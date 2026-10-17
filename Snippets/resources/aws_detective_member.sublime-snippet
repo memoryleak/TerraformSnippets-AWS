@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_detective_member" "${1:name}" {
+  account_id    = "${2:account_id}"     # AWS account ID for the account.
+  email_address = "${3:email_address}"  # Email address for the account.
+  graph_arn     = "${4:graph_arn}"      # ARN of the behavior graph to invite the member accounts to contribute their data to.
+
+  # disable_email_notification = false  # If set to true, then the root user of the invited account will _not_ receive an email notification.
+  # message                    = ""     # A custom message to include in the invitation.
+  # region                     = ""     # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_detective_member</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage an Amazon Detective member.</description>
+</snippet>

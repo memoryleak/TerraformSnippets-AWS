@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_db_proxy_endpoint" "${1:name}" {
+  db_proxy_endpoint_name = "${2:db_proxy_endpoint_name}"  # Identifier for the proxy endpoint.
+  db_proxy_name          = "${3:db_proxy_name}"           # Name of the DB proxy associated with the DB proxy endpoint that you create.
+  vpc_subnet_ids         = [${4}]                         # One or more VPC subnet IDs to associate with the new proxy.
+
+  # region                 = ""  # Region where this resource will be managed.
+  # tags                   = {}  # Map of tags to assign to the resource.
+  # target_role            = ""  # Whether the DB proxy endpoint can be used for read/write or read-only operations.
+  # vpc_security_group_ids = []  # One or more VPC security group IDs to associate with the new proxy.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_db_proxy_endpoint</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an RDS DB proxy endpoint resource.</description>
+</snippet>

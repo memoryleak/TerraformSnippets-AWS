@@ -1,0 +1,26 @@
+<snippet>
+<content><![CDATA[
+resource "aws_opensearch_outbound_connection" "${1:name}" {
+  connection_alias = "${2:connection_alias}"  # Specifies the connection alias that will be used by the customer for this connection.
+  local_domain_info {
+    domain_name = "${3:domain_name}"
+    owner_id    = "${4:owner_id}"
+    region      = "${5:region}"
+  }
+  remote_domain_info {
+    domain_name = "${6:domain_name}"
+    owner_id    = "${7:owner_id}"
+    region      = "${8:region}"
+  }
+
+  # accept_connection = false  # Accepts the connection.
+  # connection_mode   = ""     # Specifies the connection mode.
+  # region            = ""     # Region where this resource will be managed.
+  # connection_properties {}  # Configuration block for the outbound connection.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_opensearch_outbound_connection</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS OpenSearch Outbound Connection.</description>
+</snippet>

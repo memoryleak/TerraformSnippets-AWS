@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_datazone_user_profile" "${1:name}" {
+  domain_identifier = "${2:domain_identifier}"  # The domain identifier.
+  user_identifier   = "${3:user_identifier}"    # The user identifier.
+
+  # region    = ""  # Region where this resource will be managed.
+  # status    = ""  # The user profile status.
+  # user_type = ""  # The user type.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_datazone_user_profile</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS DataZone User Profile.</description>
+</snippet>

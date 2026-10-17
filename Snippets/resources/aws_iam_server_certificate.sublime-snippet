@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iam_server_certificate" "${1:name}" {
+  certificate_body = "${2:certificate_body}"  # The contents of the public key certificate in
+  private_key      = "${3:private_key}"       # The contents of the private key in PEM-encoded format.
+
+  # certificate_chain = ""  # The contents of the certificate chain.
+  # name              = ""  # The name of the Server Certificate.
+  # name_prefix       = ""  # Creates a unique name beginning with the specified
+  # path              = ""  # The IAM path for the server certificate.
+  # tags              = {}  # Map of resource tags for the server certificate.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_iam_server_certificate</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an IAM Server Certificate</description>
+</snippet>

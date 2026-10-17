@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3tables_table_replication" "${1:name}" {
+  role      = "${2:role}"       # ARN referencing the IAM role assumed by S3 when replicating tables.
+  table_arn = "${3:table_arn}"  # ARN referencing the Table that owns this replication configuration.
+
+  # region = ""  # Region where this resource will be managed.
+  # rule {}  # Replication rules.
+}
+]]></content>
+<tabTrigger>aws_s3tables_table_replication</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages Amazon S3 Tables Table Replication configuration.</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_lambda_function_url" "${1:name}" {
+  function_name = "${2:function_name}"  # Name or ARN of the Lambda function.
+
+  # qualifier = ""  # Alias name or \$LATEST.
+  # region    = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_lambda_function_url</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an AWS Lambda Function URL.</description>
+</snippet>

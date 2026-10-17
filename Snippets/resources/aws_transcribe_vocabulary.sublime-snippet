@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_transcribe_vocabulary" "${1:name}" {
+  language_code   = "${2:language_code}"    # Language code you selected for your vocabulary.
+  vocabulary_name = "${3:vocabulary_name}"  # Name of the Vocabulary.
+
+  # phrases             = []  # List of terms to include in the vocabulary.
+  # region              = ""  # Region where this resource will be managed.
+  # tags                = {}  # Map of tags to assign to the Vocabulary.
+  # vocabulary_file_uri = ""  # Amazon S3 location (URI) of the text file that contains your custom vocabulary.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_transcribe_vocabulary</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Transcribe Vocabulary.</description>
+</snippet>

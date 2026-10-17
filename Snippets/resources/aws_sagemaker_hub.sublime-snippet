@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sagemaker_hub" "${1:name}" {
+  hub_description = "${2:hub_description}"  # A description of the hub.
+  hub_name        = "${3:hub_name}"         # The name of the hub.
+
+  # hub_display_name    = ""  # The display name of the hub.
+  # hub_search_keywords = []  # The searchable keywords for the hub.
+  # region              = ""  # Region where this resource will be managed.
+  # tags                = {}  # A map of tags to assign to the resource.
+  # s3_storage_config {}  # The Amazon S3 storage configuration for the hub.
+}
+]]></content>
+<tabTrigger>aws_sagemaker_hub</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a SageMaker AI Hub resource.</description>
+</snippet>

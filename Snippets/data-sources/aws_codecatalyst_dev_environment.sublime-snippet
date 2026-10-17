@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+data "aws_codecatalyst_dev_environment" "${1:name}" {
+  env_id       = "${2:env_id}"        # - (Required) The system-generated unique ID of the Dev Environment for which you want to view inf...
+  project_name = "${3:project_name}"  # The name of the project in the space.
+  space_name   = "${4:space_name}"    # The name of the space.
+
+  # alias      = ""
+  # creator_id = ""
+  # region     = ""  # Region where this resource will be managed.
+  # tags       = {}
+  # repositories {}
+}
+]]></content>
+<tabTrigger>data_aws_codecatalyst_dev_environment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS CodeCatalyst Dev Environment.</description>
+</snippet>

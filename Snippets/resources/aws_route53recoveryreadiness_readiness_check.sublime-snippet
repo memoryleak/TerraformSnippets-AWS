@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_route53recoveryreadiness_readiness_check" "${1:name}" {
+  readiness_check_name = "${2:readiness_check_name}"  # Unique name describing the readiness check.
+  resource_set_name    = "${3:resource_set_name}"     # Name describing the resource set that will be monitored for readiness.
+
+  # tags = {}  # Key-value mapping of resource tags.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_route53recoveryreadiness_readiness_check</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AWS Route 53 Recovery Readiness Readiness Check</description>
+</snippet>

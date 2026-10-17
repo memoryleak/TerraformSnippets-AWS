@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_fsx_openzfs_snapshot" "${1:name}" {
+  name      = "${2:name}"       # Name of the Snapshot.
+  volume_id = "${3:volume_id}"  # ID of the volume to snapshot.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags to assign to the file system.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_fsx_openzfs_snapshot</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Amazon FSx for OpenZFS snapshot.</description>
+</snippet>

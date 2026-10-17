@@ -1,0 +1,24 @@
+<snippet>
+<content><![CDATA[
+resource "aws_xray_sampling_rule" "${1:name}" {
+  fixed_rate     = ${2:0}               # Percentage of matching requests to instrument, after the reservoir is exhausted.
+  host           = "${3:host}"          # Matches the hostname from a request URL.
+  http_method    = "${4:http_method}"   # Matches the HTTP method of a request.
+  priority       = ${5:0}               # Priority of the sampling rule.
+  reservoir_size = ${6:0}               # Fixed number of matching requests to instrument per second, prior to applying the fixed rate.
+  resource_arn   = "${7:resource_arn}"  # Matches the ARN of the AWS resource on which the service runs.
+  service_name   = "${8:service_name}"  # Matches the name that the service uses to identify itself in segments.
+  service_type   = "${9:service_type}"  # Matches the origin that the service uses to identify its type in segments.
+  url_path       = "${10:url_path}"     # Matches the path from a request URL.
+  version        = ${11:0}              # Version of the sampling rule format (1 )
+
+  # attributes = {}  # Matches attributes derived from the request.
+  # region     = ""  # Region where this resource will be managed.
+  # rule_name  = ""  # Name of the sampling rule.
+  # tags       = {}  # Key-value mapping of resource tags.
+}
+]]></content>
+<tabTrigger>aws_xray_sampling_rule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Creates and manages an AWS XRay Sampling Rule.</description>
+</snippet>

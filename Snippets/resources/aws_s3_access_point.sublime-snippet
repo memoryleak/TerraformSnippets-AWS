@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3_access_point" "${1:name}" {
+  bucket = "${2:bucket}"  # Name of an AWS Partition S3 General Purpose Bucket or the ARN of S3 on Outposts Bucket that you w...
+  name   = "${3:name}"    # Name you want to assign to this access point.
+
+  # account_id        = ""  # AWS account ID for the owner of the bucket for which you want to create an access point.
+  # bucket_account_id = ""  # AWS account ID associated with the S3 bucket associated with this access point.
+  # policy            = ""  # Valid JSON document that specifies the policy that you want to apply to this access point.
+  # region            = ""  # Region where this resource will be managed.
+  # tags              = {}  # Map of tags to assign to the bucket.
+  # public_access_block_configuration {}  # Configuration block to manage the PublicAccessBlock configuration that you want to apply to this...
+  # vpc_configuration {}  # Configuration block to restrict access to this access point to requests from the specified VPC.
+}
+]]></content>
+<tabTrigger>aws_s3_access_point</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an S3 Access Point.</description>
+</snippet>

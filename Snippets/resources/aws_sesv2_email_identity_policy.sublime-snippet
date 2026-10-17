@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sesv2_email_identity_policy" "${1:name}" {
+  email_identity = "${2:email_identity}"  # Email identity.
+  policy         = "${3:policy}"          # - The text of the policy in JSON format.
+  policy_name    = "${4:policy_name}"     # - The name of the policy.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_sesv2_email_identity_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS SESv2 (Simple Email V2) Email Identity Policy.</description>
+</snippet>

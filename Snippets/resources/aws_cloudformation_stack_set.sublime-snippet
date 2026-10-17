@@ -1,0 +1,26 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudformation_stack_set" "${1:name}" {
+  name = "${2:name}"  # Name of the StackSet.
+
+  # administration_role_arn = ""  # Amazon Resource Number (ARN) of the IAM Role in the administrator account.
+  # call_as                 = ""  # Specifies whether you are acting as an account administrator in the organization's management acc...
+  # capabilities            = []  # A list of capabilities.
+  # description             = ""  # Description of the StackSet.
+  # execution_role_name     = ""  # Name of the IAM Role in all target accounts for StackSet operations.
+  # parameters              = {}  # Key-value map of input parameters for the StackSet template.
+  # permission_model        = ""  # Describes how the IAM roles required for your StackSet are created.
+  # region                  = ""  # Region where this resource will be managed.
+  # tags                    = {}  # Key-value map of tags to associate with this StackSet and the Stacks created from it.
+  # template_body           = ""  # String containing the CloudFormation template body.
+  # template_url            = ""  # String containing the location of a file containing the CloudFormation template body.
+  # auto_deployment {}  # Configuration block containing the auto-deployment model for your StackSet.
+  # managed_execution {}  # Configuration block to allow StackSets to perform non-conflicting operations concurrently and que...
+  # operation_preferences {}  # Preferences for how AWS CloudFormation performs a stack set update.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_cloudformation_stack_set</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a CloudFormation StackSet.</description>
+</snippet>

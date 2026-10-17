@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_servicequotas_service" "${1:name}" {
+  service_name = "${2:service_name}"  # Service name to lookup within Service Quotas.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_servicequotas_service</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Retrieve information about a Service Quotas Service</description>
+</snippet>

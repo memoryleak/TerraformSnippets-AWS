@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_dynamodb_table" "${1:name}" {
+  name = "${2:name}"  # Name of the DynamoDB table.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+  # server_side_encryption {}
+}
+]]></content>
+<tabTrigger>data_aws_dynamodb_table</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides a DynamoDB table data source.</description>
+</snippet>

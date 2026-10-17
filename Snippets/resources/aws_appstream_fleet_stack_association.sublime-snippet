@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appstream_fleet_stack_association" "${1:name}" {
+  fleet_name = "${2:fleet_name}"  # Name of the fleet.
+  stack_name = "${3:stack_name}"  # Name of the stack.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_appstream_fleet_stack_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AppStream Fleet Stack association.</description>
+</snippet>

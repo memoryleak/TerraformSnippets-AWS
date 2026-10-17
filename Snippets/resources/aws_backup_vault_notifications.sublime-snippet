@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_backup_vault_notifications" "${1:name}" {
+  backup_vault_events = [${2}]                    # Array of events that indicate the status of jobs to back up resources to the backup vault.
+  backup_vault_name   = "${3:backup_vault_name}"  # Name of the backup vault to add notifications for.
+  sns_topic_arn       = "${4:sns_topic_arn}"      # ARN that specifies the topic for a backup vault’s events
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_backup_vault_notifications</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AWS Backup vault notifications resource.</description>
+</snippet>

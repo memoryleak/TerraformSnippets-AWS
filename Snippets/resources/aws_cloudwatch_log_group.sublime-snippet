@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_log_group" "${1:name}" {
+  # deletion_protection_enabled = false
+  # kms_key_id                  = ""     # The ARN of the KMS Key to use when encrypting log data.
+  # log_group_class             = ""     # Specified the log class of the log group.
+  # name                        = ""     # The name of the log group.
+  # name_prefix                 = ""     # Creates a unique name beginning with the specified prefix.
+  # region                      = ""     # Region where this resource will be managed.
+  # retention_in_days           = 0      # Specifies the number of days
+  # skip_destroy                = false  # Set to true if you do not wish the log group (and any logs it may contain) to be deleted at destr...
+  # tags                        = {}     # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_log_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudWatch Log Group resource.</description>
+</snippet>

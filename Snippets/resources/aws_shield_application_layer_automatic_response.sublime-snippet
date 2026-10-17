@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_shield_application_layer_automatic_response" "${1:name}" {
+  action       = "${2:action}"        # One of COUNT or BLOCK
+  resource_arn = "${3:resource_arn}"  # ARN of the resource to protect (CloudFront Distributions and ALBs only at this time).
+
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_shield_application_layer_automatic_response</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Shield Application Layer Automatic Response.</description>
+</snippet>

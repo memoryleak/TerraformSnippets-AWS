@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_transit_gateway_metering_policy" "${1:name}" {
+  transit_gateway_id = "${2:transit_gateway_id}"  # EC2 Transit Gateway identifier.
+
+  # middlebox_attachment_ids = []  # Set of Transit Gateway attachment IDs to designate as middlebox attachments for this metering pol...
+  # region                   = ""  # Region where this resource will be managed.
+  # tags                     = {}  # Key-value tags for the EC2 Transit Gateway Metering Policy.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ec2_transit_gateway_metering_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an EC2 Transit Gateway Metering Policy</description>
+</snippet>

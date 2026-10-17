@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_directory_service_shared_directory" "${1:name}" {
+  directory_id = "${2:directory_id}"  # Identifier of the Managed Microsoft AD directory that you want to share with other accounts.
+  target {
+  }
+
+  # method = ""  # Method used when sharing a directory.
+  # notes  = ""  # Message sent by the directory owner to the directory consumer to help the directory consumer admi...
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_directory_service_shared_directory</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a directory in your account (directory owner) shared with another account (directory cons...</description>
+</snippet>

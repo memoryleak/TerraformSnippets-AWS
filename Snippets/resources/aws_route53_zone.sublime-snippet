@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_route53_zone" "${1:name}" {
+  name = "${2:name}"  # This is the name of the hosted zone.
+
+  # comment                     = ""     # A comment for the hosted zone.
+  # delegation_set_id           = ""     # The ID of the reusable delegation set whose NS records you want to assign to the hosted zone.
+  # enable_accelerated_recovery = false  # Boolean to indicate whether to enable accelerated recovery for the hosted zone.
+  # force_destroy               = false  # Whether to destroy all records (possibly managed outside of Terraform) in the zone when destroyin...
+  # tags                        = {}     # A map of tags to assign to the zone.
+  # timeouts {}
+  # vpc {}  # Configuration block(s) specifying VPC(s) to associate with a private hosted zone.
+}
+]]></content>
+<tabTrigger>aws_route53_zone</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Route53 Hosted Zone</description>
+</snippet>

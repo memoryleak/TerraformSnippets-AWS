@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_glue_user_defined_function" "${1:name}" {
+  class_name    = "${2:class_name}"     # Java class that contains the function code.
+  database_name = "${3:database_name}"  # Name of the Database to create the Function.
+  name          = "${4:name}"           # Name of the function.
+  owner_name    = "${5:owner_name}"     # Owner of the function.
+  owner_type    = "${6:owner_type}"     # Owner type.
+
+  # catalog_id = ""  # ID of the Glue Catalog to create the function in.
+  # region     = ""  # Region where this resource will be managed.
+  # resource_uris {}  # Configuration block for Resource URIs.
+}
+]]></content>
+<tabTrigger>aws_glue_user_defined_function</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Glue User Defined Function.</description>
+</snippet>

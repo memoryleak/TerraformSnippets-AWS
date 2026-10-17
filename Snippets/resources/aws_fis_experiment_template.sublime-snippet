@@ -1,0 +1,26 @@
+<snippet>
+<content><![CDATA[
+resource "aws_fis_experiment_template" "${1:name}" {
+  description = "${2:description}"  # Description for the experiment template.
+  role_arn    = "${3:role_arn}"     # ARN of an IAM role that grants the AWS FIS service permission to perform service actions on your...
+  action {
+    action_id = "${4:action_id}"
+    name      = "${5:name}"
+  }
+  stop_condition {
+    source = "${6:source}"
+  }
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value mapping of tags.
+  # experiment_options {}  # Experiment options for the experiment template.
+  # experiment_report_configuration {}  # Configuration for experiment reporting.
+  # log_configuration {}  # Configuration for experiment logging.
+  # target {}  # Target of an action.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_fis_experiment_template</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an FIS Experiment Template.</description>
+</snippet>

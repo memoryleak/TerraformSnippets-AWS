@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_auditmanager_framework" "${1:name}" {
+  framework_type = "${2:framework_type}"  # Type of framework.
+  name           = "${3:name}"            # Name of the framework.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_auditmanager_framework</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS Audit Manager Framework.</description>
+</snippet>

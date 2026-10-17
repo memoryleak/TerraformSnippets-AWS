@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_workspaces_pool" "${1:name}" {
+  bundle_id    = "${2:bundle_id}"     # ID of the bundle for the WorkSpaces Pool.
+  description  = "${3:description}"   # Description of the WorkSpaces Pool.
+  directory_id = "${4:directory_id}"  # ID of the directory for the WorkSpaces Pool.
+  pool_name    = "${5:pool_name}"     # Name of the WorkSpaces Pool.
+  running_mode = "${6:running_mode}"  # Running mode of the WorkSpaces Pool.
+
+  # application_settings = []  # Application settings configuration for the WorkSpaces Pool.
+  # region               = ""  # Region where this resource will be managed.
+  # tags                 = {}  # Map of tags assigned to the resource.
+  # timeout_settings     = []  # Timeout settings configuration for the WorkSpaces Pool.
+  # capacity {}  # Capacity configuration for the WorkSpaces Pool.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_workspaces_pool</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS WorkSpaces Pool.</description>
+</snippet>

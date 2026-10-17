@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_ssmcontacts_rotation" "${1:name}" {
+  arn = "${2:arn}"  # ARN of the rotation.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_ssmcontacts_rotation</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides a Terraform data source for managing a Contacts Rotation in AWS Systems Manager Incident...</description>
+</snippet>

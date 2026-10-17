@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_route53_vpc_association_authorization" "${1:name}" {
+  vpc_id  = "${2:vpc_id}"   # The VPC to authorize for association with the private hosted zone.
+  zone_id = "${3:zone_id}"  # The ID of the private hosted zone that you want to authorize associating a VPC with.
+
+  # vpc_region = ""  # The VPC's region.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_route53_vpc_association_authorization</tabTrigger>
+<scope>source.terraform</scope>
+<description>Authorizes a VPC in a different account to be associated with a local Route53 Hosted Zone</description>
+</snippet>

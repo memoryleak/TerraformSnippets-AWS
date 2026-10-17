@@ -1,0 +1,34 @@
+<snippet>
+<content><![CDATA[
+resource "aws_alb_target_group" "${1:name}" {
+  # connection_termination             = false
+  # deregistration_delay               = ""
+  # ip_address_type                    = ""
+  # lambda_multi_value_headers_enabled = false
+  # load_balancing_algorithm_type      = ""
+  # load_balancing_anomaly_mitigation  = ""
+  # load_balancing_cross_zone_enabled  = ""
+  # name                               = ""
+  # name_prefix                        = ""
+  # port                               = 0
+  # preserve_client_ip                 = ""
+  # protocol                           = ""
+  # protocol_version                   = ""
+  # proxy_protocol_v2                  = false
+  # region                             = ""
+  # slow_start                         = 0
+  # tags                               = {}
+  # target_control_port                = 0
+  # target_type                        = ""
+  # vpc_id                             = ""
+  # health_check {}
+  # stickiness {}
+  # target_failover {}
+  # target_group_health {}
+  # target_health_state {}
+}
+]]></content>
+<tabTrigger>aws_alb_target_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>aws_alb_target_group</description>
+</snippet>

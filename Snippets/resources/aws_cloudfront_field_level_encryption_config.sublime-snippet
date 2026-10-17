@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudfront_field_level_encryption_config" "${1:name}" {
+  content_type_profile_config {
+    forward_when_content_type_is_unknown = ${2:false}
+    content_type_profiles {
+      items {
+        content_type = "${3:content_type}"
+        format       = "${4:format}"
+      }
+    }
+  }
+  query_arg_profile_config {
+    forward_when_query_arg_profile_is_unknown = ${5:false}
+  }
+
+  # comment = ""  # An optional comment about the Field Level Encryption Config.
+}
+]]></content>
+<tabTrigger>aws_cloudfront_field_level_encryption_config</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudFront Field-level Encryption Config resource.</description>
+</snippet>

@@ -1,9 +1,0 @@
-<snippet>
-<content><![CDATA[
-resource "aws_dax_subnet_group" "aws_dax_subnet_group_${1:suffix}" {
-	description = "${3:Optional}"
-}
-]]></content>
-<tabTrigger>aws_dax_subnet_group</tabTrigger>
-<scope>source.terraform</scope>
-</snippet>

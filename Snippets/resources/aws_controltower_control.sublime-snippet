@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_controltower_control" "${1:name}" {
+  control_identifier = "${2:control_identifier}"  # The ARN of the control.
+  target_identifier  = "${3:target_identifier}"   # The ARN of the organizational unit.
+
+  # region = ""  # Region where this resource will be managed.
+  # parameters {}  # Parameter values which are specified to configure the control when you enable it.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_controltower_control</tabTrigger>
+<scope>source.terraform</scope>
+<description>Allows the application of pre-defined controls to organizational units.</description>
+</snippet>

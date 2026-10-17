@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_auditmanager_control" "${1:name}" {
+  name = "${2:name}"  # Name of the control.
+
+  # action_plan_instructions = ""  # Recommended actions to carry out if the control isn't fulfilled.
+  # action_plan_title        = ""  # Title of the action plan for remediating the control.
+  # description              = ""  # Description of the control.
+  # region                   = ""  # Region where this resource will be managed.
+  # tags                     = {}  # Map of tags to assign to the control.
+  # testing_information      = ""  # Steps to follow to determine if the control is satisfied.
+  # control_mapping_sources {}  # Data mapping sources.
+}
+]]></content>
+<tabTrigger>aws_auditmanager_control</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Audit Manager Control.</description>
+</snippet>

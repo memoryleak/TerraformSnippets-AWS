@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_networkmanager_transit_gateway_peering" "${1:name}" {
+  core_network_id     = "${2:core_network_id}"      # ID of a core network.
+  transit_gateway_arn = "${3:transit_gateway_arn}"  # ARN of the transit gateway for the peering request.
+
+  # tags = {}  # Key-value tags for the peering.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_networkmanager_transit_gateway_peering</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Network Manager transit gateway peering connection.</description>
+</snippet>

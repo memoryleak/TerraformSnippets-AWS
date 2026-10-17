@@ -1,0 +1,35 @@
+<snippet>
+<content><![CDATA[
+resource "aws_glue_job" "${1:name}" {
+  name     = "${2:name}"      # Name you assign to this job.
+  role_arn = "${3:role_arn}"  # ARN of the IAM role associated with this job.
+  command {
+    script_location = "${4:script_location}"
+  }
+
+  # connections               = []     # List of connections used for this job.
+  # default_arguments         = {}     # Map of default arguments for this job.
+  # description               = ""     # Description of the job.
+  # execution_class           = ""     # Execution class for the job.
+  # glue_version              = ""     # Version of glue to use, for example "1.0".
+  # job_mode                  = ""     # How a job was created.
+  # job_run_queuing_enabled   = false  # Whether job run queuing is enabled for the job runs for this job.
+  # maintenance_window        = ""     # Day of the week and hour for the maintenance window for streaming jobs.
+  # max_capacity              = 0      # Maximum number of AWS Glue data processing units (DPUs) that can be allocated when this job runs.
+  # max_retries               = 0      # Maximum number of times to retry this job if it fails.
+  # non_overridable_arguments = {}     # Non-overridable arguments for this job, specified as name-value pairs.
+  # number_of_workers         = 0      # Number of workers of a defined workerType that are allocated when a job runs.
+  # region                    = ""     # Region where this resource will be managed.
+  # security_configuration    = ""     # Name of the Security Configuration to be associated with the job.
+  # tags                      = {}     # Key-value map of resource tags.
+  # timeout                   = 0      # Job timeout in minutes.
+  # worker_type               = ""     # Type of predefined worker that is allocated when a job runs.
+  # execution_property {}  # Execution property of the job.
+  # notification_property {}  # Notification property of the job.
+  # source_control_details {}  # Details for a source control configuration for a job, allowing synchronization of job artifacts t...
+}
+]]></content>
+<tabTrigger>aws_glue_job</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Glue Job resource.</description>
+</snippet>

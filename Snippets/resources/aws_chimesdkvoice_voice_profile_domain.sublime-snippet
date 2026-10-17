@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_chimesdkvoice_voice_profile_domain" "${1:name}" {
+  name = "${2:name}"  # Name of Voice Profile Domain.
+  server_side_encryption_configuration {
+    kms_key_arn = "${3:kms_key_arn}"
+  }
+
+  # description = ""  # Description of Voice Profile Domain.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_chimesdkvoice_voice_profile_domain</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Chime SDK Voice Profile Domain.</description>
+</snippet>

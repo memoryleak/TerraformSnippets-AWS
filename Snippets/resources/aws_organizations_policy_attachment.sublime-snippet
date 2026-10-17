@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_organizations_policy_attachment" "${1:name}" {
+  policy_id = "${2:policy_id}"  # The unique identifier (ID) of the policy that you want to attach to the target.
+  target_id = "${3:target_id}"  # The unique identifier (ID) of the root, organizational unit, or account number that you want to a...
+
+  # skip_destroy = false  # If set to true, destroy will **not** detach the policy and instead just remove the resource from...
+}
+]]></content>
+<tabTrigger>aws_organizations_policy_attachment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to attach an AWS Organizations policy to an organization account, root, or unit.</description>
+</snippet>

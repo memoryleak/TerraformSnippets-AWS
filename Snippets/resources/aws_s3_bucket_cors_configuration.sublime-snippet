@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3_bucket_cors_configuration" "${1:name}" {
+  bucket = "${2:bucket}"  # Name of the bucket.
+  cors_rule {
+    allowed_methods = [${3}]
+    allowed_origins = [${4}]
+  }
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_s3_bucket_cors_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an S3 bucket CORS configuration resource.</description>
+</snippet>

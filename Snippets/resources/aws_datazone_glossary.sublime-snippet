@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_datazone_glossary" "${1:name}" {
+  domain_identifier         = "${2:domain_identifier}"
+  name                      = "${3:name}"                       # Name of the glossary.
+  owning_project_identifier = "${4:owning_project_identifier}"  # ID of the project that owns business glossary.
+
+  # description = ""  # Description of the glossary.
+  # region      = ""  # Region where this resource will be managed.
+  # status      = ""  # Status of business glossary.
+}
+]]></content>
+<tabTrigger>aws_datazone_glossary</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS DataZone Glossary.</description>
+</snippet>

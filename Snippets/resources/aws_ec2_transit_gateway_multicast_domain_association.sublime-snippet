@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_transit_gateway_multicast_domain_association" "${1:name}" {
+  subnet_id                           = "${2:subnet_id}"                            # The ID of the subnet to associate with the transit gateway multicast domain.
+  transit_gateway_attachment_id       = "${3:transit_gateway_attachment_id}"        # The ID of the transit gateway attachment.
+  transit_gateway_multicast_domain_id = "${4:transit_gateway_multicast_domain_id}"  # The ID of the transit gateway multicast domain.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ec2_transit_gateway_multicast_domain_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an EC2 Transit Gateway Multicast Domain Association</description>
+</snippet>

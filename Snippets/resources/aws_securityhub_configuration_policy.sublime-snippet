@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_securityhub_configuration_policy" "${1:name}" {
+  name = "${2:name}"  # The name of the configuration policy.
+  configuration_policy {
+    service_enabled = ${3:false}
+  }
+
+  # description = ""  # The description of the configuration policy.
+  # region      = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_securityhub_configuration_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage Security Hub configuration policy</description>
+</snippet>

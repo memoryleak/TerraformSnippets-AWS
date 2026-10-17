@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+data "aws_lb_listener" "${1:name}" {
+  # arn               = ""  # ARN of the listener.
+  # load_balancer_arn = ""  # ARN of the load balancer.
+  # port              = 0   # Port of the listener.
+  # region            = ""  # Region where this resource will be managed.
+  # tags              = {}
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_lb_listener</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides a Load Balancer Listener data source.</description>
+</snippet>

@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+data "aws_vpc" "${1:name}" {
+  # cidr_block      = ""     # CIDR block of the desired VPC.
+  # default         = false  # Boolean constraint on whether the desired VPC is the default VPC for the region.
+  # dhcp_options_id = ""     # DHCP options ID of the desired VPC.
+  # region          = ""     # Region where this resource will be managed.
+  # state           = ""     # Current state of the desired VPC.
+  # tags            = {}     # Map of tags, each pair of which must exactly match a pair on the desired VPC.
+  # filter {}  # Custom filter block as described below.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_vpc</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific VPC</description>
+</snippet>

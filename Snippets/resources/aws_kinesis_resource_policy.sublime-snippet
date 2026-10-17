@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_kinesis_resource_policy" "${1:name}" {
+  policy       = "${2:policy}"        # Policy document.
+  resource_arn = "${3:resource_arn}"  # ARN of the data stream or consumer.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_kinesis_resource_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage an Amazon Kinesis Streams resource policy.</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_guardduty_invite_accepter" "${1:name}" {
+  detector_id       = "${2:detector_id}"        # Detector ID of the member GuardDuty account.
+  master_account_id = "${3:master_account_id}"  # AWS account ID for primary account.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_guardduty_invite_accepter</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to accept a pending GuardDuty invite on creation, ensure the detector has the...</description>
+</snippet>

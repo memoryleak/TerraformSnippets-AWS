@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_autoscaling_attachment" "${1:name}" {
+  autoscaling_group_name = "${2:autoscaling_group_name}"  # Name of ASG to associate with the ELB.
+
+  # elb                 = ""  # Name of the ELB.
+  # lb_target_group_arn = ""  # ARN of a load balancer target group.
+  # region              = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_autoscaling_attachment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Auto Scaling Attachment.</description>
+</snippet>

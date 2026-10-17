@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_pinpointsmsvoicev2_keyword" "${1:name}" {
+  keyword                  = "${2:keyword}"                   # Keyword to configure.
+  keyword_message          = "${3:keyword_message}"           # Message to send when the keyword is received.
+  origination_identity_arn = "${4:origination_identity_arn}"  # ARN of the origination identity (phone number or pool) to attach the keyword to.
+
+  # keyword_action = ""  # Action to perform when the keyword is received.
+  # region         = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_pinpointsmsvoicev2_keyword</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS End User Messaging SMS Keyword.</description>
+</snippet>

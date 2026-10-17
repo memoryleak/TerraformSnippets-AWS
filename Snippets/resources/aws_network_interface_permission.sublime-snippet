@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_network_interface_permission" "${1:name}" {
+  aws_account_id       = "${2:aws_account_id}"        # The Amazon Web Services account ID.
+  network_interface_id = "${3:network_interface_id}"  # The ID of the network interface.
+  permission           = "${4:permission}"            # The type of permission to grant.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_network_interface_permission</tabTrigger>
+<scope>source.terraform</scope>
+<description>Grant cross-account access to an Elastic network interface (ENI).</description>
+</snippet>

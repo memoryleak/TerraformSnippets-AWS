@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_cloudwatch_event_source" "${1:name}" {
+  # name_prefix = ""  # Specifying this limits the results to only those partner event sources with names that start with...
+  # region      = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_cloudwatch_event_source</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on an EventBridge (Cloudwatch) Event Source.</description>
+</snippet>

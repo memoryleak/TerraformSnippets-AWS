@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_serverlessapplicationrepository_cloudformation_stack" "${1:name}" {
+  application_id = "${2:application_id}"  # ARN of the application from the Serverless Application Repository.
+  name           = "${3:name}"            # Name of the stack to create.
+
+  # capabilities     = []  # List of capabilities.
+  # parameters       = {}  # Map of Parameter structures that specify input parameters for the stack.
+  # region           = ""  # Region where this resource will be managed.
+  # semantic_version = ""  # Version of the application to deploy.
+  # tags             = {}  # Map of tags assigned to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_serverlessapplicationrepository_cloudformation_stack</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Application CloudFormation Stack from the Serverless Application Repository.</description>
+</snippet>

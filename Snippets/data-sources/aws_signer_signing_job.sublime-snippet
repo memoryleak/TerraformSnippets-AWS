@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_signer_signing_job" "${1:name}" {
+  job_id = "${2:job_id}"  # ID of the signing job on output.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_signer_signing_job</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides a Signer Signing Job data source.</description>
+</snippet>

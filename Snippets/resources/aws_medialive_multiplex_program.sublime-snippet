@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_medialive_multiplex_program" "${1:name}" {
+  multiplex_id = "${2:multiplex_id}"  # Multiplex ID.
+  program_name = "${3:program_name}"  # Unique program name.
+
+  # region = ""  # Region where this resource will be managed.
+  # multiplex_program_settings {}  # MultiplexProgram settings.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_medialive_multiplex_program</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS MediaLive MultiplexProgram.</description>
+</snippet>

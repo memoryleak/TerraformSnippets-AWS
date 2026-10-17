@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_iam_user_ssh_key" "${1:name}" {
+  encoding          = "${2:encoding}"           # Specifies the public key encoding format to use in the response.
+  ssh_public_key_id = "${3:ssh_public_key_id}"  # Unique identifier for the SSH public key.
+  username          = "${4:username}"           # Name of the IAM user associated with the SSH public key.
+}
+]]></content>
+<tabTrigger>data_aws_iam_user_ssh_key</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on a SSH public key associated with the specified IAM user.</description>
+</snippet>

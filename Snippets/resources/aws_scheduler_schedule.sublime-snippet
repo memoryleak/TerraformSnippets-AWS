@@ -1,0 +1,29 @@
+<snippet>
+<content><![CDATA[
+resource "aws_scheduler_schedule" "${1:name}" {
+  schedule_expression = "${2:schedule_expression}"  # Defines when the schedule runs.
+  flexible_time_window {
+    mode = "${3:mode}"
+  }
+  target {
+    arn      = "${4:arn}"
+    role_arn = "${5:role_arn}"
+  }
+
+  # action_after_completion      = ""  # Action that applies to the schedule after completing invocation of the target.
+  # description                  = ""  # Brief description of the schedule.
+  # end_date                     = ""  # The date, in UTC, before which the schedule can invoke its target.
+  # group_name                   = ""  # Name of the schedule group to associate with this schedule.
+  # kms_key_arn                  = ""  # ARN for the customer managed KMS key that EventBridge Scheduler will use to encrypt and decrypt y...
+  # name                         = ""  # Name of the schedule.
+  # name_prefix                  = ""  # Creates a unique name beginning with the specified prefix.
+  # region                       = ""  # Region where this resource will be managed.
+  # schedule_expression_timezone = ""  # Timezone in which the scheduling expression is evaluated.
+  # start_date                   = ""  # The date, in UTC, after which the schedule can begin invoking its target.
+  # state                        = ""  # Specifies whether the schedule is enabled or disabled.
+}
+]]></content>
+<tabTrigger>aws_scheduler_schedule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an EventBridge Scheduler Schedule resource.</description>
+</snippet>

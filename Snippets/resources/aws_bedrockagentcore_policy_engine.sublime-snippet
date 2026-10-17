@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrockagentcore_policy_engine" "${1:name}" {
+  name = "${2:name}"  # Name of the policy engine.
+
+  # description        = ""  # Description of the policy engine.
+  # encryption_key_arn = ""  # ARN of the KMS key used to encrypt the policy engine.
+  # region             = ""  # Region where this resource will be managed.
+  # tags               = {}  # Key-value map of resource tags.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_bedrockagentcore_policy_engine</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Bedrock AgentCore Policy Engine.</description>
+</snippet>

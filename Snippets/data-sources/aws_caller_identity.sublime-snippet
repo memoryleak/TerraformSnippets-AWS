@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+data "aws_caller_identity" "${1:name}" {
+}
+]]></content>
+<tabTrigger>data_aws_caller_identity</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information about the identity of the caller for the provider connection to AWS.</description>
+</snippet>

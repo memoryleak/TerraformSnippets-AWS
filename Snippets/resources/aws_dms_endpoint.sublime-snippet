@@ -1,0 +1,38 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dms_endpoint" "${1:name}" {
+  endpoint_id   = "${2:endpoint_id}"    # Database endpoint identifier.
+  endpoint_type = "${3:endpoint_type}"  # Type of endpoint.
+  engine_name   = "${4:engine_name}"    # Type of engine for the endpoint.
+
+  # certificate_arn                 = ""     # ARN for the certificate.
+  # database_name                   = ""     # Name of the endpoint database.
+  # extra_connection_attributes     = ""     # Additional attributes associated with the connection.
+  # kms_key_arn                     = ""     # ARN for the KMS key that will be used to encrypt the connection parameters.
+  # password                        = ""     # Password to be used to login to the endpoint database.
+  # pause_replication_tasks         = false  # Whether to pause associated running replication tasks, regardless if they are managed by Terrafor...
+  # port                            = 0      # Port used by the endpoint database.
+  # region                          = ""     # Region where this resource will be managed.
+  # secrets_manager_access_role_arn = ""     # ARN of the IAM role that specifies AWS DMS as the trusted entity and has the required permissions...
+  # secrets_manager_arn             = ""     # Full ARN, partial ARN, or friendly name of the Secrets Manager secret that contains the endpoint...
+  # server_name                     = ""     # Host name of the server.
+  # service_access_role             = ""     # ARN used by the service access IAM role for DynamoDB endpoints.
+  # ssl_mode                        = ""     # SSL mode to use for the connection.
+  # tags                            = {}     # Map of tags to assign to the resource.
+  # username                        = ""     # User name to be used to login to the endpoint database.
+  # elasticsearch_settings {}  # Configuration block for OpenSearch settings.
+  # kafka_settings {}  # Configuration block for Kafka settings.
+  # kinesis_settings {}  # Configuration block for Kinesis settings.
+  # mongodb_settings {}  # Configuration block for MongoDB settings.
+  # mysql_settings {}  # Configuration block for MySQL settings.
+  # oracle_settings {}  # Configuration block for Oracle settings.
+  # postgres_settings {}  # Configuration block for Postgres settings.
+  # redis_settings {}
+  # redshift_settings {}  # Configuration block for Redshift settings.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_dms_endpoint</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a DMS (Data Migration Service) endpoint resource.</description>
+</snippet>

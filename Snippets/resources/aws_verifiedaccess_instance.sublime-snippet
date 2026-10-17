@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_verifiedaccess_instance" "${1:name}" {
+  # cidr_endpoints_custom_subdomain = ""     # Custom subdomain for the CIDR endpoints.
+  # description                     = ""     # Description for the AWS Verified Access Instance.
+  # fips_enabled                    = false  # Whether to enable support for Federal Information Processing Standards (FIPS) on the AWS Verified...
+  # region                          = ""     # Region where this resource will be managed.
+  # tags                            = {}     # Key-value mapping of resource tags.
+}
+]]></content>
+<tabTrigger>aws_verifiedaccess_instance</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing a Verified Access Instance.</description>
+</snippet>

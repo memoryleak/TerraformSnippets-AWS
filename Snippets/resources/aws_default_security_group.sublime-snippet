@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_default_security_group" "${1:name}" {
+  # egress                 = []     # Configuration block.
+  # ingress                = []     # Configuration block.
+  # region                 = ""     # Region where this resource will be managed.
+  # revoke_rules_on_delete = false
+  # tags                   = {}     # Map of tags to assign to the resource.
+  # vpc_id                 = ""     # VPC ID.
+}
+]]></content>
+<tabTrigger>aws_default_security_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manage a default security group resource.</description>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_kinesis_firehose_delivery_stream" "${1:name}" {
+  name = "${2:name}"  # Name of the Kinesis Firehose Delivery Stream.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_kinesis_firehose_delivery_stream</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides an AWS Kinesis Firehose Delivery Stream data source.</description>
+</snippet>

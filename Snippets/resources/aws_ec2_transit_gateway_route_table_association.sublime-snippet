@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_transit_gateway_route_table_association" "${1:name}" {
+  transit_gateway_attachment_id  = "${2:transit_gateway_attachment_id}"   # Identifier of EC2 Transit Gateway Attachment.
+  transit_gateway_route_table_id = "${3:transit_gateway_route_table_id}"  # Identifier of EC2 Transit Gateway Route Table.
+
+  # region                       = ""     # Region where this resource will be managed.
+  # replace_existing_association = false  # Boolean whether the Gateway Attachment should remove any current Route Table association before a...
+}
+]]></content>
+<tabTrigger>aws_ec2_transit_gateway_route_table_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an EC2 Transit Gateway Route Table association</description>
+</snippet>

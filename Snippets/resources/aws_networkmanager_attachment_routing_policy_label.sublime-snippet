@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_networkmanager_attachment_routing_policy_label" "${1:name}" {
+  attachment_id        = "${2:attachment_id}"         # The ID of the attachment to apply the routing policy label to.
+  core_network_id      = "${3:core_network_id}"       # The ID of the core network containing the attachment.
+  routing_policy_label = "${4:routing_policy_label}"  # The routing policy label to apply to the attachment.
+}
+]]></content>
+<tabTrigger>aws_networkmanager_attachment_routing_policy_label</tabTrigger>
+<scope>source.terraform</scope>
+<description>Associates a routing policy label to a Network Manager Cloud WAN's attachment.</description>
+</snippet>

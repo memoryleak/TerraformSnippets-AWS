@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_servicequotas_templates" "${1:name}" {
+  # aws_region = ""  # AWS Region to which the quota increases apply.
+}
+]]></content>
+<tabTrigger>data_aws_servicequotas_templates</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing AWS Service Quotas Templates.</description>
+</snippet>

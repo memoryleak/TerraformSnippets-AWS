@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_log_index_policy" "${1:name}" {
+  log_group_name  = "${2:log_group_name}"   # Log group name to set the policy for.
+  policy_document = "${3:policy_document}"  # JSON policy document.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_log_index_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS CloudWatch Logs Index Policy.</description>
+</snippet>

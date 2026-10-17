@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sagemaker_project" "${1:name}" {
+  project_name = "${2:project_name}"  # The name of the Project.
+  service_catalog_provisioning_details {
+    product_id = "${3:product_id}"
+  }
+
+  # project_description = ""  # A description for the project.
+  # region              = ""  # Region where this resource will be managed.
+  # tags                = {}  # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_sagemaker_project</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a SageMaker AI Project resource.</description>
+</snippet>

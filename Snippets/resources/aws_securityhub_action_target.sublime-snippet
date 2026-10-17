@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_securityhub_action_target" "${1:name}" {
+  description = "${2:description}"  # The name of the custom action target.
+  identifier  = "${3:identifier}"   # The ID for the custom action target.
+  name        = "${4:name}"         # The description for the custom action target.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_securityhub_action_target</tabTrigger>
+<scope>source.terraform</scope>
+<description>Creates Security Hub custom action.</description>
+</snippet>

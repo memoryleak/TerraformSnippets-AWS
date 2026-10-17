@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3vectors_vector_bucket" "${1:name}" {
+  vector_bucket_name = "${2:vector_bucket_name}"  # Name of the vector bucket.
+
+  # encryption_configuration = []     # Encryption configuration for the vector bucket.
+  # force_destroy            = false  # Boolean that indicates all indexes and vectors should be deleted from the vector bucket *when the...
+  # region                   = ""     # Region where this resource will be managed.
+  # tags                     = {}     # Key-value map of resource tags.
+}
+]]></content>
+<tabTrigger>aws_s3vectors_vector_bucket</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an Amazon S3 Vectors Vector Bucket.</description>
+</snippet>

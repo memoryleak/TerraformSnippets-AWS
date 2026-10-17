@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_sfn_state_machine_versions" "${1:name}" {
+  statemachine_arn = "${2:statemachine_arn}"  # ARN of the State Machine.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_sfn_state_machine_versions</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS SFN (Step Functions) State Machine Versions.</description>
+</snippet>

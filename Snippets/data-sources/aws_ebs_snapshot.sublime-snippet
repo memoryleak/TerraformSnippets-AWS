@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+data "aws_ebs_snapshot" "${1:name}" {
+  # most_recent            = false  # If more than one result is returned, use the most recent snapshot.
+  # owners                 = []     # Returns the snapshots owned by the specified owner ID.
+  # region                 = ""     # Region where this resource will be managed.
+  # restorable_by_user_ids = []     # One or more AWS accounts IDs that can create volumes from the snapshot.
+  # snapshot_ids           = []     # Returns information on a specific snapshot_id.
+  # tags                   = {}
+  # filter {}  # One or more name/value pairs to filter off of.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_ebs_snapshot</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on an EBS Snapshot.</description>
+</snippet>

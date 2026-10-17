@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ivschat_room" "${1:name}" {
+  # logging_configuration_identifiers = []  # List of Logging Configuration
+  # maximum_message_length            = 0   # Maximum number of characters in a single
+  # maximum_message_rate_per_second   = 0   # Maximum number of messages per
+  # name                              = ""  # Room name.
+  # region                            = ""  # Region where this resource will be managed.
+  # tags                              = {}  # A map of tags to assign to the resource.
+  # message_review_handler {}  # Configuration information for optional
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ivschat_room</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS IVS (Interactive Video) Chat Room.</description>
+</snippet>

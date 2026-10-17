@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sagemaker_model_card" "${1:name}" {
+  content           = "${2:content}"            # Content of the model card in model card JSON schema.
+  model_card_name   = "${3:model_card_name}"    # Name of the model card.
+  model_card_status = "${4:model_card_status}"  # Approval status of the model card.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # A mapping of tags to assign to the resource.
+  # security_config {}  # KMS key to encrypt, decrypt, and re-encrypt model card content.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_sagemaker_model_card</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manage an Amazon SageMaker Model Card.</description>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iot_event_configurations" "${1:name}" {
+  event_configurations = {${2}}  # Map.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_iot_event_configurations</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages IoT event configurations.</description>
+</snippet>

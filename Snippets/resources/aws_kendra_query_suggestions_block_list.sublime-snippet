@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_kendra_query_suggestions_block_list" "${1:name}" {
+  index_id = "${2:index_id}"  # Identifier of the index for a block list.
+  name     = "${3:name}"      # Name for the block list.
+  role_arn = "${4:role_arn}"  # IAM (Identity and Access Management) role used to access the block list text file in S3.
+  source_s3_path {
+    bucket = "${5:bucket}"
+    key    = "${6:key}"
+  }
+
+  # description = ""  # Description for a block list.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Key-value map of resource tags.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_kendra_query_suggestions_block_list</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Kendra block list used for query suggestions for an index</description>
+</snippet>

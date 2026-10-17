@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_acmpca_permission" "${1:name}" {
+  actions                   = [${2}]                            # Actions that the specified AWS service principal can use.
+  certificate_authority_arn = "${3:certificate_authority_arn}"  # ARN of the CA that grants the permissions.
+  principal                 = "${4:principal}"                  # AWS service or identity that receives the permission.
+
+  # region         = ""  # Region where this resource will be managed.
+  # source_account = ""  # ID of the calling account
+}
+]]></content>
+<tabTrigger>aws_acmpca_permission</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage an AWS Certificate Manager Private Certificate Authorities Permission</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sns_topic_data_protection_policy" "${1:name}" {
+  arn    = "${2:arn}"     # The ARN of the SNS topic
+  policy = "${3:policy}"  # The fully-formed AWS policy as JSON.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_sns_topic_data_protection_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an SNS data protection topic policy resource.</description>
+</snippet>

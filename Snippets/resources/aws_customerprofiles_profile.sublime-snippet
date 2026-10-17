@@ -1,0 +1,33 @@
+<snippet>
+<content><![CDATA[
+resource "aws_customerprofiles_profile" "${1:name}" {
+  domain_name = "${2:domain_name}"  # The name of your Customer Profile domain.
+
+  # account_number         = ""  # A unique account number that you have given to the customer.
+  # additional_information = ""  # Any additional information relevant to the customer’s profile.
+  # attributes             = {}  # A key value pair of attributes of a customer profile.
+  # birth_date             = ""  # The customer’s birth date.
+  # business_email_address = ""  # The customer’s business email address.
+  # business_name          = ""  # The name of the customer’s business.
+  # business_phone_number  = ""  # The customer’s business phone number.
+  # email_address          = ""  # The customer’s email address, which has not been specified as a personal or business address.
+  # first_name             = ""  # The customer’s first name.
+  # gender_string          = ""  # The gender with which the customer identifies.
+  # home_phone_number      = ""  # The customer’s home phone number.
+  # last_name              = ""  # The customer’s last name.
+  # middle_name            = ""  # The customer’s middle name.
+  # mobile_phone_number    = ""  # The customer’s mobile phone number.
+  # party_type_string      = ""  # The type of profile used to describe the customer.
+  # personal_email_address = ""  # The customer’s personal email address.
+  # phone_number           = ""  # The customer’s phone number, which has not been specified as a mobile, home, or business number.
+  # region                 = ""  # Region where this resource will be managed.
+  # address {}  # A block that specifies a generic address associated with the customer that is not mailing, shippi...
+  # billing_address {}  # A block that specifies the customer’s billing address.
+  # mailing_address {}  # A block that specifies the customer’s mailing address.
+  # shipping_address {}  # A block that specifies the customer’s shipping address.
+}
+]]></content>
+<tabTrigger>aws_customerprofiles_profile</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an Amazon Customer Profiles Profile.</description>
+</snippet>

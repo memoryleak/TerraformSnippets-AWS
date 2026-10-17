@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_guardduty_detector_feature" "${1:name}" {
+  detector_id = "${2:detector_id}"  # Amazon GuardDuty detector ID.
+  name        = "${3:name}"         # Name of the detector feature.
+  status      = "${4:status}"       # Status of the detector feature.
+
+  # region = ""  # Region where this resource will be managed.
+  # additional_configuration {}  # Additional feature configuration block for featuresEKS_RUNTIME_MONITORING or RUNTIME_MONITORING.
+}
+]]></content>
+<tabTrigger>aws_guardduty_detector_feature</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage an Amazon GuardDuty detector feature</description>
+</snippet>

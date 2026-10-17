@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_directory_service_region" "${1:name}" {
+  directory_id = "${2:directory_id}"  # The identifier of the directory to which you want to add Region replication.
+  region_name  = "${3:region_name}"   # The name of the Region where you want to add domain controllers for replication.
+  vpc_settings {
+    subnet_ids = [${4}]
+    vpc_id     = "${5:vpc_id}"
+  }
+
+  # desired_number_of_domain_controllers = 0   # The number of domain controllers desired in the replicated directory.
+  # region                               = ""  # Region where this resource will be managed.
+  # tags                                 = {}  # Map of tags to assign to this resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_directory_service_region</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a replicated Region and directory for Multi-Region replication.</description>
+</snippet>

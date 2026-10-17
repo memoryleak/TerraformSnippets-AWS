@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_servicecatalog_provisioning_artifacts" "${1:name}" {
+  product_id = "${2:product_id}"  # Product identifier.
+
+  # accept_language = ""  # Language code.
+  # region          = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_servicecatalog_provisioning_artifacts</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides information on Service Catalog Provisioning Artifacts</description>
+</snippet>

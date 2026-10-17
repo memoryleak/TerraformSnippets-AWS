@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+data "aws_api_gateway_export" "${1:name}" {
+  export_type = "${2:export_type}"  # Type of export.
+  rest_api_id = "${3:rest_api_id}"  # Identifier of the associated REST API.
+  stage_name  = "${4:stage_name}"   # Name of the Stage that will be exported.
+
+  # accepts    = ""  # Content-type of the export.
+  # parameters = {}  # Key-value map of query string parameters that specify properties of the export.
+  # region     = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_api_gateway_export</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on an API Gateway REST API Key</description>
+</snippet>

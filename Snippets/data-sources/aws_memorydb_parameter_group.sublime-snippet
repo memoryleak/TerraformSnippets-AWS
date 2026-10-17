@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_memorydb_parameter_group" "${1:name}" {
+  name = "${2:name}"  # Name of the parameter group.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_memorydb_parameter_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides information about a MemoryDB Parameter Group.</description>
+</snippet>

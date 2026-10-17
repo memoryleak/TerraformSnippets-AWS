@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_internet_gateway" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # A map of tags to assign to the resource.
+  # vpc_id = ""  # The VPC ID to create in.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_internet_gateway</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to create a VPC Internet Gateway.</description>
+</snippet>

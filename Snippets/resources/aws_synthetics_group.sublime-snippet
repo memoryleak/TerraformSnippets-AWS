@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_synthetics_group" "${1:name}" {
+  name = "${2:name}"  # Name of the group.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value mapping of resource tags.
+}
+]]></content>
+<tabTrigger>aws_synthetics_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Synthetics Group resource</description>
+</snippet>

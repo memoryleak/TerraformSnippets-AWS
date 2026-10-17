@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_event_permission" "${1:name}" {
+  principal    = "${2:principal}"     # The 12-digit AWS account ID that you are permitting to put events to your default event bus.
+  statement_id = "${3:statement_id}"  # An identifier string for the external account that you are granting permissions to.
+
+  # action         = ""  # The action that you are enabling the other account to perform.
+  # event_bus_name = ""  # The name of the event bus to set the permissions on.
+  # region         = ""  # Region where this resource will be managed.
+  # condition {}  # Configuration block to limit the event bus permissions you are granting to only accounts that ful...
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_event_permission</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to create an EventBridge permission to support cross-account events in the cu...</description>
+</snippet>

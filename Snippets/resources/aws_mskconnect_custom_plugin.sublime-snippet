@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_mskconnect_custom_plugin" "${1:name}" {
+  content_type = "${2:content_type}"  # Type of the plugin file.
+  name         = "${3:name}"          # Name of the custom plugin.
+  location {
+    s3 {
+      bucket_arn = "${4:bucket_arn}"
+      file_key   = "${5:file_key}"
+    }
+  }
+
+  # description = ""  # Summary description of the custom plugin.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Map of tags to assign to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_mskconnect_custom_plugin</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Amazon MSK Connect custom plugin resource.</description>
+</snippet>

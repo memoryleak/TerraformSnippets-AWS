@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrock_evaluation_job" "${1:name}" {
+  job_name = "${2:job_name}"  # Name for the evaluation job.
+  role_arn = "${3:role_arn}"  # ARN of an IAM service role that Amazon Bedrock can assume to perform tasks on your behalf.
+
+  # application_type           = ""     # Whether the evaluation job evaluates a model or a knowledge base.
+  # customer_encryption_key_id = ""     # ARN of the customer managed KMS key to use to encrypt the evaluation job.
+  # job_description            = ""     # Description of the evaluation job.
+  # region                     = ""     # Region where this resource will be managed.
+  # skip_destroy               = false  # Whether to leave the evaluation job in its current state when destroying the resource, instead of...
+  # tags                       = {}     # Map of tags to assign to the evaluation job.
+  # evaluation_config {}  # Configuration for either an automated or human-based evaluation job.
+  # inference_config {}  # Configuration for the inference model, or models, used for the evaluation job.
+  # output_data_config {}  # Configuration for the Amazon S3 location where the results of the evaluation job are stored.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_bedrock_evaluation_job</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Amazon Bedrock evaluation job.</description>
+</snippet>

@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appstream_stack" "${1:name}" {
+  name = "${2:name}"  # Unique name for the AppStream stack.
+
+  # description        = ""  # Description for the AppStream stack.
+  # display_name       = ""  # Stack name to display.
+  # embed_host_domains = []  # Domains where AppStream 2.0 streaming sessions can be embedded in an iframe.
+  # feedback_url       = ""  # URL that users are redirected to after they click the Send Feedback link.
+  # redirect_url       = ""  # URL that users are redirected to after their streaming session ends.
+  # region             = ""  # Region where this resource will be managed.
+  # tags               = {}  # Key-value mapping of resource tags.
+  # access_endpoints {}  # Set of configuration blocks defining the interface VPC endpoints.
+  # application_settings {}  # Settings for application settings persistence.
+  # storage_connectors {}  # Configuration block for the storage connectors to enable.
+  # streaming_experience_settings {}  # Streaming protocol you want your stack to prefer.
+  # user_settings {}  # Configuration block for the actions that are enabled or disabled for users during their streaming...
+}
+]]></content>
+<tabTrigger>aws_appstream_stack</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AppStream stack</description>
+</snippet>

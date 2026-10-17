@@ -1,0 +1,26 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lex_intent" "${1:name}" {
+  name = "${2:name}"  # The name of the intent, not case sensitive.
+  fulfillment_activity {
+    type = "${3:type}"
+  }
+
+  # create_version          = false  # Determines if a new slot type version is created when the initial
+  # description             = ""     # A description of the intent.
+  # parent_intent_signature = ""     # A unique identifier for the built-in intent to base this
+  # region                  = ""     # Region where this resource will be managed.
+  # sample_utterances       = []     # An array of utterances (strings) that a user might say to signal
+  # conclusion_statement {}  # The statement that you want Amazon Lex to convey to the user
+  # confirmation_prompt {}  # Prompts the user to confirm the intent.
+  # dialog_code_hook {}  # Specifies a Lambda function to invoke for each user input.
+  # follow_up_prompt {}  # Amazon Lex uses this prompt to solicit additional activity after
+  # rejection_statement {}  # When the user answers "no" to the question defined in
+  # slot {}  # An list of intent slots.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_lex_intent</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Amazon Lex intent resource.</description>
+</snippet>

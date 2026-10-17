@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appconfig_application" "${1:name}" {
+  name = "${2:name}"  # Name for the application.
+
+  # description = ""  # Description of the application.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_appconfig_application</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AppConfig Application resource.</description>
+</snippet>

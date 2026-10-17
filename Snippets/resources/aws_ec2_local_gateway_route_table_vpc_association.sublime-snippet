@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_local_gateway_route_table_vpc_association" "${1:name}" {
+  local_gateway_route_table_id = "${2:local_gateway_route_table_id}"  # Identifier of EC2 Local Gateway Route Table.
+  vpc_id                       = "${3:vpc_id}"                        # Identifier of EC2 VPC.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value map of resource tags.
+}
+]]></content>
+<tabTrigger>aws_ec2_local_gateway_route_table_vpc_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an EC2 Local Gateway Route Table VPC Association</description>
+</snippet>

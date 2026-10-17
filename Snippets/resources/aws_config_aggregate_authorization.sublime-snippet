@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_config_aggregate_authorization" "${1:name}" {
+  account_id = "${2:account_id}"  # Account ID.
+
+  # authorized_aws_region = ""  # The region authorized to collect aggregated data.
+  # tags                  = {}  # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_config_aggregate_authorization</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Config Aggregate Authorization.</description>
+</snippet>

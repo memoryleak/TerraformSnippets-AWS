@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_redshift_parameter_group" "${1:name}" {
+  family = "${2:family}"  # The family of the Redshift parameter group.
+  name   = "${3:name}"    # The name of the Redshift parameter group.
+
+  # description = ""  # The description of the Redshift parameter group.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # A map of tags to assign to the resource.
+  # parameter {}  # A list of Redshift parameters to apply.
+}
+]]></content>
+<tabTrigger>aws_redshift_parameter_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Redshift Cluster parameter group resource.</description>
+</snippet>

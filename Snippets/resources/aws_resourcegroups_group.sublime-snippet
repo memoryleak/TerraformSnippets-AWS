@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_resourcegroups_group" "${1:name}" {
+  name = "${2:name}"  # The resource group's name.
+
+  # description = ""  # A description of the resource group.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Key-value map of resource tags.
+  # configuration {}  # A configuration associates the resource group with an AWS service and specifies how the service c...
+  # resource_query {}  # A resource_query block.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_resourcegroups_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Resource Group.</description>
+</snippet>

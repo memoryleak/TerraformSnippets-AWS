@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_backup_restore_testing_plan" "${1:name}" {
+  name                = "${2:name}"                 # Name of the restore testing plan.
+  schedule_expression = "${3:schedule_expression}"  # Schedule expression for the restore testing plan.
+
+  # region                       = ""  # Region where this resource will be managed.
+  # schedule_expression_timezone = ""  # Timezone for the schedule expression.
+  # start_window_hours           = 0   # Number of hours in the start window for the restore testing plan.
+  # tags                         = {}  # Key-value map of resource tags.
+  # recovery_point_selection {}  # Recovery point selection configuration.
+}
+]]></content>
+<tabTrigger>aws_backup_restore_testing_plan</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Backup Restore Testing Plan.</description>
+</snippet>

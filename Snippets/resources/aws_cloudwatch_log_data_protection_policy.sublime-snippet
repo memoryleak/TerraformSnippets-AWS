@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_log_data_protection_policy" "${1:name}" {
+  log_group_name  = "${2:log_group_name}"   # The name of the log group under which the log stream is to be created.
+  policy_document = "${3:policy_document}"  # Specifies the data protection policy in JSON.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_log_data_protection_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudWatch Log Data Protection Policy resource.</description>
+</snippet>

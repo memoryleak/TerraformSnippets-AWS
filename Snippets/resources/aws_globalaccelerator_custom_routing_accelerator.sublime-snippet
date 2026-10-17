@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_globalaccelerator_custom_routing_accelerator" "${1:name}" {
+  name = "${2:name}"  # Name of a custom routing accelerator.
+
+  # enabled         = false  # Whether the accelerator is enabled.
+  # ip_address_type = ""     # IP address type that an accelerator supports.
+  # ip_addresses    = []     # IP addresses to use for BYOIP accelerators.
+  # tags            = {}     # Map of tags to assign to the resource.
+  # attributes {}  # Configuration block with accelerator attributes.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_globalaccelerator_custom_routing_accelerator</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Global Accelerator custom routing accelerator.</description>
+</snippet>

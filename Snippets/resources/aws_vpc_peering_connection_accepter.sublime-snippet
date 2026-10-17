@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpc_peering_connection_accepter" "${1:name}" {
+  vpc_peering_connection_id = "${2:vpc_peering_connection_id}"  # VPC Peering Connection ID to manage.
+
+  # auto_accept = false  # Whether or not to accept the peering request.
+  # region      = ""     # Region where this resource will be managed.
+  # tags        = {}     # Map of tags to assign to the resource.
+  # accepter {}  # Configuration block for VPC Peering Connection options to set for the VPC that accepts the peerin...
+  # requester {}  # Configuration block for VPC Peering Connection options to set for the VPC that requests the peeri...
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_vpc_peering_connection_accepter</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manage the accepter's side of a VPC Peering Connection.</description>
+</snippet>

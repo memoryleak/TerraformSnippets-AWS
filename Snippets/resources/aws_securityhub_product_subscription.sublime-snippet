@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_securityhub_product_subscription" "${1:name}" {
+  product_arn = "${2:product_arn}"  # The ARN of the product that generates findings that you want to import into Security Hub - see be...
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_securityhub_product_subscription</tabTrigger>
+<scope>source.terraform</scope>
+<description>Subscribes to a Security Hub product.</description>
+</snippet>

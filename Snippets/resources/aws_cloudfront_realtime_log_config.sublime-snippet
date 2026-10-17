@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudfront_realtime_log_config" "${1:name}" {
+  fields        = [${2}]       # The fields that are included in each real-time log record.
+  name          = "${3:name}"  # The unique name to identify this real-time log configuration.
+  sampling_rate = ${4:0}       # The sampling rate for this real-time log configuration.
+  endpoint {
+    stream_type = "${5:stream_type}"
+    kinesis_stream_config {
+      role_arn   = "${6:role_arn}"
+      stream_arn = "${7:stream_arn}"
+    }
+  }
+}
+]]></content>
+<tabTrigger>aws_cloudfront_realtime_log_config</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudFront real-time log configuration resource.</description>
+</snippet>

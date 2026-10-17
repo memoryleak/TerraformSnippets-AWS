@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_db_proxy" "${1:name}" {
+  name = "${2:name}"  # Name of the DB proxy.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_db_proxy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on a DB Proxy.</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_servicecatalog_constraint" "${1:name}" {
+  # accept_language = ""  # Language code.
+  # description     = ""
+  # region          = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_servicecatalog_constraint</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides information on a Service Catalog Constraint</description>
+</snippet>

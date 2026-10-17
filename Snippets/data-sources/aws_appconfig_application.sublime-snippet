@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_appconfig_application" "${1:name}" {
+  # name   = ""  # AWS AppConfig Application name.
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_appconfig_application</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Retrieves an AWS AppConfig Application by name.</description>
+</snippet>

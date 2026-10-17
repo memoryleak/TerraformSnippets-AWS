@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ssoadmin_customer_managed_policy_attachments_exclusive" "${1:name}" {
+  instance_arn       = "${2:instance_arn}"        # ARN of the SSO Instance.
+  permission_set_arn = "${3:permission_set_arn}"  # ARN of the Permission Set.
+
+  # region = ""  # Region where this resource will be managed.
+  # customer_managed_policy_reference {}  # Specifies the names and paths of the customer managed policies to attach.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ssoadmin_customer_managed_policy_attachments_exclusive</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing exclusive AWS SSO Admin Customer Managed Policy Attachments.</description>
+</snippet>

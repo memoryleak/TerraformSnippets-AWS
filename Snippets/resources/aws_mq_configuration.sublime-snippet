@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_mq_configuration" "${1:name}" {
+  data           = "${2:data}"            # Broker configuration in XML format for ActiveMQ or Cuttlefish format for RabbitMQ.
+  engine_type    = "${3:engine_type}"     # Type of broker engine.
+  engine_version = "${4:engine_version}"  # Version of the broker engine.
+  name           = "${5:name}"            # Name of the configuration.
+
+  # authentication_strategy = ""     # Authentication strategy associated with the configuration.
+  # description             = ""     # Description of the configuration.
+  # region                  = ""     # Region where this resource will be managed.
+  # skip_destroy            = false  # Set to true if you do not wish the configuration to be deleted at destroy time, and instead just...
+  # tags                    = {}     # Key-value map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_mq_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Amazon MQ configuration</description>
+</snippet>

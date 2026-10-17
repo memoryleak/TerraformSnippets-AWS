@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_backup_logically_air_gapped_vault" "${1:name}" {
+  max_retention_days = ${2:0}       # Maximum retention period that the Logically Air Gapped Backup Vault retains recovery points.
+  min_retention_days = ${3:0}       # Minimum retention period that the Logically Air Gapped Backup Vault retains recovery points.
+  name               = "${4:name}"  # Name of the Logically Air Gapped Backup Vault to create.
+
+  # encryption_key_arn = ""  # AWS KMS key identifier (ARN) used to encrypt the backups in the logically air-gapped vault.
+  # region             = ""  # Region where this resource will be managed.
+  # tags               = {}  # Metadata that you can assign to help organize the resources that you create.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_backup_logically_air_gapped_vault</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Backup Logically Air Gapped Vault.</description>
+</snippet>

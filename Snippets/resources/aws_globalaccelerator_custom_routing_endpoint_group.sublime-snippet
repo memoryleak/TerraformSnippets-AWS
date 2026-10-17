@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_globalaccelerator_custom_routing_endpoint_group" "${1:name}" {
+  listener_arn = "${2:listener_arn}"  # ARN of the custom routing listener.
+  destination_configuration {
+    from_port = ${3:0}
+    protocols = [${4}]
+    to_port   = ${5:0}
+  }
+
+  # endpoint_group_region = ""  # AWS Region where the custom routing endpoint group is located.
+  # endpoint_configuration {}  # Endpoint objects.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_globalaccelerator_custom_routing_endpoint_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Global Accelerator custom routing endpoint group.</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_elastic_beanstalk_solution_stack" "${1:name}" {
+  name_regex = "${2:name_regex}"  # Regex string to apply to the solution stack list returned
+
+  # most_recent = false  # If more than one result is returned, use the most
+  # region      = ""     # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_elastic_beanstalk_solution_stack</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get an elastic beanstalk solution stack.</description>
+</snippet>

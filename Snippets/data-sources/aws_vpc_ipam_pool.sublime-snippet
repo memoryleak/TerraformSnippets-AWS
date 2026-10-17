@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+data "aws_vpc_ipam_pool" "${1:name}" {
+  # allocation_resource_tags = {}
+  # ipam_pool_id             = ""  # ID of the IPAM pool you would like information on.
+  # region                   = ""  # Region where this resource will be managed.
+  # tags                     = {}
+  # filter {}  # Custom filter block as described below.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_vpc_ipam_pool</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Returns details about the first IPAM pool that matches search parameters provided.</description>
+</snippet>

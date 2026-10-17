@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+resource "aws_kendra_faq" "${1:name}" {
+  index_id = "${2:index_id}"  # Identifier of the index for a FAQ.
+  name     = "${3:name}"      # Name that should be associated with the FAQ.
+  role_arn = "${4:role_arn}"  # ARN of a role with permission to access the S3 bucket that contains the FAQs.
+  s3_path {
+    bucket = "${5:bucket}"
+    key    = "${6:key}"
+  }
+
+  # description   = ""  # Description for a FAQ.
+  # file_format   = ""  # File format used by the input files for the FAQ.
+  # language_code = ""  # Code for a language.
+  # region        = ""  # Region where this resource will be managed.
+  # tags          = {}  # Key-value map of resource tags.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_kendra_faq</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Kendra FAQ.</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_ec2_instance_type_offering" "${1:name}" {
+  # location_type            = ""  # Location type.
+  # preferred_instance_types = []  # Ordered list of preferred EC2 Instance Types.
+  # region                   = ""  # Region where this resource will be managed.
+  # filter {}  # One or more configuration blocks containing name-values filters.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_ec2_instance_type_offering</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Information about single EC2 Instance Type Offering.</description>
+</snippet>

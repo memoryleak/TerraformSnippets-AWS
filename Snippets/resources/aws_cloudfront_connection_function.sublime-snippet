@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudfront_connection_function" "${1:name}" {
+  connection_function_code = "${2:connection_function_code}"  # Code for the connection function.
+  name                     = "${3:name}"                      # Name for the connection function.
+
+  # publish = false  # Whether to publish the function to the LIVE stage after creation or update.
+  # tags    = {}     # Map of tags to assign to the resource.
+  # connection_function_config {}  # Configuration information for the connection function.
+}
+]]></content>
+<tabTrigger>aws_cloudfront_connection_function</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS CloudFront Connection Function.</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iam_role_policy" "${1:name}" {
+  policy = "${2:policy}"  # The inline policy document.
+  role   = "${3:role}"    # The name of the IAM role to attach to the policy.
+
+  # name        = ""  # The name of the role policy.
+  # name_prefix = ""  # Creates a unique name beginning with the specified prefix.
+}
+]]></content>
+<tabTrigger>aws_iam_role_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an IAM role policy.</description>
+</snippet>

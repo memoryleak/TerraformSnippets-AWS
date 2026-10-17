@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_lakeformation_data_lake_settings" "${1:name}" {
+  # catalog_id = ""  # Identifier for the Data Catalog.
+  # region     = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_lakeformation_data_lake_settings</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get data lake administrators and default database and table permissions</description>
+</snippet>

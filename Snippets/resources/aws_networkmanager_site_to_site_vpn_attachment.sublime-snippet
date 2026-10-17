@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_networkmanager_site_to_site_vpn_attachment" "${1:name}" {
+  core_network_id    = "${2:core_network_id}"     # ID of a core network for the VPN attachment.
+  vpn_connection_arn = "${3:vpn_connection_arn}"  # ARN of the site-to-site VPN connection.
+
+  # routing_policy_label = ""  # The routing policy label to apply to the Site-to-Site VPN attachment for traffic routing decisions.
+  # tags                 = {}  # Key-value tags for the attachment.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_networkmanager_site_to_site_vpn_attachment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Network Manager site-to-site VPN attachment.</description>
+</snippet>

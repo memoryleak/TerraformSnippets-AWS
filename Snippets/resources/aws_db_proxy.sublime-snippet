@@ -1,0 +1,25 @@
+<snippet>
+<content><![CDATA[
+resource "aws_db_proxy" "${1:name}" {
+  engine_family  = "${2:engine_family}"  # Kinds of databases that the proxy can connect to.
+  name           = "${3:name}"           # Identifier for the proxy.
+  role_arn       = "${4:role_arn}"       # ARN of the IAM role that the proxy uses to access secrets in AWS Secrets Manager.
+  vpc_subnet_ids = [${5}]                # One or more VPC subnet IDs to associate with the new proxy.
+
+  # debug_logging                  = false  # Whether the proxy includes detailed information about SQL statements in its logs.
+  # default_auth_scheme            = ""     # Default authentication scheme that the proxy uses for client connections to the proxy and connect...
+  # endpoint_network_type          = ""     # Network type of the DB proxy endpoint.
+  # idle_client_timeout            = 0      # Number of seconds that a connection to the proxy can be inactive before the proxy disconnects it.
+  # region                         = ""     # Region where this resource will be managed.
+  # require_tls                    = false  # Whether TLS encryption is required for connections to the proxy.
+  # tags                           = {}     # Map of tags to assign to the resource.
+  # target_connection_network_type = ""     # Network type that the proxy uses to connect to the target database.
+  # vpc_security_group_ids         = []     # One or more VPC security group IDs to associate with the new proxy.
+  # auth {}  # Configuration block(s) with authorization mechanisms to connect to the associated instances or cl...
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_db_proxy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an RDS DB proxy resource.</description>
+</snippet>

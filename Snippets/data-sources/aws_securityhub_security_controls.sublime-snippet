@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_securityhub_security_controls" "${1:name}" {
+  # region        = ""  # Region where this resource will be managed.
+  # standards_arn = ""  # ARN of the standard that you want to list controls for.
+}
+]]></content>
+<tabTrigger>data_aws_securityhub_security_controls</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Lists security controls.</description>
+</snippet>

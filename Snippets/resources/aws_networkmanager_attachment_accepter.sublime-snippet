@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_networkmanager_attachment_accepter" "${1:name}" {
+  attachment_id   = "${2:attachment_id}"    # ID of the attachment.
+  attachment_type = "${3:attachment_type}"  # Type of attachment.
+
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_networkmanager_attachment_accepter</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Network Manager Attachment Accepter.</description>
+</snippet>

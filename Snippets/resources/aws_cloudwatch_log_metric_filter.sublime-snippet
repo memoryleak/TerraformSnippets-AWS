@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_log_metric_filter" "${1:name}" {
+  log_group_name = "${2:log_group_name}"  # The name of the log group to associate the metric filter with.
+  name           = "${3:name}"            # A name for the metric filter.
+  pattern        = "${4:pattern}"         # A valid CloudWatch Logs filter pattern
+  metric_transformation {
+    name      = "${5:name}"
+    namespace = "${6:namespace}"
+    value     = "${7:value}"
+  }
+
+  # apply_on_transformed_logs = false  # Whether the metric filter will be applied on the transformed version of the log events instead of...
+  # region                    = ""     # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_log_metric_filter</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudWatch Log Metric Filter resource.</description>
+</snippet>

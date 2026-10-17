@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iam_signing_certificate" "${1:name}" {
+  certificate_body = "${2:certificate_body}"  # The contents of the signing certificate in PEM-encoded format.
+  user_name        = "${3:user_name}"         # The name of the user the signing certificate is for.
+
+  # status = ""  # The status you want to assign to the certificate.
+}
+]]></content>
+<tabTrigger>aws_iam_signing_certificate</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an IAM Signing Certificate</description>
+</snippet>

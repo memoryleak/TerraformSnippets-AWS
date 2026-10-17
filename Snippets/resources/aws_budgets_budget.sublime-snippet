@@ -1,0 +1,28 @@
+<snippet>
+<content><![CDATA[
+resource "aws_budgets_budget" "${1:name}" {
+  budget_type = "${2:budget_type}"  # Whether this budget tracks monetary cost or usage.
+  time_unit   = "${3:time_unit}"    # Length of time until a budget resets the actual and forecasted spend.
+
+  # account_id        = ""  # ID of the target account for budget.
+  # billing_view_arn  = ""  # ARN of the billing view.
+  # limit_amount      = ""  # Amount of cost or usage being measured for a budget.
+  # limit_unit        = ""  # Unit of measurement used for the budget forecast, actual spend, or budget threshold, such as doll...
+  # metrics           = []  # List containing definition for how the budget data is aggregated.
+  # name              = ""  # Name of a budget.
+  # name_prefix       = ""  # Prefix of the name of a budget.
+  # tags              = {}  # Map of tags assigned to the resource.
+  # time_period_end   = ""  # End of the time period covered by the budget.
+  # time_period_start = ""  # Start of the time period covered by the budget.
+  # auto_adjust_data {}  # Object containing AutoAdjustData which determines the budget amount for an auto-adjusting budget.
+  # cost_filter {}  # List of CostFilter name/values pair to apply to budget.
+  # cost_types {}  # Object containing CostTypes that defines the types of cost included in a budget, such as tax and...
+  # filter_expression {}  # Object containing Filter Expression to apply to budget.
+  # notification {}  # Object containing Budget Notifications.
+  # planned_limit {}  # Object containing Planned Budget Limits.
+}
+]]></content>
+<tabTrigger>aws_budgets_budget</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a budgets budget resource.</description>
+</snippet>

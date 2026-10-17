@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_networkmanager_prefix_list_association" "${1:name}" {
+  core_network_id   = "${2:core_network_id}"    # The ID of the core network to associate the prefix list with.
+  prefix_list_alias = "${3:prefix_list_alias}"  # An alias for the prefix list association.
+  prefix_list_arn   = "${4:prefix_list_arn}"    # The ARN of the EC2 managed prefix list to associate with the core network.
+}
+]]></content>
+<tabTrigger>aws_networkmanager_prefix_list_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Associates a prefix list with a Network Manager Cloud WAN core network.</description>
+</snippet>

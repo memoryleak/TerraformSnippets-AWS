@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_signer_signing_profile" "${1:name}" {
+  platform_id = "${2:platform_id}"  # The ID of the platform that is used by the target signing profile.
+
+  # name               = ""  # A unique signing profile name.
+  # name_prefix        = ""  # A signing profile name prefix.
+  # region             = ""  # Region where this resource will be managed.
+  # signing_parameters = {}  # Map of key-value pairs for signing.
+  # tags               = {}  # A list of tags associated with the signing profile.
+  # signature_validity_period {}  # The validity period for a signing job.
+  # signing_material {}  # The AWS Certificate Manager certificate that will be used to sign code with the new signing profile.
+}
+]]></content>
+<tabTrigger>aws_signer_signing_profile</tabTrigger>
+<scope>source.terraform</scope>
+<description>Creates a Signer Signing Profile.</description>
+</snippet>

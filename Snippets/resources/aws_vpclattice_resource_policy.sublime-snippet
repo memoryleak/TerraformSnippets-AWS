@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpclattice_resource_policy" "${1:name}" {
+  policy       = "${2:policy}"        # IAM policy.
+  resource_arn = "${3:resource_arn}"  # ID or ARN of the service network or service for which the policy is created.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_vpclattice_resource_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS VPC Lattice Resource Policy.</description>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_iam_roles" "${1:name}" {
+  # name_regex  = ""  # Regex string to apply to the IAM roles list returned by AWS.
+  # path_prefix = ""  # Path prefix for filtering the results.
+}
+]]></content>
+<tabTrigger>data_aws_iam_roles</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information about a set of IAM Roles.</description>
+</snippet>

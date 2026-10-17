@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_networkmanager_core_network_policy_attachment" "${1:name}" {
+  core_network_id = "${2:core_network_id}"  # ID of the core network that a policy will be attached to and made LIVE.
+  policy_document = "${3:policy_document}"  # Policy document for creating a core network.
+
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_networkmanager_core_network_policy_attachment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Network Manager Core Network Policy Attachment.</description>
+</snippet>

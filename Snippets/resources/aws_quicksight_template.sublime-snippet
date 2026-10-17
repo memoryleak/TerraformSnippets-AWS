@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_quicksight_template" "${1:name}" {
+  name                = "${2:name}"                 # Display name for the template.
+  template_id         = "${3:template_id}"          # Identifier for the template.
+  version_description = "${4:version_description}"  # Description of the current template version being created/updated.
+
+  # aws_account_id = ""  # AWS account ID.
+  # region         = ""  # Region where this resource will be managed.
+  # tags           = {}  # Key-value map of resource tags.
+  # definition {}  # Detailed template definition.
+  # permissions {}  # Set of resource permissions on the template.
+  # source_entity {}  # Entity that you are using as a source when you create the template (analysis or template).
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_quicksight_template</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a QuickSight Template.</description>
+</snippet>

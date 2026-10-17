@@ -1,0 +1,36 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_client_vpn_endpoint" "${1:name}" {
+  server_certificate_arn = "${2:server_certificate_arn}"  # The ARN of the ACM server certificate.
+  authentication_options {
+    type = "${3:type}"
+  }
+  connection_log_options {
+    enabled = ${4:false}
+  }
+
+  # client_cidr_block             = ""     # The IPv4 address range, in CIDR notation, from which to assign client IP addresses.
+  # description                   = ""     # A brief description of the Client VPN endpoint.
+  # disconnect_on_session_timeout = false  # Indicates whether the client VPN session is disconnected after the maximum session_timeout_hours...
+  # dns_servers                   = []     # Information about the DNS servers to be used for DNS resolution.
+  # endpoint_ip_address_type      = ""     # IP address type for the Client VPN endpoint.
+  # region                        = ""     # Region where this resource will be managed.
+  # security_group_ids            = []     # The IDs of one or more security groups to apply to the target network.
+  # self_service_portal           = ""     # Specify whether to enable the self-service portal for the Client VPN endpoint.
+  # session_timeout_hours         = 0      # The maximum session duration is a trigger by which end-users are required to re-authenticate prio...
+  # split_tunnel                  = false  # Indicates whether split-tunnel is enabled on VPN endpoint.
+  # tags                          = {}     # A mapping of tags to assign to the resource.
+  # traffic_ip_address_type       = ""     # IP address type for traffic within the Client VPN tunnel.
+  # transport_protocol            = ""     # The transport protocol to be used by the VPN session.
+  # vpc_id                        = ""     # The ID of the VPC to associate with the Client VPN endpoint.
+  # vpn_port                      = 0      # The port number for the Client VPN endpoint.
+  # client_connect_options {}  # The options for managing connection authorization for new client connections.
+  # client_login_banner_options {}  # Options for enabling a customizable text banner that will be displayed on AWS provided clients wh...
+  # client_route_enforcement_options {}  # Options for enforce administrator defined routes on devices connected through the VPN.
+  # transit_gateway_configuration {}  # Configuration block for associating the Client VPN endpoint with a Transit Gateway.
+}
+]]></content>
+<tabTrigger>aws_ec2_client_vpn_endpoint</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AWS Client VPN endpoint for OpenVPN clients.</description>
+</snippet>

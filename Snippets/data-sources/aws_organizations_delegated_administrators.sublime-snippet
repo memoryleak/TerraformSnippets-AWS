@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_organizations_delegated_administrators" "${1:name}" {
+  # service_principal = ""  # Specifies a service principal name.
+}
+]]></content>
+<tabTrigger>data_aws_organizations_delegated_administrators</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get a list of AWS accounts that are designated as delegated administrators in this organization</description>
+</snippet>

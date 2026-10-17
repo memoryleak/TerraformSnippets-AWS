@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+data "aws_apigatewayv2_export" "${1:name}" {
+  api_id        = "${2:api_id}"         # API identifier.
+  output_type   = "${3:output_type}"    # Output type of the exported definition file.
+  specification = "${4:specification}"  # Version of the API specification to use.
+
+  # export_version     = ""     # Version of the API Gateway export algorithm.
+  # include_extensions = false  # Whether to include API Gateway extensions in the exported API definition.
+  # region             = ""     # Region where this resource will be managed.
+  # stage_name         = ""     # Name of the API stage to export.
+}
+]]></content>
+<tabTrigger>data_aws_apigatewayv2_export</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Exports a definition of an API in a particular output format and specification.</description>
+</snippet>

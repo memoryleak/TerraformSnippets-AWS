@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_devopsguru_event_sources_config" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # event_sources {}  # Configuration information about the integration of DevOps Guru as the Consumer via EventBridge wi...
+}
+]]></content>
+<tabTrigger>aws_devopsguru_event_sources_config</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS DevOps Guru Event Sources Config.</description>
+</snippet>

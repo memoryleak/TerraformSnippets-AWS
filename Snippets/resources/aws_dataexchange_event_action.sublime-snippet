@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dataexchange_event_action" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # action {}  # Describes the action to take.
+  # event {}  # Describes the event that triggers the action.
+}
+]]></content>
+<tabTrigger>aws_dataexchange_event_action</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Data Exchange Event Action.</description>
+</snippet>

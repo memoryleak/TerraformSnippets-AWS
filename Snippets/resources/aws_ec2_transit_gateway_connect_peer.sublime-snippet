@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_transit_gateway_connect_peer" "${1:name}" {
+  inside_cidr_blocks            = [${2}]                                # The CIDR block that will be used for addressing within the tunnel.
+  peer_address                  = "${3:peer_address}"                   # The IP addressed assigned to customer device, which will be used as tunnel endpoint.
+  transit_gateway_attachment_id = "${4:transit_gateway_attachment_id}"  # The Transit Gateway Connect
+
+  # bgp_asn                 = ""  # The BGP ASN number assigned customer device.
+  # region                  = ""  # Region where this resource will be managed.
+  # tags                    = {}  # Key-value tags for the EC2 Transit Gateway Connect Peer.
+  # transit_gateway_address = ""  # The IP address assigned to Transit Gateway, which will be used as tunnel endpoint.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ec2_transit_gateway_connect_peer</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an EC2 Transit Gateway Connect Peer</description>
+</snippet>

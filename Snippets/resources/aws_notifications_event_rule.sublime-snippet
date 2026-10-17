@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_notifications_event_rule" "${1:name}" {
+  event_type                     = "${2:event_type}"                      # Type of event to match.
+  notification_configuration_arn = "${3:notification_configuration_arn}"  # ARN of the notification configuration to associate with this event rule.
+  regions                        = [${4}]                                 # Set of AWS regions where the event rule will be applied.
+  source                         = "${5:source}"                          # Source of the event.
+
+  # event_pattern = ""  # JSON string defining the event pattern to match.
+}
+]]></content>
+<tabTrigger>aws_notifications_event_rule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS User Notifications Event Rule.</description>
+</snippet>

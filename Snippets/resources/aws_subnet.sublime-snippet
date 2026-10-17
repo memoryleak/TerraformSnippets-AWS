@@ -1,0 +1,33 @@
+<snippet>
+<content><![CDATA[
+resource "aws_subnet" "${1:name}" {
+  vpc_id = "${2:vpc_id}"  # The VPC ID.
+
+  # assign_ipv6_address_on_creation                = false  # Specify true to indicate
+  # availability_zone                              = ""     # AZ for the subnet.
+  # availability_zone_id                           = ""     # AZ ID of the subnet.
+  # cidr_block                                     = ""     # The IPv4 CIDR block for the subnet.
+  # customer_owned_ipv4_pool                       = ""     # The customer owned IPv4 address pool.
+  # enable_dns64                                   = false  # Indicates whether DNS queries made to the Amazon-provided DNS Resolver in this subnet should retu...
+  # enable_lni_at_device_index                     = 0      # Indicates the device position for local network interfaces in this subnet.
+  # enable_resource_name_dns_a_record_on_launch    = false  # Indicates whether to respond to DNS queries for instance hostnames with DNS A records.
+  # enable_resource_name_dns_aaaa_record_on_launch = false  # Indicates whether to respond to DNS queries for instance hostnames with DNS AAAA records.
+  # ipv4_ipam_pool_id                              = ""     # ID of an IPv4 VPC Resource Planning IPAM Pool.
+  # ipv4_netmask_length                            = 0      # Netmask.
+  # ipv6_cidr_block                                = ""     # The IPv6 network range for the subnet,
+  # ipv6_ipam_pool_id                              = ""     # ID of an IPv6 VPC Resource Planning IPAM Pool.
+  # ipv6_native                                    = false  # Indicates whether to create an IPv6-only subnet.
+  # ipv6_netmask_length                            = 0      # Netmask.
+  # map_customer_owned_ip_on_launch                = false  # Specify true to indicate that network interfaces created in the subnet should be assigned a custo...
+  # map_public_ip_on_launch                        = false  # Specify true to indicate that instances launched into the subnet should be assigned a public IP a...
+  # outpost_arn                                    = ""     # ARN of the Outpost.
+  # private_dns_hostname_type_on_launch            = ""     # The type of hostnames to assign to instances in the subnet at launch.
+  # region                                         = ""     # Region where this resource will be managed.
+  # tags                                           = {}     # A map of tags to assign to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_subnet</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an VPC Subnet resource.</description>
+</snippet>

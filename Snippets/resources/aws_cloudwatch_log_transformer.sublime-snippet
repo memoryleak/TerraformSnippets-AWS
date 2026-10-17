@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_log_transformer" "${1:name}" {
+  log_group_arn = "${2:log_group_arn}"  # Log group ARN to set the transformer for.
+
+  # region = ""  # Region where this resource will be managed.
+  # transformer_config {}  # Specifies the configuration of the transformer.
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_log_transformer</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS CloudWatch Logs Transformer.</description>
+</snippet>

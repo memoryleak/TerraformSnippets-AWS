@@ -1,0 +1,24 @@
+<snippet>
+<content><![CDATA[
+resource "aws_devicefarm_network_profile" "${1:name}" {
+  name        = "${2:name}"         # The name for the network profile.
+  project_arn = "${3:project_arn}"  # The ARN of the project for the network profile.
+
+  # description             = ""  # The description of the network profile.
+  # downlink_bandwidth_bits = 0   # The data throughput rate in bits per second, as an integer from 0 to 104857600.
+  # downlink_delay_ms       = 0   # Delay time for all packets to destination in milliseconds as an integer from 0 to 2000.
+  # downlink_jitter_ms      = 0   # Time variation in the delay of received packets in milliseconds as an integer from 0 to 2000.
+  # downlink_loss_percent   = 0   # Proportion of received packets that fail to arrive from 0 to 100 percent.
+  # region                  = ""  # Region where this resource will be managed.
+  # tags                    = {}  # A map of tags to assign to the resource.
+  # type                    = ""  # The type of network profile to create.
+  # uplink_bandwidth_bits   = 0   # The data throughput rate in bits per second, as an integer from 0 to 104857600.
+  # uplink_delay_ms         = 0   # Delay time for all packets to destination in milliseconds as an integer from 0 to 2000.
+  # uplink_jitter_ms        = 0   # Time variation in the delay of received packets in milliseconds as an integer from 0 to 2000.
+  # uplink_loss_percent     = 0   # Proportion of received packets that fail to arrive from 0 to 100 percent.
+}
+]]></content>
+<tabTrigger>aws_devicefarm_network_profile</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Devicefarm network profile</description>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+data "aws_route53_delegation_set" "${1:name}" {
+}
+]]></content>
+<tabTrigger>data_aws_route53_delegation_set</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific Route 53 Delegation Set</description>
+</snippet>

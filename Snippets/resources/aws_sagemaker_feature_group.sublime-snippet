@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sagemaker_feature_group" "${1:name}" {
+  event_time_feature_name        = "${2:event_time_feature_name}"         # The name of the feature that stores the EventTime of a Record in a Feature Group.
+  feature_group_name             = "${3:feature_group_name}"              # The name of the Feature Group.
+  record_identifier_feature_name = "${4:record_identifier_feature_name}"  # The name of the Feature whose value uniquely identifies a Record defined in the Feature Store.
+  role_arn                       = "${5:role_arn}"
+  feature_definition {
+  }
+
+  # description = ""
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Map of resource tags for the resource.
+  # offline_store_config {}
+  # online_store_config {}
+  # throughput_config {}
+}
+]]></content>
+<tabTrigger>aws_sagemaker_feature_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a SageMaker AI Feature Group resource.</description>
+</snippet>

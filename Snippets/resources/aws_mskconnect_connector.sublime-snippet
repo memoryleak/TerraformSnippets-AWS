@@ -1,0 +1,41 @@
+<snippet>
+<content><![CDATA[
+resource "aws_mskconnect_connector" "${1:name}" {
+  connector_configuration    = {${2}}                             # Map of keys to values that represent the configuration for the connector.
+  kafkaconnect_version       = "${3:kafkaconnect_version}"        # Version of Kafka Connect.
+  name                       = "${4:name}"                        # Name of the connector.
+  service_execution_role_arn = "${5:service_execution_role_arn}"  # ARN of the IAM role used by the connector to access the Amazon Web Services resources that it needs.
+  capacity {
+  }
+  kafka_cluster {
+    apache_kafka_cluster {
+      bootstrap_servers = "${6:bootstrap_servers}"
+      vpc {
+        security_groups = [${7}]
+        subnets         = [${8}]
+      }
+    }
+  }
+  kafka_cluster_client_authentication {
+  }
+  kafka_cluster_encryption_in_transit {
+  }
+  plugin {
+    custom_plugin {
+      arn      = "${9:arn}"
+      revision = ${10:0}
+    }
+  }
+
+  # description = ""  # Summary description of the connector.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Map of tags to assign to the resource.
+  # log_delivery {}  # Details about log delivery.
+  # timeouts {}
+  # worker_configuration {}  # Worker configuration to use with the connector.
+}
+]]></content>
+<tabTrigger>aws_mskconnect_connector</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Amazon MSK Connect Connector resource.</description>
+</snippet>

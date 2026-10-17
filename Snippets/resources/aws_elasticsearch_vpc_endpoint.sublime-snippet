@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_elasticsearch_vpc_endpoint" "${1:name}" {
+  domain_arn = "${2:domain_arn}"  # ARN of the domain to create the endpoint for
+  vpc_options {
+    subnet_ids = [${3}]
+  }
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_elasticsearch_vpc_endpoint</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS elasticsearch VPC Endpoint.</description>
+</snippet>

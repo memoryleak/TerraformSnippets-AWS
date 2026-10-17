@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpclattice_auth_policy" "${1:name}" {
+  policy              = "${2:policy}"               # Auth policy.
+  resource_identifier = "${3:resource_identifier}"  # ID or ARN of the service network or service for which the policy is created.
+
+  # region = ""  # Region where this resource will be managed.
+  # state  = ""  # State of the auth policy.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_vpclattice_auth_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS VPC Lattice Auth Policy.</description>
+</snippet>

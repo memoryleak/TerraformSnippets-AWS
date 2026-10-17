@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ecrpublic_repository" "${1:name}" {
+  repository_name = "${2:repository_name}"  # Name of the repository.
+
+  # force_destroy = false
+  # region        = ""     # Region where this resource will be managed.
+  # tags          = {}     # Key-value mapping of resource tags.
+  # catalog_data {}  # Catalog data configuration for the repository.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ecrpublic_repository</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Public Elastic Container Registry Repository.</description>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_networkmanager_global_network" "${1:name}" {
+  # description = ""  # Description of the Global Network.
+  # tags        = {}  # Key-value tags for the Global Network.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_networkmanager_global_network</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Network Manager Global Network.</description>
+</snippet>

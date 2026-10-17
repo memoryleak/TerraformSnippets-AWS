@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_cloudfront_log_delivery_canonical_user_id" "${1:name}" {
+  # region = ""  # Name of the Region whose canonical user ID is desired.
+}
+]]></content>
+<tabTrigger>data_aws_cloudfront_log_delivery_canonical_user_id</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides the canonical user ID of the AWS awslogsdelivery account for CloudFront bucket logging.</description>
+</snippet>

@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_rekognition_project" "${1:name}" {
+  name = "${2:name}"  # Desired name of the project.
+
+  # auto_update = ""  # Specify if automatic retraining should occur.
+  # feature     = ""  # Specify the feature being customized.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Map of tags assigned to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_rekognition_project</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Rekognition Project.</description>
+</snippet>

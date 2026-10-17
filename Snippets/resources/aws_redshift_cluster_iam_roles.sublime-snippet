@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_redshift_cluster_iam_roles" "${1:name}" {
+  cluster_identifier = "${2:cluster_identifier}"  # The name of the Redshift Cluster IAM Roles.
+
+  # default_iam_role_arn = ""  # ARN for the IAM role that was set as default for the cluster when the cluster was created.
+  # iam_role_arns        = []  # A list of IAM Role ARNs to associate with the cluster.
+  # region               = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_redshift_cluster_iam_roles</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Redshift Cluster IAM Roles resource.</description>
+</snippet>

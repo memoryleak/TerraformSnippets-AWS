@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_securityhub_organization_admin_account" "${1:name}" {
+  admin_account_id = "${2:admin_account_id}"  # The AWS account identifier of the account to designate as the Security Hub administrator account.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_securityhub_organization_admin_account</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Security Hub administrator account for an organization.</description>
+</snippet>

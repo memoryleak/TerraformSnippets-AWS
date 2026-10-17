@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dynamodb_global_secondary_index" "${1:name}" {
+  index_name = "${2:index_name}"  # Name of the index.
+  table_name = "${3:table_name}"  # Name of the table this index belongs to.
+
+  # region          = ""  # Region where this resource will be managed.
+  # warm_throughput = {}  # Sets the number of warm read and write units for this index.
+  # key_schema {}  # Set of nested attribute definitions.
+  # on_demand_throughput {}  # Sets the maximum number of read and write units for the index.
+  # projection {}  # Describes which attributes from the table are represented in the index.
+  # provisioned_throughput {}  # Provisioned throughput for the index.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_dynamodb_global_secondary_index</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a DynamoDB Global Secondary Index resource</description>
+</snippet>

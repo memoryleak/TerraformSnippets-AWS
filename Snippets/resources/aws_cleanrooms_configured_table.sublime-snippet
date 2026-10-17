@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cleanrooms_configured_table" "${1:name}" {
+  allowed_columns = [${2}]                  # - The columns of the references table which will be included in the configured table.
+  analysis_method = "${3:analysis_method}"  # - The analysis method for the configured table.
+  name            = "${4:name}"             # - The name of the configured table.
+  table_reference {
+    database_name = "${5:database_name}"
+    table_name    = "${6:table_name}"
+  }
+
+  # description = ""  # - A description for the configured table.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # - Key value pairs which tag the configured table.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_cleanrooms_configured_table</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Clean Rooms Configured Table.</description>
+</snippet>

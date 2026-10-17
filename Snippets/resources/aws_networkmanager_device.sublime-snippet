@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_networkmanager_device" "${1:name}" {
+  global_network_id = "${2:global_network_id}"  # ID of the global network.
+
+  # description   = ""  # Description of the device.
+  # model         = ""  # Model of device.
+  # serial_number = ""  # Serial number of the device.
+  # site_id       = ""  # ID of the site.
+  # tags          = {}  # Key-value tags for the device.
+  # type          = ""  # Type of device.
+  # vendor        = ""  # Vendor of the device.
+  # aws_location {}  # AWS location of the device.
+  # location {}  # Location of the device.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_networkmanager_device</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Network Manager Device.</description>
+</snippet>

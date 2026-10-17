@@ -1,0 +1,26 @@
+<snippet>
+<content><![CDATA[
+resource "aws_elasticache_serverless_cache" "${1:name}" {
+  engine = "${2:engine}"  # Name of the cache engine to be used for this cache cluster.
+  name   = "${3:name}"    # The Cluster name which serves as a unique identifier to the serverless cache
+
+  # daily_snapshot_time      = ""  # The daily time that snapshots will be created from the new serverless cache.
+  # description              = ""  # User-provided description for the serverless cache.
+  # kms_key_id               = ""  # ARN of the customer managed key for encrypting the data at rest.
+  # major_engine_version     = ""  # The version of the cache engine that will be used to create the serverless cache.
+  # network_type             = ""  # IP protocol version used by the serverless cache.
+  # region                   = ""  # Region where this resource will be managed.
+  # security_group_ids       = []  # A list of the one or more VPC security groups to be associated with the serverless cache.
+  # snapshot_arns_to_restore = []  # The list of ARN(s) of the snapshot that the new serverless cache will be created from.
+  # snapshot_retention_limit = 0   # The number of snapshots that will be retained for the serverless cache that is being created.
+  # subnet_ids               = []  # A list of the identifiers of the subnets where the VPC endpoint for the serverless cache will be...
+  # tags                     = {}  # Map of tags to assign to the resource.
+  # user_group_id            = ""  # The identifier of the UserGroup to be associated with the serverless cache.
+  # cache_usage_limits {}  # Sets the cache usage limits for storage and ElastiCache Processing Units for the cache.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_elasticache_serverless_cache</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an ElastiCache Serverless Cache resource.</description>
+</snippet>

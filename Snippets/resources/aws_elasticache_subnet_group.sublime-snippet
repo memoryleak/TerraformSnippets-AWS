@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_elasticache_subnet_group" "${1:name}" {
+  name       = "${2:name}"  # Name for the cache subnet group.
+  subnet_ids = [${3}]       # List of VPC Subnet IDs for the cache subnet group
+
+  # description = ""  # Description for the cache subnet group.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Key-value map of resource tags.
+}
+]]></content>
+<tabTrigger>aws_elasticache_subnet_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an ElastiCache Subnet Group resource.</description>
+</snippet>

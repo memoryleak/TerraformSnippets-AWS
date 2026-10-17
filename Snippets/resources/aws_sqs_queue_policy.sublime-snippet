@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sqs_queue_policy" "${1:name}" {
+  policy    = "${2:policy}"     # JSON policy for the SQS queue.
+  queue_url = "${3:queue_url}"  # URL of the SQS Queue to which to attach the policy.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_sqs_queue_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a SQS Queue Policy resource.</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_log_delivery_destination_policy" "${1:name}" {
+  delivery_destination_name   = "${2:delivery_destination_name}"    # The name of the delivery destination to assign this policy to.
+  delivery_destination_policy = "${3:delivery_destination_policy}"  # The contents of the policy.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_log_delivery_destination_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS CloudWatch Logs Delivery Destination Policy.</description>
+</snippet>

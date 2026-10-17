@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_amplify_backend_environment" "${1:name}" {
+  app_id           = "${2:app_id}"            # Unique ID for an Amplify app.
+  environment_name = "${3:environment_name}"  # Name for the backend environment.
+
+  # deployment_artifacts = ""  # Name of deployment artifacts.
+  # region               = ""  # Region where this resource will be managed.
+  # stack_name           = ""  # AWS CloudFormation stack name of a backend environment.
+}
+]]></content>
+<tabTrigger>aws_amplify_backend_environment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Amplify Backend Environment resource.</description>
+</snippet>

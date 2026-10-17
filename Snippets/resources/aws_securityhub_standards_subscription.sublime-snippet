@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_securityhub_standards_subscription" "${1:name}" {
+  standards_arn = "${2:standards_arn}"  # The ARN of a standard - see below.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_securityhub_standards_subscription</tabTrigger>
+<scope>source.terraform</scope>
+<description>Subscribes to a Security Hub standard.</description>
+</snippet>

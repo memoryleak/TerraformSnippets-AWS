@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_servicecatalog_service_action" "${1:name}" {
+  name = "${2:name}"  # Self-service action name.
+  definition {
+    name    = "${3:name}"
+    version = "${4:version}"
+  }
+
+  # accept_language = ""  # Language code.
+  # description     = ""  # Self-service action description.
+  # region          = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_servicecatalog_service_action</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Service Catalog Service Action</description>
+</snippet>

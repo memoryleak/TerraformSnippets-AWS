@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ssmcontacts_plan" "${1:name}" {
+  contact_id = "${2:contact_id}"  # The ARN of the contact or escalation plan.
+  stage {
+    duration_in_minutes = ${3:0}
+  }
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_ssmcontacts_plan</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS SSM Contact Plan.</description>
+</snippet>

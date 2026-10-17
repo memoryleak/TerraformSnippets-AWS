@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_elasticache_parameter_group" "${1:name}" {
+  family = "${2:family}"  # The family of the ElastiCache parameter group.
+  name   = "${3:name}"    # The name of the ElastiCache parameter group.
+
+  # description = ""  # The description of the ElastiCache parameter group.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Key-value mapping of resource tags.
+  # parameter {}  # A list of ElastiCache parameters to apply.
+}
+]]></content>
+<tabTrigger>aws_elasticache_parameter_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an ElastiCache parameter group resource.</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ses_template" "${1:name}" {
+  name = "${2:name}"  # Name of the template.
+
+  # html    = ""  # HTML body of the email.
+  # region  = ""  # Region where this resource will be managed.
+  # subject = ""  # Subject line of the email.
+  # text    = ""  # Email body that will be visible to recipients whose email clients do not display HTML.
+}
+]]></content>
+<tabTrigger>aws_ses_template</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to create a SES template</description>
+</snippet>

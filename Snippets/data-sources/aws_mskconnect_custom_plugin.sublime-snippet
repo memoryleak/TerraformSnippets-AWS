@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_mskconnect_custom_plugin" "${1:name}" {
+  name = "${2:name}"  # Name of the custom plugin.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_mskconnect_custom_plugin</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on an Amazon MSK Connect custom plugin.</description>
+</snippet>

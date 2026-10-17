@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lightsail_certificate" "${1:name}" {
+  name = "${2:name}"  # Name of the certificate.
+
+  # domain_name               = ""  # Domain name for which the certificate should be issued.
+  # region                    = ""  # Region where this resource will be managed.
+  # subject_alternative_names = []  # Set of domains that should be SANs in the issued certificate.
+  # tags                      = {}  # Map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_lightsail_certificate</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Lightsail SSL/TLS certificate for custom domains.</description>
+</snippet>

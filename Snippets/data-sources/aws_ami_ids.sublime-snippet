@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+data "aws_ami_ids" "${1:name}" {
+  owners = [${2}]  # List of AMI owners to limit search.
+
+  # executable_users   = []     # Limit search to users with *explicit* launch permission on the image.
+  # include_deprecated = false  # If true, all deprecated AMIs are included in the response.
+  # name_regex         = ""     # Regex string to apply to the AMI list returned by AWS.
+  # region             = ""     # Region where this resource will be managed.
+  # sort_ascending     = false  # Used to sort AMIs by creation time.
+  # filter {}  # One or more name/value pairs to filter off of.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_ami_ids</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides a list of AMI IDs.</description>
+</snippet>

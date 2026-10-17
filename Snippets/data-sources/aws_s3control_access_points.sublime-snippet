@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_s3control_access_points" "${1:name}" {
+  # account_id       = ""  # AWS account ID for the account that owns the specified access points.
+  # bucket           = ""  # Name of the bucket associated with the access points.
+  # data_source_id   = ""  # Unique identifier for the access points data source.
+  # data_source_type = ""  # Type of the data source that the access points are attached to.
+  # region           = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_s3control_access_points</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an AWS S3 Control Access Points.</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_ecs_service" "${1:name}" {
+  cluster_arn  = "${2:cluster_arn}"   # ARN of the ECS Cluster
+  service_name = "${3:service_name}"  # Name of the ECS Service
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_ecs_service</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an ecs service</description>
+</snippet>

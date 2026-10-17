@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ce_cost_category" "${1:name}" {
+  name         = "${2:name}"          # Unique name for the Cost Category.
+  rule_version = "${3:rule_version}"  # Rule schema version in this particular Cost Category.
+  rule {
+  }
+
+  # default_value   = ""  # Default value for the cost category.
+  # effective_start = ""  # The Cost Category's effective start date.
+  # tags            = {}  # Key-value mapping of resource tags.
+  # split_charge_rule {}  # Configuration block for the split charge rules used to allocate your charges between your Cost Ca...
+}
+]]></content>
+<tabTrigger>aws_ce_cost_category</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CE Cost Category Definition</description>
+</snippet>

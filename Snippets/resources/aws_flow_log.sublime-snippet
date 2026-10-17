@@ -1,0 +1,26 @@
+<snippet>
+<content><![CDATA[
+resource "aws_flow_log" "${1:name}" {
+  # deliver_cross_account_role    = ""  # ARN of the IAM role in the destination account used for cross-account delivery of flow logs.
+  # eni_id                        = ""  # Elastic Network Interface ID to attach to.
+  # iam_role_arn                  = ""  # ARN of the IAM role used to post flow logs.
+  # log_destination               = ""  # ARN of the logging destination.
+  # log_destination_type          = ""  # Logging destination type.
+  # log_format                    = ""  # Fields to include in the flow log record.
+  # max_aggregation_interval      = 0   # Maximum interval of time during which a flow of packets is captured and aggregated into a flow lo...
+  # region                        = ""  # Region where this resource will be managed.
+  # regional_nat_gateway_id       = ""  # Regional NAT Gateway ID to attach to.
+  # subnet_id                     = ""  # Subnet ID to attach to.
+  # tags                          = {}  # Key-value map of resource tags.
+  # traffic_type                  = ""  # Type of traffic to capture.
+  # transit_gateway_attachment_id = ""  # Transit Gateway Attachment ID to attach to.
+  # transit_gateway_id            = ""  # Transit Gateway ID to attach to.
+  # vpc_id                        = ""  # VPC ID to attach to.
+  # destination_options {}  # Destination options for a flow log.
+  # tag_field_specification {}  # Tag configuration for the Flow Logs Amazon EC2 Tags feature fields (e.g., \$\${instance-tag}) used...
+}
+]]></content>
+<tabTrigger>aws_flow_log</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a VPC/Subnet/ENI Flow Log</description>
+</snippet>

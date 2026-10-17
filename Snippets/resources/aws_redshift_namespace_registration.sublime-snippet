@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_redshift_namespace_registration" "${1:name}" {
+  consumer_identifier = "${2:consumer_identifier}"  # Consumer identifier for the registration.
+  namespace_type      = "${3:namespace_type}"       # Type of namespace being registered.
+
+  # provisioned_cluster_identifier  = ""  # Identifier of the provisioned cluster.
+  # region                          = ""  # Region where this resource will be managed.
+  # serverless_namespace_identifier = ""  # Identifier of the serverless namespace.
+  # serverless_workgroup_identifier = ""  # Identifier of the serverless workgroup.
+}
+]]></content>
+<tabTrigger>aws_redshift_namespace_registration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Registers a Redshift namespace to the AWS Glue Data Catalog</description>
+</snippet>

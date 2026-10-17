@@ -1,4 +1,4 @@
 .idea
 venv
-bin/__pycache__/
-bin/geckodriver.log
+.terraform/
+__pycache__/

@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_auditmanager_framework_share" "${1:name}" {
+  destination_account = "${2:destination_account}"  # Amazon Web Services account of the recipient.
+  destination_region  = "${3:destination_region}"   # Amazon Web Services region of the recipient.
+  framework_id        = "${4:framework_id}"         # Unique identifier for the shared custom framework.
+
+  # comment = ""  # Comment from the sender about the share request.
+  # region  = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_auditmanager_framework_share</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Audit Manager Framework Share.</description>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_bedrock_inference_profiles" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # type   = ""  # Filters for inference profiles that match the type you specify.
+}
+]]></content>
+<tabTrigger>data_aws_bedrock_inference_profiles</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about AWS Bedrock Inference Profiles.</description>
+</snippet>

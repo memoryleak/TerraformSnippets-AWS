@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_api_gateway_documentation_part" "${1:name}" {
+  properties  = "${2:properties}"   # Content map of API-specific key-value pairs describing the targeted API entity.
+  rest_api_id = "${3:rest_api_id}"  # ID of the associated Rest API
+  location {
+    type = "${4:type}"
+  }
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_api_gateway_documentation_part</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a settings of an API Gateway Documentation Part.</description>
+</snippet>

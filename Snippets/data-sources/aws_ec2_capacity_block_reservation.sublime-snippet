@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_ec2_capacity_block_reservation" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # filter {}  # Configuration block(s) for filtering.
+}
+]]></content>
+<tabTrigger>data_aws_ec2_capacity_block_reservation</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Information about an existing EC2 Capacity Block reservation.</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_elb" "${1:name}" {
+  name = "${2:name}"  # Unique name of the load balancer.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_elb</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides a classic Elastic Load Balancer data source.</description>
+</snippet>

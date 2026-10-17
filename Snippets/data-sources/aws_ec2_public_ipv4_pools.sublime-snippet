@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_ec2_public_ipv4_pools" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags, each pair of which must exactly match a pair on the desired pools.
+  # filter {}  # Custom filter block as described below.
+}
+]]></content>
+<tabTrigger>data_aws_ec2_public_ipv4_pools</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for getting information about AWS EC2 Public IPv4 Pools.</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_verifiedpermissions_schema" "${1:name}" {
+  policy_store_id = "${2:policy_store_id}"  # ID of the Policy Store.
+
+  # region = ""  # Region where this resource will be managed.
+  # definition {}  # Definition of the schema.
+}
+]]></content>
+<tabTrigger>aws_verifiedpermissions_schema</tabTrigger>
+<scope>source.terraform</scope>
+<description>This is a Terraform resource for managing an AWS Verified Permissions Policy Store Schema.</description>
+</snippet>

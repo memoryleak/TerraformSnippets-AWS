@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_s3_access_point" "${1:name}" {
+  name = "${2:name}"  # Name of the access point.
+
+  # account_id = ""  # AWS account ID for the account that owns the specified access point.
+  # region     = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_s3_access_point</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific S3 access point</description>
+</snippet>

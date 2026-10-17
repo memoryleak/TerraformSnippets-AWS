@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iot_role_alias" "${1:name}" {
+  alias    = "${2:alias}"     # The name of the role alias.
+  role_arn = "${3:role_arn}"  # The identity of the role to which the alias refers.
+
+  # credential_duration = 0   # The duration of the credential, in seconds.
+  # region              = ""  # Region where this resource will be managed.
+  # tags                = {}  # Key-value mapping of resource tags.
+}
+]]></content>
+<tabTrigger>aws_iot_role_alias</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an IoT role alias.</description>
+</snippet>

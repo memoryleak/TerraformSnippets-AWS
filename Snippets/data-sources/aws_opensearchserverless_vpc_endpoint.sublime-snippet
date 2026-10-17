@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_opensearchserverless_vpc_endpoint" "${1:name}" {
+  vpc_endpoint_id = "${2:vpc_endpoint_id}"  # The unique identifier of the endpoint.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_opensearchserverless_vpc_endpoint</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS OpenSearch Serverless VPC Endpoint.</description>
+</snippet>

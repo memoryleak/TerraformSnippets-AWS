@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_ecrpublic_authorization_token" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_ecrpublic_authorization_token</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a Public ECR Authorization Token</description>
+</snippet>

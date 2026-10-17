@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dsql_cluster" "${1:name}" {
+  # deletion_protection_enabled = false  # Whether deletion protection is enabled in this cluster.
+  # force_destroy               = false  # Destroys cluster even if deletion_protection_enabled is set to true.
+  # kms_encryption_key          = ""     # The ARN of the AWS KMS key that encrypts data in the DSQL Cluster, or "AWS_OWNED_KMS_KEY".
+  # region                      = ""     # Region where this resource will be managed.
+  # tags                        = {}     # Set of tags to be associated with the AWS DSQL Cluster resource.
+  # multi_region_properties {}  # Multi-region properties of the DSQL Cluster.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_dsql_cluster</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an Amazon Aurora DSQL Cluster.</description>
+</snippet>

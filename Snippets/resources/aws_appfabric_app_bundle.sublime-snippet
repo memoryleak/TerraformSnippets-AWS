@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appfabric_app_bundle" "${1:name}" {
+  # customer_managed_key_arn = ""  # ARN of the KMS key to use to encrypt the application data.
+  # region                   = ""  # Region where this resource will be managed.
+  # tags                     = {}  # Map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_appfabric_app_bundle</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS AppFabric AppBundle.</description>
+</snippet>

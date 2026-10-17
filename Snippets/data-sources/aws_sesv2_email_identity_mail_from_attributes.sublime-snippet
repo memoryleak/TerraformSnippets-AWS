@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_sesv2_email_identity_mail_from_attributes" "${1:name}" {
+  email_identity = "${2:email_identity}"  # Name of the email identity.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_sesv2_email_identity_mail_from_attributes</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS SESv2 (Simple Email V2) Email Identity Mail From Attrib...</description>
+</snippet>

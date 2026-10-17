@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_db_instances" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags, each pair of which must exactly match a pair on the desired instances.
+  # filter {}  # Configuration block(s) used to filter instances with AWS supported attributes, such as engine, db...
+}
+]]></content>
+<tabTrigger>data_aws_db_instances</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for listing RDS Database Instances.</description>
+</snippet>

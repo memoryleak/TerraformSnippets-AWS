@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_lex_bot" "${1:name}" {
+  name = "${2:name}"  # Name of the bot.
+
+  # region  = ""  # Region where this resource will be managed.
+  # version = ""  # Version or alias of the bot.
+}
+]]></content>
+<tabTrigger>data_aws_lex_bot</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific Lex Bot</description>
+</snippet>

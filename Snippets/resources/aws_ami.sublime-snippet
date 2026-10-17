@@ -1,0 +1,30 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ami" "${1:name}" {
+  name = "${2:name}"  # Region-unique name for the AMI.
+
+  # architecture        = ""     # Machine architecture for created instances.
+  # boot_mode           = ""     # Boot mode of the AMI.
+  # deprecation_time    = ""     # Date and time to deprecate the AMI.
+  # description         = ""     # Longer, human-readable description for the AMI.
+  # ena_support         = false  # Whether enhanced networking with ENA is enabled.
+  # image_location      = ""     # Path to an S3 object containing an image manifest, e.g., created
+  # imds_support        = ""     # If EC2 instances started from this image should require the use of the Instance Metadata Service...
+  # kernel_id           = ""     # ID of the kernel image (AKI) that will be used as the paravirtual
+  # ramdisk_id          = ""     # ID of an initrd image (ARI) that will be used when booting the
+  # region              = ""     # Region where this resource will be managed.
+  # root_device_name    = ""     # Name of the root device (for example, /dev/sda1, or /dev/xvda).
+  # sriov_net_support   = ""     # When set to "simple" (the default), enables enhanced networking
+  # tags                = {}     # Map of tags to assign to the resource.
+  # tpm_support         = ""     # If the image is configured for NitroTPM support, the value is v2.0.
+  # uefi_data           = ""     # Base64 representation of the non-volatile UEFI variable store.
+  # virtualization_type = ""     # Keyword to choose what virtualization mode created instances
+  # ebs_block_device {}  # Nested block describing an EBS block device that should be
+  # ephemeral_block_device {}  # Nested block describing an ephemeral block device that
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ami</tabTrigger>
+<scope>source.terraform</scope>
+<description>Creates and manages a custom Amazon Machine Image (AMI).</description>
+</snippet>

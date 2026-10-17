@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_odb_gi_versions" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # shape  = ""  # System shape.
+}
+]]></content>
+<tabTrigger>data_aws_odb_gi_versions</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source to retrieve available Grid Infrastructure versions of Oracle Database@AWS.</description>
+</snippet>

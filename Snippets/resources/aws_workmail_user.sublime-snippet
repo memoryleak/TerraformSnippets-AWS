@@ -1,0 +1,31 @@
+<snippet>
+<content><![CDATA[
+resource "aws_workmail_user" "${1:name}" {
+  display_name    = "${2:display_name}"     # Display name of the user.
+  email           = "${3:email}"            # Primary email address used to register the user with WorkMail.
+  name            = "${4:name}"             # Username of the user.
+  organization_id = "${5:organization_id}"  # Identifier of the WorkMail organization where the user is managed.
+
+  # city                            = ""     # City where the user is located.
+  # company                         = ""     # Company associated with the user.
+  # country                         = ""     # Country where the user is located.
+  # department                      = ""     # Department associated with the user.
+  # first_name                      = ""     # First name of the user.
+  # hidden_from_global_address_list = false  # Whether to hide the user from the global address list.
+  # identity_provider_user_id       = ""     # User ID from IAM Identity Center associated with the user.
+  # initials                        = ""     # Initials of the user.
+  # job_title                       = ""     # Job title of the user.
+  # last_name                       = ""     # Last name of the user.
+  # office                          = ""     # Office where the user is located.
+  # password                        = ""     # Password to set for the user.
+  # region                          = ""     # Region where this resource will be managed.
+  # street                          = ""     # Street address of the user.
+  # telephone                       = ""     # Telephone number of the user.
+  # user_role                       = ""     # Role assigned to the user.
+  # zip_code                        = ""     # ZIP or postal code of the user.
+}
+]]></content>
+<tabTrigger>aws_workmail_user</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS WorkMail User.</description>
+</snippet>

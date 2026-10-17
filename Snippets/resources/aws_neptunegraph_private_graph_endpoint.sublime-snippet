@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_neptunegraph_private_graph_endpoint" "${1:name}" {
+  graph_identifier = "${2:graph_identifier}"  # Unique identifier of the Neptune Analytics graph.
+  vpc_id           = "${3:vpc_id}"            # VPC in which the private graph endpoint needs to be created.
+
+  # region                 = ""  # Region where this resource will be managed.
+  # subnet_ids             = []  # Subnets in which private graph endpoint ENIs are created.
+  # vpc_security_group_ids = []  # Security groups to be attached to the private graph endpoint.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_neptunegraph_private_graph_endpoint</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Neptune Analytics Private Graph Endpoint.</description>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_wafregional_subscribed_rule_group" "${1:name}" {
+  # metric_name = ""  # Name of the WAF rule group.
+  # name        = ""  # Name of the WAF rule group.
+  # region      = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_wafregional_subscribed_rule_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: retrieves information about a Managed WAF Rule Group from AWS Marketplace for use in WAF Regional.</description>
+</snippet>

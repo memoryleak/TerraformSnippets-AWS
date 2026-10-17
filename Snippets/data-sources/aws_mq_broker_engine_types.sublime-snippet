@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_mq_broker_engine_types" "${1:name}" {
+  # engine_type = ""  # MQ engine type to return version details for.
+  # region      = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_mq_broker_engine_types</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about available MQ broker engine types.</description>
+</snippet>

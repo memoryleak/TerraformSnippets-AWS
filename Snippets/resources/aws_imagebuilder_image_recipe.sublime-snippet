@@ -1,0 +1,24 @@
+<snippet>
+<content><![CDATA[
+resource "aws_imagebuilder_image_recipe" "${1:name}" {
+  name         = "${2:name}"          # Name of the image recipe.
+  parent_image = "${3:parent_image}"  # The image recipe uses this image as a base from which to build your customized image.
+  version      = "${4:version}"       # The semantic version of the image recipe, which specifies the version in the following format, wi...
+  component {
+    component_arn = "${5:component_arn}"
+  }
+
+  # ami_tags          = {}  # Tags that are applied to the AMI that Image Builder creates during the Build phase prior to image...
+  # description       = ""  # Description of the image recipe.
+  # region            = ""  # Region where this resource will be managed.
+  # tags              = {}  # Key-value map of resource tags for the image recipe.
+  # user_data_base64  = ""  # Base64 encoded user data.
+  # working_directory = ""  # The working directory to be used during build and test workflows.
+  # block_device_mapping {}  # Configuration block(s) with block device mappings for the image recipe.
+  # systems_manager_agent {}  # Configuration block for the Systems Manager Agent installed by default by Image Builder.
+}
+]]></content>
+<tabTrigger>aws_imagebuilder_image_recipe</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manage an Image Builder Image Recipe</description>
+</snippet>

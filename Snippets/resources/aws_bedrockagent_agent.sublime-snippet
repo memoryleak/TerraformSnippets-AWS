@@ -1,0 +1,26 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrockagent_agent" "${1:name}" {
+  agent_name              = "${2:agent_name}"               # Name of the agent.
+  agent_resource_role_arn = "${3:agent_resource_role_arn}"  # ARN of the IAM role with permissions to invoke API operations on the agent.
+  foundation_model        = "${4:foundation_model}"         # Foundation model used for orchestration by the agent.
+
+  # agent_collaboration           = ""     # Agents collaboration role.
+  # customer_encryption_key_arn   = ""     # ARN of the AWS KMS key that encrypts the agent.
+  # description                   = ""     # Description of the agent.
+  # guardrail_configuration       = []     # Details about the guardrail associated with the agent.
+  # idle_session_ttl_in_seconds   = 0      # Number of seconds for which Amazon Bedrock keeps information about a user's conversation with the...
+  # instruction                   = ""     # Instructions that tell the agent what it should do and how it should interact with users.
+  # memory_configuration          = []     # Configurations for the agent's ability to retain the conversational context.
+  # prepare_agent                 = false  # Whether to prepare the agent after creation or modification.
+  # prompt_override_configuration = []     # Configurations to override prompt templates in different parts of an agent sequence.
+  # region                        = ""     # Region where this resource will be managed.
+  # skip_resource_in_use_check    = false  # Whether to skip the in-use check when deleting the agent.
+  # tags                          = {}     # Map of tags assigned to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_bedrockagent_agent</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Agents for Amazon Bedrock Agent.</description>
+</snippet>

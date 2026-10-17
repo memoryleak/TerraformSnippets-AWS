@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_servicecatalog_tag_option_resource_association" "${1:name}" {
+  resource_id   = "${2:resource_id}"    # Resource identifier.
+  tag_option_id = "${3:tag_option_id}"  # Tag Option identifier.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_servicecatalog_tag_option_resource_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Service Catalog Tag Option Resource Association</description>
+</snippet>

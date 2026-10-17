@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_backup_selection" "${1:name}" {
+  iam_role_arn = "${2:iam_role_arn}"  # ARN of the IAM role that AWS Backup uses to authenticate when restoring and backing up the target...
+  name         = "${3:name}"          # Display name of a resource selection document.
+  plan_id      = "${4:plan_id}"       # Backup plan ID to be associated with the selection of resources.
+
+  # not_resources = []  # Array of strings that either contain ARNs or match patterns of resources to exclude from a backup...
+  # region        = ""  # Region where this resource will be managed.
+  # resources     = []  # Array of strings that either contain ARNs or match patterns of resources to assign to a backup plan.
+  # condition {}  # Condition-based filters used to specify sets of resources for a backup plan.
+  # selection_tag {}  # Tag-based conditions used to specify a set of resources to assign to a backup plan.
+}
+]]></content>
+<tabTrigger>aws_backup_selection</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages selection conditions for AWS Backup plan resources.</description>
+</snippet>

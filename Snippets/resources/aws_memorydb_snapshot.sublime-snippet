@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_memorydb_snapshot" "${1:name}" {
+  cluster_name = "${2:cluster_name}"  # Name of the MemoryDB cluster to take a snapshot of.
+
+  # kms_key_arn = ""  # ARN of the KMS key used to encrypt the snapshot at rest.
+  # name        = ""  # Name of the snapshot.
+  # name_prefix = ""  # Creates a unique name beginning with the specified prefix.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Map of tags to assign to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_memorydb_snapshot</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a MemoryDB Snapshot.</description>
+</snippet>

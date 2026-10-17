@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_rbin_rule" "${1:name}" {
+  resource_type = "${2:resource_type}"  # Resource type to be retained by the retention rule.
+  retention_period {
+    retention_period_unit  = "${3:retention_period_unit}"
+    retention_period_value = ${4:0}
+  }
+
+  # description = ""  # Retention rule description.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}
+  # exclude_resource_tags {}  # Exclusion tags to use to identify resources that are to be excluded, or ignored, by a Region-leve...
+  # lock_configuration {}  # Information about the retention rule lock configuration.
+  # resource_tags {}  # Resource tags to use to identify resources that are to be retained by a tag-level retention rule.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_rbin_rule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS RBin Rule.</description>
+</snippet>

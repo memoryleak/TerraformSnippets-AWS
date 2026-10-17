@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_ssm_patch_baselines" "${1:name}" {
+  # default_baselines = false  # Only return baseline identities where default_baseline is true.
+  # region            = ""     # Region where this resource will be managed.
+  # filter {}  # Key-value pairs used to filter the results.
+}
+]]></content>
+<tabTrigger>data_aws_ssm_patch_baselines</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for retrieving AWS SSM (Systems Manager) Patch Baselines.</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lightsail_bucket" "${1:name}" {
+  bundle_id = "${2:bundle_id}"  # Bundle ID to use for the bucket.
+  name      = "${3:name}"       # Name for the bucket.
+
+  # force_delete = false  # Whether to force delete non-empty buckets using terraform destroy.
+  # region       = ""     # Region where this resource will be managed.
+  # tags         = {}     # Map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_lightsail_bucket</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Lightsail object storage bucket.</description>
+</snippet>

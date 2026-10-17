@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+data "aws_uxc_services" "${1:name}" {
+}
+]]></content>
+<tabTrigger>data_aws_uxc_services</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Data source for retrieving the list of AWS services available in UXC.</description>
+</snippet>

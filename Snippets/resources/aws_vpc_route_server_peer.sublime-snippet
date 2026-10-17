@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpc_route_server_peer" "${1:name}" {
+  peer_address             = "${2:peer_address}"              # IPv4 address of the peer device.
+  route_server_endpoint_id = "${3:route_server_endpoint_id}"  # ID of the route server endpoint for which to create a peer.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags to assign to the resource.
+  # bgp_options {}  # BGP options for the peer, including ASN (Autonomous System Number) and BFD (Bidrectional Forwardi...
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_vpc_route_server_peer</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing a VPC Route Server Peer.</description>
+</snippet>

@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_client_vpn_route" "${1:name}" {
+  client_vpn_endpoint_id = "${2:client_vpn_endpoint_id}"  # The ID of the Client VPN endpoint.
+  destination_cidr_block = "${3:destination_cidr_block}"  # The IPv4 or IPv6 address range, in CIDR notation, of the route destination.
+
+  # description          = ""  # A brief description of the route.
+  # region               = ""  # Region where this resource will be managed.
+  # target_vpc_subnet_id = ""  # The ID of the Subnet to route the traffic through.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ec2_client_vpn_route</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides additional routes for AWS Client VPN endpoints.</description>
+</snippet>

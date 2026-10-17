@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_db_subnet_group" "${1:name}" {
+  subnet_ids = [${2}]  # List of VPC subnet IDs.
+
+  # description = ""  # Description of the DB subnet group.
+  # name        = ""  # Name of the DB subnet group.
+  # name_prefix = ""  # Creates a unique name beginning with the specified prefix.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_db_subnet_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an RDS DB subnet group resource.</description>
+</snippet>

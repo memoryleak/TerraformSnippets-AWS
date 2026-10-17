@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_eks_capability" "${1:name}" {
+  capability_name           = "${2:capability_name}"            # Name of the capability.
+  cluster_name              = "${3:cluster_name}"               # Name of the EKS cluster.
+  delete_propagation_policy = "${4:delete_propagation_policy}"  # Delete propagation policy for the capability.
+  role_arn                  = "${5:role_arn}"                   # ARN of the IAM role to associate with the capability.
+  type                      = "${6:type}"                       # Type of the capability.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value map of resource tags.
+  # configuration {}  # Configuration for the capability.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_eks_capability</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an EKS Capability.</description>
+</snippet>

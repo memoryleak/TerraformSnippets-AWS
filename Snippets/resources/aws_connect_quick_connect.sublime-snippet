@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_connect_quick_connect" "${1:name}" {
+  instance_id = "${2:instance_id}"  # Specifies the identifier of the hosting Amazon Connect Instance.
+  name        = "${3:name}"         # Specifies the name of the Quick Connect.
+  quick_connect_config {
+    quick_connect_type = "${4:quick_connect_type}"
+  }
+
+  # description = ""  # Specifies the description of the Quick Connect.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Tags to apply to the Quick Connect.
+}
+]]></content>
+<tabTrigger>aws_connect_quick_connect</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides details about a specific Amazon Quick Connect</description>
+</snippet>

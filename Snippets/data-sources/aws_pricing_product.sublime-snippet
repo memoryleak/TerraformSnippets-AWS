@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_pricing_product" "${1:name}" {
+  service_code = "${2:service_code}"  # Code of the service.
+  filters {
+    field = "${3:field}"
+    value = "${4:value}"
+  }
+}
+]]></content>
+<tabTrigger>data_aws_pricing_product</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information regarding the pricing of an Amazon product</description>
+</snippet>

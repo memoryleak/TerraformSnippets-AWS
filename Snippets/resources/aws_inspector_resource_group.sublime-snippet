@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_inspector_resource_group" "${1:name}" {
+  tags = {${2}}  # Key-value map of tags that are used to select the EC2 instances to be included in an Amazon Inspe...
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_inspector_resource_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Amazon Inspector Classic Resource Group.</description>
+</snippet>

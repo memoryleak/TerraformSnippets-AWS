@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+data "aws_availability_zone" "${1:name}" {
+  # all_availability_zones = false  # Set to true to include all Availability Zones and Local Zones regardless of your opt in status.
+  # name                   = ""     # Full name of the availability zone to select.
+  # region                 = ""     # Region where this resource will be managed.
+  # state                  = ""     # Specific availability zone state to require.
+  # zone_id                = ""     # Zone ID of the availability zone to select.
+  # filter {}  # Configuration block(s) for filtering.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_availability_zone</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific availability zone</description>
+</snippet>

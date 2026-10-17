@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_media_convert_queue" "${1:name}" {
+  name = "${2:name}"  # Unique identifier describing the queue
+
+  # concurrent_jobs = 0   # Maximum number of jobs your queue can process concurrently.
+  # description     = ""  # Description of the queue
+  # pricing_plan    = ""  # Whether the pricing plan for the queue is on-demand or reserved.
+  # region          = ""  # Region where this resource will be managed.
+  # status          = ""  # Status of the queue.
+  # tags            = {}  # Map of tags to assign to the resource.
+  # reservation_plan_settings {}  # Detail pricing plan of the reserved queue.
+}
+]]></content>
+<tabTrigger>aws_media_convert_queue</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AWS Elemental MediaConvert Queue.</description>
+</snippet>

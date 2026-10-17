@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_ecs_clusters" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_ecs_clusters</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS ECS (Elastic Container) Clusters.</description>
+</snippet>

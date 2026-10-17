@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_connect_user_hierarchy_group" "${1:name}" {
+  instance_id = "${2:instance_id}"  # Specifies the identifier of the hosting Amazon Connect Instance.
+  name        = "${3:name}"         # The name of the user hierarchy group.
+
+  # parent_group_id = ""  # The identifier for the parent hierarchy group.
+  # region          = ""  # Region where this resource will be managed.
+  # tags            = {}  # Tags to apply to the hierarchy group.
+}
+]]></content>
+<tabTrigger>aws_connect_user_hierarchy_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides details about a specific Amazon Connect User Hierarchy Group</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_kms_key" "${1:name}" {
+  key_id = "${2:key_id}"  # Key identifier.
+
+  # grant_tokens = []  # List of grant tokens.
+  # region       = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_kms_key</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on a AWS Key Management Service (KMS) Key</description>
+</snippet>

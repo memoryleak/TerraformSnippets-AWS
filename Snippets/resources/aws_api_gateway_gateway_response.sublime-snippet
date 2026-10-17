@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_api_gateway_gateway_response" "${1:name}" {
+  response_type = "${2:response_type}"  # Response type of the associated GatewayResponse.
+  rest_api_id   = "${3:rest_api_id}"    # String identifier of the associated REST API.
+
+  # region              = ""  # Region where this resource will be managed.
+  # response_parameters = {}  # Map of parameters (paths, query strings and headers) of the Gateway Response.
+  # response_templates  = {}  # Map of templates used to transform the response body.
+  # status_code         = ""  # HTTP status code of the Gateway Response.
+}
+]]></content>
+<tabTrigger>aws_api_gateway_gateway_response</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an API Gateway Gateway Response for a REST API Gateway.</description>
+</snippet>

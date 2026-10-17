@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_api_gateway_usage_plan_key" "${1:name}" {
+  key_id        = "${2:key_id}"         # Identifier of the API key resource.
+  key_type      = "${3:key_type}"       # Type of the API key resource.
+  usage_plan_id = "${4:usage_plan_id}"  # ID of the usage plan resource representing to associate the key to.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_api_gateway_usage_plan_key</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an API Gateway Usage Plan Key.</description>
+</snippet>

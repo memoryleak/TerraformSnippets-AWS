@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_datapipeline_pipeline_definition" "${1:name}" {
+  pipeline_id = "${2:pipeline_id}"  # ID of the pipeline.
+  pipeline_object {
+    name = "${3:name}"
+  }
+
+  # region = ""  # Region where this resource will be managed.
+  # parameter_object {}  # Configuration block for the parameter objects used in the pipeline definition.
+  # parameter_value {}  # Configuration block for the parameter values used in the pipeline definition.
+}
+]]></content>
+<tabTrigger>aws_datapipeline_pipeline_definition</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a DataPipeline Definition.</description>
+</snippet>

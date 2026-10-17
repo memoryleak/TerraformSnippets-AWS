@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_managed_prefix_list" "${1:name}" {
+  address_family = "${2:address_family}"  # Address family (IPv4 or IPv6) of this prefix list.
+  max_entries    = ${3:0}                 # Maximum number of entries that this prefix list can contain.
+  name           = "${4:name}"            # Name of this resource.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags to assign to this resource.
+  # entry {}  # Configuration block for prefix list entry.
+}
+]]></content>
+<tabTrigger>aws_ec2_managed_prefix_list</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a managed prefix list resource.</description>
+</snippet>

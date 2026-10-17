@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cognito_log_delivery_configuration" "${1:name}" {
+  user_pool_id = "${2:user_pool_id}"  # The ID of the user pool for which to configure log delivery.
+
+  # region = ""  # The AWS region.
+  # log_configurations {}  # Configuration block for log delivery.
+}
+]]></content>
+<tabTrigger>aws_cognito_log_delivery_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Cognito IDP (Identity Provider) Log Delivery Configuration.</description>
+</snippet>

@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lambdamicrovms_image" "${1:name}" {
+  base_image_arn = "${2:base_image_arn}"  # ARN of the base MicroVM image.
+  build_role_arn = "${3:build_role_arn}"  # ARN of the IAM role used to build the image.
+  name           = "${4:name}"            # Name of the MicroVM image.
+
+  # additional_os_capabilities = []  # List of additional OS capabilities granted to the MicroVM runtime environment.
+  # base_image_version         = ""  # Major version number of the base MicroVM image to use (e.g., 1).
+  # description                = ""  # Description of the MicroVM image.
+  # egress_network_connectors  = []  # List of egress network connectors available to the MicroVM at runtime.
+  # environment_variables      = {}  # Map of environment variables set in the MicroVM runtime environment.
+  # region                     = ""  # Region where this resource will be managed.
+  # tags                       = {}  # Map of tags assigned to the resource.
+  # code_artifact {}  # Code artifact containing the application code and metadata for the image.
+  # cpu_configuration {}  # CPU configuration for the MicroVM.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_lambdamicrovms_image</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Lambda MicroVMs Image.</description>
+</snippet>

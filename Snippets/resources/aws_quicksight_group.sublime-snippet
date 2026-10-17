@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_quicksight_group" "${1:name}" {
+  group_name = "${2:group_name}"  # Name for the group.
+
+  # aws_account_id = ""  # AWS account ID.
+  # description    = ""  # Description for the group.
+  # namespace      = ""  # Namespace.
+  # region         = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_quicksight_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Resource QuickSight Group.</description>
+</snippet>

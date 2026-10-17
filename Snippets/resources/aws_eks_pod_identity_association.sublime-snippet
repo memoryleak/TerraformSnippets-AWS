@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_eks_pod_identity_association" "${1:name}" {
+  cluster_name    = "${2:cluster_name}"     # The name of the cluster to create the association in.
+  namespace       = "${3:namespace}"        # The name of the Kubernetes namespace inside the cluster to create the association in.
+  role_arn        = "${4:role_arn}"         # ARN of the IAM role to associate with the service account.
+  service_account = "${5:service_account}"  # The name of the Kubernetes service account inside the cluster to associate the IAM credentials with.
+
+  # disable_session_tags = false  # Disable the tags that are automatically added to role session by Amazon EKS.
+  # policy               = ""     # An IAM policy in JSON format (as an escaped string) that applies additional restrictions to this...
+  # region               = ""     # Region where this resource will be managed.
+  # tags                 = {}     # Key-value map of resource tags.
+  # target_role_arn      = ""     # ARN of the IAM role to be chained to the the IAM role specified as role_arn.
+}
+]]></content>
+<tabTrigger>aws_eks_pod_identity_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS EKS (Elastic Kubernetes) Pod Identity Association.</description>
+</snippet>

@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_location_place_index" "${1:name}" {
+  data_source = "${2:data_source}"  # Geospatial data provider for the new place index.
+  index_name  = "${3:index_name}"   # Name of the place index resource.
+
+  # description = ""  # Optional description for the place index resource.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Key-value tags for the place index.
+  # data_source_configuration {}  # Configuration block with the data storage option chosen for requesting Places.
+}
+]]></content>
+<tabTrigger>aws_location_place_index</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Location Service Place Index.</description>
+</snippet>

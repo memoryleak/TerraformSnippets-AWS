@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_gamelift_alias" "${1:name}" {
+  name = "${2:name}"  # Name of the alias.
+  routing_strategy {
+    type = "${3:type}"
+  }
+
+  # description = ""  # Description of the alias.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Key-value map of resource tags.
+}
+]]></content>
+<tabTrigger>aws_gamelift_alias</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a GameLift Alias resource.</description>
+</snippet>

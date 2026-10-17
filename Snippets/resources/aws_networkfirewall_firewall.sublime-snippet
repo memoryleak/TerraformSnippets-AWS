@@ -1,0 +1,26 @@
+<snippet>
+<content><![CDATA[
+resource "aws_networkfirewall_firewall" "${1:name}" {
+  firewall_policy_arn = "${2:firewall_policy_arn}"  # ARN of the VPC Firewall policy.
+  name                = "${3:name}"                 # A friendly name of the firewall.
+
+  # availability_zone_change_protection = false  # A setting indicating whether the firewall is protected against changes to its Availability Zone c...
+  # delete_protection                   = false  # A flag indicating whether the firewall is protected against deletion.
+  # description                         = ""     # A friendly description of the firewall.
+  # enabled_analysis_types              = []     # Set of types for which to collect analysis metrics.
+  # firewall_policy_change_protection   = false  # A flag indicating whether the firewall is protected against a change to the firewall policy assoc...
+  # region                              = ""     # Region where this resource will be managed.
+  # subnet_change_protection            = false  # A flag indicating whether the firewall is protected against changes to the subnet associations.
+  # tags                                = {}     # Map of resource tags to associate with the resource.
+  # transit_gateway_id                  = ""     # .
+  # vpc_id                              = ""     # Required when creating a VPC attached firewall.
+  # availability_zone_mapping {}  # Required when creating a transit gateway-attached firewall.
+  # encryption_configuration {}  # KMS encryption configuration settings.
+  # subnet_mapping {}  # Required when creating a VPC attached firewall.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_networkfirewall_firewall</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AWS Network Firewall Firewall resource.</description>
+</snippet>

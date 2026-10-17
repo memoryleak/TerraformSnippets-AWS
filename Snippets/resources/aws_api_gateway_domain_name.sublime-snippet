@@ -1,0 +1,28 @@
+<snippet>
+<content><![CDATA[
+resource "aws_api_gateway_domain_name" "${1:name}" {
+  domain_name = "${2:domain_name}"  # Fully-qualified domain name to register.
+
+  # certificate_arn                        = ""  # ARN for an AWS-managed certificate.
+  # certificate_body                       = ""  # Certificate issued for the domain name being registered, in PEM format.
+  # certificate_chain                      = ""  # Certificate for the CA that issued the certificate, along with any intermediate CA certificates r...
+  # certificate_name                       = ""  # Unique name to use when registering this certificate as an IAM server certificate.
+  # certificate_private_key                = ""  # Private key associated with the domain certificate given in certificate_body.
+  # endpoint_access_mode                   = ""  # Endpoint access mode of the DomainName.
+  # ownership_verification_certificate_arn = ""  # ARN of the AWS-issued certificate used to validate custom domain ownership (when certificate_arn...
+  # policy                                 = ""  # Stringified JSON policy document that applies to the execute-api service for this DomainName rega...
+  # region                                 = ""  # Region where this resource will be managed.
+  # regional_certificate_arn               = ""  # ARN for an AWS-managed certificate.
+  # regional_certificate_name              = ""  # User-friendly name of the certificate that will be used by regional endpoint for this domain name.
+  # routing_mode                           = ""  # Mode to route traffic for the domain name.
+  # security_policy                        = ""  # TLS version + cipher suite for this DomainName.
+  # tags                                   = {}  # Key-value map of resource tags.
+  # endpoint_configuration {}  # Configuration block defining API endpoint information including type.
+  # mutual_tls_authentication {}  # Mutual TLS authentication configuration for the domain name.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_api_gateway_domain_name</tabTrigger>
+<scope>source.terraform</scope>
+<description>Registers a custom domain name for use with AWS API Gateway.</description>
+</snippet>

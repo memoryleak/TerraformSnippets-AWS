@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpc_peering_connection_options" "${1:name}" {
+  vpc_peering_connection_id = "${2:vpc_peering_connection_id}"  # ID of the requester VPC peering connection.
+
+  # region = ""  # Region where this resource will be managed.
+  # accepter {}  # Configuration block for VPC Peering Connection options to set for the VPC that accepts the peerin...
+  # requester {}  # Configuration block for VPC Peering Connection options to set for the VPC that requests the peeri...
+}
+]]></content>
+<tabTrigger>aws_vpc_peering_connection_options</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage VPC peering connection options.</description>
+</snippet>

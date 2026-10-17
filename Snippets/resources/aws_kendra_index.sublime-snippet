@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+resource "aws_kendra_index" "${1:name}" {
+  name     = "${2:name}"      # Name of the Index.
+  role_arn = "${3:role_arn}"  # AWS Identity and Access Management (IAM) role that gives Amazon Kendra permissions to access your...
+
+  # description         = ""  # Description of the Index.
+  # edition             = ""  # Amazon Kendra edition to use for the index.
+  # region              = ""  # Region where this resource will be managed.
+  # tags                = {}  # Map of tags to assign to the Index.
+  # user_context_policy = ""  # User context policy.
+  # capacity_units {}  # Block that sets the number of additional document storage and query capacity units that should be...
+  # document_metadata_configuration_updates {}  # One or more blocks that specify the configuration settings for any metadata applied to the docume...
+  # server_side_encryption_configuration {}  # Block that specifies the identifier of the AWS KMS customer managed key (CMK) that's used to encr...
+  # timeouts {}
+  # user_group_resolution_configuration {}  # Block that enables fetching access levels of groups and users from an AWS Single Sign-On identity...
+  # user_token_configurations {}  # Block that specifies the user token configuration.
+}
+]]></content>
+<tabTrigger>aws_kendra_index</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Amazon Kendra Index resource.</description>
+</snippet>

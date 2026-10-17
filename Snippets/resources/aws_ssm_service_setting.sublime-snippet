@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ssm_service_setting" "${1:name}" {
+  setting_id    = "${2:setting_id}"     # ID of the service setting.
+  setting_value = "${3:setting_value}"  # Value of the service setting.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_ssm_service_setting</tabTrigger>
+<scope>source.terraform</scope>
+<description>Defines how a user interacts with or uses a service or a feature of a service.</description>
+</snippet>

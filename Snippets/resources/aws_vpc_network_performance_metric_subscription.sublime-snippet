@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpc_network_performance_metric_subscription" "${1:name}" {
+  destination = "${2:destination}"  # Target Region or Availability Zone that the metric subscription is enabled for.
+  source      = "${3:source}"       # Source Region or Availability Zone that the metric subscription is enabled for.
+
+  # metric    = ""  # Metric used for the enabled subscription.
+  # region    = ""  # Region where this resource will be managed.
+  # statistic = ""  # Statistic used for the enabled subscription.
+}
+]]></content>
+<tabTrigger>aws_vpc_network_performance_metric_subscription</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage an Infrastructure Performance subscription.</description>
+</snippet>

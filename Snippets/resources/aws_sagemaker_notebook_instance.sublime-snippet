@@ -1,0 +1,26 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sagemaker_notebook_instance" "${1:name}" {
+  instance_type = "${2:instance_type}"  # The name of ML compute instance type.
+  name          = "${3:name}"           # The name of the notebook instance (must be unique).
+  role_arn      = "${4:role_arn}"       # The ARN of the IAM role to be used by the notebook instance which allows SageMaker AI to call oth...
+
+  # additional_code_repositories = []  # An array of up to three Git repositories to associate with the notebook instance.
+  # default_code_repository      = ""  # The Git repository associated with the notebook instance as its default code repository.
+  # direct_internet_access       = ""  # Set to Disabled to disable internet access to notebook.
+  # kms_key_id                   = ""  # KMS key that Amazon SageMaker AI uses to encrypt the model artifacts at rest using Amazon S3 serv...
+  # lifecycle_config_name        = ""  # The name of a lifecycle configuration to associate with the notebook instance.
+  # platform_identifier          = ""  # The platform identifier of the notebook instance runtime environment.
+  # region                       = ""  # Region where this resource will be managed.
+  # root_access                  = ""  # Whether root access is Enabled or Disabled for users of the notebook instance.
+  # security_groups              = []  # The associated security groups.
+  # subnet_id                    = ""  # The VPC subnet ID.
+  # tags                         = {}  # A map of tags to assign to the resource.
+  # volume_size                  = 0   # The size, in GB, of the ML storage volume to attach to the notebook instance.
+  # instance_metadata_service_configuration {}  # Information on the IMDS configuration of the notebook instance.
+}
+]]></content>
+<tabTrigger>aws_sagemaker_notebook_instance</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a SageMaker AI Notebook Instance resource.</description>
+</snippet>

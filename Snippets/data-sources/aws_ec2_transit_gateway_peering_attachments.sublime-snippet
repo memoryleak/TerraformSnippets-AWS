@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_ec2_transit_gateway_peering_attachments" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # filter {}  # One or more configuration blocks containing name-values filters.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_ec2_transit_gateway_peering_attachments</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on EC2 Transit Gateway Peering Attachments</description>
+</snippet>

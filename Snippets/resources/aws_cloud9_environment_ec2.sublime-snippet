@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloud9_environment_ec2" "${1:name}" {
+  image_id      = "${2:image_id}"       # Identifier for the AMI that's used to create the EC2 instance.
+  instance_type = "${3:instance_type}"  # The type of instance to connect to the environment, e.g., t2.micro.
+  name          = "${4:name}"           # The name of the environment.
+
+  # automatic_stop_time_minutes = 0   # The number of minutes until the running instance is shut down after the environment has last been...
+  # connection_type             = ""  # The connection type used for connecting to an Amazon EC2 environment.
+  # description                 = ""  # The description of the environment.
+  # owner_arn                   = ""  # The ARN of the environment owner.
+  # region                      = ""  # Region where this resource will be managed.
+  # subnet_id                   = ""  # The ID of the subnet in Amazon VPC that AWS Cloud9 will use to communicate with the Amazon EC2 in...
+  # tags                        = {}  # Key-value map of resource tags.
+}
+]]></content>
+<tabTrigger>aws_cloud9_environment_ec2</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Cloud9 EC2 Development Environment.</description>
+</snippet>

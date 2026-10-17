@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iam_instance_profile" "${1:name}" {
+  # name        = ""  # Name of the instance profile.
+  # name_prefix = ""  # Creates a unique name beginning with the specified prefix.
+  # path        = ""  # Path to the instance profile.
+  # role        = ""  # Name of the role to add to the profile.
+  # tags        = {}  # Map of resource tags for the IAM Instance Profile.
+}
+]]></content>
+<tabTrigger>aws_iam_instance_profile</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an IAM instance profile.</description>
+</snippet>

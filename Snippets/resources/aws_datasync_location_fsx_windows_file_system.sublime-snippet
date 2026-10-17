@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_datasync_location_fsx_windows_file_system" "${1:name}" {
+  fsx_filesystem_arn  = "${2:fsx_filesystem_arn}"  # ARN for the FSx for Windows file system.
+  password            = "${3:password}"            # The password of the user who has the permissions to access files and folders in the FSx for Windo...
+  security_group_arns = [${4}]                     # ARNs of the security groups that are to use to configure the FSx for Windows file system.
+  user                = "${5:user}"                # The user who has the permissions to access files and folders in the FSx for Windows file system.
+
+  # domain       = ""  # The name of the Windows domain that the FSx for Windows server belongs to.
+  # region       = ""  # Region where this resource will be managed.
+  # subdirectory = ""  # Subdirectory to perform actions as source or destination.
+  # tags         = {}  # Key-value pairs of resource tags to assign to the DataSync Location.
+}
+]]></content>
+<tabTrigger>aws_datasync_location_fsx_windows_file_system</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an FSx Windows Location within AWS DataSync.</description>
+</snippet>

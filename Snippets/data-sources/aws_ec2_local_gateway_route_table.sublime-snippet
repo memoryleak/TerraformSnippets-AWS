@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+data "aws_ec2_local_gateway_route_table" "${1:name}" {
+  # local_gateway_id             = ""  # ID of the specific local gateway route table to retrieve.
+  # local_gateway_route_table_id = ""  # Local Gateway Route Table ID assigned to desired local gateway route table
+  # outpost_arn                  = ""  # ARN of the Outpost the local gateway route table is associated with.
+  # region                       = ""  # Region where this resource will be managed.
+  # state                        = ""  # State of the local gateway route table.
+  # tags                         = {}  # Mapping of tags, each pair of which must exactly match
+  # filter {}
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_ec2_local_gateway_route_table</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an EC2 Local Gateway Route Table</description>
+</snippet>

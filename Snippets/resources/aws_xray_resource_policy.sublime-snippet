@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_xray_resource_policy" "${1:name}" {
+  policy_document = "${2:policy_document}"  # JSON string of the resource policy or resource policy document, which can be up to 5kb in size.
+  policy_name     = "${3:policy_name}"      # Name of the resource policy.
+
+  # bypass_policy_lockout_check = false  # Whether to bypass the resource policy lockout safety check.
+  # policy_revision_id          = ""     # Specific policy revision, to ensure an atomic create operation.
+  # region                      = ""     # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_xray_resource_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS X-Ray Resource Policy.</description>
+</snippet>

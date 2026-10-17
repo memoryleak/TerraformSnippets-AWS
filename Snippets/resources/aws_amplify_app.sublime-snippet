@@ -1,0 +1,33 @@
+<snippet>
+<content><![CDATA[
+resource "aws_amplify_app" "${1:name}" {
+  name = "${2:name}"  # Name for an Amplify app.
+
+  # access_token                  = ""     # Personal access token for a third-party source control system for an Amplify app.
+  # auto_branch_creation_patterns = []     # Automated branch creation glob patterns for an Amplify app.
+  # basic_auth_credentials        = ""     # Credentials for basic authorization for an Amplify app.
+  # build_spec                    = ""     # The build specification (build spec) for an Amplify app.
+  # compute_role_arn              = ""     # AWS Identity and Access Management (IAM) SSR compute role for an Amplify app.
+  # custom_headers                = ""     # The custom HTTP headers for an Amplify app.
+  # description                   = ""     # Description for an Amplify app.
+  # enable_auto_branch_creation   = false  # Enables automated branch creation for an Amplify app.
+  # enable_basic_auth             = false  # Enables basic authorization for an Amplify app.
+  # enable_branch_auto_build      = false  # Enables auto-building of branches for the Amplify App.
+  # enable_branch_auto_deletion   = false  # Automatically disconnects a branch in the Amplify Console when you delete a branch from your Git...
+  # environment_variables         = {}     # Environment variables map for an Amplify app.
+  # iam_service_role_arn          = ""     # AWS Identity and Access Management (IAM) service role for an Amplify app.
+  # oauth_token                   = ""     # OAuth token for a third-party source control system for an Amplify app.
+  # platform                      = ""     # Platform or framework for an Amplify app.
+  # region                        = ""     # Region where this resource will be managed.
+  # repository                    = ""     # Repository for an Amplify app.
+  # tags                          = {}     # Key-value mapping of resource tags.
+  # auto_branch_creation_config {}  # Automated branch creation configuration for an Amplify app.
+  # cache_config {}  # Cache configuration for the Amplify app.
+  # custom_rule {}  # Custom rewrite and redirect rules for an Amplify app.
+  # job_config {}  # Used to configure the Amplify Application build instance compute type.
+}
+]]></content>
+<tabTrigger>aws_amplify_app</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Amplify App resource.</description>
+</snippet>

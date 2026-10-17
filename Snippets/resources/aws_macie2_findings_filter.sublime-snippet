@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_macie2_findings_filter" "${1:name}" {
+  action = "${2:action}"  # Action to perform on findings that meet the filter criteria (finding_criteria).
+  finding_criteria {
+  }
+
+  # description = ""  # Custom description of the filter.
+  # name        = ""  # Custom name for the filter.
+  # name_prefix = ""  # Creates a unique name beginning with the specified prefix.
+  # position    = 0   # Position of the filter in the list of saved filters on the Amazon Macie console.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Map of tags to assign to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_macie2_findings_filter</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage an Amazon Macie Findings Filter.</description>
+</snippet>

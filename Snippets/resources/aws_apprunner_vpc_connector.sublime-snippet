@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_apprunner_vpc_connector" "${1:name}" {
+  security_groups    = [${2}]                     # List of IDs of security groups that App Runner should use for access to AWS resources under the s...
+  subnets            = [${3}]                     # List of IDs of subnets that App Runner should use when it associates your service with a custom A...
+  vpc_connector_name = "${4:vpc_connector_name}"  # Name for the VPC connector.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value map of resource tags.
+}
+]]></content>
+<tabTrigger>aws_apprunner_vpc_connector</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an App Runner VPC Connector.</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_opensearch_authorize_vpc_endpoint_access" "${1:name}" {
+  account     = "${2:account}"      # AWS account ID to grant access to.
+  domain_name = "${3:domain_name}"  # Name of OpenSearch Service domain to provide access to.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_opensearch_authorize_vpc_endpoint_access</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS OpenSearch Authorize VPC Endpoint Access.</description>
+</snippet>

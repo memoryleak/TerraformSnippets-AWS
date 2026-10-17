@@ -1,0 +1,31 @@
+<snippet>
+<content><![CDATA[
+resource "aws_quicksight_account_subscription" "${1:name}" {
+  account_name          = "${2:account_name}"           # Name of your Amazon QuickSight account.
+  authentication_method = "${3:authentication_method}"  # Method that you want to use to authenticate your Amazon QuickSight account.
+  edition               = "${4:edition}"                # Edition of Amazon QuickSight that you want your account to have.
+  notification_email    = "${5:notification_email}"     # Email address that you want Amazon QuickSight to send notifications to regarding your Amazon Quic...
+
+  # active_directory_name            = ""  # Name of your Active Directory.
+  # admin_group                      = []  # Admin group associated with your Active Directory or IAM Identity Center account.
+  # admin_pro_group                  = []  # Admin PRO group associated with your Active Directory or IAM Identity Center account.
+  # author_group                     = []  # Author group associated with your Active Directory or IAM Identity Center account.
+  # author_pro_group                 = []  # Author PRO group associated with your Active Directory or IAM Identity Center account.
+  # aws_account_id                   = ""  # AWS account ID.
+  # contact_number                   = ""  # 10-digit phone number for the author of the Amazon QuickSight account to use for future communica...
+  # directory_id                     = ""  # Active Directory ID that is associated with your Amazon QuickSight account.
+  # email_address                    = ""  # Email address of the author of the Amazon QuickSight account to use for future communications.
+  # first_name                       = ""  # First name of the author of the Amazon QuickSight account to use for future communications.
+  # iam_identity_center_instance_arn = ""  # ARN for the IAM Identity Center instance.
+  # last_name                        = ""  # Last name of the author of the Amazon QuickSight account to use for future communications.
+  # reader_group                     = []  # Reader group associated with your Active Directory or IAM Identity Center account.
+  # reader_pro_group                 = []  # Reader PRO group associated with your Active Directory or IAM Identity Center account.
+  # realm                            = ""  # Realm of the Active Directory that is associated with your Amazon QuickSight account.
+  # region                           = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_quicksight_account_subscription</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS QuickSight Account Subscription.</description>
+</snippet>

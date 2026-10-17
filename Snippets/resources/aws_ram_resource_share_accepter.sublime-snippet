@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ram_resource_share_accepter" "${1:name}" {
+  share_arn = "${2:share_arn}"  # ARN of the resource share.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ram_resource_share_accepter</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages accepting a Resource Access Manager (RAM) Resource Share invitation.</description>
+</snippet>

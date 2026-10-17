@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_connect_queue" "${1:name}" {
+  hours_of_operation_id = "${2:hours_of_operation_id}"  # Specifies the identifier of the Hours of Operation.
+  instance_id           = "${3:instance_id}"            # Specifies the identifier of the hosting Amazon Connect Instance.
+  name                  = "${4:name}"                   # Specifies the name of the Queue.
+
+  # description       = ""  # Specifies the description of the Queue.
+  # max_contacts      = 0   # Specifies the maximum number of contacts that can be in the queue before it is considered full.
+  # quick_connect_ids = []  # Specifies a list of quick connects IDs that determine the quick connects available to agents who...
+  # region            = ""  # Region where this resource will be managed.
+  # status            = ""  # Specifies the description of the Queue.
+  # tags              = {}  # Tags to apply to the Queue.
+  # outbound_caller_config {}  # A block that defines the outbound caller ID name, number, and outbound whisper flow.
+}
+]]></content>
+<tabTrigger>aws_connect_queue</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides details about a specific Amazon Connect Queue</description>
+</snippet>

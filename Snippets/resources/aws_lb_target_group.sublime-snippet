@@ -1,0 +1,34 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lb_target_group" "${1:name}" {
+  # connection_termination             = false  # Whether to terminate connections at the end of the deregistration timeout on Network Load Balancers.
+  # deregistration_delay               = ""     # Amount time for Elastic Load Balancing to wait before changing the state of a deregistering targe...
+  # ip_address_type                    = ""
+  # lambda_multi_value_headers_enabled = false  # Whether the request and response headers exchanged between the load balancer and the Lambda funct...
+  # load_balancing_algorithm_type      = ""     # Determines how the load balancer selects targets when routing requests.
+  # load_balancing_anomaly_mitigation  = ""     # Determines whether to enable target anomaly mitigation.
+  # load_balancing_cross_zone_enabled  = ""     # Indicates whether cross zone load balancing is enabled.
+  # name                               = ""     # Name of the target group.
+  # name_prefix                        = ""     # Creates a unique name beginning with the specified prefix.
+  # port                               = 0      # (May be required, Forces new resource) Port on which targets receive traffic, unless overridden w...
+  # preserve_client_ip                 = ""     # Whether client IP preservation is enabled.
+  # protocol                           = ""     # (May be required, Forces new resource) Protocol to use for routing traffic to the targets.
+  # protocol_version                   = ""     # Only applicable when protocol is HTTP or HTTPS.
+  # proxy_protocol_v2                  = false  # Whether to enable support for proxy protocol v2 on Network Load Balancers.
+  # region                             = ""     # Region where this resource will be managed.
+  # slow_start                         = 0      # Amount time for targets to warm up before the load balancer sends them a full share of requests.
+  # tags                               = {}     # Map of tags to assign to the resource.
+  # target_control_port                = 0      # Port on which the target control agent and application load balancer exchange management traffic...
+  # target_type                        = ""     # Type of target that you must specify when registering targets with this target group.
+  # vpc_id                             = ""     # Identifier of the VPC in which to create the target group.
+  # health_check {}  # Health Check configuration block.
+  # stickiness {}  # Stickiness configuration block.
+  # target_failover {}  # Target failover block.
+  # target_group_health {}  # Target health requirements block.
+  # target_health_state {}  # Target health state block.
+}
+]]></content>
+<tabTrigger>aws_lb_target_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Target Group resource for use with Load Balancers.</description>
+</snippet>

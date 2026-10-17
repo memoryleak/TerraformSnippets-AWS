@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_alb_target_group_attachment" "${1:name}" {
+  target_group_arn = "${2:target_group_arn}"
+  target_id        = "${3:target_id}"
+
+  # availability_zone = ""
+  # port              = 0
+  # quic_server_id    = ""
+  # region            = ""
+}
+]]></content>
+<tabTrigger>aws_alb_target_group_attachment</tabTrigger>
+<scope>source.terraform</scope>
+<description>aws_alb_target_group_attachment</description>
+</snippet>

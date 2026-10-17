@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_elb_attachment" "${1:name}" {
+  elb      = "${2:elb}"       # The name of the ELB.
+  instance = "${3:instance}"  # Instance ID to place in the ELB pool.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_elb_attachment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Elastic Load Balancer Attachment resource.</description>
+</snippet>

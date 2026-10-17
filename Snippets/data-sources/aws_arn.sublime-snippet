@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_arn" "${1:name}" {
+  arn = "${2:arn}"  # ARN to parse.
+}
+]]></content>
+<tabTrigger>data_aws_arn</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Parses an ARN into its constituent parts.</description>
+</snippet>

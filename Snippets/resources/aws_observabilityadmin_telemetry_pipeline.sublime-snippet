@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_observabilityadmin_telemetry_pipeline" "${1:name}" {
+  name = "${2:name}"  # Name of the telemetry pipeline.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value map of resource tags.
+  # configuration {}  # Configuration block for the telemetry pipeline.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_observabilityadmin_telemetry_pipeline</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS CloudWatch Observability Admin Telemetry Pipeline.</description>
+</snippet>

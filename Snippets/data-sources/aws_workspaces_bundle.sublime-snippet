@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_workspaces_bundle" "${1:name}" {
+  # bundle_id = ""  # ID of the bundle.
+  # name      = ""  # Name of the bundle.
+  # owner     = ""  # Owner of the bundles.
+  # region    = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_workspaces_bundle</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Retrieve information about an AWS WorkSpaces bundle.</description>
+</snippet>

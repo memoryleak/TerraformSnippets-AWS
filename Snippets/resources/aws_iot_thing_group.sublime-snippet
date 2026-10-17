@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iot_thing_group" "${1:name}" {
+  name = "${2:name}"  # The name of the Thing Group.
+
+  # parent_group_name = ""  # The name of the parent Thing Group.
+  # region            = ""  # Region where this resource will be managed.
+  # tags              = {}  # Key-value mapping of resource tags
+  # properties {}  # The Thing Group properties.
+}
+]]></content>
+<tabTrigger>aws_iot_thing_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS IoT Thing Group.</description>
+</snippet>

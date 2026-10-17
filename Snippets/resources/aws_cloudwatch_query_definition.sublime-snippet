@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_query_definition" "${1:name}" {
+  name         = "${2:name}"          # The name of the query.
+  query_string = "${3:query_string}"  # The query to save.
+
+  # log_group_names = []  # Specific log groups to use with the query.
+  # region          = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_query_definition</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudWatch Logs query definition resource.</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_osis_pipeline_endpoint" "${1:name}" {
+  pipeline_arn = "${2:pipeline_arn}"  # ARN of the pipeline to create the endpoint for.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+  # vpc_options {}  # VPC options for the pipeline endpoint.
+}
+]]></content>
+<tabTrigger>aws_osis_pipeline_endpoint</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS OpenSearch Ingestion Pipeline Endpoint.</description>
+</snippet>

@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_networkmonitor_probe" "${1:name}" {
+  destination  = "${2:destination}"   # The destination IP address.
+  monitor_name = "${3:monitor_name}"  # The name of the monitor.
+  protocol     = "${4:protocol}"      # The protocol used for the network traffic between the source and destination.
+  source_arn   = "${5:source_arn}"    # The ARN of the subnet.
+
+  # destination_port = 0   # The port associated with the destination.
+  # packet_size      = 0   # The size of the packets sent between the source and destination.
+  # region           = ""  # Region where this resource will be managed.
+  # tags             = {}  # Key-value tags for the monitor.
+}
+]]></content>
+<tabTrigger>aws_networkmonitor_probe</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an Amazon Network Monitor Probe.</description>
+</snippet>

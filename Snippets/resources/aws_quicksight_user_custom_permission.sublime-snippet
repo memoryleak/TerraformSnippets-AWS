@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_quicksight_user_custom_permission" "${1:name}" {
+  custom_permissions_name = "${2:custom_permissions_name}"  # Custom permissions profile name.
+  user_name               = "${3:user_name}"                # Username of the user.
+
+  # aws_account_id = ""  # AWS account ID.
+  # namespace      = ""  # Namespace that the user belongs to.
+  # region         = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_quicksight_user_custom_permission</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages the custom permissions profile for a user.</description>
+</snippet>

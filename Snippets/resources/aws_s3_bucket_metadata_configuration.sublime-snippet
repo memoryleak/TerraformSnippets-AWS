@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3_bucket_metadata_configuration" "${1:name}" {
+  bucket = "${2:bucket}"  # General purpose bucket that you want to create the metadata configuration for.
+
+  # region = ""  # Region where this resource will be managed.
+  # metadata_configuration {}  # Metadata configuration.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_s3_bucket_metadata_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages Amazon S3 Metadata for a bucket.</description>
+</snippet>

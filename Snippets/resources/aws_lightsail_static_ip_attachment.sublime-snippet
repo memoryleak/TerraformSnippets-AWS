@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lightsail_static_ip_attachment" "${1:name}" {
+  instance_name  = "${2:instance_name}"   # Name of the Lightsail instance to attach the IP to.
+  static_ip_name = "${3:static_ip_name}"  # Name of the allocated static IP.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_lightsail_static_ip_attachment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Lightsail Static IP Attachment.</description>
+</snippet>

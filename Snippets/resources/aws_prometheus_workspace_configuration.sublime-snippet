@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_prometheus_workspace_configuration" "${1:name}" {
+  workspace_id = "${2:workspace_id}"  # ID of the workspace to configure.
+
+  # out_of_order_time_window_in_seconds = 0   # Time window in seconds for accepting out-of-order samples.
+  # region                              = ""  # Region where this resource will be managed.
+  # retention_period_in_days            = 0   # Number of days to retain metric data in the workspace.
+  # rule_query_offset_in_seconds        = 0   # Query offset in seconds for rule evaluation.
+  # limits_per_label_set {}  # Configuration block for setting limits on metrics with specific label sets.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_prometheus_workspace_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Managed Service for Prometheus Workspace Configuration.</description>
+</snippet>

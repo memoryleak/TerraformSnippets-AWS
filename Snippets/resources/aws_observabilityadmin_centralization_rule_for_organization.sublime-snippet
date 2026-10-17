@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_observabilityadmin_centralization_rule_for_organization" "${1:name}" {
+  rule_name = "${2:rule_name}"  # Name of the centralization rule.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value map of resource tags.
+  # rule {}  # Configuration block for the centralization rule.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_observabilityadmin_centralization_rule_for_organization</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS CloudWatch Observability Admin Centralization Rule For Organization.</description>
+</snippet>

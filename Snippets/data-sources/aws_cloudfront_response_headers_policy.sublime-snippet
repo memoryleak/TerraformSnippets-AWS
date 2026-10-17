@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_cloudfront_response_headers_policy" "${1:name}" {
+  # name = ""  # Unique name to identify the response headers policy.
+}
+]]></content>
+<tabTrigger>data_aws_cloudfront_response_headers_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Use this data source to retrieve information about a CloudFront response headers policy.</description>
+</snippet>

@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ssmcontacts_rotation" "${1:name}" {
+  contact_ids  = [${2}]               # ARNs of the contacts to add to the rotation.
+  name         = "${3:name}"          # The name for the rotation.
+  time_zone_id = "${4:time_zone_id}"  # The time zone to base the rotation’s activity on in Internet Assigned Numbers Authority (IANA) fo...
+
+  # region     = ""  # Region where this resource will be managed.
+  # start_time = ""  # The date and time, in RFC 3339 format, that the rotation goes into effect.
+  # tags       = {}  # A map of tags to assign to the resource.
+  # recurrence {}  # Information about when an on-call rotation is in effect and how long the rotation period lasts.
+}
+]]></content>
+<tabTrigger>aws_ssmcontacts_rotation</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Terraform resource for managing a Contacts Rotation in AWS Systems Manager Incident Ma...</description>
+</snippet>

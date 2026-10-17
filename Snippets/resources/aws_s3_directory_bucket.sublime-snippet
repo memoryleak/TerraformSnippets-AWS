@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3_directory_bucket" "${1:name}" {
+  bucket = "${2:bucket}"  # Name of the bucket.
+
+  # data_redundancy = ""     # Data redundancy.
+  # force_destroy   = false  # Boolean that indicates all objects should be deleted from the bucket *when the bucket is destroye...
+  # region          = ""     # Region where this resource will be managed.
+  # tags            = {}     # Map of tags to assign to the bucket.
+  # type            = ""     # Bucket type.
+  # location {}  # Bucket location.
+}
+]]></content>
+<tabTrigger>aws_s3_directory_bucket</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Amazon S3 Express directory bucket resource.</description>
+</snippet>

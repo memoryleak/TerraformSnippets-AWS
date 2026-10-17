@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ssm_default_patch_baseline" "${1:name}" {
+  baseline_id      = "${2:baseline_id}"       # ID of the patch baseline.
+  operating_system = "${3:operating_system}"  # The operating system the patch baseline applies to.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_ssm_default_patch_baseline</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Systems Manager Default Patch Baseline.</description>
+</snippet>

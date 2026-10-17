@@ -1,0 +1,32 @@
+<snippet>
+<content><![CDATA[
+resource "aws_storagegateway_nfs_file_share" "${1:name}" {
+  client_list  = [${2}]               # The list of clients that are allowed to access the file gateway.
+  gateway_arn  = "${3:gateway_arn}"   # ARN of the file gateway.
+  location_arn = "${4:location_arn}"  # The ARN of the backed storage used for storing file data.
+  role_arn     = "${5:role_arn}"      # The ARN of the AWS Identity and Access Management (IAM) role that a file gateway assumes when it...
+
+  # audit_destination_arn   = ""     # ARN of the storage used for audit logs.
+  # bucket_region           = ""     # The region of the S3 bucket used by the file share.
+  # default_storage_class   = ""     # The default storage class for objects put into an Amazon S3 bucket by the file gateway.
+  # file_share_name         = ""     # The name of the file share.
+  # guess_mime_type_enabled = false  # Boolean value that enables guessing of the MIME type for uploaded objects based on file extensions.
+  # kms_encrypted           = false  # Boolean value if true to use Amazon S3 server side encryption with your own AWS KMS key, or false...
+  # kms_key_arn             = ""     # ARN for KMS key used for Amazon S3 server side encryption.
+  # notification_policy     = ""     # The notification policy of the file share.
+  # object_acl              = ""     # Access Control List permission for S3 objects.
+  # read_only               = false  # Boolean to indicate write status of file share.
+  # region                  = ""     # Region where this resource will be managed.
+  # requester_pays          = false  # Boolean who pays the cost of the request and the data download from the Amazon S3 bucket.
+  # squash                  = ""     # Maps a user to anonymous user.
+  # tags                    = {}     # Key-value map of resource tags.
+  # vpc_endpoint_dns_name   = ""     # The DNS name of the VPC endpoint for S3 PrivateLink.
+  # cache_attributes {}  # Refresh cache information.
+  # nfs_file_share_defaults {}  # Nested argument with file share default values.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_storagegateway_nfs_file_share</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Storage Gateway NFS File Share</description>
+</snippet>

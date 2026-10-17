@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_log_account_policy" "${1:name}" {
+  policy_document = "${2:policy_document}"  # Text of the account policy.
+  policy_name     = "${3:policy_name}"      # Name of the account policy.
+  policy_type     = "${4:policy_type}"      # Type of account policy.
+
+  # region             = ""  # Region where this resource will be managed.
+  # scope              = ""  # Currently defaults to and only accepts the value: ALL.
+  # selection_criteria = ""  # - Criteria for applying a subscription filter policy to a selection of log groups.
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_log_account_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudWatch Log Account Policy resource.</description>
+</snippet>

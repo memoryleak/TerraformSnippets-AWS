@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+data "aws_elasticache_reserved_cache_node_offering" "${1:name}" {
+  cache_node_type     = "${2:cache_node_type}"      # Node type for the reserved cache node.
+  duration            = "${3:duration}"             # Duration of the reservation in RFC3339 duration format.
+  offering_type       = "${4:offering_type}"        # Offering type of this reserved cache node.
+  product_description = "${5:product_description}"  # Engine type for the reserved cache node.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_elasticache_reserved_cache_node_offering</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Information about a single ElastiCache Reserved Cache Node Offering.</description>
+</snippet>

@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sagemaker_workteam" "${1:name}" {
+  description   = "${2:description}"    # A description of the work team.
+  workteam_name = "${3:workteam_name}"  # The name of the Workteam (must be unique).
+  member_definition {
+  }
+
+  # region         = ""  # Region where this resource will be managed.
+  # tags           = {}  # A map of tags to assign to the resource.
+  # workforce_name = ""  # The name of the workforce.
+  # notification_configuration {}  # Configures notification of workers regarding available or expiring work items.
+  # worker_access_configuration {}  # Use this optional parameter to constrain access to an Amazon S3 resource based on the IP address...
+}
+]]></content>
+<tabTrigger>aws_sagemaker_workteam</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a SageMaker AI Workteam resource.</description>
+</snippet>

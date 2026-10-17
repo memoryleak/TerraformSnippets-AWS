@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+data "aws_route53_resolver_rule" "${1:name}" {
+  # domain_name          = ""  # Domain name the desired resolver rule forwards DNS queries for.
+  # name                 = ""  # Friendly name of the desired resolver rule.
+  # region               = ""  # Region where this resource will be managed.
+  # resolver_endpoint_id = ""
+  # resolver_rule_id     = ""
+  # rule_type            = ""  # Rule type of the desired resolver rule.
+  # tags                 = {}
+}
+]]></content>
+<tabTrigger>data_aws_route53_resolver_rule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific Route53 Resolver rule</description>
+</snippet>

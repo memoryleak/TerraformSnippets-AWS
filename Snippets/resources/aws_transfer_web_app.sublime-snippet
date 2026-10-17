@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_transfer_web_app" "${1:name}" {
+  # access_endpoint         = ""  # URL provided to interact with the Transfer Family web app.
+  # region                  = ""  # Region where this resource will be managed.
+  # tags                    = {}  # Key-value pairs that can be used to group and search for web apps.
+  # web_app_endpoint_policy = ""  # Type of endpoint policy for the web app.
+  # web_app_units           = []  # Block for number of concurrent connections or the user sessions on the web app.
+  # endpoint_details {}  # Block for the endpoint configuration for the web app.
+  # identity_provider_details {}  # Block for details of the identity provider to use with the web app.
+}
+]]></content>
+<tabTrigger>aws_transfer_web_app</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Transfer Family Web App.</description>
+</snippet>

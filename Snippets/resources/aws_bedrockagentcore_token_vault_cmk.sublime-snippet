@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrockagentcore_token_vault_cmk" "${1:name}" {
+  # region         = ""  # Region where this resource will be managed.
+  # token_vault_id = ""  # Token vault ID.
+  # kms_configuration {}  # KMS configuration for the token vault.
+}
+]]></content>
+<tabTrigger>aws_bedrockagentcore_token_vault_cmk</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages the customer master key (CMK) for a token vault.</description>
+</snippet>

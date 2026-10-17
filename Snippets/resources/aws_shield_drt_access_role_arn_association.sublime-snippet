@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_shield_drt_access_role_arn_association" "${1:name}" {
+  role_arn = "${2:role_arn}"  # ARN of the role the SRT will use to access your AWS account.
+
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_shield_drt_access_role_arn_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Shield DRT Access Role ARN Association.</description>
+</snippet>

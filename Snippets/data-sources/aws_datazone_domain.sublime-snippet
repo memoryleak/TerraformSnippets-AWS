@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_datazone_domain" "${1:name}" {
+  # name   = ""  # Name of the Domain.
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_datazone_domain</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS DataZone Domain.</description>
+</snippet>

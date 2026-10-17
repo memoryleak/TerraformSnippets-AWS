@@ -1,0 +1,29 @@
+<snippet>
+<content><![CDATA[
+resource "aws_odb_network" "${1:name}" {
+  availability_zone_id = "${2:availability_zone_id}"  # AZ ID of the AZ where the ODB network is located.
+  backup_subnet_cidr   = "${3:backup_subnet_cidr}"    # CIDR range of the backup subnet for the ODB network.
+  client_subnet_cidr   = "${4:client_subnet_cidr}"    # CIDR notation for the network resource.
+  display_name         = "${5:display_name}"          # User-friendly name for the odb network.
+  s3_access            = "${6:s3_access}"             # Configuration for Amazon S3 access from the ODB network.
+  zero_etl_access      = "${7:zero_etl_access}"       # Configuration for Zero-ETL access from the ODB network.
+
+  # availability_zone                      = ""     # Name of the Availability Zone (AZ) where the odb network is located.
+  # cross_region_s3_restore_sources_access = []     # List of regions enabled for cross-region restore in the ODB network.
+  # custom_domain_name                     = ""     # Name of the custom domain that the network is located.
+  # default_dns_prefix                     = ""     # Default DNS prefix for the network resource.
+  # delete_associated_resources            = false  # If set to true deletes associated OCI resources.
+  # kms_access                             = ""     # Configuration for KMS access from the ODB network.
+  # kms_policy_document                    = ""     # Endpoint policy for KMS access from the ODB network.
+  # region                                 = ""     # Region where this resource will be managed.
+  # s3_policy_document                     = ""     # Endpoint policy for Amazon S3 access from the ODB network.
+  # sts_access                             = ""     # Configuration for STS access from the ODB network.
+  # sts_policy_document                    = ""     # Endpoint policy for STS access from the ODB network.
+  # tags                                   = {}     # Map of tags to assign to the exadata infrastructure.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_odb_network</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing odb network of an Oracle Database@AWS.</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iot_thing_type" "${1:name}" {
+  name = "${2:name}"  # The name of the thing type.
+
+  # deprecated = false  # Whether the thing type is deprecated.
+  # region     = ""     # Region where this resource will be managed.
+  # tags       = {}     # Key-value mapping of resource tags.
+  # properties {}  # , Configuration block that can contain the following properties of the thing type:
+}
+]]></content>
+<tabTrigger>aws_iot_thing_type</tabTrigger>
+<scope>source.terraform</scope>
+<description>Creates and manages an AWS IoT Thing Type.</description>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_ecr_pull_through_cache_rule" "${1:name}" {
+  ecr_repository_prefix = "${2:ecr_repository_prefix}"  # The repository name prefix to use when caching images from the source registry.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_ecr_pull_through_cache_rule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an ECR Pull Through Cache Rule</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lb_cookie_stickiness_policy" "${1:name}" {
+  lb_port       = ${2:0}                # The load balancer port to which the policy
+  load_balancer = "${3:load_balancer}"  # The load balancer to which the policy
+  name          = "${4:name}"           # The name of the stickiness policy.
+
+  # cookie_expiration_period = 0   # The time period after which
+  # region                   = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_lb_cookie_stickiness_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a load balancer cookie stickiness policy, which allows an ELB to control the sticky sess...</description>
+</snippet>

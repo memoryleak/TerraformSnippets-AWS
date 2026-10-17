@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iam_role_policy_attachments_exclusive" "${1:name}" {
+  policy_arns = [${2}]            # A list of managed IAM policy ARNs to be attached to the role.
+  role_name   = "${3:role_name}"  # IAM role name.
+}
+]]></content>
+<tabTrigger>aws_iam_role_policy_attachments_exclusive</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for maintaining exclusive management of managed IAM policies assigned to an AW...</description>
+</snippet>

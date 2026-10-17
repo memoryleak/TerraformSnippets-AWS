@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_lb_hosted_zone_id" "${1:name}" {
+  # load_balancer_type = ""  # Type of load balancer to create.
+  # region             = ""  # Name of the Region whose AWS ELB HostedZoneId is desired.
+}
+]]></content>
+<tabTrigger>data_aws_lb_hosted_zone_id</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides AWS Elastic Load Balancing Hosted Zone Id</description>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_waf_xss_match_set" "${1:name}" {
+  name = "${2:name}"  # The name or description of the SizeConstraintSet.
+
+  # xss_match_tuples {}  # The parts of web requests that you want to inspect for cross-site scripting attacks.
+}
+]]></content>
+<tabTrigger>aws_waf_xss_match_set</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a AWS WAF XssMatchSet resource.</description>
+</snippet>

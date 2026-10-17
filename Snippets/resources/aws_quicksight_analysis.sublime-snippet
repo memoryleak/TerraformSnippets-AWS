@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_quicksight_analysis" "${1:name}" {
+  analysis_id = "${2:analysis_id}"  # Identifier for the analysis.
+  name        = "${3:name}"         # Display name for the analysis.
+
+  # aws_account_id          = ""  # AWS account ID.
+  # recovery_window_in_days = 0   # Value that specifies the number of days that Amazon QuickSight waits before it deletes the analysis.
+  # region                  = ""  # Region where this resource will be managed.
+  # tags                    = {}  # Key-value map of resource tags.
+  # theme_arn               = ""  # ARN of the theme that is being used for this analysis.
+  # definition {}  # Detailed analysis definition.
+  # parameters {}  # Parameters for the creation of the analysis, which you want to use to override the default settings.
+  # permissions {}  # Set of resource permissions on the analysis.
+  # source_entity {}  # Entity that you are using as a source when you create the analysis (template).
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_quicksight_analysis</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a QuickSight Analysis.</description>
+</snippet>

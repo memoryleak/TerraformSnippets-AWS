@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_ec2_public_ipv4_pool" "${1:name}" {
+  pool_id = "${2:pool_id}"  # AWS resource IDs of a public IPv4 pool (as a string) for which this data source will fetch detail...
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_ec2_public_ipv4_pool</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific AWS EC2 Public IPv4 Pool.</description>
+</snippet>

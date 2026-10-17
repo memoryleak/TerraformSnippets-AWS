@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_wafregional_ipset" "${1:name}" {
+  name = "${2:name}"  # Name of the WAF Regional IP set.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_wafregional_ipset</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Retrieves an AWS WAF Regional IP set id.</description>
+</snippet>

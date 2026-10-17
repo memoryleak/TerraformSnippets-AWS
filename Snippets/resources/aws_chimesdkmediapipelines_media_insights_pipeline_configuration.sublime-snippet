@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_chimesdkmediapipelines_media_insights_pipeline_configuration" "${1:name}" {
+  name                     = "${2:name}"                      # Configuration name.
+  resource_access_role_arn = "${3:resource_access_role_arn}"  # ARN of IAM Role used by service to invoke processors and sinks specified by configuration elements.
+  elements {
+    type = "${4:type}"
+  }
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value map of tags for the resource.
+  # real_time_alert_configuration {}  # Configuration for real-time alert rules to send EventBridge notifications when certain conditions...
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_chimesdkmediapipelines_media_insights_pipeline_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Chime SDK Media Pipelines Media Insights Pipeline Configur...</description>
+</snippet>

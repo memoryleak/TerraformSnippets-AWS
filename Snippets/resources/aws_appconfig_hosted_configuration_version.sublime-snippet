@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appconfig_hosted_configuration_version" "${1:name}" {
+  application_id           = "${2:application_id}"            # Application ID.
+  configuration_profile_id = "${3:configuration_profile_id}"  # Configuration profile ID.
+  content                  = "${4:content}"                   # Content of the configuration or the configuration data.
+  content_type             = "${5:content_type}"              # Standard MIME type describing the format of the configuration content.
+
+  # description   = ""  # Description of the configuration.
+  # region        = ""  # Region where this resource will be managed.
+  # version_label = ""  # User-defined label for the AppConfig hosted configuration version.
+}
+]]></content>
+<tabTrigger>aws_appconfig_hosted_configuration_version</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AppConfig Hosted Configuration Version resource.</description>
+</snippet>

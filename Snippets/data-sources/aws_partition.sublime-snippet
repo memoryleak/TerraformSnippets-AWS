@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+data "aws_partition" "${1:name}" {
+}
+]]></content>
+<tabTrigger>data_aws_partition</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get AWS partition identifier</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_sfn_alias" "${1:name}" {
+  name             = "${2:name}"              # Name of the State Machine alias.
+  statemachine_arn = "${3:statemachine_arn}"  # ARN of the State Machine.
+
+  # description = ""
+  # region      = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_sfn_alias</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS SFN (Step Functions) State Machine Alias.</description>
+</snippet>

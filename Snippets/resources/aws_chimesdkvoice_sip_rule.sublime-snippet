@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_chimesdkvoice_sip_rule" "${1:name}" {
+  name          = "${2:name}"           # The name of the SIP rule.
+  trigger_type  = "${3:trigger_type}"   # The type of trigger assigned to the SIP rule in trigger_value.
+  trigger_value = "${4:trigger_value}"  # If trigger_type is RequestUriHostname, the value can be the outbound host name of an Amazon Chime...
+  target_applications {
+    aws_region               = "${5:aws_region}"
+    priority                 = ${6:0}
+    sip_media_application_id = "${7:sip_media_application_id}"
+  }
+
+  # disabled = false  # Enables or disables a rule.
+  # region   = ""     # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_chimesdkvoice_sip_rule</tabTrigger>
+<scope>source.terraform</scope>
+<description>A SIP rule associates your SIP media application with a phone number or a Request URI hostname.</description>
+</snippet>

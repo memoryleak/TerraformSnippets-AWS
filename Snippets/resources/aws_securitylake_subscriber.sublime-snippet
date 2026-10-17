@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_securitylake_subscriber" "${1:name}" {
+  # access_type            = ""  # The Amazon S3 or Lake Formation access type.
+  # region                 = ""  # Region where this resource will be managed.
+  # subscriber_description = ""  # The description for your subscriber account in Security Lake.
+  # subscriber_name        = ""  # The name of your Security Lake subscriber account.
+  # tags                   = {}  # Key-value map of resource tags.
+  # source {}  # The supported AWS services from which logs and events are collected.
+  # subscriber_identity {}  # The AWS identity used to access your data.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_securitylake_subscriber</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Security Lake Subscriber.</description>
+</snippet>

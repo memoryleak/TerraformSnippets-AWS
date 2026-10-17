@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_globalaccelerator_accelerator" "${1:name}" {
+  name = "${2:name}"  # Name of the accelerator.
+
+  # enabled         = false  # Whether the accelerator is enabled.
+  # ip_address_type = ""     # Value for the address type.
+  # ip_addresses    = []     # IP addresses to use for BYOIP accelerators.
+  # tags            = {}     # Map of tags to assign to the resource.
+  # attributes {}  # Configuration block with accelerator attributes.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_globalaccelerator_accelerator</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Global Accelerator accelerator.</description>
+</snippet>

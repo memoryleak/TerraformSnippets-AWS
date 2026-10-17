@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appfabric_app_authorization" "${1:name}" {
+  app            = "${2:app}"             # Name of the application.
+  app_bundle_arn = "${3:app_bundle_arn}"  # ARN of the app bundle to use for the request.
+  auth_type      = "${4:auth_type}"       # Authorization type for the app authorization.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags to assign to the resource.
+  # credential {}  # Credentials for the application, such as an API key or OAuth2 client ID and secret.
+  # tenant {}  # Information about an application tenant, such as the application display name and identifier.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_appfabric_app_authorization</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS AppFabric App Authorization.</description>
+</snippet>

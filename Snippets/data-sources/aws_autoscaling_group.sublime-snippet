@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_autoscaling_group" "${1:name}" {
+  name = "${2:name}"  # Specify the exact name of the desired Auto Scaling group.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_autoscaling_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on an Amazon EC2 Autoscaling Group.</description>
+</snippet>

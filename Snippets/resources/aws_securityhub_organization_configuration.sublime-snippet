@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_securityhub_organization_configuration" "${1:name}" {
+  auto_enable = ${2:false}  # Whether to automatically enable Security Hub for new accounts in the organization.
+
+  # auto_enable_standards = ""  # Whether to automatically enable Security Hub default standards for new member accounts in the org...
+  # region                = ""  # Region where this resource will be managed.
+  # organization_configuration {}  # Provides information about the way an organization is configured in Security Hub.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_securityhub_organization_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages the Security Hub Organization Configuration</description>
+</snippet>

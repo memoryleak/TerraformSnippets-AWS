@@ -1,0 +1,30 @@
+<snippet>
+<content><![CDATA[
+resource "aws_api_gateway_integration" "${1:name}" {
+  http_method = "${2:http_method}"  # HTTP method (GET, POST, PUT, DELETE, HEAD, OPTION, ANY) when calling the associated resource.
+  resource_id = "${3:resource_id}"  # API resource ID.
+  rest_api_id = "${4:rest_api_id}"  # ID of the associated REST API.
+  type        = "${5:type}"         # Integration input's type.
+
+  # cache_key_parameters    = []  # List of cache key parameters for the integration.
+  # cache_namespace         = ""  # Integration's cache namespace.
+  # connection_id           = ""  # ID of the VpcLink used for the integration.
+  # connection_type         = ""  # Integration input's connectionType.
+  # content_handling        = ""  # How to handle request payload content type conversions.
+  # credentials             = ""  # Credentials required for the integration.
+  # integration_http_method = ""  # Integration HTTP method (GET, POST, PUT, DELETE, HEAD, OPTIONs, ANY, PATCH) specifying how API Ga...
+  # integration_target      = ""  # ALB or NLB ARN to send the request to.
+  # passthrough_behavior    = ""  # Integration passthrough behavior (WHEN_NO_MATCH, WHEN_NO_TEMPLATES, NEVER).
+  # region                  = ""  # Region where this resource will be managed.
+  # request_parameters      = {}  # Map of request query string parameters and headers that should be passed to the backend responder.
+  # request_templates       = {}  # Map of the integration's request templates.
+  # response_transfer_mode  = ""  # Response transfer mode of the integration.
+  # timeout_milliseconds    = 0   # Custom timeout in milliseconds.
+  # uri                     = ""  # Input's URI.
+  # tls_config {}  # TLS configuration.
+}
+]]></content>
+<tabTrigger>aws_api_gateway_integration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an HTTP Method Integration for an API Gateway Integration.</description>
+</snippet>

@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_batch_job_queue" "${1:name}" {
+  name     = "${2:name}"   # Name of the job queue.
+  priority = ${3:0}        # Priority of the job queue.
+  state    = "${4:state}"  # State of the job queue.
+
+  # region                = ""  # Region where this resource will be managed.
+  # scheduling_policy_arn = ""  # ARN of the fair share scheduling policy.
+  # tags                  = {}  # Key-value map of resource tags.
+  # compute_environment_order {}  # Set of compute environments mapped to a job queue and their order relative to each other.
+  # job_state_time_limit_action {}  # Set of job state time limit actions mapped to a job queue.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_batch_job_queue</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Batch Job Queue resource.</description>
+</snippet>

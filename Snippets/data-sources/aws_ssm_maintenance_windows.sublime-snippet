@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_ssm_maintenance_windows" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # filter {}  # Configuration block(s) for filtering.
+}
+]]></content>
+<tabTrigger>data_aws_ssm_maintenance_windows</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on SSM maintenance windows.</description>
+</snippet>

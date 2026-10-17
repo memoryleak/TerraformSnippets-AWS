@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+data "aws_acm_certificate" "${1:name}" {
+  # domain      = ""     # Domain of the certificate to look up.
+  # key_types   = []     # List of key algorithms to filter certificates.
+  # most_recent = false  # If set to true, it sorts the certificates matched by previous criteria by the NotBefore field, re...
+  # region      = ""     # Region where this resource will be managed.
+  # statuses    = []     # List of statuses on which to filter the returned list.
+  # tags        = {}     # A mapping of tags, each pair of which must exactly match a pair on the desired certificates.
+  # types       = []     # List of types on which to filter the returned list.
+}
+]]></content>
+<tabTrigger>data_aws_acm_certificate</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on a Amazon Certificate Manager (ACM) Certificate</description>
+</snippet>

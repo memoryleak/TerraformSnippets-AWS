@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_pinpoint_apns_sandbox_channel" "${1:name}" {
+  application_id = "${2:application_id}"  # Application ID.
+
+  # bundle_id                     = ""     # ID assigned to your iOS app.
+  # certificate                   = ""     # Pem encoded TLS Certificate from Apple.
+  # default_authentication_method = ""     # Default authentication method used for APNs Sandbox.
+  # enabled                       = false  # Whether the channel is enabled or disabled.
+  # private_key                   = ""     # Certificate Private Key file (ie.
+  # region                        = ""     # Region where this resource will be managed.
+  # team_id                       = ""     # ID assigned to your Apple developer account team.
+  # token_key                     = ""     # .p8 file that you download from your Apple developer account when you create an authentication key.
+  # token_key_id                  = ""     # ID assigned to your signing key.
+}
+]]></content>
+<tabTrigger>aws_pinpoint_apns_sandbox_channel</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an End User Messaging APNs Sandbox Channel resource.</description>
+</snippet>

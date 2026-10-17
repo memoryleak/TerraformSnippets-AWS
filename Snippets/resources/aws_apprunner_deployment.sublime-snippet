@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_apprunner_deployment" "${1:name}" {
+  service_arn = "${2:service_arn}"  # ARN of the App Runner service to start the deployment for.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_apprunner_deployment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an App Runner Deployment Operation.</description>
+</snippet>

@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_api_gateway_api_key" "${1:name}" {
+  name = "${2:name}"  # Name of the API key.
+
+  # customer_id = ""     # Amazon Web Services Marketplace customer identifier, when integrating with the Amazon Web Service...
+  # description = ""     # API key description.
+  # enabled     = false  # Whether the API key can be used by callers.
+  # region      = ""     # Region where this resource will be managed.
+  # tags        = {}     # Key-value map of resource tags.
+  # value       = ""     # Value of the API key.
+}
+]]></content>
+<tabTrigger>aws_api_gateway_api_key</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an API Gateway API Key.</description>
+</snippet>

@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_wafregional_web_acl" "${1:name}" {
+  metric_name = "${2:metric_name}"  # The name or description for the Amazon CloudWatch metric of this web ACL.
+  name        = "${3:name}"         # The name or description of the web ACL.
+  default_action {
+    type = "${4:type}"
+  }
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value map of resource tags.
+  # logging_configuration {}  # Configuration block to enable WAF logging.
+  # rule {}  # Set of configuration blocks containing rules for the web ACL.
+}
+]]></content>
+<tabTrigger>aws_wafregional_web_acl</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a AWS WAF Regional web access control group (ACL) resource for use with ALB.</description>
+</snippet>

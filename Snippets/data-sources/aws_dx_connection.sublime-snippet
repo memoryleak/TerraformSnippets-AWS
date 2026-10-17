@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_dx_connection" "${1:name}" {
+  name = "${2:name}"  # Name of the connection to retrieve.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_dx_connection</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Retrieve information about a Direct Connect Connection.</description>
+</snippet>

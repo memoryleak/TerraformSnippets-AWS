@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_keyspaces_keyspace" "${1:name}" {
+  name = "${2:name}"  # Name of the keyspace to be created.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags to assign to the resource.
+  # replication_specification {}  # Replication specification of the keyspace.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_keyspaces_keyspace</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Keyspaces Keyspace.</description>
+</snippet>

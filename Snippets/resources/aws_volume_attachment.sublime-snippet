@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_volume_attachment" "${1:name}" {
+  device_name = "${2:device_name}"  # Device name to expose to the instance (for example, /dev/sdh or xvdh).
+  instance_id = "${3:instance_id}"  # ID of the Instance to attach to.
+  volume_id   = "${4:volume_id}"    # ID of the Volume to be attached.
+
+  # force_detach                   = false  # Whether to force the volume to detach.
+  # region                         = ""     # Region where this resource will be managed.
+  # skip_destroy                   = false  # Whether to skip detaching the volume from the instance to which it is attached at destroy time, a...
+  # stop_instance_before_detaching = false  # Whether to ensure that the target instance is stopped before trying to detach the volume.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_volume_attachment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AWS EBS Volume Attachment</description>
+</snippet>

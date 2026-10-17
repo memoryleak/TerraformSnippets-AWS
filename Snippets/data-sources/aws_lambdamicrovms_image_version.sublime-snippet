@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_lambdamicrovms_image_version" "${1:name}" {
+  image_identifier = "${2:image_identifier}"  # ARN or ID of the MicroVM image.
+  image_version    = "${3:image_version}"     # Version of the MicroVM image.
+
+  # region = ""  # Region where this data source will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_lambdamicrovms_image_version</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an AWS Lambda MicroVMs Image Version.</description>
+</snippet>

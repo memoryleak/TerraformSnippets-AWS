@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpclattice_service_network_resource_association" "${1:name}" {
+  resource_configuration_identifier = "${2:resource_configuration_identifier}"  # Identifier of Resource Configuration to associate to the Service Network.
+  service_network_identifier        = "${3:service_network_identifier}"         # Identifier of the Service Network to associate the Resource to.
+
+  # private_dns_enabled = false  # Boolean indicating whether private DNS is enabled for the service network resource association.
+  # region              = ""     # Region where this resource will be managed.
+  # tags                = {}     # Map of tags assigned to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_vpclattice_service_network_resource_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS VPC Lattice Service Network Resource Association.</description>
+</snippet>

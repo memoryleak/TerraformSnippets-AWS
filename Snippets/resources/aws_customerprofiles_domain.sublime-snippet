@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_customerprofiles_domain" "${1:name}" {
+  default_expiration_days = ${2:0}              # The default number of days until the data within the domain expires.
+  domain_name             = "${3:domain_name}"  # The name for your Customer Profile domain.
+
+  # dead_letter_queue_url  = ""  # The URL of the SQS dead letter queue, which is used for reporting errors associated with ingestin...
+  # default_encryption_key = ""  # The default encryption key, which is an AWS managed key, is used when no specific type of encrypt...
+  # region                 = ""  # Region where this resource will be managed.
+  # tags                   = {}  # Tags to apply to the domain.
+  # matching {}  # A block that specifies the process of matching duplicate profiles.
+  # rule_based_matching {}  # A block that specifies the process of matching duplicate profiles using the Rule-Based matching.
+}
+]]></content>
+<tabTrigger>aws_customerprofiles_domain</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an Amazon Customer Profiles Domain.</description>
+</snippet>

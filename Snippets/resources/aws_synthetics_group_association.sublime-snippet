@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_synthetics_group_association" "${1:name}" {
+  canary_arn = "${2:canary_arn}"  # ARN of the canary.
+  group_name = "${3:group_name}"  # Name of the group that the canary will be associated with.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_synthetics_group_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Synthetics Group Association resource</description>
+</snippet>

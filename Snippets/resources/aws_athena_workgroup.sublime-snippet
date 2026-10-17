@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_athena_workgroup" "${1:name}" {
+  name = "${2:name}"  # Name of the workgroup.
+
+  # description   = ""     # Description of the workgroup.
+  # force_destroy = false  # Option to delete the workgroup and its contents even if the workgroup contains any named queries.
+  # region        = ""     # Region where this resource will be managed.
+  # state         = ""     # State of the workgroup.
+  # tags          = {}     # Key-value map of resource tags for the workgroup.
+  # configuration {}  # Configuration block with various settings for the workgroup.
+}
+]]></content>
+<tabTrigger>aws_athena_workgroup</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Athena Workgroup.</description>
+</snippet>

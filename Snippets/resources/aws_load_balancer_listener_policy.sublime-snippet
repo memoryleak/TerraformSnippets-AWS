@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_load_balancer_listener_policy" "${1:name}" {
+  load_balancer_name = "${2:load_balancer_name}"  # The load balancer to attach the policy to.
+  load_balancer_port = ${3:0}                     # The load balancer listener port to apply the policy to.
+
+  # policy_names = []  # List of Policy Names to apply to the backend server.
+  # region       = ""  # Region where this resource will be managed.
+  # triggers     = {}  # Map of arbitrary keys and values that, when changed, will trigger an update.
+}
+]]></content>
+<tabTrigger>aws_load_balancer_listener_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Attaches a load balancer policy to an ELB Listener.</description>
+</snippet>

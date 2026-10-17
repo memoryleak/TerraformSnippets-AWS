@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dynamodb_table_item" "${1:name}" {
+  hash_key   = "${2:hash_key}"    # Hash key to use for lookups and identification of the item
+  item       = "${3:item}"        # JSON representation of a map of attribute name/value pairs, one for each attribute.
+  table_name = "${4:table_name}"  # Name or ARN of the table to contain the item.
+
+  # range_key = ""  # Range key to use for lookups and identification of the item.
+  # region    = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_dynamodb_table_item</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a DynamoDB table item resource</description>
+</snippet>

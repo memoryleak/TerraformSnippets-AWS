@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_datasync_location_s3" "${1:name}" {
+  s3_bucket_arn = "${2:s3_bucket_arn}"  # ARN of the S3 bucket, or the Amazon S3 access point if the S3 bucket is located on an AWS Outpost...
+  subdirectory  = "${3:subdirectory}"   # Prefix to perform actions as source or destination.
+  s3_config {
+    bucket_access_role_arn = "${4:bucket_access_role_arn}"
+  }
+
+  # agent_arns       = []  # (Amazon S3 on Outposts only) ARN of the DataSync agent on the Outpost.
+  # region           = ""  # Region where this resource will be managed.
+  # s3_storage_class = ""  # Amazon S3 storage class that you want to store your files in when this location is used as a task...
+  # tags             = {}  # Key-value pairs of resource tags to assign to the DataSync Location.
+}
+]]></content>
+<tabTrigger>aws_datasync_location_s3</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS DataSync S3 Location</description>
+</snippet>

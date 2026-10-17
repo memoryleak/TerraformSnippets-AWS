@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_medialive_input" "${1:name}" {
+  name = "${2:name}"  # Name of the input.
+  type = "${3:type}"  # Type of input that AWS Elemental MediaLive supports.
+
+  # input_security_groups = []  # List of input security groups.
+  # region                = ""  # Region where this resource will be managed.
+  # role_arn              = ""  # ARN of the role this input assumes during and after creation.
+  # tags                  = {}  # Map of tags to assign to the Input.
+  # destinations {}  # Destination settings for PUSH type inputs.
+  # input_devices {}  # Settings for the devices.
+  # media_connect_flows {}  # MediaConnect Flows.
+  # sources {}  # Source URLs for a PULL-type input.
+  # timeouts {}
+  # vpc {}  # Settings for a private VPC Input.
+}
+]]></content>
+<tabTrigger>aws_medialive_input</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS MediaLive Input.</description>
+</snippet>

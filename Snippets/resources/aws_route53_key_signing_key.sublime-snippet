@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_route53_key_signing_key" "${1:name}" {
+  hosted_zone_id             = "${2:hosted_zone_id}"              # Identifier of the Route 53 Hosted Zone.
+  key_management_service_arn = "${3:key_management_service_arn}"  # ARN of the KMS Key.
+  name                       = "${4:name}"                        # Name of the key-signing key (KSK).
+
+  # status = ""  # Status of the key-signing key (KSK).
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_route53_key_signing_key</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Route 53 Key Signing Key</description>
+</snippet>

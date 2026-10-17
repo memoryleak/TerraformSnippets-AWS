@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_securityhub_member" "${1:name}" {
+  account_id = "${2:account_id}"  # The ID of the member AWS account.
+
+  # email  = ""     # The email of the member AWS account.
+  # invite = false  # Boolean whether to invite the account to Security Hub as a member.
+  # region = ""     # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_securityhub_member</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Security Hub member resource.</description>
+</snippet>

@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_storagegateway_tape_pool" "${1:name}" {
+  pool_name     = "${2:pool_name}"      # The name of the new custom tape pool.
+  storage_class = "${3:storage_class}"  # The storage class that is associated with the new custom pool.
+
+  # region                      = ""  # Region where this resource will be managed.
+  # retention_lock_time_in_days = 0   # Tape retention lock time is set in days.
+  # retention_lock_type         = ""  # Tape retention lock can be configured in two modes.
+  # tags                        = {}  # Key-value map of resource tags.
+}
+]]></content>
+<tabTrigger>aws_storagegateway_tape_pool</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Storage Gateway Tape Pool</description>
+</snippet>

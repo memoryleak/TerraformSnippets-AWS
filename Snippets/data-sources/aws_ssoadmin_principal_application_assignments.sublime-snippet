@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+data "aws_ssoadmin_principal_application_assignments" "${1:name}" {
+  instance_arn   = "${2:instance_arn}"    # ARN of the instance of IAM Identity Center.
+  principal_id   = "${3:principal_id}"    # An identifier for an object in IAM Identity Center, such as a user or group.
+  principal_type = "${4:principal_type}"  # Entity type for which the assignment will be created.
+
+  # region = ""  # Region where this resource will be managed.
+  # application_assignments {}
+}
+]]></content>
+<tabTrigger>data_aws_ssoadmin_principal_application_assignments</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for viewing AWS SSO Admin Principal Application Assignments.</description>
+</snippet>

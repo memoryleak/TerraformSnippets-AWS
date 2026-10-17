@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_identitystore_groups" "${1:name}" {
+  identity_store_id = "${2:identity_store_id}"  # Identity Store ID associated with the Single Sign-On (SSO) Instance.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_identitystore_groups</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS SSO Identity Store Groups.</description>
+</snippet>

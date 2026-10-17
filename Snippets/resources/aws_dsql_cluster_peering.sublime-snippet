@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dsql_cluster_peering" "${1:name}" {
+  clusters       = [${2}]                 # List of DSQL Cluster ARNs to be peered to this cluster.
+  identifier     = "${3:identifier}"      # DSQL Cluster Identifier.
+  witness_region = "${4:witness_region}"  # Witness region for a multi-region cluster.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_dsql_cluster_peering</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an Amazon Aurora DSQL Cluster Peering.</description>
+</snippet>

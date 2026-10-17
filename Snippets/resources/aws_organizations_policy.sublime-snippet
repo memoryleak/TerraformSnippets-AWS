@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_organizations_policy" "${1:name}" {
+  content = "${2:content}"  # The policy content to add to the new policy.
+  name    = "${3:name}"     # The friendly name to assign to the policy.
+
+  # description  = ""     # A description to assign to the policy.
+  # skip_destroy = false  # If set to true, destroy will **not** delete the policy and instead just remove the resource from...
+  # tags         = {}     # Key-value map of resource tags.
+  # type         = ""     # The type of policy to create.
+}
+]]></content>
+<tabTrigger>aws_organizations_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage an AWS Organizations policy.</description>
+</snippet>

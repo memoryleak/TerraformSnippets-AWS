@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_network_acl" "${1:name}" {
+  vpc_id = "${2:vpc_id}"  # The ID of the associated VPC.
+
+  # egress     = []  # Specifies an egress rule.
+  # ingress    = []  # Specifies an ingress rule.
+  # region     = ""  # Region where this resource will be managed.
+  # subnet_ids = []  # A list of Subnet IDs to apply the ACL to
+  # tags       = {}  # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_network_acl</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an network ACL resource.</description>
+</snippet>

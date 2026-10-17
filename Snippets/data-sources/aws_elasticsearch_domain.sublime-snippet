@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_elasticsearch_domain" "${1:name}" {
+  domain_name = "${2:domain_name}"  # Name of the domain.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_elasticsearch_domain</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on an Elasticsearch Domain resource.</description>
+</snippet>

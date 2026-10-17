@@ -1,0 +1,28 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpc_endpoint" "${1:name}" {
+  vpc_id = "${2:vpc_id}"  # ID of the VPC in which the endpoint will be used.
+
+  # auto_accept                = false  # Whether to accept the VPC endpoint (the VPC endpoint and service need to be in the same AWS accou...
+  # ip_address_type            = ""     # IP address type for the endpoint.
+  # policy                     = ""     # Policy to attach to the endpoint that controls access to the service.
+  # private_dns_enabled        = false  # Whether to associate a private hosted zone with the specified VPC.
+  # region                     = ""     # Region where this resource will be managed.
+  # resource_configuration_arn = ""     # ARN of a Resource Configuration to connect this VPC Endpoint to.
+  # route_table_ids            = []     # One or more route table IDs.
+  # security_group_ids         = []     # ID of one or more security groups to associate with the network interface.
+  # service_name               = ""     # Service name.
+  # service_network_arn        = ""     # ARN of a Service Network to connect this VPC Endpoint to.
+  # service_region             = ""     # AWS region of the VPC Endpoint Service.
+  # subnet_ids                 = []     # ID of one or more subnets in which to create a network interface for the endpoint.
+  # tags                       = {}     # Map of tags to assign to the resource.
+  # vpc_endpoint_type          = ""     # VPC endpoint type, Gateway, GatewayLoadBalancer,Interface, Resource or ServiceNetwork.
+  # dns_options {}  # DNS options for the endpoint.
+  # subnet_configuration {}  # Subnet configuration for the endpoint, used to select specific IPv4 and/or IPv6 addresses to the...
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_vpc_endpoint</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a VPC Endpoint resource.</description>
+</snippet>

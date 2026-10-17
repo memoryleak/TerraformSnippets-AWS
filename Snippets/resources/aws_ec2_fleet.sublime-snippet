@@ -1,0 +1,33 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_fleet" "${1:name}" {
+  launch_template_config {
+  }
+  target_capacity_specification {
+    default_target_capacity_type = "${2:default_target_capacity_type}"
+    total_target_capacity        = ${3:0}
+  }
+
+  # context                             = ""     # Reserved.
+  # excess_capacity_termination_policy  = ""     # Whether running instances should be terminated if the total target capacity of the EC2 Fleet is d...
+  # fleet_state                         = ""
+  # fulfilled_capacity                  = 0
+  # fulfilled_on_demand_capacity        = 0
+  # region                              = ""     # Region where this resource will be managed.
+  # replace_unhealthy_instances         = false  # Whether EC2 Fleet should replace unhealthy instances.
+  # tags                                = {}     # Map of Fleet tags.
+  # terminate_instances                 = false  # Whether to terminate instances for an EC2 Fleet if it is deleted successfully.
+  # terminate_instances_with_expiration = false  # Whether running instances should be terminated when the EC2 Fleet expires.
+  # type                                = ""     # The type of request.
+  # valid_from                          = ""     # The start date and time of the request, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ).
+  # valid_until                         = ""     # The end date and time of the request, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ).
+  # fleet_instance_set {}
+  # on_demand_options {}  # Nested argument containing On-Demand configurations.
+  # spot_options {}  # Nested argument containing Spot configurations.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ec2_fleet</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage EC2 Fleets</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_acmpca_certificate" "${1:name}" {
+  arn                       = "${2:arn}"                        # ARN of the certificate issued by the private certificate authority.
+  certificate_authority_arn = "${3:certificate_authority_arn}"  # ARN of the certificate authority.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_acmpca_certificate</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on a Certificate issued by a AWS Certificate Manager Private Certificate Authority</description>
+</snippet>

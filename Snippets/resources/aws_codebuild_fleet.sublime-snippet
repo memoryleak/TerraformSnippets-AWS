@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_codebuild_fleet" "${1:name}" {
+  base_capacity    = ${2:0}                   # Number of machines allocated to the ﬂeet.
+  compute_type     = "${3:compute_type}"      # Compute resources the compute fleet uses.
+  environment_type = "${4:environment_type}"  # Environment type of the compute fleet.
+  name             = "${5:name}"              # Fleet name.
+
+  # fleet_service_role = ""  # The service role associated with the compute fleet.
+  # image_id           = ""  # AMI of the compute fleet.
+  # overflow_behavior  = ""  # Overflow behavior for compute fleet.
+  # region             = ""  # Region where this resource will be managed.
+  # tags               = {}  # Map of tags to assign to the resource.
+  # compute_configuration {}  # The compute configuration of the compute fleet.
+  # scaling_configuration {}  # Configuration block.
+  # vpc_config {}  # Configuration block.
+}
+]]></content>
+<tabTrigger>aws_codebuild_fleet</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CodeBuild Fleet Resource.</description>
+</snippet>

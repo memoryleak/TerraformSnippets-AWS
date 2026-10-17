@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_s3_buckets" "${1:name}" {
+  # bucket_region = ""  # Limits the response to buckets that are located in the specified AWS Region.
+  # max_buckets   = 0   # Maximum number of buckets returned.
+  # prefix        = ""  # Limits the response to bucket names that begin with the specified bucket name prefix.
+  # region        = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_s3_buckets</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about AWS S3 (Simple Storage) buckets with optional filters.</description>
+</snippet>

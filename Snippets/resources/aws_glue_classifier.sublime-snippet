@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_glue_classifier" "${1:name}" {
+  name = "${2:name}"  # Name of the classifier.
+
+  # region = ""  # Region where this resource will be managed.
+  # csv_classifier {}  # Classifier for CSV content.
+  # grok_classifier {}  # Classifier that uses grok patterns.
+  # json_classifier {}  # Classifier for JSON content.
+  # xml_classifier {}  # Classifier for XML content.
+}
+]]></content>
+<tabTrigger>aws_glue_classifier</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Glue Classifier resource.</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_notifications_notification_configuration" "${1:name}" {
+  description = "${2:description}"  # Description of the NotificationConfiguration.
+  name        = "${3:name}"         # Name of the NotificationConfiguration.
+
+  # aggregation_duration = ""  # Aggregation preference of the NotificationConfiguration.
+  # tags                 = {}  # Map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_notifications_notification_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS User Notifications Notification Configuration.</description>
+</snippet>

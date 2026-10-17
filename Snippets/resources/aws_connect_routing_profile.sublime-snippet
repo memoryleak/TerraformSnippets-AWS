@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_connect_routing_profile" "${1:name}" {
+  default_outbound_queue_id = "${2:default_outbound_queue_id}"  # Specifies the default outbound queue for the Routing Profile.
+  description               = "${3:description}"                # Specifies the description of the Routing Profile.
+  instance_id               = "${4:instance_id}"                # Specifies the identifier of the hosting Amazon Connect Instance.
+  name                      = "${5:name}"                       # Specifies the name of the Routing Profile.
+  media_concurrencies {
+    channel     = "${6:channel}"
+    concurrency = ${7:0}
+  }
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Tags to apply to the Routing Profile.
+  # queue_configs {}  # One or more queue_configs blocks that specify the inbound queues associated with the routing prof...
+}
+]]></content>
+<tabTrigger>aws_connect_routing_profile</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides details about a specific Amazon Connect Routing Profile.</description>
+</snippet>

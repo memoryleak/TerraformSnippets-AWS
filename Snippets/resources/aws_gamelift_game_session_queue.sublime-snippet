@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_gamelift_game_session_queue" "${1:name}" {
+  name = "${2:name}"  # Name of the session queue.
+
+  # custom_event_data   = ""  # Information to be added to all events that are related to this game session queue.
+  # destinations        = []  # List of fleet/alias ARNs used by session queue for placing game sessions.
+  # notification_target = ""  # SNS topic ARN that is set up to receive game session placement notifications.
+  # region              = ""  # Region where this resource will be managed.
+  # tags                = {}  # Key-value map of resource tags.
+  # timeout_in_seconds  = 0   # Maximum time a game session request can remain in the queue.
+  # player_latency_policy {}  # One or more policies used to choose fleet based on player latency.
+}
+]]></content>
+<tabTrigger>aws_gamelift_game_session_queue</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a GameLift Game Session Queue resource.</description>
+</snippet>

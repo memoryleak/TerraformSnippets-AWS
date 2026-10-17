@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_networkfirewall_resource_policy" "${1:name}" {
+  policy       = "${2:policy}"        # JSON formatted policy document that controls access to the Network Firewall resource.
+  resource_arn = "${3:resource_arn}"  # ARN of the rule group or firewall policy.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_networkfirewall_resource_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AWS Network Firewall Resource Policy resource.</description>
+</snippet>

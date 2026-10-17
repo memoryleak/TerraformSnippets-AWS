@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_elasticache_serverless_cache" "${1:name}" {
+  name = "${2:name}"  # Identifier for the serverless cache.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_elasticache_serverless_cache</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on an ElastiCache Serverless Cache resource.</description>
+</snippet>

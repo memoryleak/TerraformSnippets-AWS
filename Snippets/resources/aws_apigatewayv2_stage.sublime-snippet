@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_apigatewayv2_stage" "${1:name}" {
+  api_id = "${2:api_id}"  # API identifier.
+  name   = "${3:name}"    # Name of the stage.
+
+  # auto_deploy           = false  # Whether updates to an API automatically trigger a new deployment.
+  # client_certificate_id = ""     # Identifier of a client certificate for the stage.
+  # deployment_id         = ""     # Deployment identifier of the stage.
+  # description           = ""     # Description for the stage.
+  # region                = ""     # Region where this resource will be managed.
+  # stage_variables       = {}     # Map that defines the stage variables for the stage.
+  # tags                  = {}     # Map of tags to assign to the stage.
+  # access_log_settings {}  # Settings for logging access in this stage.
+  # default_route_settings {}  # Default route settings for the stage.
+  # route_settings {}  # Route settings for the stage.
+}
+]]></content>
+<tabTrigger>aws_apigatewayv2_stage</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Amazon API Gateway Version 2 stage.</description>
+</snippet>

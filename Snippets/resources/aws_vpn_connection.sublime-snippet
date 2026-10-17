@@ -1,0 +1,68 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpn_connection" "${1:name}" {
+  customer_gateway_id = "${2:customer_gateway_id}"  # ID of the customer gateway.
+  type                = "${3:type}"                 # Type of VPN connection.
+
+  # enable_acceleration                     = false  # Whether to enable acceleration for the VPN connection.
+  # local_ipv4_network_cidr                 = ""     # IPv4 CIDR on the customer gateway (on-premises) side of the VPN connection.
+  # local_ipv6_network_cidr                 = ""     # IPv6 CIDR on the customer gateway (on-premises) side of the VPN connection.
+  # outside_ip_address_type                 = ""     # Type of VPN endpoint, either a public Site-to-Site VPN or a private Site-to-Site VPN over AWS Dir...
+  # preshared_key_storage                   = ""     # Storage mode for the pre-shared key (PSK).
+  # region                                  = ""     # Region where this resource will be managed.
+  # remote_ipv4_network_cidr                = ""     # IPv4 CIDR on the AWS side of the VPN connection.
+  # remote_ipv6_network_cidr                = ""     # IPv6 CIDR on the AWS side of the VPN connection.
+  # static_routes_only                      = false  # Whether the VPN connection uses static routes exclusively.
+  # tags                                    = {}     # Tags to apply to the connection.
+  # transit_gateway_id                      = ""     # ID of the EC2 Transit Gateway.
+  # transport_transit_gateway_attachment_id = ""     # Attachment ID of the Transit Gateway attachment to Direct Connect Gateway.
+  # tunnel1_dpd_timeout_action              = ""     # Action to take after DPD timeout occurs for the first VPN tunnel.
+  # tunnel1_dpd_timeout_seconds             = 0      # Number of seconds after which a DPD timeout occurs for the first VPN tunnel.
+  # tunnel1_enable_tunnel_lifecycle_control = false  # Whether to enable the tunnel endpoint lifecycle control feature for the first VPN tunnel.
+  # tunnel1_ike_versions                    = []     # IKE versions that are permitted for the first VPN tunnel.
+  # tunnel1_inside_cidr                     = ""     # CIDR block of the inside IP addresses for the first VPN tunnel.
+  # tunnel1_inside_ipv6_cidr                = ""     # Range of inside IPv6 addresses for the first VPN tunnel.
+  # tunnel1_phase1_dh_group_numbers         = []     # List of one or more Diffie-Hellman group numbers that are permitted for the first VPN tunnel for...
+  # tunnel1_phase1_encryption_algorithms    = []     # List of one or more encryption algorithms that are permitted for the first VPN tunnel for phase 1...
+  # tunnel1_phase1_integrity_algorithms     = []     # One or more integrity algorithms that are permitted for the first VPN tunnel for phase 1 IKE nego...
+  # tunnel1_phase1_lifetime_seconds         = 0      # Lifetime for phase 1 of the IKE negotiation for the first VPN tunnel, in seconds.
+  # tunnel1_phase2_dh_group_numbers         = []     # List of one or more Diffie-Hellman group numbers that are permitted for the first VPN tunnel for...
+  # tunnel1_phase2_encryption_algorithms    = []     # List of one or more encryption algorithms that are permitted for the first VPN tunnel for phase 2...
+  # tunnel1_phase2_integrity_algorithms     = []     # List of one or more integrity algorithms that are permitted for the first VPN tunnel for phase 2...
+  # tunnel1_phase2_lifetime_seconds         = 0      # Lifetime for phase 2 of the IKE negotiation for the first VPN tunnel, in seconds.
+  # tunnel1_preshared_key                   = ""     # Preshared key of the first VPN tunnel.
+  # tunnel1_rekey_fuzz_percentage           = 0      # Percentage of the rekey window for the first VPN tunnel (determined by tunnel1_rekey_margin_time_...
+  # tunnel1_rekey_margin_time_seconds       = 0      # Margin time, in seconds, before the phase 2 lifetime expires, during which the AWS side of the fi...
+  # tunnel1_replay_window_size              = 0      # Number of packets in an IKE replay window for the first VPN tunnel.
+  # tunnel1_startup_action                  = ""     # Action to take when the establishing the tunnel for the first VPN connection.
+  # tunnel2_dpd_timeout_action              = ""     # Action to take after DPD timeout occurs for the second VPN tunnel.
+  # tunnel2_dpd_timeout_seconds             = 0      # Number of seconds after which a DPD timeout occurs for the second VPN tunnel.
+  # tunnel2_enable_tunnel_lifecycle_control = false  # Whether to enable the tunnel endpoint lifecycle control feature for the second VPN tunnel.
+  # tunnel2_ike_versions                    = []     # IKE versions that are permitted for the second VPN tunnel.
+  # tunnel2_inside_cidr                     = ""     # CIDR block of the inside IP addresses for the second VPN tunnel.
+  # tunnel2_inside_ipv6_cidr                = ""     # Range of inside IPv6 addresses for the second VPN tunnel.
+  # tunnel2_phase1_dh_group_numbers         = []     # List of one or more Diffie-Hellman group numbers that are permitted for the second VPN tunnel for...
+  # tunnel2_phase1_encryption_algorithms    = []     # List of one or more encryption algorithms that are permitted for the second VPN tunnel for phase...
+  # tunnel2_phase1_integrity_algorithms     = []     # One or more integrity algorithms that are permitted for the second VPN tunnel for phase 1 IKE neg...
+  # tunnel2_phase1_lifetime_seconds         = 0      # Lifetime for phase 1 of the IKE negotiation for the second VPN tunnel, in seconds.
+  # tunnel2_phase2_dh_group_numbers         = []     # List of one or more Diffie-Hellman group numbers that are permitted for the second VPN tunnel for...
+  # tunnel2_phase2_encryption_algorithms    = []     # List of one or more encryption algorithms that are permitted for the second VPN tunnel for phase...
+  # tunnel2_phase2_integrity_algorithms     = []     # List of one or more integrity algorithms that are permitted for the second VPN tunnel for phase 2...
+  # tunnel2_phase2_lifetime_seconds         = 0      # Lifetime for phase 2 of the IKE negotiation for the second VPN tunnel, in seconds.
+  # tunnel2_preshared_key                   = ""     # Preshared key of the second VPN tunnel.
+  # tunnel2_rekey_fuzz_percentage           = 0      # Percentage of the rekey window for the second VPN tunnel (determined by tunnel2_rekey_margin_time...
+  # tunnel2_rekey_margin_time_seconds       = 0      # Margin time, in seconds, before the phase 2 lifetime expires, during which the AWS side of the se...
+  # tunnel2_replay_window_size              = 0      # Number of packets in an IKE replay window for the second VPN tunnel.
+  # tunnel2_startup_action                  = ""     # Action to take when the establishing the tunnel for the second VPN connection.
+  # tunnel_bandwidth                        = ""     # Desired bandwidth specification for the VPN tunnel.
+  # tunnel_inside_ip_version                = ""     # Indicate whether the VPN tunnels process IPv4 or IPv6 traffic.
+  # vpn_concentrator_id                     = ""     # ID of the VPN concentrator to associate with the VPN connection.
+  # vpn_gateway_id                          = ""     # ID of the Virtual Private Gateway.
+  # tunnel1_log_options {}  # Options for logging VPN tunnel activity.
+  # tunnel2_log_options {}  # Options for logging VPN tunnel activity.
+}
+]]></content>
+<tabTrigger>aws_vpn_connection</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Site-to-Site VPN connection.</description>
+</snippet>

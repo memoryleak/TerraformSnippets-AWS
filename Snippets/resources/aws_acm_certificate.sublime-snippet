@@ -1,0 +1,24 @@
+<snippet>
+<content><![CDATA[
+resource "aws_acm_certificate" "${1:name}" {
+  # certificate_authority_arn = ""  # ARN of an ACM PCA
+  # certificate_body          = ""  # Certificate's PEM-formatted public key
+  # certificate_chain         = ""  # Certificate's PEM-formatted chain
+  # domain_name               = ""  # Domain name for which the certificate should be issued
+  # early_renewal_duration    = ""  # Amount of time to start automatic renewal process before expiration.
+  # key_algorithm             = ""  # Specifies the algorithm of the public and private key pair that your Amazon issued certificate us...
+  # private_key               = ""  # Certificate's PEM-formatted private key.
+  # private_key_wo            = ""  # Certificate's PEM-formatted private key.
+  # private_key_wo_version    = 0   # Required when private_key_wo is set.
+  # region                    = ""  # Region where this resource will be managed.
+  # subject_alternative_names = []  # Set of domains that should be SANs in the issued certificate.
+  # tags                      = {}  # Map of tags to assign to the resource.
+  # validation_method         = ""  # Which method to use for validation.
+  # options {}  # Configuration block used to set certificate options.
+  # validation_option {}  # Configuration block used to specify information about the initial validation of each domain name.
+}
+]]></content>
+<tabTrigger>aws_acm_certificate</tabTrigger>
+<scope>source.terraform</scope>
+<description>Requests and manages a certificate from Amazon Certificate Manager (ACM).</description>
+</snippet>

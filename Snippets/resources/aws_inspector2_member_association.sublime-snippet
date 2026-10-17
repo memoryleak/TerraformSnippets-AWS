@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_inspector2_member_association" "${1:name}" {
+  account_id = "${2:account_id}"  # ID of the account to associate
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_inspector2_member_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an Amazon Inspector Member Association.</description>
+</snippet>

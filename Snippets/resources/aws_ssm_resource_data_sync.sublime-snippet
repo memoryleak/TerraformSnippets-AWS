@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ssm_resource_data_sync" "${1:name}" {
+  name = "${2:name}"  # Name for the configuration.
+  s3_destination {
+    bucket_name = "${3:bucket_name}"
+    region      = "${4:region}"
+  }
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_ssm_resource_data_sync</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a SSM resource data sync.</description>
+</snippet>

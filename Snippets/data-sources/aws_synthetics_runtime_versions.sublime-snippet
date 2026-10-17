@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_synthetics_runtime_versions" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_synthetics_runtime_versions</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS CloudWatch Synthetics Runtime Versions.</description>
+</snippet>

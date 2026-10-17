@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ses_domain_identity_verification" "${1:name}" {
+  domain = "${2:domain}"  # Domain name of the SES domain identity to verify.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ses_domain_identity_verification</tabTrigger>
+<scope>source.terraform</scope>
+<description>Waits for and checks successful verification of an SES domain identity.</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_xray_group" "${1:name}" {
+  filter_expression = "${2:filter_expression}"  # Filter expression defining criteria by which to group traces.
+  group_name        = "${3:group_name}"         # Name of the group.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value mapping of resource tags.
+  # insights_configuration {}  # Configuration options for enabling insights.
+}
+]]></content>
+<tabTrigger>aws_xray_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Creates and manages an AWS XRay Group.</description>
+</snippet>

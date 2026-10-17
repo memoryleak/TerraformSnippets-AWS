@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_autoscaling_traffic_source_attachment" "${1:name}" {
+  autoscaling_group_name = "${2:autoscaling_group_name}"  # The name of the Auto Scaling group.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+  # traffic_source {}  # The unique identifiers of a traffic sources.
+}
+]]></content>
+<tabTrigger>aws_autoscaling_traffic_source_attachment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Auto Scaling Traffic Source Attachment.</description>
+</snippet>

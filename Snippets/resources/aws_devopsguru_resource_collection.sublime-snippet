@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_devopsguru_resource_collection" "${1:name}" {
+  type = "${2:type}"  # Type of AWS resource collection to create.
+
+  # region = ""  # Region where this resource will be managed.
+  # cloudformation {}  # A collection of AWS CloudFormation stacks.
+  # tags {}  # AWS tags used to filter the resources in the resource collection.
+}
+]]></content>
+<tabTrigger>aws_devopsguru_resource_collection</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS DevOps Guru Resource Collection.</description>
+</snippet>

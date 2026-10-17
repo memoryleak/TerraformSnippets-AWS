@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_lb" "${1:name}" {
+  # arn    = ""  # Full ARN of the load balancer.
+  # name   = ""  # Unique name of the load balancer.
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Mapping of tags, each pair of which must exactly match a pair on the desired load balancer.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_lb</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides a Load Balancer data source.</description>
+</snippet>

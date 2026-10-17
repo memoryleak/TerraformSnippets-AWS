@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lb_trust_store_revocation" "${1:name}" {
+  revocations_s3_bucket = "${2:revocations_s3_bucket}"  # S3 Bucket name holding the client certificate CA bundle.
+  revocations_s3_key    = "${3:revocations_s3_key}"     # S3 object key holding the client certificate CA bundle.
+  trust_store_arn       = "${4:trust_store_arn}"        # Trust Store ARN.
+
+  # region                        = ""  # Region where this resource will be managed.
+  # revocations_s3_object_version = ""  # Version ID of CA bundle S3 bucket object, if versioned, defaults to latest if omitted.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_lb_trust_store_revocation</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Trust Store Revocation resource for use with Load Balancers.</description>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_guardduty_detector" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_guardduty_detector</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Retrieve information about a GuardDuty detector.</description>
+</snippet>

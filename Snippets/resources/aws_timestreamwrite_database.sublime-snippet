@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_timestreamwrite_database" "${1:name}" {
+  database_name = "${2:database_name}"  # Name of the Timestream database.
+
+  # kms_key_id = ""  # ARN (not Alias ARN) of the KMS key to be used to encrypt the data stored in the database.
+  # region     = ""  # Region where this resource will be managed.
+  # tags       = {}  # Map of tags to assign to this resource.
+}
+]]></content>
+<tabTrigger>aws_timestreamwrite_database</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Timestream database resource.</description>
+</snippet>

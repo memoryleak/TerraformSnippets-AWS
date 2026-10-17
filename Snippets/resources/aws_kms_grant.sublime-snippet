@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_kms_grant" "${1:name}" {
+  grantee_principal = "${2:grantee_principal}"  # Principal that is given permission to perform the operations that the grant permits in ARN format.
+  key_id            = "${3:key_id}"             # Unique identifier for the customer master key (CMK) that the grant applies to.
+  operations        = [${4}]                    # List of operations that the grant permits.
+
+  # grant_creation_tokens = []     # List of grant tokens to be used when creating the grant.
+  # name                  = ""     # Friendly name for identifying the grant.
+  # region                = ""     # Region where this resource will be managed.
+  # retire_on_delete      = false  # If set to false (the default) the grants will be revoked upon deletion, and if set to true the gr...
+  # retiring_principal    = ""     # Principal that is given permission to retire the grant by using RetireGrant operation in ARN format.
+  # constraints {}  # Structure that you can use to allow certain operations in the grant only when the desired encrypt...
+}
+]]></content>
+<tabTrigger>aws_kms_grant</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource-based access control mechanism for KMS Customer Master Keys.</description>
+</snippet>

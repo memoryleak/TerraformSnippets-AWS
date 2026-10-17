@@ -1,0 +1,24 @@
+<snippet>
+<content><![CDATA[
+resource "aws_autoscaling_policy" "${1:name}" {
+  autoscaling_group_name = "${2:autoscaling_group_name}"  # Name of the Auto Scaling group.
+  name                   = "${3:name}"                    # Name of the policy.
+
+  # adjustment_type           = ""     # Whether the adjustment is an absolute number or a percentage of the current capacity.
+  # cooldown                  = 0      # Amount of time, in seconds, after a scaling activity completes and before the next scaling activi...
+  # enabled                   = false  # Whether the scaling policy is enabled or disabled.
+  # estimated_instance_warmup = 0      # Estimated time, in seconds, until a newly launched instance will contribute CloudWatch metrics.
+  # metric_aggregation_type   = ""     # Aggregation type for the policy's metrics.
+  # min_adjustment_magnitude  = 0      # Minimum value to scale by when adjustment_type is set to PercentChangeInCapacity.
+  # policy_type               = ""     # Policy type, either "SimpleScaling", "StepScaling", "TargetTrackingScaling", or "PredictiveScaling".
+  # region                    = ""     # Region where this resource will be managed.
+  # scaling_adjustment        = 0      # Number of instances by which to scale.
+  # predictive_scaling_configuration {}  # Predictive scaling policy configuration to use with Amazon EC2 Auto Scaling.
+  # step_adjustment {}  # Set of adjustments that manage
+  # target_tracking_configuration {}  # Target tracking policy.
+}
+]]></content>
+<tabTrigger>aws_autoscaling_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AutoScaling Scaling Policy resource.</description>
+</snippet>

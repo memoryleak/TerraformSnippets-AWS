@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ebs_fast_snapshot_restore" "${1:name}" {
+  availability_zone = "${2:availability_zone}"  # Availability zone in which to enable fast snapshot restores.
+  snapshot_id       = "${3:snapshot_id}"        # ID of the snapshot.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ebs_fast_snapshot_restore</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an EBS (Elastic Block Storage) Fast Snapshot Restore.</description>
+</snippet>

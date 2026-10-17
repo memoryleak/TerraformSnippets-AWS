@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrockagentcore_workload_identity" "${1:name}" {
+  name = "${2:name}"  # Name of the workload identity.
+
+  # allowed_resource_oauth2_return_urls = []  # Set of allowed OAuth2 return URLs for resources associated with this workload identity.
+  # region                              = ""  # Region where this resource will be managed.
+  # tags                                = {}  # Map of tags assigned to the resource.
+}
+]]></content>
+<tabTrigger>aws_bedrockagentcore_workload_identity</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Bedrock AgentCore Workload Identity.</description>
+</snippet>

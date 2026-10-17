@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cognito_identity_pool_provider_principal_tag" "${1:name}" {
+  identity_pool_id       = "${2:identity_pool_id}"
+  identity_provider_name = "${3:identity_provider_name}"
+
+  # principal_tags = {}
+  # region         = ""     # Region where this resource will be managed.
+  # use_defaults   = false
+}
+]]></content>
+<tabTrigger>aws_cognito_identity_pool_provider_principal_tag</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AWS Cognito Identity Principal Mapping.</description>
+</snippet>

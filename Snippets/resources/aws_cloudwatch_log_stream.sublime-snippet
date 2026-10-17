@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_log_stream" "${1:name}" {
+  log_group_name = "${2:log_group_name}"  # The name of the log group under which the log stream is to be created.
+  name           = "${3:name}"            # The name of the log stream.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_log_stream</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudWatch Log Stream resource.</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_glue_workflow" "${1:name}" {
+  # default_run_properties = {}  # Map of default run properties for this workflow.
+  # description            = ""  # Description of the workflow.
+  # max_concurrent_runs    = 0   # Prevents exceeding the maximum number of concurrent runs of any of the component jobs.
+  # name                   = ""  # Name you assign to this workflow.
+  # region                 = ""  # Region where this resource will be managed.
+  # tags                   = {}  # Key-value map of resource tags.
+}
+]]></content>
+<tabTrigger>aws_glue_workflow</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Glue Workflow resource.</description>
+</snippet>

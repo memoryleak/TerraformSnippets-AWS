@@ -1,0 +1,24 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lambda_permission" "${1:name}" {
+  action        = "${2:action}"         # Lambda action to allow in this statement (e.g., lambda:InvokeFunction)
+  function_name = "${3:function_name}"  # Name or ARN of the Lambda function
+  principal     = "${4:principal}"      # AWS service or account that invokes the function (e.g., s3.amazonaws.com, sns.amazonaws.com, AWS...
+
+  # event_source_token       = ""     # Event Source Token for Alexa Skills
+  # function_url_auth_type   = ""     # Lambda Function URL authentication type.
+  # invoked_via_function_url = false  # Lambda Function URL invoke permission.
+  # principal_org_id         = ""     # AWS Organizations ID to grant permission to all accounts under this organization
+  # qualifier                = ""     # Lambda function version or alias name
+  # region                   = ""     # Region where this resource will be managed.
+  # source_account           = ""     # AWS account ID of the source owner for cross-account access, S3, or SES
+  # source_arn               = ""     # ARN of the source resource granting permission to invoke the Lambda function
+  # statement_id             = ""     # Statement identifier.
+  # statement_id_prefix      = ""     # Statement identifier prefix.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_lambda_permission</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Lambda permission.</description>
+</snippet>

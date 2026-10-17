@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_grafana_workspace_api_key" "${1:name}" {
+  key_name        = "${2:key_name}"      # Name of the API key.
+  key_role        = "${3:key_role}"      # Permission level of the API key.
+  seconds_to_live = ${4:0}               # Time in seconds until the API key expires.
+  workspace_id    = "${5:workspace_id}"  # ID of the workspace that the API key is valid for.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_grafana_workspace_api_key</tabTrigger>
+<scope>source.terraform</scope>
+<description>Creates a Grafana API key for the workspace.</description>
+</snippet>

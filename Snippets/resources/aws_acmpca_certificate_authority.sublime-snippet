@@ -1,0 +1,25 @@
+<snippet>
+<content><![CDATA[
+resource "aws_acmpca_certificate_authority" "${1:name}" {
+  certificate_authority_configuration {
+    key_algorithm     = "${2:key_algorithm}"
+    signing_algorithm = "${3:signing_algorithm}"
+    subject {
+    }
+  }
+
+  # enabled                         = false  # Whether the certificate authority is enabled or disabled.
+  # key_storage_security_standard   = ""     # Cryptographic key management compliance standard used for handling CA keys.
+  # permanent_deletion_time_in_days = 0      # Number of days to make a CA restorable after it has been deleted, must be between 7 to 30 days, w...
+  # region                          = ""     # Region where this resource will be managed.
+  # tags                            = {}     # Key-value map of user-defined tags that are attached to the certificate authority.
+  # type                            = ""     # Type of the certificate authority.
+  # usage_mode                      = ""     # Specifies whether the CA issues general-purpose certificates that typically require a revocation...
+  # revocation_configuration {}  # Nested argument containing revocation configuration.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_acmpca_certificate_authority</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage AWS Certificate Manager Private Certificate Authorities</description>
+</snippet>

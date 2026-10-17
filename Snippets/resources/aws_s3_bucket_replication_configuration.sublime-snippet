@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3_bucket_replication_configuration" "${1:name}" {
+  bucket = "${2:bucket}"  # Name of the source S3 bucket you want Amazon S3 to monitor.
+  role   = "${3:role}"    # ARN of the IAM role for Amazon S3 to assume when replicating the objects.
+  rule {
+    status = "${4:status}"
+    destination {
+      bucket = "${5:bucket}"
+    }
+  }
+
+  # region = ""  # Region where this resource will be managed.
+  # token  = ""  # Token to allow replication to be enabled on an Object Lock-enabled bucket.
+}
+]]></content>
+<tabTrigger>aws_s3_bucket_replication_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a S3 bucket replication configuration resource.</description>
+</snippet>

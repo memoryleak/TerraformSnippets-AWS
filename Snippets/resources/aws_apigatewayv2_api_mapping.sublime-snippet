@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_apigatewayv2_api_mapping" "${1:name}" {
+  api_id      = "${2:api_id}"       # API identifier.
+  domain_name = "${3:domain_name}"  # Domain name.
+  stage       = "${4:stage}"        # API stage.
+
+  # api_mapping_key = ""  # API mapping key.
+  # region          = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_apigatewayv2_api_mapping</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Amazon API Gateway Version 2 API mapping.</description>
+</snippet>

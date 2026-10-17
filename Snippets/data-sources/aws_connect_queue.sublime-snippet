@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+data "aws_connect_queue" "${1:name}" {
+  instance_id = "${2:instance_id}"  # Reference to the hosting Amazon Connect Instance
+
+  # name     = ""  # Returns information on a specific Queue by name
+  # queue_id = ""  # Returns information on a specific Queue by Queue ID
+  # region   = ""  # Region where this resource will be managed.
+  # tags     = {}
+}
+]]></content>
+<tabTrigger>data_aws_connect_queue</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific Amazon Connect Queue.</description>
+</snippet>

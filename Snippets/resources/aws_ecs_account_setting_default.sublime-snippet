@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ecs_account_setting_default" "${1:name}" {
+  name  = "${2:name}"   # Name of the account setting to set.
+  value = "${3:value}"  # State of the setting.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_ecs_account_setting_default</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an ECS Default account setting.</description>
+</snippet>

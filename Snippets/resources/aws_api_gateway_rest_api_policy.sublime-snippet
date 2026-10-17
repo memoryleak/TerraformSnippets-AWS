@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_api_gateway_rest_api_policy" "${1:name}" {
+  policy      = "${2:policy}"       # JSON formatted policy document that controls access to the API Gateway.
+  rest_api_id = "${3:rest_api_id}"  # ID of the REST API.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_api_gateway_rest_api_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an API Gateway REST API Policy.</description>
+</snippet>

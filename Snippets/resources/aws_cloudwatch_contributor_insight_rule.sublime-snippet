@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_contributor_insight_rule" "${1:name}" {
+  rule_definition = "${2:rule_definition}"  # Definition of the rule, as a JSON object.
+  rule_name       = "${3:rule_name}"        # Unique name of the rule.
+
+  # region     = ""  # Region where this resource will be managed.
+  # rule_state = ""  # State of the rule.
+  # tags       = {}
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_contributor_insight_rule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS CloudWatch Contributor Insight Rule.</description>
+</snippet>

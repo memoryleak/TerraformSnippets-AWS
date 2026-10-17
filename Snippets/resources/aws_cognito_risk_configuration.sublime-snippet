@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cognito_risk_configuration" "${1:name}" {
+  user_pool_id = "${2:user_pool_id}"  # The user pool ID.
+
+  # client_id = ""  # The app client ID.
+  # region    = ""  # Region where this resource will be managed.
+  # account_takeover_risk_configuration {}  # The account takeover risk configuration.
+  # compromised_credentials_risk_configuration {}  # The compromised credentials risk configuration.
+  # risk_exception_configuration {}  # The configuration to override the risk decision.
+}
+]]></content>
+<tabTrigger>aws_cognito_risk_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Cognito Risk Configuration resource.</description>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iam_group" "${1:name}" {
+  name = "${2:name}"  # Group's name.
+
+  # path = ""  # Path in which to create the group.
+}
+]]></content>
+<tabTrigger>aws_iam_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an IAM group.</description>
+</snippet>

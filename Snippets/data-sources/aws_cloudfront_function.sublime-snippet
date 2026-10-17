@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_cloudfront_function" "${1:name}" {
+  name  = "${2:name}"   # Name of the CloudFront function.
+  stage = "${3:stage}"  # Function’s stage, either DEVELOPMENT or LIVE.
+}
+]]></content>
+<tabTrigger>data_aws_cloudfront_function</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides a CloudFront Function data source.</description>
+</snippet>

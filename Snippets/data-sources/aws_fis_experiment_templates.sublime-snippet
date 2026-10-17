@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_fis_experiment_templates" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags, each pair of which must exactly match a pair on the desired experiment templates.
+}
+]]></content>
+<tabTrigger>data_aws_fis_experiment_templates</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information about a set of FIS Experiment Templates</description>
+</snippet>

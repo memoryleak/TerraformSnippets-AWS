@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_savingsplans_savings_plan" "${1:name}" {
+  savings_plan_id = "${2:savings_plan_id}"  # The ID of the Savings Plan.
+}
+]]></content>
+<tabTrigger>data_aws_savingsplans_savings_plan</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on an AWS Savings Plan.</description>
+</snippet>

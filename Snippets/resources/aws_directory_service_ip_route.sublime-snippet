@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_directory_service_ip_route" "${1:name}" {
+  directory_id = "${2:directory_id}"  # Identifier of the directory to which to add the IP route.
+
+  # cidr_ip                                         = ""     # IPv4 CIDR block, such as 10.0.0.0/24.
+  # cidr_ipv6                                       = ""     # IPv6 CIDR block, such as 2001:db8::/64.
+  # description                                     = ""     # Description of the address block.
+  # region                                          = ""     # Region where this resource is managed.
+  # update_security_group_for_directory_controllers = false  # Whether to update the inbound and outbound rules of the security group for the directory controll...
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_directory_service_ip_route</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an IP route for an AWS Directory Service directory.</description>
+</snippet>

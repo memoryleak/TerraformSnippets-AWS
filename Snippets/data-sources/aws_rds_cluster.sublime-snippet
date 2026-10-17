@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_rds_cluster" "${1:name}" {
+  cluster_identifier = "${2:cluster_identifier}"  # Cluster identifier of the RDS cluster.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_rds_cluster</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides an RDS cluster data source.</description>
+</snippet>

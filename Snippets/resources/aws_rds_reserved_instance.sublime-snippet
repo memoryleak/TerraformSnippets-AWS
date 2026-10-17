@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_rds_reserved_instance" "${1:name}" {
+  offering_id = "${2:offering_id}"  # ID of the Reserved DB instance offering to purchase.
+
+  # instance_count = 0   # Number of instances to reserve.
+  # region         = ""  # Region where this resource will be managed.
+  # reservation_id = ""  # Customer-specified identifier to track this reservation.
+  # tags           = {}  # Map of tags to assign to the DB reservation.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_rds_reserved_instance</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an RDS DB Reserved Instance</description>
+</snippet>

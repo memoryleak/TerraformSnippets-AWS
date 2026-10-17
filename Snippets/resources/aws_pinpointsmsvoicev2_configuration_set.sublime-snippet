@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_pinpointsmsvoicev2_configuration_set" "${1:name}" {
+  name = "${2:name}"  # Name of the configuration set.
+
+  # default_message_type = ""  # Default message type.
+  # default_sender_id    = ""  # Default sender ID to use for this configuration set.
+  # region               = ""  # Region where this resource will be managed.
+  # tags                 = {}  # Key-value map of resource tags.
+}
+]]></content>
+<tabTrigger>aws_pinpointsmsvoicev2_configuration_set</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS End User Messaging SMS Configuration Set.</description>
+</snippet>

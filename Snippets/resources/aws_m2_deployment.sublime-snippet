@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_m2_deployment" "${1:name}" {
+  application_id      = "${2:application_id}"  # Application to deploy.
+  application_version = ${3:0}                 # Version to application to deploy
+  environment_id      = "${4:environment_id}"  # Environment to deploy application to.
+  start               = ${5:false}             # Start the application once deployed.
+
+  # force_stop = false  # Stop the application during deployment, even if it is running.
+  # region     = ""     # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_m2_deployment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Mainframe Modernization Deployment.</description>
+</snippet>

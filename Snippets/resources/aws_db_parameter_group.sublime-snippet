@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_db_parameter_group" "${1:name}" {
+  family = "${2:family}"  # Family of the DB parameter group.
+
+  # description  = ""     # Description of the DB parameter group.
+  # name         = ""     # Name of the DB parameter group.
+  # name_prefix  = ""     # Creates a unique name beginning with the specified prefix.
+  # region       = ""     # Region where this resource will be managed.
+  # skip_destroy = false  # Set to true if you do not wish the parameter group to be deleted at destroy time, and instead jus...
+  # tags         = {}     # Map of tags to assign to the resource.
+  # parameter {}  # DB parameters to apply.
+}
+]]></content>
+<tabTrigger>aws_db_parameter_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an RDS DB parameter group resource.</description>
+</snippet>

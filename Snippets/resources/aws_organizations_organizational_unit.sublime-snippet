@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_organizations_organizational_unit" "${1:name}" {
+  name      = "${2:name}"       # The name for the organizational unit
+  parent_id = "${3:parent_id}"  # ID of the parent organizational unit, which may be the root
+
+  # tags = {}  # Key-value map of resource tags.
+}
+]]></content>
+<tabTrigger>aws_organizations_organizational_unit</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to create an organizational unit.</description>
+</snippet>

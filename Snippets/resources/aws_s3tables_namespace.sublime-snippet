@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3tables_namespace" "${1:name}" {
+  namespace        = "${2:namespace}"         # Name of the namespace.
+  table_bucket_arn = "${3:table_bucket_arn}"  # ARN referencing the Table Bucket that contains this Namespace.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_s3tables_namespace</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an Amazon S3 Tables Namespace.</description>
+</snippet>

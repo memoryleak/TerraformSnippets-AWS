@@ -1,0 +1,27 @@
+<snippet>
+<content><![CDATA[
+resource "aws_verifiedaccess_endpoint" "${1:name}" {
+  attachment_type          = "${2:attachment_type}"           # Type of attachment.
+  endpoint_type            = "${3:endpoint_type}"             # Type of Verified Access endpoint to create.
+  verified_access_group_id = "${4:verified_access_group_id}"  # ID of the Verified Access group to associate the endpoint with.
+
+  # application_domain     = ""  # DNS name for users to reach your application.
+  # description            = ""  # Description for the Verified Access endpoint.
+  # domain_certificate_arn = ""  # ARN of the public TLS/SSL certificate in AWS Certificate Manager to associate with the endpoint.
+  # endpoint_domain_prefix = ""  # Custom identifier that is prepended to the DNS name that is generated for the endpoint.
+  # policy_document        = ""  # Policy document that is associated with this resource.
+  # region                 = ""  # Region where this resource will be managed.
+  # security_group_ids     = []  # List of the security groups IDs to associate with the Verified Access endpoint.
+  # tags                   = {}  # Key-value tags for the Verified Access Endpoint.
+  # cidr_options {}  # CIDR block details.
+  # load_balancer_options {}  # Load balancer details.
+  # network_interface_options {}  # Network interface details.
+  # rds_options {}  # RDS details.
+  # sse_specification {}  # Options in use for server side encryption.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_verifiedaccess_endpoint</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing a Verified Access Endpoint.</description>
+</snippet>

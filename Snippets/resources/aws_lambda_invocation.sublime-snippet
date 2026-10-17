@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lambda_invocation" "${1:name}" {
+  function_name = "${2:function_name}"  # Name of the Lambda function.
+  input         = "${3:input}"          # JSON payload to the Lambda function.
+
+  # lifecycle_scope = ""  # Lifecycle scope of the resource to manage.
+  # qualifier       = ""  # Qualifier (i.e., version) of the Lambda function.
+  # region          = ""  # Region where this resource will be managed.
+  # tenant_id       = ""  # Tenant ID to serve invocations from specified tenant.
+  # terraform_key   = ""  # JSON key used to store lifecycle information in the input JSON payload.
+  # triggers        = {}  # Map of arbitrary keys and values that, when changed, will trigger a re-invocation.
+}
+]]></content>
+<tabTrigger>aws_lambda_invocation</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Lambda Function invocation.</description>
+</snippet>

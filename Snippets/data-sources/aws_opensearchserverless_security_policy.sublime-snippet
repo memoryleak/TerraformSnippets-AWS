@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_opensearchserverless_security_policy" "${1:name}" {
+  name = "${2:name}"  # Name of the policy
+  type = "${3:type}"  # Type of security policy.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_opensearchserverless_security_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on an OpenSearch Serverless Security Policy.</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrock_guardrail_version" "${1:name}" {
+  guardrail_arn = "${2:guardrail_arn}"  # Guardrail ARN.
+
+  # description  = ""     # Description of the Guardrail version.
+  # region       = ""     # Region where this resource will be managed.
+  # skip_destroy = false  # Whether to retain the old version of a previously deployed Guardrail.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_bedrock_guardrail_version</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Bedrock Guardrail Version.</description>
+</snippet>

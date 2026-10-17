@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_rds_global_cluster" "${1:name}" {
+  global_cluster_identifier = "${2:global_cluster_identifier}"  # Global cluster identifier.
+
+  # database_name                = ""     # Name for an automatically created database on cluster creation.
+  # deletion_protection          = false  # If the Global Cluster should have deletion protection enabled.
+  # engine                       = ""     # Name of the database engine to be used for this DB cluster.
+  # engine_lifecycle_support     = ""     # Life cycle type for this DB instance.
+  # engine_version               = ""     # Engine version of the Aurora global database.
+  # force_destroy                = false  # Enable to remove DB Cluster members from Global Cluster on destroy.
+  # region                       = ""     # Region where this resource will be managed.
+  # source_db_cluster_identifier = ""     # ARN to use as the primary DB Cluster of the Global Cluster on creation.
+  # storage_encrypted            = false  # Whether the DB cluster is encrypted.
+  # tags                         = {}     # Map of tags to assign to the DB cluster.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_rds_global_cluster</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an RDS Global Cluster</description>
+</snippet>

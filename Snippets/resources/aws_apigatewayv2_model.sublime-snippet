@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_apigatewayv2_model" "${1:name}" {
+  api_id       = "${2:api_id}"        # API identifier.
+  content_type = "${3:content_type}"  # Content-type for the model, for example, application/json.
+  name         = "${4:name}"          # Name of the model.
+  schema       = "${5:schema}"        # Schema for the model.
+
+  # description = ""  # Description of the model.
+  # region      = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_apigatewayv2_model</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Amazon API Gateway Version 2 model.</description>
+</snippet>

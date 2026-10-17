@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_accountaccess_application" "${1:name}" {
+  # arn                          = ""  # ARN of the Application to look up.
+  # identity_center_instance_arn = ""  # ARN of the IAM Identity Center instance whose bound Application should be returned.
+  # region                       = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_accountaccess_application</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Looks up an existing AWS Account Access Application.</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_lex_slot_type" "${1:name}" {
+  name = "${2:name}"  # Name of the slot type.
+
+  # region  = ""  # Region where this resource will be managed.
+  # version = ""  # Version of the slot type.
+}
+]]></content>
+<tabTrigger>data_aws_lex_slot_type</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific Amazon Lex Slot Type</description>
+</snippet>

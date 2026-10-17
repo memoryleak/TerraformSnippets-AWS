@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iam_user_ssh_key" "${1:name}" {
+  encoding   = "${2:encoding}"    # Specifies the public key encoding format to use in the response.
+  public_key = "${3:public_key}"  # The SSH public key.
+  username   = "${4:username}"    # The name of the IAM user to associate the SSH public key with.
+
+  # status = ""  # The status to assign to the SSH public key.
+}
+]]></content>
+<tabTrigger>aws_iam_user_ssh_key</tabTrigger>
+<scope>source.terraform</scope>
+<description>Uploads an SSH public key and associates it with the specified IAM user.</description>
+</snippet>

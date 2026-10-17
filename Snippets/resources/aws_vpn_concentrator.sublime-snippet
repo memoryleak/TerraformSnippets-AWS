@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpn_concentrator" "${1:name}" {
+  transit_gateway_id = "${2:transit_gateway_id}"  # ID of the transit gateway to attach the VPN concentrator to.
+  type               = "${3:type}"                # Type of VPN concentrator.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value mapping of resource tags.
+}
+]]></content>
+<tabTrigger>aws_vpn_concentrator</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to create a VPN Concentrator.</description>
+</snippet>

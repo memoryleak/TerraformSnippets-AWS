@@ -1,0 +1,25 @@
+<snippet>
+<content><![CDATA[
+resource "aws_route53domains_domain" "${1:name}" {
+  domain_name = "${2:domain_name}"  # The name of the domain.
+
+  # admin_privacy      = false  # Whether domain administrative contact information is concealed from WHOIS queries.
+  # auto_renew         = false  # Whether the domain registration is set to renew automatically.
+  # billing_contact    = []     # Details about the domain billing contact.
+  # billing_privacy    = false  # Whether domain billing contact information is concealed from WHOIS queries.
+  # duration_in_years  = 0      # The number of years that you want to register the domain for.
+  # name_server        = []     # The list of nameservers for the domain.
+  # registrant_privacy = false  # Whether domain registrant contact information is concealed from WHOIS queries.
+  # tags               = {}     # A map of tags to assign to the resource.
+  # tech_privacy       = false  # Whether domain technical contact information is concealed from WHOIS queries.
+  # transfer_lock      = false  # Whether the domain is locked for transfer.
+  # admin_contact {}  # Details about the domain administrative contact.
+  # registrant_contact {}  # Details about the domain registrant.
+  # tech_contact {}  # Details about the domain technical contact.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_route53domains_domain</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage a domain.</description>
+</snippet>

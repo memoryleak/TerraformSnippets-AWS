@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_api_gateway_rest_api_put" "${1:name}" {
+  body        = "${2:body}"         # PUT request body containing external API definitions.
+  rest_api_id = "${3:rest_api_id}"  # Identifier of the associated REST API.
+
+  # fail_on_warnings = false  # Whether to rollback the API update when a warning is encountered.
+  # parameters       = {}     # Map of customizations for importing the specification in the body argument.
+  # region           = ""     # Region where this resource will be managed.
+  # triggers         = {}     # Map of arbitrary keys and values that, when changed, will trigger a redeployment.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_api_gateway_rest_api_put</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for updating an AWS API Gateway REST API.</description>
+</snippet>

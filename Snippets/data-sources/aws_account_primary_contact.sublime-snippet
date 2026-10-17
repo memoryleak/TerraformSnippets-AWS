@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_account_primary_contact" "${1:name}" {
+  # account_id = ""  # The ID of the target account when managing member accounts.
+}
+]]></content>
+<tabTrigger>data_aws_account_primary_contact</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for the primary contact information associated with an AWS Account.</description>
+</snippet>

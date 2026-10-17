@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_apigatewayv2_authorizer" "${1:name}" {
+  api_id          = "${2:api_id}"           # API identifier.
+  authorizer_type = "${3:authorizer_type}"  # Authorizer type.
+  name            = "${4:name}"             # Name of the authorizer.
+
+  # authorizer_credentials_arn        = ""     # Required credentials as an IAM role for API Gateway to invoke the authorizer.
+  # authorizer_payload_format_version = ""     # Format of the payload sent to an HTTP API Lambda authorizer.
+  # authorizer_result_ttl_in_seconds  = 0      # Time to live (TTL) for cached authorizer results, in seconds.
+  # authorizer_uri                    = ""     # Authorizer's URI.
+  # enable_simple_responses           = false  # Whether a Lambda authorizer returns a response in a simple format.
+  # identity_sources                  = []     # Identity sources for which authorization is requested.
+  # region                            = ""     # Region where this resource will be managed.
+  # jwt_configuration {}  # Configuration of a JWT authorizer.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_apigatewayv2_authorizer</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Amazon API Gateway Version 2 authorizer.</description>
+</snippet>

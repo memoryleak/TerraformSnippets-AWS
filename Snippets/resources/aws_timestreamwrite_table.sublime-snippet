@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_timestreamwrite_table" "${1:name}" {
+  database_name = "${2:database_name}"  # Name of the Timestream database.
+  table_name    = "${3:table_name}"     # Name of the Timestream table.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags to assign to this resource.
+  # magnetic_store_write_properties {}  # Properties to set on the table when enabling magnetic store writes.
+  # retention_properties {}  # Retention duration for the memory store and magnetic store.
+  # schema {}  # Schema of the table.
+}
+]]></content>
+<tabTrigger>aws_timestreamwrite_table</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Timestream table resource.</description>
+</snippet>

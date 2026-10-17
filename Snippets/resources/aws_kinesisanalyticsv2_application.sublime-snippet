@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_kinesisanalyticsv2_application" "${1:name}" {
+  name                   = "${2:name}"                    # Name of the application.
+  runtime_environment    = "${3:runtime_environment}"     # Runtime environment for the application.
+  service_execution_role = "${4:service_execution_role}"  # ARN of the IAM role used by the application to access Kinesis data streams, Kinesis Data Firehose...
+
+  # application_mode  = ""     # Application's mode.
+  # description       = ""     # Summary description of the application.
+  # force_stop        = false  # Whether to force stop an unresponsive Flink-based application.
+  # region            = ""     # Region where this resource will be managed.
+  # start_application = false  # Whether to start or stop the application.
+  # tags              = {}     # Map of tags to assign to the application.
+  # application_configuration {}  # Application configuration.
+  # cloudwatch_logging_options {}  # CloudWatch log stream to monitor application configuration errors.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_kinesisanalyticsv2_application</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Kinesis Analytics v2 Application.</description>
+</snippet>

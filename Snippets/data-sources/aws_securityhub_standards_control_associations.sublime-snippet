@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_securityhub_standards_control_associations" "${1:name}" {
+  security_control_id = "${2:security_control_id}"  # The identifier of the control (identified with SecurityControlId, SecurityControlArn, or a mix of...
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_securityhub_standards_control_associations</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS Security Hub Standards Control Associations.</description>
+</snippet>

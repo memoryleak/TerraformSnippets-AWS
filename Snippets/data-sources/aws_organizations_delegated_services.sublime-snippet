@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_organizations_delegated_services" "${1:name}" {
+  account_id = "${2:account_id}"  # Account ID number of a delegated administrator account in the organization.
+}
+]]></content>
+<tabTrigger>data_aws_organizations_delegated_services</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get a list the AWS services for which the specified account is a delegated administrator</description>
+</snippet>

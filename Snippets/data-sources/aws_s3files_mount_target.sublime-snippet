@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_s3files_mount_target" "${1:name}" {
+  # region = ""  # Region where this data source will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_s3files_mount_target</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an S3 Files Mount Target.</description>
+</snippet>

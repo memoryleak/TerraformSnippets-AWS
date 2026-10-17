@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_redshiftserverless_workgroup" "${1:name}" {
+  workgroup_name = "${2:workgroup_name}"  # The name of the workgroup associated with the database.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_redshiftserverless_workgroup</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS Redshift Serverless Workgroup.</description>
+</snippet>

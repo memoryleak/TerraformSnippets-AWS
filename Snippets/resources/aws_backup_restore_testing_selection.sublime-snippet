@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_backup_restore_testing_selection" "${1:name}" {
+  iam_role_arn              = "${2:iam_role_arn}"               # ARN of the IAM role.
+  name                      = "${3:name}"                       # Name of the backup restore testing selection.
+  protected_resource_type   = "${4:protected_resource_type}"    # Type of the protected resource.
+  restore_testing_plan_name = "${5:restore_testing_plan_name}"  # Name of the restore testing plan.
+
+  # protected_resource_arns    = []  # ARNs for the protected resources.
+  # region                     = ""  # Region where this resource will be managed.
+  # restore_metadata_overrides = {}  # Override certain restore metadata keys.
+  # validation_window_hours    = 0   # Amount of hours available to run a validation script on the data.
+  # protected_resource_conditions {}  # Conditions for the protected resource.
+}
+]]></content>
+<tabTrigger>aws_backup_restore_testing_selection</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Backup Restore Testing Selection.</description>
+</snippet>

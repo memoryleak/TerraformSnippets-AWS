@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudfront_anycast_ip_list" "${1:name}" {
+  ip_count = ${2:0}       # The number of static IP addresses that are allocated to the Anycast IP list.
+  name     = "${3:name}"  # Name of the Anycast IP list.
+
+  # tags = {}  # Key-value tags for the place index.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_cloudfront_anycast_ip_list</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing a CloudFront Anycast IP List.</description>
+</snippet>

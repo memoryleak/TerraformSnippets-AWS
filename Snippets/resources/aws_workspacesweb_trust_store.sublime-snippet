@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_workspacesweb_trust_store" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags to assign to the resource.
+  # certificate {}  # Set of certificates to include in the trust store.
+}
+]]></content>
+<tabTrigger>aws_workspacesweb_trust_store</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS WorkSpaces Web Trust Store.</description>
+</snippet>

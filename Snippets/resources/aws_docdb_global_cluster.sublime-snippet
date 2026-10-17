@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_docdb_global_cluster" "${1:name}" {
+  global_cluster_identifier = "${2:global_cluster_identifier}"  # The global cluster identifier.
+
+  # database_name                = ""     # Name for an automatically created database on cluster creation.
+  # deletion_protection          = false  # If the Global Cluster should have deletion protection enabled.
+  # engine                       = ""     # Name of the database engine to be used for this DB cluster.
+  # engine_version               = ""     # Engine version of the global database.
+  # region                       = ""     # Region where this resource will be managed.
+  # source_db_cluster_identifier = ""     # ARN to use as the primary DB Cluster of the Global Cluster on creation.
+  # storage_encrypted            = false  # Specifies whether the DB cluster is encrypted.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_docdb_global_cluster</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a DocumentDB Global Cluster</description>
+</snippet>

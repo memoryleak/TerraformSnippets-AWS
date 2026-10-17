@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+resource "aws_timestreamquery_scheduled_query" "${1:name}" {
+  execution_role_arn = "${2:execution_role_arn}"  # ARN for the IAM role that Timestream will assume when running the scheduled query.
+  name               = "${3:name}"                # Name of the scheduled query.
+  query_string       = "${4:query_string}"        # Query string to run.
+
+  # kms_key_id = ""  # Amazon KMS key used to encrypt the scheduled query resource, at-rest.
+  # region     = ""  # Region where this resource will be managed.
+  # tags       = {}  # Map of tags assigned to the resource.
+  # error_report_configuration {}  # Configuration block for error reporting configuration.
+  # last_run_summary {}
+  # notification_configuration {}  # Configuration block for notification configuration for a scheduled query.
+  # recently_failed_runs {}
+  # schedule_configuration {}  # Configuration block for schedule configuration for the query.
+  # target_configuration {}  # Configuration block for writing the result of a query.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_timestreamquery_scheduled_query</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Timestream Query Scheduled Query.</description>
+</snippet>

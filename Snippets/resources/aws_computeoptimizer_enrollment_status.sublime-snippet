@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_computeoptimizer_enrollment_status" "${1:name}" {
+  status = "${2:status}"  # The enrollment status of the account.
+
+  # include_member_accounts = false  # Whether to enroll member accounts of the organization if the account is the management account of...
+  # region                  = ""     # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_computeoptimizer_enrollment_status</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages AWS Compute Optimizer enrollment status.</description>
+</snippet>

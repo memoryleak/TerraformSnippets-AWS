@@ -1,0 +1,26 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3_bucket_inventory" "${1:name}" {
+  bucket                   = "${2:bucket}"                    # Name of the source bucket that inventory lists the objects for.
+  included_object_versions = "${3:included_object_versions}"  # Object versions to include in the inventory list.
+  name                     = "${4:name}"                      # Unique identifier of the inventory configuration for the bucket.
+  destination {
+    bucket {
+      bucket_arn = "${5:bucket_arn}"
+      format     = "${6:format}"
+    }
+  }
+  schedule {
+    frequency = "${7:frequency}"
+  }
+
+  # enabled         = false  # Whether to enable the inventory.
+  # optional_fields = []     # List of optional fields that are included in the inventory results.
+  # region          = ""     # Region where this resource will be managed.
+  # filter {}  # Inventory filter.
+}
+]]></content>
+<tabTrigger>aws_s3_bucket_inventory</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a S3 bucket inventory configuration resource.</description>
+</snippet>

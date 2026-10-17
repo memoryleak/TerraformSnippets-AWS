@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iam_user_policy" "${1:name}" {
+  policy = "${2:policy}"  # The policy document.
+  user   = "${3:user}"    # IAM user to which to attach this policy.
+
+  # name        = ""  # The name of the policy.
+  # name_prefix = ""  # Creates a unique name beginning with the specified prefix.
+}
+]]></content>
+<tabTrigger>aws_iam_user_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an IAM policy attached to a user.</description>
+</snippet>

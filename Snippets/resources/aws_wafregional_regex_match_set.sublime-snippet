@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_wafregional_regex_match_set" "${1:name}" {
+  name = "${2:name}"  # The name or description of the Regex Match Set.
+
+  # region = ""  # Region where this resource will be managed.
+  # regex_match_tuple {}  # The regular expression pattern that you want AWS WAF to search for in web requests, the location...
+}
+]]></content>
+<tabTrigger>aws_wafregional_regex_match_set</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a AWS WAF Regional Regex Match Set resource.</description>
+</snippet>

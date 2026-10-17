@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_organizations_account" "${1:name}" {
+  account_id = "${2:account_id}"  # Account ID number of a delegated administrator account in the organization.
+
+  # tags = {}
+}
+]]></content>
+<tabTrigger>data_aws_organizations_account</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information about an account in an organization.</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_transit_gateway_route_table_propagation" "${1:name}" {
+  transit_gateway_attachment_id  = "${2:transit_gateway_attachment_id}"   # Identifier of EC2 Transit Gateway Attachment.
+  transit_gateway_route_table_id = "${3:transit_gateway_route_table_id}"  # Identifier of EC2 Transit Gateway Route Table.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_ec2_transit_gateway_route_table_propagation</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an EC2 Transit Gateway Route Table propagation</description>
+</snippet>

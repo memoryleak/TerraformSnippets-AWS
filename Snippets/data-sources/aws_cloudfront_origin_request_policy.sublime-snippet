@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_cloudfront_origin_request_policy" "${1:name}" {
+  # name = ""  # Unique name to identify the origin request policy.
+}
+]]></content>
+<tabTrigger>data_aws_cloudfront_origin_request_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Determines the values that CloudFront includes in requests that it sends to the origin.</description>
+</snippet>

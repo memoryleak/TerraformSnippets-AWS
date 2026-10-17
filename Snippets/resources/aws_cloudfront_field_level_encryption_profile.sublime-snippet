@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudfront_field_level_encryption_profile" "${1:name}" {
+  name = "${2:name}"  # The name of the Field Level Encryption Profile.
+  encryption_entities {
+  }
+
+  # comment = ""  # An optional comment about the Field Level Encryption Profile.
+}
+]]></content>
+<tabTrigger>aws_cloudfront_field_level_encryption_profile</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudFront Field-level Encryption Profile resource.</description>
+</snippet>

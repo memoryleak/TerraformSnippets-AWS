@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_s3files_access_point" "${1:name}" {
+  # region = ""  # Region where this resource is managed.
+  # posix_user {}
+  # root_directory {}
+}
+]]></content>
+<tabTrigger>data_aws_s3files_access_point</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Data source for managing an S3 Files Access Point.</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_workspacesweb_trust_store_association" "${1:name}" {
+  portal_arn      = "${2:portal_arn}"       # ARN of the portal to associate with the trust store.
+  trust_store_arn = "${3:trust_store_arn}"  # ARN of the trust store to associate with the portal.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_workspacesweb_trust_store_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS WorkSpaces Web Trust Store Association.</description>
+</snippet>

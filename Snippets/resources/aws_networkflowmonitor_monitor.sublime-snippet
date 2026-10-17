@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_networkflowmonitor_monitor" "${1:name}" {
+  monitor_name = "${2:monitor_name}"  # The name of the monitor.
+  scope_arn    = "${3:scope_arn}"     # ARN of the scope for the monitor.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # A map of tags to assign to the resource.
+  # local_resource {}  # The local resources to monitor.
+  # remote_resource {}  # The remote resources to monitor.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_networkflowmonitor_monitor</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Network Flow Monitor Monitor.</description>
+</snippet>

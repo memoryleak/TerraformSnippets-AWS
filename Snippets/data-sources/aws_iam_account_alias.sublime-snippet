@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+data "aws_iam_account_alias" "${1:name}" {
+}
+]]></content>
+<tabTrigger>data_aws_iam_account_alias</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides the account alias for the AWS account associated with the provider connection to AWS.</description>
+</snippet>

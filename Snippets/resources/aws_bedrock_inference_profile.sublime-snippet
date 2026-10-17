@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrock_inference_profile" "${1:name}" {
+  name = "${2:name}"  # Name of the inference profile.
+
+  # description = ""  # Description of the inference profile.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Key-value mapping of resource tags for the inference profile.
+  # model_source {}  # Source of the model this inference profile will track metrics and cost for.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_bedrock_inference_profile</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Bedrock Inference Profile.</description>
+</snippet>

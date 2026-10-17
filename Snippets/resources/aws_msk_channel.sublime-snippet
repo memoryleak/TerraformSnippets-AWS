@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_msk_channel" "${1:name}" {
+  channel_name = "${2:channel_name}"  # Name of the channel.
+  cluster_arn  = "${3:cluster_arn}"   # ARN that uniquely identifies the cluster.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags assigned to the resource.
+  # encryption_configuration {}  # AWS KMS encryption configuration applied to data at rest.
+  # iceberg_destination {}  # Apache Iceberg destination for the channel.
+  # logging_info {}  # Destinations to which the channel publishes operational logs.
+  # s3_destination {}  # Amazon S3 destination for the channel.
+  # timeouts {}
+  # topic_configuration {}  # Configuration of the Apache Kafka topic that feeds the channel.
+}
+]]></content>
+<tabTrigger>aws_msk_channel</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Amazon Managed Streaming for Apache Kafka (MSK) Channel.</description>
+</snippet>

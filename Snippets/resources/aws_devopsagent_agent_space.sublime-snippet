@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_devopsagent_agent_space" "${1:name}" {
+  name = "${2:name}"  # Name of the Agent Space.
+
+  # description = ""  # Description of the Agent Space.
+  # kms_key_arn = ""  # ARN of the AWS KMS key used to encrypt resources.
+  # locale      = ""  # Locale for the Agent Space, which determines the language used in agent responses (e.g., en).
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Map of tags assigned to the resource.
+}
+]]></content>
+<tabTrigger>aws_devopsagent_agent_space</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS DevOps Agent Space.</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_quicksight_data_set" "${1:name}" {
+  data_set_id = "${2:data_set_id}"  # Identifier for the data set.
+
+  # aws_account_id = ""  # AWS account ID.
+  # region         = ""  # Region where this resource will be managed.
+  # tags           = {}
+}
+]]></content>
+<tabTrigger>data_aws_quicksight_data_set</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Use this data source to fetch information about a QuickSight Data Set.</description>
+</snippet>

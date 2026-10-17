@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_datapipeline_pipeline" "${1:name}" {
+  pipeline_id = "${2:pipeline_id}"  # ID of the pipeline.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_datapipeline_pipeline</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific DataPipeline.</description>
+</snippet>

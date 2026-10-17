@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+data "aws_security_group" "${1:name}" {
+  # name   = ""  # Name that the desired security group must have.
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags, each pair of which must exactly match
+  # vpc_id = ""  # ID of the VPC that the desired security group belongs to.
+  # filter {}  # Custom filter block as described below.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_security_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific Security Group</description>
+</snippet>

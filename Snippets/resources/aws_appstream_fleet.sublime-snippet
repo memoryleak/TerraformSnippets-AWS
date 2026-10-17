@@ -1,0 +1,30 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appstream_fleet" "${1:name}" {
+  instance_type = "${2:instance_type}"  # Instance type to use when launching fleet instances.
+  name          = "${3:name}"           # Unique name for the fleet.
+  compute_capacity {
+  }
+
+  # description                        = ""     # Description to display.
+  # disconnect_timeout_in_seconds      = 0      # Amount of time that a streaming session remains active after users disconnect.
+  # display_name                       = ""     # Human-readable friendly name for the AppStream fleet.
+  # enable_default_internet_access     = false  # Enables or disables default internet access for the fleet.
+  # fleet_type                         = ""     # Fleet type.
+  # iam_role_arn                       = ""     # ARN of the IAM role to apply to the fleet.
+  # idle_disconnect_timeout_in_seconds = 0      # Amount of time that users can be idle (inactive) before they are disconnected from their streamin...
+  # image_arn                          = ""     # ARN of the public, private, or shared image to use.
+  # image_name                         = ""     # Name of the image used to create the fleet.
+  # max_sessions_per_instance          = 0      # Maximum number of user sessions on an instance.
+  # max_user_duration_in_seconds       = 0      # Maximum amount of time that a streaming session can remain active, in seconds.
+  # region                             = ""     # Region where this resource will be managed.
+  # stream_view                        = ""     # AppStream 2.0 view that is displayed to your users when they stream from the fleet.
+  # tags                               = {}     # Map of tags to attach to AppStream instances.
+  # domain_join_info {}  # Configuration block for the name of the directory and organizational unit (OU) to use to join the...
+  # vpc_config {}  # Configuration block for the VPC configuration for the image builder.
+}
+]]></content>
+<tabTrigger>aws_appstream_fleet</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AppStream fleet</description>
+</snippet>

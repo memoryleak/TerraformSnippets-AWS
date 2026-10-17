@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ecs_cluster_capacity_providers" "${1:name}" {
+  cluster_name = "${2:cluster_name}"  # Name of the ECS cluster to manage capacity providers for.
+
+  # capacity_providers = []  # Set of names of one or more capacity providers to associate with the cluster.
+  # region             = ""  # Region where this resource will be managed.
+  # default_capacity_provider_strategy {}  # Set of capacity provider strategies to use by default for the cluster.
+}
+]]></content>
+<tabTrigger>aws_ecs_cluster_capacity_providers</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an ECS cluster capacity providers resource.</description>
+</snippet>

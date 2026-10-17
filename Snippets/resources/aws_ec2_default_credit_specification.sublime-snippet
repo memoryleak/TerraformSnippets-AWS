@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_default_credit_specification" "${1:name}" {
+  cpu_credits     = "${2:cpu_credits}"      # Credit option for CPU usage of the instance family.
+  instance_family = "${3:instance_family}"  # Instance family.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ec2_default_credit_specification</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS EC2 (Elastic Compute Cloud) Default Credit Specification.</description>
+</snippet>

@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_wafv2_ip_set" "${1:name}" {
+  ip_address_version = "${2:ip_address_version}"  # Specify IPV4 or IPV6.
+  scope              = "${3:scope}"               # Specifies whether this is for an AWS CloudFront distribution or for a regional application.
+
+  # addresses   = []  # Contains an array of strings that specifies zero or more IP addresses or blocks of IP addresses.
+  # description = ""  # A friendly description of the IP set.
+  # name        = ""  # A friendly name of the IP set.
+  # name_prefix = ""  # Creates a unique name beginning with the specified prefix.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # An array of key:value pairs to associate with the resource.
+}
+]]></content>
+<tabTrigger>aws_wafv2_ip_set</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AWS WAFv2 IP Set resource.</description>
+</snippet>

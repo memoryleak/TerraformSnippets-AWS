@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_auditmanager_account_registration" "${1:name}" {
+  # delegated_admin_account = ""     # Identifier for the delegated administrator account.
+  # deregister_on_destroy   = false  # Flag to deregister AuditManager in the account upon destruction.
+  # kms_key                 = ""     # KMS key identifier.
+  # region                  = ""     # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_auditmanager_account_registration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing AWS Audit Manager Account Registration.</description>
+</snippet>

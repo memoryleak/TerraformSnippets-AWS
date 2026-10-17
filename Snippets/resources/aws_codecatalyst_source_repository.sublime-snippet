@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_codecatalyst_source_repository" "${1:name}" {
+  name         = "${2:name}"          # The name of the source repository.
+  project_name = "${3:project_name}"  # The name of the project in the CodeCatalyst space.
+  space_name   = "${4:space_name}"    # The name of the CodeCatalyst space.
+
+  # description = ""  # The description of the project.
+  # region      = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_codecatalyst_source_repository</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS CodeCatalyst Source Repository.</description>
+</snippet>

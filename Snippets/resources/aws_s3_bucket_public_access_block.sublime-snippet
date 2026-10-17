@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3_bucket_public_access_block" "${1:name}" {
+  bucket = "${2:bucket}"  # S3 Bucket to which this Public Access Block configuration should be applied.
+
+  # block_public_acls       = false  # Whether Amazon S3 should block public ACLs for this bucket.
+  # block_public_policy     = false  # Whether Amazon S3 should block public bucket policies for this bucket.
+  # ignore_public_acls      = false  # Whether Amazon S3 should ignore public ACLs for this bucket.
+  # region                  = ""     # Region where this resource will be managed.
+  # restrict_public_buckets = false  # Whether Amazon S3 should restrict public bucket policies for this bucket.
+  # skip_destroy            = false  # Whether to retain the public access block upon destruction.
+}
+]]></content>
+<tabTrigger>aws_s3_bucket_public_access_block</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages S3 bucket-level Public Access Block Configuration</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_location_tracker_association" "${1:name}" {
+  consumer_arn = "${2:consumer_arn}"  # ARN for the geofence collection to be associated to tracker resource.
+  tracker_name = "${3:tracker_name}"  # The name of the tracker resource to be associated with a geofence collection.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_location_tracker_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Location Tracker Association.</description>
+</snippet>

@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appautoscaling_policy" "${1:name}" {
+  name               = "${2:name}"                # Name of the policy.
+  resource_id        = "${3:resource_id}"         # Resource type and unique identifier string for the resource associated with the scaling policy.
+  scalable_dimension = "${4:scalable_dimension}"  # Scalable dimension of the scalable target.
+  service_namespace  = "${5:service_namespace}"   # AWS service namespace of the scalable target.
+
+  # policy_type = ""  # Policy type.
+  # region      = ""  # Region where this resource will be managed.
+  # predictive_scaling_policy_configuration {}  # Predictive scaling policy configuration, requires policy_type = "PredictiveScaling".
+  # step_scaling_policy_configuration {}  # Step scaling policy configuration, requires policy_type = "StepScaling" (default).
+  # target_tracking_scaling_policy_configuration {}  # Target tracking policy configuration, requires policy_type = "TargetTrackingScaling".
+}
+]]></content>
+<tabTrigger>aws_appautoscaling_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Application AutoScaling Policy resource.</description>
+</snippet>

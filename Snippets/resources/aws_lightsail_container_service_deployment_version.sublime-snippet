@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lightsail_container_service_deployment_version" "${1:name}" {
+  service_name = "${2:service_name}"  # Name of the container service.
+  container {
+    container_name = "${3:container_name}"
+    image          = "${4:image}"
+  }
+
+  # region = ""  # Region where this resource will be managed.
+  # public_endpoint {}  # Configuration block that describes the settings of the public endpoint for the container service.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_lightsail_container_service_deployment_version</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a deployment version for a Lightsail container service.</description>
+</snippet>

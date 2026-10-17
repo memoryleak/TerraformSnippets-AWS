@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpc_endpoint_service_allowed_principal" "${1:name}" {
+  principal_arn           = "${2:principal_arn}"            # ARN of the principal to allow permissions.
+  vpc_endpoint_service_id = "${3:vpc_endpoint_service_id}"  # ID of the VPC endpoint service to allow permission.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_vpc_endpoint_service_allowed_principal</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to allow a principal to discover a VPC endpoint service.</description>
+</snippet>

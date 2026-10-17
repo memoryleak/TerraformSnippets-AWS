@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudformation_type" "${1:name}" {
+  schema_handler_package = "${2:schema_handler_package}"  # URL to the S3 bucket containing the extension project package that contains the necessary files f...
+  type_name              = "${3:type_name}"               # CloudFormation Type name.
+
+  # execution_role_arn = ""  # ARN of the IAM Role for CloudFormation to assume when invoking the extension.
+  # region             = ""  # Region where this resource will be managed.
+  # type               = ""  # CloudFormation Registry Type.
+  # logging_config {}  # Configuration block containing logging configuration.
+}
+]]></content>
+<tabTrigger>aws_cloudformation_type</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a version of a CloudFormation Type.</description>
+</snippet>

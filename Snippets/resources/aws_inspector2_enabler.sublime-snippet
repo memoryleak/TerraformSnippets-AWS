@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_inspector2_enabler" "${1:name}" {
+  account_ids    = [${2}]  # Set of account IDs.
+  resource_types = [${3}]  # Type of resources to scan.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_inspector2_enabler</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for enabling Amazon Inspector resource scans.</description>
+</snippet>

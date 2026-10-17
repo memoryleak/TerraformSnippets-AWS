@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_ec2_local_gateway_route_tables" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Mapping of tags, each pair of which must exactly match
+  # filter {}  # Custom filter block as described below.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_ec2_local_gateway_route_tables</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides information for multiple EC2 Local Gateway Route Tables</description>
+</snippet>

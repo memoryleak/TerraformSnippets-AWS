@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_rds_cluster_role_association" "${1:name}" {
+  db_cluster_identifier = "${2:db_cluster_identifier}"  # DB Cluster Identifier to associate with the IAM Role.
+  role_arn              = "${3:role_arn}"               # ARN of the IAM Role to associate with the DB Cluster.
+
+  # feature_name = ""  # Name of the feature for association.
+  # region       = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_rds_cluster_role_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a RDS DB Cluster association with an IAM Role.</description>
+</snippet>

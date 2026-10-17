@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_msk_broker_nodes" "${1:name}" {
+  cluster_arn = "${2:cluster_arn}"  # ARN of the cluster the nodes belong to.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_msk_broker_nodes</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on an Amazon MSK Broker Nodes</description>
+</snippet>

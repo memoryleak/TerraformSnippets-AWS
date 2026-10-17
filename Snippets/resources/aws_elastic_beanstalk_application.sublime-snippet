@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_elastic_beanstalk_application" "${1:name}" {
+  name = "${2:name}"  # The name of the application, must be unique within your account
+
+  # description = ""  # Short description of the application
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Key-value map of tags for the Elastic Beanstalk Application.
+  # appversion_lifecycle {}
+}
+]]></content>
+<tabTrigger>aws_elastic_beanstalk_application</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Elastic Beanstalk Application Resource</description>
+</snippet>

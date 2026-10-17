@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_security_groups" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags, each pair of which must exactly match for desired security groups.
+  # filter {}  # One or more name/value pairs to use as filters.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_security_groups</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information about a set of Security Groups.</description>
+</snippet>

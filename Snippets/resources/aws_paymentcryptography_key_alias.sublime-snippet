@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_paymentcryptography_key_alias" "${1:name}" {
+  alias_name = "${2:alias_name}"  # Name of the Key Alias.
+
+  # key_arn = ""  # ARN of the key.
+  # region  = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_paymentcryptography_key_alias</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Payment Cryptography Control Plane Key Alias.</description>
+</snippet>

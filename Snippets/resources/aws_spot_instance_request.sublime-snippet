@@ -1,0 +1,64 @@
+<snippet>
+<content><![CDATA[
+resource "aws_spot_instance_request" "${1:name}" {
+  # ami                                  = ""
+  # associate_public_ip_address          = false
+  # availability_zone                    = ""
+  # disable_api_stop                     = false
+  # disable_api_termination              = false
+  # ebs_optimized                        = false
+  # enable_primary_ipv6                  = false
+  # force_destroy                        = false
+  # get_password_data                    = false
+  # hibernation                          = false
+  # host_id                              = ""
+  # host_resource_group_arn              = ""
+  # iam_instance_profile                 = ""
+  # instance_initiated_shutdown_behavior = ""
+  # instance_interruption_behavior       = ""     # Indicates Spot instance behavior when it is interrupted.
+  # instance_type                        = ""
+  # ipv6_address_count                   = 0
+  # ipv6_addresses                       = []
+  # key_name                             = ""
+  # launch_group                         = ""     # A launch group is a group of spot instances that launch together and terminate together.
+  # monitoring                           = false
+  # placement_group                      = ""
+  # placement_group_id                   = ""
+  # placement_partition_number           = 0
+  # private_ip                           = ""
+  # region                               = ""     # Region where this resource will be managed.
+  # secondary_private_ips                = []
+  # security_groups                      = []
+  # source_dest_check                    = false
+  # spot_price                           = ""     # The maximum price to request on the spot market.
+  # spot_type                            = ""     # If set to one-time, after
+  # subnet_id                            = ""
+  # tags                                 = {}     # A map of tags to assign to the Spot Instance Request.
+  # tenancy                              = ""
+  # user_data                            = ""
+  # user_data_base64                     = ""
+  # user_data_replace_on_change          = false
+  # valid_from                           = ""     # The start date and time of the request, in UTC RFC3339 format(for example, YYYY-MM-DDTHH:MM:SSZ).
+  # valid_until                          = ""     # The end date and time of the request, in UTC RFC3339 format(for example, YYYY-MM-DDTHH:MM:SSZ).
+  # volume_tags                          = {}
+  # vpc_security_group_ids               = []
+  # wait_for_fulfillment                 = false  # If set, Terraform will
+  # capacity_reservation_specification {}
+  # cpu_options {}
+  # credit_specification {}
+  # ebs_block_device {}
+  # enclave_options {}
+  # ephemeral_block_device {}
+  # launch_template {}
+  # maintenance_options {}
+  # metadata_options {}
+  # private_dns_name_options {}
+  # root_block_device {}
+  # secondary_network_interface {}
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_spot_instance_request</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Spot Instance Request resource.</description>
+</snippet>

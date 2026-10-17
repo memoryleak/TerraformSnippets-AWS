@@ -1,0 +1,24 @@
+<snippet>
+<content><![CDATA[
+resource "aws_evidently_feature" "${1:name}" {
+  name    = "${2:name}"     # The name for the new feature.
+  project = "${3:project}"  # The name or ARN of the project that is to contain the new feature.
+  variations {
+    name = "${4:name}"
+    value {
+    }
+  }
+
+  # default_variation   = ""  # The name of the variation to use as the default variation.
+  # description         = ""  # Specifies the description of the feature.
+  # entity_overrides    = {}  # Specify users that should always be served a specific variation of a feature.
+  # evaluation_strategy = ""  # Specify ALL_RULES to activate the traffic allocation specified by any ongoing launches or experim...
+  # region              = ""  # Region where this resource will be managed.
+  # tags                = {}  # Tags to apply to the feature.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_evidently_feature</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudWatch Evidently Feature resource.</description>
+</snippet>

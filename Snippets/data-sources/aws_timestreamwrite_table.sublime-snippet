@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_timestreamwrite_table" "${1:name}" {
+  database_name = "${2:database_name}"  # Name of the Timestream database.
+  name          = "${3:name}"           # Name of the Timestream table.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_timestreamwrite_table</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS Timestream Write Table.</description>
+</snippet>

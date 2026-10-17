@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_ssm_parameters_by_path" "${1:name}" {
+  path = "${2:path}"  # The hierarchy for the parameter.
+
+  # recursive       = false  # Whether to retrieve all parameters within the hirerachy.
+  # region          = ""     # Region where this resource will be managed.
+  # with_decryption = false  # Whether to retrieve all parameters in the hierarchy, particularly those of SecureString type, wit...
+}
+]]></content>
+<tabTrigger>data_aws_ssm_parameters_by_path</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides SSM Parameters by path</description>
+</snippet>

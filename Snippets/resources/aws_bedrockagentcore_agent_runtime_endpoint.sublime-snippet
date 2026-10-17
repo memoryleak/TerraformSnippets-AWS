@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrockagentcore_agent_runtime_endpoint" "${1:name}" {
+  agent_runtime_id = "${2:agent_runtime_id}"  # ID of the agent runtime this endpoint belongs to.
+  name             = "${3:name}"              # Name of the agent runtime endpoint.
+
+  # agent_runtime_version = ""  # Version of the agent runtime to use for this endpoint.
+  # description           = ""  # Description of the agent runtime endpoint.
+  # region                = ""  # Region where this resource will be managed.
+  # tags                  = {}  # Key-value map of resource tags.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_bedrockagentcore_agent_runtime_endpoint</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Bedrock AgentCore Agent Runtime Endpoint.</description>
+</snippet>

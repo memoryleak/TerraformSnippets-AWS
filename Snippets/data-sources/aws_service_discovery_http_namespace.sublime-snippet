@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_service_discovery_http_namespace" "${1:name}" {
+  name = "${2:name}"  # Name of the HTTP namespace.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_service_discovery_http_namespace</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Retrieves information about a Service Discovery HTTP Namespace.</description>
+</snippet>

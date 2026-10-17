@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lb_ssl_negotiation_policy" "${1:name}" {
+  lb_port       = ${2:0}                # The load balancer port to which the policy
+  load_balancer = "${3:load_balancer}"  # The load balancer to which the policy
+  name          = "${4:name}"           # The name of the SSL negotiation policy.
+
+  # region   = ""  # Region where this resource will be managed.
+  # triggers = {}  # Map of arbitrary keys and values that, when changed, will trigger a redeployment.
+  # attribute {}  # An SSL Negotiation policy attribute.
+}
+]]></content>
+<tabTrigger>aws_lb_ssl_negotiation_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a load balancer SSL negotiation policy, which allows an ELB to control which ciphers and...</description>
+</snippet>

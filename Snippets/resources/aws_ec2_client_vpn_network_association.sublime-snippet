@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_client_vpn_network_association" "${1:name}" {
+  client_vpn_endpoint_id = "${2:client_vpn_endpoint_id}"  # The ID of the Client VPN endpoint.
+  subnet_id              = "${3:subnet_id}"               # The ID of the subnet to associate with the Client VPN endpoint.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ec2_client_vpn_network_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides network associations for AWS Client VPN endpoints.</description>
+</snippet>

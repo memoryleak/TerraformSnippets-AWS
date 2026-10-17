@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_opensearch_domain_policy" "${1:name}" {
+  access_policies = "${2:access_policies}"  # IAM policy document specifying the access policies for the domain
+  domain_name     = "${3:domain_name}"      # Name of the domain.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_opensearch_domain_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an OpenSearch Domain Policy.</description>
+</snippet>

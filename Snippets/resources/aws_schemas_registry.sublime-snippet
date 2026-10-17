@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_schemas_registry" "${1:name}" {
+  name = "${2:name}"  # The name of the custom event schema registry.
+
+  # description = ""  # The description of the discoverer.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_schemas_registry</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an EventBridge Custom Schema Registry resource.</description>
+</snippet>

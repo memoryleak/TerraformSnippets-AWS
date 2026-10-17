@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_securityhub_configuration_policy_association" "${1:name}" {
+  policy_id = "${2:policy_id}"  # The universally unique identifier (UUID) of the configuration policy, or SELF_MANAGED_SECURITY_HU...
+  target_id = "${3:target_id}"  # The identifier of the target account, organizational unit, or the root to associate with the spec...
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_securityhub_configuration_policy_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to associate Security Hub configuration policy to a target.</description>
+</snippet>

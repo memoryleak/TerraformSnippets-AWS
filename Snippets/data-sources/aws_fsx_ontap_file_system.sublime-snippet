@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_fsx_ontap_file_system" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_fsx_ontap_file_system</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Retrieve information on FSx ONTAP File System.</description>
+</snippet>

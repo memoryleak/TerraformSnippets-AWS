@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_ec2_instance_type_offerings" "${1:name}" {
+  # location_type = ""  # Location type.
+  # region        = ""  # Region where this resource will be managed.
+  # filter {}  # One or more configuration blocks containing name-values filters.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_ec2_instance_type_offerings</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Information about EC2 Instance Type Offerings.</description>
+</snippet>

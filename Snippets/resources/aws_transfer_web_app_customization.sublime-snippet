@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_transfer_web_app_customization" "${1:name}" {
+  web_app_id = "${2:web_app_id}"  # Identifier of the web app to be customized.
+
+  # favicon_file = ""  # Base64-encoded string representing the favicon image.
+  # logo_file    = ""  # Base64-encoded string representing the logo image.
+  # region       = ""  # Region where this resource will be managed.
+  # title        = ""  # Title of the web app.
+}
+]]></content>
+<tabTrigger>aws_transfer_web_app_customization</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Transfer Family Web App Customization.</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_networkmanager_global_networks" "${1:name}" {
+  # tags = {}  # Restricts the list to the global networks with these tags.
+}
+]]></content>
+<tabTrigger>data_aws_networkmanager_global_networks</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about existing Network Manager global networks.</description>
+</snippet>

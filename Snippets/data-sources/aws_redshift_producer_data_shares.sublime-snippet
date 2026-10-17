@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_redshift_producer_data_shares" "${1:name}" {
+  producer_arn = "${2:producer_arn}"  # ARN of the producer namespace that returns in the list of datashares.
+
+  # region = ""  # Region where this resource will be managed.
+  # status = ""  # Status of a datashare in the producer.
+}
+]]></content>
+<tabTrigger>data_aws_redshift_producer_data_shares</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing AWS Redshift Producer Data Shares.</description>
+</snippet>

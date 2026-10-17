@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_networkmanager_core_network" "${1:name}" {
+  core_network_id = "${2:core_network_id}"  # ID of the core network.
+}
+]]></content>
+<tabTrigger>data_aws_networkmanager_core_network</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an AWS Network Manager Core Network.</description>
+</snippet>

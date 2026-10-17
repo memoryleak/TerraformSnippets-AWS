@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_rds_global_cluster" "${1:name}" {
+  identifier = "${2:identifier}"  # Global cluster identifier of the RDS global cluster.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_rds_global_cluster</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS RDS (Relational Database) Global Cluster.</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_storagegateway_upload_buffer" "${1:name}" {
+  gateway_arn = "${2:gateway_arn}"  # ARN of the gateway.
+
+  # disk_id   = ""  # Local disk identifier.
+  # disk_path = ""  # Local disk path.
+  # region    = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_storagegateway_upload_buffer</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Storage Gateway upload buffer</description>
+</snippet>

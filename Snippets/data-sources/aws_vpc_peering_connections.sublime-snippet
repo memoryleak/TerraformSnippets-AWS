@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_vpc_peering_connections" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Mapping of tags, each pair of which must exactly match a pair on the desired VPC Peering Connection.
+  # filter {}  # Custom filter block as described below.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_vpc_peering_connections</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Lists peering connections</description>
+</snippet>

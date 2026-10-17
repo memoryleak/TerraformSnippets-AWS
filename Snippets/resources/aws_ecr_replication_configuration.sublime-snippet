@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ecr_replication_configuration" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # replication_configuration {}  # Replication configuration for a registry.
+}
+]]></content>
+<tabTrigger>aws_ecr_replication_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Elastic Container Registry Replication Configuration.</description>
+</snippet>

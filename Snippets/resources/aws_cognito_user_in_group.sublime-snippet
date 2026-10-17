@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cognito_user_in_group" "${1:name}" {
+  group_name   = "${2:group_name}"    # The name of the group to which the user is to be added.
+  user_pool_id = "${3:user_pool_id}"  # The user pool ID of the user and group.
+  username     = "${4:username}"      # The username of the user to be added to the group.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_cognito_user_in_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Adds the specified user to the specified group.</description>
+</snippet>

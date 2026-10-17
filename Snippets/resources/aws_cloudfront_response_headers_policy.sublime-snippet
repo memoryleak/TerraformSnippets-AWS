@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudfront_response_headers_policy" "${1:name}" {
+  name = "${2:name}"  # A unique name to identify the response headers policy.
+
+  # comment = ""  # A comment to describe the response headers policy.
+  # cors_config {}  # A configuration for a set of HTTP response headers that are used for Cross-Origin Resource Sharin...
+  # custom_headers_config {}  # Object that contains an attribute items that contains a list of custom headers.
+  # remove_headers_config {}  # A configuration for a set of HTTP headers to remove from the HTTP response.
+  # security_headers_config {}  # A configuration for a set of security-related HTTP response headers.
+  # server_timing_headers_config {}  # A configuration for enabling the Server-Timing header in HTTP responses sent from CloudFront.
+}
+]]></content>
+<tabTrigger>aws_cloudfront_response_headers_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudFront response headers policy resource.</description>
+</snippet>

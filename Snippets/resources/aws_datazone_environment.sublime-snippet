@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_datazone_environment" "${1:name}" {
+  domain_identifier  = "${2:domain_identifier}"   # The ID of the domain where the environment exists.
+  name               = "${3:name}"                # The name of the environment.
+  profile_identifier = "${4:profile_identifier}"  # The ID of the profile with which the environment is created.
+  project_identifier = "${5:project_identifier}"  # The ID of the project where the environment exists.
+
+  # account_identifier   = ""  # The ID of the Amazon Web Services account where the environment exists
+  # account_region       = ""  # The Amazon Web Services region where the environment exists.
+  # blueprint_identifier = ""  # The blueprint with which the environment is created.
+  # description          = ""  # The description of the environment.
+  # glossary_terms       = []  # The business glossary terms that can be used in this environment.
+  # region               = ""  # Region where this resource will be managed.
+  # timeouts {}
+  # user_parameters {}  # The user parameters that are used in the environment.
+}
+]]></content>
+<tabTrigger>aws_datazone_environment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS DataZone Environment.</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sagemaker_notebook_instance_lifecycle_configuration" "${1:name}" {
+  # name      = ""  # The name of the lifecycle configuration (must be unique).
+  # on_create = ""  # A shell script (base64-encoded) that runs only once when the SageMaker AI Notebook Instance is cr...
+  # on_start  = ""  # A shell script (base64-encoded) that runs every time the SageMaker AI Notebook Instance is starte...
+  # region    = ""  # Region where this resource will be managed.
+  # tags      = {}  # A mapping of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_sagemaker_notebook_instance_lifecycle_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a lifecycle configuration for SageMaker AI Notebook Instances.</description>
+</snippet>

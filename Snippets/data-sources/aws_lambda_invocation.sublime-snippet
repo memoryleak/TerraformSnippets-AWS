@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+data "aws_lambda_invocation" "${1:name}" {
+  function_name = "${2:function_name}"  # Name of the Lambda function.
+  input         = "${3:input}"          # String in JSON format that is passed as payload to the Lambda function.
+
+  # qualifier = ""  # Qualifier (a.k.a version) of the Lambda function.
+  # region    = ""  # Region where this resource will be managed.
+  # tenant_id = ""  # Tenant ID to serve invocations from specified tenant.
+}
+]]></content>
+<tabTrigger>data_aws_lambda_invocation</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Invokes an AWS Lambda Function and returns its results.</description>
+</snippet>

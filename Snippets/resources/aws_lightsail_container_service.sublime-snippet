@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lightsail_container_service" "${1:name}" {
+  name  = "${2:name}"   # Name of the container service.
+  power = "${3:power}"  # Power specification for the container service.
+  scale = ${4:0}        # Scale specification for the container service.
+
+  # is_disabled = false  # Whether to disable the container service.
+  # region      = ""     # Region where this resource will be managed.
+  # tags        = {}     # Map of tags to assign to the resource.
+  # private_registry_access {}  # Configuration for the container service to access private container image repositories, such as A...
+  # public_domain_names {}  # Public domain names to use with the container service, such as example.com and www.example.com.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_lightsail_container_service</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Lightsail container service for running containerized applications.</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_mq_broker" "${1:name}" {
+  # broker_id   = ""  # Unique ID of the MQ broker.
+  # broker_name = ""  # Unique name of the MQ broker.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}
+}
+]]></content>
+<tabTrigger>data_aws_mq_broker</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an existing Amazon MQ broker.</description>
+</snippet>

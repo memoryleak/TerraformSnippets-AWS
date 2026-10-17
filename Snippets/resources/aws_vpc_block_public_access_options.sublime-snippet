@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpc_block_public_access_options" "${1:name}" {
+  internet_gateway_block_mode = "${2:internet_gateway_block_mode}"  # Block mode.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_vpc_block_public_access_options</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing AWS VPC Block Public Access Options in a region.</description>
+</snippet>

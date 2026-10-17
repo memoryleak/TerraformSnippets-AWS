@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_wafv2_web_acl_rule" "${1:name}" {
+  name        = "${2:name}"         # Name of the rule.
+  priority    = ${3:0}              # Rule priority.
+  web_acl_arn = "${4:web_acl_arn}"  # ARN of the Web ACL to add the rule to.
+
+  # region = ""  # Region where this resource will be managed.
+  # action {}  # Action to take when the rule matches.
+  # captcha_config {}  # CAPTCHA configuration that overrides the web ACL level setting.
+  # challenge_config {}  # Challenge configuration that overrides the web ACL level setting.
+  # override_action {}  # Override action for managed rule groups.
+  # rule_label {}  # Labels to apply to matching web requests.
+  # statement {}  # Rule statement.
+  # timeouts {}
+  # visibility_config {}  # CloudWatch metrics configuration.
+}
+]]></content>
+<tabTrigger>aws_wafv2_web_acl_rule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an individual rule within a WAFv2 Web ACL.</description>
+</snippet>

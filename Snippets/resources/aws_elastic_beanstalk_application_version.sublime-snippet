@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_elastic_beanstalk_application_version" "${1:name}" {
+  application = "${2:application}"  # Name of the Beanstalk Application the version is associated with.
+  bucket      = "${3:bucket}"       # S3 bucket that contains the Application Version source bundle.
+  key         = "${4:key}"          # S3 object that is the Application Version source bundle.
+  name        = "${5:name}"         # Unique name for the this Application Version.
+
+  # description  = ""     # Short description of the Application Version.
+  # force_delete = false  # On delete, force an Application Version to be deleted when it may be in use by multiple Elastic B...
+  # process      = false  # Pre-processes and validates the environment manifest (env.yaml ) and configuration files (*.confi...
+  # region       = ""     # Region where this resource will be managed.
+  # tags         = {}     # Key-value map of tags for the Elastic Beanstalk Application Version.
+}
+]]></content>
+<tabTrigger>aws_elastic_beanstalk_application_version</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Elastic Beanstalk Application Version Resource</description>
+</snippet>

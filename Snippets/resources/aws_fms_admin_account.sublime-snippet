@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_fms_admin_account" "${1:name}" {
+  # account_id = ""  # AWS account ID to associate with AWS Firewall Manager as the AWS Firewall Manager administrator a...
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_fms_admin_account</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to associate/disassociate an AWS Firewall Manager administrator account</description>
+</snippet>

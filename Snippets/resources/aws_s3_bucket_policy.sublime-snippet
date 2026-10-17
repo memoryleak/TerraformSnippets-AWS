@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3_bucket_policy" "${1:name}" {
+  bucket = "${2:bucket}"  # Name of the bucket to which to apply the policy.
+  policy = "${3:policy}"  # Text of the policy.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_s3_bucket_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Attaches a policy to an S3 bucket resource.</description>
+</snippet>

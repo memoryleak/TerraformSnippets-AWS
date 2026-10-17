@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_servicequotas_template" "${1:name}" {
+  quota_code   = "${2:quota_code}"    # Quota identifier.
+  service_code = "${3:service_code}"  # Service identifier.
+  value        = ${4:0}               # The new, increased value for the quota.
+
+  # aws_region = ""  # AWS Region to which the template applies.
+}
+]]></content>
+<tabTrigger>aws_servicequotas_template</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Service Quotas Template.</description>
+</snippet>

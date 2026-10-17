@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_schemas_discoverer" "${1:name}" {
+  source_arn = "${2:source_arn}"  # The ARN of the event bus to discover event schemas on.
+
+  # description = ""  # The description of the discoverer.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_schemas_discoverer</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an EventBridge Schema Discoverer resource.</description>
+</snippet>

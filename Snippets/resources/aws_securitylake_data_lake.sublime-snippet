@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_securitylake_data_lake" "${1:name}" {
+  meta_store_manager_role_arn = "${2:meta_store_manager_role_arn}"  # ARN used to create and update the AWS Glue table.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value map of resource tags.
+  # configuration {}  # Specify the Region or Regions that will contribute data to the rollup region.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_securitylake_data_lake</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Security Lake Data Lake.</description>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_route53profiles_profile" "${1:name}" {
+  # name   = ""  # Name of the Profile.
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_route53profiles_profile</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an AWS Route 53 Profile.</description>
+</snippet>

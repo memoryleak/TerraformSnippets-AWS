@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appsync_channel_namespace" "${1:name}" {
+  api_id = "${2:api_id}"  # Event API ID.
+  name   = "${3:name}"    # Name of the channel namespace.
+
+  # code_handlers = ""  # Event handler functions that run custom business logic to process published events and subscribe...
+  # region        = ""  # Region where this resource will be managed.
+  # tags          = {}  # Map of tags to assign to the resource.
+  # handler_configs {}  # Configuration for the on_publish and on_subscribe handlers.
+  # publish_auth_mode {}  # Authorization modes to use for publishing messages on the channel namespace.
+  # subscribe_auth_mode {}  # Authorization modes to use for subscribing to messages on the channel namespace.
+}
+]]></content>
+<tabTrigger>aws_appsync_channel_namespace</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS AppSync Channel Namespace.</description>
+</snippet>

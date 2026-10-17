@@ -1,0 +1,27 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lightsail_distribution" "${1:name}" {
+  bundle_id = "${2:bundle_id}"  # Bundle ID to use for the distribution.
+  name      = "${3:name}"       # Name of the distribution.
+  default_cache_behavior {
+    behavior = "${4:behavior}"
+  }
+  origin {
+    name        = "${5:name}"
+    region_name = "${6:region_name}"
+  }
+
+  # certificate_name = ""     # Name of the SSL/TLS certificate attached to the distribution.
+  # ip_address_type  = ""     # IP address type of the distribution.
+  # is_enabled       = false  # Whether the distribution is enabled.
+  # region           = ""     # Region where this resource will be managed.
+  # tags             = {}     # Map of tags for the Lightsail Distribution.
+  # cache_behavior {}  # Per-path cache behavior of the distribution.
+  # cache_behavior_settings {}  # Cache behavior settings of the distribution.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_lightsail_distribution</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Lightsail content delivery network (CDN) distribution.</description>
+</snippet>

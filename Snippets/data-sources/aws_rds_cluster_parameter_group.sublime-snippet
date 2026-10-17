@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_rds_cluster_parameter_group" "${1:name}" {
+  name = "${2:name}"  # DB cluster parameter group name.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_rds_cluster_parameter_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Information about an RDS cluster parameter group.</description>
+</snippet>

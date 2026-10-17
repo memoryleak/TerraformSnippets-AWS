@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sesv2_tenant" "${1:name}" {
+  tenant_name = "${2:tenant_name}"  # Name of the SESV2 tenant.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags to assign to the tenant.
+}
+]]></content>
+<tabTrigger>aws_sesv2_tenant</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS SESv2 (Simple Email V2) Tenant.</description>
+</snippet>

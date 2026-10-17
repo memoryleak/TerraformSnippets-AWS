@@ -1,0 +1,30 @@
+<snippet>
+<content><![CDATA[
+resource "aws_neptune_cluster_instance" "${1:name}" {
+  cluster_identifier = "${2:cluster_identifier}"  # The identifier of the aws_neptune_cluster in which to launch this instance.
+  instance_class     = "${3:instance_class}"      # The instance class to use.
+
+  # apply_immediately            = false  # Specifies whether any instance modifications
+  # auto_minor_version_upgrade   = false  # Indicates that minor engine upgrades will be applied automatically to the instance during the mai...
+  # availability_zone            = ""     # The EC2 Availability Zone that the neptune instance is created in.
+  # engine                       = ""     # The name of the database engine to be used for the neptune instance.
+  # engine_version               = ""     # The neptune engine version.
+  # identifier                   = ""     # The identifier for the neptune instance, if omitted, Terraform will assign a random, unique ident...
+  # identifier_prefix            = ""     # Creates a unique identifier beginning with the specified prefix.
+  # neptune_parameter_group_name = ""     # The name of the neptune parameter group to associate with this instance.
+  # neptune_subnet_group_name    = ""     # A subnet group to associate with this neptune instance.
+  # port                         = 0      # The port on which the DB accepts connections.
+  # preferred_backup_window      = ""     # The daily time range during which automated backups are created if automated backups are enabled.
+  # preferred_maintenance_window = ""     # The window to perform maintenance in.
+  # promotion_tier               = 0      # Default 0.
+  # publicly_accessible          = false  # Bool to control if instance is publicly accessible.
+  # region                       = ""     # Region where this resource will be managed.
+  # skip_final_snapshot          = false  # Determines whether a final DB snapshot is created before the DB instance is deleted.
+  # tags                         = {}     # A map of tags to assign to the instance.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_neptune_cluster_instance</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Neptune Cluster Resource Instance</description>
+</snippet>

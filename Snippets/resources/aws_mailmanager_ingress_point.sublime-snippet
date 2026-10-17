@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_mailmanager_ingress_point" "${1:name}" {
+  name              = "${2:name}"               # Name of the ingress point.
+  rule_set_id       = "${3:rule_set_id}"        # Identifier of the rule set applied to the ingress point.
+  traffic_policy_id = "${4:traffic_policy_id}"  # Identifier of the traffic policy applied to the ingress point.
+  type              = "${5:type}"               # Type of the ingress point.
+
+  # region           = ""  # Region where this resource is managed.
+  # status_to_update = ""  # Status to apply to the ingress point.
+  # tags             = {}  # Map of tags assigned to the resource.
+  # tls_policy       = ""  # TLS policy for the ingress point.
+  # ingress_point_configuration {}  # Configuration used to authenticate with the ingress point.
+  # network_configuration {}  # Network configuration for the ingress point.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_mailmanager_ingress_point</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS SES Mail Manager Ingress Point.</description>
+</snippet>

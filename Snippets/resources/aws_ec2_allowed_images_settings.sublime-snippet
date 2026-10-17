@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_allowed_images_settings" "${1:name}" {
+  state = "${2:state}"  # State of the allowed images settings.
+
+  # region = ""  # Region where this resource will be managed.
+  # image_criterion {}  # List of image criteria.
+}
+]]></content>
+<tabTrigger>aws_ec2_allowed_images_settings</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides EC2 allowed images settings.</description>
+</snippet>

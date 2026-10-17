@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_elastic_beanstalk_configuration_template" "${1:name}" {
+  application = "${2:application}"  # name of the application to associate with this configuration template
+  name        = "${3:name}"         # A unique name for this Template.
+
+  # description         = ""  # Short description of the Template
+  # environment_id      = ""  # The ID of the environment used with this configuration template
+  # region              = ""  # Region where this resource will be managed.
+  # solution_stack_name = ""  # A solution stack to base your Template
+  # setting {}  # Option settings to configure the new Environment.
+}
+]]></content>
+<tabTrigger>aws_elastic_beanstalk_configuration_template</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Elastic Beanstalk Configuration Template</description>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_cloudwatch_log_groups" "${1:name}" {
+  # log_group_name_prefix = ""  # Group prefix of the CloudWatch log groups to list
+  # region                = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_cloudwatch_log_groups</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get list of CloudWatch Log Groups.</description>
+</snippet>

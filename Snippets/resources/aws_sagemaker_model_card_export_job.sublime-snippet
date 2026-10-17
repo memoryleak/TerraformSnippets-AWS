@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sagemaker_model_card_export_job" "${1:name}" {
+  model_card_export_job_name = "${2:model_card_export_job_name}"  # Name of the model card export job.
+  model_card_name            = "${3:model_card_name}"             # Name of the model card.
+
+  # model_card_version = 0
+  # region             = ""  # Region where this resource will be managed.
+  # output_config {}  # Export output details.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_sagemaker_model_card_export_job</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manage an Amazon SageMaker Model Card export job.</description>
+</snippet>

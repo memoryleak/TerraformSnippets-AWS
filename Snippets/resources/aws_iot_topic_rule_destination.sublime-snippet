@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iot_topic_rule_destination" "${1:name}" {
+  vpc_configuration {
+    role_arn   = "${2:role_arn}"
+    subnet_ids = [${3}]
+    vpc_id     = "${4:vpc_id}"
+  }
+
+  # enabled = false  # Whether or not to enable the destination.
+  # region  = ""     # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_iot_topic_rule_destination</tabTrigger>
+<scope>source.terraform</scope>
+<description>Creates and manages an AWS IoT topic rule destination</description>
+</snippet>

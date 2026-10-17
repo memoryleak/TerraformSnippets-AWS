@@ -1,0 +1,29 @@
+<snippet>
+<content><![CDATA[
+data "aws_ecs_task_execution" "${1:name}" {
+  cluster         = "${2:cluster}"          # Short name or full ARN of the cluster to run the task on.
+  task_definition = "${3:task_definition}"  # Family and revision (family:revision) or full ARN of the task definition to run.
+
+  # client_token            = ""     # Identifier that you provide to ensure the idempotency of the request.
+  # desired_count           = 0      # Number of instantiations of the specified task to place on your cluster.
+  # enable_ecs_managed_tags = false  # Whether to enable Amazon ECS managed tags for the tasks within the service.
+  # enable_execute_command  = false  # Whether to enable Amazon ECS Exec for the tasks within the service.
+  # group                   = ""     # Name of the task group to associate with the task.
+  # launch_type             = ""     # Launch type on which to run your service.
+  # platform_version        = ""     # Platform version the task uses.
+  # propagate_tags          = ""     # Whether to propagate the tags from the task definition to the task.
+  # reference_id            = ""     # Reference ID to use for the task.
+  # region                  = ""     # Region where this resource will be managed.
+  # started_by              = ""     # Optional tag specified when a task is started.
+  # tags                    = {}     # Key-value map of resource tags.
+  # capacity_provider_strategy {}  # Set of capacity provider strategies to use for the cluster.
+  # network_configuration {}  # Network configuration for the service.
+  # overrides {}  # List of container overrides that specify the name of a container in the specified task definition...
+  # placement_constraints {}  # Array of placement constraint objects to use for the task.
+  # placement_strategy {}  # Placement strategy objects to use for the task.
+}
+]]></content>
+<tabTrigger>data_aws_ecs_task_execution</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS ECS (Elastic Container) Task Execution.</description>
+</snippet>

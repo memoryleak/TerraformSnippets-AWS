@@ -1,0 +1,26 @@
+<snippet>
+<content><![CDATA[
+resource "aws_pinpointsmsvoicev2_phone_number" "${1:name}" {
+  iso_country_code    = "${2:iso_country_code}"  # Two-character code, in ISO 3166-1 alpha-2 format, for the country or region.
+  message_type        = "${3:message_type}"      # Type of message.
+  number_capabilities = [${4}]                   # Whether the origination identity can be used for text messages, voice calls or both.
+  number_type         = "${5:number_type}"       # Type of phone number to request.
+
+  # deletion_protection_enabled   = false  # Whether deletion protection is enabled.
+  # force_disassociate            = false  # Whether to disassociate the phone number from any pool it is associated with before destroying it.
+  # opt_out_list_name             = ""     # Name of the opt-out list to associate with the phone number.
+  # region                        = ""     # Region where this resource will be managed.
+  # registration_id               = ""     # Use this field to attach your phone number for an external registration process.
+  # self_managed_opt_outs_enabled = false  # When set to false an end recipient sends a message that begins with HELP or STOP to one of your d...
+  # tags                          = {}     # Key-value map of resource tags.
+  # two_way_channel_arn           = ""     # Configuration for two-way SMS.
+  # two_way_channel_enabled       = false  # Whether two-way messaging is enabled.
+  # two_way_channel_role          = ""     # IAM Role ARN for a service to assume, to be able to post inbound SMS messages.
+  # wait_for_active               = false  # Whether to wait for the phone number to reach ACTIVE status before considering the resource creat...
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_pinpointsmsvoicev2_phone_number</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS End User Messaging SMS phone number.</description>
+</snippet>

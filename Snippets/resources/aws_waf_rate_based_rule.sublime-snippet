@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_waf_rate_based_rule" "${1:name}" {
+  metric_name = "${2:metric_name}"  # The name or description for the Amazon CloudWatch metric of this rule.
+  name        = "${3:name}"         # The name or description of the rule.
+  rate_key    = "${4:rate_key}"     # Valid value is IP.
+  rate_limit  = ${5:0}              # The maximum number of requests, which have an identical value in the field specified by the RateK...
+
+  # tags = {}  # Key-value map of resource tags.
+  # predicates {}  # The objects to include in a rule (documented below).
+}
+]]></content>
+<tabTrigger>aws_waf_rate_based_rule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a AWS WAF rule resource.</description>
+</snippet>

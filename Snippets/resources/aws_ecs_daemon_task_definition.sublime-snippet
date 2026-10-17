@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ecs_daemon_task_definition" "${1:name}" {
+  family = "${2:family}"  # Unique name for your daemon task definition.
+
+  # cpu                = ""  # Number of CPU units used by the task.
+  # execution_role_arn = ""  # ARN of the task execution role that the Amazon ECS container agent and the Docker daemon can assume.
+  # memory             = ""  # Amount (in MiB) of memory used by the task.
+  # region             = ""  # Region where this resource will be managed.
+  # tags               = {}  # Key-value map of resource tags.
+  # task_role_arn      = ""  # ARN of IAM role that allows your Amazon ECS container task to make calls to other AWS services.
+  # container_definition {}  # One or more container definition blocks.
+  # volume {}  # Repeatable configuration block for volumes that containers in your task may use.
+}
+]]></content>
+<tabTrigger>aws_ecs_daemon_task_definition</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a revision of an ECS daemon task definition.</description>
+</snippet>

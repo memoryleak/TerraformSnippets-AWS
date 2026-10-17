@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_notifications_managed_notification_additional_channel_association" "${1:name}" {
+  channel_arn              = "${2:channel_arn}"               # ARN of the channel to associate with the managed notification.
+  managed_notification_arn = "${3:managed_notification_arn}"  # ARN of the managed notification to associate the channel with.
+}
+]]></content>
+<tabTrigger>aws_notifications_managed_notification_additional_channel_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS User Notifications Managed Notification Additional Channel...</description>
+</snippet>

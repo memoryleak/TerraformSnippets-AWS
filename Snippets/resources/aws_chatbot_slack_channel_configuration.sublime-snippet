@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_chatbot_slack_channel_configuration" "${1:name}" {
+  configuration_name = "${2:configuration_name}"  # Name of the Slack channel configuration.
+  iam_role_arn       = "${3:iam_role_arn}"        # User-defined role that AWS Chatbot assumes.
+  slack_channel_id   = "${4:slack_channel_id}"    # ID of the Slack channel.
+  slack_team_id      = "${5:slack_team_id}"       # ID of the Slack workspace authorized with AWS Chatbot.
+
+  # guardrail_policy_arns       = []     # List of IAM policy ARNs that are applied as channel guardrails.
+  # logging_level               = ""     # Logging levels include ERROR, INFO, or NONE.
+  # region                      = ""     # Region where this resource will be managed.
+  # sns_topic_arns              = []     # ARNs of the SNS topics that deliver notifications to AWS Chatbot.
+  # tags                        = {}     # Map of tags assigned to the resource.
+  # user_authorization_required = false  # Enables use of a user role requirement in your chat configuration.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_chatbot_slack_channel_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Chatbot Slack Channel Configuration.</description>
+</snippet>

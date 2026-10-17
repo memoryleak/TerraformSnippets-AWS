@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpclattice_listener_rule" "${1:name}" {
+  listener_identifier = "${2:listener_identifier}"  # ID or ARN of the listener.
+  name                = "${3:name}"                 # Name of the rule.
+  priority            = ${4:0}                      # Priority assigned to the rule.
+  service_identifier  = "${5:service_identifier}"   # ID or ARN of the service.
+  action {
+  }
+  match {
+    http_match {
+    }
+  }
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value mapping of resource tags.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_vpclattice_listener_rule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS VPC Lattice Listener Rule.</description>
+</snippet>

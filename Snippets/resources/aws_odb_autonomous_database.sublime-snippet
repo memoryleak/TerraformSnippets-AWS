@@ -1,0 +1,61 @@
+<snippet>
+<content><![CDATA[
+resource "aws_odb_autonomous_database" "${1:name}" {
+  # admin_password                              = ""     # Sensitive password for the ADMIN user.
+  # admin_password_wo                           = ""     # Sensitive write-only password for the ADMIN user.
+  # admin_password_wo_version                   = 0      # Arbitrary integer stored in state.
+  # allowlisted_ips                             = []     # List of between 1 and 1024 IP addresses allowed to access the database.
+  # auto_refresh_frequency_in_seconds           = 0      # Automatic refresh frequency, in seconds, for a refreshable clone.
+  # auto_refresh_point_lag_in_seconds           = 0      # Refresh lag, in seconds, between a refreshable clone and its source.
+  # autonomous_maintenance_schedule_type        = ""     # Maintenance schedule type.
+  # backup_retention_period_in_days             = 0      # Automatic backup retention period, in days.
+  # byol_compute_count_limit                    = 0      # Maximum compute capacity under the bring-your-own-license model.
+  # character_set                               = ""     # Database character set.
+  # compute_count                               = 0      # Compute capacity in ECPUs or OCPUs.
+  # cpu_core_count                              = 0      # Allocated CPU core count.
+  # data_storage_size_in_gbs                    = 0      # Data volume size in GB.
+  # data_storage_size_in_tbs                    = 0      # Data volume size in TB.
+  # database_edition                            = ""     # Oracle Database edition.
+  # db_name                                     = ""     # Database name.
+  # db_version                                  = ""     # Oracle Database software version.
+  # db_workload                                 = ""     # Database workload.
+  # display_name                                = ""     # User-friendly database name.
+  # encryption_key_provider                     = ""     # Encryption key provider.
+  # is_auto_scaling_enabled                     = false  # Whether automatic compute scaling is enabled.
+  # is_auto_scaling_for_storage_enabled         = false  # Whether automatic storage scaling is enabled.
+  # is_backup_retention_locked                  = false  # Whether the backup retention period is locked against shortening.
+  # is_local_data_guard_enabled                 = false  # Whether local Oracle Data Guard is enabled.
+  # is_mtls_connection_required                 = false  # Whether mutual TLS is required for database connections.
+  # is_refreshable_clone                        = false  # Whether the database is a refreshable clone.
+  # kms_key_id                                  = ""     # ARN of the AWS KMS key used when encryption_key_provider is AWS_KMS.
+  # license_model                               = ""     # Oracle license model.
+  # local_adg_auto_failover_max_data_loss_limit = 0      # Maximum data-loss limit, in seconds, for automatic local Data Guard failover.
+  # ncharacter_set                              = ""     # National character set.
+  # odb_network_id                              = ""     # ID of the ODB network used by the database.
+  # open_mode                                   = ""     # Database open mode.
+  # permission_level                            = ""     # Database permission level.
+  # private_endpoint_ip                         = ""     # Private endpoint IP address.
+  # private_endpoint_label                      = ""     # Private endpoint label.
+  # refreshable_mode                            = ""     # Refresh mode for a refreshable clone.
+  # region                                      = ""     # Region where this resource will be managed.
+  # resource_pool_leader_id                     = ""     # ID of the resource-pool leader Autonomous Database.
+  # source                                      = ""     # Source from which to create the database.
+  # standby_allowlisted_ips                     = []     # List of between 1 and 1024 IP addresses allowed to access the standby database.
+  # standby_allowlisted_ips_source              = ""     # Source of the standby allowlist.
+  # tags                                        = {}     # Map of tags assigned to the resource.
+  # time_of_auto_refresh_start                  = ""     # RFC3339 timestamp at which automatic refresh begins.
+  # admin_password_source {}  # Source of the ADMIN password.
+  # customer_contacts_to_send_to_oci {}  # Customer contacts that receive operational notifications from OCI.
+  # db_tools_details {}  # Database management tools to enable.
+  # long_term_backup_schedule {}  # Long-term backup schedule.
+  # resource_pool_summary {}  # Resource pool configuration.
+  # scheduled_operations {}  # Scheduled database start and stop times.
+  # source_configuration {}  # Source-specific configuration used during creation.
+  # timeouts {}
+  # transportable_tablespace {}  # Transportable tablespace configuration.
+}
+]]></content>
+<tabTrigger>aws_odb_autonomous_database</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Oracle Database@AWS Autonomous Database Serverless instance.</description>
+</snippet>

@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_location_geofence_collection" "${1:name}" {
+  collection_name = "${2:collection_name}"  # The name of the geofence collection.
+
+  # description = ""  # The optional description for the geofence collection.
+  # kms_key_id  = ""  # A key identifier for an AWS KMS customer managed key assigned to the Amazon Location resource.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Key-value tags for the geofence collection.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_location_geofence_collection</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Location Geofence Collection.</description>
+</snippet>

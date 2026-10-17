@@ -1,0 +1,31 @@
+<snippet>
+<content><![CDATA[
+resource "aws_fsx_ontap_volume" "${1:name}" {
+  name                       = "${2:name}"                        # Name of the Volume.
+  storage_virtual_machine_id = "${3:storage_virtual_machine_id}"  # Storage virtual machine in which to create the volume.
+
+  # bypass_snaplock_enterprise_retention = false  # Whether to allow a SnapLock administrator to delete an FSx for ONTAP SnapLock Enterprise volume w...
+  # copy_tags_to_backups                 = false  # Whether tags for the volume should be copied to backups.
+  # final_backup_tags                    = {}     # Map of tags to apply to the volume's final backup.
+  # junction_path                        = ""     # Location in the storage virtual machine's namespace where the volume is mounted.
+  # ontap_volume_type                    = ""     # Type of volume, valid values are RW, DP.
+  # region                               = ""     # Region where this resource will be managed.
+  # security_style                       = ""     # Volume security style, Valid values are UNIX, NTFS, and MIXED.
+  # size_in_bytes                        = ""     # Size of the volume, in megabytes (MB), that you are creating.
+  # size_in_megabytes                    = 0      # Size of the volume, in megabytes (MB), that you are creating.
+  # skip_final_backup                    = false  # Whether to skip the default final backup taken when the volume is deleted.
+  # snapshot_policy                      = ""     # Snapshot policy for the volume.
+  # storage_efficiency_enabled           = false  # Whether to enable deduplication, compression, and compaction storage efficiency features on the v...
+  # tags                                 = {}     # Map of tags to assign to the volume.
+  # volume_style                         = ""     # Styles of volume, valid values are FLEXVOL, FLEXGROUP.
+  # volume_type                          = ""     # Type of volume, currently the only valid value is ONTAP.
+  # aggregate_configuration {}  # Aggregate configuration only applies to FLEXGROUP volumes.
+  # snaplock_configuration {}  # SnapLock configuration for an FSx for ONTAP volume.
+  # tiering_policy {}  # Data tiering policy for an FSx for ONTAP volume.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_fsx_ontap_volume</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a FSx ONTAP Volume.</description>
+</snippet>

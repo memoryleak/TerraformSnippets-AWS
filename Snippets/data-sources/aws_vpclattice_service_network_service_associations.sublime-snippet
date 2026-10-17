@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_vpclattice_service_network_service_associations" "${1:name}" {
+  # region                     = ""  # Region where this resource will be managed.
+  # service_identifier         = ""  # ID or ARN of the VPC Lattice Service for which you want to list the Service Network Service Assoc...
+  # service_network_identifier = ""  # ID or ARN of the VPC Lattice Service Network for which you want to list the Service Network Servi...
+}
+]]></content>
+<tabTrigger>data_aws_vpclattice_service_network_service_associations</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for listing AWS VPC Lattice Service Network Service Associations.</description>
+</snippet>

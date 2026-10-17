@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrock_model_invocation_job" "${1:name}" {
+  job_name = "${2:job_name}"  # Name for the batch inference job.
+  model_id = "${3:model_id}"  # Identifier of the foundation model, or inference profile, to use for the batch inference job.
+  role_arn = "${4:role_arn}"  # ARN of the IAM service role that Amazon Bedrock can assume to carry out and manage the batch infe...
+
+  # region                    = ""     # Region where this resource will be managed.
+  # skip_destroy              = false  # Whether to leave the batch inference job in its current state when destroying the resource, inste...
+  # timeout_duration_in_hours = 0      # Number of hours after which to force the batch inference job to time out.
+  # input_data_config {}  # Location of the input data for the batch inference job.
+  # output_data_config {}  # Location where the results of the batch inference job are stored.
+  # timeouts {}
+  # vpc_config {}  # VPC configuration for the data used by the batch inference job.
+}
+]]></content>
+<tabTrigger>aws_bedrock_model_invocation_job</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Amazon Bedrock model invocation job.</description>
+</snippet>

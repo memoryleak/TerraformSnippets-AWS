@@ -1,0 +1,84 @@
+<snippet>
+<content><![CDATA[
+resource "aws_db_instance" "${1:name}" {
+  instance_class = "${2:instance_class}"  # Instance type of the RDS instance.
+
+  # allocated_storage                     = 0      # Allocated storage in gibibytes.
+  # allow_major_version_upgrade           = false  # Whether major version upgrades are allowed.
+  # apply_immediately                     = false  # Whether any database modifications are applied immediately, or during the next maintenance window.
+  # auto_minor_version_upgrade            = false  # Whether minor engine upgrades will be applied automatically to the DB instance during the mainten...
+  # availability_zone                     = ""     # AZ for the RDS instance.
+  # backup_retention_period               = 0      # Days to retain backups for.
+  # backup_target                         = ""     # Where automated backups and manual snapshots are stored.
+  # backup_window                         = ""     # Daily time range (in UTC) during which automated backups are created if they are enabled.
+  # ca_cert_identifier                    = ""     # Identifier of the CA certificate for the DB instance.
+  # character_set_name                    = ""     # Character set name to use for DB encoding in Oracle and Microsoft SQL instances (collation).
+  # copy_tags_to_snapshot                 = false  # Copy all Instance tags to snapshots.
+  # custom_iam_instance_profile           = ""     # Instance profile associated with the underlying Amazon EC2 instance of an RDS Custom DB instance.
+  # customer_owned_ip_enabled             = false  # Whether to enable a customer-owned IP address (CoIP) for an RDS on Outposts DB instance.
+  # database_insights_mode                = ""     # Mode of Database Insights that is enabled for the instance.
+  # db_name                               = ""     # Name of the database to create when the DB instance is created.
+  # db_subnet_group_name                  = ""     # Name of DB subnet group.
+  # dedicated_log_volume                  = false  # Use a dedicated log volume (DLV) for the DB instance.
+  # delete_automated_backups              = false  # Whether to remove automated backups immediately after the DB instance is deleted.
+  # deletion_protection                   = false  # If the DB instance should have deletion protection enabled.
+  # domain                                = ""     # ID of the Directory Service Active Directory domain to create the instance in.
+  # domain_auth_secret_arn                = ""     # ARN for the Secrets Manager secret with the self managed Active Directory credentials for the use...
+  # domain_dns_ips                        = []     # IPv4 DNS IP addresses of your primary and secondary self managed Active Directory domain controll...
+  # domain_fqdn                           = ""     # Fully qualified domain name (FQDN) of the self managed Active Directory domain.
+  # domain_iam_role_name                  = ""     # Name of the IAM role to be used when making API calls to the Directory Service.
+  # domain_ou                             = ""     # Self managed Active Directory organizational unit for your DB instance to join.
+  # enabled_cloudwatch_logs_exports       = []     # Set of log types to enable for exporting to CloudWatch logs.
+  # engine                                = ""     # Database engine to use.
+  # engine_lifecycle_support              = ""     # Life cycle type for this DB instance.
+  # engine_version                        = ""     # Engine version to use.
+  # final_snapshot_identifier             = ""     # Name of your final DB snapshot when this DB instance is deleted.
+  # iam_database_authentication_enabled   = false  # Whether mappings of AWS Identity and Access Management (IAM) accounts to database accounts is ena...
+  # identifier                            = ""     # Name of the RDS instance, if omitted, Terraform will assign a random, unique identifier.
+  # identifier_prefix                     = ""     # Creates a unique identifier beginning with the specified prefix.
+  # iops                                  = 0      # Amount of provisioned IOPS.
+  # kms_key_id                            = ""     # ARN for the KMS encryption key.
+  # license_model                         = ""     # License model information for this DB instance.
+  # maintenance_window                    = ""     # Window to perform maintenance in.
+  # manage_master_user_password           = false  # Set to true to allow RDS to manage the master user password in Secrets Manager.
+  # master_user_secret_kms_key_id         = ""     # Amazon Web Services KMS key identifier is the key ARN, key ID, alias ARN, or alias name for the K...
+  # max_allocated_storage                 = 0      # Maximum storage (in GiB) that Amazon RDS can automatically scale to for this DB instance.
+  # monitoring_interval                   = 0      # Interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB in...
+  # monitoring_role_arn                   = ""     # ARN for the IAM role that permits RDS to send enhanced monitoring metrics to CloudWatch Logs.
+  # multi_az                              = false  # Whether the RDS instance is multi-AZ.
+  # nchar_character_set_name              = ""     # National character set is used in the NCHAR, NVARCHAR2, and NCLOB data types for Oracle instances.
+  # network_type                          = ""     # Network type of the DB instance.
+  # option_group_name                     = ""     # Name of the DB option group to associate.
+  # parameter_group_name                  = ""     # Name of the DB parameter group to associate.
+  # password                              = ""     # Password for the master DB user.
+  # password_wo                           = ""     # Password for the master DB user.
+  # password_wo_version                   = 0      # Required when password_wo is set.
+  # performance_insights_enabled          = false  # Whether Performance Insights are enabled.
+  # performance_insights_kms_key_id       = ""     # ARN for the KMS key to encrypt Performance Insights data.
+  # performance_insights_retention_period = 0      # Amount of time in days to retain Performance Insights data.
+  # port                                  = 0      # Port on which the DB accepts connections.
+  # publicly_accessible                   = false  # Bool to control if instance is publicly accessible.
+  # region                                = ""     # Region where this resource will be managed.
+  # replica_mode                          = ""     # Whether the replica is in either mounted or open-read-only mode.
+  # replicate_source_db                   = ""     # Set this to specify that this resource is a Replica database, and to use this value as the source...
+  # skip_final_snapshot                   = false  # Whether a final DB snapshot is created before the DB instance is deleted.
+  # snapshot_identifier                   = ""     # Whether or not to create this database from a snapshot.
+  # storage_encrypted                     = false  # Whether the DB instance is encrypted.
+  # storage_throughput                    = 0      # Storage throughput value for the DB instance.
+  # storage_type                          = ""     # One of "standard" (magnetic), "gp2" (general purpose SSD), "gp3" (general purpose SSD that needs...
+  # tags                                  = {}     # Map of tags to assign to the resource.
+  # timezone                              = ""     # Time zone of the DB instance.
+  # upgrade_storage_config                = false  # Whether to upgrade the storage file system configuration on the read replica.
+  # username                              = ""     # Username for the master DB user.
+  # vpc_security_group_ids                = []     # List of VPC security groups to associate.
+  # warning_event_categories              = []     # Set of RDS event categories (for example failure, maintenance) to check for after create and upda...
+  # blue_green_update {}  # Enables low-downtime updates using RDS Blue/Green deployments.
+  # restore_to_point_in_time {}  # Configuration block for restoring a DB instance to an arbitrary point in time.
+  # s3_import {}  # Restore from a Percona XtraBackup in S3.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_db_instance</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an RDS instance resource.</description>
+</snippet>

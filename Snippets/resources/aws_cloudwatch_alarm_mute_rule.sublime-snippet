@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_alarm_mute_rule" "${1:name}" {
+  name = "${2:name}"  # Name of the alarm mute rule.
+
+  # description = ""  # Description of the alarm mute rule.
+  # expire_date = ""  # Date and time in RFC3339 format when the mute rule expires.
+  # region      = ""  # Region where this resource will be managed.
+  # start_date  = ""  # Date and time in RFC3339 format when the mute rule becomes active.
+  # tags        = {}  # Map of tags assigned to the resource.
+  # mute_targets {}  # Alarms to mute.
+  # rule {}  # Rule definition for the mute rule.
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_alarm_mute_rule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS CloudWatch Alarm Mute Rule.</description>
+</snippet>

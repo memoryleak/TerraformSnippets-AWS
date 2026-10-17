@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_db_proxy_default_target_group" "${1:name}" {
+  db_proxy_name = "${2:db_proxy_name}"  # Name of the RDS DB Proxy.
+
+  # region = ""  # Region where this resource will be managed.
+  # connection_pool_config {}  # Settings that determine the size and behavior of the connection pool for the target group.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_db_proxy_default_target_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manage an RDS DB proxy default target group resource.</description>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+data "aws_bedrock_use_case_for_model_access" "${1:name}" {
+}
+]]></content>
+<tabTrigger>data_aws_bedrock_use_case_for_model_access</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an AWS Bedrock Use Case For Model Access.</description>
+</snippet>

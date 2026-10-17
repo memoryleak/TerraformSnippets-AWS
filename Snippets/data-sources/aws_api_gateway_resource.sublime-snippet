@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_api_gateway_resource" "${1:name}" {
+  path        = "${2:path}"         # Full path of the resource.
+  rest_api_id = "${3:rest_api_id}"  # REST API ID that owns the resource.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_api_gateway_resource</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on a API Gateway Resource</description>
+</snippet>

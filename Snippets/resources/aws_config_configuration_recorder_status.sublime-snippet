@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_config_configuration_recorder_status" "${1:name}" {
+  is_enabled = ${2:false}   # Whether the configuration recorder should be enabled or disabled.
+  name       = "${3:name}"  # The name of the configuration recorder.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_config_configuration_recorder_status</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages status of an AWS Config Configuration Recorder.</description>
+</snippet>

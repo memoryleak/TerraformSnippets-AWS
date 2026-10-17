@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lakeformation_data_lake_settings" "${1:name}" {
+  # admins                                = []     # Set of ARNs of AWS Lake Formation principals (IAM users or roles).
+  # allow_external_data_filtering         = false  # Whether to allow Amazon EMR clusters to access data managed by Lake Formation.
+  # allow_full_table_external_data_access = false  # Whether to allow a third-party query engine to get data access credentials without session tags w...
+  # authorized_session_tag_value_list     = []     # Lake Formation relies on a privileged process secured by Amazon EMR or the third party integrator...
+  # catalog_id                            = ""     # Identifier for the Data Catalog.
+  # external_data_filtering_allow_list    = []     # A list of the account IDs of Amazon Web Services accounts with Amazon EMR clusters that are to pe...
+  # parameters                            = {}     # Key-value map of additional configuration.
+  # read_only_admins                      = []     # Set of ARNs of AWS Lake Formation principals (IAM users or roles) with only view access to the re...
+  # region                                = ""     # Region where this resource will be managed.
+  # trusted_resource_owners               = []     # List of the resource-owning account IDs that the caller's account can use to share their user acc...
+  # create_database_default_permissions {}  # Up to three configuration blocks of principal permissions for default create database permissions.
+  # create_table_default_permissions {}  # Up to three configuration blocks of principal permissions for default create table permissions.
+}
+]]></content>
+<tabTrigger>aws_lakeformation_data_lake_settings</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages data lake administrators and default database and table permissions</description>
+</snippet>

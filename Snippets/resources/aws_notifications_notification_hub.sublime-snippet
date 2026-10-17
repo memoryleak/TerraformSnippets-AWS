@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_notifications_notification_hub" "${1:name}" {
+  notification_hub_region = "${2:notification_hub_region}"  # Notification Hub region.
+
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_notifications_notification_hub</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS User Notifications Notification Hub.</description>
+</snippet>

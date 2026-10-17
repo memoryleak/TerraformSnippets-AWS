@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_securityhub_standards_control" "${1:name}" {
+  control_status        = "${2:control_status}"         # The control status could be ENABLED or DISABLED.
+  standards_control_arn = "${3:standards_control_arn}"  # The standards control ARN.
+
+  # disabled_reason = ""  # A description of the reason why you are disabling a security standard control.
+  # region          = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_securityhub_standards_control</tabTrigger>
+<scope>source.terraform</scope>
+<description>Enable/disable Security Hub standards controls.</description>
+</snippet>

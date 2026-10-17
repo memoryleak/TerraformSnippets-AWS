@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_load_balancer_policy" "${1:name}" {
+  load_balancer_name = "${2:load_balancer_name}"  # The load balancer on which the policy is defined.
+  policy_name        = "${3:policy_name}"         # The name of the load balancer policy.
+  policy_type_name   = "${4:policy_type_name}"    # The policy type.
+
+  # region = ""  # Region where this resource will be managed.
+  # policy_attribute {}  # Policy attribute to apply to the policy.
+}
+]]></content>
+<tabTrigger>aws_load_balancer_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a load balancer policy, which can be attached to an ELB listener or backend server.</description>
+</snippet>

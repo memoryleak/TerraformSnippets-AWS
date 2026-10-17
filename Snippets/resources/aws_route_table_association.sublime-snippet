@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_route_table_association" "${1:name}" {
+  route_table_id = "${2:route_table_id}"  # The ID of the routing table to associate with.
+
+  # gateway_id = ""  # The gateway ID to create an association.
+  # region     = ""  # Region where this resource will be managed.
+  # subnet_id  = ""  # The subnet ID to create an association.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_route_table_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to create an association between a route table and a subnet or a route table...</description>
+</snippet>

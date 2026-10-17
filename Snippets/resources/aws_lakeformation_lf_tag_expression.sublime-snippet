@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lakeformation_lf_tag_expression" "${1:name}" {
+  name = "${2:name}"  # Name of the LF-Tag Expression.
+
+  # catalog_id  = ""  # ID of the Data Catalog.
+  # description = ""  # Description of the LF-Tag Expression.
+  # region      = ""  # Region where this resource will be managed.
+  # expression {}  # A list of LF-Tag conditions (key-value pairs).
+}
+]]></content>
+<tabTrigger>aws_lakeformation_lf_tag_expression</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Lake Formation LF Tag Expression.</description>
+</snippet>

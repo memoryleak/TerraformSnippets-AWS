@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_glue_schema" "${1:name}" {
+  compatibility     = "${2:compatibility}"      # Compatibility mode of the schema.
+  data_format       = "${3:data_format}"        # Data format of the schema definition.
+  schema_definition = "${4:schema_definition}"  # Schema definition using the data_format setting for schema_name.
+  schema_name       = "${5:schema_name}"        # Name of the schema.
+
+  # description  = ""  # Description of the schema.
+  # region       = ""  # Region where this resource will be managed.
+  # registry_arn = ""  # ARN of the Glue Registry to create the schema in.
+  # tags         = {}  # Key-value map of resource tags.
+}
+]]></content>
+<tabTrigger>aws_glue_schema</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Glue Schema resource.</description>
+</snippet>

@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_codecommit_trigger" "${1:name}" {
+  repository_name = "${2:repository_name}"  # The name for the repository.
+  trigger {
+    destination_arn = "${3:destination_arn}"
+    events          = [${4}]
+    name            = "${5:name}"
+  }
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_codecommit_trigger</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CodeCommit Trigger Resource.</description>
+</snippet>

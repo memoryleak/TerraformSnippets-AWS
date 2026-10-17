@@ -1,0 +1,24 @@
+<snippet>
+<content><![CDATA[
+resource "aws_kinesis_stream" "${1:name}" {
+  name = "${2:name}"  # Name to identify the stream.
+
+  # arn                       = ""
+  # encryption_type           = ""     # Encryption type to use.
+  # enforce_consumer_deletion = false  # Whether to deregister all registered consumers from the stream so that the stream can be destroye...
+  # kms_key_id                = ""     # Identifier for the customer-managed KMS key to use for encryption.
+  # max_record_size_in_kib    = 0      # Maximum size for a single data record in KiB.
+  # region                    = ""     # Region where this resource will be managed.
+  # retention_period          = 0      # Length of time data records are accessible after they are added to the stream.
+  # shard_count               = 0      # Number of shards that the stream will use.
+  # shard_level_metrics       = []     # List of shard-level CloudWatch metrics which can be enabled for the stream.
+  # tags                      = {}     # Map of tags to assign to the resource.
+  # warm_throughput_mib_ps    = 0      # Target warm throughput in MB/s that the stream should be scaled to handle.
+  # stream_mode_details {}  # Capacity mode of the data stream.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_kinesis_stream</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a AWS Kinesis Stream</description>
+</snippet>

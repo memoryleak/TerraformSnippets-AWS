@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_macie2_custom_data_identifier" "${1:name}" {
+  # description            = ""  # Custom description of the custom data identifier.
+  # ignore_words           = []  # Array that lists specific character sequences (ignore words) to exclude from the results.
+  # keywords               = []  # Array that lists specific character sequences (keywords), one of which must be within proximity (...
+  # maximum_match_distance = 0   # Maximum number of characters that can exist between text that matches the regex pattern and the c...
+  # name                   = ""  # Custom name for the custom data identifier.
+  # name_prefix            = ""  # Creates a unique name beginning with the specified prefix.
+  # regex                  = ""  # Regular expression (regex) that defines the pattern to match.
+  # region                 = ""  # Region where this resource will be managed.
+  # tags                   = {}  # Map of tags to assign to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_macie2_custom_data_identifier</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage an AWS Macie Custom Data Identifier.</description>
+</snippet>

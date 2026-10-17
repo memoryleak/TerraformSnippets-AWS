@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_rds_integration" "${1:name}" {
+  integration_name = "${2:integration_name}"  # Name of the integration.
+  source_arn       = "${3:source_arn}"        # ARN of the database to use as the source for replication.
+  target_arn       = "${4:target_arn}"        # ARN of the Redshift data warehouse to use as the target for replication.
+
+  # additional_encryption_context = {}  # Set of non-secret key–value pairs that contains additional contextual information about the data.
+  # data_filter                   = ""  # Data filters for the integration.
+  # kms_key_id                    = ""  # KMS key identifier for the key to use to encrypt the integration.
+  # region                        = ""  # Region where this resource will be managed.
+  # tags                          = {}  # Key-value map of resource tags.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_rds_integration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS RDS (Relational Database) Integration.</description>
+</snippet>

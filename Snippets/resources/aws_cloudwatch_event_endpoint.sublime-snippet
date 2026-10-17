@@ -1,0 +1,26 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_event_endpoint" "${1:name}" {
+  name = "${2:name}"  # The name of the global endpoint.
+  event_bus {
+    event_bus_arn = "${3:event_bus_arn}"
+  }
+  routing_config {
+    failover_config {
+      primary {
+      }
+      secondary {
+      }
+    }
+  }
+
+  # description = ""  # A description of the global endpoint.
+  # region      = ""  # Region where this resource will be managed.
+  # role_arn    = ""  # The ARN of the IAM role used for replication between event buses.
+  # replication_config {}  # Parameters used for replication.
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_event_endpoint</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to create an EventBridge Global Endpoint.</description>
+</snippet>

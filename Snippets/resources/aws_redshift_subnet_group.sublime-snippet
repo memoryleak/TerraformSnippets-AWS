@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_redshift_subnet_group" "${1:name}" {
+  name       = "${2:name}"  # The name of the Redshift Subnet group.
+  subnet_ids = [${3}]       # An array of VPC subnet IDs.
+
+  # description = ""  # The description of the Redshift Subnet group.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_redshift_subnet_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Redshift Subnet Group resource.</description>
+</snippet>

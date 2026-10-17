@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_qldb_stream" "${1:name}" {
+  inclusive_start_time = "${2:inclusive_start_time}"  # Inclusive start date and time from which to start streaming journal data.
+  ledger_name          = "${3:ledger_name}"           # Name of the QLDB ledger.
+  role_arn             = "${4:role_arn}"              # ARN of the IAM role that grants QLDB permissions for a journal stream to write data records to a...
+  stream_name          = "${5:stream_name}"           # Name that you want to assign to the QLDB journal stream.
+  kinesis_configuration {
+    stream_arn = "${6:stream_arn}"
+  }
+
+  # exclusive_end_time = ""  # Exclusive date and time that specifies when the stream ends.
+  # region             = ""  # Region where this resource will be managed.
+  # tags               = {}  # Key-value map of resource tags.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_qldb_stream</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a QLDB Stream resource.</description>
+</snippet>

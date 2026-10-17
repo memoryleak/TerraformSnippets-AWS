@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_workspaces_workspace" "${1:name}" {
+  bundle_id    = "${2:bundle_id}"     # The ID of the bundle for the WorkSpace.
+  directory_id = "${3:directory_id}"  # The ID of the directory for the WorkSpace.
+  user_name    = "${4:user_name}"     # The user name of the user for the WorkSpace.
+
+  # region                         = ""     # Region where this resource will be managed.
+  # root_volume_encryption_enabled = false  # Indicates whether the data stored on the root volume is encrypted.
+  # tags                           = {}     # The tags for the WorkSpace.
+  # user_volume_encryption_enabled = false  # Indicates whether the data stored on the user volume is encrypted.
+  # volume_encryption_key          = ""     # The ARN of a symmetric AWS KMS customer master key (CMK) used to encrypt data stored on your Work...
+  # timeouts {}
+  # workspace_properties {}  # The WorkSpace properties.
+}
+]]></content>
+<tabTrigger>aws_workspaces_workspace</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a workspaces in AWS Workspaces Service.</description>
+</snippet>

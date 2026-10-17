@@ -1,0 +1,46 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ecs_service" "${1:name}" {
+  name = "${2:name}"  # Name of the service (up to 255 letters, numbers, hyphens, and underscores)
+
+  # availability_zone_rebalancing      = ""     # ECS automatically redistributes tasks within a service across Availability Zones (AZs) to mitigat...
+  # cluster                            = ""     # ARN of an ECS cluster.
+  # deployment_maximum_percent         = 0      # Upper limit (as a percentage of the service's desiredCount) of the number of running tasks that c...
+  # deployment_minimum_healthy_percent = 0      # Lower limit (as a percentage of the service's desiredCount) of the number of running tasks that m...
+  # desired_count                      = 0      # Number of instances of the task definition to place and keep running.
+  # enable_ecs_managed_tags            = false  # Whether to enable Amazon ECS managed tags for the tasks within the service.
+  # enable_execute_command             = false  # Whether to enable Amazon ECS Exec for the tasks within the service.
+  # force_delete                       = false  # Enable to delete a service even if it wasn't scaled down to zero tasks.
+  # force_new_deployment               = false  # Enable to force a new task deployment of the service.
+  # health_check_grace_period_seconds  = 0      # Seconds to ignore failing load balancer health checks on newly instantiated tasks to prevent prem...
+  # iam_role                           = ""     # ARN of the IAM role that allows Amazon ECS to make calls to your load balancer on your behalf.
+  # launch_type                        = ""     # Launch type on which to run your service.
+  # platform_version                   = ""     # Platform version on which to run your service.
+  # propagate_tags                     = ""     # Whether to propagate the tags from the task definition or the service to the tasks.
+  # region                             = ""     # Region where this resource will be managed.
+  # scheduling_strategy                = ""     # Scheduling strategy to use for the service.
+  # sigint_rollback                    = false  # Whether to enable graceful termination of deployments using SIGINT signals.
+  # tags                               = {}     # Key-value map of resource tags.
+  # task_definition                    = ""     # Family and revision (family:revision) or full ARN of the task definition that you want to run in...
+  # triggers                           = {}     # Map of arbitrary keys and values that, when changed, will trigger an in-place update (redeployment).
+  # wait_for_steady_state              = false  # If true, Terraform will wait for the service to reach a steady state (like aws ecs wait services-...
+  # alarms {}  # Information about the CloudWatch alarms.
+  # capacity_provider_strategy {}  # Capacity provider strategies to use for the service.
+  # deployment_circuit_breaker {}  # Configuration block for deployment circuit breaker.
+  # deployment_configuration {}  # Configuration block for deployment settings.
+  # deployment_controller {}  # Configuration block for deployment controller configuration.
+  # load_balancer {}  # Configuration block for load balancers.
+  # network_configuration {}  # Network configuration for the service.
+  # ordered_placement_strategy {}  # Service level strategy rules that are taken into consideration during task placement.
+  # placement_constraints {}  # Rules that are taken into consideration during task placement.
+  # service_connect_configuration {}  # ECS Service Connect configuration for this service to discover and connect to services, and be di...
+  # service_registries {}  # Service discovery registries for the service.
+  # timeouts {}
+  # volume_configuration {}  # Configuration for a volume specified in the task definition as a volume that is configured at lau...
+  # vpc_lattice_configurations {}  # VPC Lattice configuration for your service that allows Lattice to connect, secure, and monitor yo...
+}
+]]></content>
+<tabTrigger>aws_ecs_service</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an ECS service.</description>
+</snippet>

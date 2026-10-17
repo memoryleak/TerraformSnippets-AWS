@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_prometheus_anomaly_detector" "${1:name}" {
+  alias        = "${2:alias}"         # Name of the anomaly detector.
+  workspace_id = "${3:workspace_id}"  # ID of the AMP workspace in which to create the anomaly detector.
+
+  # evaluation_interval_in_seconds = 0   # Interval in seconds at which the anomaly detector evaluates data.
+  # labels                         = {}  # Map of label key-value pairs used to scope the anomaly detector to specific time series.
+  # region                         = ""  # Region where this resource will be managed.
+  # tags                           = {}  # Map of tags to assign to the resource.
+  # configuration {}  # Configuration block for the anomaly detector algorithm.
+  # missing_data_action {}  # Configuration block for the action to take when data is missing.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_prometheus_anomaly_detector</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS AMP (Managed Prometheus) Anomaly Detector.</description>
+</snippet>

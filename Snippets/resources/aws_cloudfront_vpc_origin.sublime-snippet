@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudfront_vpc_origin" "${1:name}" {
+  # tags = {}  # Key-value tags for the place index.
+  # timeouts {}
+  # vpc_origin_endpoint_config {}
+}
+]]></content>
+<tabTrigger>aws_cloudfront_vpc_origin</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudFront VPC Origin</description>
+</snippet>

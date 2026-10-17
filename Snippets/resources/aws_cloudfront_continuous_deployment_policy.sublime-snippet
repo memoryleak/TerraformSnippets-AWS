@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudfront_continuous_deployment_policy" "${1:name}" {
+  enabled = ${2:false}  # Whether this continuous deployment policy is enabled.
+
+  # staging_distribution_dns_names {}  # CloudFront domain name of the staging distribution.
+  # traffic_config {}  # Parameters for routing production traffic from primary to staging distributions.
+}
+]]></content>
+<tabTrigger>aws_cloudfront_continuous_deployment_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS CloudFront Continuous Deployment Policy.</description>
+</snippet>

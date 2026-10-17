@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpclattice_resource_configuration" "${1:name}" {
+  name = "${2:name}"  # Name for the Resource Configuration.
+
+  # allow_association_to_shareable_service_network = false  # Allow or Deny the association of this resource to a shareable service network.
+  # custom_domain_name                             = ""     # Custom domain name for your resource configuration.
+  # domain_verification_id                         = ""     # Domain verification ID of your verified custom domain name.
+  # port_ranges                                    = []     # Port ranges to access the Resource either single port 80 or range 80-81 range.
+  # protocol                                       = ""     # Protocol for the Resource TCP is currently the only supported value.
+  # region                                         = ""     # Region where this resource will be managed.
+  # resource_configuration_group_id                = ""     # ID of Resource Configuration where type is CHILD.
+  # resource_gateway_identifier                    = ""     # ID of the Resource Gateway used to access the resource.
+  # tags                                           = {}     # Key-value mapping of resource tags.
+  # type                                           = ""     # Type of Resource Configuration.
+  # resource_configuration_definition {}  # Details of the Resource Configuration.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_vpclattice_resource_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS VPC Lattice Resource Configuration.</description>
+</snippet>

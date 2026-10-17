@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_mq_broker_instance_type_offerings" "${1:name}" {
+  # engine_type        = ""  # Filter response by engine type.
+  # host_instance_type = ""  # Filter response by host instance type.
+  # region             = ""  # Region where this resource will be managed.
+  # storage_type       = ""  # Filter response by storage type.
+}
+]]></content>
+<tabTrigger>data_aws_mq_broker_instance_type_offerings</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about available MQ broker instance type offerings.</description>
+</snippet>

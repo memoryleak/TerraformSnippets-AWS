@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iam_policy" "${1:name}" {
+  policy = "${2:policy}"  # Policy document.
+
+  # delay_after_policy_creation_in_ms = 0   # Number of ms to wait between creating the policy and setting its version as default.
+  # description                       = ""  # Description of the IAM policy.
+  # name                              = ""  # Name of the policy.
+  # name_prefix                       = ""  # Creates a unique name beginning with the specified prefix.
+  # path                              = ""  # Path in which to create the policy.
+  # tags                              = {}  # Map of resource tags for the IAM Policy.
+}
+]]></content>
+<tabTrigger>aws_iam_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an IAM policy.</description>
+</snippet>

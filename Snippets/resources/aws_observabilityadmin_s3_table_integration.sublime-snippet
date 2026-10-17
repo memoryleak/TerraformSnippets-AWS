@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_observabilityadmin_s3_table_integration" "${1:name}" {
+  role_arn = "${2:role_arn}"  # ARN of the IAM role that grants the S3 Table integration permissions to access necessary resources.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value map of resource tags.
+  # encryption {}  # Encryption configuration block.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_observabilityadmin_s3_table_integration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a CloudWatch Observability Admin S3 Table Integration.</description>
+</snippet>

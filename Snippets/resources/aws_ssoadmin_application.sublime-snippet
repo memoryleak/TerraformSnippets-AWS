@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ssoadmin_application" "${1:name}" {
+  application_provider_arn = "${2:application_provider_arn}"  # ARN of the application provider.
+  instance_arn             = "${3:instance_arn}"              # ARN of the instance of IAM Identity Center.
+  name                     = "${4:name}"                      # Name of the application.
+
+  # client_token = ""  # A unique, case-sensitive ID that you provide to ensure the idempotency of the request.
+  # description  = ""  # Description of the application.
+  # region       = ""  # Region where this resource will be managed.
+  # status       = ""  # Status of the application.
+  # tags         = {}  # Key-value mapping of resource tags.
+  # portal_options {}  # Options for the portal associated with an application.
+}
+]]></content>
+<tabTrigger>aws_ssoadmin_application</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS SSO Admin Application.</description>
+</snippet>

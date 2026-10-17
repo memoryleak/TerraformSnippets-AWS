@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_notificationscontacts_email_contact" "${1:name}" {
+  email_address = "${2:email_address}"  # Email address for the contact.
+  name          = "${3:name}"           # Name of the email contact.
+
+  # tags = {}  # Map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_notificationscontacts_email_contact</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS User Notifications Contacts Email Contact.</description>
+</snippet>

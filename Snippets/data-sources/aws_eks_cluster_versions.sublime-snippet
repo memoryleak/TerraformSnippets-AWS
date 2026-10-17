@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+data "aws_eks_cluster_versions" "${1:name}" {
+  # cluster_type          = ""     # Type of clusters to filter by.
+  # cluster_versions_only = []
+  # default_only          = false  # Whether to show only the default versions of Kubernetes supported by EKS.
+  # include_all           = false  # Whether to include all kubernetes versions in the response.
+  # region                = ""     # Region where this resource will be managed.
+  # version_status        = ""     # Status of the EKS cluster versions to list.
+}
+]]></content>
+<tabTrigger>data_aws_eks_cluster_versions</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing AWS EKS (Elastic Kubernetes) Cluster Versions.</description>
+</snippet>

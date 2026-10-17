@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iot_domain_configuration" "${1:name}" {
+  name = "${2:name}"  # The name of the domain configuration.
+
+  # application_protocol       = ""  # An enumerated string that speciﬁes the application-layer protocol.
+  # authentication_type        = ""  # An enumerated string that speciﬁes the authentication type.
+  # domain_name                = ""  # Fully-qualified domain name.
+  # region                     = ""  # Region where this resource will be managed.
+  # server_certificate_arns    = []  # The ARNs of the certificates that IoT passes to the device during the TLS handshake.
+  # service_type               = ""  # The type of service delivered by the endpoint.
+  # status                     = ""  # The status to which the domain configuration should be set.
+  # tags                       = {}  # Map of tags to assign to this resource.
+  # validation_certificate_arn = ""  # The certificate used to validate the server certificate and prove domain name ownership.
+  # authorizer_config {}  # An object that specifies the authorization service for a domain.
+  # tls_config {}  # An object that specifies the TLS configuration for a domain.
+}
+]]></content>
+<tabTrigger>aws_iot_domain_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Creates and manages an AWS IoT domain configuration.</description>
+</snippet>

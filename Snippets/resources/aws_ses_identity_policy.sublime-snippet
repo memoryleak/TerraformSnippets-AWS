@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ses_identity_policy" "${1:name}" {
+  identity = "${2:identity}"  # Name or ARN of the SES Identity.
+  name     = "${3:name}"      # Name of the policy.
+  policy   = "${4:policy}"    # JSON string of the policy.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_ses_identity_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a SES Identity Policy</description>
+</snippet>

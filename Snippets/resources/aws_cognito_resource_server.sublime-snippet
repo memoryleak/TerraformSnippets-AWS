@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cognito_resource_server" "${1:name}" {
+  identifier   = "${2:identifier}"    # An identifier for the resource server.
+  name         = "${3:name}"          # A name for the resource server.
+  user_pool_id = "${4:user_pool_id}"  # User pool the client belongs to.
+
+  # region = ""  # Region where this resource will be managed.
+  # scope {}  # A list of Authorization Scope.
+}
+]]></content>
+<tabTrigger>aws_cognito_resource_server</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Cognito Resource Server.</description>
+</snippet>

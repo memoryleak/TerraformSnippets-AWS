@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_xray_indexing_rule" "${1:name}" {
+  name = "${2:name}"  # Indexing rule name.
+
+  # region = ""  # Region where this resource will be managed.
+  # rule {}  # Rule configuration.
+}
+]]></content>
+<tabTrigger>aws_xray_indexing_rule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS X-Ray indexing rule.</description>
+</snippet>

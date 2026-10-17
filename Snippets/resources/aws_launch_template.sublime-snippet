@@ -1,0 +1,47 @@
+<snippet>
+<content><![CDATA[
+resource "aws_launch_template" "${1:name}" {
+  # default_version                      = 0      # Default Version of the launch template.
+  # description                          = ""     # Description of the launch template version (VersionDescription in the EC2 API).
+  # disable_api_stop                     = false  # If true, enables EC2 Instance Stop Protection.
+  # disable_api_termination              = false  # If true, enables [EC2 Instance
+  # ebs_optimized                        = ""     # If true, the launched EC2 instance will be EBS-optimized.
+  # image_id                             = ""     # The AMI from which to launch the instance or use a Systems Manager parameter convention e.g.
+  # instance_initiated_shutdown_behavior = ""     # Shutdown behavior for the instance.
+  # instance_type                        = ""     # The type of the instance.
+  # kernel_id                            = ""     # The kernel ID.
+  # key_name                             = ""     # The key name to use for the instance.
+  # name                                 = ""     # The name of the launch template.
+  # name_prefix                          = ""     # Creates a unique name beginning with the specified prefix.
+  # ram_disk_id                          = ""     # The ID of the RAM disk.
+  # region                               = ""     # Region where this resource will be managed.
+  # security_group_names                 = []     # A list of security group names to associate with.
+  # tags                                 = {}     # A map of tags to assign to the launch template.
+  # update_default_version               = false  # Whether to update Default Version each update.
+  # user_data                            = ""     # The base64-encoded user data to provide when launching the instance.
+  # vpc_security_group_ids               = []     # A list of security group IDs to associate with.
+  # block_device_mappings {}  # Specify volumes to attach to the instance besides the volumes specified by the AMI.
+  # capacity_reservation_specification {}  # Targeting for EC2 capacity reservations.
+  # cpu_options {}  # The CPU options for the instance.
+  # credit_specification {}  # Customize the credit specification of the instance.
+  # enclave_options {}  # Enable Nitro Enclaves on launched instances.
+  # hibernation_options {}  # The hibernation options for the instance.
+  # iam_instance_profile {}  # The IAM Instance Profile to launch the instance with.
+  # instance_market_options {}  # The market (purchasing) option for the instance.
+  # instance_requirements {}  # The attribute requirements for the type of instance.
+  # license_specification {}  # A list of license specifications to associate with.
+  # maintenance_options {}  # The maintenance options for the instance.
+  # metadata_options {}  # Customize the metadata options for the instance.
+  # monitoring {}  # The monitoring option for the instance.
+  # network_interfaces {}  # Customize network interfaces to be attached at instance boot time.
+  # network_performance_options {}
+  # placement {}  # The placement of the instance.
+  # private_dns_name_options {}  # The options for the instance hostname.
+  # secondary_interfaces {}  # Secondary interfaces to associate with instances launched from the template.
+  # tag_specifications {}  # The tags to apply to the resources during launch.
+}
+]]></content>
+<tabTrigger>aws_launch_template</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an EC2 launch template resource.</description>
+</snippet>

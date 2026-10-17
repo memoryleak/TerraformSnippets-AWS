@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_cloudformation_stack" "${1:name}" {
+  name = "${2:name}"  # Name of the stack
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_cloudformation_stack</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides metadata of a CloudFormation stack (e.g., outputs)</description>
+</snippet>

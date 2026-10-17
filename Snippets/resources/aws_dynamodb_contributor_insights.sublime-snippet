@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dynamodb_contributor_insights" "${1:name}" {
+  table_name = "${2:table_name}"  # The name of the table to enable contributor insights
+
+  # index_name = ""  # The global secondary index name
+  # mode       = ""  # argument to specify the CloudWatch contributor insights mode
+  # region     = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_dynamodb_contributor_insights</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a DynamoDB contributor insights resource</description>
+</snippet>

@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_apigatewayv2_route_response" "${1:name}" {
+  api_id             = "${2:api_id}"              # API identifier.
+  route_id           = "${3:route_id}"            # Identifier of the aws_apigatewayv2_route.
+  route_response_key = "${4:route_response_key}"  # Route response key.
+
+  # model_selection_expression = ""  # Model selection expression for the route response.
+  # region                     = ""  # Region where this resource will be managed.
+  # response_models            = {}  # Response models for the route response.
+}
+]]></content>
+<tabTrigger>aws_apigatewayv2_route_response</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Amazon API Gateway Version 2 route response.</description>
+</snippet>

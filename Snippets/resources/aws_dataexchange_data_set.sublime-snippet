@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dataexchange_data_set" "${1:name}" {
+  asset_type  = "${2:asset_type}"   # The type of asset that is added to a data set.
+  description = "${3:description}"  # A description for the data set.
+  name        = "${4:name}"         # The name of the data set.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_dataexchange_data_set</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a DataExchange DataSet</description>
+</snippet>

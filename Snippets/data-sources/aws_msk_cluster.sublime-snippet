@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_msk_cluster" "${1:name}" {
+  cluster_name = "${2:cluster_name}"  # Name of the cluster.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_msk_cluster</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on an Amazon MSK Cluster</description>
+</snippet>

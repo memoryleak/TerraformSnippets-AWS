@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_spot_datafeed_subscription" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_spot_datafeed_subscription</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for accessing an AWS EC2 (Elastic Compute Cloud) spot data feed subscription.</description>
+</snippet>

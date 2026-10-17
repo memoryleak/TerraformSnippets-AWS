@@ -1,0 +1,48 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudfront_distribution" "${1:name}" {
+  enabled = ${2:false}
+  default_cache_behavior {
+    allowed_methods        = [${3}]
+    cached_methods         = [${4}]
+    target_origin_id       = "${5:target_origin_id}"
+    viewer_protocol_policy = "${6:viewer_protocol_policy}"
+  }
+  origin {
+    domain_name = "${7:domain_name}"
+    origin_id   = "${8:origin_id}"
+  }
+  restrictions {
+    geo_restriction {
+      restriction_type = "${9:restriction_type}"
+    }
+  }
+  viewer_certificate {
+  }
+
+  # aliases                         = []
+  # anycast_ip_list_id              = ""
+  # comment                         = ""
+  # continuous_deployment_policy_id = ""
+  # default_root_object             = ""
+  # http_version                    = ""
+  # is_ipv6_enabled                 = false
+  # price_class                     = ""
+  # retain_on_delete                = false
+  # staging                         = false
+  # tags                            = {}     # A map of tags to assign to the resource.
+  # wait_for_deployment             = false
+  # web_acl_id                      = ""
+  # cache_tag_config {}
+  # connection_function_association {}
+  # custom_error_response {}
+  # logging_config {}
+  # ordered_cache_behavior {}
+  # origin_group {}
+  # viewer_mtls_config {}
+}
+]]></content>
+<tabTrigger>aws_cloudfront_distribution</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudFront web distribution resource.</description>
+</snippet>

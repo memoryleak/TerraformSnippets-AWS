@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ses_receipt_filter" "${1:name}" {
+  cidr   = "${2:cidr}"    # IP address or address range to filter, in CIDR notation
+  name   = "${3:name}"    # Name of the filter
+  policy = "${4:policy}"  # Block or Allow
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_ses_receipt_filter</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an SES receipt filter</description>
+</snippet>

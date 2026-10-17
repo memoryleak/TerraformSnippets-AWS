@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_glue_registry" "${1:name}" {
+  name = "${2:name}"  # Name of the Glue Registry.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_glue_registry</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS Glue Registry.</description>
+</snippet>

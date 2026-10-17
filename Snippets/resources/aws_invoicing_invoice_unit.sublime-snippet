@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_invoicing_invoice_unit" "${1:name}" {
+  invoice_receiver = "${2:invoice_receiver}"  # AWS account ID that receives invoices for this unit.
+  name             = "${3:name}"              # Unique name of the invoice unit.
+
+  # description              = ""     # Description of the invoice unit.
+  # tags                     = {}     # Map of tags to assign to the resource.
+  # tax_inheritance_disabled = false  # Whether tax inheritance is disabled for this invoice unit.
+  # rule {}  # Configuration block for invoice unit rules.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_invoicing_invoice_unit</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Invoice Unit</description>
+</snippet>

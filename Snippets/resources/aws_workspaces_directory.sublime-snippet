@@ -1,0 +1,25 @@
+<snippet>
+<content><![CDATA[
+resource "aws_workspaces_directory" "${1:name}" {
+  # directory_id                    = ""  # The directory identifier for registration in WorkSpaces service.
+  # ip_group_ids                    = []  # The identifiers of the IP access control groups associated with the directory.
+  # region                          = ""  # Region where this resource will be managed.
+  # subnet_ids                      = []  # The identifiers of the subnets where the directory resides.
+  # tags                            = {}  # A map of tags assigned to the WorkSpaces directory.
+  # tenancy                         = ""  # Tenancy of the WorkSpaces directory.
+  # user_identity_type              = ""  # Specifies the user identity type for the WorkSpaces directory.
+  # workspace_directory_description = ""  # The description of the WorkSpaces directory when workspace_type is set to POOLS.
+  # workspace_directory_name        = ""  # The name of the WorkSpaces directory when workspace_type is set to POOLS.
+  # workspace_type                  = ""  # Specifies the type of WorkSpaces directory.
+  # active_directory_config {}  # Configuration for Active Directory integration when workspace_type is set to POOLS.
+  # certificate_based_auth_properties {}  # Configuration of certificate-based authentication (CBA) integration.
+  # saml_properties {}  # Configuration of SAML authentication integration.
+  # self_service_permissions {}  # Permissions to enable or disable self-service capabilities when workspace_type is set to PERSONAL..
+  # workspace_access_properties {}  # Specifies which devices and operating systems users can use to access their WorkSpaces.
+  # workspace_creation_properties {}  # Default properties that are used for creating WorkSpaces.
+}
+]]></content>
+<tabTrigger>aws_workspaces_directory</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a WorkSpaces directory in AWS WorkSpaces Service.</description>
+</snippet>

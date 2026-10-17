@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudfront_key_value_store" "${1:name}" {
+  name = "${2:name}"  # Unique name for your CloudFront KeyValueStore.
+
+  # comment = ""  # Comment.
+  # tags    = {}
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_cloudfront_key_value_store</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS CloudFront Key Value Store.</description>
+</snippet>

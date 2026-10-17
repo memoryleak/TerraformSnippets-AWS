@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ivschat_logging_configuration" "${1:name}" {
+  # name   = ""  # Logging Configuration name.
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # A map of tags to assign to the resource.
+  # destination_configuration {}  # Object containing destination configuration for where chat activity will be logged.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ivschat_logging_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS IVS (Interactive Video) Chat Logging Configuration.</description>
+</snippet>

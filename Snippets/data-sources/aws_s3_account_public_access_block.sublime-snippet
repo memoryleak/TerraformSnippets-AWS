@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_s3_account_public_access_block" "${1:name}" {
+  # account_id = ""  # AWS account ID to configure.
+}
+]]></content>
+<tabTrigger>data_aws_s3_account_public_access_block</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides S3 account-level Public Access Block Configuration</description>
+</snippet>

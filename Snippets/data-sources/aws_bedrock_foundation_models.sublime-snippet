@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_bedrock_foundation_models" "${1:name}" {
+  # by_customization_type = ""  # Customization type to filter on.
+  # by_inference_type     = ""  # Inference type to filter on.
+  # by_output_modality    = ""  # Output modality to filter on.
+  # by_provider           = ""  # Model provider to filter on.
+  # region                = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_bedrock_foundation_models</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about AWS Bedrock Foundation Models.</description>
+</snippet>

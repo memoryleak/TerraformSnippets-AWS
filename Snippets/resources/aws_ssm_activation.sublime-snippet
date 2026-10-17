@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ssm_activation" "${1:name}" {
+  iam_role = "${2:iam_role}"  # The IAM Role to attach to the managed instance.
+
+  # description        = ""  # The description of the resource that you want to register.
+  # expiration_date    = ""  # UTC timestamp in RFC3339 format by which this activation request should expire.
+  # name               = ""  # The default name of the registered managed instance.
+  # region             = ""  # Region where this resource will be managed.
+  # registration_limit = 0   # The maximum number of managed instances you want to register.
+  # tags               = {}  # A map of tags to assign to the object.
+}
+]]></content>
+<tabTrigger>aws_ssm_activation</tabTrigger>
+<scope>source.terraform</scope>
+<description>Registers an on-premises server or virtual machine with Amazon EC2 so that it can be managed usin...</description>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_uxc_account_customizations" "${1:name}" {
+  # account_color    = ""  # Color used to identify the account in the AWS Management Console.
+  # visible_regions  = []  # Set of AWS region codes to display in the console.
+  # visible_services = []  # Set of AWS service identifiers to display in the console.
+}
+]]></content>
+<tabTrigger>aws_uxc_account_customizations</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages UXC Account Customizations for an AWS Account.</description>
+</snippet>

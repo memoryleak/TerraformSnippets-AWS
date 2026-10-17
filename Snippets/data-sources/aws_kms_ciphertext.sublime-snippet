@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_kms_ciphertext" "${1:name}" {
+  key_id    = "${2:key_id}"     # Globally unique key ID for the customer master key.
+  plaintext = "${3:plaintext}"  # Data to be encrypted.
+
+  # context = {}  # Mapping that makes up the encryption context.
+  # region  = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_kms_ciphertext</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides ciphertext encrypted using a KMS key</description>
+</snippet>

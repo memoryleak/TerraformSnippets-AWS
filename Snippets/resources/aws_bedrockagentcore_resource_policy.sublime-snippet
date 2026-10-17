@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrockagentcore_resource_policy" "${1:name}" {
+  policy       = "${2:policy}"        # Resource policy document in JSON format.
+  resource_arn = "${3:resource_arn}"  # ARN of the resource for which to create or update the resource policy.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_bedrockagentcore_resource_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Bedrock AgentCore Resource Policy.</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_qldb_ledger" "${1:name}" {
+  name = "${2:name}"  # Friendly name of the ledger to match.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_qldb_ledger</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on a Amazon Quantum Ledger Database (QLDB)</description>
+</snippet>

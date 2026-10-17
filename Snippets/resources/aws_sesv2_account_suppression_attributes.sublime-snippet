@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sesv2_account_suppression_attributes" "${1:name}" {
+  suppressed_reasons = [${2}]  # Reasons that email addresses are automatically added to the suppression list for your account.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_sesv2_account_suppression_attributes</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages AWS SESv2 (Simple Email V2) account-level suppression attributes.</description>
+</snippet>

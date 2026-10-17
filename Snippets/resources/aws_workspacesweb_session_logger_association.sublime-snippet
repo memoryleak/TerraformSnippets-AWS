@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_workspacesweb_session_logger_association" "${1:name}" {
+  portal_arn         = "${2:portal_arn}"          # ARN of the web portal.
+  session_logger_arn = "${3:session_logger_arn}"  # ARN of the session logger.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_workspacesweb_session_logger_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS WorkSpaces Web Session Logger Association.</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_transit_gateway_multicast_group_source" "${1:name}" {
+  group_ip_address                    = "${2:group_ip_address}"                     # The IP address assigned to the transit gateway multicast group.
+  network_interface_id                = "${3:network_interface_id}"                 # The group members' network interface ID to register with the transit gateway multicast group.
+  transit_gateway_multicast_domain_id = "${4:transit_gateway_multicast_domain_id}"  # The ID of the transit gateway multicast domain.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_ec2_transit_gateway_multicast_group_source</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an EC2 Transit Gateway Multicast Group Source</description>
+</snippet>

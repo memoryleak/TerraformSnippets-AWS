@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_codestarnotifications_notification_rule" "${1:name}" {
+  detail_type    = "${2:detail_type}"  # The level of detail to include in the notifications for this resource.
+  event_type_ids = [${3}]              # A list of event types associated with this notification rule.
+  name           = "${4:name}"         # The name of notification rule.
+  resource       = "${5:resource}"     # The ARN of the resource to associate with the notification rule.
+
+  # region = ""  # Region where this resource will be managed.
+  # status = ""  # The status of the notification rule.
+  # tags   = {}  # A map of tags to assign to the resource.
+  # target {}  # Configuration blocks containing notification target information.
+}
+]]></content>
+<tabTrigger>aws_codestarnotifications_notification_rule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CodeStar Notifications Rule</description>
+</snippet>

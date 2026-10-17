@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_config_remediation_configuration" "${1:name}" {
+  config_rule_name = "${2:config_rule_name}"  # Name of the AWS Config rule.
+  target_id        = "${3:target_id}"         # Target ID is the name of the public document.
+  target_type      = "${4:target_type}"       # Type of the target.
+
+  # automatic                  = false  # Remediation is triggered automatically if true.
+  # maximum_automatic_attempts = 0      # Maximum number of failed attempts for auto-remediation.
+  # region                     = ""     # Region where this resource will be managed.
+  # resource_type              = ""     # Type of resource.
+  # retry_attempt_seconds      = 0      # Maximum time in seconds that AWS Config runs auto-remediation.
+  # target_version             = ""     # Version of the target.
+  # execution_controls {}  # Configuration block for execution controls.
+  # parameter {}  # Can be specified multiple times for each parameter.
+}
+]]></content>
+<tabTrigger>aws_config_remediation_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AWS Config Remediation Configuration.</description>
+</snippet>

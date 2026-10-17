@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ssoadmin_customer_managed_policy_attachment" "${1:name}" {
+  instance_arn       = "${2:instance_arn}"        # ARN of the SSO Instance under which the operation will be executed.
+  permission_set_arn = "${3:permission_set_arn}"  # ARN of the Permission Set.
+  customer_managed_policy_reference {
+    name = "${4:name}"
+  }
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ssoadmin_customer_managed_policy_attachment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a customer managed policy for a Single Sign-On (SSO) Permission Set</description>
+</snippet>

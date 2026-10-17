@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_codeartifact_authorization_token" "${1:name}" {
+  domain = "${2:domain}"  # Name of the domain that is in scope for the generated authorization token.
+
+  # domain_owner     = ""  # Account number of the AWS account that owns the domain.
+  # duration_seconds = 0   # Time, in seconds, that the generated authorization token is valid.
+  # region           = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_codeartifact_authorization_token</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a CodeArtifact Authorization Token</description>
+</snippet>

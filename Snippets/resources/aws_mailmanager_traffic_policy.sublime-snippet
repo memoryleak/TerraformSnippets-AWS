@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_mailmanager_traffic_policy" "${1:name}" {
+  default_action = "${2:default_action}"  # Default action for traffic that does not match any policy statement.
+  name           = "${3:name}"            # Name of the traffic policy.
+
+  # max_message_size_bytes = 0   # Maximum message size, in bytes, allowed by the traffic policy.
+  # region                 = ""  # Region where this resource will be managed.
+  # tags                   = {}  # Map of tags assigned to the resource.
+  # policy_statement {}  # Traffic policy statements.
+}
+]]></content>
+<tabTrigger>aws_mailmanager_traffic_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an SES Mail Manager Traffic Policy.</description>
+</snippet>

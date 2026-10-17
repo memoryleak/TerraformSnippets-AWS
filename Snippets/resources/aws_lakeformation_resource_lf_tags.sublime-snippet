@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lakeformation_resource_lf_tags" "${1:name}" {
+  lf_tag {
+    key   = "${2:key}"
+    value = "${3:value}"
+  }
+
+  # catalog_id = ""  # Identifier for the Data Catalog.
+  # region     = ""  # Region where this resource will be managed.
+  # database {}  # Configuration block for a database resource.
+  # table {}  # Configuration block for a table resource.
+  # table_with_columns {}  # Configuration block for a table with columns resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_lakeformation_resource_lf_tags</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an attachment between one or more LF-tags and an existing Lake Formation resource.</description>
+</snippet>

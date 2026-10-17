@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrockagentcore_gateway_target" "${1:name}" {
+  gateway_identifier = "${2:gateway_identifier}"  # Identifier of the gateway that this target belongs to.
+  name               = "${3:name}"                # Name of the gateway target.
+
+  # description = ""  # Description of the gateway target.
+  # region      = ""  # Region where this resource will be managed.
+  # credential_provider_configuration {}  # Configuration for authenticating requests to the target.
+  # metadata_configuration {}  # Configuration for HTTP header and query parameter propagation between the gateway and target serv...
+  # private_endpoint {}  # Configuration for private connectivity from AgentCore Gateway to a resource inside your VPC.
+  # target_configuration {}  # Configuration for the target endpoint.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_bedrockagentcore_gateway_target</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Bedrock AgentCore Gateway Target.</description>
+</snippet>

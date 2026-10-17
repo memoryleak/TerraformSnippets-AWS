@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sagemaker_image_version" "${1:name}" {
+  base_image = "${2:base_image}"  # The registry path of the container image on which this image version is based.
+  image_name = "${3:image_name}"  # The name of the image.
+
+  # aliases          = []     # A list of aliases for the image version.
+  # horovod          = false  # Indicates Horovod compatibility.
+  # job_type         = ""     # Indicates SageMaker AI job type compatibility.
+  # ml_framework     = ""     # The machine learning framework vended in the image version.
+  # processor        = ""     # Indicates CPU or GPU compatibility.
+  # programming_lang = ""     # The supported programming language and its version.
+  # region           = ""     # Region where this resource will be managed.
+  # release_notes    = ""     # The maintainer description of the image version.
+  # vendor_guidance  = ""     # The stability of the image version, specified by the maintainer.
+}
+]]></content>
+<tabTrigger>aws_sagemaker_image_version</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a SageMaker AI Image Version resource.</description>
+</snippet>

@@ -1,0 +1,32 @@
+<snippet>
+<content><![CDATA[
+resource "aws_synthetics_canary" "${1:name}" {
+  artifact_s3_location = "${2:artifact_s3_location}"  # Location in Amazon S3 where Synthetics stores artifacts from the test runs of this canary.
+  execution_role_arn   = "${3:execution_role_arn}"    # ARN of the IAM role to be used to run the canary.
+  handler              = "${4:handler}"               # Entry point to use for the source code when running the canary.
+  name                 = "${5:name}"                  # Name for this canary.
+  runtime_version      = "${6:runtime_version}"       # Runtime version to use for the canary.
+  schedule {
+    expression = "${7:expression}"
+  }
+
+  # delete_lambda            = false  # Specifies whether to also delete the Lambda functions and layers used by this canary.
+  # failure_retention_period = 0      # Number of days to retain data about failed runs of this canary.
+  # kms_key_arn              = ""     # ARN of the customer-managed KMS key used to encrypt the environment variables of the canary's Lam...
+  # region                   = ""     # Region where this resource will be managed.
+  # s3_bucket                = ""     # Full bucket name which is used if your canary script is located in S3.
+  # s3_key                   = ""     # S3 key of your script.
+  # s3_version               = ""     # S3 version ID of your script.
+  # start_canary             = false  # Whether to run or stop the canary.
+  # success_retention_period = 0      # Number of days to retain data about successful runs of this canary.
+  # tags                     = {}     # Key-value map of resource tags.
+  # zip_file                 = ""     # ZIP file that contains the script, if you input your canary script directly into the canary inste...
+  # artifact_config {}  # configuration for canary artifacts, including the encryption-at-rest settings for artifacts that...
+  # run_config {}  # Configuration block for individual canary runs.
+  # vpc_config {}  # Configuration block.
+}
+]]></content>
+<tabTrigger>aws_synthetics_canary</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Synthetics Canary resource</description>
+</snippet>

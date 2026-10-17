@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_db_event_subscription" "${1:name}" {
+  sns_topic = "${2:sns_topic}"  # SNS topic to send events to.
+
+  # enabled          = false  # Boolean flag to enable/disable the subscription.
+  # event_categories = []     # List of event categories for a SourceType that you want to subscribe to.
+  # name             = ""     # Name of the DB event subscription.
+  # name_prefix      = ""     # Creates a unique name beginning with the specified prefix.
+  # region           = ""     # Region where this resource will be managed.
+  # source_ids       = []     # List of identifiers of the event sources for which events will be returned.
+  # source_type      = ""     # Type of source that will be generating the events.
+  # tags             = {}     # Map of tags to assign to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_db_event_subscription</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a DB event subscription resource.</description>
+</snippet>

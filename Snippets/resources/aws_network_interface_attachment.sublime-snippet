@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_network_interface_attachment" "${1:name}" {
+  device_index         = ${2:0}                       # Network interface index (int).
+  instance_id          = "${3:instance_id}"           # Instance ID to attach.
+  network_interface_id = "${4:network_interface_id}"  # ENI ID to attach.
+
+  # network_card_index = 0   # Index of the network card.
+  # region             = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_network_interface_attachment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Attach an Elastic network interface (ENI) resource with EC2 instance.</description>
+</snippet>

@@ -1,0 +1,24 @@
+<snippet>
+<content><![CDATA[
+resource "aws_msk_serverless_cluster" "${1:name}" {
+  cluster_name = "${2:cluster_name}"  # Name of the serverless cluster.
+  client_authentication {
+    sasl {
+      iam {
+        enabled = ${3:false}
+      }
+    }
+  }
+  vpc_config {
+    subnet_ids = [${4}]
+  }
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags to assign to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_msk_serverless_cluster</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an Amazon MSK Serverless cluster.</description>
+</snippet>

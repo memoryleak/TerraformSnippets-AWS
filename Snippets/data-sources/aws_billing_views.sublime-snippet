@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_billing_views" "${1:name}" {
+  # billing_view_types = []  # List of billing view types to retrieve.
+}
+]]></content>
+<tabTrigger>data_aws_billing_views</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Retrieve a list of AWS Billing Views.</description>
+</snippet>

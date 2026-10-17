@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_prometheus_default_scraper_configuration" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_prometheus_default_scraper_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Returns the default scraper configuration used when Amazon EKS creates a scraper for you.</description>
+</snippet>

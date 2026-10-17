@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_devicefarm_test_grid_project" "${1:name}" {
+  name = "${2:name}"  # The name of the Selenium testing project.
+
+  # description = ""  # Human-readable description of the project.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # A map of tags to assign to the resource.
+  # vpc_config {}  # The VPC security groups and subnets that are attached to a project.
+}
+]]></content>
+<tabTrigger>aws_devicefarm_test_grid_project</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Devicefarm test_grid_project</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_workmail_group" "${1:name}" {
+  email           = "${2:email}"            # Primary email address used to register the group with WorkMail.
+  name            = "${3:name}"             # Name of the group.
+  organization_id = "${4:organization_id}"  # Identifier of the WorkMail organization where the group is managed.
+
+  # hidden_from_global_address_list = false  # Whether to hide the group from the global address list.
+  # region                          = ""     # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_workmail_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS WorkMail Group.</description>
+</snippet>

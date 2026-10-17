@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_kendra_experience" "${1:name}" {
+  index_id = "${2:index_id}"  # Identifier of the index for your Amazon Kendra experience.
+  name     = "${3:name}"      # Name for your Amazon Kendra experience.
+  role_arn = "${4:role_arn}"  # ARN of a role with permission to access Query API, QuerySuggestions API, SubmitFeedback API, and...
+
+  # description = ""  # Description for your Amazon Kendra experience.
+  # region      = ""  # Region where this resource will be managed.
+  # configuration {}  # Configuration information for your Amazon Kendra experience.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_kendra_experience</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Kendra Experience.</description>
+</snippet>

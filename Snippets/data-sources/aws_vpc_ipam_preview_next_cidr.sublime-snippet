@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+data "aws_vpc_ipam_preview_next_cidr" "${1:name}" {
+  ipam_pool_id = "${2:ipam_pool_id}"  # ID of the pool to which you want to assign a CIDR.
+
+  # disallowed_cidrs = []  # Exclude a particular CIDR range from being returned by the pool.
+  # netmask_length   = 0   # Netmask length of the CIDR you would like to preview from the IPAM pool.
+  # region           = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_vpc_ipam_preview_next_cidr</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Previews a CIDR from an IPAM address pool.</description>
+</snippet>

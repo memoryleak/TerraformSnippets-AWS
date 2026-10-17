@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpc_route_server_endpoint" "${1:name}" {
+  route_server_id = "${2:route_server_id}"  # ID of the route server for which to create an endpoint.
+  subnet_id       = "${3:subnet_id}"        # ID of the subnet in which to create the route server endpoint.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags to assign to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_vpc_route_server_endpoint</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing a VPC Route Server.</description>
+</snippet>

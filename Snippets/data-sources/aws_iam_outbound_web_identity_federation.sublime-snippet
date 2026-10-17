@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+data "aws_iam_outbound_web_identity_federation" "${1:name}" {
+}
+]]></content>
+<tabTrigger>data_aws_iam_outbound_web_identity_federation</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an AWS IAM (Identity &amp; Access Management) Outbound Web Identity Federation.</description>
+</snippet>

@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iam_role" "${1:name}" {
+  assume_role_policy = "${2:assume_role_policy}"  # Policy that grants an entity permission to assume the role.
+
+  # description           = ""     # Description of the role.
+  # force_detach_policies = false  # Whether to force detaching any policies the role has before destroying it.
+  # max_session_duration  = 0      # Maximum session duration (in seconds) that you want to set for the specified role.
+  # name                  = ""     # Friendly name of the role.
+  # name_prefix           = ""     # Creates a unique friendly name beginning with the specified prefix.
+  # path                  = ""     # Path to the role.
+  # permissions_boundary  = ""     # ARN of the policy that is used to set the permissions boundary for the role.
+  # tags                  = {}     # Key-value mapping of tags for the IAM role.
+}
+]]></content>
+<tabTrigger>aws_iam_role</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an IAM role.</description>
+</snippet>

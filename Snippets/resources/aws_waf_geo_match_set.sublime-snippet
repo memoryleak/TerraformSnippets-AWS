@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_waf_geo_match_set" "${1:name}" {
+  name = "${2:name}"  # The name or description of the GeoMatchSet.
+
+  # geo_match_constraint {}  # The GeoMatchConstraint objects which contain the country that you want AWS WAF to search for.
+}
+]]></content>
+<tabTrigger>aws_waf_geo_match_set</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a AWS WAF GeoMatchSet resource.</description>
+</snippet>

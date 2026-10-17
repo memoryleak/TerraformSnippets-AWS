@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_transit_gateway_policy_table_entry" "${1:name}" {
+  policy_rule_number              = "${2:policy_rule_number}"               # Rule number for this entry.
+  target_route_table_id           = "${3:target_route_table_id}"            # ID of the transit gateway route table to use for traffic matching this rule.
+  transit_gateway_policy_table_id = "${4:transit_gateway_policy_table_id}"  # EC2 Transit Gateway Policy Table identifier.
+
+  # region = ""  # Region where this resource will be managed.
+  # policy_rule {}  # Matching criteria for the policy table entry.
+}
+]]></content>
+<tabTrigger>aws_ec2_transit_gateway_policy_table_entry</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an EC2 Transit Gateway Policy Table Entry</description>
+</snippet>

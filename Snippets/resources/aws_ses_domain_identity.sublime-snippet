@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ses_domain_identity" "${1:name}" {
+  domain = "${2:domain}"  # Domain name to assign to SES.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_ses_domain_identity</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an SES domain identity resource</description>
+</snippet>

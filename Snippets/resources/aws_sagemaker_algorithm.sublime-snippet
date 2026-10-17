@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sagemaker_algorithm" "${1:name}" {
+  algorithm_name = "${2:algorithm_name}"  # Name of the algorithm.
+
+  # algorithm_description   = ""     # Description of the algorithm.
+  # certify_for_marketplace = false  # Whether to certify the algorithm for AWS Marketplace.
+  # region                  = ""     # Region where this resource is managed.
+  # tags                    = {}     # Map of tags to assign to the resource.
+  # inference_specification {}  # Configuration for inference jobs that use this algorithm.
+  # timeouts {}
+  # training_specification {}  # Configuration for training jobs that use this algorithm.
+  # validation_specification {}  # Configuration used to validate the algorithm.
+}
+]]></content>
+<tabTrigger>aws_sagemaker_algorithm</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS SageMaker AI Algorithm.</description>
+</snippet>

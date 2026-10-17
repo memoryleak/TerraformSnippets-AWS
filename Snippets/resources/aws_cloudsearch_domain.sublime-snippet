@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudsearch_domain" "${1:name}" {
+  name = "${2:name}"  # The name of the CloudSearch domain.
+
+  # multi_az = false  # Whether or not to maintain extra instances for the domain in a second Availability Zone to ensure...
+  # region   = ""     # Region where this resource will be managed.
+  # endpoint_options {}  # Domain endpoint options.
+  # index_field {}  # The index fields for documents added to the domain.
+  # scaling_parameters {}  # Domain scaling parameters.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_cloudsearch_domain</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an CloudSearch domain resource.</description>
+</snippet>

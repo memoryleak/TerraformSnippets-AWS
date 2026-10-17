@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_secondary_network" "${1:name}" {
+  ipv4_cidr_block = "${2:ipv4_cidr_block}"  # IPv4 CIDR block for the secondary network.
+  network_type    = "${3:network_type}"     # Type of secondary network.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # A map of tags to assign to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ec2_secondary_network</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an EC2 Secondary Network resource.</description>
+</snippet>

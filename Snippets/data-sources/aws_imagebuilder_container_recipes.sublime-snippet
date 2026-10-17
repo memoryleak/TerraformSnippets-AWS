@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_imagebuilder_container_recipes" "${1:name}" {
+  # owner  = ""  # Owner of the container recipes.
+  # region = ""  # Region where this resource will be managed.
+  # filter {}  # Configuration block(s) for filtering.
+}
+]]></content>
+<tabTrigger>data_aws_imagebuilder_container_recipes</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on Image Builder Container Recipes.</description>
+</snippet>

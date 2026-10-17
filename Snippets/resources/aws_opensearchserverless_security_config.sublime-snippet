@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_opensearchserverless_security_config" "${1:name}" {
+  name = "${2:name}"  # Name of the policy.
+  type = "${3:type}"  # Type of configuration.
+
+  # description = ""  # Description of the security configuration.
+  # region      = ""  # Region where this resource will be managed.
+  # iam_federation_options {}  # Configuration block for IAM Federation options.
+  # iam_identity_center_options {}  # Configuration block for IAM Identity Center options.
+  # saml_options {}  # Configuration block for SAML options.
+}
+]]></content>
+<tabTrigger>aws_opensearchserverless_security_config</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS OpenSearch Serverless Security Config.</description>
+</snippet>

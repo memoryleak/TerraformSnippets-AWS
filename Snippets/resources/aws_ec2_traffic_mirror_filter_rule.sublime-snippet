@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_traffic_mirror_filter_rule" "${1:name}" {
+  destination_cidr_block   = "${2:destination_cidr_block}"    # Destination CIDR block to assign to the Traffic Mirror rule.
+  rule_action              = "${3:rule_action}"               # Action to take (accept | reject) on the filtered traffic.
+  rule_number              = ${4:0}                           # Number of the Traffic Mirror rule.
+  source_cidr_block        = "${5:source_cidr_block}"         # Source CIDR block to assign to the Traffic Mirror rule.
+  traffic_direction        = "${6:traffic_direction}"         # Direction of traffic to be captured.
+  traffic_mirror_filter_id = "${7:traffic_mirror_filter_id}"  # ID of the traffic mirror filter to which this rule should be added
+
+  # description = ""  # Description of the traffic mirror filter rule.
+  # protocol    = 0   # Protocol number, for example 17 (UDP), to assign to the Traffic Mirror rule.
+  # region      = ""  # Region where this resource will be managed.
+  # destination_port_range {}  # Destination port range.
+  # source_port_range {}  # Source port range.
+}
+]]></content>
+<tabTrigger>aws_ec2_traffic_mirror_filter_rule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Traffic mirror filter rule</description>
+</snippet>

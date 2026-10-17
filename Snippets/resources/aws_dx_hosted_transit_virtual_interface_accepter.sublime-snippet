@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dx_hosted_transit_virtual_interface_accepter" "${1:name}" {
+  dx_gateway_id        = "${2:dx_gateway_id}"         # The ID of the Direct Connect gateway to which to connect the virtual interface.
+  virtual_interface_id = "${3:virtual_interface_id}"  # The ID of the Direct Connect virtual interface to accept.
+
+  # prefix_pool_allocated_count_ipv4 = 0   # The number of inbound IPv4 route prefixes to allocate to the virtual interface.
+  # prefix_pool_allocated_count_ipv6 = 0   # The number of inbound IPv6 route prefixes to allocate to the virtual interface.
+  # region                           = ""  # Region where this resource will be managed.
+  # tags                             = {}  # A map of tags to assign to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_dx_hosted_transit_virtual_interface_accepter</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage the accepter's side of a Direct Connect hosted transit virtual inte...</description>
+</snippet>

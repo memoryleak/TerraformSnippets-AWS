@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_pinpoint_event_stream" "${1:name}" {
+  application_id         = "${2:application_id}"          # Application ID.
+  destination_stream_arn = "${3:destination_stream_arn}"  # ARN of the Amazon Kinesis stream or Firehose delivery stream to which you want to publish events.
+  role_arn               = "${4:role_arn}"                # IAM role that authorizes AWS End User Messaging to publish events to the stream in your account.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_pinpoint_event_stream</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an End User Messaging Event Stream resource.</description>
+</snippet>

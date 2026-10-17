@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudtrail_organization_delegated_admin_account" "${1:name}" {
+  account_id = "${2:account_id}"  # An organization member account ID that you want to designate as a delegated administrator.
+}
+]]></content>
+<tabTrigger>aws_cloudtrail_organization_delegated_admin_account</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage an AWS CloudTrail Delegated Administrator.</description>
+</snippet>

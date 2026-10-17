@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_transcribe_medical_vocabulary" "${1:name}" {
+  language_code       = "${2:language_code}"        # Language code you selected for your medical vocabulary.
+  vocabulary_file_uri = "${3:vocabulary_file_uri}"  # Amazon S3 location (URI) of the text file that contains your custom medical vocabulary.
+  vocabulary_name     = "${4:vocabulary_name}"      # Name of the Medical Vocabulary.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags to assign to the MedicalVocabulary.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_transcribe_medical_vocabulary</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Transcribe MedicalVocabulary.</description>
+</snippet>

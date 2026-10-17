@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_networkmanager_vpc_attachment" "${1:name}" {
+  core_network_id = "${2:core_network_id}"  # ID of a core network for the VPC attachment.
+  subnet_arns     = [${3}]                  # Subnet ARNs of the VPC attachment.
+  vpc_arn         = "${4:vpc_arn}"          # ARN of the VPC.
+
+  # routing_policy_label = ""  # The routing policy label to apply to the VPC attachment for traffic routing decisions.
+  # tags                 = {}  # Key-value tags for the attachment.
+  # options {}  # Options for the VPC attachment.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_networkmanager_vpc_attachment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Network Manager VPC attachment.</description>
+</snippet>

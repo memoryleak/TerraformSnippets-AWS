@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_odb_cloud_vm_cluster" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_odb_cloud_vm_cluster</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing cloud vm cluster resource in AWS for Oracle Database@AWS.</description>
+</snippet>

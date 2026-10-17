@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_redshift_authentication_profile" "${1:name}" {
+  authentication_profile_content = "${2:authentication_profile_content}"  # The content of the authentication profile in JSON format.
+  authentication_profile_name    = "${3:authentication_profile_name}"     # The name of the authentication profile.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_redshift_authentication_profile</tabTrigger>
+<scope>source.terraform</scope>
+<description>Creates a Redshift authentication profile</description>
+</snippet>

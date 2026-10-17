@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_ivs_stream_key" "${1:name}" {
+  channel_arn = "${2:channel_arn}"  # ARN of the Channel.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_ivs_stream_key</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS IVS (Interactive Video) Stream Key.</description>
+</snippet>

@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_datazone_glossary_term" "${1:name}" {
+  glossary_identifier = "${2:glossary_identifier}"  # Identifier of glossary.
+  name                = "${3:name}"                 # Name of glossary term.
+
+  # domain_identifier = ""  # Identifier of domain.
+  # long_description  = ""  # Long description of entry.
+  # region            = ""  # Region where this resource will be managed.
+  # short_description = ""  # Short description of entry.
+  # status            = ""  # If glossary term is ENABLED or DISABLED.
+  # term_relations {}  # Object classifying the term relations through the following attributes:
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_datazone_glossary_term</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS DataZone Glossary Term.</description>
+</snippet>

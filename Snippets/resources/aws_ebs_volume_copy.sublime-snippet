@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ebs_volume_copy" "${1:name}" {
+  source_volume_id = "${2:source_volume_id}"  # ID of the source EBS volume to copy.
+
+  # iops        = 0   # Provisioned IOPS for the copied volume.
+  # region      = ""  # Region where this resource will be managed.
+  # size        = 0   # Size of the copied volume, in GiB.
+  # tags        = {}  # A map of tags to assign to the copied volume.
+  # throughput  = 0   # Throughput for the copied volume, in MiB/s.
+  # volume_type = ""  # Type of the copied EBS volume.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ebs_volume_copy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Copies an existing Amazon EBS volume.</description>
+</snippet>

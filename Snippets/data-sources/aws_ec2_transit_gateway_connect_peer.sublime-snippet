@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_ec2_transit_gateway_connect_peer" "${1:name}" {
+  # region                          = ""  # Region where this resource will be managed.
+  # tags                            = {}
+  # transit_gateway_connect_peer_id = ""  # Identifier of the EC2 Transit Gateway Connect Peer.
+  # filter {}  # One or more configuration blocks containing name-values filters.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_ec2_transit_gateway_connect_peer</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on an EC2 Transit Gateway Connect Peer</description>
+</snippet>

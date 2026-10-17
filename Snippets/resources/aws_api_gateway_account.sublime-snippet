@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_api_gateway_account" "${1:name}" {
+  # cloudwatch_role_arn = ""  # ARN of an IAM role for CloudWatch (to allow logging & monitoring).
+  # region              = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_api_gateway_account</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a settings of an API Gateway Account.</description>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_waf_subscribed_rule_group" "${1:name}" {
+  # metric_name = ""  # Name of the WAF rule group.
+  # name        = ""  # Name of the WAF rule group.
+}
+]]></content>
+<tabTrigger>data_aws_waf_subscribed_rule_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Retrieves information about a Managed WAF Rule Group from AWS Marketplace.</description>
+</snippet>

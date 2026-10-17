@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_servicecatalogappregistry_application" "${1:name}" {
+  name = "${2:name}"  # Name of the application.
+
+  # description = ""  # Description of the application.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # A map of tags assigned to the Application.
+}
+]]></content>
+<tabTrigger>aws_servicecatalogappregistry_application</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Service Catalog AppRegistry Application.</description>
+</snippet>

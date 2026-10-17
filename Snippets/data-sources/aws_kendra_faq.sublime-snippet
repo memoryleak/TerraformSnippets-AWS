@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_kendra_faq" "${1:name}" {
+  faq_id   = "${2:faq_id}"    # Identifier of the FAQ.
+  index_id = "${3:index_id}"  # Identifier of the index that contains the FAQ.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_kendra_faq</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific Amazon Kendra Faq.</description>
+</snippet>

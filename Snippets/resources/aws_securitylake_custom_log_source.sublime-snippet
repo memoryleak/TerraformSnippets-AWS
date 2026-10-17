@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_securitylake_custom_log_source" "${1:name}" {
+  source_name = "${2:source_name}"  # Specify the name for a third-party custom source.
+
+  # event_classes  = []  # The Open Cybersecurity Schema Framework (OCSF) event classes which describes the type of data tha...
+  # region         = ""  # Region where this resource will be managed.
+  # source_version = ""  # Specify the source version for the third-party custom source, to limit log collection to a specif...
+  # configuration {}  # The configuration for the third-party custom source.
+}
+]]></content>
+<tabTrigger>aws_securitylake_custom_log_source</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Security Lake Custom Log Source.</description>
+</snippet>

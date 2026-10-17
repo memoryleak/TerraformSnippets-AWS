@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_dynamodb_backups" "${1:name}" {
+  # backup_type            = ""  # Backup type.
+  # region                 = ""  # Region where this resource will be managed.
+  # table_name             = ""  # Name of the table to list backups for.
+  # time_range_lower_bound = ""  # Only backups created after this time are listed.
+  # time_range_upper_bound = ""  # Only backups created before this time are listed.
+}
+]]></content>
+<tabTrigger>data_aws_dynamodb_backups</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Data source for listing AWS DynamoDB backups.</description>
+</snippet>

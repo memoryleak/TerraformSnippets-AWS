@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_route53recoverycontrolconfig_control_panel" "${1:name}" {
+  cluster_arn = "${2:cluster_arn}"  # ARN of the cluster in which this control panel will reside.
+  name        = "${3:name}"         # Name describing the control panel.
+
+  # tags = {}  # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_route53recoverycontrolconfig_control_panel</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AWS Route 53 Recovery Control Config Control Panel</description>
+</snippet>

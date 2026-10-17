@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+data "aws_db_snapshot" "${1:name}" {
+  # db_instance_identifier = ""     # Returns the list of snapshots created by the specific db_instance.
+  # db_snapshot_identifier = ""     # Returns information on a specific snapshot_id.
+  # include_public         = false  # Set this value to true to include manual DB snapshots that are public and can be copied or restor...
+  # include_shared         = false  # Set this value to true to include shared manual DB snapshots from other AWS accounts that this AW...
+  # most_recent            = false  # If more than one result is returned, use the most recent Snapshot.
+  # region                 = ""     # Region where this resource will be managed.
+  # snapshot_type          = ""     # Type of snapshots to be returned.
+  # tags                   = {}     # Mapping of tags, each pair of which must exactly match a pair on the desired DB snapshot.
+}
+]]></content>
+<tabTrigger>data_aws_db_snapshot</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on a DB Snapshot.</description>
+</snippet>

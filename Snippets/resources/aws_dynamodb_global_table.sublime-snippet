@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dynamodb_global_table" "${1:name}" {
+  name = "${2:name}"  # The name of the global table.
+  replica {
+    region_name = "${3:region_name}"
+  }
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_dynamodb_global_table</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages DynamoDB Global Tables V1 (version 2017.11.29)</description>
+</snippet>

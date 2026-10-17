@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_batch_scheduling_policy" "${1:name}" {
+  name = "${2:name}"  # Name of the scheduling policy.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value map of resource tags.
+  # fair_share_policy {}  # Fair share scheduling policy details.
+}
+]]></content>
+<tabTrigger>aws_batch_scheduling_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Batch Scheduling Policy resource.</description>
+</snippet>

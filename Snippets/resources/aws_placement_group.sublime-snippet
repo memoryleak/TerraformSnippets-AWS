@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_placement_group" "${1:name}" {
+  name     = "${2:name}"      # Name of the placement group.
+  strategy = "${3:strategy}"  # Placement strategy.
+
+  # partition_count = 0   # Number of partitions to create in the placement group.
+  # region          = ""  # Region where this resource will be managed.
+  # spread_level    = ""  # How placement groups spread instances.
+  # tags            = {}  # Key-value map of resource tags.
+}
+]]></content>
+<tabTrigger>aws_placement_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an EC2 placement group.</description>
+</snippet>

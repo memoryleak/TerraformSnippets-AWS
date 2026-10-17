@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ram_resource_share" "${1:name}" {
+  name = "${2:name}"  # Name of the resource share.
+
+  # allow_external_principals = false  # Whether principals outside your organization can be associated with a resource share.
+  # permission_arns           = []     # ARNs of the RAM permission to associate with the resource share.
+  # region                    = ""     # Region where this resource will be managed.
+  # tags                      = {}     # Map of tags to assign to the resource share.
+  # resource_share_configuration {}  # Configuration block for the resource share.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ram_resource_share</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Resource Access Manager (RAM) Resource Share.</description>
+</snippet>

@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrock_provisioned_model_throughput" "${1:name}" {
+  model_arn              = "${2:model_arn}"               # ARN of the model to associate with this Provisioned Throughput.
+  model_units            = ${3:0}                         # Number of model units to allocate.
+  provisioned_model_name = "${4:provisioned_model_name}"  # Unique name for this Provisioned Throughput.
+
+  # commitment_duration = ""  # Commitment duration requested for the Provisioned Throughput.
+  # region              = ""  # Region where this resource will be managed.
+  # tags                = {}  # Map of tags to assign to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_bedrock_provisioned_model_throughput</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages Provisioned Throughput for an Amazon Bedrock model.</description>
+</snippet>

@@ -1,9 +1,0 @@
-<snippet>
-<content><![CDATA[
-resource "aws_glue_job" "aws_glue_job_${1:suffix}" {
-	security_configuration = "${3:Optional}"
-}
-]]></content>
-<tabTrigger>aws_glue_job</tabTrigger>
-<scope>source.terraform</scope>
-</snippet>

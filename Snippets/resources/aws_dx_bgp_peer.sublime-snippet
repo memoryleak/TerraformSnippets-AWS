@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dx_bgp_peer" "${1:name}" {
+  address_family       = "${2:address_family}"        # The address family for the BGP peer.
+  virtual_interface_id = "${3:virtual_interface_id}"  # The ID of the Direct Connect virtual interface on which to create the BGP peer.
+
+  # amazon_address   = ""  # The IPv4 CIDR address to use to send traffic to Amazon.
+  # bgp_asn          = 0   # BGP autonomous system number as an integer between 1 and 2147483646.
+  # bgp_asn_long     = ""  # BGP autonomous system number as an asplain decimal string between 1 and 4294967294.
+  # bgp_auth_key     = ""  # The authentication key for BGP configuration.
+  # customer_address = ""  # The IPv4 CIDR destination address to which Amazon should send traffic.
+  # region           = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_dx_bgp_peer</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Direct Connect BGP peer resource.</description>
+</snippet>

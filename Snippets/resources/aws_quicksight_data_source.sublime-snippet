@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_quicksight_data_source" "${1:name}" {
+  data_source_id = "${2:data_source_id}"  # Identifier for the data source.
+  name           = "${3:name}"            # Name for the data source, maximum of 128 characters.
+  type           = "${4:type}"            # Type of the data source.
+  parameters {
+  }
+
+  # aws_account_id = ""  # AWS account ID.
+  # region         = ""  # Region where this resource will be managed.
+  # tags           = {}  # Key-value map of resource tags.
+  # credentials {}  # Credentials Amazon QuickSight uses to connect to your underlying source.
+  # permission {}  # Set of resource permissions on the data source.
+  # ssl_properties {}  # Secure Socket Layer (SSL) properties that apply when Amazon QuickSight connects to your underlyin...
+  # vpc_connection_properties {}  # Use this parameter only when you want Amazon QuickSight to use a VPC connection when connecting t...
+}
+]]></content>
+<tabTrigger>aws_quicksight_data_source</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Resource QuickSight Data Source.</description>
+</snippet>

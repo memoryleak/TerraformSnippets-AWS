@@ -1,0 +1,27 @@
+<snippet>
+<content><![CDATA[
+resource "aws_api_gateway_rest_api" "${1:name}" {
+  name = "${2:name}"  # Name of the REST API.
+
+  # api_key_source               = ""     # Source of the API key for requests.
+  # binary_media_types           = []     # List of binary media types supported by the REST API.
+  # body                         = ""     # OpenAPI specification that defines the set of routes and integrations to create as part of the RE...
+  # description                  = ""     # Description of the REST API.
+  # disable_execute_api_endpoint = false  # Whether clients can invoke your API by using the default execute-api endpoint.
+  # endpoint_access_mode         = ""     # Endpoint access mode for the REST API.
+  # fail_on_warnings             = false  # Whether to return an error for warnings while API Gateway is creating or updating the resource.
+  # minimum_compression_size     = ""     # Minimum response size to compress for the REST API.
+  # parameters                   = {}     # Map of customizations for importing the specification in the body argument.
+  # policy                       = ""     # JSON formatted policy document that controls access to the API Gateway.
+  # put_rest_api_mode            = ""     # Mode of the PutRestApi operation when importing an OpenAPI specification via the body argument (c...
+  # region                       = ""     # Region where this resource will be managed.
+  # security_policy              = ""     # TLS version + cipher suite for the REST API's default execute-api endpoint.
+  # tags                         = {}     # Key-value map of resource tags.
+  # endpoint_configuration {}  # Configuration block defining API endpoint configuration including endpoint type.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_api_gateway_rest_api</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an API Gateway REST API.</description>
+</snippet>

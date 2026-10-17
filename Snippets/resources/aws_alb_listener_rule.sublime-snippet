@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_alb_listener_rule" "${1:name}" {
+  listener_arn = "${2:listener_arn}"
+  action {
+    type = "${3:type}"
+  }
+  condition {
+  }
+
+  # priority = 0
+  # region   = ""
+  # tags     = {}
+  # transform {}
+}
+]]></content>
+<tabTrigger>aws_alb_listener_rule</tabTrigger>
+<scope>source.terraform</scope>
+<description>aws_alb_listener_rule</description>
+</snippet>

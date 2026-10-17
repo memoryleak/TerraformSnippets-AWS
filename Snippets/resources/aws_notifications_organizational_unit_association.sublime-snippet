@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_notifications_organizational_unit_association" "${1:name}" {
+  notification_configuration_arn = "${2:notification_configuration_arn}"  # ARN of the notification configuration to associate the organizational unit with.
+  organizational_unit_id         = "${3:organizational_unit_id}"          # ID of the organizational unit or ID of the root to associate with the notification configuration.
+}
+]]></content>
+<tabTrigger>aws_notifications_organizational_unit_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS User Notifications Organizational Unit Association.</description>
+</snippet>

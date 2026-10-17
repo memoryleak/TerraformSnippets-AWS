@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appsync_api" "${1:name}" {
+  name = "${2:name}"  # Name of the Event API.
+
+  # owner_contact = ""  # Contact information for the owner of the Event API.
+  # region        = ""  # Region where this resource will be managed.
+  # tags          = {}  # Map of tags to assign to the resource.
+  # event_config {}  # Configuration for the Event API.
+}
+]]></content>
+<tabTrigger>aws_appsync_api</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS AppSync Event API.</description>
+</snippet>

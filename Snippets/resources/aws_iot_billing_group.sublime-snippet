@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iot_billing_group" "${1:name}" {
+  name = "${2:name}"  # The name of the Billing Group.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value mapping of resource tags
+  # properties {}  # The Billing Group properties.
+}
+]]></content>
+<tabTrigger>aws_iot_billing_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS IoT Billing Group.</description>
+</snippet>

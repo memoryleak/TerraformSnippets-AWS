@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_glue_connection" "${1:name}" {
+  name = "${2:name}"  # Name of the connection.
+
+  # athena_properties     = {}  # Map of key-value pairs used as connection properties specific to the Athena compute environment.
+  # catalog_id            = ""  # ID of the Data Catalog in which to create the connection.
+  # connection_properties = {}  # Map of key-value pairs used as parameters for this connection.
+  # connection_type       = ""  # Type of the connection.
+  # description           = ""  # Description of the connection.
+  # match_criteria        = []  # List of criteria that can be used in selecting this connection.
+  # region                = ""  # Region where this resource will be managed.
+  # tags                  = {}  # Key-value map of resource tags.
+  # authentication_configuration {}  # Configuration block for authentication options.
+  # physical_connection_requirements {}  # Map of physical connection requirements, such as VPC and SecurityGroup.
+}
+]]></content>
+<tabTrigger>aws_glue_connection</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Glue Connection.</description>
+</snippet>

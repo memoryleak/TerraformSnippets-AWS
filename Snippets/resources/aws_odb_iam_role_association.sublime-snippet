@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_odb_iam_role_association" "${1:name}" {
+  aws_integration = "${2:aws_integration}"  # AWS integration configuration for the IAM role association.
+  iam_role_arn    = "${3:iam_role_arn}"     # IAM role ARN to associate.
+  resource_arn    = "${4:resource_arn}"     # Oracle Database@AWS resource ARN to associate the IAM role with.
+
+  # region = ""  # Region where this resource is managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_odb_iam_role_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Oracle Database@AWS Associate Disassociate IAM Role.</description>
+</snippet>

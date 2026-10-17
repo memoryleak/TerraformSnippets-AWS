@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudfrontkeyvaluestore_key" "${1:name}" {
+  key                 = "${2:key}"                  # Key to put.
+  key_value_store_arn = "${3:key_value_store_arn}"  # ARN of the Key Value Store.
+  value               = "${4:value}"                # Value to put.
+}
+]]></content>
+<tabTrigger>aws_cloudfrontkeyvaluestore_key</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS CloudFront KeyValueStore Key.</description>
+</snippet>

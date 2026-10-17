@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpc_block_public_access_exclusion" "${1:name}" {
+  internet_gateway_exclusion_mode = "${2:internet_gateway_exclusion_mode}"  # Mode of exclusion from Block Public Access.
+
+  # region    = ""  # Region where this resource will be managed.
+  # subnet_id = ""  # ID of the subnet to which this exclusion applies.
+  # tags      = {}  # Map of tags to assign to the exclusion.
+  # vpc_id    = ""  # ID of the VPC to which this exclusion applies.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_vpc_block_public_access_exclusion</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an exception to the AWS VPC (Virtual Private Cloud) Block Public...</description>
+</snippet>

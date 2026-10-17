@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_auditmanager_assessment_report" "${1:name}" {
+  assessment_id = "${2:assessment_id}"  # Unique identifier of the assessment to create the report from.
+  name          = "${3:name}"           # Name of the assessment report.
+
+  # description = ""  # Description of the assessment report.
+  # region      = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_auditmanager_assessment_report</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Audit Manager Assessment Report.</description>
+</snippet>

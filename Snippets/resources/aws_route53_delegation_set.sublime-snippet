@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_route53_delegation_set" "${1:name}" {
+  # reference_name = ""  # This is a reference name used in Caller Reference
+}
+]]></content>
+<tabTrigger>aws_route53_delegation_set</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Route53 Delegation Set resource.</description>
+</snippet>

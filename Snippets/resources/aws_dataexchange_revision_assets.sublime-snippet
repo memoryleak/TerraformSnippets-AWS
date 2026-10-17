@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dataexchange_revision_assets" "${1:name}" {
+  data_set_id = "${2:data_set_id}"  # Unique identifier for the data set associated with the revision.
+
+  # comment       = ""     # A comment for the revision.
+  # finalized     = false
+  # force_destroy = false
+  # region        = ""     # Region where this resource will be managed.
+  # tags          = {}     # A map of tags to assign to the resource.
+  # asset {}  # A block to define the asset associated with the revision.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_dataexchange_revision_assets</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing AWS Data Exchange Revision Assets.</description>
+</snippet>

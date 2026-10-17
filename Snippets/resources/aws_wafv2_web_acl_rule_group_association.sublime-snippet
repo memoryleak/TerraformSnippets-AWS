@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_wafv2_web_acl_rule_group_association" "${1:name}" {
+  priority    = ${2:0}              # Priority of the rule within the Web ACL.
+  rule_name   = "${3:rule_name}"    # Name of the rule to create in the Web ACL that references the rule group.
+  web_acl_arn = "${4:web_acl_arn}"  # ARN of the Web ACL to associate the Rule Group with.
+
+  # override_action = ""  # Override action for the rule group.
+  # region          = ""  # Region where this resource will be managed.
+  # managed_rule_group {}  # Managed Rule Group configuration.
+  # rule_group_reference {}  # Custom Rule Group reference configuration.
+  # timeouts {}
+  # visibility_config {}  # Defines and enables Amazon CloudWatch metrics and web request sample collection.
+}
+]]></content>
+<tabTrigger>aws_wafv2_web_acl_rule_group_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Associates a WAFv2 Rule Group with a Web ACL by adding a rule that references the Rule Group.</description>
+</snippet>

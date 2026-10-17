@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudfront_origin_access_identity" "${1:name}" {
+  # comment = ""
+}
+]]></content>
+<tabTrigger>aws_cloudfront_origin_access_identity</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudFront origin access identity.</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_transit_gateway_peering_attachment_accepter" "${1:name}" {
+  transit_gateway_attachment_id = "${2:transit_gateway_attachment_id}"  # The ID of the EC2 Transit Gateway Peering Attachment to manage.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value tags for the EC2 Transit Gateway Peering Attachment.
+}
+]]></content>
+<tabTrigger>aws_ec2_transit_gateway_peering_attachment_accepter</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages the accepter's side of an EC2 Transit Gateway peering Attachment</description>
+</snippet>

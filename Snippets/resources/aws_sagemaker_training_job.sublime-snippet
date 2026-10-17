@@ -1,0 +1,42 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sagemaker_training_job" "${1:name}" {
+  role_arn          = "${2:role_arn}"           # ARN of the IAM role that SageMaker AI assumes to perform tasks on your behalf during training.
+  training_job_name = "${3:training_job_name}"  # Name of the training job.
+
+  # delete_model_packages_on_destroy          = false  # Whether to delete model packages in the configured model package group when the training job is d...
+  # delete_vpc_enis_on_destroy                = false  # Whether to delete detached VPC ENIs SageMaker may leave behind when the training job is destroyed.
+  # enable_inter_container_traffic_encryption = false  # Whether to encrypt inter-container traffic.
+  # enable_managed_spot_training              = false  # Whether to use managed spot training.
+  # enable_network_isolation                  = false  # Whether to isolate the training container from the network.
+  # environment                               = {}     # Map of environment variables to set in the training container.
+  # hyper_parameters                          = {}     # Map of hyperparameters for the training algorithm.
+  # region                                    = ""     # Region where this resource will be managed.
+  # tags                                      = {}     # Map of tags to assign to the resource.
+  # algorithm_specification {}  # Algorithm-related parameters of the training job.
+  # checkpoint_config {}  # Location of checkpoints during training.
+  # debug_hook_config {}  # Configuration for debugging rules.
+  # debug_rule_configurations {}  # List of debug rule configurations.
+  # experiment_config {}  # Associates a SageMaker AI Experiment or Trial to the training job.
+  # infra_check_config {}  # Infrastructure health check configuration.
+  # input_data_config {}  # List of input data channel configurations for the training job.
+  # mlflow_config {}  # MLflow integration configuration.
+  # model_package_config {}  # Model package configuration.
+  # output_data_config {}  # Location of the output data from the training job.
+  # profiler_config {}  # Configuration for the profiler.
+  # profiler_rule_configurations {}  # List of profiler rule configurations.
+  # remote_debug_config {}  # Configuration for remote debugging.
+  # resource_config {}  # Resources for the training job, including compute instances and storage volumes.
+  # retry_strategy {}  # Number of times to retry the job if it fails.
+  # serverless_job_config {}  # Configuration for serverless training jobs using foundation models.
+  # session_chaining_config {}  # Configuration for session tag chaining.
+  # stopping_condition {}
+  # tensor_board_output_config {}  # Configuration for TensorBoard output.
+  # timeouts {}
+  # vpc_config {}  # VPC configuration for the training job.
+}
+]]></content>
+<tabTrigger>aws_sagemaker_training_job</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS SageMaker AI Training Job.</description>
+</snippet>

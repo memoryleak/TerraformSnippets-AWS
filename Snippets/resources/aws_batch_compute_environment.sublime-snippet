@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_batch_compute_environment" "${1:name}" {
+  type = "${2:type}"  # Type of the compute environment.
+
+  # name         = ""  # Name for your compute environment.
+  # name_prefix  = ""  # Creates a unique compute environment name beginning with the specified prefix.
+  # region       = ""  # Region where this resource will be managed.
+  # service_role = ""  # Full ARN of the IAM role that allows AWS Batch to make calls to other AWS services on your behalf.
+  # state        = ""  # State of the compute environment.
+  # tags         = {}  # Key-value map of resource tags.
+  # compute_resources {}  # Details of the compute resources managed by the compute environment.
+  # eks_configuration {}  # Details for the Amazon EKS cluster that supports the compute environment.
+  # update_policy {}  # Infrastructure update policy for the compute environment.
+}
+]]></content>
+<tabTrigger>aws_batch_compute_environment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Creates a AWS Batch compute environment.</description>
+</snippet>

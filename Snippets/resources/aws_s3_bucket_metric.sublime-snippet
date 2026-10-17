@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3_bucket_metric" "${1:name}" {
+  bucket = "${2:bucket}"  # Name of the bucket to put metric configuration.
+  name   = "${3:name}"    # Unique identifier of the metrics configuration for the bucket.
+
+  # region = ""  # Region where this resource will be managed.
+  # filter {}  # Object filtering that accepts a prefix, tags, or a logical AND of prefix and tags.
+}
+]]></content>
+<tabTrigger>aws_s3_bucket_metric</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a S3 bucket metrics configuration resource.</description>
+</snippet>

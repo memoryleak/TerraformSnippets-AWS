@@ -1,0 +1,25 @@
+<snippet>
+<content><![CDATA[
+data "aws_networkmanager_core_network_policy_document" "${1:name}" {
+  core_network_configuration {
+    asn_ranges = [${2}]
+    edge_locations {
+      location = "${3:location}"
+    }
+  }
+  segments {
+    name = "${4:name}"
+  }
+
+  # version = ""
+  # attachment_policies {}
+  # attachment_routing_policy_rules {}
+  # network_function_groups {}
+  # routing_policies {}
+  # segment_actions {}
+}
+]]></content>
+<tabTrigger>data_aws_networkmanager_core_network_policy_document</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Generates a Core Network policy document in JSON format</description>
+</snippet>

@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appautoscaling_scheduled_action" "${1:name}" {
+  name               = "${2:name}"                # Name of the scheduled action.
+  resource_id        = "${3:resource_id}"         # Identifier of the resource associated with the scheduled action.
+  scalable_dimension = "${4:scalable_dimension}"  # Scalable dimension.
+  schedule           = "${5:schedule}"            # Schedule for this action.
+  service_namespace  = "${6:service_namespace}"   # Namespace of the AWS service.
+  scalable_target_action {
+  }
+
+  # end_time   = ""  # Date and time for the scheduled action to end in RFC 3339 format.
+  # region     = ""  # Region where this resource will be managed.
+  # start_time = ""  # Date and time for the scheduled action to start in RFC 3339 format.
+  # timezone   = ""  # Time zone used when setting a scheduled action by using an at or cron expression.
+}
+]]></content>
+<tabTrigger>aws_appautoscaling_scheduled_action</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Application AutoScaling ScheduledAction resource.</description>
+</snippet>

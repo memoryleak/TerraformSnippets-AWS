@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_macie2_organization_admin_account" "${1:name}" {
+  admin_account_id = "${2:admin_account_id}"  # AWS account ID for the account to designate as the delegated Amazon Macie administrator account f...
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_macie2_organization_admin_account</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage an Amazon Macie Organization Admin Account.</description>
+</snippet>

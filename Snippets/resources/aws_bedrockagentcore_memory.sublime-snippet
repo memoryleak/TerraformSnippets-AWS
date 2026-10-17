@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrockagentcore_memory" "${1:name}" {
+  event_expiry_duration = ${2:0}       # Number of days after which memory events expire.
+  name                  = "${3:name}"  # Name of the memory.
+
+  # description               = ""  # Description of the memory.
+  # encryption_key_arn        = ""  # ARN of the KMS key used to encrypt the memory.
+  # memory_execution_role_arn = ""  # ARN of the IAM role that the memory service assumes to perform operations.
+  # region                    = ""  # Region where this resource will be managed.
+  # tags                      = {}  # Key-value map of resource tags.
+  # indexed_key {}  # Metadata keys to index for filtering.
+  # stream_delivery_resources {}  # Configuration for streaming memory record data to external resources.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_bedrockagentcore_memory</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Bedrock AgentCore Memory.</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_apprunner_custom_domain_association" "${1:name}" {
+  domain_name = "${2:domain_name}"  # Custom domain endpoint to association.
+  service_arn = "${3:service_arn}"  # ARN of the App Runner service.
+
+  # enable_www_subdomain = false  # Whether to associate the subdomain with the App Runner service in addition to the base domain.
+  # region               = ""     # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_apprunner_custom_domain_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an App Runner Custom Domain association.</description>
+</snippet>

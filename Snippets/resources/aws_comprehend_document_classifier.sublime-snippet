@@ -1,0 +1,25 @@
+<snippet>
+<content><![CDATA[
+resource "aws_comprehend_document_classifier" "${1:name}" {
+  data_access_role_arn = "${2:data_access_role_arn}"  # The ARN for an IAM Role which allows Comprehend to read the training and testing data.
+  language_code        = "${3:language_code}"         # Two-letter language code for the language.
+  name                 = "${4:name}"                  # Name for the Document Classifier.
+  input_data_config {
+  }
+
+  # mode                = ""  # The document classification mode.
+  # model_kms_key_id    = ""  # KMS Key used to encrypt trained Document Classifiers.
+  # region              = ""  # Region where this resource will be managed.
+  # tags                = {}  # A map of tags to assign to the resource.
+  # version_name        = ""  # Name for the version of the Document Classifier.
+  # version_name_prefix = ""  # Creates a unique version name beginning with the specified prefix.
+  # volume_kms_key_id   = ""  # KMS Key used to encrypt storage volumes during job processing.
+  # output_data_config {}  # Configuration for the output results of training.
+  # timeouts {}
+  # vpc_config {}  # Configuration parameters for VPC to contain Document Classifier resources.
+}
+]]></content>
+<tabTrigger>aws_comprehend_document_classifier</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Comprehend Document Classifier.</description>
+</snippet>

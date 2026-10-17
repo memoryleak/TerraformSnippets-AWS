@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_backup_selection" "${1:name}" {
+  plan_id      = "${2:plan_id}"       # Backup plan ID associated with the selection of resources.
+  selection_id = "${3:selection_id}"  # Backup selection ID.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_backup_selection</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an AWS Backup selection.</description>
+</snippet>

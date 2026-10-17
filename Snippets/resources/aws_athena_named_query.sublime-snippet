@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_athena_named_query" "${1:name}" {
+  database = "${2:database}"  # Database to which the query belongs.
+  name     = "${3:name}"      # Plain language name for the query.
+  query    = "${4:query}"     # Text of the query itself.
+
+  # description = ""  # Brief explanation of the query.
+  # region      = ""  # Region where this resource will be managed.
+  # workgroup   = ""  # Workgroup to which the query belongs.
+}
+]]></content>
+<tabTrigger>aws_athena_named_query</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Athena Named Query resource.</description>
+</snippet>

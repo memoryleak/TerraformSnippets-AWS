@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_transfer_agreement" "${1:name}" {
+  access_role        = "${2:access_role}"         # IAM Role which provides read and write access to the parent directory of the file location mentio...
+  base_directory     = "${3:base_directory}"      # Landing directory for the files transferred by using the AS2 protocol.
+  local_profile_id   = "${4:local_profile_id}"    # Unique identifier for the AS2 local profile.
+  partner_profile_id = "${5:partner_profile_id}"  # Unique identifier for the AS2 partner profile.
+  server_id          = "${6:server_id}"           # Unique server identifier for the server instance.
+
+  # description = ""  # Optional description of the transdfer.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_transfer_agreement</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a AWS Transfer AS2 Agreement Resource</description>
+</snippet>

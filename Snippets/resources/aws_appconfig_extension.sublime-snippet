@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appconfig_extension" "${1:name}" {
+  name = "${2:name}"  # Name for the extension.
+  action_point {
+    point = "${3:point}"
+    action {
+      name = "${4:name}"
+      uri  = "${5:uri}"
+    }
+  }
+
+  # description = ""  # Information about the extension.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Map of tags to assign to the resource.
+  # parameter {}  # Parameters accepted by the extension.
+}
+]]></content>
+<tabTrigger>aws_appconfig_extension</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AppConfig Extension resource.</description>
+</snippet>

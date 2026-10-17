@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3control_access_point_policy" "${1:name}" {
+  access_point_arn = "${2:access_point_arn}"  # ARN of the access point that you want to associate with the specified policy.
+  policy           = "${3:policy}"            # Policy that you want to apply to the specified access point.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_s3control_access_point_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage an S3 Access Point resource policy.</description>
+</snippet>

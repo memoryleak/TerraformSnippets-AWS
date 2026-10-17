@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_iam_role" "${1:name}" {
+  name = "${2:name}"  # Friendly IAM role name to match.
+
+  # tags = {}
+}
+]]></content>
+<tabTrigger>data_aws_iam_role</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on a Amazon IAM role</description>
+</snippet>

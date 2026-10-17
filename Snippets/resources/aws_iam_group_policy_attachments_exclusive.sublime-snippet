@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iam_group_policy_attachments_exclusive" "${1:name}" {
+  group_name  = "${2:group_name}"  # IAM group name.
+  policy_arns = [${3}]             # A list of managed IAM policy ARNs to be attached to the group.
+}
+]]></content>
+<tabTrigger>aws_iam_group_policy_attachments_exclusive</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for maintaining exclusive management of managed IAM policies assigned to an AW...</description>
+</snippet>

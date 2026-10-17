@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dms_certificate" "${1:name}" {
+  certificate_id = "${2:certificate_id}"  # The certificate identifier.
+
+  # certificate_pem    = ""  # The contents of the .pem X.509 certificate file for the certificate.
+  # certificate_wallet = ""  # The contents of the Oracle Wallet certificate for use with SSL, provided as a base64-encoded String.
+  # region             = ""  # Region where this resource will be managed.
+  # tags               = {}  # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_dms_certificate</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a DMS (Data Migration Service) certificate resource.</description>
+</snippet>

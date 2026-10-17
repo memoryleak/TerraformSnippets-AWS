@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_organizations_entity_path" "${1:name}" {
+  entity_id = "${2:entity_id}"  # Entity ID.
+}
+]]></content>
+<tabTrigger>data_aws_organizations_entity_path</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get the entity path for an entity.</description>
+</snippet>

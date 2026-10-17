@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_cloudfront_distribution_tenant" "${1:name}" {
+  # arn    = ""
+  # domain = ""
+  # name   = ""
+}
+]]></content>
+<tabTrigger>data_aws_cloudfront_distribution_tenant</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides a CloudFront distribution tenant data source.</description>
+</snippet>

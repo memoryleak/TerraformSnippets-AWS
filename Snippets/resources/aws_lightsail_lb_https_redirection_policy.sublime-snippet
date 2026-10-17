@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lightsail_lb_https_redirection_policy" "${1:name}" {
+  enabled = ${2:false}      # Whether to enable HTTP to HTTPS redirection.
+  lb_name = "${3:lb_name}"  # Name of the load balancer to which you want to enable HTTP to HTTPS redirection.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_lightsail_lb_https_redirection_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages HTTPS redirection for a Lightsail Load Balancer.</description>
+</snippet>

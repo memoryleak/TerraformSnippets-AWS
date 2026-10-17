@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+data "aws_route53_zones" "${1:name}" {
+}
+]]></content>
+<tabTrigger>data_aws_route53_zones</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides a list of Route53 Hosted Zone IDs in a Region</description>
+</snippet>

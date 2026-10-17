@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_fsx_s3_access_point_attachment" "${1:name}" {
+  name = "${2:name}"  # Name of the S3 access point.
+  type = "${3:type}"  # Type of S3 access point.
+
+  # region = ""  # Region where this resource will be managed.
+  # openzfs_configuration {}  # Configuration to use when creating and attaching an S3 access point to an FSx for OpenZFS volume.
+  # s3_access_point {}  # S3 access point configuration.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_fsx_s3_access_point_attachment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Amazon FSx S3 Access Point attachment.</description>
+</snippet>

@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_rum_app_monitor" "${1:name}" {
+  name = "${2:name}"  # The name of the log stream.
+
+  # cw_log_enabled = false  # Data collected by RUM is kept by RUM for 30 days and then deleted.
+  # domain         = ""     # The top-level internet domain name for which your application has administrative authority.
+  # domain_list    = []     # A list of internet domain names for which your application has administrative authority.
+  # region         = ""     # Region where this resource will be managed.
+  # tags           = {}     # A map of tags to assign to the resource.
+  # app_monitor_configuration {}  # configuration data for the app monitor.
+  # custom_events {}  # Specifies whether this app monitor allows the web client to define and send custom events.
+}
+]]></content>
+<tabTrigger>aws_rum_app_monitor</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudWatch RUM App Monitor resource.</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_network_interface_sg_attachment" "${1:name}" {
+  network_interface_id = "${2:network_interface_id}"  # The ID of the network interface to attach to.
+  security_group_id    = "${3:security_group_id}"     # The ID of the security group.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_network_interface_sg_attachment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Associates a security group with a network interface.</description>
+</snippet>

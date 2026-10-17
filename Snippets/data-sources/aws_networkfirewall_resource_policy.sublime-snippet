@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_networkfirewall_resource_policy" "${1:name}" {
+  resource_arn = "${2:resource_arn}"  # ARN that identifies the resource policy.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_networkfirewall_resource_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Retrieve information about a Network Firewall resource policy.</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_api_gateway_resource" "${1:name}" {
+  parent_id   = "${2:parent_id}"    # ID of the parent API resource
+  path_part   = "${3:path_part}"    # Last path segment of this API resource.
+  rest_api_id = "${4:rest_api_id}"  # ID of the associated REST API
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_api_gateway_resource</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an API Gateway Resource.</description>
+</snippet>

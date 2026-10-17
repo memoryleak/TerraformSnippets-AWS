@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_servicecatalogappregistry_attribute_group" "${1:name}" {
+  # arn    = ""  # ARN of the Attribute Group to find.
+  # name   = ""  # Name of the Attribute Group to find.
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_servicecatalogappregistry_attribute_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS Service Catalog AppRegistry Attribute Group.</description>
+</snippet>

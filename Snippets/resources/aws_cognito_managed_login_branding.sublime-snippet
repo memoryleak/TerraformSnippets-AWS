@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cognito_managed_login_branding" "${1:name}" {
+  client_id    = "${2:client_id}"     # App client that the branding style is for.
+  user_pool_id = "${3:user_pool_id}"  # User pool the client belongs to.
+
+  # region                      = ""     # Region where this resource will be managed.
+  # settings                    = ""     # JSON document with the the settings to apply to the style.
+  # use_cognito_provided_values = false  # When true, applies the default branding style options.
+  # asset {}  # Image files to apply to roles like backgrounds, logos, and icons.
+}
+]]></content>
+<tabTrigger>aws_cognito_managed_login_branding</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages branding settings for a user pool style and associates it with an app client.</description>
+</snippet>

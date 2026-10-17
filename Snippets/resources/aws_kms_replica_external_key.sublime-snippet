@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_kms_replica_external_key" "${1:name}" {
+  primary_key_arn = "${2:primary_key_arn}"  # ARN of the multi-Region primary key to replicate.
+
+  # bypass_policy_lockout_safety_check = false  # Whether to bypass the key policy lockout safety check.
+  # deletion_window_in_days            = 0      # Waiting period, specified in number of days.
+  # description                        = ""     # Description of the KMS key.
+  # enabled                            = false  # Whether the replica key is enabled.
+  # key_material_base64                = ""     # Base64 encoded 256-bit symmetric encryption key material to import.
+  # policy                             = ""     # Key policy to attach to the KMS key.
+  # region                             = ""     # Region where this resource will be managed.
+  # tags                               = {}     # Map of tags to assign to the replica key.
+  # valid_to                           = ""     # Time at which the imported key material expires.
+}
+]]></content>
+<tabTrigger>aws_kms_replica_external_key</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a KMS multi-Region replica key that uses external key material.</description>
+</snippet>

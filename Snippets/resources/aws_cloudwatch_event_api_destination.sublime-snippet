@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_event_api_destination" "${1:name}" {
+  connection_arn      = "${2:connection_arn}"       # ARN of the EventBridge Connection to use for the API Destination.
+  http_method         = "${3:http_method}"          # Select the HTTP method used for the invocation endpoint, such as GET, POST, PUT, etc.
+  invocation_endpoint = "${4:invocation_endpoint}"  # URL endpoint to invoke as a target.
+  name                = "${5:name}"                 # The name of the new API Destination.
+
+  # description                      = ""  # The description of the new API Destination.
+  # invocation_rate_limit_per_second = 0   # Enter the maximum number of invocations per second to allow for this destination.
+  # region                           = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_event_api_destination</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an EventBridge event API Destination resource.</description>
+</snippet>

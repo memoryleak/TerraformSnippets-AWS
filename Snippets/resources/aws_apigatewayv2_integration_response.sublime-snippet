@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_apigatewayv2_integration_response" "${1:name}" {
+  api_id                   = "${2:api_id}"                    # API identifier.
+  integration_id           = "${3:integration_id}"            # Identifier of the aws_apigatewayv2_integration.
+  integration_response_key = "${4:integration_response_key}"  # Integration response key.
+
+  # content_handling_strategy     = ""  # How to handle response payload content type conversions.
+  # region                        = ""  # Region where this resource will be managed.
+  # response_templates            = {}  # Map of Velocity templates that are applied on the request payload based on the value of the Conte...
+  # template_selection_expression = ""  # Template selection expression for the integration response.
+}
+]]></content>
+<tabTrigger>aws_apigatewayv2_integration_response</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Amazon API Gateway Version 2 integration response.</description>
+</snippet>

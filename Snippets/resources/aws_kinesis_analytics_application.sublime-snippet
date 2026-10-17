@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_kinesis_analytics_application" "${1:name}" {
+  name = "${2:name}"  # Name of the Kinesis Analytics Application.
+
+  # code              = ""     # SQL Code to transform input data, and generate output.
+  # description       = ""     # Description of the application.
+  # region            = ""     # Region where this resource will be managed.
+  # start_application = false  # Whether to start or stop the Kinesis Analytics Application.
+  # tags              = {}     # Map of tags to assign to the resource.
+  # cloudwatch_logging_options {}  # CloudWatch log stream options to monitor application errors.
+  # inputs {}  # Input configuration of the application.
+  # outputs {}  # Output destination configuration of the application.
+  # reference_data_sources {}  # S3 Reference Data Source for the application.
+}
+]]></content>
+<tabTrigger>aws_kinesis_analytics_application</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a AWS Kinesis Analytics Application</description>
+</snippet>

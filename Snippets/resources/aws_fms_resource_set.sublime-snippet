@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_fms_resource_set" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value map of resource tags.
+  # resource_set {}  # Details about the resource set to be created or updated.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_fms_resource_set</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS FMS (Firewall Manager) Resource Set.</description>
+</snippet>

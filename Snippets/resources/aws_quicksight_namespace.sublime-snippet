@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_quicksight_namespace" "${1:name}" {
+  namespace = "${2:namespace}"  # Name of the namespace.
+
+  # aws_account_id = ""  # AWS account ID.
+  # identity_store = ""  # User identity directory type.
+  # region         = ""  # Region where this resource will be managed.
+  # tags           = {}  # Key-value map of resource tags.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_quicksight_namespace</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS QuickSight Namespace.</description>
+</snippet>

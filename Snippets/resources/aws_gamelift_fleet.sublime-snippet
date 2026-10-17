@@ -1,0 +1,26 @@
+<snippet>
+<content><![CDATA[
+resource "aws_gamelift_fleet" "${1:name}" {
+  ec2_instance_type = "${2:ec2_instance_type}"  # Name of an EC2 instance typeE.g., t2.micro
+  name              = "${3:name}"               # Name of the fleet.
+
+  # build_id                           = ""  # ID of the GameLift Build to be deployed on the fleet.
+  # description                        = ""  # Human-readable description of the fleet.
+  # fleet_type                         = ""  # Type of fleet.
+  # instance_role_arn                  = ""  # ARN of an IAM role that instances in the fleet can assume.
+  # metric_groups                      = []  # List of names of metric groups to add this fleet to.
+  # new_game_session_protection_policy = ""  # Game session protection policy to apply to all instances in this fleetE.g., FullProtection.
+  # region                             = ""  # Region where this resource will be managed.
+  # script_id                          = ""  # ID of the GameLift Script to be deployed on the fleet.
+  # tags                               = {}  # Key-value map of resource tags.
+  # certificate_configuration {}  # Prompts GameLift to generate a TLS/SSL certificate for the fleet.
+  # ec2_inbound_permission {}  # Range of IP addresses and port settings that permit inbound traffic to access server processes ru...
+  # resource_creation_limit_policy {}  # Policy that limits the number of game sessions an individual player can create over a span of tim...
+  # runtime_configuration {}  # Instructions for launching server processes on each instance in the fleet.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_gamelift_fleet</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a GameLift Fleet resource.</description>
+</snippet>

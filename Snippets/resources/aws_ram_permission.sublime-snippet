@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ram_permission" "${1:name}" {
+  name            = "${2:name}"             # Name of the customer managed permission.
+  policy_template = "${3:policy_template}"  # String in JSON format string that contains the following elements of a resource-based policy: Eff...
+  resource_type   = "${4:resource_type}"    # Name of the resource type that this customer managed permission applies to.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags to assign to the resource share.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ram_permission</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS RAM (Resource Access Manager) Permission.</description>
+</snippet>

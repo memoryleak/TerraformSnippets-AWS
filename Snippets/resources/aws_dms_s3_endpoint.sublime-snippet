@@ -1,0 +1,59 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dms_s3_endpoint" "${1:name}" {
+  bucket_name             = "${2:bucket_name}"              # S3 bucket name.
+  endpoint_id             = "${3:endpoint_id}"              # Database endpoint identifier.
+  endpoint_type           = "${4:endpoint_type}"            # Type of endpoint.
+  service_access_role_arn = "${5:service_access_role_arn}"  # ARN of the IAM role with permissions to the S3 Bucket.
+
+  # add_column_name                             = false  # Whether to add column name information to the .csv output file.
+  # add_trailing_padding_character              = false  # Whether to add padding.
+  # bucket_folder                               = ""     # S3 object prefix.
+  # canned_acl_for_objects                      = ""     # Predefined (canned) access control list for objects created in an S3 bucket.
+  # cdc_inserts_and_updates                     = false  # Whether to write insert and update operations to .csv or .parquet output files.
+  # cdc_inserts_only                            = false  # Whether to write insert operations to .csv or .parquet output files.
+  # cdc_max_batch_interval                      = 0      # Maximum length of the interval, defined in seconds, after which to output a file to Amazon S3.
+  # cdc_min_file_size                           = 0      # Minimum file size condition as defined in kilobytes to output a file to Amazon S3.
+  # cdc_path                                    = ""     # Folder path of CDC files.
+  # certificate_arn                             = ""     # ARN for the certificate.
+  # compression_type                            = ""     # Set to compress target files.
+  # csv_delimiter                               = ""     # Delimiter used to separate columns in the source files.
+  # csv_no_sup_value                            = ""     # Only applies if output files for a CDC load are written in .csv format.
+  # csv_null_value                              = ""     # String to as null when writing to the target.
+  # csv_row_delimiter                           = ""     # Delimiter used to separate rows in the source files.
+  # data_format                                 = ""     # Output format for the files that AWS DMS uses to create S3 objects.
+  # data_page_size                              = 0      # Size of one data page in bytes.
+  # date_partition_delimiter                    = ""     # Date separating delimiter to use during folder partitioning.
+  # date_partition_enabled                      = false  # Partition S3 bucket folders based on transaction commit dates.
+  # date_partition_sequence                     = ""     # Date format to use during folder partitioning.
+  # date_partition_timezone                     = ""     # Convert the current UTC time to a timezone.
+  # detach_target_on_lob_lookup_failure_parquet = false  # Undocumented argument for use as directed by AWS Support.
+  # dict_page_size_limit                        = 0      # Maximum size in bytes of an encoded dictionary page of a column.
+  # enable_statistics                           = false  # Whether to enable statistics for Parquet pages and row groups.
+  # encoding_type                               = ""     # Type of encoding to use.
+  # encryption_mode                             = ""     # Server-side encryption mode that you want to encrypt your .csv or .parquet object files copied to...
+  # expected_bucket_owner                       = ""     # Bucket owner to prevent sniping.
+  # external_table_definition                   = ""     # JSON document that describes how AWS DMS should interpret the data.
+  # glue_catalog_generation                     = false  # Whether to integrate AWS Glue Data Catalog with an Amazon S3 target.
+  # ignore_header_rows                          = 0      # When this value is set to 1, DMS ignores the first row header in a .csv file.
+  # include_op_for_full_load                    = false  # Whether to enable a full load to write INSERT operations to the .csv output files only to indicat...
+  # max_file_size                               = 0      # Maximum size (in KB) of any .csv file to be created while migrating to an S3 target during full l...
+  # parquet_timestamp_in_millisecond            = false  # - Specifies the precision of any TIMESTAMP column values written to an S3 object file in .parquet...
+  # parquet_version                             = ""     # Version of the .parquet file format.
+  # preserve_transactions                       = false  # Whether DMS saves the transaction order for a CDC load on the S3 target specified by cdc_path.
+  # region                                      = ""     # Region where this resource will be managed.
+  # rfc_4180                                    = false  # For an S3 source, whether each leading double quotation mark has to be followed by an ending doub...
+  # row_group_length                            = 0      # Number of rows in a row group.
+  # server_side_encryption_kms_key_id           = ""     # When encryption_mode is SSE_KMS, ARN for the AWS KMS key.
+  # ssl_mode                                    = ""     # SSL mode to use for the connection.
+  # tags                                        = {}     # Map of tags to assign to the resource.
+  # timestamp_column_name                       = ""     # Column to add with timestamp information to the endpoint data for an Amazon S3 target.
+  # use_csv_no_sup_value                        = false  # Whether to use csv_no_sup_value for columns not included in the supplemental log.
+  # use_task_start_time_for_full_load_timestamp = false  # When set to true, uses the task start time as the timestamp column value instead of the time data...
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_dms_s3_endpoint</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a DMS (Data Migration Service) S3 endpoint resource.</description>
+</snippet>

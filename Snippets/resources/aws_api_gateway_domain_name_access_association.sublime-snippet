@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_api_gateway_domain_name_access_association" "${1:name}" {
+  access_association_source      = "${2:access_association_source}"       # Identifier of the domain name access association source.
+  access_association_source_type = "${3:access_association_source_type}"  # Type of the domain name access association source.
+  domain_name_arn                = "${4:domain_name_arn}"                 # ARN of the domain name.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value map of resource tags.
+}
+]]></content>
+<tabTrigger>aws_api_gateway_domain_name_access_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Creates a domain name access association resource between an access association source and a priv...</description>
+</snippet>

@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ebs_snapshot_copy" "${1:name}" {
+  source_region      = "${2:source_region}"
+  source_snapshot_id = "${3:source_snapshot_id}"
+
+  # completion_duration_minutes = 0      # Specifies a completion duration to initiate a time-based snapshot copy.
+  # description                 = ""     # A description of what the snapshot is.
+  # encrypted                   = false  # Whether the snapshot is encrypted.
+  # kms_key_id                  = ""     # The ARN for the KMS encryption key.
+  # permanent_restore           = false  # Indicates whether to permanently restore an archived snapshot.
+  # region                      = ""     # Region where this resource will be managed.
+  # storage_tier                = ""     # The name of the storage tier.
+  # tags                        = {}     # A map of tags for the snapshot.
+  # temporary_restore_days      = 0      # Specifies the number of days for which to temporarily restore an archived snapshot.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ebs_snapshot_copy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Duplicates an existing Amazon snapshot</description>
+</snippet>

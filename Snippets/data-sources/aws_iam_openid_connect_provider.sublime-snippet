@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_iam_openid_connect_provider" "${1:name}" {
+  # arn  = ""  # ARN of the OpenID Connect provider.
+  # tags = {}
+  # url  = ""  # URL of the OpenID Connect provider.
+}
+]]></content>
+<tabTrigger>data_aws_iam_openid_connect_provider</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on a Amazon IAM OpenID Connect provider.</description>
+</snippet>

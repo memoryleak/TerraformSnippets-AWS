@@ -1,0 +1,43 @@
+<snippet>
+<content><![CDATA[
+resource "aws_emr_cluster" "${1:name}" {
+  name          = "${2:name}"           # Name of the job flow.
+  release_label = "${3:release_label}"  # Release label for the Amazon EMR release.
+  service_role  = "${4:service_role}"   # IAM role that will be assumed by the Amazon EMR service to access AWS resources.
+
+  # additional_info                   = ""     # JSON string for selecting additional features such as adding proxy information.
+  # applications                      = []     # A case-insensitive list of applications for Amazon EMR to install and configure when launching th...
+  # autoscaling_role                  = ""     # IAM role for automatic scaling policies.
+  # configurations                    = ""     # List of configurations supplied for the EMR cluster you are creating, expressed as a string: an H...
+  # configurations_json               = ""     # JSON string for supplying list of configurations for the EMR cluster.
+  # custom_ami_id                     = ""     # Custom Amazon Linux AMI for the cluster (instead of an EMR-owned AMI).
+  # ebs_root_volume_size              = 0      # Size in GiB of the EBS root device volume of the Linux AMI that is used for each EC2 instance.
+  # keep_job_flow_alive_when_no_steps = false  # Switch on/off run cluster with no steps or when all steps are complete (default is on)
+  # list_steps_states                 = []     # List of step states used to filter returned steps
+  # log_encryption_kms_key_id         = ""     # AWS KMS customer master key (CMK) key ID or ARN used for encrypting log files.
+  # log_uri                           = ""     # S3 bucket to write the log files of the job flow.
+  # os_release_label                  = ""     # Amazon Linux release for all nodes in a cluster launch RunJobFlow request.
+  # placement_group_config            = []     # The specified placement group configuration for an Amazon EMR cluster.
+  # region                            = ""     # Region where this resource will be managed.
+  # scale_down_behavior               = ""     # Way that individual Amazon EC2 instances terminate when an automatic scale-in activity occurs or...
+  # security_configuration            = ""     # Security configuration name to attach to the EMR cluster.
+  # step                              = []     # List of steps to run when creating the cluster.
+  # step_concurrency_level            = 0      # Number of steps that can be executed concurrently.
+  # tags                              = {}     # list of tags to apply to the EMR Cluster.
+  # termination_protection            = false  # Switch on/off termination protection (default is false, except when using multiple master nodes).
+  # unhealthy_node_replacement        = false  # Whether whether Amazon EMR should gracefully replace core nodes that have degraded within the clu...
+  # visible_to_all_users              = false  # Whether the job flow is visible to all IAM users of the AWS account associated with the job flow.
+  # auto_termination_policy {}  # An auto-termination policy for an Amazon EMR cluster.
+  # bootstrap_action {}  # Ordered list of bootstrap actions that will be run before Hadoop is started on the cluster nodes.
+  # core_instance_fleet {}  # Configuration block to use an Instance Fleet for the core node type.
+  # core_instance_group {}  # Configuration block to use an Instance Group for the core node type.
+  # ec2_attributes {}  # Attributes for the EC2 instances running the job flow.
+  # kerberos_attributes {}  # Kerberos configuration for the cluster.
+  # master_instance_fleet {}  # Configuration block to use an Instance Fleet for the master node type.
+  # master_instance_group {}  # Configuration block to use an Instance Group for the master node type.
+}
+]]></content>
+<tabTrigger>aws_emr_cluster</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Elastic MapReduce Cluster</description>
+</snippet>

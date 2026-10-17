@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpc_ipam_organization_admin_account" "${1:name}" {
+  delegated_admin_account_id = "${2:delegated_admin_account_id}"
+}
+]]></content>
+<tabTrigger>aws_vpc_ipam_organization_admin_account</tabTrigger>
+<scope>source.terraform</scope>
+<description>Enables the IPAM Service and promotes an account to delegated administrator for the service.</description>
+</snippet>

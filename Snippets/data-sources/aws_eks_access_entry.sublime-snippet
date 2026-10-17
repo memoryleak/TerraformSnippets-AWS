@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_eks_access_entry" "${1:name}" {
+  cluster_name  = "${2:cluster_name}"   # Name of the EKS Cluster.
+  principal_arn = "${3:principal_arn}"  # The IAM Principal ARN which requires Authentication access to the EKS cluster.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_eks_access_entry</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Access Entry Configurations for an EKS Cluster.</description>
+</snippet>

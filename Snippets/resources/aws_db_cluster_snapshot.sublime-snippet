@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_db_cluster_snapshot" "${1:name}" {
+  db_cluster_identifier          = "${2:db_cluster_identifier}"           # DB Cluster Identifier from which to take the snapshot.
+  db_cluster_snapshot_identifier = "${3:db_cluster_snapshot_identifier}"  # Identifier for the snapshot.
+
+  # region          = ""  # Region where this resource will be managed.
+  # shared_accounts = []  # List of AWS Account IDs to share the snapshot with.
+  # tags            = {}  # Map of tags to assign to the DB cluster.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_db_cluster_snapshot</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an RDS database cluster snapshot.</description>
+</snippet>

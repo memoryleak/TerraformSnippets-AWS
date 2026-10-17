@@ -1,0 +1,30 @@
+<snippet>
+<content><![CDATA[
+resource "aws_glue_ml_transform" "${1:name}" {
+  name     = "${2:name}"      # Name you assign to this ML Transform.
+  role_arn = "${3:role_arn}"  # ARN of the IAM role associated with this ML Transform.
+  input_record_tables {
+    database_name = "${4:database_name}"
+    table_name    = "${5:table_name}"
+  }
+  parameters {
+    transform_type = "${6:transform_type}"
+    find_matches_parameters {
+    }
+  }
+
+  # description       = ""  # Description of the ML Transform.
+  # glue_version      = ""  # Version of glue to use, for example "1.0".
+  # max_capacity      = 0   # Number of AWS Glue data processing units (DPUs) that are allocated to task runs for this transform.
+  # max_retries       = 0   # Maximum number of times to retry this ML Transform if it fails.
+  # number_of_workers = 0   # Number of workers of a defined worker_type that are allocated when an ML Transform runs.
+  # region            = ""  # Region where this resource will be managed.
+  # tags              = {}  # Key-value map of resource tags.
+  # timeout           = 0   # ML Transform timeout in minutes.
+  # worker_type       = ""  # Type of predefined worker that is allocated when an ML Transform runs.
+}
+]]></content>
+<tabTrigger>aws_glue_ml_transform</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Glue ML Transform resource.</description>
+</snippet>

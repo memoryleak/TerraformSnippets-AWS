@@ -1,0 +1,36 @@
+<snippet>
+<content><![CDATA[
+resource "aws_fsx_openzfs_file_system" "${1:name}" {
+  deployment_type     = "${2:deployment_type}"  # Filesystem deployment type.
+  subnet_ids          = [${3}]                  # List of IDs for the subnets that the file system will be accessible from.
+  throughput_capacity = ${4:0}                  # Throughput (MB/s) of the file system.
+
+  # automatic_backup_retention_days   = 0      # Number of days to retain automatic backups.
+  # backup_id                         = ""     # ID of the source backup to create the filesystem from.
+  # copy_tags_to_backups              = false  # Whether tags for the file system should be copied to backups.
+  # copy_tags_to_volumes              = false  # Whether tags for the file system should be copied to snapshots.
+  # daily_automatic_backup_start_time = ""     # Recurring daily time, in the format HH:MM.
+  # delete_options                    = []     # List of delete options, which at present supports only one value that specifies whether to delete...
+  # endpoint_ip_address_range         = ""     # (Multi-AZ only) Specifies the IP address range in which the endpoints to access your file system...
+  # final_backup_tags                 = {}     # Map of tags to apply to the file system's final backup.
+  # kms_key_id                        = ""     # ARN for the KMS Key to encrypt the file system at rest, Defaults to an AWS managed KMS Key.
+  # network_type                      = ""     # Network type.
+  # preferred_subnet_id               = ""     # (Multi-AZ only) Required when deployment_type is set to MULTI_AZ_1.
+  # region                            = ""     # Region where this resource will be managed.
+  # route_table_ids                   = []     # (Multi-AZ only) Specifies the route tables in which Amazon FSx creates the rules for routing traf...
+  # security_group_ids                = []     # List of IDs for the security groups that apply to the specified network interfaces created for fi...
+  # skip_final_backup                 = false  # When enabled, will skip the default final backup taken when the file system is deleted.
+  # storage_capacity                  = 0      # Storage capacity (GiB) of the file system.
+  # storage_type                      = ""     # Filesystem storage type.
+  # tags                              = {}     # Map of tags to assign to the file system.
+  # weekly_maintenance_start_time     = ""     # Preferred start time (in d:HH:MM format) to perform weekly maintenance, in the UTC time zone.
+  # disk_iops_configuration {}  # SSD IOPS configuration for the Amazon FSx for OpenZFS file system.
+  # read_cache_configuration {}  # Configuration block for optional provisioned SSD read cache on file systems that use the Intellig...
+  # root_volume_configuration {}  # Configuration for the root volume of the file system.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_fsx_openzfs_file_system</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Amazon FSx for OpenZFS file system.</description>
+</snippet>

@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_datasync_location_nfs" "${1:name}" {
+  server_hostname = "${2:server_hostname}"  # Specifies the IP address or DNS name of the NFS server.
+  subdirectory    = "${3:subdirectory}"     # Subdirectory to perform actions as source or destination.
+  on_prem_config {
+    agent_arns = [${4}]
+  }
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value pairs of resource tags to assign to the DataSync Location.
+  # mount_options {}  # Configuration block containing mount options used by DataSync to access the NFS Server.
+}
+]]></content>
+<tabTrigger>aws_datasync_location_nfs</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS DataSync NFS Location</description>
+</snippet>

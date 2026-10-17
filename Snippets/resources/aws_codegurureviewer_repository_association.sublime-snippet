@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_codegurureviewer_repository_association" "${1:name}" {
+  repository {
+  }
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+  # kms_key_details {}  # An object describing the KMS key to associate.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_codegurureviewer_repository_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS CodeGuru Reviewer Repository Association.</description>
+</snippet>

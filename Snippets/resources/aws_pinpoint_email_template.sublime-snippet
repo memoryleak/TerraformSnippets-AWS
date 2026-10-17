@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_pinpoint_email_template" "${1:name}" {
+  template_name = "${2:template_name}"  # Name of the message template.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value map of resource tags.
+}
+]]></content>
+<tabTrigger>aws_pinpoint_email_template</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an End User Messaging Email Template resource.</description>
+</snippet>

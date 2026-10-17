@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_glue_catalog_table_optimizer" "${1:name}" {
+  catalog_id    = "${2:catalog_id}"     # Catalog ID of the table.
+  database_name = "${3:database_name}"  # Name of the database in the catalog in which the table resides.
+  table_name    = "${4:table_name}"     # Name of the table.
+  type          = "${5:type}"           # Type of table optimizer.
+
+  # region = ""  # Region where this resource will be managed.
+  # configuration {}  # Configuration block that defines the table optimizer settings.
+}
+]]></content>
+<tabTrigger>aws_glue_catalog_table_optimizer</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Glue Catalog Table Optimizer.</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_memorydb_cluster" "${1:name}" {
+  name = "${2:name}"  # Name of the cluster.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_memorydb_cluster</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides information about a MemoryDB Cluster.</description>
+</snippet>

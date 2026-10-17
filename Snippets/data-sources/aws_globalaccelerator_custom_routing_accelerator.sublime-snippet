@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_globalaccelerator_custom_routing_accelerator" "${1:name}" {
+  # arn  = ""  # Full ARN of the custom routing accelerator.
+  # name = ""  # Unique name of the custom routing accelerator.
+  # tags = {}
+}
+]]></content>
+<tabTrigger>data_aws_globalaccelerator_custom_routing_accelerator</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides a Global Accelerator custom routing accelerator data source.</description>
+</snippet>
