@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+data "aws_ec2_coip_pool" "${1:name}" {
+  # local_gateway_route_table_id = ""  # Local Gateway Route Table ID assigned to desired CoIP Pool
+  # pool_id                      = ""  # ID of the specific CoIP Pool to retrieve.
+  # region                       = ""  # Region where this resource will be managed.
+  # tags                         = {}  # Mapping of tags, each pair of which must exactly match
+  # filter {}
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_ec2_coip_pool</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific EC2 Customer-Owned IP Pool</description>
+</snippet>

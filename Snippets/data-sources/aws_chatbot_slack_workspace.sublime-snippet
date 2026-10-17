@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_chatbot_slack_workspace" "${1:name}" {
+  slack_team_name = "${2:slack_team_name}"  # Slack workspace name configured with AWS Chatbot.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_chatbot_slack_workspace</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS Chatbot Slack Workspace.</description>
+</snippet>

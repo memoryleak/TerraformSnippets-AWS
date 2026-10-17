@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_organizations_organizational_unit_descendant_organizational_units" "${1:name}" {
+  parent_id = "${2:parent_id}"  # Parent ID of the organizational unit.
+}
+]]></content>
+<tabTrigger>data_aws_organizations_organizational_unit_descendant_organizational_units</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get all direct child organizational units under a parent organizational unit.</description>
+</snippet>

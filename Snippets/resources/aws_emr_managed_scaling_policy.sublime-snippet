@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_emr_managed_scaling_policy" "${1:name}" {
+  cluster_id = "${2:cluster_id}"  # ID of the EMR cluster
+  compute_limits {
+    maximum_capacity_units = ${3:0}
+    minimum_capacity_units = ${4:0}
+    unit_type              = "${5:unit_type}"
+  }
+
+  # region                        = ""  # Region where this resource will be managed.
+  # scaling_strategy              = ""
+  # utilization_performance_index = 0
+}
+]]></content>
+<tabTrigger>aws_emr_managed_scaling_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource for EMR Managed Scaling policy</description>
+</snippet>

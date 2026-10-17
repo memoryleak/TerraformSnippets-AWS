@@ -1,0 +1,40 @@
+<snippet>
+<content><![CDATA[
+resource "aws_memorydb_cluster" "${1:name}" {
+  acl_name  = "${2:acl_name}"   # Name of the Access Control List to associate with the cluster.
+  node_type = "${3:node_type}"  # Compute and memory capacity of the nodes in the cluster.
+
+  # auto_minor_version_upgrade = false  # When set to true, the cluster will automatically receive minor engine version upgrades after launch.
+  # data_tiering               = false  # Enables data tiering.
+  # description                = ""     # Description for the cluster.
+  # engine                     = ""     # Engine that will run on your nodes.
+  # engine_version             = ""     # Version number of the engine to be used for the cluster.
+  # final_snapshot_name        = ""     # Name of the final cluster snapshot to be created when this resource is deleted.
+  # ip_discovery               = ""     # Mechanism that the cluster uses to discover IP addresses.
+  # kms_key_arn                = ""     # ARN of the KMS key used to encrypt the cluster at rest.
+  # maintenance_window         = ""     # Weekly time range during which maintenance on the cluster is performed.
+  # multi_region_cluster_name  = ""     # Multi region cluster identifier specified on aws_memorydb_multi_region_cluster.
+  # name                       = ""     # Name of the cluster.
+  # name_prefix                = ""     # Creates a unique name beginning with the specified prefix.
+  # network_type               = ""     # IP address type for the cluster.
+  # num_replicas_per_shard     = 0      # Number of replicas to apply to each shard, up to a maximum of 5.
+  # num_shards                 = 0      # Number of shards in the cluster.
+  # parameter_group_name       = ""     # Name of the parameter group associated with the cluster.
+  # port                       = 0      # Port number on which each of the nodes accepts connections.
+  # region                     = ""     # Region where this resource will be managed.
+  # security_group_ids         = []     # Set of VPC Security Group ID-s to associate with this cluster.
+  # snapshot_arns              = []     # List of ARN-s that uniquely identify RDB snapshot files stored in S3.
+  # snapshot_name              = ""     # Name of a snapshot from which to restore data into the new cluster.
+  # snapshot_retention_limit   = 0      # Number of days for which MemoryDB retains automatic snapshots before deleting them.
+  # snapshot_window            = ""     # Daily time range (in UTC) during which MemoryDB begins taking a daily snapshot of your shard.
+  # sns_topic_arn              = ""     # ARN of the SNS topic to which cluster notifications are sent.
+  # subnet_group_name          = ""     # Name of the subnet group to be used for the cluster.
+  # tags                       = {}     # Map of tags to assign to the resource.
+  # tls_enabled                = false  # Whether to enable in-transit encryption on the cluster.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_memorydb_cluster</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a MemoryDB Cluster.</description>
+</snippet>

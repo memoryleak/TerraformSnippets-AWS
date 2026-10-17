@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_guardduty_publishing_destination" "${1:name}" {
+  destination_arn = "${2:destination_arn}"  # Bucket ARN and prefix under which the findings get exported.
+  detector_id     = "${3:detector_id}"      # Detector ID of the GuardDuty.
+  kms_key_arn     = "${4:kms_key_arn}"      # ARN of the KMS key used to encrypt GuardDuty findings.
+
+  # destination_type = ""  # Currently there is only "S3" available as destination type which is also the default value
+  # region           = ""  # Region where this resource will be managed.
+  # tags             = {}  # Key-value map of resource tags.
+}
+]]></content>
+<tabTrigger>aws_guardduty_publishing_destination</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage a GuardDuty PublishingDestination</description>
+</snippet>

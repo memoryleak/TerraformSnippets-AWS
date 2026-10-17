@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrockagentcore_gateway_rule" "${1:name}" {
+  gateway_identifier = "${2:gateway_identifier}"  # Identifier of the gateway to attach the rule to.
+  priority           = ${3:0}                     # Priority of the rule, between 1 and 1000000.
+
+  # description = ""  # Description of the rule.
+  # region      = ""  # Region where this resource will be managed.
+  # action {}  # One or two action blocks defining what happens when the rule's conditions match.
+  # condition {}  # Up to two condition blocks that must all be satisfied for the rule's actions to apply.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_bedrockagentcore_gateway_rule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Bedrock AgentCore Gateway Rule.</description>
+</snippet>

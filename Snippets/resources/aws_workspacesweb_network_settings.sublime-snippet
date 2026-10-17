@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_workspacesweb_network_settings" "${1:name}" {
+  security_group_ids = [${2}]         # One or more security groups used to control access from streaming instances to your VPC.
+  subnet_ids         = [${3}]         # The subnets in which network interfaces are created to connect streaming instances to your VPC.
+  vpc_id             = "${4:vpc_id}"  # The VPC that streaming instances will connect to.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags assigned to the resource.
+}
+]]></content>
+<tabTrigger>aws_workspacesweb_network_settings</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS WorkSpaces Web Network Settings.</description>
+</snippet>

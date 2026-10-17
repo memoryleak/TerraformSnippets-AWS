@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_default_vpc" "${1:name}" {
+  # assign_generated_ipv6_cidr_block     = false
+  # enable_dns_hostnames                 = false
+  # enable_dns_support                   = false
+  # enable_network_address_usage_metrics = false
+  # force_destroy                        = false  # Whether destroying the resource deletes the default VPC.
+  # ipv6_cidr_block                      = ""
+  # ipv6_cidr_block_network_border_group = ""
+  # ipv6_ipam_pool_id                    = ""
+  # ipv6_netmask_length                  = 0
+  # region                               = ""
+  # tags                                 = {}
+}
+]]></content>
+<tabTrigger>aws_default_vpc</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manage a default VPC resource.</description>
+</snippet>

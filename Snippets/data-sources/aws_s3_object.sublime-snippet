@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+data "aws_s3_object" "${1:name}" {
+  bucket = "${2:bucket}"  # Name of the bucket to read the object from.
+  key    = "${3:key}"     # Full path to the object inside the bucket
+
+  # checksum_mode = ""  # To retrieve the object's checksum, this argument must be ENABLED.
+  # download_body = ""  # Set to true to always download object data to body_base64 attribute.
+  # range         = ""  # Byte range of the object to retrieve, in the format expected by the HTTP Range header.
+  # region        = ""  # Region where this resource will be managed.
+  # tags          = {}
+  # version_id    = ""  # Specific version ID of the object returned (defaults to latest version)
+}
+]]></content>
+<tabTrigger>data_aws_s3_object</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides metadata and optionally content of an S3 object</description>
+</snippet>

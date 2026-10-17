@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3files_file_system" "${1:name}" {
+  bucket   = "${2:bucket}"    # S3 bucket ARN.
+  role_arn = "${3:role_arn}"  # IAM role ARN for S3 access.
+
+  # accept_bucket_warning = false  # Set to true to acknowledge and accept any warnings related to the bucket configuration.
+  # kms_key_id            = ""     # KMS key ID for encryption.
+  # prefix                = ""     # S3 bucket prefix.
+  # region                = ""     # Region where this resource will be managed.
+  # tags                  = {}     # Map of tags assigned to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_s3files_file_system</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an S3 Files File System.</description>
+</snippet>

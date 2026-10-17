@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_athena_capacity_reservation" "${1:name}" {
+  name        = "${2:name}"  # Name of the capacity reservation.
+  target_dpus = ${3:0}       # Number of data processing units requested.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags assigned to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_athena_capacity_reservation</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Athena Capacity Reservation.</description>
+</snippet>

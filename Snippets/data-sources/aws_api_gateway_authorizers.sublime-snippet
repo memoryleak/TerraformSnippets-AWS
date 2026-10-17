@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_api_gateway_authorizers" "${1:name}" {
+  rest_api_id = "${2:rest_api_id}"  # ID of the associated REST API.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_api_gateway_authorizers</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about multiple API Gateway Authorizers.</description>
+</snippet>

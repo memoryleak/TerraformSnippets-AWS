@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cognito_user_group" "${1:name}" {
+  name         = "${2:name}"          # The name of the user group.
+  user_pool_id = "${3:user_pool_id}"  # The user pool ID.
+
+  # description = ""  # The description of the user group.
+  # precedence  = 0   # The precedence of the user group.
+  # region      = ""  # Region where this resource will be managed.
+  # role_arn    = ""  # The ARN of the IAM role to be associated with the user group.
+}
+]]></content>
+<tabTrigger>aws_cognito_user_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Cognito User Group resource.</description>
+</snippet>

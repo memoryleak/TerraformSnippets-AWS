@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpclattice_resource_gateway" "${1:name}" {
+  name       = "${2:name}"    # Name of the resource gateway.
+  subnet_ids = [${3}]         # IDs of the VPC subnets in which to create the resource gateway.
+  vpc_id     = "${4:vpc_id}"  # ID of the VPC for the resource gateway.
+
+  # ip_address_type                = ""  # IP address type used by the resource gateway.
+  # ipv4_addresses_per_eni         = 0   # Number of IPv4 addresses per ENI for your resource.
+  # region                         = ""  # Region where this resource will be managed.
+  # resource_config_dns_resolution = ""  # How DNS is resolved for resource configurations associated to this resource gateway.
+  # security_group_ids             = []  # Security group IDs associated with the resource gateway.
+  # tags                           = {}  # Key-value mapping of resource tags.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_vpclattice_resource_gateway</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS VPC Lattice Resource Gateway.</description>
+</snippet>

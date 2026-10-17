@@ -1,0 +1,39 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dynamodb_table" "${1:name}" {
+  name = "${2:name}"  # Unique within a region name of the table.
+
+  # billing_mode                = ""     # Controls how you are charged for read and write throughput and how you manage capacity.
+  # deletion_protection_enabled = false  # Enables deletion protection for table.
+  # hash_key                    = ""     # Attribute to use as the hash (partition) key.
+  # range_key                   = ""     # Attribute to use as the range (sort) key.
+  # read_capacity               = 0      # Number of read units for this table.
+  # region                      = ""     # Region where this resource will be managed.
+  # restore_backup_arn          = ""     # ARN of backup to restore.
+  # restore_date_time           = ""     # Time of the point-in-time recovery point to restore.
+  # restore_source_name         = ""     # Name of the table to restore.
+  # restore_source_table_arn    = ""     # ARN of the source table to restore.
+  # restore_to_latest_time      = false  # If set, restores table to the most recent point-in-time recovery point.
+  # stream_enabled              = false  # Whether Streams are enabled.
+  # stream_view_type            = ""     # When an item in the table is modified, StreamViewType determines what information is written to t...
+  # table_class                 = ""     # Storage class of the table.
+  # tags                        = {}     # A map of tags to populate on the created table.
+  # write_capacity              = 0      # Number of write units for this table.
+  # attribute {}  # Set of nested attribute definitions.
+  # global_secondary_index {}  # Describe a GSI for the table; subject to the normal limits on the number of GSIs, projected attri...
+  # global_table_witness {}  # Witness Region in a Multi-Region Strong Consistency deployment.
+  # import_table {}  # Import Amazon S3 data into a new table.
+  # local_secondary_index {}  # Describe an LSI on the table; these can only be allocated _at creation_ so you cannot change this...
+  # on_demand_throughput {}  # Sets the maximum number of read and write units for the specified on-demand table.
+  # point_in_time_recovery {}  # Enable point-in-time recovery options.
+  # replica {}  # Configuration block(s) with DynamoDB Global Tables V2 (version 2019.11.21) replication configurat...
+  # server_side_encryption {}  # Encryption at rest options.
+  # timeouts {}
+  # ttl {}  # Configuration block for TTL.
+  # warm_throughput {}  # Sets the number of warm read and write units for the specified table.
+}
+]]></content>
+<tabTrigger>aws_dynamodb_table</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a DynamoDB table resource</description>
+</snippet>

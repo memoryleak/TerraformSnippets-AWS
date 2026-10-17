@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_macie2_account" "${1:name}" {
+  # finding_publishing_frequency = ""  # How often to publish updates to policy findings for the account.
+  # region                       = ""  # Region where this resource will be managed.
+  # status                       = ""  # Status for the account.
+}
+]]></content>
+<tabTrigger>aws_macie2_account</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage Amazon Macie on an AWS Account.</description>
+</snippet>

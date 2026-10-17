@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_oam_sink" "${1:name}" {
+  sink_identifier = "${2:sink_identifier}"  # ARN of the sink.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_oam_sink</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS CloudWatch Observability Access Manager Sink.</description>
+</snippet>

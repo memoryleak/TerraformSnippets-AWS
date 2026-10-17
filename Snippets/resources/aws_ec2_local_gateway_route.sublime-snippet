@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_local_gateway_route" "${1:name}" {
+  destination_cidr_block                   = "${2:destination_cidr_block}"                    # IPv4 CIDR range used for destination matches.
+  local_gateway_route_table_id             = "${3:local_gateway_route_table_id}"              # Identifier of EC2 Local Gateway Route Table.
+  local_gateway_virtual_interface_group_id = "${4:local_gateway_virtual_interface_group_id}"  # Identifier of EC2 Local Gateway Virtual Interface Group.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_ec2_local_gateway_route</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an EC2 Local Gateway Route</description>
+</snippet>

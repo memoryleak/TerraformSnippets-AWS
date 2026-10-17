@@ -1,0 +1,29 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrockagentcore_harness" "${1:name}" {
+  execution_role_arn = "${2:execution_role_arn}"  # ARN of the IAM role that the harness assumes to access AWS services.
+  harness_name       = "${3:harness_name}"        # Name of the harness.
+
+  # allowed_tools         = []  # List of tool names allowed for the harness.
+  # environment_variables = {}  # Map of environment variables.
+  # max_iterations        = 0   # Maximum number of iterations the agent loop can perform.
+  # max_tokens            = 0   # Maximum total number of output tokens the agent can generate across all model calls within a sing...
+  # region                = ""  # Region where this resource will be managed.
+  # tags                  = {}  # Key-value map of resource tags.
+  # timeout_seconds       = 0   # Timeout in seconds for the harness execution.
+  # truncation            = []  # Truncation configuration for conversation history.
+  # authorizer_configuration {}  # Authorization configuration for authenticating requests.
+  # environment {}  # Compute environment configuration.
+  # environment_artifact {}  # Environment artifact configuration.
+  # memory {}  # Memory configuration.
+  # model {}  # Model configuration for the harness.
+  # skill {}  # Skill configurations.
+  # system_prompt {}  # System prompt blocks for the harness.
+  # timeouts {}
+  # tool {}  # Tool configurations.
+}
+]]></content>
+<tabTrigger>aws_bedrockagentcore_harness</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Bedrock AgentCore Harness.</description>
+</snippet>

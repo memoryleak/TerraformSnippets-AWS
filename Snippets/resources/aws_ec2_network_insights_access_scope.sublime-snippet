@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_network_insights_access_scope" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags to assign to the resource.
+  # exclude_paths {}  # Set of access scope path statements to exclude.
+  # match_paths {}  # Set of access scope path statements to match.
+}
+]]></content>
+<tabTrigger>aws_ec2_network_insights_access_scope</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Network Insights Access Scope resource.</description>
+</snippet>

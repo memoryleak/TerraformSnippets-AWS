@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_traffic_mirror_filter" "${1:name}" {
+  # description      = ""  # A description of the filter.
+  # network_services = []  # List of amazon network services that should be mirrored.
+  # region           = ""  # Region where this resource will be managed.
+  # tags             = {}  # Key-value map of resource tags.
+}
+]]></content>
+<tabTrigger>aws_ec2_traffic_mirror_filter</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Traffic mirror filter</description>
+</snippet>

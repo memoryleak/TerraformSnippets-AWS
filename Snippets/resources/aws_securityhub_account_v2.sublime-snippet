@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_securityhub_account_v2" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_securityhub_account_v2</tabTrigger>
+<scope>source.terraform</scope>
+<description>Enables Security Hub V2 for this AWS account.</description>
+</snippet>

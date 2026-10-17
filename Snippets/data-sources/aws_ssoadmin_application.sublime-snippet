@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_ssoadmin_application" "${1:name}" {
+  application_arn = "${2:application_arn}"  # ARN of the application.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_ssoadmin_application</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS SSO Admin Application.</description>
+</snippet>

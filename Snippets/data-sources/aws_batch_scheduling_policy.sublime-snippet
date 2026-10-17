@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_batch_scheduling_policy" "${1:name}" {
+  arn = "${2:arn}"  # ARN of the scheduling policy.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_batch_scheduling_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a Batch Scheduling Policy</description>
+</snippet>

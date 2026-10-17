@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_iot_endpoint" "${1:name}" {
+  # endpoint_type = ""  # Endpoint type.
+  # region        = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_iot_endpoint</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get the unique IoT endpoint</description>
+</snippet>

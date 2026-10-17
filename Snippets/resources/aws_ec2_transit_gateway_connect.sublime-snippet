@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_transit_gateway_connect" "${1:name}" {
+  transit_gateway_id      = "${2:transit_gateway_id}"       # Identifier of EC2 Transit Gateway.
+  transport_attachment_id = "${3:transport_attachment_id}"  # The underlying VPC attachment
+
+  # protocol                                        = ""     # The tunnel protocol.
+  # region                                          = ""     # Region where this resource will be managed.
+  # tags                                            = {}     # Key-value tags for the EC2 Transit Gateway Connect.
+  # transit_gateway_default_route_table_association = false  # Boolean whether the Connect should be associated with the EC2 Transit Gateway association default...
+  # transit_gateway_default_route_table_propagation = false  # Boolean whether the Connect should propagate routes with the EC2 Transit Gateway propagation defa...
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ec2_transit_gateway_connect</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an EC2 Transit Gateway Connect</description>
+</snippet>

@@ -1,0 +1,27 @@
+<snippet>
+<content><![CDATA[
+resource "aws_drs_replication_configuration_template" "${1:name}" {
+  associate_default_security_group        = ${2:false}                               # Whether to associate the default Elastic Disaster Recovery Security group with the Replication Co...
+  bandwidth_throttling                    = ${3:0}                                   # Configure bandwidth throttling for the outbound data transfer rate of the Source Server in Mbps.
+  create_public_ip                        = ${4:false}                               # Whether to create a Public IP for the Recovery Instance by default.
+  data_plane_routing                      = "${5:data_plane_routing}"                # Data plane routing mechanism that will be used for replication.
+  default_large_staging_disk_type         = "${6:default_large_staging_disk_type}"   # Staging Disk EBS volume type to be used during replication.
+  ebs_encryption                          = "${7:ebs_encryption}"                    # Type of EBS encryption to be used during replication.
+  replication_server_instance_type        = "${8:replication_server_instance_type}"  # Instance type to be used for the replication server.
+  replication_servers_security_groups_ids = [${9}]                                   # Security group IDs that will be used by the replication server.
+  staging_area_subnet_id                  = "${10:staging_area_subnet_id}"           # Subnet to be used by the replication staging area.
+  staging_area_tags                       = {${11}}                                  # Set of tags to be associated with all resources created in the replication staging area: EC2 repl...
+  use_dedicated_replication_server        = ${12:false}                              # Whether to use a dedicated Replication Server in the replication staging area.
+
+  # auto_replicate_new_disks = false  # Whether to allow the AWS replication agent to automatically replicate newly added disks.
+  # ebs_encryption_key_arn   = ""     # ARN of the EBS encryption key to be used during replication.
+  # region                   = ""     # Region where this resource will be managed.
+  # tags                     = {}     # Set of tags to be associated with the Replication Configuration Template resource.
+  # pit_policy {}  # Configuration block for Point in time (PIT) policy to manage snapshots taken during replication.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_drs_replication_configuration_template</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Elastic Disaster Recovery replication configuration template resource.</description>
+</snippet>

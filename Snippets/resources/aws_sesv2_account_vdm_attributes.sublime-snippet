@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sesv2_account_vdm_attributes" "${1:name}" {
+  vdm_enabled = "${2:vdm_enabled}"  # Status of your VDM configuration.
+
+  # region = ""  # Region where this resource will be managed.
+  # dashboard_attributes {}  # Additional settings for your VDM configuration as applicable to the Dashboard.
+  # guardian_attributes {}  # Additional settings for your VDM configuration as applicable to the Guardian.
+}
+]]></content>
+<tabTrigger>aws_sesv2_account_vdm_attributes</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS SESv2 (Simple Email V2) Account VDM Attributes.</description>
+</snippet>

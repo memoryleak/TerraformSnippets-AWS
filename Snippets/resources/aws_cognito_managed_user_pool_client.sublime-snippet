@@ -1,0 +1,34 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cognito_managed_user_pool_client" "${1:name}" {
+  user_pool_id = "${2:user_pool_id}"  # User pool that the client belongs to.
+
+  # access_token_validity                         = 0      # Time limit, between 5 minutes and 1 day, after which the access token is no longer valid and cann...
+  # allowed_oauth_flows                           = []     # List of allowed OAuth flows, including code, implicit, and client_credentials.
+  # allowed_oauth_flows_user_pool_client          = false  # Whether the client is allowed to use OAuth 2.0 features.
+  # allowed_oauth_scopes                          = []     # List of allowed OAuth scopes, including phone, email, openid, profile, and aws.cognito.signin.use...
+  # auth_session_validity                         = 0      # Duration, in minutes, of the session token created by Amazon Cognito for each API request in an a...
+  # callback_urls                                 = []     # List of allowed callback URLs for the identity providers.
+  # default_redirect_uri                          = ""     # Default redirect URI and must be included in the list of callback URLs.
+  # enable_propagate_additional_user_context_data = false  # Enables the propagation of additional user context data.
+  # enable_token_revocation                       = false  # Enables or disables token revocation.
+  # explicit_auth_flows                           = []     # List of authentication flows.
+  # id_token_validity                             = 0      # Time limit, between 5 minutes and 1 day, after which the ID token is no longer valid and cannot b...
+  # logout_urls                                   = []     # List of allowed logout URLs for the identity providers.
+  # name_pattern                                  = ""     # Regular expression that matches the name of the existing User Pool Client to be managed.
+  # name_prefix                                   = ""     # String that matches the beginning of the name of the  existing User Pool Client to be managed.
+  # prevent_user_existence_errors                 = ""     # Setting determines the errors and responses returned by Cognito APIs when a user does not exist i...
+  # read_attributes                               = []     # List of user pool attributes that the application client can read from.
+  # refresh_token_validity                        = 0      # Time limit, between 60 minutes and 10 years, after which the refresh token is no longer valid and...
+  # region                                        = ""     # Region where this resource will be managed.
+  # supported_identity_providers                  = []     # List of provider names for the identity providers that are supported on this client.
+  # write_attributes                              = []     # List of user pool attributes that the application client can write to.
+  # analytics_configuration {}  # Configuration block for AWS End User Messaging analytics that collects metrics for this user pool.
+  # refresh_token_rotation {}  # A block that specifies the configuration of refresh token rotation.
+  # token_validity_units {}  # Configuration block for representing the validity times in units.
+}
+]]></content>
+<tabTrigger>aws_cognito_managed_user_pool_client</tabTrigger>
+<scope>source.terraform</scope>
+<description>Use the aws_cognito_user_pool_client resource to manage a Cognito User Pool Client.</description>
+</snippet>

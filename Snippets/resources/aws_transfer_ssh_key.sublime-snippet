@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_transfer_ssh_key" "${1:name}" {
+  body      = "${2:body}"       # Public key portion of an SSH key pair.
+  server_id = "${3:server_id}"  # Server ID of the Transfer Server (e.g., s-12345678)
+  user_name = "${4:user_name}"  # Name of the user account that is assigned to one or more servers.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_transfer_ssh_key</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a AWS Transfer SSH Public Key resource.</description>
+</snippet>

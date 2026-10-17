@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ses_domain_dkim" "${1:name}" {
+  domain = "${2:domain}"  # Verified domain name to generate DKIM tokens for.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_ses_domain_dkim</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an SES domain DKIM generation resource</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_quicksight_refresh_schedule" "${1:name}" {
+  data_set_id = "${2:data_set_id}"  # ID of the dataset.
+  schedule_id = "${3:schedule_id}"  # ID of the refresh schedule.
+
+  # aws_account_id = ""  # AWS account ID.
+  # region         = ""  # Region where this resource will be managed.
+  # schedule {}  # Refresh schedule configuration.
+}
+]]></content>
+<tabTrigger>aws_quicksight_refresh_schedule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Resource QuickSight Refresh Schedule.</description>
+</snippet>

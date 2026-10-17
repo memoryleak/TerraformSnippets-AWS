@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_event_bus" "${1:name}" {
+  name = "${2:name}"  # Name of the new event bus.
+
+  # description        = ""  # Event bus description.
+  # event_source_name  = ""  # Partner event source that the new event bus will be matched with.
+  # kms_key_identifier = ""  # Identifier of the AWS KMS customer managed key for EventBridge to use, if you choose to use a cus...
+  # region             = ""  # Region where this resource will be managed.
+  # tags               = {}  # Map of tags assigned to the resource.
+  # dead_letter_config {}  # Configuration details of the Amazon SQS queue for EventBridge to use as a dead-letter queue (DLQ).
+  # log_config {}  # Block for logging configuration settings for the event bus.
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_event_bus</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an EventBridge event bus resource.</description>
+</snippet>

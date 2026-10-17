@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_media_packagev2_channel_group" "${1:name}" {
+  name = "${2:name}"  # Unique identifier naming the channel group
+
+  # description = ""  # Description of the channel group
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_media_packagev2_channel_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Creates an AWS Elemental MediaPackage Version 2 Channel Group.</description>
+</snippet>

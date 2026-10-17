@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_waf_web_acl" "${1:name}" {
+  metric_name = "${2:metric_name}"  # The name or description for the Amazon CloudWatch metric of this web ACL.
+  name        = "${3:name}"         # The name or description of the web ACL.
+  default_action {
+    type = "${4:type}"
+  }
+
+  # tags = {}  # Key-value map of resource tags.
+  # logging_configuration {}  # Configuration block to enable WAF logging.
+  # rules {}  # Configuration blocks containing rules to associate with the web ACL and the settings for each rule.
+}
+]]></content>
+<tabTrigger>aws_waf_web_acl</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a AWS WAF web access control group (ACL) resource.</description>
+</snippet>

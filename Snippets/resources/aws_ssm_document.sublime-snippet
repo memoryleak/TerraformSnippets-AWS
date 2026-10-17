@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ssm_document" "${1:name}" {
+  content       = "${2:content}"        # The content for the SSM document in JSON or YAML format.
+  document_type = "${3:document_type}"  # The type of the document.
+  name          = "${4:name}"           # The name of the document.
+
+  # document_format = ""  # The format of the document.
+  # permissions     = {}  # Additional permissions to attach to the document.
+  # region          = ""  # Region where this resource will be managed.
+  # tags            = {}  # A map of tags to assign to the object.
+  # target_type     = ""  # The target type which defines the kinds of resources the document can run on.
+  # version_name    = ""  # The version of the artifact associated with the document.
+  # attachments_source {}  # One or more configuration blocks describing attachments sources to a version of a document.
+}
+]]></content>
+<tabTrigger>aws_ssm_document</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an SSM Document resource</description>
+</snippet>

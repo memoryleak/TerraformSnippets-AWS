@@ -1,0 +1,26 @@
+<snippet>
+<content><![CDATA[
+resource "aws_apigatewayv2_api" "${1:name}" {
+  name          = "${2:name}"           # Name of the API.
+  protocol_type = "${3:protocol_type}"  # API protocol.
+
+  # api_key_selection_expression = ""     # API key selection expression.
+  # body                         = ""     # OpenAPI specification that defines the set of routes and integrations to create as part of the HT...
+  # credentials_arn              = ""     # Part of _quick create_.
+  # description                  = ""     # Description of the API.
+  # disable_execute_api_endpoint = false  # Whether clients can invoke the API by using the default execute-api endpoint.
+  # fail_on_warnings             = false  # Whether warnings should return an error while API Gateway is creating or updating the resource us...
+  # ip_address_type              = ""     # IP address types that can invoke the API.
+  # region                       = ""     # Region where this resource will be managed.
+  # route_key                    = ""     # Part of _quick create_.
+  # route_selection_expression   = ""     # Route selection expression for the API.
+  # tags                         = {}     # Map of tags to assign to the API.
+  # target                       = ""     # Part of _quick create_.
+  # version                      = ""     # Version identifier for the API.
+  # cors_configuration {}  # Cross-origin resource sharing (CORS) configuration.
+}
+]]></content>
+<tabTrigger>aws_apigatewayv2_api</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Amazon API Gateway Version 2 API.</description>
+</snippet>

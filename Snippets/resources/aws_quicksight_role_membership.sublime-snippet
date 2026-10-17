@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_quicksight_role_membership" "${1:name}" {
+  member_name = "${2:member_name}"  # Name of the group to be added to the role.
+  role        = "${3:role}"         # Role to add the group to.
+
+  # aws_account_id = ""  # AWS account ID.
+  # namespace      = ""  # Name of the namespace.
+  # region         = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_quicksight_role_membership</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS QuickSight Role Membership.</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+data "aws_lambda_layer_version" "${1:name}" {
+  # compatible_architecture = ""  # Specific architecture the layer version must support.
+  # compatible_runtime      = ""  # Specific runtime the layer version must support.
+  # layer_name              = ""  # Name of the Lambda layer.
+  # layer_version_arn       = ""  # ARN of the Lambda layer version.
+  # region                  = ""  # Region where this resource will be managed.
+  # version                 = 0   # Specific layer version.
+}
+]]></content>
+<tabTrigger>data_aws_lambda_layer_version</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an AWS Lambda Layer Version.</description>
+</snippet>

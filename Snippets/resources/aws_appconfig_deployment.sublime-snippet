@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appconfig_deployment" "${1:name}" {
+  application_id           = "${2:application_id}"            # Application ID.
+  configuration_profile_id = "${3:configuration_profile_id}"  # Configuration profile ID.
+  configuration_version    = "${4:configuration_version}"     # Configuration version to deploy.
+  deployment_strategy_id   = "${5:deployment_strategy_id}"    # Deployment strategy ID or name of a predefined deployment strategy.
+  environment_id           = "${6:environment_id}"            # Environment ID.
+
+  # description        = ""  # Description of the deployment.
+  # kms_key_identifier = ""  # KMS key identifier (key ID, key alias, or key ARN).
+  # region             = ""  # Region where this resource will be managed.
+  # tags               = {}  # Map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_appconfig_deployment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AppConfig Deployment resource.</description>
+</snippet>

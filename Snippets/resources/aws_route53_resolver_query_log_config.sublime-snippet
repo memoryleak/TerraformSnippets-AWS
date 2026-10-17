@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_route53_resolver_query_log_config" "${1:name}" {
+  destination_arn = "${2:destination_arn}"  # The ARN of the resource that you want Route 53 Resolver to send query logs.
+  name            = "${3:name}"             # The name of the Route 53 Resolver query logging configuration.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_route53_resolver_query_log_config</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Route 53 Resolver query logging configuration resource.</description>
+</snippet>

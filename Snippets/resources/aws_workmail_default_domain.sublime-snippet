@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_workmail_default_domain" "${1:name}" {
+  domain_name     = "${2:domain_name}"      # Mail domain name to set as the default.
+  organization_id = "${3:organization_id}"  # Identifier of the WorkMail organization.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_workmail_default_domain</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages the default mail domain for an AWS WorkMail organization.</description>
+</snippet>

@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_opensearch_package" "${1:name}" {
+  package_name = "${2:package_name}"  # Unique name for the package.
+  package_type = "${3:package_type}"  # The type of package.
+  package_source {
+    s3_bucket_name = "${4:s3_bucket_name}"
+    s3_key         = "${5:s3_key}"
+  }
+
+  # engine_version      = ""  # Engine version that the package is compatible with.
+  # package_description = ""  # Description of the package.
+  # region              = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_opensearch_package</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS OpenSearch package.</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_fsx_backup" "${1:name}" {
+  # file_system_id = ""  # ID of the file system to back up.
+  # region         = ""  # Region where this resource will be managed.
+  # tags           = {}  # Map of tags to assign to the file system.
+  # volume_id      = ""  # ID of the volume to back up.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_fsx_backup</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a FSx Backup.</description>
+</snippet>

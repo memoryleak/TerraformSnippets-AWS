@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_devopsguru_notification_channel" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # filters {}  # Filter configurations for the Amazon SNS notification topic.
+  # sns {}  # SNS noficiation channel configurations.
+}
+]]></content>
+<tabTrigger>aws_devopsguru_notification_channel</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS DevOps Guru Notification Channel.</description>
+</snippet>

@@ -1,9 +1,0 @@
-<snippet>
-<content><![CDATA[
-resource "aws_route53_delegation_set" "aws_route53_delegation_set_${1:suffix}" {
-	reference_name = "${3:Optional}"
-}
-]]></content>
-<tabTrigger>aws_route53_delegation_set</tabTrigger>
-<scope>source.terraform</scope>
-</snippet>

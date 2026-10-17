@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3_bucket_lifecycle_configuration" "${1:name}" {
+  bucket = "${2:bucket}"  # Name of the source S3 bucket you want Amazon S3 to monitor.
+
+  # region                                 = ""  # Region where this resource will be managed.
+  # transition_default_minimum_object_size = ""  # Default minimum object size behavior applied to the lifecycle configuration.
+  # rule {}  # List of configuration blocks describing the rules managing the replication.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_s3_bucket_lifecycle_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a S3 bucket lifecycle configuration resource.</description>
+</snippet>

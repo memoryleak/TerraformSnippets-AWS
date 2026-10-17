@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_organizations_aws_service_access" "${1:name}" {
+  service_principal = "${2:service_principal}"  # Service principal of the AWS service to enable.
+}
+]]></content>
+<tabTrigger>aws_organizations_aws_service_access</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Organizations Service Access.</description>
+</snippet>

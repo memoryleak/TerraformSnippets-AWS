@@ -1,0 +1,25 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dms_replication_config" "${1:name}" {
+  replication_config_identifier = "${2:replication_config_identifier}"  # Unique identifier that you want to use to create the config.
+  replication_type              = "${3:replication_type}"               # The migration type.
+  source_endpoint_arn           = "${4:source_endpoint_arn}"            # ARN string that uniquely identifies the source endpoint.
+  table_mappings                = "${5:table_mappings}"                 # An escaped JSON string that contains the table mappings.
+  target_endpoint_arn           = "${6:target_endpoint_arn}"            # ARN string that uniquely identifies the target endpoint.
+  compute_config {
+    replication_subnet_group_id = "${7:replication_subnet_group_id}"
+  }
+
+  # region                = ""     # Region where this resource will be managed.
+  # replication_settings  = ""     # An escaped JSON string that are used to provision this replication configuration.
+  # resource_identifier   = ""     # Unique value or name that you set for a given resource that can be used to construct an ARN for t...
+  # start_replication     = false  # Whether to run or stop the serverless replication, default is false.
+  # supplemental_settings = ""     # JSON settings for specifying supplemental data.
+  # tags                  = {}     # A map of tags to assign to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_dms_replication_config</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a DMS Serverless replication config resource.</description>
+</snippet>

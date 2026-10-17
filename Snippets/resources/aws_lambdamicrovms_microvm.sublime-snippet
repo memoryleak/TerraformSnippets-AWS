@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lambdamicrovms_microvm" "${1:name}" {
+  image_arn = "${2:image_arn}"  # ARN of the MicroVM image to run.
+
+  # egress_network_connectors   = []  # List of egress network connector ARNs for outbound connectivity.
+  # execution_role_arn          = ""  # ARN of the IAM role assumed by the MicroVM during execution.
+  # image_version               = ""  # Version of the MicroVM image to run.
+  # ingress_network_connectors  = []  # List of ingress network connector ARNs for inbound connectivity.
+  # maximum_duration_in_seconds = 0   # Maximum duration in seconds that the MicroVM can exist before the platform terminates it.
+  # region                      = ""  # Region where this resource will be managed.
+  # run_hook_payload            = ""  # String payload (maximum 16 KB) delivered to the /run lifecycle hook when the MicroVM starts.
+  # idle_policy {}  # Configuration controlling automatic suspend and resume behavior.
+  # logging {}  # Logging configuration for the MicroVM.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_lambdamicrovms_microvm</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Lambda MicroVMs MicroVM.</description>
+</snippet>

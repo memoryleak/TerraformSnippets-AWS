@@ -1,0 +1,30 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ecs_task_definition" "${1:name}" {
+  container_definitions = "${2:container_definitions}"  # List of valid container definitions provided as a single valid JSON document.
+  family                = "${3:family}"                 # Unique name for your task definition.
+
+  # cpu                      = ""     # Number of CPU units used by the task.
+  # enable_fault_injection   = false  # Enables fault injection and allows for fault injection requests to be accepted from the task's co...
+  # execution_role_arn       = ""     # ARN of the task execution role that the Amazon ECS container agent and the Docker daemon can assume.
+  # ipc_mode                 = ""     # IPC resource namespace to be used for the containers in the task.
+  # memory                   = ""     # Amount (in MiB) of memory used by the task.
+  # network_mode             = ""     # Docker networking mode to use for the containers in the task.
+  # pid_mode                 = ""     # Process namespace to use for the containers in the task.
+  # region                   = ""     # Region where this resource will be managed.
+  # requires_compatibilities = []     # Set of launch types required by the task.
+  # skip_destroy             = false  # Whether to retain the old revision when the resource is destroyed or replacement is necessary.
+  # tags                     = {}     # Key-value map of resource tags.
+  # task_role_arn            = ""     # ARN of IAM role that allows your Amazon ECS container task to make calls to other AWS services.
+  # track_latest             = false  # Whether should track latest ACTIVE task definition on AWS or the one created with the resource st...
+  # ephemeral_storage {}  # Amount of ephemeral storage to allocate for the task.
+  # placement_constraints {}  # Configuration block for rules that are taken into consideration during task placement.
+  # proxy_configuration {}  # Configuration block for the App Mesh proxy.
+  # runtime_platform {}  # Configuration block for runtime_platform that containers in your task may use.
+  # volume {}  # Repeatable configuration block for volumes that containers in your task may use.
+}
+]]></content>
+<tabTrigger>aws_ecs_task_definition</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a revision of an ECS task definition.</description>
+</snippet>

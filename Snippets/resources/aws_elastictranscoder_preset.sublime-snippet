@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_elastictranscoder_preset" "${1:name}" {
+  container = "${2:container}"  # The container type for the output file.
+
+  # description         = ""  # A description of the preset (maximum 255 characters)
+  # name                = ""  # The name of the preset.
+  # region              = ""  # Region where this resource will be managed.
+  # type                = ""
+  # video_codec_options = {}
+  # audio {}  # Audio parameters object (documented below).
+  # audio_codec_options {}  # Codec options for the audio parameters (documented below)
+  # thumbnails {}  # Thumbnail parameters object (documented below)
+  # video {}  # Video parameters object (documented below)
+  # video_watermarks {}  # Watermark parameters for the video parameters (documented below)
+}
+]]></content>
+<tabTrigger>aws_elastictranscoder_preset</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Elastic Transcoder preset resource.</description>
+</snippet>

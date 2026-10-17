@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_securityhub_insight" "${1:name}" {
+  group_by_attribute = "${2:group_by_attribute}"  # The attribute used to group the findings for the insight e.g., if an insight is grouped by Resour...
+  name               = "${3:name}"                # The name of the custom insight.
+  filters {
+  }
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_securityhub_insight</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Security Hub custom insight resource.</description>
+</snippet>

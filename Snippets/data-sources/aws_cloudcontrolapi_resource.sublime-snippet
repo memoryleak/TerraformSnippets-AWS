@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+data "aws_cloudcontrolapi_resource" "${1:name}" {
+  identifier = "${2:identifier}"  # Identifier of the CloudFormation resource type.
+  type_name  = "${3:type_name}"   # CloudFormation resource type name.
+
+  # region          = ""  # Region where this resource will be managed.
+  # role_arn        = ""  # ARN of the IAM Role to assume for operations.
+  # type_version_id = ""  # Identifier of the CloudFormation resource type version.
+}
+]]></content>
+<tabTrigger>data_aws_cloudcontrolapi_resource</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details for a Cloud Control API Resource.</description>
+</snippet>

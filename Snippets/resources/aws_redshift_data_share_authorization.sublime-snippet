@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_redshift_data_share_authorization" "${1:name}" {
+  consumer_identifier = "${2:consumer_identifier}"  # Identifier of the data consumer that is authorized to access the datashare.
+  data_share_arn      = "${3:data_share_arn}"       # ARN of the datashare that producers are to authorize sharing for.
+
+  # allow_writes = false  # Whether to allow write operations for a datashare.
+  # region       = ""     # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_redshift_data_share_authorization</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Redshift Data Share Authorization.</description>
+</snippet>

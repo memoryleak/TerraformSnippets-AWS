@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_quicksight_user" "${1:name}" {
+  user_name = "${2:user_name}"  # Name of the user that you want to match.
+
+  # aws_account_id = ""  # AWS account ID.
+  # namespace      = ""  # QuickSight namespace.
+  # region         = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_quicksight_user</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Use this data source to fetch information about a QuickSight User.</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cognito_user_pool_ui_customization" "${1:name}" {
+  user_pool_id = "${2:user_pool_id}"
+
+  # client_id  = ""
+  # css        = ""
+  # image_file = ""
+  # region     = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_cognito_user_pool_ui_customization</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Cognito User Pool UI Customization resource.</description>
+</snippet>

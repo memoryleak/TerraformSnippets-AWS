@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sagemaker_app_image_config" "${1:name}" {
+  app_image_config_name = "${2:app_image_config_name}"  # The name of the App Image Config.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # A map of tags to assign to the resource.
+  # code_editor_app_image_config {}  # The CodeEditorAppImageConfig.
+  # jupyter_lab_image_config {}  # The JupyterLabAppImageConfig.
+  # kernel_gateway_image_config {}  # The configuration for the file system and kernels in a SageMaker AI image running as a KernelGate...
+}
+]]></content>
+<tabTrigger>aws_sagemaker_app_image_config</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a SageMaker AI App Image Config resource.</description>
+</snippet>

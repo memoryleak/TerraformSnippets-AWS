@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_mailmanager_rule_set" "${1:name}" {
+  name = "${2:name}"  # Name of the rule set.
+
+  # region = ""  # Region where this resource is managed.
+  # tags   = {}  # Map of tags assigned to the resource.
+  # rule {}  # One or more rules that define filtering and action logic.
+}
+]]></content>
+<tabTrigger>aws_mailmanager_rule_set</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS SES Mail Manager Rule Set.</description>
+</snippet>

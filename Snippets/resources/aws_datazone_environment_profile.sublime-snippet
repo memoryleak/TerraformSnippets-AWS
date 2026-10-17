@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_datazone_environment_profile" "${1:name}" {
+  aws_account_region               = "${2:aws_account_region}"                # -  Desired region for environment profile.
+  domain_identifier                = "${3:domain_identifier}"                 # -  Domain Identifier for environment profile.
+  environment_blueprint_identifier = "${4:environment_blueprint_identifier}"  # -  ID of the blueprint which the environment will be created with.
+  name                             = "${5:name}"                              # -  Name of the environment profile.
+  project_identifier               = "${6:project_identifier}"                # -  Project identifier for environment profile.
+
+  # aws_account_id = ""  # -  ID of the AWS account being used.
+  # description    = ""  # Description of environment profile.
+  # region         = ""  # Region where this resource will be managed.
+  # user_parameters {}  # -  Array of user parameters of the environment profile with the following attributes:
+}
+]]></content>
+<tabTrigger>aws_datazone_environment_profile</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS DataZone Environment Profile.</description>
+</snippet>

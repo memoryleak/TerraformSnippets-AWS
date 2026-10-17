@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+data "aws_rds_reserved_instance_offering" "${1:name}" {
+  db_instance_class   = "${2:db_instance_class}"    # DB instance class for the reserved DB instance.
+  duration            = ${3:0}                      # Duration of the reservation in years or seconds.
+  multi_az            = ${4:false}                  # Whether the reservation applies to Multi-AZ deployments.
+  offering_type       = "${5:offering_type}"        # Offering type of this reserved DB instance.
+  product_description = "${6:product_description}"  # Description of the reserved DB instance.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_rds_reserved_instance_offering</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Information about a single RDS Reserved Instance Offering.</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpclattice_target_group_attachment" "${1:name}" {
+  target_group_identifier = "${2:target_group_identifier}"  # ID or ARN of the target group.
+  target {
+  }
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_vpclattice_target_group_attachment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides the ability to register a target with an AWS VPC Lattice Target Group.</description>
+</snippet>

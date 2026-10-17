@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_outposts_outposts" "${1:name}" {
+  # availability_zone    = ""  # Availability Zone name.
+  # availability_zone_id = ""  # Availability Zone identifier.
+  # owner_id             = ""  # AWS Account identifier of the Outpost owner.
+  # region               = ""  # Region where this resource will be managed.
+  # site_id              = ""  # Site identifier.
+}
+]]></content>
+<tabTrigger>data_aws_outposts_outposts</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about multiple Outposts</description>
+</snippet>

@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_devicefarm_device_pool" "${1:name}" {
+  name        = "${2:name}"         # The name of the Device Pool
+  project_arn = "${3:project_arn}"  # The ARN of the project for the device pool.
+  rule {
+  }
+
+  # description = ""  # The device pool's description.
+  # max_devices = 0   # The number of devices that Device Farm can add to your device pool.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_devicefarm_device_pool</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Devicefarm device_pool</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3tables_table_policy" "${1:name}" {
+  name             = "${2:name}"              # Name of the table.
+  namespace        = "${3:namespace}"         # Name of the namespace for this table.
+  resource_policy  = "${4:resource_policy}"   # Amazon Web Services resource-based policy document in JSON format.
+  table_bucket_arn = "${5:table_bucket_arn}"  # ARN referencing the Table Bucket that contains this Namespace.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_s3tables_table_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an Amazon S3 Tables Table Policy.</description>
+</snippet>

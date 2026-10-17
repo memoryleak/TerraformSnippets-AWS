@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appconfig_extension_association" "${1:name}" {
+  extension_arn = "${2:extension_arn}"  # ARN of the extension defined in the association.
+  resource_arn  = "${3:resource_arn}"   # ARN of the application, configuration profile, or environment to associate with the extension.
+
+  # parameters = {}  # Parameter names and values defined for the association.
+  # region     = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_appconfig_extension_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Associates an AppConfig Extension with a Resource.</description>
+</snippet>

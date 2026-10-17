@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_api_gateway_method_response" "${1:name}" {
+  http_method = "${2:http_method}"  # HTTP verb of the method resource (GET, POST, PUT, DELETE, HEAD, OPTIONS, ANY).
+  resource_id = "${3:resource_id}"  # Resource identifier for the method resource.
+  rest_api_id = "${4:rest_api_id}"  # String identifier of the associated REST API.
+  status_code = "${5:status_code}"  # Method response's status code.
+
+  # region              = ""  # Region where this resource will be managed.
+  # response_models     = {}  # Map specifying the model resources used for the response's content type.
+  # response_parameters = {}  # Map specifying required or optional response parameters that API Gateway can send back to the cal...
+}
+]]></content>
+<tabTrigger>aws_api_gateway_method_response</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an HTTP Method Response for an API Gateway Resource.</description>
+</snippet>

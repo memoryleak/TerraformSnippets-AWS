@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_vpc_ipams" "${1:name}" {
+  # ipam_ids = []  # IDs of the IPAM resources to query for.
+  # region   = ""  # Region where this resource will be managed.
+  # filter {}  # Custom filter block as described below.
+}
+]]></content>
+<tabTrigger>data_aws_vpc_ipams</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing VPC IPAMs.</description>
+</snippet>

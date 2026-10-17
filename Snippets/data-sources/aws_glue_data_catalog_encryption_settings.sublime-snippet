@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_glue_data_catalog_encryption_settings" "${1:name}" {
+  catalog_id = "${2:catalog_id}"  # ID of the Data Catalog.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_glue_data_catalog_encryption_settings</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on AWS Glue Data Catalog Encryption Settings</description>
+</snippet>

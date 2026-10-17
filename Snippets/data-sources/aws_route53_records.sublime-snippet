@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_route53_records" "${1:name}" {
+  zone_id = "${2:zone_id}"  # The ID of the hosted zone that contains the resource record sets that you want to list.
+
+  # name_regex = ""  # Regex string to apply to the resource record names returned by AWS.
+}
+]]></content>
+<tabTrigger>data_aws_route53_records</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information about a set of Route 53 resource records.</description>
+</snippet>

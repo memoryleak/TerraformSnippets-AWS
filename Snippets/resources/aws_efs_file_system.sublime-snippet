@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_efs_file_system" "${1:name}" {
+  # availability_zone_name          = ""     # the AWS Availability Zone in which to create the file system.
+  # creation_token                  = ""     # A unique name (a maximum of 64 characters are allowed)
+  # encrypted                       = false  # If true, the disk will be encrypted.
+  # kms_key_id                      = ""     # The ARN for the KMS encryption key.
+  # performance_mode                = ""     # The file system performance mode.
+  # provisioned_throughput_in_mibps = 0      # The throughput, measured in MiB/s, that you want to provision for the file system.
+  # region                          = ""     # Region where this resource will be managed.
+  # tags                            = {}     # A map of tags to assign to the file system.
+  # throughput_mode                 = ""     # Throughput mode for the file system.
+  # lifecycle_policy {}  # A file system lifecycle policy object.
+  # protection {}  # A file system protection object.
+}
+]]></content>
+<tabTrigger>aws_efs_file_system</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Elastic File System (EFS) File System resource.</description>
+</snippet>

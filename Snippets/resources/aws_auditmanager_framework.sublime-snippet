@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_auditmanager_framework" "${1:name}" {
+  name = "${2:name}"  # Name of the framework.
+
+  # compliance_type = ""  # Compliance type that the new custom framework supports, such as CIS or HIPAA.
+  # description     = ""  # Description of the framework.
+  # region          = ""  # Region where this resource will be managed.
+  # tags            = {}  # A map of tags to assign to the framework.
+  # control_sets {}  # Configuration block(s) for the control sets that are associated with the framework.
+}
+]]></content>
+<tabTrigger>aws_auditmanager_framework</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Audit Manager Framework.</description>
+</snippet>

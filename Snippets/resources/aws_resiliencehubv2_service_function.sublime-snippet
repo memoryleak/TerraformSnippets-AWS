@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_resiliencehubv2_service_function" "${1:name}" {
+  criticality = "${2:criticality}"  # Criticality level of the service function.
+  name        = "${3:name}"         # Name of the service function.
+  service_arn = "${4:service_arn}"  # ARN of the service this function belongs to.
+
+  # description = ""  # Description of the service function.
+  # region      = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_resiliencehubv2_service_function</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Resilience Hub V2 Service Function.</description>
+</snippet>

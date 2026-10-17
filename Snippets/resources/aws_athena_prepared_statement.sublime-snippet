@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_athena_prepared_statement" "${1:name}" {
+  name            = "${2:name}"             # The name of the prepared statement.
+  query_statement = "${3:query_statement}"  # The query string for the prepared statement.
+  workgroup       = "${4:workgroup}"        # The name of the workgroup to which the prepared statement belongs.
+
+  # description = ""  # Brief explanation of prepared statement.
+  # region      = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_athena_prepared_statement</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Athena Prepared Statement.</description>
+</snippet>

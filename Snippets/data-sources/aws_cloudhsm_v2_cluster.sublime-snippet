@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_cloudhsm_v2_cluster" "${1:name}" {
+  cluster_id = "${2:cluster_id}"  # ID of Cloud HSM v2 cluster.
+
+  # cluster_state = ""  # State of the cluster to be found.
+  # region        = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_cloudhsm_v2_cluster</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on a CloudHSM v2 cluster.</description>
+</snippet>

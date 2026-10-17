@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_networkmanager_link_association" "${1:name}" {
+  device_id         = "${2:device_id}"          # ID of the device.
+  global_network_id = "${3:global_network_id}"  # ID of the global network.
+  link_id           = "${4:link_id}"            # ID of the link.
+
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_networkmanager_link_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Network Manager link association.</description>
+</snippet>

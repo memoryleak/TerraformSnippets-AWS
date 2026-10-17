@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_redshift_event_subscription" "${1:name}" {
+  name          = "${2:name}"           # The name of the Redshift event subscription.
+  sns_topic_arn = "${3:sns_topic_arn}"  # The ARN of the SNS topic to send events to.
+
+  # enabled          = false  # A boolean flag to enable/disable the subscription.
+  # event_categories = []     # A list of event categories for a SourceType that you want to subscribe to.
+  # region           = ""     # Region where this resource will be managed.
+  # severity         = ""     # The event severity to be published by the notification subscription.
+  # source_ids       = []     # A list of identifiers of the event sources for which events will be returned.
+  # source_type      = ""     # The type of source that will be generating the events.
+  # tags             = {}     # A map of tags to assign to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_redshift_event_subscription</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Redshift event subscription resource.</description>
+</snippet>

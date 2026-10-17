@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lambda_function_url" "${1:name}" {
+  authorization_type = "${2:authorization_type}"  # Type of authentication that the function URL uses.
+  function_name      = "${3:function_name}"       # Name or ARN of the Lambda function.
+
+  # invoke_mode = ""  # How the Lambda function responds to an invocation.
+  # qualifier   = ""  # Alias name or \$LATEST.
+  # region      = ""  # Region where this resource will be managed.
+  # cors {}  # Cross-origin resource sharing (CORS) settings for the function URL.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_lambda_function_url</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Lambda function URL.</description>
+</snippet>

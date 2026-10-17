@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ses_receipt_rule_set" "${1:name}" {
+  rule_set_name = "${2:rule_set_name}"  # Name of the rule set.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_ses_receipt_rule_set</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an SES receipt rule set resource</description>
+</snippet>

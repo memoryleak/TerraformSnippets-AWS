@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpclattice_target_group" "${1:name}" {
+  name = "${2:name}"  # Name of the target group.
+  type = "${3:type}"  # Type of target group.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value mapping of resource tags.
+  # config {}  # Target group configuration.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_vpclattice_target_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS VPC Lattice Target Group.</description>
+</snippet>

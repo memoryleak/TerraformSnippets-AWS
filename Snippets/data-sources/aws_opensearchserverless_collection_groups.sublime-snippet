@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_opensearchserverless_collection_groups" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_opensearchserverless_collection_groups</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for listing AWS OpenSearch Serverless Collection Groups.</description>
+</snippet>

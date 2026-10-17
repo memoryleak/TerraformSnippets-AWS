@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_redshift_subnet_group" "${1:name}" {
+  name = "${2:name}"  # Name of the cluster subnet group for which information is requested.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_redshift_subnet_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific redshift subnet_group</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_log_delivery_source" "${1:name}" {
+  log_type     = "${2:log_type}"      # The type of log that the source is sending.
+  name         = "${3:name}"          # The name for this delivery source.
+  resource_arn = "${4:resource_arn}"  # The ARN of the AWS resource that is generating and sending logs.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_log_delivery_source</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS CloudWatch Logs Delivery Source.</description>
+</snippet>

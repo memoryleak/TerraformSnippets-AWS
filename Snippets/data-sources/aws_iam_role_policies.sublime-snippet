@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_iam_role_policies" "${1:name}" {
+  role_name = "${2:role_name}"  # Name of the IAM role.
+}
+]]></content>
+<tabTrigger>data_aws_iam_role_policies</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get the names of inline policies associated with an IAM role.</description>
+</snippet>

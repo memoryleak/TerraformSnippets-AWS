@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ssoadmin_account_assignment" "${1:name}" {
+  instance_arn       = "${2:instance_arn}"        # ARN of the SSO Instance.
+  permission_set_arn = "${3:permission_set_arn}"  # ARN of the Permission Set that the admin wants to grant the principal access to.
+  principal_id       = "${4:principal_id}"        # An identifier for an object in SSO, such as a user or group.
+  principal_type     = "${5:principal_type}"      # The entity type for which the assignment will be created.
+  target_id          = "${6:target_id}"           # An AWS account identifier, typically a 10-12 digit string.
+  target_type        = "${7:target_type}"         # The entity type for which the assignment will be created.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ssoadmin_account_assignment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Single Sign-On (SSO) Account Assignment</description>
+</snippet>

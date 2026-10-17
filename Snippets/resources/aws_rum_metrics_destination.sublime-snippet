@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_rum_metrics_destination" "${1:name}" {
+  app_monitor_name = "${2:app_monitor_name}"  # The name of the CloudWatch RUM app monitor that will send the metrics.
+  destination      = "${3:destination}"       # Defines the destination to send the metrics to.
+
+  # destination_arn = ""  # Use this parameter only if Destination is Evidently.
+  # iam_role_arn    = ""  # This parameter is required if Destination is Evidently.
+  # region          = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_rum_metrics_destination</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudWatch RUM Metrics Destination resource.</description>
+</snippet>

@@ -1,0 +1,38 @@
+<snippet>
+<content><![CDATA[
+resource "aws_rds_cluster_instance" "${1:name}" {
+  cluster_identifier = "${2:cluster_identifier}"  # Identifier of the aws_rds_cluster in which to launch this instance.
+  engine             = "${3:engine}"              # Name of the database engine to be used for the RDS cluster instance.
+  instance_class     = "${4:instance_class}"      # Instance class to use.
+
+  # apply_immediately                     = false  # Whether any database modifications are applied immediately, or during the next maintenance window.
+  # auto_minor_version_upgrade            = false  # Whether minor engine upgrades will be applied automatically to the DB instance during the mainten...
+  # availability_zone                     = ""     # EC2 Availability Zone that the DB instance is created in.
+  # ca_cert_identifier                    = ""     # Identifier of the CA certificate for the DB instance.
+  # copy_tags_to_snapshot                 = false  # Whether to copy all of the user-defined tags from the DB instance to snapshots of the DB instance.
+  # custom_iam_instance_profile           = ""     # Instance profile associated with the underlying Amazon EC2 instance of an RDS Custom DB instance.
+  # db_parameter_group_name               = ""     # Name of the DB parameter group to associate with this instance.
+  # db_subnet_group_name                  = ""     # DB subnet group to associate with this DB instance.
+  # engine_version                        = ""     # Database engine version.
+  # force_destroy                         = false  # Forces an instance to be destroyed when a part of a read replica cluster.
+  # identifier                            = ""     # Identifier for the RDS instance, if omitted, Terraform will assign a random, unique identifier.
+  # identifier_prefix                     = ""     # Creates a unique identifier beginning with the specified prefix.
+  # monitoring_interval                   = 0      # Interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB in...
+  # monitoring_role_arn                   = ""     # ARN for the IAM role that permits RDS to send enhanced monitoring metrics to CloudWatch Logs.
+  # performance_insights_enabled          = false  # Whether Performance Insights is enabled.
+  # performance_insights_kms_key_id       = ""     # ARN for the KMS key to encrypt Performance Insights data.
+  # performance_insights_retention_period = 0      # Amount of time in days to retain Performance Insights data.
+  # preferred_backup_window               = ""     # Daily time range during which automated backups are created if automated backups are enabled.
+  # preferred_maintenance_window          = ""     # Window to perform maintenance in.
+  # promotion_tier                        = 0      # Default 0.
+  # publicly_accessible                   = false  # Bool to control if instance is publicly accessible.
+  # region                                = ""     # Region where this resource will be managed.
+  # tags                                  = {}     # Map of tags to assign to the instance.
+  # warning_event_categories              = []     # Set of RDS event categories (for example failure, maintenance) to check for after create and upda...
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_rds_cluster_instance</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an RDS Cluster Resource Instance</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_codeguruprofiler_profiling_group" "${1:name}" {
+  name = "${2:name}"  # Name of the profiling group.
+
+  # compute_platform = ""  # Compute platform of the profiling group.
+  # region           = ""  # Region where this resource will be managed.
+  # tags             = {}  # Map of tags assigned to the resource.
+  # agent_orchestration_config {}  # Specifies whether profiling is enabled or disabled for the created profiling.
+}
+]]></content>
+<tabTrigger>aws_codeguruprofiler_profiling_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS CodeGuru Profiler Profiling Group.</description>
+</snippet>

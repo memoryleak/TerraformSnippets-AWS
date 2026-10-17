@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_networkmanager_link" "${1:name}" {
+  global_network_id = "${2:global_network_id}"  # ID of the global network.
+  site_id           = "${3:site_id}"            # ID of the site.
+  bandwidth {
+  }
+
+  # description   = ""  # Description of the link.
+  # provider_name = ""  # Provider of the link.
+  # tags          = {}  # Key-value tags for the link.
+  # type          = ""  # Type of the link.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_networkmanager_link</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Network Manager link.</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_appconfig_configuration_profile" "${1:name}" {
+  application_id           = "${2:application_id}"            # ID of the AppConfig application to which this configuration profile belongs.
+  configuration_profile_id = "${3:configuration_profile_id}"  # ID of the Configuration Profile.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_appconfig_configuration_profile</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS AppConfig Configuration Profile.</description>
+</snippet>

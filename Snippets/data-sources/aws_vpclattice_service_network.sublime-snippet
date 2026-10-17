@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_vpclattice_service_network" "${1:name}" {
+  service_network_identifier = "${2:service_network_identifier}"  # Identifier of the service network.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_vpclattice_service_network</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS VPC Lattice Service Network.</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lightsail_lb_certificate_attachment" "${1:name}" {
+  certificate_name = "${2:certificate_name}"  # Name of your SSL/TLS certificate.
+  lb_name          = "${3:lb_name}"           # Name of the load balancer to which you want to associate the SSL/TLS certificate.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_lightsail_lb_certificate_attachment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Lightsail Load Balancer Certificate attachment to a Lightsail Load Balancer.</description>
+</snippet>

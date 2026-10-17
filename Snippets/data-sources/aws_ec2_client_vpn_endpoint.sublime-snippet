@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_ec2_client_vpn_endpoint" "${1:name}" {
+  # client_vpn_endpoint_id = ""  # ID of the Client VPN endpoint.
+  # region                 = ""  # Region where this resource will be managed.
+  # tags                   = {}  # Map of tags, each pair of which must exactly match a pair on the desired endpoint.
+  # filter {}  # One or more configuration blocks containing name-values filters.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_ec2_client_vpn_endpoint</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on an EC2 Client VPN endpoint</description>
+</snippet>

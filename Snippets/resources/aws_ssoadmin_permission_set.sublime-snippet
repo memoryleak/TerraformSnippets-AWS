@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ssoadmin_permission_set" "${1:name}" {
+  instance_arn = "${2:instance_arn}"  # ARN of the SSO Instance under which the operation will be executed.
+  name         = "${3:name}"          # The name of the Permission Set.
+
+  # description      = ""  # The description of the Permission Set.
+  # region           = ""  # Region where this resource will be managed.
+  # relay_state      = ""  # The relay state URL used to redirect users within the application during the federation authentic...
+  # session_duration = ""  # The length of time that the application user sessions are valid in the ISO-8601 standard.
+  # tags             = {}  # Key-value map of resource tags.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ssoadmin_permission_set</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Single Sign-On (SSO) Permission Set</description>
+</snippet>

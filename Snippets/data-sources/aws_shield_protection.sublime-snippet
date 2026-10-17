@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_shield_protection" "${1:name}" {
+  # protection_id = ""  # Unique identifier for the protection.
+  # resource_arn  = ""  # ARN of the resource being protected.
+}
+]]></content>
+<tabTrigger>data_aws_shield_protection</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS Shield Protection.</description>
+</snippet>

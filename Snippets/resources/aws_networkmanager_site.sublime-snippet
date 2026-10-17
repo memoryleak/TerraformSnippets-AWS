@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_networkmanager_site" "${1:name}" {
+  global_network_id = "${2:global_network_id}"  # ID of the Global Network to create the site in.
+
+  # description = ""  # Description of the Site.
+  # tags        = {}  # Key-value tags for the Site.
+  # location {}  # Site location.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_networkmanager_site</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Network Manager site.</description>
+</snippet>

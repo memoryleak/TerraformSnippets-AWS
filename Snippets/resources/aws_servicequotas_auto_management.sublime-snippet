@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_servicequotas_auto_management" "${1:name}" {
+  opt_in_level = "${2:opt_in_level}"  # The opt-in level for Automatic Management.
+  opt_in_type  = "${3:opt_in_type}"   # The opt-in type for Automatic Management.
+
+  # exclusion_list   = {}  # Map of AWS services excluded from Automatic Management.
+  # notification_arn = ""  # The AWS User Notifications ARN for Automatic Management notifications.
+  # region           = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_servicequotas_auto_management</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages AWS Service Quotas Automatic Management.</description>
+</snippet>

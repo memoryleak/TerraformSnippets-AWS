@@ -1,0 +1,28 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpc_ipam_pool" "${1:name}" {
+  address_family = "${2:address_family}"  # IP protocol assigned to this pool.
+  ipam_scope_id  = "${3:ipam_scope_id}"   # ID of the scope in which you would like to create the IPAM pool.
+
+  # allocation_default_netmask_length = 0      # Default netmask length for allocations added to this pool.
+  # allocation_max_netmask_length     = 0      # Maximum netmask length that will be required for CIDR allocations in this pool.
+  # allocation_min_netmask_length     = 0      # Minimum netmask length that will be required for CIDR allocations in this pool.
+  # allocation_resource_tags          = {}     # Tags that are required for resources that use CIDRs from this IPAM pool.
+  # auto_import                       = false  # Whether to automatically import any VPCs you have in your scope that fall within the CIDR range i...
+  # aws_service                       = ""     # Limits which AWS service the pool can be used in.
+  # cascade                           = false  # Whether to quickly delete an IPAM pool and all resources within that pool, including provisioned...
+  # description                       = ""     # Description for the IPAM pool.
+  # locale                            = ""     # Locale in which you would like to create the IPAM pool.
+  # public_ip_source                  = ""     # IP address source for pools in the public scope.
+  # publicly_advertisable             = false  # Whether IPv6 pool space is publicly advertisable over the internet.
+  # region                            = ""     # Region where this resource will be managed.
+  # source_ipam_pool_id               = ""     # ID of the source IPAM pool.
+  # tags                              = {}     # Map of tags to assign to the resource.
+  # source_resource {}  # Resource to use to use to configure a resource planning IPAM Pool.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_vpc_ipam_pool</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a IP address pool resource for IPAM.</description>
+</snippet>

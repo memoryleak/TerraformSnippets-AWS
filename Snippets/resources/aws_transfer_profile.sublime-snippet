@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_transfer_profile" "${1:name}" {
+  as2_id       = "${2:as2_id}"        # AS2 name as defined in RFC 4130.
+  profile_type = "${3:profile_type}"  # Profile type.
+
+  # certificate_ids = []  # List of certificate IDs from the imported certificate operation.
+  # region          = ""  # Region where this resource will be managed.
+  # tags            = {}  # Map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_transfer_profile</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a AWS Transfer AS2 Profile Resource</description>
+</snippet>

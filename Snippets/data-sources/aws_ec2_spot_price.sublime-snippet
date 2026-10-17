@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_ec2_spot_price" "${1:name}" {
+  # availability_zone = ""  # Availability zone in which to query Spot price information.
+  # instance_type     = ""  # Type of instance for which to query Spot Price information.
+  # region            = ""  # Region where this resource will be managed.
+  # filter {}  # One or more configuration blocks containing name-values filters.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_ec2_spot_price</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Information about most recent Spot Price for a given EC2 instance.</description>
+</snippet>

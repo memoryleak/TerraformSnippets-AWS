@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+data "aws_route_table" "${1:name}" {
+  # gateway_id     = ""  # ID of an Internet Gateway or Virtual Private Gateway which is connected to the Route Table (not e...
+  # region         = ""  # Region where this resource will be managed.
+  # route_table_id = ""  # ID of the specific Route Table to retrieve.
+  # subnet_id      = ""  # ID of a Subnet which is connected to the Route Table (not exported if not passed as a parameter).
+  # tags           = {}  # Map of tags, each pair of which must exactly match a pair on the desired Route Table.
+  # vpc_id         = ""  # ID of the VPC that the desired Route Table belongs to.
+  # filter {}  # Configuration block.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_route_table</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific Route Table</description>
+</snippet>

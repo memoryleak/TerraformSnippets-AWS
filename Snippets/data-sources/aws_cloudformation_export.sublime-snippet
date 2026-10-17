@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_cloudformation_export" "${1:name}" {
+  name = "${2:name}"  # Name of the export as it appears in the console or from list-exports
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_cloudformation_export</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides metadata of a CloudFormation Export (e.g., Cross Stack References)</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ram_principal_association" "${1:name}" {
+  principal          = "${2:principal}"           # Principal to associate with the resource share.
+  resource_share_arn = "${3:resource_share_arn}"  # ARN of the resource share.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_ram_principal_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Resource Access Manager (RAM) principal association.</description>
+</snippet>

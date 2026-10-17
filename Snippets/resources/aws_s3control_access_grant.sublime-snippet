@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3control_access_grant" "${1:name}" {
+  access_grants_location_id = "${2:access_grants_location_id}"  # ID of the S3 Access Grants location to with the access grant is giving access.
+  permission                = "${3:permission}"                 # Access grant's level of access.
+
+  # account_id     = ""  # AWS account ID for the S3 Access Grants location.
+  # region         = ""  # Region where this resource will be managed.
+  # s3_prefix_type = ""  # If you are creating an access grant that grants access to only one object, set this to Object.
+  # tags           = {}  # Key-value map of resource tags.
+  # access_grants_location_configuration {}  # See access_grants_location_configuration Block below for more details.
+  # grantee {}  # See grantee Block below for more details.
+}
+]]></content>
+<tabTrigger>aws_s3control_access_grant</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage an S3 Access Grant.</description>
+</snippet>

@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_redshift_snapshot_copy" "${1:name}" {
+  cluster_identifier = "${2:cluster_identifier}"  # Identifier of the source cluster.
+  destination_region = "${3:destination_region}"  # AWS Region to copy snapshots to.
+
+  # manual_snapshot_retention_period = 0   # Number of days to retain newly copied snapshots in the destination AWS Region after they are copi...
+  # region                           = ""  # Region where this resource will be managed.
+  # retention_period                 = 0   # Number of days to retain automated snapshots in the destination region after they are copied from...
+  # snapshot_copy_grant_name         = ""  # Name of the snapshot copy grant to use when snapshots of an AWS KMS-encrypted cluster are copied...
+}
+]]></content>
+<tabTrigger>aws_redshift_snapshot_copy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Redshift Snapshot Copy.</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_accountaccess_entitlement" "${1:name}" {
+  application_arn = "${2:application_arn}"  # ARN of the parent Account Access Application.
+
+  # region = ""  # Region where this resource will be managed.
+  # entitlement {}  # Entitlement configuration.
+}
+]]></content>
+<tabTrigger>aws_accountaccess_entitlement</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Account Access Entitlement granting an Identity Center principal access to an IAM...</description>
+</snippet>

@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_codecommit_repository" "${1:name}" {
+  repository_name = "${2:repository_name}"  # The name for the repository.
+
+  # default_branch = ""  # The default branch of the repository.
+  # description    = ""  # The description of the repository.
+  # kms_key_id     = ""  # The ARN of the encryption key.
+  # region         = ""  # Region where this resource will be managed.
+  # tags           = {}  # Key-value map of resource tags.
+}
+]]></content>
+<tabTrigger>aws_codecommit_repository</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CodeCommit Repository Resource.</description>
+</snippet>

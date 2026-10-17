@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appsync_type" "${1:name}" {
+  api_id     = "${2:api_id}"      # GraphQL API ID.
+  definition = "${3:definition}"  # Type definition.
+  format     = "${4:format}"      # Type format: SDL or JSON.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_appsync_type</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AppSync Type.</description>
+</snippet>

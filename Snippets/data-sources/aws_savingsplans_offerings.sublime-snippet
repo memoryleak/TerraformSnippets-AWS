@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+data "aws_savingsplans_offerings" "${1:name}" {
+  # currencies      = []  # List of currencies.
+  # descriptions    = []  # List of descriptions.
+  # durations       = []  # List of durations, in seconds.
+  # offering_ids    = []  # List of offering IDs.
+  # operations      = []  # List of operations.
+  # payment_options = []  # List of payment options.
+  # plan_types      = []  # List of plan types.
+  # product_type    = ""  # Product type.
+  # service_codes   = []  # List of service codes.
+  # usage_types     = []  # List of usage types.
+  # filter {}  # List of filters.
+}
+]]></content>
+<tabTrigger>data_aws_savingsplans_offerings</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Data source for getting AWS Savings Plans Offerings.</description>
+</snippet>

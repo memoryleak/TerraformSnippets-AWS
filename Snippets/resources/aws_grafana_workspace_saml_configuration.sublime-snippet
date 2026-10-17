@@ -1,0 +1,25 @@
+<snippet>
+<content><![CDATA[
+resource "aws_grafana_workspace_saml_configuration" "${1:name}" {
+  editor_role_values = [${2}]               # Editor role values.
+  workspace_id       = "${3:workspace_id}"  # Workspace ID.
+
+  # admin_role_values       = []  # Admin role values.
+  # allowed_organizations   = []  # Allowed organizations.
+  # email_assertion         = ""  # Email assertion.
+  # groups_assertion        = ""  # Groups assertion.
+  # idp_metadata_url        = ""  # IDP Metadata URL.
+  # idp_metadata_xml        = ""  # IDP Metadata XML.
+  # login_assertion         = ""  # Login assertion.
+  # login_validity_duration = 0   # Login validity duration.
+  # name_assertion          = ""  # Name assertion.
+  # org_assertion           = ""  # Org assertion.
+  # region                  = ""  # Region where this resource will be managed.
+  # role_assertion          = ""  # Role assertion.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_grafana_workspace_saml_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Amazon Managed Grafana workspace SAML configuration resource.</description>
+</snippet>

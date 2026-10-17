@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cleanrooms_membership" "${1:name}" {
+  collaboration_id = "${2:collaboration_id}"  # - The ID of the collaboration to which the member was invited.
+  query_log_status = "${3:query_log_status}"  # - An indicator as to whether query logging has been enabled or disabled for the membership.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # - Key value pairs which tag the membership.
+  # default_result_configuration {}  # - The default configuration for a query result.
+  # payment_configuration {}
+}
+]]></content>
+<tabTrigger>aws_cleanrooms_membership</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Clean Rooms Membership.</description>
+</snippet>

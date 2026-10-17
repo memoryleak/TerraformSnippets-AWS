@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_pinpoint_gcm_channel" "${1:name}" {
+  application_id = "${2:application_id}"  # Application ID.
+
+  # api_key                       = ""     # Platform credential API key from Google.
+  # default_authentication_method = ""     # Default authentication method used for GCM.
+  # enabled                       = false  # Whether the channel is enabled or disabled.
+  # region                        = ""     # Region where this resource will be managed.
+  # service_json                  = ""     # Service Account JSON from Google to use with the GCM API.
+}
+]]></content>
+<tabTrigger>aws_pinpoint_gcm_channel</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an End User Messaging GCM Channel resource.</description>
+</snippet>

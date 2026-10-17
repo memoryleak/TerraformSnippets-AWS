@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_arcregionswitch_plan" "${1:name}" {
+  arn = "${2:arn}"  # ARN of the ARC Region Switch Plan.
+}
+]]></content>
+<tabTrigger>data_aws_arcregionswitch_plan</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an Amazon ARC Region Switch plan.</description>
+</snippet>

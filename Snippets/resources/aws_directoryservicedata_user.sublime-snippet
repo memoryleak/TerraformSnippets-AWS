@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_directoryservicedata_user" "${1:name}" {
+  directory_id     = "${2:directory_id}"      # ID of the Directory that's associated with the user.
+  sam_account_name = "${3:sam_account_name}"  # SAM account name of the user.
+
+  # email_address = ""  # Email address of the user.
+  # given_name    = ""  # First name of the user.
+  # region        = ""  # Region where the user is managed.
+  # surname       = ""  # Last name of the user.
+}
+]]></content>
+<tabTrigger>aws_directoryservicedata_user</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a user in an AWS Directory Service directory.</description>
+</snippet>

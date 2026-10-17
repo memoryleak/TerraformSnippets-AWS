@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_ec2_coip_pools" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Mapping of tags, each pair of which must exactly match
+  # filter {}  # Custom filter block as described below.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_ec2_coip_pools</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides information for multiple EC2 Customer-Owned IP Pools</description>
+</snippet>

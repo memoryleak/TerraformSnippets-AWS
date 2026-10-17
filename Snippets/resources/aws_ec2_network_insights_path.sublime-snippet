@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_network_insights_path" "${1:name}" {
+  protocol = "${2:protocol}"  # Protocol to use for analysis.
+  source   = "${3:source}"    # ID or ARN of the resource which is the source of the path.
+
+  # destination      = ""  # ID or ARN of the resource which is the destination of the path.
+  # destination_ip   = ""  # IP address of the destination resource.
+  # destination_port = 0   # Destination port to analyze access to.
+  # region           = ""  # Region where this resource will be managed.
+  # source_ip        = ""  # IP address of the source resource.
+  # tags             = {}  # Map of tags to assign to the resource.
+  # filter_at_destination {}  # Scopes the analysis to network paths that match specific filters at the destination.
+  # filter_at_source {}  # Scopes the analysis to network paths that match specific filters at the source.
+}
+]]></content>
+<tabTrigger>aws_ec2_network_insights_path</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Network Insights Path resource.</description>
+</snippet>

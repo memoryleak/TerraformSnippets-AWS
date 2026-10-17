@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_paymentcryptography_key" "${1:name}" {
+  exportable = ${2:false}  # Whether the key is exportable from the service.
+
+  # deletion_window_in_days   = 0      # Number of days between 3 and 180 to wait after the resource is deleted before the key is deleted.
+  # enabled                   = false  # Whether to enable the key.
+  # key_check_value_algorithm = ""     # Algorithm that AWS Payment Cryptography uses to calculate the key check value (KCV).
+  # region                    = ""     # Region where this resource will be managed.
+  # tags                      = {}     # Map of tags assigned to the key.
+  # key_attributes {}  # Role of the key, the algorithm it supports, and the cryptographic operations allowed with the key.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_paymentcryptography_key</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Payment Cryptography Control Plane Key.</description>
+</snippet>

@@ -1,0 +1,29 @@
+<snippet>
+<content><![CDATA[
+resource "aws_msk_cluster" "${1:name}" {
+  cluster_name           = "${2:cluster_name}"   # Name of the MSK cluster.
+  kafka_version          = "${3:kafka_version}"  # Desired Kafka software version.
+  number_of_broker_nodes = ${4:0}                # Desired total number of broker nodes in the kafka cluster.
+  broker_node_group_info {
+    client_subnets  = [${5}]
+    instance_type   = "${6:instance_type}"
+    security_groups = [${7}]
+  }
+
+  # enhanced_monitoring = ""  # Desired enhanced MSK CloudWatch monitoring level.
+  # region              = ""  # Region where this resource will be managed.
+  # storage_mode        = ""  # Controls storage mode for supported storage tiers.
+  # tags                = {}  # Map of tags to assign to the resource.
+  # client_authentication {}  # Configuration block for specifying a client authentication.
+  # configuration_info {}  # Configuration block for specifying an MSK Configuration to attach to Kafka brokers.
+  # encryption_info {}  # Configuration block for specifying encryption.
+  # logging_info {}  # Configuration block for streaming broker logs to Cloudwatch/S3/Kinesis Firehose.
+  # open_monitoring {}  # Configuration block for JMX and Node monitoring for the MSK cluster.
+  # rebalancing {}  # Configuration block for intelligent rebalancing.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_msk_cluster</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Managed Streaming for Kafka cluster.</description>
+</snippet>

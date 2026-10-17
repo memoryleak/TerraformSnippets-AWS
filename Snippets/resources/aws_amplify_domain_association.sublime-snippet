@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_amplify_domain_association" "${1:name}" {
+  app_id      = "${2:app_id}"       # Unique ID for an Amplify app.
+  domain_name = "${3:domain_name}"  # Domain name for the domain association.
+  sub_domain {
+    branch_name = "${4:branch_name}"
+    prefix      = "${5:prefix}"
+  }
+
+  # enable_auto_sub_domain = false  # Enables the automated creation of subdomains for branches.
+  # region                 = ""     # Region where this resource will be managed.
+  # wait_for_verification  = false  # If enabled, the resource will wait for the domain association status to change to PENDING_DEPLOYM...
+  # certificate_settings {}  # The type of SSL/TLS certificate to use for your custom domain.
+}
+]]></content>
+<tabTrigger>aws_amplify_domain_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Amplify Domain Association resource.</description>
+</snippet>

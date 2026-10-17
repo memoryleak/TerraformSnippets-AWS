@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_availability_zone_group" "${1:name}" {
+  group_name    = "${2:group_name}"     # Name of the Availability Zone Group.
+  opt_in_status = "${3:opt_in_status}"  # Indicates whether to enable or disable Availability Zone Group.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_ec2_availability_zone_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an EC2 Availability Zone Group.</description>
+</snippet>

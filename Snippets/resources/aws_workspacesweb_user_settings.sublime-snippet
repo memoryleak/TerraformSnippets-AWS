@@ -1,0 +1,24 @@
+<snippet>
+<content><![CDATA[
+resource "aws_workspacesweb_user_settings" "${1:name}" {
+  copy_allowed     = "${2:copy_allowed}"      # Specifies whether the user can copy text from the streaming session to the local device.
+  download_allowed = "${3:download_allowed}"  # Specifies whether the user can download files from the streaming session to the local device.
+  paste_allowed    = "${4:paste_allowed}"     # Specifies whether the user can paste text from the local device to the streaming session.
+  print_allowed    = "${5:print_allowed}"     # Specifies whether the user can print to the local device.
+  upload_allowed   = "${6:upload_allowed}"    # Specifies whether the user can upload files from the local device to the streaming session.
+
+  # additional_encryption_context      = {}  # Additional encryption context for the user settings.
+  # customer_managed_key               = ""  # ARN of the customer managed KMS key.
+  # deep_link_allowed                  = ""  # Specifies whether the user can use deep links that open automatically when connecting to a session.
+  # disconnect_timeout_in_minutes      = 0   # Amount of time that a streaming session remains active after users disconnect.
+  # idle_disconnect_timeout_in_minutes = 0   # Amount of time that users can be idle before they are disconnected from their streaming session.
+  # region                             = ""  # Region where this resource will be managed.
+  # tags                               = {}  # Map of tags assigned to the resource.
+  # cookie_synchronization_configuration {}  # Configuration that specifies which cookies should be synchronized from the end user's local brows...
+  # toolbar_configuration {}  # Configuration of the toolbar.
+}
+]]></content>
+<tabTrigger>aws_workspacesweb_user_settings</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS WorkSpaces Web User Settings.</description>
+</snippet>

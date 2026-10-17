@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_prometheus_rule_group_namespace" "${1:name}" {
+  data         = "${2:data}"          # the rule group namespace data that you want to be applied.
+  name         = "${3:name}"          # Name of the rule group namespace.
+  workspace_id = "${4:workspace_id}"  # ID of the prometheus workspace the rule group namespace should be linked to.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags assigned to the resource.
+}
+]]></content>
+<tabTrigger>aws_prometheus_rule_group_namespace</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Amazon Managed Service for Prometheus (AMP) Rule Group Namespace</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_egress_only_internet_gateway" "${1:name}" {
+  vpc_id = "${2:vpc_id}"  # The VPC ID to create in.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_egress_only_internet_gateway</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to create an egress-only Internet gateway.</description>
+</snippet>

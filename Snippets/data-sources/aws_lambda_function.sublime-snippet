@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_lambda_function" "${1:name}" {
+  function_name = "${2:function_name}"  # Name of the Lambda function.
+
+  # qualifier = ""  # Alias name or version number of the Lambda function.
+  # region    = ""  # Region where this resource will be managed.
+  # tags      = {}
+}
+]]></content>
+<tabTrigger>data_aws_lambda_function</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an AWS Lambda Function.</description>
+</snippet>

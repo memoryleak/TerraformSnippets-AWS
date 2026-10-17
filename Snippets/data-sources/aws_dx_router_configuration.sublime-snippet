@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_dx_router_configuration" "${1:name}" {
+  router_type_identifier = "${2:router_type_identifier}"  # ID of the Router Type.
+  virtual_interface_id   = "${3:virtual_interface_id}"    # ID of the Direct Connect Virtual Interface
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_dx_router_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS Direct Connect Router Configuration.</description>
+</snippet>

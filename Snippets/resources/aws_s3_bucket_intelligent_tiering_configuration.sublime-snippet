@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3_bucket_intelligent_tiering_configuration" "${1:name}" {
+  bucket = "${2:bucket}"  # Name of the bucket this intelligent tiering configuration is associated with.
+  name   = "${3:name}"    # Unique name used to identify the S3 Intelligent-Tiering configuration for the bucket.
+  tiering {
+    access_tier = "${4:access_tier}"
+    days        = ${5:0}
+  }
+
+  # region = ""  # Region where this resource will be managed.
+  # status = ""  # Status of the configuration.
+  # filter {}  # Bucket filter.
+}
+]]></content>
+<tabTrigger>aws_s3_bucket_intelligent_tiering_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an S3 Intelligent-Tiering configuration resource.</description>
+</snippet>

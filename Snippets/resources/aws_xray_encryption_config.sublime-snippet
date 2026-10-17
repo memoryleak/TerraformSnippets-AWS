@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_xray_encryption_config" "${1:name}" {
+  type = "${2:type}"  # Type of encryption.
+
+  # key_id = ""  # AWS KMS customer master key (CMK) ARN.
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_xray_encryption_config</tabTrigger>
+<scope>source.terraform</scope>
+<description>Creates and manages an AWS XRay Encryption Config.</description>
+</snippet>

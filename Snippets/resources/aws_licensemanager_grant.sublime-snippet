@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_licensemanager_grant" "${1:name}" {
+  allowed_operations = [${2}]              # A list of the allowed operations for the grant.
+  license_arn        = "${3:license_arn}"  # The ARN of the license to grant.
+  name               = "${4:name}"         # The Name of the grant.
+  principal          = "${5:principal}"    # The target account for the grant in the form of the ARN for an account principal of the root user.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_licensemanager_grant</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a License Manager grant resource.</description>
+</snippet>

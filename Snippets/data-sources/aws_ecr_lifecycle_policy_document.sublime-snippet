@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_ecr_lifecycle_policy_document" "${1:name}" {
+  # rule {}
+}
+]]></content>
+<tabTrigger>data_aws_ecr_lifecycle_policy_document</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Generates an ECR lifecycle policy document in JSON format.</description>
+</snippet>

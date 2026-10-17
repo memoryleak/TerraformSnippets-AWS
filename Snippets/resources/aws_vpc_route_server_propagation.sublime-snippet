@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpc_route_server_propagation" "${1:name}" {
+  route_server_id = "${2:route_server_id}"  # Unique identifier for the route server to be associated.
+  route_table_id  = "${3:route_table_id}"   # ID of the route table to which route server will propagate routes.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_vpc_route_server_propagation</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing a VPC Route Server Propagation.</description>
+</snippet>

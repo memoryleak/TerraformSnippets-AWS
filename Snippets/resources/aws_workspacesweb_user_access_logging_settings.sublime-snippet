@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_workspacesweb_user_access_logging_settings" "${1:name}" {
+  kinesis_stream_arn = "${2:kinesis_stream_arn}"  # ARN of the Kinesis stream.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags assigned to the resource.
+}
+]]></content>
+<tabTrigger>aws_workspacesweb_user_access_logging_settings</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS WorkSpaces Web User Access Logging Settings.</description>
+</snippet>

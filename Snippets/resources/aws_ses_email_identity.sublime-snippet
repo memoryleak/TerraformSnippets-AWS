@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ses_email_identity" "${1:name}" {
+  email = "${2:email}"  # Email address to assign to SES.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_ses_email_identity</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an SES email identity resource</description>
+</snippet>

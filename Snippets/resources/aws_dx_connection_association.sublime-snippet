@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dx_connection_association" "${1:name}" {
+  connection_id = "${2:connection_id}"  # The ID of the connection.
+  lag_id        = "${3:lag_id}"         # The ID of the LAG with which to associate the connection.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_dx_connection_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Associates a Direct Connect Connection with a LAG.</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_route53_resolver_rule_association" "${1:name}" {
+  resolver_rule_id = "${2:resolver_rule_id}"  # The ID of the resolver rule that you want to associate with the VPC.
+  vpc_id           = "${3:vpc_id}"            # The ID of the VPC that you want to associate the resolver rule with.
+
+  # name   = ""  # A name for the association that you're creating between a resolver rule and a VPC.
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_route53_resolver_rule_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Route53 Resolver rule association.</description>
+</snippet>

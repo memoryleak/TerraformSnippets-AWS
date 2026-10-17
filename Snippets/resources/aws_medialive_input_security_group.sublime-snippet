@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_medialive_input_security_group" "${1:name}" {
+  whitelist_rules {
+    cidr = "${2:cidr}"
+  }
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags assigned to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_medialive_input_security_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS MediaLive Input Security Group.</description>
+</snippet>

@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sagemaker_hyper_parameter_tuning_job" "${1:name}" {
+  name = "${2:name}"  # Name of the tuning job.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags to assign to this resource.
+  # autotune {}  # Autotune settings.
+  # config {}  # Tuning job settings.
+  # timeouts {}
+  # training_job_definition {}  # Single training job definition for tuning.
+  # training_job_definitions {}  # Multiple training job definitions for tuning.
+  # warm_start_config {}  # Warm start settings.
+}
+]]></content>
+<tabTrigger>aws_sagemaker_hyper_parameter_tuning_job</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS SageMaker AI Hyper Parameter Tuning Job.</description>
+</snippet>

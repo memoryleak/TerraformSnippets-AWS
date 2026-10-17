@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dx_gateway" "${1:name}" {
+  amazon_side_asn = "${2:amazon_side_asn}"  # The ASN to be configured on the Amazon side of the connection.
+  name            = "${3:name}"             # The name of the connection.
+
+  # tags = {}  # Key-value map of resource tags.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_dx_gateway</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Direct Connect Gateway.</description>
+</snippet>

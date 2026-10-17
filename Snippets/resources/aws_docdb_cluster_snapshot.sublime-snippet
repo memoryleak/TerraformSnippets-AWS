@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_docdb_cluster_snapshot" "${1:name}" {
+  db_cluster_identifier          = "${2:db_cluster_identifier}"           # The DocumentDB Cluster Identifier from which to take the snapshot.
+  db_cluster_snapshot_identifier = "${3:db_cluster_snapshot_identifier}"  # The Identifier for the snapshot.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_docdb_cluster_snapshot</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a DocumentDB database cluster snapshot.</description>
+</snippet>

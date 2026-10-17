@@ -1,0 +1,24 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dx_hosted_transit_virtual_interface" "${1:name}" {
+  address_family   = "${2:address_family}"    # The address family for the BGP peer.
+  connection_id    = "${3:connection_id}"     # The ID of the Direct Connect connection (or LAG) on which to create the virtual interface.
+  name             = "${4:name}"              # The name for the virtual interface.
+  owner_account_id = "${5:owner_account_id}"  # The AWS account that will own the new virtual interface.
+  vlan             = ${6:0}                   # The VLAN ID.
+
+  # amazon_address   = ""  # The IPv4 CIDR address to use to send traffic to Amazon.
+  # bgp_asn          = 0   # BGP autonomous system number as an integer between 1 and 2147483646.
+  # bgp_asn_long     = ""  # BGP autonomous system number as an asplain decimal string between 1 and 4294967294.
+  # bgp_auth_key     = ""  # The authentication key for BGP configuration.
+  # customer_address = ""  # The IPv4 CIDR destination address to which Amazon should send traffic.
+  # mtu              = 0   # The maximum transmission unit (MTU) is the size, in bytes, of the largest permissible packet that...
+  # rate_limit       = ""  # Maximum bandwidth allocation for the virtual interface, restricting the bandwidth it can use on t...
+  # region           = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_dx_hosted_transit_virtual_interface</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Direct Connect hosted transit virtual interface resource.</description>
+</snippet>

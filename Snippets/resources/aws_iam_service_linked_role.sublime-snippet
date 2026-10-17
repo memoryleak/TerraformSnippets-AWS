@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iam_service_linked_role" "${1:name}" {
+  aws_service_name = "${2:aws_service_name}"  # The AWS service to which this role is attached.
+
+  # custom_suffix = ""  # Additional string appended to the role name.
+  # description   = ""  # The description of the role.
+  # tags          = {}  # Key-value mapping of tags for the IAM role.
+}
+]]></content>
+<tabTrigger>aws_iam_service_linked_role</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an IAM service-linked role.</description>
+</snippet>

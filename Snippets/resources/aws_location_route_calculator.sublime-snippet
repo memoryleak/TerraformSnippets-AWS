@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_location_route_calculator" "${1:name}" {
+  calculator_name = "${2:calculator_name}"  # The name of the route calculator resource.
+  data_source     = "${3:data_source}"      # Specifies the data provider of traffic and road network data.
+
+  # description = ""  # The optional description for the route calculator resource.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Key-value tags for the route calculator.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_location_route_calculator</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Location Service Route Calculator.</description>
+</snippet>

@@ -1,0 +1,28 @@
+<snippet>
+<content><![CDATA[
+resource "aws_budgets_budget_action" "${1:name}" {
+  action_type        = "${2:action_type}"         # Type of action.
+  approval_model     = "${3:approval_model}"      # Whether the action needs manual or automatic approval.
+  budget_name        = "${4:budget_name}"         # Name of a budget.
+  execution_role_arn = "${5:execution_role_arn}"  # Role passed for action execution and reversion.
+  notification_type  = "${6:notification_type}"   # Type of a notification.
+  action_threshold {
+    action_threshold_type  = "${7:action_threshold_type}"
+    action_threshold_value = ${8:0}
+  }
+  definition {
+  }
+  subscriber {
+    address           = "${9:address}"
+    subscription_type = "${10:subscription_type}"
+  }
+
+  # account_id = ""  # ID of the target account for the budget.
+  # tags       = {}  # Map of tags assigned to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_budgets_budget_action</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a budget action resource.</description>
+</snippet>

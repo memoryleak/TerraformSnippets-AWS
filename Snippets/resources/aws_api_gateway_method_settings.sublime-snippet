@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_api_gateway_method_settings" "${1:name}" {
+  method_path = "${2:method_path}"  # Method path defined as {resource_path}/{http_method} for an individual method override, or */* fo...
+  rest_api_id = "${3:rest_api_id}"  # ID of the REST API
+  stage_name  = "${4:stage_name}"   # Name of the stage
+  settings {
+  }
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_api_gateway_method_settings</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages API Gateway Stage Method Settings</description>
+</snippet>

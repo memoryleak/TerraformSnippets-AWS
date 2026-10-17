@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3control_bucket_lifecycle_configuration" "${1:name}" {
+  bucket = "${2:bucket}"  # ARN of the bucket.
+  rule {
+  }
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_s3control_bucket_lifecycle_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an S3 Control Bucket Lifecycle Configuration.</description>
+</snippet>

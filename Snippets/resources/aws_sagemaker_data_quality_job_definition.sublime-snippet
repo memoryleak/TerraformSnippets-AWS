@@ -1,0 +1,36 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sagemaker_data_quality_job_definition" "${1:name}" {
+  role_arn = "${2:role_arn}"  # ARN of an IAM role that Amazon SageMaker AI can assume to perform tasks on your behalf.
+  data_quality_app_specification {
+    image_uri = "${3:image_uri}"
+  }
+  data_quality_job_input {
+  }
+  data_quality_job_output_config {
+    monitoring_outputs {
+      s3_output {
+        s3_uri = "${4:s3_uri}"
+      }
+    }
+  }
+  job_resources {
+    cluster_config {
+      instance_count    = ${5:0}
+      instance_type     = "${6:instance_type}"
+      volume_size_in_gb = ${7:0}
+    }
+  }
+
+  # name   = ""  # The name of the data quality job definition.
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # A mapping of tags to assign to the resource.
+  # data_quality_baseline_config {}  # Configures the constraints and baselines for the monitoring job.
+  # network_config {}  # Specifies networking configuration for the monitoring job.
+  # stopping_condition {}  # A time limit for how long the monitoring job is allowed to run before stopping.
+}
+]]></content>
+<tabTrigger>aws_sagemaker_data_quality_job_definition</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a SageMaker AI Data Quality Job Definition resource.</description>
+</snippet>

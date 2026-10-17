@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+data "aws_s3_objects" "${1:name}" {
+  bucket = "${2:bucket}"  # Lists object keys in this S3 bucket.
+
+  # delimiter     = ""     # Character used to group keys (Default: none)
+  # encoding_type = ""     # Encodes keys using this method (Default: none; besides none, only "url" can be used)
+  # fetch_owner   = false  # Boolean specifying whether to populate the owner list (Default: false)
+  # max_keys      = 0      # Maximum object keys to return (Default: 1000)
+  # prefix        = ""     # Limits results to object keys with this prefix (Default: none)
+  # region        = ""     # Region where this resource will be managed.
+  # request_payer = ""     # Confirms that the requester knows that they will be charged for the request.
+  # start_after   = ""     # Returns key names lexicographically after a specific object key in your bucket (Default: none; S3...
+}
+]]></content>
+<tabTrigger>data_aws_s3_objects</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Returns keys and metadata of S3 objects</description>
+</snippet>

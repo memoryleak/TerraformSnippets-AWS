@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+resource "aws_connect_instance" "${1:name}" {
+  identity_management_type = "${2:identity_management_type}"  # Specifies the identity management type attached to the instance.
+  inbound_calls_enabled    = ${3:false}                       # Specifies whether inbound calls are enabled.
+  outbound_calls_enabled   = ${4:false}                       # Specifies whether outbound calls are enabled.
+
+  # auto_resolve_best_voices_enabled = false  # Specifies whether auto resolve best voices is enabled.
+  # contact_flow_logs_enabled        = false  # Specifies whether contact flow logs are enabled.
+  # contact_lens_enabled             = false  # Specifies whether contact lens is enabled.
+  # directory_id                     = ""     # The identifier for the directory if identity_management_type is EXISTING_DIRECTORY.
+  # early_media_enabled              = false  # Specifies whether early media for outbound calls is enabled .
+  # instance_alias                   = ""     # Specifies the name of the instance.
+  # multi_party_conference_enabled   = false  # Specifies whether multi-party calls/conference is enabled.
+  # region                           = ""     # Region where this resource will be managed.
+  # tags                             = {}     # Tags to apply to the Instance.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_connect_instance</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides details about a specific Connect Instance.</description>
+</snippet>

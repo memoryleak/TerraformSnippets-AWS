@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_s3_bucket_replication_configuration" "${1:name}" {
+  bucket = "${2:bucket}"  # Name of the bucket to get the replication configuration for.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_s3_bucket_replication_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS S3 (Simple Storage) Bucket Replication Configuration.</description>
+</snippet>

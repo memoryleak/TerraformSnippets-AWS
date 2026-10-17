@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sagemaker_endpoint" "${1:name}" {
+  endpoint_config_name = "${2:endpoint_config_name}"  # The name of the endpoint configuration to use.
+
+  # name   = ""  # The name of the endpoint.
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # A map of tags to assign to the resource.
+  # deployment_config {}  # The deployment configuration for an endpoint, which contains the desired deployment strategy and...
+}
+]]></content>
+<tabTrigger>aws_sagemaker_endpoint</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a SageMaker AI Endpoint resource.</description>
+</snippet>

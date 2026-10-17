@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_quicksight_template_alias" "${1:name}" {
+  alias_name              = "${2:alias_name}"   # Display name of the template alias.
+  template_id             = "${3:template_id}"  # ID of the template.
+  template_version_number = ${4:0}              # Version number of the template.
+
+  # aws_account_id = ""  # AWS account ID.
+  # region         = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_quicksight_template_alias</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS QuickSight Template Alias.</description>
+</snippet>

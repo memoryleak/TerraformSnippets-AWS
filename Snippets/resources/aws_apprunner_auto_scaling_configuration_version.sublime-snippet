@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_apprunner_auto_scaling_configuration_version" "${1:name}" {
+  auto_scaling_configuration_name = "${2:auto_scaling_configuration_name}"  # Name of the auto scaling configuration.
+
+  # max_concurrency = 0   # Maximal number of concurrent requests that you want an instance to process.
+  # max_size        = 0   # Maximal number of instances that App Runner provisions for your service.
+  # min_size        = 0   # Minimal number of instances that App Runner provisions for your service.
+  # region          = ""  # Region where this resource will be managed.
+  # tags            = {}  # Key-value map of resource tags.
+}
+]]></content>
+<tabTrigger>aws_apprunner_auto_scaling_configuration_version</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an App Runner AutoScaling Configuration Version.</description>
+</snippet>

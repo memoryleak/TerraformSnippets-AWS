@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ivs_channel" "${1:name}" {
+  # authorized                  = false  # If true, channel is private (enabled for playback authorization).
+  # latency_mode                = ""     # Channel latency mode.
+  # name                        = ""     # Channel name.
+  # recording_configuration_arn = ""     # Recording configuration ARN.
+  # region                      = ""     # Region where this resource will be managed.
+  # tags                        = {}     # A map of tags to assign to the resource.
+  # type                        = ""     # Channel type, which determines the allowable resolution and bitrate.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ivs_channel</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS IVS (Interactive Video) Channel.</description>
+</snippet>

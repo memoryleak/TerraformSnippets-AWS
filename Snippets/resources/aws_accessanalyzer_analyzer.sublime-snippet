@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_accessanalyzer_analyzer" "${1:name}" {
+  analyzer_name = "${2:analyzer_name}"  # Name of the Analyzer.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value map of resource tags.
+  # type   = ""  # Type that represents the zone of trust or scope for the analyzer.
+  # configuration {}  # A block that specifies the configuration of the analyzer.
+}
+]]></content>
+<tabTrigger>aws_accessanalyzer_analyzer</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Access Analyzer Analyzer</description>
+</snippet>

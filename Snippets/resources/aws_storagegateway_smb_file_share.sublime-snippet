@@ -1,0 +1,37 @@
+<snippet>
+<content><![CDATA[
+resource "aws_storagegateway_smb_file_share" "${1:name}" {
+  gateway_arn  = "${2:gateway_arn}"   # ARN of the file gateway.
+  location_arn = "${3:location_arn}"  # The ARN of the backed storage used for storing file data.
+  role_arn     = "${4:role_arn}"      # The ARN of the AWS Identity and Access Management (IAM) role that a file gateway assumes when it...
+
+  # access_based_enumeration = false  # The files and folders on this share will only be visible to users with read access.
+  # admin_user_list          = []     # A list of users in the Active Directory that have admin access to the file share.
+  # audit_destination_arn    = ""     # ARN of the CloudWatch Log Group used for the audit logs.
+  # authentication           = ""     # The authentication method that users use to access the file share.
+  # bucket_region            = ""     # The region of the S3 buck used by the file share.
+  # case_sensitivity         = ""     # The case of an object name in an Amazon S3 bucket.
+  # default_storage_class    = ""     # The default storage class for objects put into an Amazon S3 bucket by the file gateway.
+  # file_share_name          = ""     # The name of the file share.
+  # guess_mime_type_enabled  = false  # Boolean value that enables guessing of the MIME type for uploaded objects based on file extensions.
+  # invalid_user_list        = []     # A list of users in the Active Directory that are not allowed to access the file share.
+  # kms_encrypted            = false  # Boolean value if true to use Amazon S3 server side encryption with your own AWS KMS key, or false...
+  # kms_key_arn              = ""     # ARN for KMS key used for Amazon S3 server side encryption.
+  # notification_policy      = ""     # The notification policy of the file share.
+  # object_acl               = ""     # Access Control List permission for S3 objects.
+  # oplocks_enabled          = false  # Boolean to indicate Opportunistic lock (oplock) status.
+  # read_only                = false  # Boolean to indicate write status of file share.
+  # region                   = ""     # Region where this resource will be managed.
+  # requester_pays           = false  # Boolean who pays the cost of the request and the data download from the Amazon S3 bucket.
+  # smb_acl_enabled          = false  # Set this value to true to enable ACL (access control list) on the SMB fileshare.
+  # tags                     = {}     # Key-value map of resource tags.
+  # valid_user_list          = []     # A list of users in the Active Directory that are allowed to access the file share.
+  # vpc_endpoint_dns_name    = ""     # The DNS name of the VPC endpoint for S3 private link.
+  # cache_attributes {}  # Refresh cache information.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_storagegateway_smb_file_share</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Storage Gateway SMB File Share</description>
+</snippet>

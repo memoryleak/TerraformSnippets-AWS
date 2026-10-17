@@ -1,0 +1,32 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appflow_flow" "${1:name}" {
+  name = "${2:name}"  # Name of the flow.
+  destination_flow_config {
+    connector_type = "${3:connector_type}"
+    destination_connector_properties {
+    }
+  }
+  source_flow_config {
+    connector_type = "${4:connector_type}"
+    source_connector_properties {
+    }
+  }
+  task {
+    task_type = "${5:task_type}"
+  }
+  trigger_config {
+    trigger_type = "${6:trigger_type}"
+  }
+
+  # description = ""  # Description of the flow.
+  # kms_arn     = ""  # ARN of the KMS key you provide for encryption.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Key-value mapping of resource tags.
+  # metadata_catalog_config {}  # Configuration that determines how Amazon AppFlow catalogs the data that the flow transfers.
+}
+]]></content>
+<tabTrigger>aws_appflow_flow</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AppFlow Flow resource.</description>
+</snippet>

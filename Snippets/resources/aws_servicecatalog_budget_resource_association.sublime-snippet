@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_servicecatalog_budget_resource_association" "${1:name}" {
+  budget_name = "${2:budget_name}"  # Budget name.
+  resource_id = "${3:resource_id}"  # Resource identifier.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_servicecatalog_budget_resource_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Service Catalog Budget Resource Association</description>
+</snippet>

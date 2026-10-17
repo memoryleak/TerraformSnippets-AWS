@@ -1,0 +1,29 @@
+<snippet>
+<content><![CDATA[
+resource "aws_codedeploy_deployment_group" "${1:name}" {
+  app_name              = "${2:app_name}"               # The name of the application.
+  deployment_group_name = "${3:deployment_group_name}"  # The name of the deployment group.
+  service_role_arn      = "${4:service_role_arn}"       # The service role ARN that allows deployments.
+
+  # autoscaling_groups          = []     # Auto Scaling groups associated with the deployment group.
+  # deployment_config_name      = ""     # The name of the group's deployment config.
+  # outdated_instances_strategy = ""     # Configuration block of Indicates what happens when new Amazon EC2 instances are launched mid-depl...
+  # region                      = ""     # Region where this resource will be managed.
+  # tags                        = {}     # Key-value map of resource tags.
+  # termination_hook_enabled    = false  # Indicates whether the deployment group was configured to have CodeDeploy install a termination ho...
+  # alarm_configuration {}  # Configuration block of alarms associated with the deployment group (documented below).
+  # auto_rollback_configuration {}  # Configuration block of the automatic rollback configuration associated with the deployment group...
+  # blue_green_deployment_config {}  # Configuration block of the blue/green deployment options for a deployment group (documented below).
+  # deployment_style {}  # Configuration block of the type of deployment, either in-place or blue/green, you want to run and...
+  # ec2_tag_filter {}  # Tag filters associated with the deployment group.
+  # ec2_tag_set {}  # Configuration block(s) of Tag filters associated with the deployment group, which are also referr...
+  # ecs_service {}  # Configuration block(s) of the ECS services for a deployment group (documented below).
+  # load_balancer_info {}  # Single configuration block of the load balancer to use in a blue/green deployment (documented bel...
+  # on_premises_instance_tag_filter {}  # On premise tag filters associated with the group.
+  # trigger_configuration {}  # Configuration block(s) of the triggers for the deployment group (documented below).
+}
+]]></content>
+<tabTrigger>aws_codedeploy_deployment_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CodeDeploy deployment group.</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_iot_registration_code" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_iot_registration_code</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Gets a registration code used to register a CA certificate with AWS IoT</description>
+</snippet>

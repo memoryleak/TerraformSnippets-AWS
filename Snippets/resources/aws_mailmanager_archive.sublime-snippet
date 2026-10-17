@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_mailmanager_archive" "${1:name}" {
+  name = "${2:name}"  # Name of the archive.
+
+  # kms_key_arn = ""  # ARN of the KMS key used to encrypt the archive.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Map of tags assigned to the resource.
+  # retention {}  # Retention policy for the archive.
+}
+]]></content>
+<tabTrigger>aws_mailmanager_archive</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS SES Mail Manager Archive.</description>
+</snippet>

@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_composite_alarm" "${1:name}" {
+  alarm_name = "${2:alarm_name}"  # The name for the composite alarm.
+  alarm_rule = "${3:alarm_rule}"  # Expression that specifies which other alarms are to be evaluated to determine this composite alar...
+
+  # actions_enabled           = false  # Indicates whether actions should be executed during any changes to the alarm state of the composi...
+  # alarm_actions             = []     # The set of actions to execute when this alarm transitions to the ALARM state from any other state.
+  # alarm_description         = ""     # The description for the composite alarm.
+  # insufficient_data_actions = []     # The set of actions to execute when this alarm transitions to the INSUFFICIENT_DATA state from any...
+  # ok_actions                = []     # The set of actions to execute when this alarm transitions to an OK state from any other state.
+  # region                    = ""     # Region where this resource will be managed.
+  # tags                      = {}     # A map of tags to associate with the alarm.
+  # actions_suppressor {}  # Actions will be suppressed if the suppressor alarm is in the ALARM state.
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_composite_alarm</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudWatch Composite Alarm resource.</description>
+</snippet>

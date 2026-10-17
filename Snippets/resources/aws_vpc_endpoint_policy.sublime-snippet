@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpc_endpoint_policy" "${1:name}" {
+  vpc_endpoint_id = "${2:vpc_endpoint_id}"  # VPC Endpoint ID.
+
+  # policy = ""  # Policy to attach to the endpoint that controls access to the service.
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_vpc_endpoint_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a VPC Endpoint Policy resource.</description>
+</snippet>

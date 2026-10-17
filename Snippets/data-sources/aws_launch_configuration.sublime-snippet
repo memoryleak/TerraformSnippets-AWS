@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_launch_configuration" "${1:name}" {
+  name = "${2:name}"  # Name of the launch configuration.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_launch_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides a Launch Configuration data source.</description>
+</snippet>

@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_networkmanager_dx_gateway_attachment" "${1:name}" {
+  core_network_id            = "${2:core_network_id}"             # ID of the Cloud WAN core network to which the Direct Connect gateway attachment should be attached.
+  direct_connect_gateway_arn = "${3:direct_connect_gateway_arn}"  # ARN of the Direct Connect gateway attachment.
+  edge_locations             = [${4}]                             # One or more core network edge locations to associate with the Direct Connect gateway attachment.
+
+  # routing_policy_label = ""  # The routing policy label to apply to the Direct Connect Gateway attachment for traffic routing de...
+  # tags                 = {}  # Key-value tags for the attachment.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_networkmanager_dx_gateway_attachment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Network Manager Direct Connect Gateway Attachment.</description>
+</snippet>

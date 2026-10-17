@@ -1,0 +1,39 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cognito_user_pool" "${1:name}" {
+  name = "${2:name}"  # Name of the user pool.
+
+  # alias_attributes           = []  # Attributes supported as an alias for this user pool.
+  # auto_verified_attributes   = []  # Attributes to be auto-verified.
+  # deletion_protection        = ""  # When active, DeletionProtection prevents accidental deletion of your user pool.
+  # email_verification_message = ""  # String representing the email verification message.
+  # email_verification_subject = ""  # String representing the email verification subject.
+  # mfa_configuration          = ""  # Multi-Factor Authentication (MFA) configuration for the User Pool.
+  # region                     = ""  # Region where this resource will be managed.
+  # sms_authentication_message = ""  # String representing the SMS authentication message.
+  # sms_verification_message   = ""  # String representing the SMS verification message.
+  # tags                       = {}  # Map of tags to assign to the User Pool.
+  # user_pool_tier             = ""  # The user pool feature plan, or tier.
+  # username_attributes        = []  # Whether email addresses or phone numbers can be specified as usernames when a user signs up.
+  # account_recovery_setting {}  # Configuration block to define which verified available method a user can use to recover their for...
+  # admin_create_user_config {}  # Configuration block for creating a new user profile.
+  # device_configuration {}  # Configuration block for the user pool's device tracking.
+  # email_configuration {}  # Configuration block for configuring email.
+  # email_mfa_configuration {}  # Configuration block for configuring email Multi-Factor Authentication (MFA); requires at least 2...
+  # lambda_config {}  # Configuration block for the AWS Lambda triggers associated with the user pool.
+  # password_policy {}  # Configuration block for information about the user pool password policy.
+  # schema {}  # Configuration block for the schema attributes of a user pool.
+  # sign_in_policy {}  # Configuration block for information about the user pool sign in policy.
+  # sms_configuration {}  # Configuration block for Short Message Service (SMS) settings.
+  # software_token_mfa_configuration {}  # Configuration block for software token Mult-Factor Authentication (MFA) settings.
+  # user_attribute_update_settings {}  # Configuration block for user attribute update settings.
+  # user_pool_add_ons {}  # Configuration block for user pool add-ons to enable user pool advanced security mode features.
+  # username_configuration {}  # Configuration block for username configuration.
+  # verification_message_template {}  # Configuration block for verification message templates.
+  # web_authn_configuration {}  # Configuration block for web authn configuration.
+}
+]]></content>
+<tabTrigger>aws_cognito_user_pool</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Cognito User Pool resource.</description>
+</snippet>

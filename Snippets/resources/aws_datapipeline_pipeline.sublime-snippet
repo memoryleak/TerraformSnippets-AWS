@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_datapipeline_pipeline" "${1:name}" {
+  name = "${2:name}"  # The name of Pipeline.
+
+  # description = ""  # The description of Pipeline.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_datapipeline_pipeline</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a AWS DataPipeline Pipeline.</description>
+</snippet>

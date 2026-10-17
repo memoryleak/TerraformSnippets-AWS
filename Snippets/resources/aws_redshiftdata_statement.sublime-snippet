@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_redshiftdata_statement" "${1:name}" {
+  database = "${2:database}"  # The name of the database.
+  sql      = "${3:sql}"       # The SQL statement text to run.
+
+  # cluster_identifier = ""     # The cluster identifier.
+  # db_user            = ""     # The database user name.
+  # region             = ""     # Region where this resource will be managed.
+  # secret_arn         = ""     # The name or ARN of the secret that enables access to the database.
+  # statement_name     = ""     # The name of the SQL statement.
+  # with_event         = false  # A value that indicates whether to send an event to the Amazon EventBridge event bus after the SQL...
+  # workgroup_name     = ""     # The serverless workgroup name.
+  # parameters {}
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_redshiftdata_statement</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Redshift Data Statement execution resource.</description>
+</snippet>

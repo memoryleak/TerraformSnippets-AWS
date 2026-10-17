@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+data "aws_codeartifact_repository_endpoint" "${1:name}" {
+  domain     = "${2:domain}"      # Name of the domain that contains the repository.
+  format     = "${3:format}"      # Which endpoint of a repository to return.
+  repository = "${4:repository}"  # Name of the repository.
+
+  # domain_owner = ""  # Account number of the AWS account that owns the domain.
+  # region       = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_codeartifact_repository_endpoint</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a CodeArtifact Repository Endpoint</description>
+</snippet>

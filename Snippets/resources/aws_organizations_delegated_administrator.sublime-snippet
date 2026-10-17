@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_organizations_delegated_administrator" "${1:name}" {
+  account_id        = "${2:account_id}"         # The account ID number of the member account in the organization to register as a delegated admini...
+  service_principal = "${3:service_principal}"  # The service principal of the AWS service for which you want to make the member account a delegate...
+}
+]]></content>
+<tabTrigger>aws_organizations_delegated_administrator</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage an AWS Organizations Delegated Administrator.</description>
+</snippet>

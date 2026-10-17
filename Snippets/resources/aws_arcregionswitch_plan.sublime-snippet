@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+resource "aws_arcregionswitch_plan" "${1:name}" {
+  execution_role    = "${2:execution_role}"     # ARN of the IAM role that ARC Region Switch will assume to execute the plan.
+  name              = "${3:name}"               # Name of the plan.
+  recovery_approach = "${4:recovery_approach}"  # Recovery approach for the plan.
+  regions           = [${5}]                    # List of AWS regions involved in the plan.
+
+  # description                     = ""  # Description of the plan.
+  # primary_region                  = ""  # Primary region for the plan.
+  # recovery_time_objective_minutes = 0   # Recovery time objective in minutes.
+  # tags                            = {}  # Map of tags to assign to the resource.
+  # associated_alarms {}  # CloudWatch alarms associated with the plan.
+  # report_configuration {}  # Configuration for automated execution reports.
+  # timeouts {}
+  # triggers {}  # Triggers that can initiate the plan execution.
+  # workflow {}  # Workflows that define the steps to execute.
+}
+]]></content>
+<tabTrigger>aws_arcregionswitch_plan</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an Amazon ARC Region Switch Plan.</description>
+</snippet>

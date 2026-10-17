@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpc_ipam_resource_discovery" "${1:name}" {
+  operating_regions {
+    region_name = "${2:region_name}"
+  }
+
+  # description = ""  # Description for the IPAM Resource Discovery.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Map of tags to assign to the resource.
+  # organizational_unit_exclusion {}  # Add an Organizational Unit (OU) exclusion to IPAM.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_vpc_ipam_resource_discovery</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an IPAM Resource Discovery resource.</description>
+</snippet>

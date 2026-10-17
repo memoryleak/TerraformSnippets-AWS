@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_location_tracker" "${1:name}" {
+  tracker_name = "${2:tracker_name}"  # The name of the tracker resource.
+
+  # description        = ""  # The optional description for the tracker resource.
+  # kms_key_id         = ""  # A key identifier for an AWS KMS customer managed key assigned to the Amazon Location resource.
+  # position_filtering = ""  # The position filtering method of the tracker resource.
+  # region             = ""  # Region where this resource will be managed.
+  # tags               = {}  # Key-value tags for the tracker.
+}
+]]></content>
+<tabTrigger>aws_location_tracker</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Location Service Tracker.</description>
+</snippet>

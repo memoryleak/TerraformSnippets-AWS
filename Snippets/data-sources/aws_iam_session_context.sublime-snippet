@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_iam_session_context" "${1:name}" {
+  arn = "${2:arn}"  # ARN for an assumed role.
+}
+]]></content>
+<tabTrigger>data_aws_iam_session_context</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on the IAM source role of an STS assumed role</description>
+</snippet>

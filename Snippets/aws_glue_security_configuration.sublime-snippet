@@ -1,8 +1,0 @@
-<snippet>
-<content><![CDATA[
-resource "aws_glue_security_configuration" "aws_glue_security_configuration_${1:suffix}" {
-}
-]]></content>
-<tabTrigger>aws_glue_security_configuration</tabTrigger>
-<scope>source.terraform</scope>
-</snippet>

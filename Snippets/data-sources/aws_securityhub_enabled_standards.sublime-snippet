@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_securityhub_enabled_standards" "${1:name}" {
+  # region                      = ""  # Region where this resource will be managed.
+  # standards_subscription_arns = []  # List of the standards subscription ARNs for the standards to retrieve.
+}
+]]></content>
+<tabTrigger>data_aws_securityhub_enabled_standards</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Lists the standards that are currently enabled.</description>
+</snippet>

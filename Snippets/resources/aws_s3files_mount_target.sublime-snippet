@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3files_mount_target" "${1:name}" {
+  file_system_id = "${2:file_system_id}"  # File system ID.
+  subnet_id      = "${3:subnet_id}"       # Subnet ID.
+
+  # ip_address_type = ""  # IP address type.
+  # ipv4_address    = ""  # IPv4 address.
+  # ipv6_address    = ""  # IPv6 address.
+  # region          = ""  # Region where this resource will be managed.
+  # security_groups = []  # Security group IDs.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_s3files_mount_target</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an S3 Files Mount Target.</description>
+</snippet>

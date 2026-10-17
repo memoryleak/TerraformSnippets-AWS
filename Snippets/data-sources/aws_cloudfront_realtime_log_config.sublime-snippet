@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_cloudfront_realtime_log_config" "${1:name}" {
+  name = "${2:name}"  # Unique name to identify this real-time log configuration.
+}
+]]></content>
+<tabTrigger>data_aws_cloudfront_realtime_log_config</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides a CloudFront real-time log configuration resource.</description>
+</snippet>

@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_backup_framework" "${1:name}" {
+  name = "${2:name}"  # Unique name of the framework.
+  control {
+    name = "${3:name}"
+  }
+
+  # description = ""  # Description of the framework with a maximum of 1,024 characters
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Metadata that you can assign to help organize the frameworks you create.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_backup_framework</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AWS Backup Framework resource.</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpn_gateway_route_propagation" "${1:name}" {
+  route_table_id = "${2:route_table_id}"  # ID of the aws_route_table to propagate routes into.
+  vpn_gateway_id = "${3:vpn_gateway_id}"  # ID of the aws_vpn_gateway to propagate routes from.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_vpn_gateway_route_propagation</tabTrigger>
+<scope>source.terraform</scope>
+<description>Requests automatic route propagation between a VPN gateway and a route table.</description>
+</snippet>

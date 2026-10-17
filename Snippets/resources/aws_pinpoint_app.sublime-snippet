@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_pinpoint_app" "${1:name}" {
+  # name        = ""  # Application name.
+  # name_prefix = ""  # Name of the End User Messaging application.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Key-value map of resource tags.
+}
+]]></content>
+<tabTrigger>aws_pinpoint_app</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an End User Messaging App resource.</description>
+</snippet>

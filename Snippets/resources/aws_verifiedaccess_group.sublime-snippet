@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_verifiedaccess_group" "${1:name}" {
+  verifiedaccess_instance_id = "${2:verifiedaccess_instance_id}"  # ID of the verified access instance this group is associated with.
+
+  # description     = ""  # Description of the verified access group.
+  # policy_document = ""  # Policy document that is associated with this resource.
+  # region          = ""  # Region where this resource will be managed.
+  # tags            = {}  # Key-value mapping of resource tags.
+  # sse_configuration {}  # Configuration block to use KMS keys for server-side encryption.
+}
+]]></content>
+<tabTrigger>aws_verifiedaccess_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing a Verified Access Group.</description>
+</snippet>

@@ -1,0 +1,24 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sns_platform_application" "${1:name}" {
+  name                = "${2:name}"                 # The friendly name for the SNS platform application
+  platform            = "${3:platform}"             # The platform that the app is registered with.
+  platform_credential = "${4:platform_credential}"  # Application Platform credential.
+
+  # apple_platform_bundle_id         = ""  # The bundle identifier that's assigned to your iOS app.
+  # apple_platform_team_id           = ""  # The identifier that's assigned to your Apple developer account team.
+  # event_delivery_failure_topic_arn = ""  # The ARN of the SNS Topic triggered when a delivery to any of the platform endpoints associated wi...
+  # event_endpoint_created_topic_arn = ""  # The ARN of the SNS Topic triggered when a new platform endpoint is added to your platform applica...
+  # event_endpoint_deleted_topic_arn = ""  # The ARN of the SNS Topic triggered when an existing platform endpoint is deleted from your platfo...
+  # event_endpoint_updated_topic_arn = ""  # The ARN of the SNS Topic triggered when an existing platform endpoint is changed from your platfo...
+  # failure_feedback_role_arn        = ""  # The IAM role ARN permitted to receive failure feedback for this application and give SNS write ac...
+  # platform_principal               = ""  # Application Platform principal.
+  # region                           = ""  # Region where this resource will be managed.
+  # success_feedback_role_arn        = ""  # The IAM role ARN permitted to receive success feedback for this application and give SNS write ac...
+  # success_feedback_sample_rate     = ""  # The sample rate percentage (0-100) of successfully delivered messages.
+}
+]]></content>
+<tabTrigger>aws_sns_platform_application</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an SNS platform application resource.</description>
+</snippet>

@@ -1,0 +1,37 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_metric_alarm" "${1:name}" {
+  alarm_name = "${2:alarm_name}"  # The descriptive name for the alarm.
+
+  # actions_enabled                       = false  # Indicates whether or not actions should be executed during any changes to the alarm's state.
+  # alarm_actions                         = []     # List of actions to execute when this alarm transitions into an ALARM state from any other state.
+  # alarm_description                     = ""     # The description for the alarm.
+  # comparison_operator                   = ""     # The arithmetic operation to use when comparing the specified Statistic and Threshold.
+  # datapoints_to_alarm                   = 0      # The number of data points that must be breaching to trigger the alarm.
+  # dimensions                            = {}     # The dimensions for the alarm's associated metric.
+  # evaluate_low_sample_count_percentiles = ""     # Used only for alarms based on percentiles.
+  # evaluation_interval                   = 0      # The frequency, in seconds, at which the alarm is evaluated.
+  # evaluation_periods                    = 0      # The number of periods over which data is compared to the specified threshold.
+  # extended_statistic                    = ""     # The percentile statistic for the metric associated with the alarm.
+  # insufficient_data_actions             = []     # List of actions to execute when this alarm transitions into an INSUFFICIENT_DATA state from any o...
+  # metric_name                           = ""     # The name for the alarm's associated metric.
+  # namespace                             = ""     # The namespace for the alarm's associated metric.
+  # ok_actions                            = []     # List of actions to execute when this alarm transitions into an OK state from any other state.
+  # period                                = 0      # The period in seconds over which the specified statistic is applied.
+  # region                                = ""     # Region where this resource will be managed.
+  # statistic                             = ""     # The statistic to apply to the alarm's associated metric.
+  # tags                                  = {}     # A map of tags to assign to the resource.
+  # threshold                             = 0      # The value against which the specified statistic is compared.
+  # threshold_metric_id                   = ""     # If this is an alarm based on an anomaly detection model, make this value match the ID of the ANOM...
+  # treat_missing_data                    = ""     # Sets how this alarm is to handle missing data points.
+  # unit                                  = ""     # The unit for the alarm's associated metric.
+  # evaluation_criteria {}  # The evaluation criteria for PromQL alarms.
+  # evaluation_window {}  # Configures the alarm to use a wall clock evaluation window instead of the default sliding window.
+  # metric_query {}
+  # warm_up_configuration {}  # Warm-up period that delays alarm evaluation after the alarm is created.
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_metric_alarm</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudWatch Metric Alarm resource.</description>
+</snippet>

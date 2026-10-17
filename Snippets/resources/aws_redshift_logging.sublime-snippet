@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_redshift_logging" "${1:name}" {
+  cluster_identifier = "${2:cluster_identifier}"  # Identifier of the source cluster.
+
+  # bucket_name          = ""  # Name of an existing S3 bucket where the log files are to be stored.
+  # log_destination_type = ""  # Log destination type.
+  # log_exports          = []  # Collection of exported log types.
+  # region               = ""  # Region where this resource will be managed.
+  # s3_key_prefix        = ""  # Prefix applied to the log file names.
+}
+]]></content>
+<tabTrigger>aws_redshift_logging</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Redshift Logging configuration.</description>
+</snippet>

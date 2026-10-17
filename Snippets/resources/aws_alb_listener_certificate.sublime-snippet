@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_alb_listener_certificate" "${1:name}" {
+  certificate_arn = "${2:certificate_arn}"
+  listener_arn    = "${3:listener_arn}"
+
+  # region = ""
+}
+]]></content>
+<tabTrigger>aws_alb_listener_certificate</tabTrigger>
+<scope>source.terraform</scope>
+<description>aws_alb_listener_certificate</description>
+</snippet>

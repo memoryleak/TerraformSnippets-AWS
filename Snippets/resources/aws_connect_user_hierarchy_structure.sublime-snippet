@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_connect_user_hierarchy_structure" "${1:name}" {
+  instance_id = "${2:instance_id}"  # Specifies the identifier of the hosting Amazon Connect Instance.
+  hierarchy_structure {
+  }
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_connect_user_hierarchy_structure</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides details about a specific Amazon Connect User Hierarchy Structure</description>
+</snippet>

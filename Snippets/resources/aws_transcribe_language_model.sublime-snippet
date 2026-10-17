@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_transcribe_language_model" "${1:name}" {
+  base_model_name = "${2:base_model_name}"  # Name of reference base model.
+  language_code   = "${3:language_code}"    # Language code you selected for your language model.
+  model_name      = "${4:model_name}"       # Model name.
+  input_data_config {
+    data_access_role_arn = "${5:data_access_role_arn}"
+    s3_uri               = "${6:s3_uri}"
+  }
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags to assign to the LanguageModel.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_transcribe_language_model</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Transcribe LanguageModel.</description>
+</snippet>

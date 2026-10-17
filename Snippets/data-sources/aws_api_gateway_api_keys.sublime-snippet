@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_api_gateway_api_keys" "${1:name}" {
+  # customer_id    = ""     # Amazon Web Services Marketplace customer identifier, when integrating with the Amazon Web Service...
+  # include_values = false  # Set this value to true if you wish the result contains the key value.
+  # region         = ""     # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_api_gateway_api_keys</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing AWS API Gateway API Keys.</description>
+</snippet>

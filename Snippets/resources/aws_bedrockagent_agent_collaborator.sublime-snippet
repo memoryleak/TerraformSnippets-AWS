@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrockagent_agent_collaborator" "${1:name}" {
+  agent_id                  = "${2:agent_id}"                   # ID of the agent to associate the collaborator with.
+  collaboration_instruction = "${3:collaboration_instruction}"  # Instruction to give the collaborator.
+  collaborator_name         = "${4:collaborator_name}"          # Name of this collaborator.
+
+  # agent_version              = ""     # Version of the agent to associate the collaborator with.
+  # prepare_agent              = false  # Whether to prepare the agent after creation or modification.
+  # region                     = ""     # Region where this resource will be managed.
+  # relay_conversation_history = ""     # Configure relaying the history to the collaborator.
+  # agent_descriptor {}  # Agent descriptor for the agent collaborator.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_bedrockagent_agent_collaborator</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Bedrock Agents Agent Collaborator.</description>
+</snippet>

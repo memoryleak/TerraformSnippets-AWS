@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpc_endpoint_service_private_dns_verification" "${1:name}" {
+  service_id = "${2:service_id}"  # ID of the endpoint service.
+
+  # region                = ""     # Region where this resource will be managed.
+  # wait_for_verification = false  # Whether to wait until the endpoint service returns a Verified status for the configured private D...
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_vpc_endpoint_service_private_dns_verification</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS VPC Endpoint Service Private DNS Verification.</description>
+</snippet>

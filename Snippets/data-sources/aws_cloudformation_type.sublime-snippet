@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_cloudformation_type" "${1:name}" {
+  # arn        = ""  # ARN of the CloudFormation Type.
+  # region     = ""  # Region where this resource will be managed.
+  # type       = ""  # CloudFormation Registry Type.
+  # type_name  = ""  # CloudFormation Type name.
+  # version_id = ""  # Identifier of the CloudFormation Type version.
+}
+]]></content>
+<tabTrigger>data_aws_cloudformation_type</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a CloudFormation Type.</description>
+</snippet>

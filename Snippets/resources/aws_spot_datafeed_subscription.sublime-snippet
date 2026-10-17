@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_spot_datafeed_subscription" "${1:name}" {
+  bucket = "${2:bucket}"  # The Amazon S3 bucket in which to store the Spot instance data feed.
+
+  # prefix = ""  # Path of folder inside bucket to place spot pricing data.
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_spot_datafeed_subscription</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Spot Datafeed Subscription resource.</description>
+</snippet>

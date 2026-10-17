@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_glue_security_configuration" "${1:name}" {
+  name = "${2:name}"  # Name of the security configuration.
+  encryption_configuration {
+    cloudwatch_encryption {
+    }
+    job_bookmarks_encryption {
+    }
+    s3_encryption {
+    }
+  }
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_glue_security_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Glue Security Configuration</description>
+</snippet>

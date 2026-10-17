@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_backup_vault_policy" "${1:name}" {
+  backup_vault_name = "${2:backup_vault_name}"  # Name of the backup vault to add policy for.
+  policy            = "${3:policy}"             # Backup vault access policy document in JSON format.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_backup_vault_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AWS Backup vault policy resource.</description>
+</snippet>

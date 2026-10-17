@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ssm_maintenance_window_task" "${1:name}" {
+  task_arn  = "${2:task_arn}"   # The ARN of the task to execute.
+  task_type = "${3:task_type}"  # The type of task being registered.
+  window_id = "${4:window_id}"  # The ID of the maintenance window to register the task with.
+
+  # cutoff_behavior  = ""  # Indicates whether tasks should continue to run after the cutoff time specified in the maintenance...
+  # description      = ""  # The description of the maintenance window task.
+  # max_concurrency  = ""  # The maximum number of targets this task can be run for in parallel.
+  # max_errors       = ""  # The maximum number of errors allowed before this task stops being scheduled.
+  # name             = ""  # The name of the maintenance window task.
+  # priority         = 0   # The priority of the task in the Maintenance Window, the lower the number the higher the priority.
+  # region           = ""  # Region where this resource will be managed.
+  # service_role_arn = ""  # The role that should be assumed when executing the task.
+  # targets {}  # The targets (either instances or window target IDs).
+  # task_invocation_parameters {}  # Configuration block with parameters for task execution.
+}
+]]></content>
+<tabTrigger>aws_ssm_maintenance_window_task</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an SSM Maintenance Window Task resource</description>
+</snippet>

@@ -1,0 +1,26 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sagemaker_domain" "${1:name}" {
+  auth_mode   = "${2:auth_mode}"    # The mode of authentication that members use to access the domain.
+  domain_name = "${3:domain_name}"  # The domain name.
+  subnet_ids  = [${4}]              # The VPC subnets that Studio uses for communication.
+  vpc_id      = "${5:vpc_id}"       # ID of the VPC that Studio uses for communication.
+  default_user_settings {
+    execution_role = "${6:execution_role}"
+  }
+
+  # app_network_access_type       = ""  # Specifies the VPC used for non-EFS traffic.
+  # app_security_group_management = ""  # The entity that creates and manages the required security groups for inter-app communication in V...
+  # kms_key_id                    = ""  # The AWS KMS customer managed CMK used to encrypt the EFS volume attached to the domain.
+  # region                        = ""  # Region where this resource will be managed.
+  # tag_propagation               = ""  # Indicates whether custom tag propagation is supported for the domain.
+  # tags                          = {}  # A map of tags to assign to the resource.
+  # default_space_settings {}  # The default space settings.
+  # domain_settings {}  # The domain settings.
+  # retention_policy {}  # The retention policy for this domain, which specifies whether resources will be retained after th...
+}
+]]></content>
+<tabTrigger>aws_sagemaker_domain</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a SageMaker AI Domain resource.</description>
+</snippet>

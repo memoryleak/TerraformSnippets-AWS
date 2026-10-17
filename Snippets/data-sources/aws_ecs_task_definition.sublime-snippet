@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_ecs_task_definition" "${1:name}" {
+  task_definition = "${2:task_definition}"  # Family for the latest ACTIVE revision, family and revision (family:revision) for a specific revis...
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_ecs_task_definition</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an ecs task definition</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrock_use_case_for_model_access" "${1:name}" {
+  form_data = "${2:form_data}"  # Form data from the Anthropic first time user request.
+}
+]]></content>
+<tabTrigger>aws_bedrock_use_case_for_model_access</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Bedrock Use Case For Model Access.</description>
+</snippet>

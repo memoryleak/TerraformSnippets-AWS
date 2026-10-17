@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_redshiftserverless_usage_limit" "${1:name}" {
+  amount       = ${2:0}               # The limit amount.
+  resource_arn = "${3:resource_arn}"  # ARN of the Amazon Redshift Serverless resource to create the usage limit for.
+  usage_type   = "${4:usage_type}"    # The type of Amazon Redshift Serverless usage to create a usage limit for.
+
+  # breach_action = ""  # The action that Amazon Redshift Serverless takes when the limit is reached.
+  # period        = ""  # The time period that the amount applies to.
+  # region        = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_redshiftserverless_usage_limit</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Redshift Serverless Usage Limit resource.</description>
+</snippet>

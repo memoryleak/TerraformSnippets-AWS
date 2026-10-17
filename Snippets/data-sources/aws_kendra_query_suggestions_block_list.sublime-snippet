@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_kendra_query_suggestions_block_list" "${1:name}" {
+  index_id                        = "${2:index_id}"                         # Identifier of the index that contains the block list.
+  query_suggestions_block_list_id = "${3:query_suggestions_block_list_id}"  # Identifier of the block list.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_kendra_query_suggestions_block_list</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific Amazon Kendra block list used for query suggestions for an index.</description>
+</snippet>

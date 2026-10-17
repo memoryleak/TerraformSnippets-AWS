@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_api_gateway_model" "${1:name}" {
+  content_type = "${2:content_type}"  # Content type of the model
+  name         = "${3:name}"          # Name of the model
+  rest_api_id  = "${4:rest_api_id}"   # ID of the associated REST API
+
+  # description = ""  # Description of the model
+  # region      = ""  # Region where this resource will be managed.
+  # schema      = ""  # Schema of the model in a JSON form
+}
+]]></content>
+<tabTrigger>aws_api_gateway_model</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Model for a REST API Gateway.</description>
+</snippet>

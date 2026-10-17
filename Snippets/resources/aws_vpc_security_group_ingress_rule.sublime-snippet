@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpc_security_group_ingress_rule" "${1:name}" {
+  ip_protocol       = "${2:ip_protocol}"        # IP protocol name or number.
+  security_group_id = "${3:security_group_id}"  # ID of the security group.
+
+  # cidr_ipv4                    = ""  # Source IPv4 CIDR range.
+  # cidr_ipv6                    = ""  # Source IPv6 CIDR range.
+  # description                  = ""  # Security group rule description.
+  # from_port                    = 0   # Start of port range for the TCP and UDP protocols, or an ICMP/ICMPv6 type.
+  # prefix_list_id               = ""  # ID of the source prefix list.
+  # referenced_security_group_id = ""  # Source security group that is referenced in the rule.
+  # region                       = ""  # Region where this resource will be managed.
+  # tags                         = {}  # Map of tags to assign to the resource.
+  # to_port                      = 0   # End of port range for the TCP and UDP protocols, or an ICMP/ICMPv6 code.
+}
+]]></content>
+<tabTrigger>aws_vpc_security_group_ingress_rule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a VPC security group ingress rule resource.</description>
+</snippet>

@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_schemas_schema" "${1:name}" {
+  content       = "${2:content}"        # The schema specification.
+  name          = "${3:name}"           # The name of the schema.
+  registry_name = "${4:registry_name}"  # The name of the registry in which this schema belongs.
+  type          = "${5:type}"           # The type of the schema.
+
+  # description = ""  # The description of the schema.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_schemas_schema</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an EventBridge Schema resource.</description>
+</snippet>

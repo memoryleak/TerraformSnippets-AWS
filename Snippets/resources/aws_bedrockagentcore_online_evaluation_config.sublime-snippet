@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrockagentcore_online_evaluation_config" "${1:name}" {
+  enable_on_create              = ${2:false}                            # Whether to enable the online evaluation configuration immediately upon creation.
+  evaluation_execution_role_arn = "${3:evaluation_execution_role_arn}"  # ARN of the IAM role that grants permissions to read from CloudWatch logs, write evaluation result...
+  online_evaluation_config_name = "${4:online_evaluation_config_name}"  # Name of the online evaluation configuration.
+
+  # description      = ""  # Description of the online evaluation configuration.
+  # execution_status = ""  # Execution status to enable or disable the online evaluation.
+  # region           = ""  # Region where this resource will be managed.
+  # tags             = {}  # Key-value map of resource tags.
+  # data_source_config {}  # Data source configuration specifying where to read agent traces.
+  # evaluator {}  # List of evaluators to apply during online evaluation.
+  # rule {}  # Evaluation rule defining sampling configuration, filters, and session detection settings.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_bedrockagentcore_online_evaluation_config</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Bedrock AgentCore Online Evaluation Configuration.</description>
+</snippet>

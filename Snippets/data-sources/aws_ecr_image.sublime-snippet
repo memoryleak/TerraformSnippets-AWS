@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+data "aws_ecr_image" "${1:name}" {
+  repository_name = "${2:repository_name}"  # Name of the ECR Repository.
+
+  # image_digest = ""     # Sha256 digest of the image manifest.
+  # image_tag    = ""     # Tag associated with this image.
+  # most_recent  = false  # Return the most recently pushed image.
+  # region       = ""     # Region where this resource will be managed.
+  # registry_id  = ""     # ID of the Registry where the repository resides.
+}
+]]></content>
+<tabTrigger>data_aws_ecr_image</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an ECR Image</description>
+</snippet>

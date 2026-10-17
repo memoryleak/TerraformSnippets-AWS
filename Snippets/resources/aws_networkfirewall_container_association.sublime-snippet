@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_networkfirewall_container_association" "${1:name}" {
+  container_association_name = "${2:container_association_name}"  # Name of the container association.
+  type                       = "${3:type}"                        # Container orchestration platform for the clusters in this association.
+
+  # description = ""  # Description of the container association.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Map of resource tags to associate with the resource.
+  # container_monitoring_configuration {}  # One or more monitoring configurations, up to 5.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_networkfirewall_container_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Network Firewall Container Association.</description>
+</snippet>

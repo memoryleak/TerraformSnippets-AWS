@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dms_migration_project" "${1:name}" {
+  instance_profile_arn = "${2:instance_profile_arn}"  # ARN of the instance profile associated with the migration project.
+
+  # description          = ""  # User-friendly description of the migration project.
+  # name                 = ""  # User-friendly name for the migration project.
+  # region               = ""  # Region where this resource will be managed.
+  # tags                 = {}  # Map of tags assigned to the resource.
+  # transformation_rules = ""  # JSON string that specifies the transformation rules for the migration project.
+  # schema_conversion_application_attributes {}  # Schema conversion application attributes, including the S3 bucket path and S3 role ARN.
+  # source_data_provider_descriptor {}  # Information about the source data provider.
+  # target_data_provider_descriptor {}  # Information about the target data provider.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_dms_migration_project</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS DMS (Database Migration) Migration Project.</description>
+</snippet>

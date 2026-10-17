@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_storagegateway_cache" "${1:name}" {
+  disk_id     = "${2:disk_id}"      # Local disk identifier.
+  gateway_arn = "${3:gateway_arn}"  # ARN of the gateway.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_storagegateway_cache</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Storage Gateway cache</description>
+</snippet>

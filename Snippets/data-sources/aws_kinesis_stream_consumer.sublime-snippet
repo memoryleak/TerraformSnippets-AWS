@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+data "aws_kinesis_stream_consumer" "${1:name}" {
+  stream_arn = "${2:stream_arn}"  # ARN of the data stream the consumer is registered with.
+
+  # arn    = ""  # ARN of the stream consumer.
+  # name   = ""  # Name of the stream consumer.
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_kinesis_stream_consumer</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a Kinesis Stream Consumer.</description>
+</snippet>

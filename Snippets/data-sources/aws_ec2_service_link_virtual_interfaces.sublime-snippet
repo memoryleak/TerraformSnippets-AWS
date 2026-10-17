@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_ec2_service_link_virtual_interfaces" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value map of resource tags, each pair of which must exactly match a pair on the desired Servi...
+  # filter {}  # One or more configuration blocks containing name-values filters.
+}
+]]></content>
+<tabTrigger>data_aws_ec2_service_link_virtual_interfaces</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about multiple EC2 Service Link Virtual Interfaces</description>
+</snippet>

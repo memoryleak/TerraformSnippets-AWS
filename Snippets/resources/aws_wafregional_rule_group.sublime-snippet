@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_wafregional_rule_group" "${1:name}" {
+  metric_name = "${2:metric_name}"  # A friendly name for the metrics from the rule group
+  name        = "${3:name}"         # A friendly name of the rule group
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value map of resource tags.
+  # activated_rule {}  # A list of activated rules, see below
+}
+]]></content>
+<tabTrigger>aws_wafregional_rule_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a AWS WAF Regional Rule Group resource.</description>
+</snippet>

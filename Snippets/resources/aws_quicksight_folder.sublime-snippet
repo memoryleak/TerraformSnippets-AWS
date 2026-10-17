@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_quicksight_folder" "${1:name}" {
+  folder_id = "${2:folder_id}"  # Identifier for the folder.
+
+  # aws_account_id    = ""  # AWS account ID.
+  # folder_type       = ""  # Type of folder.
+  # name              = ""  # Display name for the folder.
+  # parent_folder_arn = ""  # ARN for the parent folder.
+  # region            = ""  # Region where this resource will be managed.
+  # tags              = {}  # Key-value map of resource tags.
+  # permissions {}  # Set of resource permissions on the folder.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_quicksight_folder</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a QuickSight Folder.</description>
+</snippet>

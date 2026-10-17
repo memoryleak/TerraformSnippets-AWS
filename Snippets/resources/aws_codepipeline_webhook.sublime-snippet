@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_codepipeline_webhook" "${1:name}" {
+  authentication  = "${2:authentication}"   # The type of authentication  to use.
+  name            = "${3:name}"             # The name of the webhook.
+  target_action   = "${4:target_action}"    # The name of the action in a pipeline you want to connect to the webhook.
+  target_pipeline = "${5:target_pipeline}"  # The name of the pipeline.
+  filter {
+    json_path    = "${6:json_path}"
+    match_equals = "${7:match_equals}"
+  }
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # A map of tags to assign to the resource.
+  # authentication_configuration {}  # An auth block.
+}
+]]></content>
+<tabTrigger>aws_codepipeline_webhook</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CodePipeline Webhook</description>
+</snippet>

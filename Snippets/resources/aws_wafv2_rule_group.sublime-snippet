@@ -1,0 +1,26 @@
+<snippet>
+<content><![CDATA[
+resource "aws_wafv2_rule_group" "${1:name}" {
+  capacity = ${2:0}        # Web ACL capacity units (WCUs) required for this rule group.
+  scope    = "${3:scope}"  # Scope of the rule group, either an AWS CloudFront distribution or a regional application.
+  visibility_config {
+    cloudwatch_metrics_enabled = ${4:false}
+    metric_name                = "${5:metric_name}"
+    sampled_requests_enabled   = ${6:false}
+  }
+
+  # description = ""  # Friendly description of the rule group.
+  # name        = ""  # Friendly name of the rule group.
+  # name_prefix = ""  # Creates a unique name beginning with the specified prefix.
+  # region      = ""  # Region where this resource will be managed.
+  # rules_json  = ""  # Raw JSON string to allow more than three nested statements.
+  # tags        = {}  # Array of key:value pairs to associate with the resource.
+  # custom_response_body {}  # Custom response bodies that can be referenced by custom_response actions.
+  # monetization_config {}  # Monetization configuration for the rule group.
+  # rule {}  # Rule blocks used to identify the web requests that you want to allow, block, or count.
+}
+]]></content>
+<tabTrigger>aws_wafv2_rule_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Creates a WAFv2 rule group resource.</description>
+</snippet>

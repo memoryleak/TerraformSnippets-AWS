@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+resource "aws_eks_addon" "${1:name}" {
+  addon_name   = "${2:addon_name}"    # Name of the EKS add-on.
+  cluster_name = "${3:cluster_name}"  # Name of the EKS Cluster.
+
+  # addon_version               = ""     # The version of the EKS add-on.
+  # configuration_values        = ""     # Custom configuration values for addons with single JSON string.
+  # preserve                    = false  # Indicates if you want to preserve the created resources when deleting the EKS add-on.
+  # region                      = ""     # Region where this resource will be managed.
+  # resolve_conflicts_on_create = ""     # How to resolve field value conflicts when migrating a self-managed add-on to an Amazon EKS add-on.
+  # resolve_conflicts_on_update = ""     # How to resolve field value conflicts for an Amazon EKS add-on if you've changed a value from the...
+  # service_account_role_arn    = ""     # ARN of an
+  # tags                        = {}     # Key-value map of resource tags.
+  # namespace_config {}  # Namespace configuration for the add-on.
+  # pod_identity_association {}  # Configuration block with EKS Pod Identity association settings.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_eks_addon</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an EKS add-on</description>
+</snippet>

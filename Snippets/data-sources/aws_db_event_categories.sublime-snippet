@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_db_event_categories" "${1:name}" {
+  # region      = ""  # Region where this resource will be managed.
+  # source_type = ""  # Type of source that will be generating the events.
+}
+]]></content>
+<tabTrigger>data_aws_db_event_categories</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides a list of DB Event Categories which can be used to pass values into DB Event Subscription.</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_shield_drt_access_log_bucket_association" "${1:name}" {
+  log_bucket              = "${2:log_bucket}"               # The Amazon S3 bucket that contains the logs that you want to share.
+  role_arn_association_id = "${3:role_arn_association_id}"  # The ID of the Role ARN association used for allowing Shield DRT Access.
+
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_shield_drt_access_log_bucket_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Shield DRT Access Log Bucket Association.</description>
+</snippet>

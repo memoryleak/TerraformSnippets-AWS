@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_codecommit_approval_rule_template" "${1:name}" {
+  content = "${2:content}"  # The content of the approval rule template.
+  name    = "${3:name}"     # The name for the approval rule template.
+
+  # description = ""  # The description of the approval rule template.
+  # region      = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_codecommit_approval_rule_template</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CodeCommit Approval Rule Template Resource.</description>
+</snippet>

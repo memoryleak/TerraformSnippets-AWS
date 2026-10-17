@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_quicksight_iam_policy_assignment" "${1:name}" {
+  assignment_name   = "${2:assignment_name}"    # Name of the assignment.
+  assignment_status = "${3:assignment_status}"  # Status of the assignment.
+
+  # aws_account_id = ""  # AWS account ID.
+  # namespace      = ""  # Namespace that contains the assignment.
+  # policy_arn     = ""  # ARN of the IAM policy to apply to the Amazon QuickSight users and groups specified in this assign...
+  # region         = ""  # Region where this resource will be managed.
+  # identities {}  # Amazon QuickSight users, groups, or both to assign the policy to.
+}
+]]></content>
+<tabTrigger>aws_quicksight_iam_policy_assignment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS QuickSight IAM Policy Assignment.</description>
+</snippet>

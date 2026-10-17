@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_networkmanager_link" "${1:name}" {
+  global_network_id = "${2:global_network_id}"  # ID of the Global Network of the link to retrieve.
+  link_id           = "${3:link_id}"            # ID of the specific link to retrieve.
+
+  # tags = {}
+}
+]]></content>
+<tabTrigger>data_aws_networkmanager_link</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an existing Network Manager link.</description>
+</snippet>

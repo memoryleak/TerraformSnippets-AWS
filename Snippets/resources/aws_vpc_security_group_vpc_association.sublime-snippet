@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpc_security_group_vpc_association" "${1:name}" {
+  security_group_id = "${2:security_group_id}"  # ID of the security group.
+  vpc_id            = "${3:vpc_id}"             # ID of the VPC to make the association with.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_vpc_security_group_vpc_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing Security Group VPC Associations.</description>
+</snippet>

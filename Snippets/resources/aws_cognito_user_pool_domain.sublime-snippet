@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cognito_user_pool_domain" "${1:name}" {
+  domain       = "${2:domain}"        # For custom domains, this is the fully-qualified domain name, such as auth.example.com.
+  user_pool_id = "${3:user_pool_id}"  # The user pool ID.
+
+  # certificate_arn       = ""  # The ARN of an ISSUED ACM certificate in us-east-1 for a custom domain.
+  # managed_login_version = 0   # A version number that indicates the state of managed login for your domain.
+  # region                = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_cognito_user_pool_domain</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Cognito User Pool Domain resource.</description>
+</snippet>

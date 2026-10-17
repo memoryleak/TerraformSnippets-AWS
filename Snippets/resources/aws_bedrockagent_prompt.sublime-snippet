@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrockagent_prompt" "${1:name}" {
+  name = "${2:name}"  # Name of the prompt.
+
+  # customer_encryption_key_arn = ""  # ARN of the KMS key that you encrypted the prompt with.
+  # default_variant             = ""  # Name of the default variant for your prompt.
+  # description                 = ""  # Description of the prompt.
+  # region                      = ""  # Region where this resource will be managed.
+  # tags                        = {}  # Key-value map of resource tags.
+  # variant {}  # List of objects, each containing details about a variant of the prompt.
+}
+]]></content>
+<tabTrigger>aws_bedrockagent_prompt</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Bedrock Agents Prompt.</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_synthetics_runtime_version" "${1:name}" {
+  prefix = "${2:prefix}"  # Name prefix of the runtime version (for example, syn-nodejs-puppeteer).
+
+  # latest  = false  # Whether the latest version of the runtime should be fetched.
+  # region  = ""     # Region where this resource will be managed.
+  # version = ""     # Version of the runtime to be fetched (for example, 9.0).
+}
+]]></content>
+<tabTrigger>data_aws_synthetics_runtime_version</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS CloudWatch Synthetics Runtime Version.</description>
+</snippet>

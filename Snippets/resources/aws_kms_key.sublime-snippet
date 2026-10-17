@@ -1,0 +1,24 @@
+<snippet>
+<content><![CDATA[
+resource "aws_kms_key" "${1:name}" {
+  # bypass_policy_lockout_safety_check = false  # Whether to bypass the key policy lockout safety check.
+  # custom_key_store_id                = ""     # ID of the KMS Custom Key Store where the key will be stored instead of KMS (eg CloudHSM).
+  # customer_master_key_spec           = ""     # Whether the key contains a symmetric key or an asymmetric key pair and the encryption algorithms...
+  # deletion_window_in_days            = 0      # Waiting period, specified in number of days.
+  # description                        = ""     # Description of the key as viewed in AWS console.
+  # enable_key_rotation                = false  # Whether key rotation is enabled.
+  # is_enabled                         = false  # Whether the key is enabled.
+  # key_usage                          = ""     # Intended use of the key.
+  # multi_region                       = false  # Whether the KMS key is a multi-Region (true) or regional (false) key.
+  # policy                             = ""     # Valid policy JSON document.
+  # region                             = ""     # Region where this resource will be managed.
+  # rotation_period_in_days            = 0      # Custom period of time between each rotation date.
+  # tags                               = {}     # Map of tags to assign to the object.
+  # xks_key_id                         = ""     # External key that serves as key material for the KMS key in an external key store.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_kms_key</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a single-Region or multi-Region primary KMS key.</description>
+</snippet>

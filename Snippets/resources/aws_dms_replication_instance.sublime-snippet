@@ -1,0 +1,30 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dms_replication_instance" "${1:name}" {
+  replication_instance_class = "${2:replication_instance_class}"  # The compute and memory capacity of the replication instance as specified by the replication insta...
+  replication_instance_id    = "${3:replication_instance_id}"     # The replication instance identifier.
+
+  # allocated_storage            = 0      # The amount of storage (in gigabytes) to be initially allocated for the replication instance.
+  # allow_major_version_upgrade  = false  # Indicates that major version upgrades are allowed.
+  # apply_immediately            = false  # Indicates whether the changes should be applied immediately or during the next maintenance window.
+  # auto_minor_version_upgrade   = false  # Indicates that minor engine upgrades will be applied automatically to the replication instance du...
+  # availability_zone            = ""     # The EC2 Availability Zone that the replication instance will be created in.
+  # dns_name_servers             = ""     # A list of custom DNS name servers supported for the replication instance to access your on-premis...
+  # engine_version               = ""     # The engine version number of the replication instance.
+  # kms_key_arn                  = ""     # ARN for the KMS key that will be used to encrypt the connection parameters.
+  # multi_az                     = false  # Specifies if the replication instance is a multi-az deployment.
+  # network_type                 = ""     # The type of IP address protocol used by a replication instance.
+  # preferred_maintenance_window = ""     # The weekly time range during which system maintenance can occur, in Universal Coordinated Time (U...
+  # publicly_accessible          = false  # Specifies the accessibility options for the replication instance.
+  # region                       = ""     # Region where this resource will be managed.
+  # replication_subnet_group_id  = ""     # A subnet group to associate with the replication instance.
+  # tags                         = {}     # A map of tags to assign to the resource.
+  # vpc_security_group_ids       = []     # A list of VPC security group IDs to be used with the replication instance.
+  # kerberos_authentication_settings {}  # Configuration block for settings required for Kerberos authentication.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_dms_replication_instance</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a DMS (Data Migration Service) replication instance resource.</description>
+</snippet>

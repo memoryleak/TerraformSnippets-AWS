@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cognito_identity_provider" "${1:name}" {
+  provider_details = {${2}}
+  provider_name    = "${3:provider_name}"
+  provider_type    = "${4:provider_type}"
+  user_pool_id     = "${5:user_pool_id}"
+
+  # attribute_mapping = {}
+  # idp_identifiers   = []
+  # region            = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_cognito_identity_provider</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Cognito User Identity Provider resource.</description>
+</snippet>

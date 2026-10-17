@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudfront_key_group" "${1:name}" {
+  items = [${2}]       # A list of the identifiers of the public keys in the key group.
+  name  = "${3:name}"  # A name to identify the key group.
+
+  # comment = ""  # A comment to describe the key group..
+}
+]]></content>
+<tabTrigger>aws_cloudfront_key_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudFront key group.</description>
+</snippet>

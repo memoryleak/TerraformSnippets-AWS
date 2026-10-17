@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_accountaccess_entitlements" "${1:name}" {
+  application_arn = "${2:application_arn}"  # ARN of the parent Application to list Entitlements within.
+
+  # region = ""  # Region where this resource will be managed.
+  # filter {}  # Filter criteria to narrow the entitlements returned.
+}
+]]></content>
+<tabTrigger>data_aws_accountaccess_entitlements</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Lists AWS Account Access Entitlements matching a required filter.</description>
+</snippet>

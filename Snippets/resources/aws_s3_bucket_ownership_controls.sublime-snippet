@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3_bucket_ownership_controls" "${1:name}" {
+  bucket = "${2:bucket}"  # Name of the bucket that you want to associate this access point with.
+  rule {
+    object_ownership = "${3:object_ownership}"
+  }
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_s3_bucket_ownership_controls</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages S3 Bucket Ownership Controls.</description>
+</snippet>

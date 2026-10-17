@@ -1,0 +1,59 @@
+<snippet>
+<content><![CDATA[
+resource "aws_instance" "${1:name}" {
+  # ami                                  = ""     # AMI to use for the instance.
+  # associate_public_ip_address          = false  # Whether to associate a public IP address with an instance in a VPC.
+  # availability_zone                    = ""     # AZ to start the instance in.
+  # disable_api_stop                     = false  # If true, enables EC2 Instance Stop Protection.
+  # disable_api_termination              = false  # If true, enables EC2 Instance Termination Protection.
+  # ebs_optimized                        = false  # If true, the launched EC2 instance will be EBS-optimized.
+  # enable_primary_ipv6                  = false  # Whether to assign a primary IPv6 Global Unicast Address (GUA) to the instance when launched in a...
+  # force_destroy                        = false  # Destroys instance even if disable_api_termination or disable_api_stop is set to true.
+  # get_password_data                    = false  # If true, wait for password data to become available and retrieve it.
+  # hibernation                          = false  # If true, the launched EC2 instance will support hibernation.
+  # host_id                              = ""     # ID of a dedicated host that the instance will be assigned to.
+  # host_resource_group_arn              = ""     # ARN of the host resource group in which to launch the instances.
+  # iam_instance_profile                 = ""     # IAM Instance Profile to launch the instance with.
+  # instance_initiated_shutdown_behavior = ""     # Shutdown behavior for the instance.
+  # instance_type                        = ""     # Instance type to use for the instance.
+  # ipv6_address_count                   = 0      # Number of IPv6 addresses to associate with the primary network interface.
+  # ipv6_addresses                       = []     # Specify one or more IPv6 addresses from the range of the subnet to associate with the primary net...
+  # key_name                             = ""     # Key name of the Key Pair to use for the instance; which can be managed using the aws_key_pair res...
+  # monitoring                           = false  # If true, the launched EC2 instance will have detailed monitoring enabled.
+  # placement_group                      = ""     # Placement Group to start the instance in.
+  # placement_group_id                   = ""     # Placement Group ID to start the instance in.
+  # placement_partition_number           = 0      # Number of the partition the instance is in.
+  # private_ip                           = ""     # Private IP address to associate with the instance in a VPC.
+  # region                               = ""     # Region where this resource will be managed.
+  # secondary_private_ips                = []     # List of secondary private IPv4 addresses to assign to the instance's primary network interface (e...
+  # security_groups                      = []     # List of security group names to associate with.
+  # source_dest_check                    = false  # Controls if traffic is routed to the instance when the destination address does not match the ins...
+  # subnet_id                            = ""     # VPC Subnet ID to launch in.
+  # tags                                 = {}     # Map of tags to assign to the resource.
+  # tenancy                              = ""     # Tenancy of the instance (if the instance is running in a VPC).
+  # user_data                            = ""     # User data to provide when launching the instance.
+  # user_data_base64                     = ""     # Can be used instead of user_data to pass base64-encoded binary data directly.
+  # user_data_replace_on_change          = false  # When used in combination with user_data or user_data_base64 will trigger a destroy and recreate o...
+  # volume_tags                          = {}     # Map of tags to assign, at instance-creation time, to root and EBS volumes.
+  # vpc_security_group_ids               = []     # List of security group IDs to associate with.
+  # capacity_reservation_specification {}  # Describes an instance's Capacity Reservation targeting option.
+  # cpu_options {}  # The CPU options for the instance.
+  # credit_specification {}  # Configuration block for customizing the credit specification of the instance.
+  # ebs_block_device {}  # One or more configuration blocks with additional EBS block devices to attach to the instance.
+  # enclave_options {}  # Enable Nitro Enclaves on launched instances.
+  # ephemeral_block_device {}  # One or more configuration blocks to customize Ephemeral (also known as "Instance Store") volumes...
+  # instance_market_options {}  # Describes the market (purchasing) option for the instances.
+  # launch_template {}  # Specifies a Launch Template to configure the instance.
+  # maintenance_options {}  # Maintenance and recovery options for the instance.
+  # metadata_options {}  # Customize the metadata options of the instance.
+  # primary_network_interface {}  # The primary network interface.
+  # private_dns_name_options {}  # Options for the instance hostname.
+  # root_block_device {}  # Configuration block to customize details about the root block device of the instance.
+  # secondary_network_interface {}  # One or more secondary network interfaces to attach to the instance at launch time.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_instance</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an EC2 instance resource.</description>
+</snippet>

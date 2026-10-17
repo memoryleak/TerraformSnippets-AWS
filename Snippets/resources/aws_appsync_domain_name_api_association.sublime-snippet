@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appsync_domain_name_api_association" "${1:name}" {
+  api_id      = "${2:api_id}"       # API ID.
+  domain_name = "${3:domain_name}"  # AppSync domain name.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_appsync_domain_name_api_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AppSync API Association.</description>
+</snippet>

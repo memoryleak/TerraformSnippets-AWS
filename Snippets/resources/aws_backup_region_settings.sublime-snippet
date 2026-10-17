@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_backup_region_settings" "${1:name}" {
+  resource_type_opt_in_preference = {${2}}  # Map of service names to their opt-in preferences for the Region.
+
+  # region                              = ""  # Region where this resource will be managed.
+  # resource_type_management_preference = {}  # Map of service names to their full management preferences for the Region.
+}
+]]></content>
+<tabTrigger>aws_backup_region_settings</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AWS Backup Region Settings resource.</description>
+</snippet>

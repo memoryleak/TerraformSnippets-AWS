@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_chime_voice_connector_group" "${1:name}" {
+  name = "${2:name}"  # The name of the Amazon Chime Voice Connector group.
+
+  # region = ""  # Region where this resource will be managed.
+  # connector {}  # The Amazon Chime Voice Connectors to route inbound calls to.
+}
+]]></content>
+<tabTrigger>aws_chime_voice_connector_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Creates an Amazon Chime Voice Connector group under the administrator's AWS account.</description>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dx_connection_confirmation" "${1:name}" {
+  connection_id = "${2:connection_id}"  # The ID of the hosted connection.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_dx_connection_confirmation</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a confirmation of the creation of the specified hosted connection on an interconnect.</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appfabric_app_authorization_connection" "${1:name}" {
+  app_authorization_arn = "${2:app_authorization_arn}"  # ARN or Universal Unique Identifier (UUID) of the app authorization to use for the request.
+  app_bundle_arn        = "${3:app_bundle_arn}"         # ARN of the app bundle to use for the request.
+
+  # region = ""  # Region where this resource will be managed.
+  # auth_request {}  # OAuth2 authorization information.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_appfabric_app_authorization_connection</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS AppFabric App Authorization Connection.</description>
+</snippet>

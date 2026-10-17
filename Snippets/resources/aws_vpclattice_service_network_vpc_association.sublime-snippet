@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpclattice_service_network_vpc_association" "${1:name}" {
+  service_network_identifier = "${2:service_network_identifier}"  # ID or Amazon Resource Identifier (ARN) of the service network.
+  vpc_identifier             = "${3:vpc_identifier}"              # ID of the VPC.
+
+  # private_dns_enabled = false  # Boolean to indicate whether to enable private DNS for the VPC association.
+  # region              = ""     # Region where this resource will be managed.
+  # security_group_ids  = []     # IDs of the security groups.
+  # tags                = {}     # Key-value mapping of resource tags.
+  # dns_options {}  # Configuration block for DNS option.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_vpclattice_service_network_vpc_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS VPC Lattice Service Network VPC Association.</description>
+</snippet>

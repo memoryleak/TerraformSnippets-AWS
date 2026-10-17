@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_elastictranscoder_pipeline" "${1:name}" {
+  input_bucket = "${2:input_bucket}"  # The Amazon S3 bucket in which you saved the media files that you want to transcode and the graphi...
+  role         = "${3:role}"          # IAM ARN for the role that you want Elastic Transcoder to use to transcode jobs for this pipeline.
+
+  # aws_kms_key_arn = ""  # KMS key that you want to use with this pipeline.
+  # name            = ""  # The name of the pipeline.
+  # output_bucket   = ""  # The Amazon S3 bucket in which you want Elastic Transcoder to save the transcoded files.
+  # region          = ""  # Region where this resource will be managed.
+  # content_config {}  # The ContentConfig object specifies information about the Amazon S3 bucket in which you want Elast...
+  # content_config_permissions {}  # The permissions for the content_config object.
+  # notifications {}  # The Amazon Simple Notification Service (Amazon SNS) topic that you want to notify to report job s...
+  # thumbnail_config {}  # The ThumbnailConfig object specifies information about the Amazon S3 bucket in which you want Ela...
+  # thumbnail_config_permissions {}  # The permissions for the thumbnail_config object.
+}
+]]></content>
+<tabTrigger>aws_elastictranscoder_pipeline</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Elastic Transcoder pipeline resource.</description>
+</snippet>

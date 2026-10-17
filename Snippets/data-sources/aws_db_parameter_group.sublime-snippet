@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_db_parameter_group" "${1:name}" {
+  name = "${2:name}"  # DB parameter group name.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_db_parameter_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Information about a database parameter group.</description>
+</snippet>

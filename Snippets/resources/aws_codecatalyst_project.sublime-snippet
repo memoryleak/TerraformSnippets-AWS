@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_codecatalyst_project" "${1:name}" {
+  display_name = "${2:display_name}"  # The friendly name of the project that will be displayed to users.
+  space_name   = "${3:space_name}"    # The name of the space.
+
+  # description = ""  # The description of the project.
+  # region      = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_codecatalyst_project</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS CodeCatalyst Project.</description>
+</snippet>

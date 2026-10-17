@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_network_interface" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+  # filter {}  # One or more name/value pairs to filter off of.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_network_interface</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on a Network Interface resource.</description>
+</snippet>

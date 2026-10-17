@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_qldb_ledger" "${1:name}" {
+  permissions_mode = "${2:permissions_mode}"  # Permissions mode for the QLDB ledger instance.
+
+  # deletion_protection = false  # Whether to enable deletion protection for the QLDB Ledger instance.
+  # kms_key             = ""     # Key in KMS to use for encryption of data at rest in the ledger.
+  # name                = ""     # Friendly name for the QLDB Ledger instance.
+  # region              = ""     # Region where this resource will be managed.
+  # tags                = {}     # Key-value map of resource tags.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_qldb_ledger</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an QLDB Resource resource.</description>
+</snippet>

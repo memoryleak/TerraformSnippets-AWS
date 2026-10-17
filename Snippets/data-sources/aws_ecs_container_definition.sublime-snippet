@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_ecs_container_definition" "${1:name}" {
+  container_name  = "${2:container_name}"   # Name of the container definition
+  task_definition = "${3:task_definition}"  # ARN of the task definition which contains the container
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_ecs_container_definition</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a single container within an ecs task definition</description>
+</snippet>

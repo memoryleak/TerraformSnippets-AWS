@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudformation_stack_set_instance" "${1:name}" {
+  stack_set_name = "${2:stack_set_name}"  # Name of the StackSet.
+
+  # account_id                = ""     # Target AWS Account ID to create a Stack based on the StackSet.
+  # call_as                   = ""     # Specifies whether you are acting as an account administrator in the organization's management acc...
+  # parameter_overrides       = {}     # Key-value map of input parameters to override from the StackSet for this Instance.
+  # retain_stack              = false  # During Terraform resource destroy, remove Instance from StackSet while keeping the Stack and its...
+  # stack_set_instance_region = ""     # Target AWS Region to create a Stack based on the StackSet.
+  # deployment_targets {}  # AWS Organizations accounts to which StackSets deploys.
+  # operation_preferences {}  # Preferences for how AWS CloudFormation performs a stack set operation.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_cloudformation_stack_set_instance</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a CloudFormation StackSet Instance.</description>
+</snippet>

@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_eks_access_entry" "${1:name}" {
+  cluster_name  = "${2:cluster_name}"   # Name of the EKS Cluster.
+  principal_arn = "${3:principal_arn}"  # The IAM Principal ARN which requires Authentication access to the EKS cluster.
+
+  # kubernetes_groups = []  # List of string which can optionally specify the Kubernetes groups the user would belong to when c...
+  # region            = ""  # Region where this resource will be managed.
+  # tags              = {}  # Key-value map of resource tags.
+  # type              = ""  # Defaults to STANDARD which provides the standard workflow.
+  # user_name         = ""  # Defaults to principal ARN if user is principal else defaults to assume-role/session-name is role...
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_eks_access_entry</tabTrigger>
+<scope>source.terraform</scope>
+<description>Access Entry Configurations for an EKS Cluster.</description>
+</snippet>

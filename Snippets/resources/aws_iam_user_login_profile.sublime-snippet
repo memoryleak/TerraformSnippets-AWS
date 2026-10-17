@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iam_user_login_profile" "${1:name}" {
+  user = "${2:user}"  # The IAM user's name.
+
+  # password_length         = 0      # The length of the generated password on resource creation.
+  # password_reset_required = false  # Whether the user should be forced to reset the generated password on resource creation.
+  # pgp_key                 = ""     # Either a base-64 encoded PGP public key, or a keybase username in the form keybase:username.
+}
+]]></content>
+<tabTrigger>aws_iam_user_login_profile</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an IAM User Login Profile</description>
+</snippet>

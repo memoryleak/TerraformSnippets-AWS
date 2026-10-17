@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ses_configuration_set" "${1:name}" {
+  name = "${2:name}"  # Name of the configuration set.
+
+  # region                     = ""     # Region where this resource will be managed.
+  # reputation_metrics_enabled = false  # Whether or not Amazon SES publishes reputation metrics for the configuration set, such as bounce...
+  # sending_enabled            = false  # Whether email sending is enabled or disabled for the configuration set.
+  # delivery_options {}  # Whether messages that use the configuration set are required to use TLS.
+  # tracking_options {}  # Domain that is used to redirect email recipients to an Amazon SES-operated domain.
+}
+]]></content>
+<tabTrigger>aws_ses_configuration_set</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an SES configuration set</description>
+</snippet>

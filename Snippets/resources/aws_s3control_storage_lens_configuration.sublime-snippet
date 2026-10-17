@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3control_storage_lens_configuration" "${1:name}" {
+  config_id = "${2:config_id}"  # ID of the S3 Storage Lens configuration.
+  storage_lens_configuration {
+    enabled = ${3:false}
+    account_level {
+      bucket_level {
+      }
+    }
+  }
+
+  # account_id = ""  # AWS account ID for the S3 Storage Lens configuration.
+  # region     = ""  # Region where this resource will be managed.
+  # tags       = {}  # Key-value map of resource tags.
+}
+]]></content>
+<tabTrigger>aws_s3control_storage_lens_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage an S3 Storage Lens configuration.</description>
+</snippet>

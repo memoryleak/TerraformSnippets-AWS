@@ -1,0 +1,37 @@
+<snippet>
+<content><![CDATA[
+resource "aws_spot_fleet_request" "${1:name}" {
+  iam_fleet_role  = "${2:iam_fleet_role}"  # Grants the Spot fleet permission to terminate
+  target_capacity = ${3:0}                 # The number of units to request.
+
+  # allocation_strategy                 = ""     # Indicates how to allocate the target capacity across
+  # context                             = ""     # Reserved.
+  # excess_capacity_termination_policy  = ""     # Indicates whether running Spot
+  # fleet_type                          = ""     # The type of fleet request.
+  # instance_interruption_behaviour     = ""     # Indicates whether a Spot
+  # instance_pools_to_use_count         = 0
+  # load_balancers                      = []
+  # on_demand_allocation_strategy       = ""     # The order of the launch template overrides to use in fulfilling On-Demand capacity.
+  # on_demand_max_total_price           = ""     # The maximum amount per hour for On-Demand Instances that you're willing to pay.
+  # on_demand_target_capacity           = 0      # The number of On-Demand units to request.
+  # region                              = ""     # Region where this resource will be managed.
+  # replace_unhealthy_instances         = false  # Indicates whether Spot fleet should replace unhealthy instances.
+  # spot_price                          = ""     # The maximum bid price per unit hour.
+  # tags                                = {}     # A map of tags to assign to the resource.
+  # target_capacity_unit_type           = ""     # The unit for the target capacity.
+  # target_group_arns                   = []
+  # terminate_instances_on_delete       = ""     # Indicates whether running Spot
+  # terminate_instances_with_expiration = false  # Indicates whether running Spot
+  # valid_from                          = ""     # The start date and time of the request, in UTC RFC3339 format(for example, YYYY-MM-DDTHH:MM:SSZ).
+  # valid_until                         = ""     # The end date and time of the request, in UTC RFC3339 format(for example, YYYY-MM-DDTHH:MM:SSZ).
+  # wait_for_fulfillment                = false  # If set, Terraform will
+  # launch_specification {}  # Used to define the launch configuration of the
+  # launch_template_config {}  # Launch template configuration block.
+  # spot_maintenance_strategies {}  # Nested argument containing maintenance strategies for managing your Spot Instances that are at an...
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_spot_fleet_request</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Spot Fleet Request resource.</description>
+</snippet>

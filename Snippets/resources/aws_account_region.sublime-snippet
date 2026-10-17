@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_account_region" "${1:name}" {
+  enabled     = ${2:false}          # Whether the region is enabled.
+  region_name = "${3:region_name}"  # The region name to manage.
+
+  # account_id = ""  # The ID of the target account when managing member accounts.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_account_region</tabTrigger>
+<scope>source.terraform</scope>
+<description>Enable (Opt-In) or Disable (Opt-Out) a particular Region for an AWS account</description>
+</snippet>

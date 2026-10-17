@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_transit_gateway" "${1:name}" {
+  # amazon_side_asn                    = 0   # Private Autonomous System Number (ASN) for the Amazon side of a BGP session.
+  # auto_accept_shared_attachments     = ""  # Whether resource attachment requests are automatically accepted.
+  # default_route_table_association    = ""  # Whether resource attachments are automatically associated with the default association route table.
+  # default_route_table_propagation    = ""  # Whether resource attachments automatically propagate routes to the default propagation route table.
+  # description                        = ""  # Description of the EC2 Transit Gateway.
+  # dns_support                        = ""  # Whether DNS support is enabled.
+  # encryption_support                 = ""  # Whether encryption support for VPC Encryption Control is enabled.
+  # multicast_support                  = ""  # Whether Multicast support is enabled.
+  # region                             = ""  # Region where this resource will be managed.
+  # security_group_referencing_support = ""  # Whether Security Group Referencing Support is enabled.
+  # tags                               = {}  # Key-value tags for the EC2 Transit Gateway.
+  # transit_gateway_cidr_blocks        = []  # One or more IPv4 or IPv6 CIDR blocks for the transit gateway.
+  # vpn_ecmp_support                   = ""  # Whether VPN Equal Cost Multipath Protocol support is enabled.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ec2_transit_gateway</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an EC2 Transit Gateway</description>
+</snippet>

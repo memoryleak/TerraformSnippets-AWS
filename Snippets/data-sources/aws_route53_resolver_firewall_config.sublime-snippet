@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_route53_resolver_firewall_config" "${1:name}" {
+  resource_id = "${2:resource_id}"  # The ID of the VPC from Amazon VPC that the configuration is for.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_route53_resolver_firewall_config</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific a Route 53 Resolver DNS Firewall config.</description>
+</snippet>

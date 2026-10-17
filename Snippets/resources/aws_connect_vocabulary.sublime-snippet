@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_connect_vocabulary" "${1:name}" {
+  content       = "${2:content}"        # The content of the custom vocabulary in plain-text format with a table of values.
+  instance_id   = "${3:instance_id}"    # Specifies the identifier of the hosting Amazon Connect Instance.
+  language_code = "${4:language_code}"  # The language code of the vocabulary entries.
+  name          = "${5:name}"           # A unique name of the custom vocabulary.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Tags to apply to the vocabulary.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_connect_vocabulary</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides details about a specific Amazon Connect Vocabulary</description>
+</snippet>

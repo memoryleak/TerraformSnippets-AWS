@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_shield_protection_group" "${1:name}" {
+  aggregation         = "${2:aggregation}"          # Defines how AWS Shield combines resource data for the group in order to detect, mitigate, and rep...
+  pattern             = "${3:pattern}"              # The criteria to use to choose the protected resources for inclusion in the group.
+  protection_group_id = "${4:protection_group_id}"  # The name of the protection group.
+
+  # members       = []  # ARNs of the resources to include in the protection group.
+  # resource_type = ""  # The resource type to include in the protection group.
+  # tags          = {}  # Key-value map of resource tags.
+}
+]]></content>
+<tabTrigger>aws_shield_protection_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Creates a grouping of protected resources so they can be handled as a collective.</description>
+</snippet>

@@ -1,8 +1,0 @@
-<snippet>
-<content><![CDATA[
-resource "aws_securityhub_standards_subscription" "aws_securityhub_standards_subscription_${1:suffix}" {
-}
-]]></content>
-<tabTrigger>aws_securityhub_standards_subscription</tabTrigger>
-<scope>source.terraform</scope>
-</snippet>

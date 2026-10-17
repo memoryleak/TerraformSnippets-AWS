@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_networkmanager_connection" "${1:name}" {
+  connected_device_id = "${2:connected_device_id}"  # ID of the second device in the connection.
+  device_id           = "${3:device_id}"            # ID of the first device in the connection.
+  global_network_id   = "${4:global_network_id}"    # ID of the global network.
+
+  # connected_link_id = ""  # ID of the link for the second device.
+  # description       = ""  # Description of the connection.
+  # link_id           = ""  # ID of the link for the first device.
+  # tags              = {}  # Key-value tags for the connection.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_networkmanager_connection</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Network Manager Connection.</description>
+</snippet>

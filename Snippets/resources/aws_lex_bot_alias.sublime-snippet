@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lex_bot_alias" "${1:name}" {
+  bot_name    = "${2:bot_name}"     # The name of the bot.
+  bot_version = "${3:bot_version}"  # The version of the bot.
+  name        = "${4:name}"         # The name of the alias.
+
+  # description = ""  # A description of the alias.
+  # region      = ""  # Region where this resource will be managed.
+  # conversation_logs {}  # The settings that determine how Amazon Lex uses conversation logs for the alias.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_lex_bot_alias</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Amazon Lex Bot Alias resource.</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_redshift_orderable_cluster" "${1:name}" {
+  # cluster_type         = ""  # Reshift Cluster typeE.g., multi-node or single-node
+  # cluster_version      = ""  # Redshift Cluster versionE.g., 1.0
+  # node_type            = ""  # Redshift Cluster node typeE.g., dc2.8xlarge
+  # preferred_node_types = []  # Ordered list of preferred Redshift Cluster node types.
+  # region               = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_redshift_orderable_cluster</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Information about RDS orderable DB instances.</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_prometheus_query_logging_configuration" "${1:name}" {
+  workspace_id = "${2:workspace_id}"  # ID of the AMP workspace for which to configure query logging.
+
+  # region = ""  # Region where this resource will be managed.
+  # destination {}  # Configuration block for the logging destinations.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_prometheus_query_logging_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Amazon Managed Service for Prometheus (AMP) Query Logging Configuration.</description>
+</snippet>

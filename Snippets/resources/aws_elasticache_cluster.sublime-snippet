@@ -1,0 +1,41 @@
+<snippet>
+<content><![CDATA[
+resource "aws_elasticache_cluster" "${1:name}" {
+  cluster_id = "${2:cluster_id}"  # Group identifier.
+
+  # apply_immediately            = false  # Whether any database modifications are applied immediately, or during the next maintenance window.
+  # auto_minor_version_upgrade   = ""     # Specifies whether minor version engine upgrades will be applied automatically to the underlying C...
+  # availability_zone            = ""     # Availability Zone for the cache cluster.
+  # az_mode                      = ""     # Whether the nodes in this Memcached node group are created in a single Availability Zone or creat...
+  # engine                       = ""     # Name of the cache engine to be used for this cache cluster.
+  # engine_version               = ""     # Version number of the cache engine to be used.
+  # final_snapshot_identifier    = ""     # Name of your final cluster snapshot.
+  # ip_discovery                 = ""     # The IP version to advertise in the discovery protocol.
+  # maintenance_window           = ""     # Specifies the weekly time range for when maintenance
+  # network_type                 = ""     # The IP versions for cache cluster connections.
+  # node_type                    = ""     # The instance class used.
+  # notification_topic_arn       = ""     # ARN of an SNS topic to send ElastiCache notifications to.
+  # num_cache_nodes              = 0      # The initial number of cache nodes that the cache cluster will have.
+  # outpost_mode                 = ""     # Specify the outpost mode that will apply to the cache cluster creation.
+  # parameter_group_name         = ""     # The name of the parameter group to associate with this cache cluster.
+  # port                         = 0      # The port number on which each of the cache nodes will accept connections.
+  # preferred_availability_zones = []     # List of the Availability Zones in which cache nodes are created.
+  # preferred_outpost_arn        = ""     # The outpost ARN in which the cache cluster will be created.
+  # region                       = ""     # Region where this resource will be managed.
+  # replication_group_id         = ""     # ID of the replication group to which this cluster should belong.
+  # security_group_ids           = []     # One or more VPC security groups associated with the cache cluster.
+  # snapshot_arns                = []     # Single-element string list containing an ARN of a Redis RDB snapshot file stored in Amazon S3.
+  # snapshot_name                = ""     # Name of a snapshot from which to restore data into the new node group.
+  # snapshot_retention_limit     = 0      # Number of days for which ElastiCache will retain automatic cache cluster snapshots before deletin...
+  # snapshot_window              = ""     # Daily time range (in UTC) during which ElastiCache will begin taking a daily snapshot of your cac...
+  # subnet_group_name            = ""     # Name of the subnet group to be used for the cache cluster.
+  # tags                         = {}     # Map of tags to assign to the resource.
+  # transit_encryption_enabled   = false  # Enable encryption in-transit.
+  # log_delivery_configuration {}  # Specifies the destination and format of Redis SLOWLOG or Redis Engine Log.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_elasticache_cluster</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an ElastiCache Cluster resource.</description>
+</snippet>

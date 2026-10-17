@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ebs_default_kms_key" "${1:name}" {
+  key_arn = "${2:key_arn}"  # ARN of the KMS customer master key (CMK) to use to encrypt the EBS volume.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_ebs_default_kms_key</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages the default customer master key (CMK) that your AWS account uses to encrypt EBS volumes.</description>
+</snippet>

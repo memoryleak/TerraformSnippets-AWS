@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_pinpointsmsvoicev2_event_destination" "${1:name}" {
+  configuration_set_name = "${2:configuration_set_name}"  # Name of the configuration set this event destination belongs to.
+  event_destination_name = "${3:event_destination_name}"  # Name of the event destination.
+  matching_event_types   = [${4}]                         # Event types for which the destination receives records.
+
+  # enabled = false  # Whether the event destination is enabled.
+  # region  = ""     # Region where this resource will be managed.
+  # cloudwatch_logs_destination {}  # Send events to Amazon CloudWatch Logs.
+  # kinesis_firehose_destination {}  # Send events to Amazon Data Firehose.
+  # sns_destination {}  # Send events to Amazon SNS.
+}
+]]></content>
+<tabTrigger>aws_pinpointsmsvoicev2_event_destination</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS End User Messaging SMS Event Destination.</description>
+</snippet>

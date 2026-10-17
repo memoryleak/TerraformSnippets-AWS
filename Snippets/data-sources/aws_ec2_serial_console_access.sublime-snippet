@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_ec2_serial_console_access" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_ec2_serial_console_access</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Checks whether serial console access is enabled for your AWS account in the current AWS region.</description>
+</snippet>

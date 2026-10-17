@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+data "aws_s3_bucket_object" "${1:name}" {
+  bucket = "${2:bucket}"  # Name of the bucket to read the object from.
+  key    = "${3:key}"     # Full path to the object inside the bucket
+
+  # range      = ""  # Range of bytes to read from the object, formatted as an HTTP Range header.
+  # region     = ""  # Region where this resource will be managed.
+  # tags       = {}
+  # version_id = ""  # Specific version ID of the object returned (defaults to latest version)
+}
+]]></content>
+<tabTrigger>data_aws_s3_bucket_object</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides metadata and optionally content of an S3 object</description>
+</snippet>

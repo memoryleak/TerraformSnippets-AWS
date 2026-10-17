@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_cognito_user_group" "${1:name}" {
+  name         = "${2:name}"          # Name of the user group.
+  user_pool_id = "${3:user_pool_id}"  # User pool the client belongs to.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_cognito_user_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS Cognito IDP (Identity Provider) User Group.</description>
+</snippet>

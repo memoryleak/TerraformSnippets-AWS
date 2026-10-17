@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_transit_gateway_vpc_attachment" "${1:name}" {
+  subnet_ids         = [${2}]                     # Identifiers of EC2 Subnets.
+  transit_gateway_id = "${3:transit_gateway_id}"  # Identifier of EC2 Transit Gateway.
+  vpc_id             = "${4:vpc_id}"              # Identifier of EC2 VPC.
+
+  # appliance_mode_support                          = ""     # Whether Appliance Mode support is enabled.
+  # dns_support                                     = ""     # Whether DNS support is enabled.
+  # ipv6_support                                    = ""     # Whether IPv6 support is enabled.
+  # region                                          = ""     # Region where this resource will be managed.
+  # security_group_referencing_support              = ""     # Whether Security Group Referencing Support is enabled.
+  # tags                                            = {}     # Key-value tags for the EC2 Transit Gateway VPC Attachment.
+  # transit_gateway_default_route_table_association = false  # Boolean whether the VPC Attachment should be associated with the EC2 Transit Gateway association...
+  # transit_gateway_default_route_table_propagation = false  # Boolean whether the VPC Attachment should propagate routes with the EC2 Transit Gateway propagati...
+}
+]]></content>
+<tabTrigger>aws_ec2_transit_gateway_vpc_attachment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an EC2 Transit Gateway VPC Attachment</description>
+</snippet>

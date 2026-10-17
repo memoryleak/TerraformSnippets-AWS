@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appautoscaling_target" "${1:name}" {
+  max_capacity       = ${2:0}                     # Max capacity of the scalable target.
+  min_capacity       = ${3:0}                     # Min capacity of the scalable target.
+  resource_id        = "${4:resource_id}"         # Resource type and unique identifier string for the resource associated with the scaling policy.
+  scalable_dimension = "${5:scalable_dimension}"  # Scalable dimension of the scalable target.
+  service_namespace  = "${6:service_namespace}"   # AWS service namespace of the scalable target.
+
+  # region   = ""  # Region where this resource will be managed.
+  # role_arn = ""  # ARN of the IAM role that allows Application Auto Scaling to modify your scalable target on your b...
+  # tags     = {}  # Map of tags to assign to the scalable target.
+  # suspended_state {}  # Whether the scaling activities for a scalable target are in a suspended state.
+}
+]]></content>
+<tabTrigger>aws_appautoscaling_target</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Application AutoScaling ScalableTarget resource.</description>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_route53_resolver_firewall_rule_group" "${1:name}" {
+  firewall_rule_group_id = "${2:firewall_rule_group_id}"  # The ID of the rule group.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_route53_resolver_firewall_rule_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Retrieves the specified firewall rule group.</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_emrcontainers_virtual_cluster" "${1:name}" {
+  virtual_cluster_id = "${2:virtual_cluster_id}"  # ID of the cluster.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_emrcontainers_virtual_cluster</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Retrieve information about an EMR Containers (EMR on EKS) Virtual Cluster</description>
+</snippet>

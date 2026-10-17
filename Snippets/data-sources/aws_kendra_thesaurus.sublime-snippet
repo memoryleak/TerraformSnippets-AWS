@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_kendra_thesaurus" "${1:name}" {
+  index_id     = "${2:index_id}"      # Identifier of the index that contains the Thesaurus.
+  thesaurus_id = "${3:thesaurus_id}"  # Identifier of the Thesaurus.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_kendra_thesaurus</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific Amazon Kendra Thesaurus.</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+data "aws_servicecatalog_portfolio_constraints" "${1:name}" {
+  portfolio_id = "${2:portfolio_id}"  # Portfolio identifier.
+
+  # accept_language = ""  # Language code.
+  # product_id      = ""  # Product identifier.
+  # region          = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_servicecatalog_portfolio_constraints</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides information on Service Catalog Portfolio Constraints</description>
+</snippet>

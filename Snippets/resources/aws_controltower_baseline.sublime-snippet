@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_controltower_baseline" "${1:name}" {
+  baseline_identifier = "${2:baseline_identifier}"  # The ARN of the baseline to be enabled.
+  baseline_version    = "${3:baseline_version}"     # The version of the baseline to be enabled.
+  target_identifier   = "${4:target_identifier}"    # The ARN of the target on which the baseline will be enabled.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Tags to apply to the landing zone.
+  # parameters {}  # A list of key-value objects that specify enablement parameters, where key is a string and value i...
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_controltower_baseline</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Control Tower Baseline.</description>
+</snippet>

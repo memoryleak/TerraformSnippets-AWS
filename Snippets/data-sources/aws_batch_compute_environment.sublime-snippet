@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_batch_compute_environment" "${1:name}" {
+  name = "${2:name}"  # Name of the Batch Compute Environment
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_batch_compute_environment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a batch compute environment</description>
+</snippet>

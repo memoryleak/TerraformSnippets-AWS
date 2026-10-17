@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_servicequotas_service_quota" "${1:name}" {
+  quota_code   = "${2:quota_code}"    # Code of the service quota to track.
+  service_code = "${3:service_code}"  # Code of the service to track.
+  value        = ${4:0}               # Float specifying the desired value for the service quota.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_servicequotas_service_quota</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an individual Service Quota</description>
+</snippet>

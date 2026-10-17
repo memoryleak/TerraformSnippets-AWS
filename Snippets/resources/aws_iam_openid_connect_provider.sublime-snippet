@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iam_openid_connect_provider" "${1:name}" {
+  client_id_list = [${2}]      # List of client IDs (audiences) that identify the application registered with the OpenID Connect p...
+  url            = "${3:url}"  # URL of the identity provider, corresponding to the iss claim.
+
+  # tags            = {}  # Map of resource tags for the IAM OIDC provider.
+  # thumbprint_list = []  # List of server certificate thumbprints for the OpenID Connect (OIDC) identity provider's server c...
+}
+]]></content>
+<tabTrigger>aws_iam_openid_connect_provider</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an IAM OpenID Connect provider.</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_kms_alias" "${1:name}" {
+  target_key_id = "${2:target_key_id}"  # Identifier for the key for which the alias is for, can be either an ARN or key_id.
+
+  # name        = ""  # Display name of the alias.
+  # name_prefix = ""  # Creates a unique alias beginning with the specified prefix.
+  # region      = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_kms_alias</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a display name for a customer master key.</description>
+</snippet>

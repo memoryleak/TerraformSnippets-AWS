@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrockagent_agent_alias" "${1:name}" {
+  agent_alias_name = "${2:agent_alias_name}"  # Name of the alias.
+  agent_id         = "${3:agent_id}"          # Identifier of the agent to create an alias for.
+
+  # description           = ""  # Description of the alias.
+  # region                = ""  # Region where this resource will be managed.
+  # routing_configuration = []  # Details about the routing configuration of the alias.
+  # tags                  = {}  # Map of tags assigned to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_bedrockagent_agent_alias</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Agents for Amazon Bedrock Agent Alias.</description>
+</snippet>

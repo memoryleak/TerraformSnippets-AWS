@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_efs_backup_policy" "${1:name}" {
+  file_system_id = "${2:file_system_id}"  # The ID of the EFS file system.
+  backup_policy {
+    status = "${3:status}"
+  }
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_efs_backup_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Elastic File System (EFS) Backup Policy resource.</description>
+</snippet>

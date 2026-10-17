@@ -1,0 +1,26 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lightsail_database" "${1:name}" {
+  blueprint_id             = "${2:blueprint_id}"              # Blueprint ID for your database.
+  bundle_id                = "${3:bundle_id}"                 # Bundle ID for your database.
+  master_database_name     = "${4:master_database_name}"      # Name of the master database created when the Lightsail database resource is created.
+  master_password          = "${5:master_password}"           # Password for the master user of your database.
+  master_username          = "${6:master_username}"           # Master user name for your database.
+  relational_database_name = "${7:relational_database_name}"  # Name to use for your Lightsail database resource.
+
+  # apply_immediately            = false  # Whether to apply changes immediately.
+  # availability_zone            = ""     # Availability Zone in which to create your database.
+  # backup_retention_enabled     = false  # Whether to enable automated backup retention for your database.
+  # final_snapshot_name          = ""     # Name of the database snapshot created if skip final snapshot is false, which is the default value...
+  # preferred_backup_window      = ""     # Daily time range during which automated backups are created for your database if automated backup...
+  # preferred_maintenance_window = ""     # Weekly time range during which system maintenance can occur on your database.
+  # publicly_accessible          = false  # Whether the database is accessible to resources outside of your Lightsail account.
+  # region                       = ""     # Region where this resource will be managed.
+  # skip_final_snapshot          = false  # Whether a final database snapshot is created before your database is deleted.
+  # tags                         = {}     # Map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_lightsail_database</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Lightsail managed database instance.</description>
+</snippet>

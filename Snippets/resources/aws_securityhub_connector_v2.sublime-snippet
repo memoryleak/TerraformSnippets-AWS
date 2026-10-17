@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_securityhub_connector_v2" "${1:name}" {
+  name = "${2:name}"  # The name of the connector.
+
+  # description = ""  # A description of the connector.
+  # kms_key_arn = ""  # ARN of KMS key for connector encryption.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Map of tags to assign to the resource.
+  # connector_provider {}  # Third-party provider details.
+}
+]]></content>
+<tabTrigger>aws_securityhub_connector_v2</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Security Hub V2 connector.</description>
+</snippet>

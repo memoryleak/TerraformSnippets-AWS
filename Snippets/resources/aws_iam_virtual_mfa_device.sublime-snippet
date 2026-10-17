@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iam_virtual_mfa_device" "${1:name}" {
+  virtual_mfa_device_name = "${2:virtual_mfa_device_name}"  # Name of the virtual MFA device.
+
+  # path = ""  # Path for the virtual MFA device.
+  # tags = {}  # Map of resource tags for the virtual MFA device.
+}
+]]></content>
+<tabTrigger>aws_iam_virtual_mfa_device</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an IAM Virtual MFA Device</description>
+</snippet>

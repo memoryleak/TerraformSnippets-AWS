@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_servicecatalogappregistry_attribute_group_association" "${1:name}" {
+  application_id     = "${2:application_id}"      # ID of the application.
+  attribute_group_id = "${3:attribute_group_id}"  # ID of the attribute group to associate with the application.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_servicecatalogappregistry_attribute_group_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Service Catalog AppRegistry Attribute Group Association.</description>
+</snippet>

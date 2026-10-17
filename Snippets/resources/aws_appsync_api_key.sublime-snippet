@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appsync_api_key" "${1:name}" {
+  api_id = "${2:api_id}"  # ID of the associated AppSync API
+
+  # description = ""  # API key description.
+  # expires     = ""  # RFC3339 string representation of the expiry date.
+  # region      = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_appsync_api_key</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AppSync API Key.</description>
+</snippet>

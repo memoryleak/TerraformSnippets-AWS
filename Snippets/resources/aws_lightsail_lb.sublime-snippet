@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lightsail_lb" "${1:name}" {
+  instance_port = ${2:0}       # Instance port the load balancer will connect to.
+  name          = "${3:name}"  # Name of the Lightsail load balancer.
+
+  # health_check_path = ""  # Health check path of the load balancer.
+  # ip_address_type   = ""  # IP address type of the load balancer.
+  # region            = ""  # Region where this resource will be managed.
+  # tags              = {}  # Map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_lightsail_lb</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Lightsail Load Balancer.</description>
+</snippet>

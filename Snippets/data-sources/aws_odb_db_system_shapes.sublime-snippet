@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_odb_db_system_shapes" "${1:name}" {
+  # availability_zone_id = ""  # Physical ID of the AZ, for example, use1-az4.
+  # region               = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_odb_db_system_shapes</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source to retrieve available system shapes Oracle Database@AWS.</description>
+</snippet>

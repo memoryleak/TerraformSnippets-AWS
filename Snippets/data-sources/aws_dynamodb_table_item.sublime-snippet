@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+data "aws_dynamodb_table_item" "${1:name}" {
+  key        = "${2:key}"         # Map of attribute names to AttributeValue objects, representing the primary key of the item to ret...
+  table_name = "${3:table_name}"  # Name or ARN of the table containing the requested item.
+
+  # expression_attribute_names = {}  # One or more substitution tokens for attribute names in an expression.
+  # projection_expression      = ""  # String that identifies one or more attributes to retrieve from the table.
+  # region                     = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_dynamodb_table_item</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for retrieving a value from an AWS DynamoDB table.</description>
+</snippet>

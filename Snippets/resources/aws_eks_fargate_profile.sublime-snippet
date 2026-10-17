@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_eks_fargate_profile" "${1:name}" {
+  cluster_name           = "${2:cluster_name}"            # Name of the EKS Cluster.
+  fargate_profile_name   = "${3:fargate_profile_name}"    # Name of the EKS Fargate Profile.
+  pod_execution_role_arn = "${4:pod_execution_role_arn}"  # ARN of the IAM Role that provides permissions for the EKS Fargate Profile.
+  selector {
+    namespace = "${5:namespace}"
+  }
+
+  # region     = ""  # Region where this resource will be managed.
+  # subnet_ids = []  # Identifiers of private EC2 Subnets to associate with the EKS Fargate Profile.
+  # tags       = {}  # Key-value map of resource tags.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_eks_fargate_profile</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an EKS Fargate Profile</description>
+</snippet>

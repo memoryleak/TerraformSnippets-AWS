@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_cognito_user_pool_signing_certificate" "${1:name}" {
+  user_pool_id = "${2:user_pool_id}"  # Cognito user pool ID.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_cognito_user_pool_signing_certificate</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get signing certificate of user pool</description>
+</snippet>

@@ -1,0 +1,29 @@
+<snippet>
+<content><![CDATA[
+resource "aws_amplify_branch" "${1:name}" {
+  app_id      = "${2:app_id}"       # Unique ID for an Amplify app.
+  branch_name = "${3:branch_name}"  # Name for the branch.
+
+  # backend_environment_arn       = ""     # ARN for a backend environment that is part of an Amplify app.
+  # basic_auth_credentials        = ""     # Basic authorization credentials for the branch.
+  # description                   = ""     # Description for the branch.
+  # display_name                  = ""     # Display name for a branch.
+  # enable_auto_build             = false  # Enables auto building for the branch.
+  # enable_basic_auth             = false  # Enables basic authorization for the branch.
+  # enable_notification           = false  # Enables notifications for the branch.
+  # enable_performance_mode       = false  # Enables performance mode for the branch.
+  # enable_pull_request_preview   = false  # Enables pull request previews for this branch.
+  # enable_skew_protection        = false  # Enables skew protection for the branch.
+  # environment_variables         = {}     # Environment variables for the branch.
+  # framework                     = ""     # Framework for the branch.
+  # pull_request_environment_name = ""     # Amplify environment name for the pull request.
+  # region                        = ""     # Region where this resource will be managed.
+  # stage                         = ""     # Describes the current stage for the branch.
+  # tags                          = {}     # Key-value mapping of resource tags.
+  # ttl                           = ""     # Content Time To Live (TTL) for the website in seconds.
+}
+]]></content>
+<tabTrigger>aws_amplify_branch</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Amplify Branch resource.</description>
+</snippet>

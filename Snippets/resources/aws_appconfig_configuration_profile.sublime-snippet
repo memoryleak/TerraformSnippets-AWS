@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appconfig_configuration_profile" "${1:name}" {
+  application_id = "${2:application_id}"  # Application ID.
+  location_uri   = "${3:location_uri}"    # URI to locate the configuration.
+  name           = "${4:name}"            # Name for the configuration profile.
+
+  # description        = ""  # Description of the configuration profile.
+  # kms_key_identifier = ""  # Identifier for a KMS key to encrypt new configuration data versions in the AppConfig hosted confi...
+  # region             = ""  # Region where this resource will be managed.
+  # retrieval_role_arn = ""  # ARN of an IAM role with permission to access the configuration at the specified location_uri.
+  # tags               = {}  # Map of tags to assign to the resource.
+  # type               = ""  # Type of configurations contained in the profile.
+  # validator {}  # Set of methods for validating the configuration.
+}
+]]></content>
+<tabTrigger>aws_appconfig_configuration_profile</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AppConfig Configuration Profile resource.</description>
+</snippet>

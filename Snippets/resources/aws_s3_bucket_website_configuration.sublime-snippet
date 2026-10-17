@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3_bucket_website_configuration" "${1:name}" {
+  bucket = "${2:bucket}"  # Name of the bucket.
+
+  # region        = ""  # Region where this resource will be managed.
+  # routing_rules = ""  # JSON array containing routing rules describing redirect behavior and when redirects are applied.
+  # error_document {}  # Name of the error document for the website.
+  # index_document {}  # Name of the index document for the website.
+  # redirect_all_requests_to {}  # Redirect behavior for every request to this bucket's website endpoint.
+  # routing_rule {}  # List of rules that define when a redirect is applied and the redirect behavior.
+}
+]]></content>
+<tabTrigger>aws_s3_bucket_website_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an S3 bucket website configuration resource.</description>
+</snippet>

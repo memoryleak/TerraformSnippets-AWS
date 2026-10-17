@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_msk_vpc_connection" "${1:name}" {
+  authentication     = "${2:authentication}"      # Authentication type for the client VPC connection.
+  client_subnets     = [${3}]                     # List of subnets in the client VPC to connect to.
+  security_groups    = [${4}]                     # Security groups to attach to the ENIs for the broker nodes.
+  target_cluster_arn = "${5:target_cluster_arn}"  # ARN of the cluster.
+  vpc_id             = "${6:vpc_id}"              # VPC ID of the remote client.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_msk_vpc_connection</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Managed Streaming for Kafka VPC Connection.</description>
+</snippet>

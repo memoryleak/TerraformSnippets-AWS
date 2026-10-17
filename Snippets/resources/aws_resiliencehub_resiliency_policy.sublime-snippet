@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_resiliencehub_resiliency_policy" "${1:name}" {
+  name = "${2:name}"
+  tier = "${3:tier}"
+
+  # data_location_constraint = ""
+  # description              = ""
+  # region                   = ""  # Region where this resource will be managed.
+  # tags                     = {}  # (Map Of String) A map of tags to assign to the resource.
+  # policy {}
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_resiliencehub_resiliency_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Resilience Hub Resiliency Policy.</description>
+</snippet>

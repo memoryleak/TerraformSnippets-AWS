@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_prometheus_scraper" "${1:name}" {
+  scrape_configuration = "${2:scrape_configuration}"  # Configuration file to use in the new scraper.
+
+  # alias  = ""  # Name to associate with the managed scraper.
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags to assign to the resource.
+  # destination {}  # Configuration block for the managed scraper to send metrics to.
+  # exporter {}  # Configuration block for additional exporters.
+  # role_configuration {}  # Configuration block to enable writing to an Amazon Managed Service for Prometheus workspace in a...
+  # source {}  # Configuration block to specify where the managed scraper will collect metrics from.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_prometheus_scraper</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Amazon Managed Service for Prometheus (AMP) Scraper.</description>
+</snippet>

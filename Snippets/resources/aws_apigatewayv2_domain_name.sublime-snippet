@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_apigatewayv2_domain_name" "${1:name}" {
+  domain_name = "${2:domain_name}"  # Domain name.
+  domain_name_configuration {
+    certificate_arn = "${3:certificate_arn}"
+    endpoint_type   = "${4:endpoint_type}"
+    security_policy = "${5:security_policy}"
+  }
+
+  # region       = ""  # Region where this resource will be managed.
+  # routing_mode = ""  # Mode to route traffic for the domain name.
+  # tags         = {}  # Map of tags to assign to the domain name.
+  # mutual_tls_authentication {}  # Mutual TLS authentication configuration for the domain name.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_apigatewayv2_domain_name</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Amazon API Gateway Version 2 domain name.</description>
+</snippet>

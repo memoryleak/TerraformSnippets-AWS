@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_acm_certificate_validation" "${1:name}" {
+  certificate_arn = "${2:certificate_arn}"  # ARN of the certificate that is being validated.
+
+  # region                  = ""  # Region where this resource will be managed.
+  # validation_record_fqdns = []  # List of FQDNs that implement the validation.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_acm_certificate_validation</tabTrigger>
+<scope>source.terraform</scope>
+<description>Waits for and checks successful validation of an ACM certificate.</description>
+</snippet>

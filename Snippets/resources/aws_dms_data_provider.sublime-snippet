@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dms_data_provider" "${1:name}" {
+  engine = "${2:engine}"  # Database engine for the data provider.
+
+  # description = ""     # Description of the data provider.
+  # name        = ""     # Name of the data provider.
+  # region      = ""     # Region where this resource will be managed.
+  # tags        = {}     # Map of tags assigned to the resource.
+  # virtual     = false  # Whether to create a virtual data provider, which does not require a connection to a database.
+  # settings {}  # Database connection settings.
+}
+]]></content>
+<tabTrigger>aws_dms_data_provider</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS DMS (Database Migration) Data Provider.</description>
+</snippet>

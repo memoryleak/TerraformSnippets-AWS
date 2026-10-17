@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_lakeformation_resource" "${1:name}" {
+  arn = "${2:arn}"  # ARN of the resource, an S3 path.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_lakeformation_resource</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a Lake Formation resource.</description>
+</snippet>

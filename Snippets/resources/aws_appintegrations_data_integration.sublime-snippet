@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appintegrations_data_integration" "${1:name}" {
+  kms_key    = "${2:kms_key}"     # KMS key ARN for the Data Integration.
+  name       = "${3:name}"        # Name of the Data Integration.
+  source_uri = "${4:source_uri}"  # URI of the data source.
+  schedule_config {
+    first_execution_from = "${5:first_execution_from}"
+    object               = "${6:object}"
+    schedule_expression  = "${7:schedule_expression}"
+  }
+
+  # description = ""  # Description of the Data Integration.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Tags to apply to the Data Integration.
+}
+]]></content>
+<tabTrigger>aws_appintegrations_data_integration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides details about a specific Amazon AppIntegrations Data Integration</description>
+</snippet>

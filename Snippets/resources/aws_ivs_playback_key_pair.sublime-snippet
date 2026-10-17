@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ivs_playback_key_pair" "${1:name}" {
+  public_key = "${2:public_key}"  # Public portion of a customer-generated key pair.
+
+  # name   = ""  # Playback Key Pair name.
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # A map of tags to assign to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ivs_playback_key_pair</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS IVS (Interactive Video) Playback Key Pair.</description>
+</snippet>

@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_redshift_snapshot_schedule" "${1:name}" {
+  definitions = [${2}]  # The definition of the snapshot schedule.
+
+  # description       = ""     # The description of the snapshot schedule.
+  # force_destroy     = false  # Whether to destroy all associated clusters with this snapshot schedule on deletion.
+  # identifier        = ""     # The snapshot schedule identifier.
+  # identifier_prefix = ""     # Creates a unique
+  # region            = ""     # Region where this resource will be managed.
+  # tags              = {}     # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_redshift_snapshot_schedule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Redshift Snapshot Schedule resource.</description>
+</snippet>

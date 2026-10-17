@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dx_gateway_association_proposal" "${1:name}" {
+  associated_gateway_id       = "${2:associated_gateway_id}"        # The ID of the VGW or transit gateway with which to associate the Direct Connect gateway.
+  dx_gateway_id               = "${3:dx_gateway_id}"                # Direct Connect Gateway identifier.
+  dx_gateway_owner_account_id = "${4:dx_gateway_owner_account_id}"  # AWS Account identifier of the Direct Connect Gateway's owner.
+
+  # allowed_prefixes = []  # VPC prefixes (CIDRs) to advertise to the Direct Connect gateway.
+  # region           = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_dx_gateway_association_proposal</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Direct Connect Gateway Association Proposal.</description>
+</snippet>

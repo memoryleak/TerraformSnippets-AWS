@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+data "aws_resourcegroupstaggingapi_resources" "${1:name}" {
+  # exclude_compliant_resources = false  # Specifies whether to exclude resources that are compliant with the tag policy.
+  # include_compliance_details  = false  # Specifies whether to include details regarding the compliance with the effective tag policy.
+  # region                      = ""     # Region where this resource will be managed.
+  # resource_arn_list           = []     # Specifies a list of ARNs of resources for which you want to retrieve tag data.
+  # resource_type_filters       = []     # Constraints on the resources that you want returned.
+  # tag_filter {}  # Specifies a list of Tag Filters (keys and values) to restrict the output to only those resources...
+}
+]]></content>
+<tabTrigger>data_aws_resourcegroupstaggingapi_resources</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about resource tagging.</description>
+</snippet>

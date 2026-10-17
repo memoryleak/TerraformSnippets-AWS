@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_servicecatalog_portfolio_share" "${1:name}" {
+  portfolio_id = "${2:portfolio_id}"  # Portfolio identifier.
+  principal_id = "${3:principal_id}"  # Identifier of the principal with whom you will share the portfolio.
+  type         = "${4:type}"          # Type of portfolio share.
+
+  # accept_language     = ""     # Language code.
+  # region              = ""     # Region where this resource will be managed.
+  # share_principals    = false  # Enables or disables Principal sharing when creating the portfolio share.
+  # share_tag_options   = false  # Whether to enable sharing of aws_servicecatalog_tag_option resources when creating the portfolio...
+  # wait_for_acceptance = false  # Whether to wait (up to the timeout) for the share to be accepted.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_servicecatalog_portfolio_share</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Service Catalog Portfolio Share</description>
+</snippet>

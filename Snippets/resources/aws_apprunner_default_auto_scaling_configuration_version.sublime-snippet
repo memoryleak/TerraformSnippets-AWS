@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_apprunner_default_auto_scaling_configuration_version" "${1:name}" {
+  auto_scaling_configuration_arn = "${2:auto_scaling_configuration_arn}"  # ARN of the App Runner auto scaling configuration that you want to set as the default.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_apprunner_default_auto_scaling_configuration_version</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages the default App Runner auto scaling configuration.</description>
+</snippet>

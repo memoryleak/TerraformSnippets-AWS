@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_applicationinsights_application" "${1:name}" {
+  resource_group_name = "${2:resource_group_name}"  # Name of the resource group.
+
+  # auto_config_enabled    = false  # Whether to automatically configure unmonitored resources in the resource group.
+  # auto_create            = false  # Configures all of the resources in the resource group by applying the recommended configurations.
+  # cwe_monitor_enabled    = false  # Whether to enable Application Insights to listen to CloudWatch events for the application resourc...
+  # grouping_type          = ""     # Application Insights can create applications based on a resource group or on an account.
+  # ops_center_enabled     = false  # When set to true, creates opsItems for any problems detected on an application.
+  # ops_item_sns_topic_arn = ""     # SNS topic provided to Application Insights that is associated to the created opsItem.
+  # region                 = ""     # Region where this resource will be managed.
+  # tags                   = {}     # Map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_applicationinsights_application</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudWatch Application Insights Application resource</description>
+</snippet>

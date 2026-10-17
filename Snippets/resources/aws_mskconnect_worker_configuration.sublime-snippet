@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_mskconnect_worker_configuration" "${1:name}" {
+  name                    = "${2:name}"                     # Name of the worker configuration.
+  properties_file_content = "${3:properties_file_content}"  # Contents of connect-distributed.properties file.
+
+  # description = ""  # Summary description of the worker configuration.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Map of tags to assign to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_mskconnect_worker_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Amazon MSK Connect worker configuration resource.</description>
+</snippet>

@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+data "aws_lb_listener_rule" "${1:name}" {
+  # arn          = ""  # ARN of the Listener Rule.
+  # listener_arn = ""  # ARN of the associated Listener.
+  # priority     = 0   # Priority of the Listener Rule within the Listener.
+  # region       = ""  # Region where this resource will be managed.
+  # action {}
+  # condition {}
+  # transform {}
+}
+]]></content>
+<tabTrigger>data_aws_lb_listener_rule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS ELB (Elastic Load Balancing) Listener Rule.</description>
+</snippet>

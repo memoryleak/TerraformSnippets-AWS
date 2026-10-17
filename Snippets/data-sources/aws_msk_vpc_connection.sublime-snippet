@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_msk_vpc_connection" "${1:name}" {
+  arn = "${2:arn}"  # ARN of the VPC Connection.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_msk_vpc_connection</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on an Amazon MSK VPC Connection.</description>
+</snippet>

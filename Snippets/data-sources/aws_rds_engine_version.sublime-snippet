@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+data "aws_rds_engine_version" "${1:name}" {
+  engine = "${2:engine}"  # Database engine.
+
+  # default_only              = false  # Whether the engine version must be an AWS-defined default version.
+  # has_major_target          = false  # Whether the engine version must have one or more major upgrade targets.
+  # has_minor_target          = false  # Whether the engine version must have one or more minor upgrade targets.
+  # include_all               = false  # Whether the engine version status can either be deprecated or available.
+  # latest                    = false  # Whether the engine version is the most recent version matching the other criteria.
+  # parameter_group_family    = ""     # Name of a specific database parameter group family.
+  # preferred_major_targets   = []     # Ordered list of preferred major version upgrade targets.
+  # preferred_upgrade_targets = []     # Ordered list of preferred version upgrade targets.
+  # preferred_versions        = []     # Ordered list of preferred versions.
+  # region                    = ""     # Region where this resource will be managed.
+  # version                   = ""     # Engine version.
+  # filter {}  # Configuration block for filtering versions.
+}
+]]></content>
+<tabTrigger>data_aws_rds_engine_version</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Information about an RDS engine version.</description>
+</snippet>

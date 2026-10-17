@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iam_user_policy_attachment" "${1:name}" {
+  policy_arn = "${2:policy_arn}"
+  user       = "${3:user}"
+}
+]]></content>
+<tabTrigger>aws_iam_user_policy_attachment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Attaches a Managed IAM Policy to an IAM user</description>
+</snippet>

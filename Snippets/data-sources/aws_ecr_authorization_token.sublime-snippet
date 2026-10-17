@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_ecr_authorization_token" "${1:name}" {
+  # region      = ""  # Region where this resource will be managed.
+  # registry_id = ""  # AWS account ID of the ECR Repository.
+}
+]]></content>
+<tabTrigger>data_aws_ecr_authorization_token</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an ECR Authorization Token</description>
+</snippet>

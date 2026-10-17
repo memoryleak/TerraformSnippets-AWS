@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_apprunner_observability_configuration" "${1:name}" {
+  observability_configuration_name = "${2:observability_configuration_name}"  # Name of the observability configuration.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value map of resource tags.
+  # trace_configuration {}  # Configuration of the tracing feature within this observability configuration.
+}
+]]></content>
+<tabTrigger>aws_apprunner_observability_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an App Runner Observability Configuration.</description>
+</snippet>

@@ -1,0 +1,26 @@
+<snippet>
+<content><![CDATA[
+resource "aws_glue_dev_endpoint" "${1:name}" {
+  name     = "${2:name}"      # Name of this endpoint.
+  role_arn = "${3:role_arn}"  # IAM role for this endpoint.
+
+  # arguments                 = {}  # Map of arguments used to configure the endpoint.
+  # extra_jars_s3_path        = ""  # Path to one or more Java Jars in an S3 bucket that should be loaded in this endpoint.
+  # extra_python_libs_s3_path = ""  # Path(s) to one or more Python libraries in an S3 bucket that should be loaded in this endpoint.
+  # glue_version              = ""  # -  Specifies the versions of Python and Apache Spark to use.
+  # number_of_nodes           = 0   # Number of AWS Glue Data Processing Units (DPUs) to allocate to this endpoint.
+  # number_of_workers         = 0   # Number of workers of a defined worker type that are allocated to this endpoint.
+  # public_key                = ""  # Public key to be used by this endpoint for authentication.
+  # public_keys               = []  # List of public keys to be used by this endpoint for authentication.
+  # region                    = ""  # Region where this resource will be managed.
+  # security_configuration    = ""  # Name of the Security Configuration structure to be used with this endpoint.
+  # security_group_ids        = []  # Security group IDs for the security groups to be used by this endpoint.
+  # subnet_id                 = ""  # Subnet ID for the new endpoint to use.
+  # tags                      = {}  # Key-value map of resource tags.
+  # worker_type               = ""  # Type of predefined worker that is allocated to this endpoint.
+}
+]]></content>
+<tabTrigger>aws_glue_dev_endpoint</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Glue Development Endpoint resource.</description>
+</snippet>

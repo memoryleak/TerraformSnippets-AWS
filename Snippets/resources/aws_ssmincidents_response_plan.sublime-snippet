@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ssmincidents_response_plan" "${1:name}" {
+  name = "${2:name}"  # The name of the response plan.
+  incident_template {
+    impact = ${3:0}
+    title  = "${4:title}"
+  }
+
+  # chat_channel = []  # The Chatbot chat channel used for collaboration during an incident.
+  # display_name = ""  # The long format of the response plan name.
+  # engagements  = []  # ARN for the contacts and escalation plans that the response plan engages during an incident.
+  # region       = ""  # Region where this resource will be managed.
+  # tags         = {}  # The tags applied to the response plan.
+  # action {}  # The actions that the response plan starts at the beginning of an incident.
+  # integration {}  # Information about third-party services integrated into the response plan.
+}
+]]></content>
+<tabTrigger>aws_ssmincidents_response_plan</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an incident response plan in AWS Systems Manager Incident Manager.</description>
+</snippet>

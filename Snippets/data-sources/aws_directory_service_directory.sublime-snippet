@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_directory_service_directory" "${1:name}" {
+  directory_id = "${2:directory_id}"  # ID of the directory.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_directory_service_directory</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: AWS Directory Service Directory</description>
+</snippet>

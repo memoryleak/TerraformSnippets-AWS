@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_fsx_ontap_storage_virtual_machine" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+  # filter {}  # Configuration block.
+}
+]]></content>
+<tabTrigger>data_aws_fsx_ontap_storage_virtual_machine</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Retrieve information on FSx ONTAP Storage Virtual Machine (SVM).</description>
+</snippet>

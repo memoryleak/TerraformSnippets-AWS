@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+data "aws_connect_vocabulary" "${1:name}" {
+  instance_id = "${2:instance_id}"  # Reference to the hosting Amazon Connect Instance
+
+  # name          = ""  # Returns information on a specific Vocabulary by name
+  # region        = ""  # Region where this resource will be managed.
+  # tags          = {}
+  # vocabulary_id = ""  # Returns information on a specific Vocabulary by Vocabulary ID
+}
+]]></content>
+<tabTrigger>data_aws_connect_vocabulary</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific Amazon Connect Vocabulary.</description>
+</snippet>

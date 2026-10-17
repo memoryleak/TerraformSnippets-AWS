@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_elasticache_user_group" "${1:name}" {
+  engine        = "${2:engine}"         # The current supported value are redis, valkey (case insensitive).
+  user_group_id = "${3:user_group_id}"  # The ID of the user group.
+
+  # region   = ""  # Region where this resource will be managed.
+  # tags     = {}  # Key-value map of resource tags.
+  # user_ids = []  # The list of user IDs that belong to the user group.
+}
+]]></content>
+<tabTrigger>aws_elasticache_user_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an ElastiCache user group.</description>
+</snippet>

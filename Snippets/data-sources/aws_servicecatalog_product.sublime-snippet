@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_servicecatalog_product" "${1:name}" {
+  # accept_language = ""  # Language code.
+  # region          = ""  # Region where this resource will be managed.
+  # tags            = {}
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_servicecatalog_product</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: This data source provides information about a Service Catalog product.</description>
+</snippet>

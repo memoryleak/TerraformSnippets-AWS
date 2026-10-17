@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrock_model_invocation_logging_configuration" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # logging_config {}  # Logging configuration values to set.
+}
+]]></content>
+<tabTrigger>aws_bedrock_model_invocation_logging_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages Bedrock model invocation logging configuration.</description>
+</snippet>

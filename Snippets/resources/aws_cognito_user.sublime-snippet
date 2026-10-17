@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cognito_user" "${1:name}" {
+  user_pool_id = "${2:user_pool_id}"  # The user pool ID for the user pool where the user will be created.
+  username     = "${3:username}"      # The username for the user.
+
+  # attributes               = {}     # A map that contains user attributes and attribute values to be set for the user.
+  # client_metadata          = {}     # A map of custom key-value pairs that you can provide as input for any custom workflows that user...
+  # desired_delivery_mediums = []     # A list of mediums to the welcome message will be sent through.
+  # enabled                  = false  # Specifies whether the user should be enabled after creation.
+  # force_alias_creation     = false  # If this parameter is set to True and the phone_number or email address specified in the attribute...
+  # message_action           = ""     # Set to RESEND to resend the invitation message to a user that already exists and reset the expira...
+  # password                 = ""     # The user's permanent password.
+  # region                   = ""     # Region where this resource will be managed.
+  # temporary_password       = ""     # The user's temporary password.
+  # validation_data          = {}     # The user's validation data.
+}
+]]></content>
+<tabTrigger>aws_cognito_user</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Cognito User resource.</description>
+</snippet>

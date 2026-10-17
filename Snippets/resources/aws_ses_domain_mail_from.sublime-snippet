@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ses_domain_mail_from" "${1:name}" {
+  domain           = "${2:domain}"            # Verified domain name or email identity to generate DKIM tokens for.
+  mail_from_domain = "${3:mail_from_domain}"  # Subdomain (of above domain) which is to be used as MAIL FROM address (Required for DMARC validation)
+
+  # behavior_on_mx_failure = ""  # Action that you want Amazon SES to take if it cannot successfully read the required MX record whe...
+  # region                 = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_ses_domain_mail_from</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an SES domain MAIL FROM resource</description>
+</snippet>

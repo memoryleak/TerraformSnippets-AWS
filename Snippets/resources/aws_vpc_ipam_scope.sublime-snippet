@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpc_ipam_scope" "${1:name}" {
+  ipam_id = "${2:ipam_id}"  # ID of the IPAM for which you're creating this scope.
+
+  # description = ""  # Description for the scope you're creating.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Key-value mapping of resource tags.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_vpc_ipam_scope</tabTrigger>
+<scope>source.terraform</scope>
+<description>Creates a scope for AWS IPAM.</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_opensearch_domain_saml_options" "${1:name}" {
+  domain_name = "${2:domain_name}"  # Name of the domain.
+
+  # region = ""  # Region where this resource will be managed.
+  # saml_options {}  # SAML authentication options for an AWS OpenSearch Domain.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_opensearch_domain_saml_options</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing SAML authentication options for an AWS OpenSearch Domain.</description>
+</snippet>

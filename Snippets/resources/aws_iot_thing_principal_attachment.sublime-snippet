@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iot_thing_principal_attachment" "${1:name}" {
+  principal = "${2:principal}"  # The AWS IoT Certificate ARN or Amazon Cognito Identity ID.
+  thing     = "${3:thing}"      # The name of the thing.
+
+  # region               = ""  # Region where this resource will be managed.
+  # thing_principal_type = ""  # The type of relationship to specify when attaching a principal to a thing.
+}
+]]></content>
+<tabTrigger>aws_iot_thing_principal_attachment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides AWS IoT Thing Principal attachment.</description>
+</snippet>

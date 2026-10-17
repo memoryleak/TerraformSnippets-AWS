@@ -1,0 +1,26 @@
+<snippet>
+<content><![CDATA[
+resource "aws_directory_service_directory" "${1:name}" {
+  name     = "${2:name}"      # The fully qualified name for the directory, such as corp.example.com
+  password = "${3:password}"  # The password for the directory administrator or connector user.
+
+  # alias                                = ""     # The alias for the directory (must be unique amongst all aliases in AWS).
+  # description                          = ""     # A textual description for the directory.
+  # desired_number_of_domain_controllers = 0      # The number of domain controllers desired in the directory.
+  # edition                              = ""     # The MicrosoftAD edition (Standard or Enterprise).
+  # enable_directory_data_access         = false  # Enables access to directory data via the Directory Service Data API for the specified directory.
+  # enable_sso                           = false  # Whether to enable single-sign on for the directory.
+  # region                               = ""     # Region where this resource will be managed.
+  # short_name                           = ""     # The short name of the directory, such as CORP.
+  # size                                 = ""     # (For SimpleAD and ADConnector types) The size of the directory (Small or Large are accepted values).
+  # tags                                 = {}     # A map of tags to assign to the resource.
+  # type                                 = ""
+  # connect_settings {}  # Connector related information about the directory.
+  # timeouts {}
+  # vpc_settings {}  # VPC related information about the directory.
+}
+]]></content>
+<tabTrigger>aws_directory_service_directory</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a directory in AWS Directory Service.</description>
+</snippet>

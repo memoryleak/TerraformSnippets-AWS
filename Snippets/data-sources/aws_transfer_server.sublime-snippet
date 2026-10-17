@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_transfer_server" "${1:name}" {
+  server_id = "${2:server_id}"  # ID for an SFTP server.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_transfer_server</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on an AWS Transfer Server resource</description>
+</snippet>

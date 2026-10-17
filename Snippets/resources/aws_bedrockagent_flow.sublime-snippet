@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrockagent_flow" "${1:name}" {
+  execution_role_arn = "${2:execution_role_arn}"  # ARN of the service role with permissions to create and manage a flow.
+  name               = "${3:name}"                # Name for the flow.
+
+  # customer_encryption_key_arn = ""  # ARN of the KMS key to encrypt the flow.
+  # description                 = ""  # Description for the flow.
+  # region                      = ""  # Region where this resource will be managed.
+  # tags                        = {}  # Key-value map of resource tags.
+  # definition {}  # Nodes and connections between nodes in the flow.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_bedrockagent_flow</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Bedrock Agents Flow.</description>
+</snippet>

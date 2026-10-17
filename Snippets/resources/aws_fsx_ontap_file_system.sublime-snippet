@@ -1,0 +1,31 @@
+<snippet>
+<content><![CDATA[
+resource "aws_fsx_ontap_file_system" "${1:name}" {
+  deployment_type     = "${2:deployment_type}"      # Filesystem deployment type.
+  preferred_subnet_id = "${3:preferred_subnet_id}"  # ID for a subnet.
+  storage_capacity    = ${4:0}                      # Storage capacity (GiB) of the file system.
+  subnet_ids          = [${5}]                      # List of IDs for the subnets that the file system will be accessible from.
+
+  # automatic_backup_retention_days   = 0   # Number of days to retain automatic backups.
+  # daily_automatic_backup_start_time = ""  # Recurring daily time, in the format HH:MM.
+  # endpoint_ip_address_range         = ""  # IP address range in which the endpoints to access your file system will be created.
+  # fsx_admin_password                = ""  # ONTAP administrative password for the fsxadmin user that you can use to administer your file syst...
+  # ha_pairs                          = 0   # Number of ha_pairs to deploy for the file system.
+  # kms_key_id                        = ""  # ARN for the KMS Key to encrypt the file system at rest, Defaults to an AWS managed KMS Key.
+  # network_type                      = ""  # Network type.
+  # region                            = ""  # Region where this resource will be managed.
+  # route_table_ids                   = []  # VPC route tables in which your file system's endpoints will be created.
+  # security_group_ids                = []  # List of IDs for the security groups that apply to the specified network interfaces created for fi...
+  # storage_type                      = ""  # Filesystem storage type.
+  # tags                              = {}  # Map of tags to assign to the file system.
+  # throughput_capacity               = 0   # Sets the throughput capacity (in MBps) for the file system that you're creating.
+  # throughput_capacity_per_ha_pair   = 0   # Sets the per-HA-pair throughput capacity (in MBps) for the file system that you're creating, as o...
+  # weekly_maintenance_start_time     = ""  # Preferred start time (in d:HH:MM format) to perform weekly maintenance, in the UTC time zone.
+  # disk_iops_configuration {}  # SSD IOPS configuration for the Amazon FSx for NetApp ONTAP file system.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_fsx_ontap_file_system</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Amazon FSx for NetApp ONTAP file system.</description>
+</snippet>

@@ -1,0 +1,24 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_transit_gateway_metering_policy_entry" "${1:name}" {
+  metered_account                    = "${2:metered_account}"                     # The account to charge for matching traffic.
+  policy_rule_number                 = ${3:0}                                     # Rule number for this entry.
+  transit_gateway_metering_policy_id = "${4:transit_gateway_metering_policy_id}"  # EC2 Transit Gateway Metering Policy identifier.
+
+  # destination_cidr_block                      = ""  # Destination CIDR block to match.
+  # destination_port_range                      = ""  # Destination port range to match.
+  # destination_transit_gateway_attachment_id   = ""  # Destination Transit Gateway attachment ID to match.
+  # destination_transit_gateway_attachment_type = ""  # Destination attachment resource type to match.
+  # protocol                                    = ""  # Protocol number to match (e.g., 6 for TCP, 17 for UDP).
+  # region                                      = ""  # Region where this resource will be managed.
+  # source_cidr_block                           = ""  # Source CIDR block to match.
+  # source_port_range                           = ""  # Source port range to match.
+  # source_transit_gateway_attachment_id        = ""  # Source Transit Gateway attachment ID to match.
+  # source_transit_gateway_attachment_type      = ""  # Source attachment resource type to match.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ec2_transit_gateway_metering_policy_entry</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an EC2 Transit Gateway Metering Policy Entry</description>
+</snippet>

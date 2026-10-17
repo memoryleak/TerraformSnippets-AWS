@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_oam_sink_policy" "${1:name}" {
+  policy          = "${2:policy}"           # JSON policy to use.
+  sink_identifier = "${3:sink_identifier}"  # ARN of the sink to attach this policy to.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_oam_sink_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS CloudWatch Observability Access Manager Sink Policy.</description>
+</snippet>

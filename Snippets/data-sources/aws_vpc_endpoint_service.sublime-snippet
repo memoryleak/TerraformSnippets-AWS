@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+data "aws_vpc_endpoint_service" "${1:name}" {
+  # service         = ""  # Common name of an AWS service (e.g., s3).
+  # service_name    = ""  # Service name that is specified when creating a VPC endpoint.
+  # service_regions = []  # AWS regions in which to look for services.
+  # service_type    = ""  # Service type, Gateway or Interface.
+  # tags            = {}  # Map of tags, each pair of which must exactly match a pair on the desired VPC Endpoint Service.
+  # filter {}  # Configuration block(s) for filtering.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_vpc_endpoint_service</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific service that can be specified when creating a VPC endpoint.</description>
+</snippet>

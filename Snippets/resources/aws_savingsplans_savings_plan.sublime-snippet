@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_savingsplans_savings_plan" "${1:name}" {
+  commitment               = "${2:commitment}"                # The hourly commitment, in USD.
+  savings_plan_offering_id = "${3:savings_plan_offering_id}"  # The unique ID of a Savings Plan offering.
+
+  # purchase_time          = ""  # The time at which to purchase the Savings Plan, in UTC format (YYYY-MM-DDTHH:MM:SSZ).
+  # tags                   = {}  # Map of tags to assign to the resource.
+  # upfront_payment_amount = ""  # The up-front payment amount.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_savingsplans_savings_plan</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AWS Savings Plan resource.</description>
+</snippet>

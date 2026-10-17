@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+data "aws_iam_principal_policy_simulation" "${1:name}" {
+  action_names      = [${2}]
+  policy_source_arn = "${3:policy_source_arn}"
+
+  # additional_policies_json           = []
+  # caller_arn                         = ""
+  # permissions_boundary_policies_json = []
+  # resource_arns                      = []
+  # resource_handling_option           = ""
+  # resource_owner_account_id          = ""
+  # resource_policy_json               = ""
+  # context {}
+}
+]]></content>
+<tabTrigger>data_aws_iam_principal_policy_simulation</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Runs a simulation of the IAM policies of a particular principal against a given hypothetical requ...</description>
+</snippet>

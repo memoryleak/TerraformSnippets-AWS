@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_route_tables" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags, each pair of which must exactly match
+  # vpc_id = ""  # VPC ID that you want to filter from.
+  # filter {}  # Custom filter block as described below.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_route_tables</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on Amazon route tables.</description>
+</snippet>

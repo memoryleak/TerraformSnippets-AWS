@@ -1,0 +1,25 @@
+<snippet>
+<content><![CDATA[
+resource "aws_redshiftserverless_workgroup" "${1:name}" {
+  namespace_name = "${2:namespace_name}"  # The name of the namespace.
+  workgroup_name = "${3:workgroup_name}"  # The name of the workgroup.
+
+  # base_capacity        = 0      # The base data warehouse capacity of the workgroup in Redshift Processing Units (RPUs).
+  # enhanced_vpc_routing = false  # Value that specifies whether to turn on enhanced VPC routing, which forces Amazon Redshift Server...
+  # max_capacity         = 0      # The maximum data-warehouse capacity Amazon Redshift Serverless uses to serve queries, specified i...
+  # port                 = 0      # The port number on which the cluster accepts incoming connections.
+  # publicly_accessible  = false  # A value that specifies whether the workgroup can be accessed from a public network.
+  # region               = ""     # Region where this resource will be managed.
+  # security_group_ids   = []     # An array of security group IDs to associate with the workgroup.
+  # subnet_ids           = []     # An array of VPC subnet IDs to associate with the workgroup.
+  # tags                 = {}     # A map of tags to assign to the resource.
+  # track_name           = ""     # The name of the track for the workgroup.
+  # config_parameter {}  # An array of parameters to set for more control over a serverless database.
+  # price_performance_target {}  # Price-performance scaling for the workgroup.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_redshiftserverless_workgroup</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Redshift Serverless Workgroup resource.</description>
+</snippet>

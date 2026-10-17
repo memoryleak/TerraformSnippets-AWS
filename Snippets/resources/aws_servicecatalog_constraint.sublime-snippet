@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_servicecatalog_constraint" "${1:name}" {
+  parameters   = "${2:parameters}"    # Constraint parameters in JSON format.
+  portfolio_id = "${3:portfolio_id}"  # Portfolio identifier.
+  product_id   = "${4:product_id}"    # Product identifier.
+  type         = "${5:type}"          # Type of constraint.
+
+  # accept_language = ""  # Language code.
+  # description     = ""  # Description of the constraint.
+  # region          = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_servicecatalog_constraint</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Service Catalog Constraint</description>
+</snippet>

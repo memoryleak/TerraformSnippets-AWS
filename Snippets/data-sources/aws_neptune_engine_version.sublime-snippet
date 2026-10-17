@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+data "aws_neptune_engine_version" "${1:name}" {
+  # default_only              = false
+  # engine                    = ""     # DB engine.
+  # has_major_target          = false  # Whether to filter for engine versions that have a major target.
+  # has_minor_target          = false  # Whether to filter for engine versions that have a minor target.
+  # latest                    = false
+  # parameter_group_family    = ""     # Name of a specific DB parameter group family.
+  # preferred_major_targets   = []     # Ordered list of preferred major engine versions.
+  # preferred_upgrade_targets = []     # Ordered list of preferred upgrade engine versions.
+  # preferred_versions        = []     # Ordered list of preferred engine versions.
+  # region                    = ""     # Region where this resource will be managed.
+  # version                   = ""     # Version of the DB engine.
+}
+]]></content>
+<tabTrigger>data_aws_neptune_engine_version</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Information about a Neptune engine version.</description>
+</snippet>

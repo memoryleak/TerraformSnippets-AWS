@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_ecrpublic_images" "${1:name}" {
+  repository_name = "${2:repository_name}"  # Name of the public repository.
+
+  # region      = ""  # Region where this resource will be managed.
+  # registry_id = ""  # AWS account ID associated with the public registry that contains the repository.
+  # image_ids {}  # One or more image ID filters.
+}
+]]></content>
+<tabTrigger>data_aws_ecrpublic_images</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides a list of images for a specified AWS ECR Public Repository.</description>
+</snippet>

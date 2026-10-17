@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_kinesis_account_settings" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # minimum_throughput_billing_commitment {}  # Minimum throughput billing commitment configuration.
+}
+]]></content>
+<tabTrigger>aws_kinesis_account_settings</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages account-level settings for Amazon Kinesis Data Streams.</description>
+</snippet>

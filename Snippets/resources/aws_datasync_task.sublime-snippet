@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+resource "aws_datasync_task" "${1:name}" {
+  destination_location_arn = "${2:destination_location_arn}"  # ARN of destination DataSync Location.
+  source_location_arn      = "${3:source_location_arn}"       # ARN of source DataSync Location.
+
+  # cloudwatch_log_group_arn = ""  # ARN of the CloudWatch Log Group that is used to monitor and log events in the sync task.
+  # name                     = ""  # Name of the DataSync Task.
+  # region                   = ""  # Region where this resource will be managed.
+  # tags                     = {}  # Key-value pairs of resource tags to assign to the DataSync Task.
+  # task_mode                = ""  # One of the following task modes for your data transfer:
+  # excludes {}  # Filter rules that determines which files to exclude from a task.
+  # includes {}  # Filter rules that determines which files to include in a task.
+  # options {}  # Configuration block containing option that controls the default behavior when you start an execut...
+  # schedule {}  # Specifies a schedule used to periodically transfer files from a source to a destination location.
+  # task_report_config {}  # Configuration block containing the configuration of a DataSync Task Report.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_datasync_task</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS DataSync Task</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_cloudfront_origin_access_identities" "${1:name}" {
+  # comments = []
+}
+]]></content>
+<tabTrigger>data_aws_cloudfront_origin_access_identities</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Use this data source to retrieve information about a set of Amazon CloudFront origin access ident...</description>
+</snippet>

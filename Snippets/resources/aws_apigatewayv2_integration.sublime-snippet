@@ -1,0 +1,29 @@
+<snippet>
+<content><![CDATA[
+resource "aws_apigatewayv2_integration" "${1:name}" {
+  api_id           = "${2:api_id}"            # API identifier.
+  integration_type = "${3:integration_type}"  # Integration type of an integration.
+
+  # connection_id                 = ""  # ID of the VPC link for a private integration.
+  # connection_type               = ""  # Type of the network connection to the integration endpoint.
+  # content_handling_strategy     = ""  # How to handle response payload content type conversions.
+  # credentials_arn               = ""  # Credentials required for the integration, if any.
+  # description                   = ""  # Description of the integration.
+  # integration_method            = ""  # Integration's HTTP method.
+  # integration_subtype           = ""  # AWS service action to invoke.
+  # integration_uri               = ""  # URI of the Lambda function for a Lambda proxy integration, when integration_type is AWS_PROXY.
+  # passthrough_behavior          = ""  # Pass-through behavior for incoming requests based on the Content-Type header in the request, and...
+  # payload_format_version        = ""  # Format of the payload sent to an integration.
+  # region                        = ""  # Region where this resource will be managed.
+  # request_parameters            = {}  # For WebSocket APIs, a key-value map specifying request parameters that are passed from the method...
+  # request_templates             = {}  # Map of Velocity templates that are applied on the request payload based on the value of the Conte...
+  # template_selection_expression = ""  # Template selection expression for the integration.
+  # timeout_milliseconds          = 0   # Custom timeout between 50 and 29,000 milliseconds for WebSocket APIs and between 50 and 30,000 mi...
+  # response_parameters {}  # Mappings to transform the HTTP response from a backend integration before returning the response...
+  # tls_config {}  # TLS configuration for a private integration.
+}
+]]></content>
+<tabTrigger>aws_apigatewayv2_integration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Amazon API Gateway Version 2 integration.</description>
+</snippet>

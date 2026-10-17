@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_resiliencehubv2_system" "${1:name}" {
+  name = "${2:name}"  # Name of the system.
+
+  # description     = ""     # Description of the system.
+  # kms_key_id      = ""     # KMS key ARN.
+  # region          = ""     # Region where this resource will be managed.
+  # sharing_enabled = false  # Whether cross-account sharing is enabled for this system.
+  # tags            = {}     # Map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_resiliencehubv2_system</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Resilience Hub V2 System.</description>
+</snippet>

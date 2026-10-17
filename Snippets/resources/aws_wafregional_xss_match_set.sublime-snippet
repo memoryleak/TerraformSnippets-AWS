@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_wafregional_xss_match_set" "${1:name}" {
+  name = "${2:name}"  # The name of the set
+
+  # region = ""  # Region where this resource will be managed.
+  # xss_match_tuple {}  # The parts of web requests that you want to inspect for cross-site scripting attacks.
+}
+]]></content>
+<tabTrigger>aws_wafregional_xss_match_set</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AWS WAF Regional XSS Match Set resource for use with ALB.</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_prometheus_scraper_logging_configuration" "${1:name}" {
+  scraper_id = "${2:scraper_id}"  # ID of the scraper to configure logging for.
+
+  # region             = ""  # Region where this resource will be managed.
+  # scraper_components = []  # Scraper components to log.
+  # logging_destination {}  # Configuration block for the logging destination.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_prometheus_scraper_logging_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Amazon Managed Service for Prometheus (AMP) Scraper Logging Configuration.</description>
+</snippet>

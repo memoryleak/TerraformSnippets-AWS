@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_emrcontainers_virtual_cluster" "${1:name}" {
+  name = "${2:name}"  # Name of the virtual cluster.
+  container_provider {
+    type = "${3:type}"
+    info {
+      eks_info {
+      }
+    }
+  }
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value mapping of resource tags.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_emrcontainers_virtual_cluster</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an EMR Containers (EMR on EKS) Virtual Cluster</description>
+</snippet>

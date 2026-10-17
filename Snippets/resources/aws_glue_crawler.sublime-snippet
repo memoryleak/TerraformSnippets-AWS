@@ -1,0 +1,33 @@
+<snippet>
+<content><![CDATA[
+resource "aws_glue_crawler" "${1:name}" {
+  database_name = "${2:database_name}"  # Glue database where results are written.
+  name          = "${3:name}"           # Name of the crawler.
+  role          = "${4:role}"           # IAM role friendly name (including path without leading slash), or ARN of an IAM role, used by the...
+
+  # classifiers            = []  # List of custom classifiers.
+  # configuration          = ""  # JSON string of configuration information.
+  # description            = ""  # Description of the crawler.
+  # region                 = ""  # Region where this resource will be managed.
+  # schedule               = ""  # Cron expression used to specify the schedule.
+  # security_configuration = ""  # Name of Security Configuration to be used by the crawler.
+  # table_prefix           = ""  # Table prefix used for catalog tables that are created.
+  # tags                   = {}  # Key-value map of resource tags.
+  # catalog_target {}  # List of nested AWS Glue Data Catalog target arguments.
+  # delta_target {}  # List of nested Delta Lake target arguments.
+  # dynamodb_target {}  # List of nested DynamoDB target arguments.
+  # hudi_target {}  # List of nested Hudi target arguments.
+  # iceberg_target {}  # List of nested Iceberg target arguments.
+  # jdbc_target {}  # List of nested JDBC target arguments.
+  # lake_formation_configuration {}  # Lake Formation configuration settings for the crawler.
+  # lineage_configuration {}  # Data lineage configuration settings for the crawler.
+  # mongodb_target {}  # List of nested MongoDB target arguments.
+  # recrawl_policy {}  # Policy that specifies whether to crawl the entire dataset again, or to crawl only folders that we...
+  # s3_target {}  # List of nested Amazon S3 target arguments.
+  # schema_change_policy {}  # Policy for the crawler's update and deletion behavior.
+}
+]]></content>
+<tabTrigger>aws_glue_crawler</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Glue Crawler</description>
+</snippet>

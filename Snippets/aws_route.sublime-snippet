@@ -1,9 +1,0 @@
-<snippet>
-<content><![CDATA[
-resource "aws_route" "aws_route_${1:suffix}" {
-	route_table_id = "${3:Required}"
-}
-]]></content>
-<tabTrigger>aws_route</tabTrigger>
-<scope>source.terraform</scope>
-</snippet>

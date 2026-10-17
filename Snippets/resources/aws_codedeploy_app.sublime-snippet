@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_codedeploy_app" "${1:name}" {
+  name = "${2:name}"  # The name of the application.
+
+  # compute_platform = ""  # The compute platform can either be ECS, Lambda, or Server.
+  # region           = ""  # Region where this resource will be managed.
+  # tags             = {}  # Key-value map of resource tags.
+}
+]]></content>
+<tabTrigger>aws_codedeploy_app</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CodeDeploy application.</description>
+</snippet>

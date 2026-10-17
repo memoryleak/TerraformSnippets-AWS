@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lakeformation_resource" "${1:name}" {
+  arn = "${2:arn}"  # ARN of the resource.
+
+  # hybrid_access_enabled   = false  # Flag to enable AWS Lake Formation hybrid access permission mode.
+  # region                  = ""     # Region where this resource will be managed.
+  # role_arn                = ""     # Role that has read/write access to the resource.
+  # use_service_linked_role = false  # Designates an AWS Identity and Access Management (IAM) service-linked role by registering this ro...
+  # with_federation         = false  # Whether or not the resource is a federated resource.
+  # with_privileged_access  = false  # Boolean to grant the calling principal the permissions to perform all supported Lake Formation op...
+}
+]]></content>
+<tabTrigger>aws_lakeformation_resource</tabTrigger>
+<scope>source.terraform</scope>
+<description>Registers a Lake Formation resource as managed by the Data Catalog.</description>
+</snippet>

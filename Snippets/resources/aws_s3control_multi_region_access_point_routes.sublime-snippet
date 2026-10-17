@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3control_multi_region_access_point_routes" "${1:name}" {
+  mrap = "${2:mrap}"  # ARN of the Multi-Region Access Point.
+
+  # account_id = ""  # AWS account ID for the owner of the Multi-Region Access Point.
+  # region     = ""  # Region where this resource will be managed.
+  # route {}  # Route configurations.
+}
+]]></content>
+<tabTrigger>aws_s3control_multi_region_access_point_routes</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage the routing configuration for an S3 Multi-Region Access Point.</description>
+</snippet>

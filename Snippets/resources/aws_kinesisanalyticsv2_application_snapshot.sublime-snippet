@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_kinesisanalyticsv2_application_snapshot" "${1:name}" {
+  application_name = "${2:application_name}"  # Name of an existing Kinesis Analytics v2 Application.
+  snapshot_name    = "${3:snapshot_name}"     # Name of the application snapshot.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_kinesisanalyticsv2_application_snapshot</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Kinesis Analytics v2 Application Snapshot.</description>
+</snippet>

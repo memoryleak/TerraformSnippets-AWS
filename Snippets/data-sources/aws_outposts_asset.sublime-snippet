@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_outposts_asset" "${1:name}" {
+  arn      = "${2:arn}"       # Outpost ARN.
+  asset_id = "${3:asset_id}"  # ID of the asset.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_outposts_asset</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Information about hardware assets in an Outpost.</description>
+</snippet>

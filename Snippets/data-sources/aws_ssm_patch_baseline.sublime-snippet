@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+data "aws_ssm_patch_baseline" "${1:name}" {
+  owner = "${2:owner}"  # Owner of the baseline.
+
+  # default_baseline = false  # Filters the results against the baselines default_baseline field.
+  # name_prefix      = ""     # Filter results by the baseline name prefix.
+  # operating_system = ""     # Specified OS for the baseline.
+  # region           = ""     # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_ssm_patch_baseline</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides an SSM Patch Baseline data source</description>
+</snippet>

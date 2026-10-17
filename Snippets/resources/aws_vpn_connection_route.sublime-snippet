@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpn_connection_route" "${1:name}" {
+  destination_cidr_block = "${2:destination_cidr_block}"  # CIDR block associated with the local subnet of the customer network.
+  vpn_connection_id      = "${3:vpn_connection_id}"       # ID of the VPN connection.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_vpn_connection_route</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a static route between a VPN connection and a customer gateway.</description>
+</snippet>

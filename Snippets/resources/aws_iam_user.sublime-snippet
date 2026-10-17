@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iam_user" "${1:name}" {
+  name = "${2:name}"  # The user's name.
+
+  # force_destroy        = false  # When destroying this user, destroy even if it
+  # path                 = ""     # Path in which to create the user.
+  # permissions_boundary = ""     # The ARN of the policy that is used to set the permissions boundary for the user.
+  # tags                 = {}     # Key-value map of tags for the IAM user.
+}
+]]></content>
+<tabTrigger>aws_iam_user</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an IAM user.</description>
+</snippet>

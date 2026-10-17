@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_wafregional_web_acl" "${1:name}" {
+  name = "${2:name}"  # Name of the WAF Regional Web ACL.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_wafregional_web_acl</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Retrieves a WAF Regional Web ACL id.</description>
+</snippet>

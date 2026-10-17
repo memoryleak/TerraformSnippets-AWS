@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudhsm_v2_hsm" "${1:name}" {
+  cluster_id = "${2:cluster_id}"  # The ID of Cloud HSM v2 cluster to which HSM will be added.
+
+  # availability_zone = ""  # The IDs of AZ in which HSM module will be located.
+  # ip_address        = ""  # The IP address of HSM module.
+  # region            = ""  # Region where this resource will be managed.
+  # subnet_id         = ""  # The ID of subnet in which HSM module will be located.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_cloudhsm_v2_hsm</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudHSM v2 HSM module resource.</description>
+</snippet>

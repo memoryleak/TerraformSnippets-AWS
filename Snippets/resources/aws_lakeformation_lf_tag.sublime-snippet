@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lakeformation_lf_tag" "${1:name}" {
+  key    = "${2:key}"  # Key-name for the tag.
+  values = [${3}]      # List of possible values an attribute can take.
+
+  # catalog_id = ""  # ID of the Data Catalog to create the tag in.
+  # region     = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_lakeformation_lf_tag</tabTrigger>
+<scope>source.terraform</scope>
+<description>Creates a tag with the specified name and values.</description>
+</snippet>

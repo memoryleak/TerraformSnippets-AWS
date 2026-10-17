@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_guardduty_detector" "${1:name}" {
+  # enable                       = false  # Enable monitoring and feedback reporting.
+  # finding_publishing_frequency = ""     # Frequency of notifications sent for subsequent finding occurrences.
+  # region                       = ""     # Region where this resource will be managed.
+  # tags                         = {}     # Key-value map of resource tags.
+}
+]]></content>
+<tabTrigger>aws_guardduty_detector</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage an Amazon GuardDuty detector</description>
+</snippet>

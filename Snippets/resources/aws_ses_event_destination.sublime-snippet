@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ses_event_destination" "${1:name}" {
+  configuration_set_name = "${2:configuration_set_name}"  # Name of the configuration set
+  matching_types         = [${3}]                         # List of matching types.
+  name                   = "${4:name}"                    # Name of the event destination
+
+  # enabled = false  # If true, the event destination will be enabled
+  # region  = ""     # Region where this resource will be managed.
+  # cloudwatch_destination {}  # CloudWatch destination for the events
+  # kinesis_destination {}  # Send the events to a kinesis firehose destination
+  # sns_destination {}  # Send the events to an SNS Topic destination
+}
+]]></content>
+<tabTrigger>aws_ses_event_destination</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an SES event destination</description>
+</snippet>

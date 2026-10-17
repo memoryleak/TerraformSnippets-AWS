@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_network_acl_association" "${1:name}" {
+  network_acl_id = "${2:network_acl_id}"  # The ID of the network ACL.
+  subnet_id      = "${3:subnet_id}"       # The ID of the associated Subnet.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_network_acl_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an network ACL association resource.</description>
+</snippet>

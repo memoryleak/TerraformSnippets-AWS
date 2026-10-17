@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ebs_snapshot" "${1:name}" {
+  volume_id = "${2:volume_id}"  # The Volume ID of which to make a snapshot.
+
+  # description            = ""     # A description of what the snapshot is.
+  # outpost_arn            = ""     # ARN of the Outpost on which to create a local snapshot.
+  # permanent_restore      = false  # Indicates whether to permanently restore an archived snapshot.
+  # region                 = ""     # Region where this resource will be managed.
+  # storage_tier           = ""     # The name of the storage tier.
+  # tags                   = {}     # A map of tags to assign to the snapshot.
+  # temporary_restore_days = 0      # Specifies the number of days for which to temporarily restore an archived snapshot.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ebs_snapshot</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an elastic block storage snapshot resource.</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_workspacesweb_browser_settings" "${1:name}" {
+  browser_policy = "${2:browser_policy}"  # Browser policy for the browser settings.
+
+  # additional_encryption_context = {}  # Additional encryption context for the browser settings.
+  # customer_managed_key          = ""  # ARN of the customer managed KMS key.
+  # region                        = ""  # Region where this resource will be managed.
+  # tags                          = {}  # Map of tags assigned to the resource.
+}
+]]></content>
+<tabTrigger>aws_workspacesweb_browser_settings</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS WorkSpaces Web Browser Settings.</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_networkmonitor_monitor" "${1:name}" {
+  monitor_name = "${2:monitor_name}"  # The name of the monitor.
+
+  # aggregation_period = 0   # The time, in seconds, that metrics are aggregated and sent to Amazon CloudWatch.
+  # region             = ""  # Region where this resource will be managed.
+  # tags               = {}  # Key-value tags for the monitor.
+}
+]]></content>
+<tabTrigger>aws_networkmonitor_monitor</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an Amazon Network Monitor Monitor.</description>
+</snippet>

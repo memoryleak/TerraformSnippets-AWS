@@ -1,0 +1,26 @@
+<snippet>
+<content><![CDATA[
+resource "aws_comprehend_entity_recognizer" "${1:name}" {
+  data_access_role_arn = "${2:data_access_role_arn}"  # The ARN for an IAM Role which allows Comprehend to read the training and testing data.
+  language_code        = "${3:language_code}"         # Two-letter language code for the language.
+  name                 = "${4:name}"                  # Name for the Entity Recognizer.
+  input_data_config {
+    entity_types {
+      type = "${5:type}"
+    }
+  }
+
+  # model_kms_key_id    = ""  # The ID or ARN of a KMS Key used to encrypt trained Entity Recognizers.
+  # region              = ""  # Region where this resource will be managed.
+  # tags                = {}  # A map of tags to assign to the resource.
+  # version_name        = ""  # Name for the version of the Entity Recognizer.
+  # version_name_prefix = ""  # Creates a unique version name beginning with the specified prefix.
+  # volume_kms_key_id   = ""  # ID or ARN of a KMS Key used to encrypt storage volumes during job processing.
+  # timeouts {}
+  # vpc_config {}  # Configuration parameters for VPC to contain Entity Recognizer resources.
+}
+]]></content>
+<tabTrigger>aws_comprehend_entity_recognizer</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Comprehend Entity Recognizer.</description>
+</snippet>

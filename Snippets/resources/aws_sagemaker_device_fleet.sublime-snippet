@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sagemaker_device_fleet" "${1:name}" {
+  device_fleet_name = "${2:device_fleet_name}"  # The name of the Device Fleet (must be unique).
+  role_arn          = "${3:role_arn}"           # ARN that has access to AWS Internet of Things (IoT).
+  output_config {
+    s3_output_location = "${4:s3_output_location}"
+  }
+
+  # description           = ""     # A description of the fleet.
+  # enable_iot_role_alias = false  # Whether to create an AWS IoT Role Alias during device fleet creation.
+  # region                = ""     # Region where this resource will be managed.
+  # tags                  = {}     # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_sagemaker_device_fleet</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a SageMaker AI Device Fleet resource.</description>
+</snippet>

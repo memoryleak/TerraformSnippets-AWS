@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_rds_shard_group" "${1:name}" {
+  db_cluster_identifier     = "${2:db_cluster_identifier}"      # Name of the primary DB cluster for the DB shard group.
+  db_shard_group_identifier = "${3:db_shard_group_identifier}"  # Name of the DB shard group.
+  max_acu                   = ${4:0}                            # Maximum capacity of the DB shard group in Aurora capacity units (ACUs).
+
+  # compute_redundancy  = 0      # Whether to create standby DB shard groups for the DB shard group.
+  # min_acu             = 0      # Minimum capacity of the DB shard group in Aurora capacity units (ACUs).
+  # publicly_accessible = false  # Whether the DB shard group is publicly accessible.
+  # region              = ""     # Region where this resource will be managed.
+  # tags                = {}     # Key-value map of resource tags.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_rds_shard_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an Amazon Aurora Limitless Database DB shard group.</description>
+</snippet>

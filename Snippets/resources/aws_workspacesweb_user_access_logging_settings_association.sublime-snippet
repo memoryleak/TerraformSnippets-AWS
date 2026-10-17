@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_workspacesweb_user_access_logging_settings_association" "${1:name}" {
+  portal_arn                       = "${2:portal_arn}"                        # ARN of the portal to associate with the user access logging settings.
+  user_access_logging_settings_arn = "${3:user_access_logging_settings_arn}"  # ARN of the user access logging settings to associate with the portal.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_workspacesweb_user_access_logging_settings_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS WorkSpaces Web User Access Logging Settings Association.</description>
+</snippet>

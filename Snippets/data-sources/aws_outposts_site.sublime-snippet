@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_outposts_site" "${1:name}" {
+  # name   = ""  # Name of the Site.
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_outposts_site</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an Outposts Site</description>
+</snippet>

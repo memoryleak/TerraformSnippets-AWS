@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_redshift_idc_application" "${1:name}" {
+  iam_role_arn                  = "${2:iam_role_arn}"                   # IAM role ARN for the Amazon Redshift IAM Identity Center application instance.
+  idc_display_name              = "${3:idc_display_name}"               # Display name for the Amazon Redshift IAM Identity Center application instance.
+  idc_instance_arn              = "${4:idc_instance_arn}"               # ARN of the IAM Identity Center instance where Amazon Redshift creates a new managed application.
+  redshift_idc_application_name = "${5:redshift_idc_application_name}"  # Name of the Redshift application in IAM Identity Center.
+
+  # application_type   = ""  # Type of application being created.
+  # identity_namespace = ""  # Namespace for the Amazon Redshift IAM Identity Center application instance.
+  # region             = ""  # Region where this resource will be managed.
+  # tags               = {}
+  # authorized_token_issuer {}  # Token issuer list for the Amazon Redshift IAM Identity Center application instance.
+  # service_integration {}  # Collection of service integrations for the Redshift IAM Identity Center application.
+}
+]]></content>
+<tabTrigger>aws_redshift_idc_application</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Redshift IDC Application resource.</description>
+</snippet>

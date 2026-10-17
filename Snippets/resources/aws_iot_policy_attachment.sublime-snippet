@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iot_policy_attachment" "${1:name}" {
+  policy = "${2:policy}"  # The name of the policy to attach.
+  target = "${3:target}"  # The identity to which the policy is attached.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_iot_policy_attachment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an IoT policy attachment.</description>
+</snippet>

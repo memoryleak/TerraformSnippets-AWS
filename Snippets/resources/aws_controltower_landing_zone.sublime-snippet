@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_controltower_landing_zone" "${1:name}" {
+  manifest_json = "${2:manifest_json}"  # The manifest JSON file is a text file that describes your AWS resources.
+  version       = "${3:version}"        # The landing zone version.
+
+  # region            = ""  # Region where this resource will be managed.
+  # remediation_types = []  # Specifies list of remediation actions to apply.
+  # tags              = {}  # Tags to apply to the landing zone.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_controltower_landing_zone</tabTrigger>
+<scope>source.terraform</scope>
+<description>Creates a new landing zone using Control Tower.</description>
+</snippet>

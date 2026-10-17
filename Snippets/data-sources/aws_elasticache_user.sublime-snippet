@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+data "aws_elasticache_user" "${1:name}" {
+  user_id = "${2:user_id}"  # Identifier for the user.
+
+  # access_string        = ""
+  # engine               = ""
+  # no_password_required = false
+  # passwords            = []
+  # region               = ""     # Region where this resource will be managed.
+  # user_name            = ""
+  # authentication_mode {}
+}
+]]></content>
+<tabTrigger>data_aws_elasticache_user</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on an ElastiCache User resource.</description>
+</snippet>

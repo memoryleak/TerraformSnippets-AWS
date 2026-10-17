@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_transfer_certificate" "${1:name}" {
+  certificate = "${2:certificate}"  # Valid certificate file required for the transfer.
+  usage       = "${3:usage}"        # Whether a certificate is being used for signing or encryption.
+
+  # certificate_chain = ""  # Optional list of certificate that make up the chain for the certificate that is being imported.
+  # description       = ""  # Short description that helps identify the certificate.
+  # private_key       = ""  # Private key associated with the certificate being imported.
+  # region            = ""  # Region where this resource will be managed.
+  # tags              = {}  # Map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_transfer_certificate</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a AWS Transfer AS2 Certificate Resource</description>
+</snippet>

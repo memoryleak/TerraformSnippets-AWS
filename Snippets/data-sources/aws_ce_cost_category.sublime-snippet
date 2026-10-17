@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_ce_cost_category" "${1:name}" {
+  cost_category_arn = "${2:cost_category_arn}"  # Unique name for the Cost Category.
+
+  # tags = {}
+}
+]]></content>
+<tabTrigger>data_aws_ce_cost_category</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific CostExplorer Cost Category Definition</description>
+</snippet>

@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_autoscaling_group_tag" "${1:name}" {
+  autoscaling_group_name = "${2:autoscaling_group_name}"  # Name of the Auto Scaling group to apply the tag to.
+  tag {
+    key                 = "${3:key}"
+    propagate_at_launch = ${4:false}
+    value               = "${5:value}"
+  }
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_autoscaling_group_tag</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an individual Autoscaling Group tag</description>
+</snippet>

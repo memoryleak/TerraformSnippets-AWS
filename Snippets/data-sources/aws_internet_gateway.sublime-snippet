@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_internet_gateway" "${1:name}" {
+  # internet_gateway_id = ""  # ID of the specific Internet Gateway to retrieve.
+  # region              = ""  # Region where this resource will be managed.
+  # tags                = {}  # Map of tags, each pair of which must exactly match
+  # filter {}  # Custom filter block as described below.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_internet_gateway</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific Internet Gateway</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3_bucket_request_payment_configuration" "${1:name}" {
+  bucket = "${2:bucket}"  # Name of the bucket.
+  payer  = "${3:payer}"   # Who pays for the download and request fees.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_s3_bucket_request_payment_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an S3 bucket request payment configuration resource.</description>
+</snippet>

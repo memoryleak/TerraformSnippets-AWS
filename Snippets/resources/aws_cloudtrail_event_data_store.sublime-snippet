@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudtrail_event_data_store" "${1:name}" {
+  name = "${2:name}"  # The name of the event data store.
+
+  # billing_mode                   = ""     # The billing mode for the event data store.
+  # kms_key_id                     = ""     # Specifies the AWS KMS key ID to use to encrypt the events delivered by CloudTrail.
+  # multi_region_enabled           = false  # Specifies whether the event data store includes events from all regions, or only from the region...
+  # organization_enabled           = false  # Specifies whether an event data store collects events logged for an organization in AWS Organizat...
+  # region                         = ""     # Region where this resource will be managed.
+  # retention_period               = 0      # The retention period of the event data store, in days.
+  # suspend                        = ""     # Specifies whether to stop ingesting new events into the event data store.
+  # tags                           = {}     # A map of tags to assign to the resource.
+  # termination_protection_enabled = false  # Specifies whether termination protection is enabled for the event data store.
+  # advanced_event_selector {}  # The advanced event selectors to use to select the events for the data store.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_cloudtrail_event_data_store</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudTrail Event Data Store resource.</description>
+</snippet>

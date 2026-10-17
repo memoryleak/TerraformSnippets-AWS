@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+data "aws_db_cluster_snapshot" "${1:name}" {
+  # db_cluster_identifier          = ""     # Returns the list of snapshots created by the specific db_cluster
+  # db_cluster_snapshot_identifier = ""     # Returns information on a specific snapshot_id.
+  # include_public                 = false  # Set this value to true to include manual DB Cluster Snapshots that are public and can be copied o...
+  # include_shared                 = false  # Set this value to true to include shared manual DB Cluster Snapshots from other AWS accounts that...
+  # most_recent                    = false  # If more than one result is returned, use the most recent Snapshot.
+  # region                         = ""     # Region where this resource will be managed.
+  # snapshot_type                  = ""     # Type of snapshots to be returned.
+  # tags                           = {}     # Mapping of tags, each pair of which must exactly match a pair on the desired DB cluster snapshot.
+}
+]]></content>
+<tabTrigger>data_aws_db_cluster_snapshot</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on a DB Cluster Snapshot.</description>
+</snippet>

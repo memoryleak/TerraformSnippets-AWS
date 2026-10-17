@@ -1,0 +1,25 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ecs_express_gateway_service" "${1:name}" {
+  execution_role_arn      = "${2:execution_role_arn}"       # ARN of the IAM role that allows ECS to pull container images and publish container logs to Amazon...
+  infrastructure_role_arn = "${3:infrastructure_role_arn}"  # ARN of the IAM role that allows ECS to manage AWS infrastructure on your behalf.
+
+  # cluster               = ""     # Name or ARN of the ECS cluster.
+  # cpu                   = ""     # Number of CPU units used by the task.
+  # health_check_path     = ""     # Path for health check requests.
+  # memory                = ""     # Amount of memory (in MiB) used by the task.
+  # network_configuration = []     # Network configuration for the service.
+  # region                = ""     # AWS region where the service will be created.
+  # scaling_target        = []     # Auto-scaling configuration for the service.
+  # service_name          = ""     # Name of the service.
+  # tags                  = {}     # Key-value map of resource tags.
+  # task_role_arn         = ""     # ARN of the IAM role that allows your Amazon ECS container task to make calls to other AWS services.
+  # wait_for_steady_state = false  # Whether to wait for the service to reach a steady state before considering the operation complete.
+  # primary_container {}
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ecs_express_gateway_service</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an ECS Express Gateway Service.</description>
+</snippet>

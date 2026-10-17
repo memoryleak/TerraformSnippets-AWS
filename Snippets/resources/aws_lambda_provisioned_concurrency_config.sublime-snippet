@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lambda_provisioned_concurrency_config" "${1:name}" {
+  function_name                     = "${2:function_name}"  # Name or ARN of the Lambda Function.
+  provisioned_concurrent_executions = ${3:0}                # Amount of capacity to allocate.
+  qualifier                         = "${4:qualifier}"      # Lambda Function version or Lambda Alias name.
+
+  # region       = ""     # Region where this resource will be managed.
+  # skip_destroy = false  # Whether to retain the provisioned concurrency configuration upon destruction.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_lambda_provisioned_concurrency_config</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Lambda Provisioned Concurrency Configuration.</description>
+</snippet>

@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sagemaker_model" "${1:name}" {
+  execution_role_arn = "${2:execution_role_arn}"  # A role that SageMaker AI can assume to access model artifacts and docker images for deployment.
+
+  # enable_network_isolation = false
+  # name                     = ""     # Name of the model (must be unique).
+  # region                   = ""     # Region where this resource will be managed.
+  # tags                     = {}     # A map of tags to assign to the resource.
+  # container {}
+  # inference_execution_config {}  # Specifies details of how containers in a multi-container endpoint are called.
+  # primary_container {}  # Primary docker image containing inference code that is used when the model is deployed for predic...
+  # vpc_config {}
+}
+]]></content>
+<tabTrigger>aws_sagemaker_model</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Amazon SageMaker AI Model.</description>
+</snippet>

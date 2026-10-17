@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sesv2_email_identity" "${1:name}" {
+  email_identity = "${2:email_identity}"  # Email address or domain to verify.
+
+  # configuration_set_name = ""  # Configuration set to use by default when sending from this identity.
+  # region                 = ""  # Region where this resource will be managed.
+  # tags                   = {}  # Key-value mapping of resource tags.
+  # dkim_signing_attributes {}  # Configuration block for the DKIM authentication settings for an email domain identity.
+}
+]]></content>
+<tabTrigger>aws_sesv2_email_identity</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS SESv2 (Simple Email V2) Email Identity.</description>
+</snippet>

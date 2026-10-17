@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_log_subscription_filter" "${1:name}" {
+  destination_arn = "${2:destination_arn}"  # ARN of the destination to deliver matching log events to.
+  filter_pattern  = "${3:filter_pattern}"   # Valid CloudWatch Logs filter pattern for subscribing to a filtered stream of log events.
+  log_group_name  = "${4:log_group_name}"   # Name of the log group to associate the subscription filter with.
+  name            = "${5:name}"             # Name for the subscription filter.
+
+  # apply_on_transformed_logs = false  # Boolean to indicate whether to apply the subscription filter on the transformed version of the lo...
+  # distribution              = ""     # Method used to distribute log data to the destination.
+  # emit_system_fields        = []     # List of system fields to include in the log events sent to the subscription destination.
+  # region                    = ""     # Region where this resource will be managed.
+  # role_arn                  = ""     # ARN of an IAM role that grants CloudWatch Logs permissions to deliver ingested log events to the...
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_log_subscription_filter</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudWatch Logs subscription filter.</description>
+</snippet>

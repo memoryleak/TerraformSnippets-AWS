@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_app_cookie_stickiness_policy" "${1:name}" {
+  cookie_name   = "${2:cookie_name}"    # Application cookie whose lifetime the ELB's cookie should follow.
+  lb_port       = ${3:0}                # Load balancer port to which the policy should be applied.
+  load_balancer = "${4:load_balancer}"  # Name of load balancer to which the policy should be attached.
+  name          = "${5:name}"           # Name of the stickiness policy.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_app_cookie_stickiness_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an application cookie stickiness policy, which allows an ELB to wed its stickiness cooki...</description>
+</snippet>

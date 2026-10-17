@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpc_ipam_pool_cidr" "${1:name}" {
+  ipam_pool_id = "${2:ipam_pool_id}"  # ID of the pool to which you want to assign a CIDR.
+
+  # cidr           = ""  # CIDR you want to assign to the pool.
+  # netmask_length = 0   # If provided, the CIDR provisioned into the specified pool will be the next available CIDR given t...
+  # region         = ""  # Region where this resource will be managed.
+  # cidr_authorization_context {}  # Signed document that proves that you are authorized to bring the specified IP address range to Am...
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_vpc_ipam_pool_cidr</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provisions a CIDR from an IPAM address pool.</description>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bcmdataexports_export" "${1:name}" {
+  # tags = {}  # Key-value map of resource tags.
+  # export {}  # Details of the export, including data query, name, description, and destination configuration.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_bcmdataexports_export</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS BCM Data Exports Export.</description>
+</snippet>

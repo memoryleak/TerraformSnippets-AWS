@@ -1,0 +1,29 @@
+<snippet>
+<content><![CDATA[
+resource "aws_storagegateway_gateway" "${1:name}" {
+  gateway_name     = "${2:gateway_name}"      # Name of the gateway.
+  gateway_timezone = "${3:gateway_timezone}"  # Time zone for the gateway.
+
+  # activation_key                              = ""     # Gateway activation key during resource creation.
+  # average_download_rate_limit_in_bits_per_sec = 0      # The average download bandwidth rate limit in bits per second.
+  # average_upload_rate_limit_in_bits_per_sec   = 0      # The average upload bandwidth rate limit in bits per second.
+  # cloudwatch_log_group_arn                    = ""     # ARN of the Amazon CloudWatch log group to use to monitor and log events in the gateway.
+  # gateway_ip_address                          = ""     # Gateway IP address to retrieve activation key during resource creation.
+  # gateway_type                                = ""     # Type of the gateway.
+  # gateway_vpc_endpoint                        = ""     # VPC endpoint address to be used when activating your gateway.
+  # medium_changer_type                         = ""     # Type of medium changer to use for tape gateway.
+  # region                                      = ""     # Region where this resource will be managed.
+  # smb_file_share_visibility                   = false  # Specifies whether the shares on this gateway appear when listing shares.
+  # smb_guest_password                          = ""     # Guest password for Server Message Block (SMB) file shares.
+  # smb_security_strategy                       = ""     # Specifies the type of security strategy.
+  # tags                                        = {}     # Key-value map of resource tags.
+  # tape_drive_type                             = ""     # Type of tape drive to use for tape gateway.
+  # maintenance_start_time {}  # The gateway's weekly maintenance start time information, including day and time of the week.
+  # smb_active_directory_settings {}  # Nested argument with Active Directory domain join information for Server Message Block (SMB) file...
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_storagegateway_gateway</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Storage Gateway file, tape, or volume gateway in the provider region</description>
+</snippet>

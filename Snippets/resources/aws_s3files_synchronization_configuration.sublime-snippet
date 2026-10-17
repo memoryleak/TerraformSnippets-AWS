@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3files_synchronization_configuration" "${1:name}" {
+  file_system_id = "${2:file_system_id}"  # File system ID.
+
+  # latest_version_number = 0
+  # region                = ""  # Region where this resource will be managed.
+  # expiration_data_rule {}  # Expiration data rule configuration.
+  # import_data_rule {}  # One or more import data rules.
+}
+]]></content>
+<tabTrigger>aws_s3files_synchronization_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an S3 Files Synchronization configuration.</description>
+</snippet>

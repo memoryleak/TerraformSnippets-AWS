@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appmesh_mesh" "${1:name}" {
+  name = "${2:name}"  # Name to use for the service mesh.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags to assign to the resource.
+  # spec {}  # Service mesh specification to apply.
+}
+]]></content>
+<tabTrigger>aws_appmesh_mesh</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AWS App Mesh service mesh resource.</description>
+</snippet>

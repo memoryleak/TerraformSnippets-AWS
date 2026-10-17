@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iot_logging_options" "${1:name}" {
+  default_log_level = "${2:default_log_level}"  # The default logging level.
+  role_arn          = "${3:role_arn}"           # The ARN of the role that allows IoT to write to CloudWatch logs.
+
+  # disable_all_logs = false  # If true all logs are disabled.
+  # region           = ""     # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_iot_logging_options</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage default logging options.</description>
+</snippet>

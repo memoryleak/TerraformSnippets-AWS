@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ssoadmin_permission_set_inline_policy" "${1:name}" {
+  inline_policy      = "${2:inline_policy}"       # The IAM inline policy to attach to a Permission Set.
+  instance_arn       = "${3:instance_arn}"        # ARN of the SSO Instance under which the operation will be executed.
+  permission_set_arn = "${4:permission_set_arn}"  # ARN of the Permission Set.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ssoadmin_permission_set_inline_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an IAM inline policy for a Single Sign-On (SSO) Permission Set</description>
+</snippet>

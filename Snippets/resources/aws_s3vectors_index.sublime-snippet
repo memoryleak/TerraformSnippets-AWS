@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3vectors_index" "${1:name}" {
+  data_type          = "${2:data_type}"           # Data type of the vectors to be inserted into the vector index.
+  dimension          = ${3:0}                     # Dimensions of the vectors to be inserted into the vector index.
+  distance_metric    = "${4:distance_metric}"     # Distance metric to be used for similarity search.
+  index_name         = "${5:index_name}"          # Name of the vector index.
+  vector_bucket_name = "${6:vector_bucket_name}"  # Name of the vector bucket for the vector index.
+
+  # encryption_configuration = []  # Block for encryption configuration for the vector index.
+  # region                   = ""  # Region where this resource will be managed.
+  # tags                     = {}  # Key-value map of resource tags.
+  # metadata_configuration {}  # Block for metadata configuration for the vector index.
+}
+]]></content>
+<tabTrigger>aws_s3vectors_index</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an Amazon S3 Vectors Index.</description>
+</snippet>

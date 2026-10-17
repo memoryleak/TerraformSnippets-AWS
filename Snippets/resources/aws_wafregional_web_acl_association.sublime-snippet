@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_wafregional_web_acl_association" "${1:name}" {
+  resource_arn = "${2:resource_arn}"  # ARN of the resource to associate with.
+  web_acl_id   = "${3:web_acl_id}"    # The ID of the WAF Regional WebACL to create an association.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_wafregional_web_acl_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an association with WAF Regional Web ACL</description>
+</snippet>

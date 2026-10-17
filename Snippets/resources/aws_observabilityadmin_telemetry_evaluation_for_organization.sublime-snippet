@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_observabilityadmin_telemetry_evaluation_for_organization" "${1:name}" {
+  # all_regions = false  # Whether to start telemetry evaluation in all AWS Regions where CloudWatch Observability Admin is...
+  # region      = ""     # Region where this resource will be managed.
+  # regions     = []     # List of AWS Regions to include in multi-region telemetry evaluation.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_observabilityadmin_telemetry_evaluation_for_organization</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS CloudWatch Observability Admin Telemetry Evaluation For Organization.</description>
+</snippet>

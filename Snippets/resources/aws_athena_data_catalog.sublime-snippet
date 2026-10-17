@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_athena_data_catalog" "${1:name}" {
+  description = "${2:description}"  # Description of the data catalog.
+  name        = "${3:name}"         # Name of the data catalog.
+  parameters  = {${4}}              # Key value pairs that specifies the Lambda function or functions to use for the data catalog.
+  type        = "${5:type}"         # Type of data catalog: LAMBDA for a federated catalog, GLUE for AWS Glue Catalog, or HIVE for an e...
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_athena_data_catalog</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Athena data catalog.</description>
+</snippet>

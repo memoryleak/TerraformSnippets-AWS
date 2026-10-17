@@ -1,0 +1,36 @@
+<snippet>
+<content><![CDATA[
+resource "aws_eks_cluster" "${1:name}" {
+  name     = "${2:name}"      # Name of the cluster.
+  role_arn = "${3:role_arn}"  # ARN of the IAM role that provides permissions for the Kubernetes control plane to make calls to A...
+  vpc_config {
+    subnet_ids = [${4}]
+  }
+
+  # bootstrap_self_managed_addons = false  # Install default unmanaged add-ons, such as aws-cni, kube-proxy, and CoreDNS during cluster creation.
+  # deletion_protection           = false  # Whether to enable deletion protection for the cluster.
+  # enabled_cluster_log_types     = []     # List of the desired control plane logging to enable.
+  # force_update_version          = false  # Force version update by overriding upgrade-blocking readiness checks when updating a cluster.
+  # region                        = ""     # Region where this resource will be managed.
+  # tags                          = {}     # Key-value map of resource tags.
+  # version                       = ""     # Desired Kubernetes master version.
+  # access_config {}  # Configuration block for the access config associated with your cluster, see Amazon EKS Access Ent...
+  # compute_config {}  # Configuration block with compute configuration for EKS Auto Mode.
+  # control_plane_scaling_config {}  # Configuration block for the control plane scaling tier.
+  # encryption_config {}  # Configuration block with encryption configuration for the cluster.
+  # kube_api_server_config {}  # Configuration block for customizing the Kubernetes API server.
+  # kube_controller_manager_config {}  # Configuration block for customizing the Kubernetes controller manager.
+  # kube_scheduler_config {}  # Configuration block for customizing the Kubernetes scheduler.
+  # kubernetes_network_config {}  # Configuration block with kubernetes network configuration for the cluster.
+  # outpost_config {}  # Configuration block representing the configuration of your local Amazon EKS cluster on an AWS Out...
+  # remote_network_config {}  # Configuration block with remote network configuration for EKS Hybrid Nodes.
+  # storage_config {}  # Configuration block with storage configuration for EKS Auto Mode.
+  # timeouts {}
+  # upgrade_policy {}  # Configuration block for the support policy to use for the cluster.
+  # zonal_shift_config {}  # Configuration block with zonal shift configuration for the cluster.
+}
+]]></content>
+<tabTrigger>aws_eks_cluster</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an EKS Cluster</description>
+</snippet>

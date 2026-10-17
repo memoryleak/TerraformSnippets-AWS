@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_workmail_organization" "${1:name}" {
+  organization_alias = "${2:organization_alias}"  # Alias for the organization.
+
+  # delete_directory                   = false  # Whether to delete the AWS Directory Service directory associated with the organization on destroy.
+  # delete_identity_center_application = false  # Whether to delete the IAM Identity Center application associated with the organization on destroy.
+  # directory_id                       = ""     # ID of an existing directory to associate with the organization.
+  # interoperability_enabled           = false  # Whether to enable interoperability between WorkMail and Microsoft Exchange.
+  # kms_key_arn                        = ""     # ARN of a customer-managed KMS key to encrypt the organization's data.
+  # region                             = ""     # Region where this resource will be managed.
+  # tags                               = {}     # A map of tags to assign to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_workmail_organization</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS WorkMail Organization.</description>
+</snippet>

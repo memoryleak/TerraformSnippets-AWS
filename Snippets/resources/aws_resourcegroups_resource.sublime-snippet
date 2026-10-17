@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_resourcegroups_resource" "${1:name}" {
+  group_arn    = "${2:group_arn}"     # Name or ARN of the resource group to add resources to.
+  resource_arn = "${3:resource_arn}"  # ARN of the resource to be added to the group.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_resourcegroups_resource</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Resource Groups Resource.</description>
+</snippet>

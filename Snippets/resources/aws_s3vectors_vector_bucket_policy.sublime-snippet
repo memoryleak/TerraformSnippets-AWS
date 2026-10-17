@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3vectors_vector_bucket_policy" "${1:name}" {
+  policy            = "${2:policy}"             # Policy document.
+  vector_bucket_arn = "${3:vector_bucket_arn}"  # ARN of the vector bucket.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_s3vectors_vector_bucket_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an Amazon S3 Vectors Vector Bucket policy.</description>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_guardduty_organization_admin_account" "${1:name}" {
+  admin_account_id = "${2:admin_account_id}"  # AWS account identifier to designate as a delegated administrator for GuardDuty.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_guardduty_organization_admin_account</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a GuardDuty Organization Admin Account</description>
+</snippet>

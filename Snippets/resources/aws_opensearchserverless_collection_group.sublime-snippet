@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_opensearchserverless_collection_group" "${1:name}" {
+  name             = "${2:name}"              # Name of the collection group.
+  standby_replicas = "${3:standby_replicas}"  # Indicates whether standby replicas should be used for collections in this group.
+
+  # capacity_limits = []  # Configuration block for the collection group's indexing and search capacity limits.
+  # description     = ""  # Description of the collection group.
+  # generation      = ""  # Generation of Amazon OpenSearch Serverless for the collection group.
+  # region          = ""  # Region where this resource will be managed.
+  # tags            = {}  # A map of tags to assign to the collection group.
+}
+]]></content>
+<tabTrigger>aws_opensearchserverless_collection_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS OpenSearch Serverless Collection Group.</description>
+</snippet>

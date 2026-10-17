@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_licensemanager_grant_accepter" "${1:name}" {
+  grant_arn = "${2:grant_arn}"  # The ARN of the grant to accept.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_licensemanager_grant_accepter</tabTrigger>
+<scope>source.terraform</scope>
+<description>Accepts a License Manager grant resource.</description>
+</snippet>

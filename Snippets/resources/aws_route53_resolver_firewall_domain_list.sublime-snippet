@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_route53_resolver_firewall_domain_list" "${1:name}" {
+  name = "${2:name}"  # A name that lets you identify the domain list, to manage and use it.
+
+  # domains = []  # A array of domains for the firewall domain list.
+  # region  = ""  # Region where this resource will be managed.
+  # tags    = {}  # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_route53_resolver_firewall_domain_list</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Route 53 Resolver DNS Firewall domain list resource.</description>
+</snippet>

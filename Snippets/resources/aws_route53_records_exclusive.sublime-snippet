@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_route53_records_exclusive" "${1:name}" {
+  zone_id = "${2:zone_id}"  # ID of the hosted zone containing the resource record sets.
+
+  # resource_record_set {}  # A list of all resource record sets associated with the hosted zone.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_route53_records_exclusive</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for maintaining exclusive management of resource record sets defined in an AWS...</description>
+</snippet>

@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ssoadmin_instance_access_control_attributes" "${1:name}" {
+  instance_arn = "${2:instance_arn}"  # ARN of the SSO Instance.
+  attribute {
+    key = "${3:key}"
+    value {
+      source = [${4}]
+    }
+  }
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_ssoadmin_instance_access_control_attributes</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Single Sign-On (SSO) ABAC Resource: https://docs.aws.amazon.com/singlesignon/latest/us...</description>
+</snippet>

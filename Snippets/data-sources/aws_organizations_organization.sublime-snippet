@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_organizations_organization" "${1:name}" {
+  # return_organization_only = false  # Return (as attributes) only the results of the DescribeOrganization API to avoid API limits.
+}
+]]></content>
+<tabTrigger>data_aws_organizations_organization</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information about the organization that the users account belongs to.</description>
+</snippet>

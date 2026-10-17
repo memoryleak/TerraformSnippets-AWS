@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_network_acl_rule" "${1:name}" {
+  network_acl_id = "${2:network_acl_id}"  # The ID of the network ACL.
+  protocol       = "${3:protocol}"        # The protocol.
+  rule_action    = "${4:rule_action}"     # Indicates whether to allow or deny the traffic that matches the rule.
+  rule_number    = ${5:0}                 # The rule number for the entry (for example, 100).
+
+  # cidr_block      = ""     # The network range to allow or deny, in CIDR notation (for example 172.16.0.0/24 ).
+  # egress          = false  # Indicates whether this is an egress rule (rule is applied to traffic leaving the subnet).
+  # from_port       = 0      # The from port to match.
+  # icmp_code       = 0      # ICMP protocol: The ICMP code.
+  # icmp_type       = 0      # ICMP protocol: The ICMP type.
+  # ipv6_cidr_block = ""     # The IPv6 CIDR block to allow or deny.
+  # region          = ""     # Region where this resource will be managed.
+  # to_port         = 0      # The to port to match.
+}
+]]></content>
+<tabTrigger>aws_network_acl_rule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an network ACL Rule resource.</description>
+</snippet>

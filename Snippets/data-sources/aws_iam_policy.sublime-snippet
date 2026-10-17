@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_iam_policy" "${1:name}" {
+  # arn         = ""  # ARN of the IAM policy.
+  # name        = ""  # Name of the IAM policy.
+  # path_prefix = ""  # Prefix of the path to the IAM policy.
+  # tags        = {}
+}
+]]></content>
+<tabTrigger>data_aws_iam_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on a Amazon IAM policy</description>
+</snippet>

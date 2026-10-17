@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_elastic_beanstalk_hosted_zone" "${1:name}" {
+  # region = ""  # Name of the Region whose hosted zone is desired.
+}
+]]></content>
+<tabTrigger>data_aws_elastic_beanstalk_hosted_zone</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get an elastic beanstalk hosted zone.</description>
+</snippet>

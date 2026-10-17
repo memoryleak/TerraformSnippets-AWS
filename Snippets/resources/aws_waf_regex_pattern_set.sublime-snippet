@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_waf_regex_pattern_set" "${1:name}" {
+  name = "${2:name}"  # The name or description of the Regex Pattern Set.
+
+  # regex_pattern_strings = []  # A list of regular expression (regex) patterns that you want AWS WAF to search for, such as B[a@]d...
+}
+]]></content>
+<tabTrigger>aws_waf_regex_pattern_set</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a AWS WAF Regex Pattern Set resource.</description>
+</snippet>

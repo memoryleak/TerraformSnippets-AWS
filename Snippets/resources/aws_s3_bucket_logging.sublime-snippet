@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3_bucket_logging" "${1:name}" {
+  bucket        = "${2:bucket}"         # Name of the bucket.
+  target_bucket = "${3:target_bucket}"  # Name of the bucket where you want Amazon S3 to store server access logs.
+  target_prefix = "${4:target_prefix}"  # Prefix for all log object keys.
+
+  # region = ""  # Region where this resource will be managed.
+  # target_grant {}  # Set of configuration blocks with information for granting permissions.
+  # target_object_key_format {}  # Amazon S3 key format for log objects.
+}
+]]></content>
+<tabTrigger>aws_s3_bucket_logging</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an S3 bucket (server access) logging resource.</description>
+</snippet>

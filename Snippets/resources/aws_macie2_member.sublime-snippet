@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_macie2_member" "${1:name}" {
+  account_id = "${2:account_id}"  # AWS account ID for the account.
+  email      = "${3:email}"       # Email address for the account.
+
+  # invitation_disable_email_notification = false  # Whether to send an email notification to the root user of each account that the invitation will b...
+  # invitation_message                    = ""     # Custom message to include in the invitation.
+  # invite                                = false  # Whether to send an invitation to a member.
+  # region                                = ""     # Region where this resource will be managed.
+  # status                                = ""     # Status for the account.
+  # tags                                  = {}     # Map of tags to assign to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_macie2_member</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage an Amazon Macie Member.</description>
+</snippet>

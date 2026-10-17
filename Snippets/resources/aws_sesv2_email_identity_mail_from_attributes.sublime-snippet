@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sesv2_email_identity_mail_from_attributes" "${1:name}" {
+  email_identity = "${2:email_identity}"  # Verified email identity.
+
+  # behavior_on_mx_failure = ""  # Action to take if the required MX record isn't found when you send an email.
+  # mail_from_domain       = ""  # Custom MAIL FROM domain that you want the verified identity to use.
+  # region                 = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_sesv2_email_identity_mail_from_attributes</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS SESv2 (Simple Email V2) Email Identity Mail From Attributes.</description>
+</snippet>

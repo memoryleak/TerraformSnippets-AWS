@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_agentregistry_registry" "${1:name}" {
+  name = "${2:name}"  # Name of the registry.
+
+  # description = ""  # Description of the registry.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Map of tags assigned to the resource.
+  # approval_configuration {}  # Approval configuration for registry records.
+  # auto_detection_configuration {}  # Auto-detection configuration for the registry.
+  # discovery_configuration {}  # Discovery configuration for the registry.
+  # encryption_configuration {}  # Server-side encryption configuration for the registry.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_agentregistry_registry</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Agent Registry registry.</description>
+</snippet>

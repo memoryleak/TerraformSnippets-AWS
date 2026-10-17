@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_quicksight_user" "${1:name}" {
+  email         = "${2:email}"          # Email address of the user that you want to register.
+  identity_type = "${3:identity_type}"  # Identity type that your Amazon QuickSight account uses to manage the identity of users.
+  user_role     = "${4:user_role}"      # Amazon QuickSight role for the user.
+
+  # aws_account_id = ""  # AWS account ID.
+  # iam_arn        = ""  # ARN of the IAM user or role that you are registering with Amazon QuickSight.
+  # namespace      = ""  # Amazon QuickSight namespace to create the user in.
+  # region         = ""  # Region where this resource will be managed.
+  # session_name   = ""  # Name of the IAM session to use when assuming roles that can embed QuickSight dashboards.
+  # user_name      = ""  # Amazon QuickSight user name that you want to create for the user you are registering.
+}
+]]></content>
+<tabTrigger>aws_quicksight_user</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Resource QuickSight User.</description>
+</snippet>

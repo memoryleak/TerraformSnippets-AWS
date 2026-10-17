@@ -1,0 +1,24 @@
+<snippet>
+<content><![CDATA[
+resource "aws_servicecatalog_product" "${1:name}" {
+  name  = "${2:name}"   # Name of the product.
+  owner = "${3:owner}"  # Owner of the product.
+  type  = "${4:type}"   # Type of product.
+  provisioning_artifact_parameters {
+  }
+
+  # accept_language     = ""  # Language code.
+  # description         = ""  # Description of the product.
+  # distributor         = ""  # Distributor (i.e., vendor) of the product.
+  # region              = ""  # Region where this resource will be managed.
+  # support_description = ""  # Support information about the product.
+  # support_email       = ""  # Contact email for product support.
+  # support_url         = ""  # Contact URL for product support.
+  # tags                = {}  # Tags to apply to the product.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_servicecatalog_product</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Service Catalog Product</description>
+</snippet>

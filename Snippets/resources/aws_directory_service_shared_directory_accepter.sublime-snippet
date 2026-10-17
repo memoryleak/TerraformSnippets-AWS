@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_directory_service_shared_directory_accepter" "${1:name}" {
+  shared_directory_id = "${2:shared_directory_id}"  # Identifier of the directory that is stored in the directory consumer account that corresponds to...
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_directory_service_shared_directory_accepter</tabTrigger>
+<scope>source.terraform</scope>
+<description>Accepts a shared directory in a consumer account.</description>
+</snippet>

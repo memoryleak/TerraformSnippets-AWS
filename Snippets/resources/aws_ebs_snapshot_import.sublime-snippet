@@ -1,0 +1,24 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ebs_snapshot_import" "${1:name}" {
+  disk_container {
+    format = "${2:format}"
+  }
+
+  # description            = ""     # The description string for the import snapshot task.
+  # encrypted              = false  # Specifies whether the destination snapshot of the imported image should be encrypted.
+  # kms_key_id             = ""     # An identifier for the symmetric KMS key to use when creating the encrypted snapshot.
+  # permanent_restore      = false  # Indicates whether to permanently restore an archived snapshot.
+  # region                 = ""     # Region where this resource will be managed.
+  # role_name              = ""     # The name of the IAM Role the VM Import/Export service will assume.
+  # storage_tier           = ""     # The name of the storage tier.
+  # tags                   = {}     # A map of tags to assign to the snapshot.
+  # temporary_restore_days = 0      # Specifies the number of days for which to temporarily restore an archived snapshot.
+  # client_data {}  # The client-specific data.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ebs_snapshot_import</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an elastic block storage snapshot import resource.</description>
+</snippet>

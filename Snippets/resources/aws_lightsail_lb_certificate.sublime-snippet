@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lightsail_lb_certificate" "${1:name}" {
+  lb_name = "${2:lb_name}"  # Load balancer name where you want to create the SSL/TLS certificate.
+  name    = "${3:name}"     # SSL/TLS certificate name.
+
+  # domain_name               = ""  # Domain name (e.g., example.com) for your SSL/TLS certificate.
+  # region                    = ""  # Region where this resource will be managed.
+  # subject_alternative_names = []  # Set of domains that should be SANs in the issued certificate.
+}
+]]></content>
+<tabTrigger>aws_lightsail_lb_certificate</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Lightsail Load Balancer Certificate.</description>
+</snippet>

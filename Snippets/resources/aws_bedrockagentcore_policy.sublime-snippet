@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrockagentcore_policy" "${1:name}" {
+  name             = "${2:name}"              # Name of the policy.
+  policy_engine_id = "${3:policy_engine_id}"  # Identifier of the Policy Engine that owns this policy.
+
+  # description     = ""  # Description of the policy.
+  # region          = ""  # Region where this resource will be managed.
+  # validation_mode = ""  # Controls whether validation findings cause policy creation or update to fail.
+  # definition {}  # Policy definition.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_bedrockagentcore_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Bedrock AgentCore Policy.</description>
+</snippet>

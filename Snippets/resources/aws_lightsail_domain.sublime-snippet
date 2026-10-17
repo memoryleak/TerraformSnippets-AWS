@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lightsail_domain" "${1:name}" {
+  domain_name = "${2:domain_name}"  # Name of the Lightsail domain to manage.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_lightsail_domain</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Lightsail domain for DNS management.</description>
+</snippet>

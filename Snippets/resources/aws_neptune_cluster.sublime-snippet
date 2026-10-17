@@ -1,0 +1,41 @@
+<snippet>
+<content><![CDATA[
+resource "aws_neptune_cluster" "${1:name}" {
+  # allow_major_version_upgrade           = false  # Whether upgrades between different major versions are allowed.
+  # apply_immediately                     = false  # Whether any cluster modifications are applied immediately, or during the next maintenance window.
+  # availability_zones                    = []     # List of EC2 Availability Zones that instances in the Neptune cluster can be created in.
+  # backup_retention_period               = 0      # Days to retain backups for.
+  # cluster_identifier                    = ""     # Cluster identifier.
+  # cluster_identifier_prefix             = ""     # Creates a unique cluster identifier beginning with the specified prefix.
+  # copy_tags_to_snapshot                 = false  # If set to true, tags are copied to any snapshot of the DB cluster that is created.
+  # deletion_protection                   = false  # Value that indicates whether the DB cluster has deletion protection enabled.The database can't be...
+  # enable_cloudwatch_logs_exports        = []     # List of the log types this DB cluster is configured to export to CloudWatch Logs.
+  # engine                                = ""     # Name of the database engine to be used for this Neptune cluster.
+  # engine_version                        = ""     # Database engine version.
+  # final_snapshot_identifier             = ""     # Name of your final Neptune snapshot when this Neptune cluster is deleted.
+  # global_cluster_identifier             = ""     # Global cluster identifier specified on aws_neptune_global_cluster.
+  # iam_database_authentication_enabled   = false  # Whether or not mappings of AWS Identity and Access Management (IAM) accounts to database accounts...
+  # iam_roles                             = []     # List of ARNs for the IAM roles to associate to the Neptune Cluster.
+  # kms_key_arn                           = ""     # ARN for the KMS encryption key.
+  # neptune_cluster_parameter_group_name  = ""     # Cluster parameter group to associate with the cluster.
+  # neptune_instance_parameter_group_name = ""
+  # neptune_subnet_group_name             = ""     # Neptune subnet group to associate with this Neptune instance.
+  # port                                  = 0      # Port on which the Neptune accepts connections.
+  # preferred_backup_window               = ""     # Daily time range during which automated backups are created if automated backups are enabled usin...
+  # preferred_maintenance_window          = ""     # Weekly time range during which system maintenance can occur, in (UTC) e.g., wed:04:00-wed:04:30
+  # region                                = ""     # Region where this resource will be managed.
+  # replication_source_identifier         = ""     # ARN of a source Neptune cluster or Neptune instance if this Neptune cluster is to be created as a...
+  # skip_final_snapshot                   = false  # Whether a final Neptune snapshot is created before the Neptune cluster is deleted.
+  # snapshot_identifier                   = ""     # Whether or not to create this cluster from a snapshot.
+  # storage_encrypted                     = false  # Whether the Neptune cluster is encrypted.
+  # storage_type                          = ""     # Storage type associated with the cluster standard/iopt1.
+  # tags                                  = {}     # Map of tags to assign to the Neptune cluster.
+  # vpc_security_group_ids                = []     # List of VPC security groups to associate with the Cluster
+  # serverless_v2_scaling_configuration {}  # If set, create the Neptune cluster as a serverless one.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_neptune_cluster</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Neptune Cluster Resource</description>
+</snippet>

@@ -1,0 +1,24 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrock_guardrail" "${1:name}" {
+  blocked_input_messaging   = "${2:blocked_input_messaging}"    # Message to return when the guardrail blocks a prompt.
+  blocked_outputs_messaging = "${3:blocked_outputs_messaging}"  # Message to return when the guardrail blocks a model response.
+  name                      = "${4:name}"                       # Name of the guardrail.
+
+  # description = ""  # Description of the guardrail or its version.
+  # kms_key_arn = ""  # KMS key with which the guardrail was encrypted at rest.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Key-value map of resource tags.
+  # content_policy_config {}  # Content policy config for a guardrail.
+  # contextual_grounding_policy_config {}  # Contextual grounding policy config for a guardrail.
+  # cross_region_config {}  # Configuration block to enable cross-region routing for bedrock guardrails.
+  # sensitive_information_policy_config {}  # Sensitive information policy config for a guardrail.
+  # timeouts {}
+  # topic_policy_config {}  # Topic policy config for a guardrail.
+  # word_policy_config {}  # Word policy config for a guardrail.
+}
+]]></content>
+<tabTrigger>aws_bedrock_guardrail</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Amazon Bedrock Guardrail.</description>
+</snippet>

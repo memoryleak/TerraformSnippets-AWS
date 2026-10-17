@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dlm_lifecycle_policy" "${1:name}" {
+  description        = "${2:description}"         # A description for the DLM lifecycle policy.
+  execution_role_arn = "${3:execution_role_arn}"  # The ARN of an IAM role that is able to be assumed by the DLM service.
+  policy_details {
+  }
+
+  # default_policy = ""  # Specify the type of default policy to create.
+  # region         = ""  # Region where this resource will be managed.
+  # state          = ""  # Whether the lifecycle policy should be enabled or disabled.
+  # tags           = {}  # Key-value map of resource tags.
+}
+]]></content>
+<tabTrigger>aws_dlm_lifecycle_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Data Lifecycle Manager (DLM) lifecycle policy for managing snapshots.</description>
+</snippet>

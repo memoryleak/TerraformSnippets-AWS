@@ -1,0 +1,52 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lambda_function" "${1:name}" {
+  function_name = "${2:function_name}"  # Unique name for your Lambda Function.
+  role          = "${3:role}"           # ARN of the function's execution role.
+
+  # architectures                        = []     # Instruction set architecture for your Lambda function.
+  # code_sha256                          = ""     # Base64-encoded representation the source code package file.
+  # code_signing_config_arn              = ""     # ARN of a code-signing configuration to enable code signing for this function.
+  # description                          = ""     # Description of what your Lambda Function does.
+  # filename                             = ""     # Path to the function's deployment package within the local filesystem.
+  # handler                              = ""     # Function entry point in your code.
+  # image_uri                            = ""     # ECR image URI containing the function's deployment package.
+  # kms_key_arn                          = ""     # ARN of the KMS key used to encrypt environment variables.
+  # layers                               = []     # List of Lambda Layer Version ARNs (maximum of 5) to attach to your Lambda Function.
+  # memory_size                          = 0      # Amount of memory in MB your Lambda Function can use at runtime.
+  # package_type                         = ""     # Lambda deployment package type.
+  # publish                              = false  # Whether to publish creation/change as new Lambda Function Version.
+  # publish_to                           = ""     # Whether to publish to a alias or version number.
+  # region                               = ""     # Region where this resource will be managed.
+  # replace_security_groups_on_destroy   = false  # Whether to replace the security groups on the function's VPC configuration prior to destruction.
+  # replacement_security_group_ids       = []     # List of security group IDs to assign to the function's VPC configuration prior to destruction.
+  # reserved_concurrent_executions       = 0      # Amount of reserved concurrent executions for this lambda function.
+  # runtime                              = ""     # Identifier of the function's runtime.
+  # s3_bucket                            = ""     # S3 bucket location containing the function's deployment package.
+  # s3_key                               = ""     # S3 key of an object containing the function's deployment package.
+  # s3_object_version                    = ""     # Object version containing the function's deployment package.
+  # skip_destroy                         = false  # Whether to retain the old version of a previously deployed Lambda Layer.
+  # source_code_hash                     = ""     # User-defined hash of the source code package file.
+  # source_kms_key_arn                   = ""     # ARN of the KMS key used to encrypt the function's .zip deployment package.
+  # tags                                 = {}     # Key-value map of tags for the Lambda function.
+  # timeout                              = 0      # Amount of time your Lambda Function has to run in seconds.
+  # use_resource_timeout_for_propagation = false  # Whether to apply resource level timeout values while retrying eventually consistent API operations.
+  # capacity_provider_config {}  # Configuration block for Lambda Capacity Provider.
+  # dead_letter_config {}  # Configuration block for dead letter queue.
+  # durable_config {}  # Configuration block for durable function settings.
+  # environment {}  # Configuration block for environment variables.
+  # ephemeral_storage {}  # Amount of ephemeral storage (/tmp) to allocate for the Lambda Function.
+  # file_system_config {}  # Configuration block for EFS or S3 Files file system.
+  # image_config {}  # Container image configuration values.
+  # logging_config {}  # Configuration block for advanced logging settings.
+  # snap_start {}  # Configuration block for snap start settings.
+  # tenancy_config {}  # Configuration block for Tenancy.
+  # timeouts {}
+  # tracing_config {}  # Configuration block for X-Ray tracing.
+  # vpc_config {}  # Configuration block for VPC.
+}
+]]></content>
+<tabTrigger>aws_lambda_function</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Lambda Function.</description>
+</snippet>

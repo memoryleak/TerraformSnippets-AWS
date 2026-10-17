@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_opensearch_package_association" "${1:name}" {
+  domain_name = "${2:domain_name}"  # Name of the domain to associate the package with.
+  package_id  = "${3:package_id}"   # Internal ID of the package to associate with a domain.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_opensearch_package_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS OpenSearch package association.</description>
+</snippet>

@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_kms_replica_key" "${1:name}" {
+  primary_key_arn = "${2:primary_key_arn}"  # ARN of the multi-Region primary key to replicate.
+
+  # bypass_policy_lockout_safety_check = false  # Whether to bypass the key policy lockout safety check.
+  # deletion_window_in_days            = 0      # Waiting period, specified in number of days.
+  # description                        = ""     # Description of the KMS key.
+  # enabled                            = false  # Whether the replica key is enabled.
+  # policy                             = ""     # Key policy to attach to the KMS key.
+  # region                             = ""     # Region where this resource will be managed.
+  # tags                               = {}     # Map of tags to assign to the replica key.
+}
+]]></content>
+<tabTrigger>aws_kms_replica_key</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a KMS multi-Region replica key.</description>
+</snippet>

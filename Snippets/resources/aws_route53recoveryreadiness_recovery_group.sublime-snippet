@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_route53recoveryreadiness_recovery_group" "${1:name}" {
+  recovery_group_name = "${2:recovery_group_name}"  # A unique name describing the recovery group.
+
+  # cells = []  # List of cell arns to add as nested fault domains within this recovery group
+  # tags  = {}  # Key-value mapping of resource tags.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_route53recoveryreadiness_recovery_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AWS Route 53 Recovery Readiness Recovery Group</description>
+</snippet>

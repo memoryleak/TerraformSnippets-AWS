@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_organizations_policies_for_target" "${1:name}" {
+  filter    = "${2:filter}"     # Must supply one of the 7 different policy filters for a target (AISERVICES_OPT_OUT_POLICY | BACKU...
+  target_id = "${3:target_id}"  # The root (string that begins with "r-" followed by 4-32 lowercase letters or digits), account (12...
+}
+]]></content>
+<tabTrigger>data_aws_organizations_policies_for_target</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS Organizations Policies For Target.</description>
+</snippet>

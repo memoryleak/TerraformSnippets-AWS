@@ -1,0 +1,24 @@
+<snippet>
+<content><![CDATA[
+resource "aws_redshiftserverless_namespace" "${1:name}" {
+  namespace_name = "${2:namespace_name}"  # The name of the namespace.
+
+  # admin_password_secret_kms_key_id = ""     # ID of the KMS key used to encrypt the namespace's admin credentials secret.
+  # admin_user_password              = ""     # The password of the administrator for the first database created in the namespace.
+  # admin_user_password_wo           = ""     # The password of the administrator for the first database created in the namespace.
+  # admin_user_password_wo_version   = 0      # Required when admin_user_password_wo is set.
+  # admin_username                   = ""     # The username of the administrator for the first database created in the namespace.
+  # db_name                          = ""     # The name of the first database created in the namespace.
+  # default_iam_role_arn             = ""     # ARN of the IAM role to set as a default in the namespace.
+  # iam_roles                        = []     # A list of IAM roles to associate with the namespace.
+  # kms_key_id                       = ""     # ARN of the Amazon Web Services KMS key used to encrypt your data.
+  # log_exports                      = []     # The types of logs the namespace can export.
+  # manage_admin_password            = false  # Whether to use AWS SecretManager to manage namespace's admin credentials.
+  # region                           = ""     # Region where this resource will be managed.
+  # tags                             = {}     # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_redshiftserverless_namespace</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Redshift Serverless Namespace resource.</description>
+</snippet>

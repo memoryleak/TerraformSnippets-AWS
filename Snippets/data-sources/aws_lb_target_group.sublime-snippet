@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+data "aws_lb_target_group" "${1:name}" {
+  # arn                               = ""  # Full ARN of the target group.
+  # load_balancing_anomaly_mitigation = ""
+  # name                              = ""  # Unique name of the target group.
+  # region                            = ""  # Region where this resource will be managed.
+  # tags                              = {}  # Mapping of tags, each pair of which must exactly match a pair on the desired target group.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_lb_target_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides a Load Balancer Target Group data source.</description>
+</snippet>

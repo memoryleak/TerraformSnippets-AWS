@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_api_gateway_client_certificate" "${1:name}" {
+  # description = ""  # Description of the client certificate.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Key-value map of resource tags.
+}
+]]></content>
+<tabTrigger>aws_api_gateway_client_certificate</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an API Gateway Client Certificate.</description>
+</snippet>

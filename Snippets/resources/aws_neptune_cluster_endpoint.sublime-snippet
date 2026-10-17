@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_neptune_cluster_endpoint" "${1:name}" {
+  cluster_endpoint_identifier = "${2:cluster_endpoint_identifier}"  # The identifier of the endpoint.
+  cluster_identifier          = "${3:cluster_identifier}"           # The DB cluster identifier of the DB cluster associated with the endpoint.
+  endpoint_type               = "${4:endpoint_type}"                # The type of the endpoint.
+
+  # excluded_members = []  # List of DB instance identifiers that aren't part of the custom endpoint group.
+  # region           = ""  # Region where this resource will be managed.
+  # static_members   = []  # List of DB instance identifiers that are part of the custom endpoint group.
+  # tags             = {}  # A map of tags to assign to the Neptune cluster.
+}
+]]></content>
+<tabTrigger>aws_neptune_cluster_endpoint</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Neptune Cluster Endpoint Resource</description>
+</snippet>

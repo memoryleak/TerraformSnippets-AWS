@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_route53_resolver_query_log_config" "${1:name}" {
+  # name                         = ""
+  # region                       = ""  # Region where this resource will be managed.
+  # resolver_query_log_config_id = ""  # ID of the Route53 Resolver Query Logging Configuration.
+  # tags                         = {}
+  # filter {}  # One or more name/value pairs to use as filters.
+}
+]]></content>
+<tabTrigger>data_aws_route53_resolver_query_log_config</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific Route53 Resolver Query Logging Configuration.</description>
+</snippet>

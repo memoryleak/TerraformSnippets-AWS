@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_appconfig_environments" "${1:name}" {
+  application_id = "${2:application_id}"  # ID of the AppConfig Application.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_appconfig_environments</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS AppConfig Environments.</description>
+</snippet>

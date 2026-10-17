@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iot_authorizer" "${1:name}" {
+  authorizer_function_arn = "${2:authorizer_function_arn}"  # The ARN of the authorizer's Lambda function.
+  name                    = "${3:name}"                     # The name of the authorizer.
+
+  # enable_caching_for_http   = false  # Specifies whether the HTTP caching is enabled or not.
+  # region                    = ""     # Region where this resource will be managed.
+  # signing_disabled          = false  # Specifies whether AWS IoT validates the token signature in an authorization request.
+  # status                    = ""     # The status of Authorizer request at creation.
+  # tags                      = {}     # Map of tags to assign to this resource.
+  # token_key_name            = ""     # The name of the token key used to extract the token from the HTTP headers.
+  # token_signing_public_keys = {}     # The public keys used to verify the digital signature returned by your custom authentication service.
+}
+]]></content>
+<tabTrigger>aws_iot_authorizer</tabTrigger>
+<scope>source.terraform</scope>
+<description>Creates and manages an AWS IoT Authorizer.</description>
+</snippet>

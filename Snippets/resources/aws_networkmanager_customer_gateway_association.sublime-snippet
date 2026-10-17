@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_networkmanager_customer_gateway_association" "${1:name}" {
+  customer_gateway_arn = "${2:customer_gateway_arn}"  # ARN of the customer gateway.
+  device_id            = "${3:device_id}"             # ID of the device.
+  global_network_id    = "${4:global_network_id}"     # ID of the global network.
+
+  # link_id = ""  # ID of the link.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_networkmanager_customer_gateway_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Network Manager Customer Gateway Association.</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_globalaccelerator_cross_account_attachment" "${1:name}" {
+  name = "${2:name}"  # Name of the Cross Account Attachment.
+
+  # principals = []  # List of AWS account IDs that are allowed to associate resources with the accelerator.
+  # tags       = {}  # Map of tags to assign to the resource.
+  # resource {}  # List of resources to be associated with the accelerator.
+}
+]]></content>
+<tabTrigger>aws_globalaccelerator_cross_account_attachment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Global Accelerator Cross Account Attachment.</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_guardduty_organization_configuration_feature" "${1:name}" {
+  auto_enable = "${2:auto_enable}"  # Status of the feature that is configured for the member accounts within the organization.
+  detector_id = "${3:detector_id}"  # ID of the detector that configures the delegated administrator.
+  name        = "${4:name}"         # Name of the feature that will be configured for the organization.
+
+  # region = ""  # Region where this resource will be managed.
+  # additional_configuration {}  # Additional feature configuration block for features EKS_RUNTIME_MONITORING or RUNTIME_MONITORING.
+}
+]]></content>
+<tabTrigger>aws_guardduty_organization_configuration_feature</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage an Amazon GuardDuty organization configuration feature</description>
+</snippet>

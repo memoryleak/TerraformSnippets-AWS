@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_log_destination_policy" "${1:name}" {
+  access_policy    = "${2:access_policy}"     # The policy document.
+  destination_name = "${3:destination_name}"  # A name for the subscription filter
+
+  # force_update = false  # Specify true if you are updating an existing destination policy to grant permission to an organiz...
+  # region       = ""     # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_log_destination_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudWatch Logs destination policy.</description>
+</snippet>

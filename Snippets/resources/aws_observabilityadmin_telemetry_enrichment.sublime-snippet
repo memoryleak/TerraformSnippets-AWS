@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_observabilityadmin_telemetry_enrichment" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_observabilityadmin_telemetry_enrichment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS CloudWatch Observability Admin Telemetry Enrichment.</description>
+</snippet>

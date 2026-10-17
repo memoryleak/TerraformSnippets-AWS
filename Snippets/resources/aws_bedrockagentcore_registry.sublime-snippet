@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrockagentcore_registry" "${1:name}" {
+  name = "${2:name}"  # Name of the registry.
+
+  # approval_configuration = []  # Approval configuration for registry records.
+  # authorizer_type        = ""  # Type of authorizer to use for the registry.
+  # description            = ""  # Description of the registry.
+  # region                 = ""  # Region where this resource will be managed.
+  # authorizer_configuration {}  # Authorizer configuration for the registry.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_bedrockagentcore_registry</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Bedrock AgentCore Registry.</description>
+</snippet>

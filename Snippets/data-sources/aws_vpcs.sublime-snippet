@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_vpcs" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags, each pair of which must exactly match a pair on the desired vpcs.
+  # filter {}  # Custom filter block as described below.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_vpcs</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides a list of VPC Ids in a region</description>
+</snippet>

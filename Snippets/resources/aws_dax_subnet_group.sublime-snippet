@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dax_subnet_group" "${1:name}" {
+  name       = "${2:name}"  # The name of the subnet group.
+  subnet_ids = [${3}]       # A list of VPC subnet IDs for the subnet group.
+
+  # description = ""  # A description of the subnet group.
+  # region      = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_dax_subnet_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an DAX Subnet Group resource.</description>
+</snippet>

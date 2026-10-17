@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_msk_cluster_policy" "${1:name}" {
+  cluster_arn = "${2:cluster_arn}"  # ARN that uniquely identifies the cluster.
+  policy      = "${3:policy}"       # Resource policy for cluster.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_msk_cluster_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Managed Streaming for Kafka Cluster Policy.</description>
+</snippet>

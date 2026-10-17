@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_datasync_location_smb" "${1:name}" {
+  agent_arns      = [${2}]                  # A list of DataSync Agent ARNs with which this location will be associated.
+  password        = "${3:password}"         # The password of the user who can mount the share and has file permissions in the SMB.
+  server_hostname = "${4:server_hostname}"  # Specifies the IP address or DNS name of the SMB server.
+  subdirectory    = "${5:subdirectory}"     # Subdirectory to perform actions as source or destination.
+  user            = "${6:user}"             # The user who can mount the share and has file and folder permissions in the SMB share.
+
+  # domain = ""  # The name of the Windows domain the SMB server belongs to.
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value pairs of resource tags to assign to the DataSync Location.
+  # mount_options {}  # Configuration block containing mount options used by DataSync to access the SMB Server.
+}
+]]></content>
+<tabTrigger>aws_datasync_location_smb</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS DataSync SMB Location</description>
+</snippet>

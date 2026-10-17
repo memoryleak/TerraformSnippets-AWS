@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_workspacesweb_identity_provider" "${1:name}" {
+  identity_provider_details = {${2}}                         # Identity provider details.
+  identity_provider_name    = "${3:identity_provider_name}"  # Identity provider name.
+  identity_provider_type    = "${4:identity_provider_type}"  # Identity provider type.
+  portal_arn                = "${5:portal_arn}"              # ARN of the web portal.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_workspacesweb_identity_provider</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS WorkSpaces Web Identity Provider.</description>
+</snippet>

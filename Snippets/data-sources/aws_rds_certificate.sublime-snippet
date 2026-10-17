@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_rds_certificate" "${1:name}" {
+  # default_for_new_launches = false  # When enabled, returns the default certificate for new RDS instances.
+  # latest_valid_till        = false  # When enabled, returns the certificate with the latest ValidTill.
+  # region                   = ""     # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_rds_certificate</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Information about an RDS Certificate.</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_carrier_gateway" "${1:name}" {
+  vpc_id = "${2:vpc_id}"  # The ID of the VPC to associate with the carrier gateway.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_ec2_carrier_gateway</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an EC2 Carrier Gateway.</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_prometheus_resource_policy" "${1:name}" {
+  policy_document = "${2:policy_document}"  # JSON policy document to use as the resource-based policy.
+  workspace_id    = "${3:workspace_id}"     # ID of the workspace to attach the resource-based policy to.
+
+  # region      = ""  # Region where this resource will be managed.
+  # revision_id = ""
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_prometheus_resource_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Amazon Managed Service for Prometheus (AMP) Resource Policy.</description>
+</snippet>

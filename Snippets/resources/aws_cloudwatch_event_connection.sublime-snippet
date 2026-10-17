@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_event_connection" "${1:name}" {
+  authorization_type = "${2:authorization_type}"  # Type of authorization to use for the connection.
+  name               = "${3:name}"                # The name for the connection.
+  auth_parameters {
+  }
+
+  # description        = ""  # Description for the connection.
+  # kms_key_identifier = ""  # Identifier of the AWS KMS customer managed key for EventBridge to use, if you choose to use a cus...
+  # region             = ""  # Region where this resource will be managed.
+  # invocation_connectivity_parameters {}  # Parameters to use for invoking a private API.
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_event_connection</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an EventBridge connection resource.</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_vpc_ipam_pool_cidrs" "${1:name}" {
+  ipam_pool_id = "${2:ipam_pool_id}"  # ID of the IPAM pool you would like the list of provisioned CIDRs.
+
+  # region = ""  # Region where this resource will be managed.
+  # filter {}  # Custom filter block as described below.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_vpc_ipam_pool_cidrs</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Returns cidrs provisioned into an IPAM pool.</description>
+</snippet>

@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpc_ipv4_cidr_block_association" "${1:name}" {
+  vpc_id = "${2:vpc_id}"  # ID of the VPC to make the association with.
+
+  # cidr_block          = ""  # IPv4 CIDR block for the VPC.
+  # ipv4_ipam_pool_id   = ""  # ID of an IPv4 IPAM pool you want to use for allocating this VPC's CIDR.
+  # ipv4_netmask_length = 0   # Netmask length of the IPv4 CIDR you want to allocate to this VPC.
+  # region              = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_vpc_ipv4_cidr_block_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Associate additional IPv4 CIDR blocks with a VPC</description>
+</snippet>

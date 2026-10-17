@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ecr_account_setting" "${1:name}" {
+  name  = "${2:name}"   # Name of the account setting.
+  value = "${3:value}"  # Setting value that is specified.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_ecr_account_setting</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage AWS ECR account settings</description>
+</snippet>

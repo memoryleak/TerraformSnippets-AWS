@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_macie2_organization_configuration" "${1:name}" {
+  auto_enable = ${2:false}  # Whether to enable Amazon Macie automatically for accounts that are added to the organization in A...
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_macie2_organization_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage Amazon Macie configuration settings for an organization in AWS Orga...</description>
+</snippet>

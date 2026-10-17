@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_redshift_hsm_client_certificate" "${1:name}" {
+  hsm_client_certificate_identifier = "${2:hsm_client_certificate_identifier}"  # The identifier of the HSM client certificate.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_redshift_hsm_client_certificate</tabTrigger>
+<scope>source.terraform</scope>
+<description>Creates an HSM client certificate that an Amazon Redshift cluster will use to connect to the clie...</description>
+</snippet>

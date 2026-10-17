@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_rds_instance_state" "${1:name}" {
+  identifier = "${2:identifier}"  # DB Instance Identifier
+  state      = "${3:state}"       # Configured state of the DB Instance.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_rds_instance_state</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS RDS (Relational Database) RDS Instance State.</description>
+</snippet>

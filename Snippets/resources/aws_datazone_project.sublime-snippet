@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_datazone_project" "${1:name}" {
+  domain_identifier = "${2:domain_identifier}"  # Identifier of domain which the project is part of.
+  name              = "${3:name}"               # Name of the project.
+
+  # description         = ""     # Description of project.
+  # glossary_terms      = []     # List of glossary terms that can be used in the project.
+  # region              = ""     # Region where this resource will be managed.
+  # skip_deletion_check = false  # Optional flag to delete all child entities within the project.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_datazone_project</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an Amazon DataZone Project.</description>
+</snippet>

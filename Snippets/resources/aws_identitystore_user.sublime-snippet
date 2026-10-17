@@ -1,0 +1,28 @@
+<snippet>
+<content><![CDATA[
+resource "aws_identitystore_user" "${1:name}" {
+  display_name      = "${2:display_name}"       # The name that is typically displayed when the user is referenced.
+  identity_store_id = "${3:identity_store_id}"  # The globally unique identifier for the identity store that this user is in.
+  user_name         = "${4:user_name}"          # A unique string used to identify the user.
+  name {
+    family_name = "${5:family_name}"
+    given_name  = "${6:given_name}"
+  }
+
+  # locale             = ""  # The user's geographical region or location.
+  # nickname           = ""  # An alternate name for the user.
+  # preferred_language = ""  # The preferred language of the user.
+  # profile_url        = ""  # An URL that may be associated with the user.
+  # region             = ""  # Region where this resource will be managed.
+  # timezone           = ""  # The user's time zone.
+  # title              = ""  # The user's title.
+  # user_type          = ""  # The user type.
+  # addresses {}  # Details about the user's address.
+  # emails {}  # Details about the user's email.
+  # phone_numbers {}  # Details about the user's phone number.
+}
+]]></content>
+<tabTrigger>aws_identitystore_user</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Identity Store User.</description>
+</snippet>

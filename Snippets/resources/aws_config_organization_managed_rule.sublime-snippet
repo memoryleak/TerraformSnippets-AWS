@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_config_organization_managed_rule" "${1:name}" {
+  name            = "${2:name}"             # The name of the rule
+  rule_identifier = "${3:rule_identifier}"  # Identifier of an available AWS Config Managed Rule to call.
+
+  # description                 = ""  # Description of the rule
+  # excluded_accounts           = []  # List of AWS account identifiers to exclude from the rule
+  # input_parameters            = ""  # A string in JSON format that is passed to the AWS Config Rule Lambda Function
+  # maximum_execution_frequency = ""  # The maximum frequency with which AWS Config runs evaluations for a rule, if the rule is triggered...
+  # region                      = ""  # Region where this resource will be managed.
+  # resource_id_scope           = ""  # Identifier of the AWS resource to evaluate
+  # resource_types_scope        = []  # List of types of AWS resources to evaluate
+  # tag_key_scope               = ""  # Tag key of AWS resources to evaluate
+  # tag_value_scope             = ""  # Tag value of AWS resources to evaluate
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_config_organization_managed_rule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Config Organization Managed Rule</description>
+</snippet>

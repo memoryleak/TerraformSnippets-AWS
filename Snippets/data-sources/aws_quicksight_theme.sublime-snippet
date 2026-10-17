@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_quicksight_theme" "${1:name}" {
+  theme_id = "${2:theme_id}"  # Identifier of the theme.
+
+  # aws_account_id = ""  # AWS account ID.
+  # region         = ""  # Region where this resource will be managed.
+  # tags           = {}
+}
+]]></content>
+<tabTrigger>data_aws_quicksight_theme</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Use this data source to fetch information about a QuickSight Theme.</description>
+</snippet>

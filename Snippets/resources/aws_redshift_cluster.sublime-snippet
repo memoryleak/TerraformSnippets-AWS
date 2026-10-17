@@ -1,0 +1,51 @@
+<snippet>
+<content><![CDATA[
+resource "aws_redshift_cluster" "${1:name}" {
+  cluster_identifier = "${2:cluster_identifier}"  # The Cluster Identifier.
+  node_type          = "${3:node_type}"           # The node type to be provisioned for the cluster.
+
+  # allow_version_upgrade                = false  # If true , major version upgrades can be applied during the maintenance window to the Amazon Redsh...
+  # apply_immediately                    = false  # Specifies whether any cluster modifications are applied immediately, or during the next maintenan...
+  # automated_snapshot_retention_period  = 0      # The number of days that automated snapshots are retained.
+  # availability_zone                    = ""     # The EC2 Availability Zone (AZ) in which you want Amazon Redshift to provision the cluster.
+  # availability_zone_relocation_enabled = false  # If true, the cluster can be relocated to another availabity zone, either automatically by AWS or...
+  # cluster_parameter_group_name         = ""     # The name of the parameter group to be associated with this cluster.
+  # cluster_subnet_group_name            = ""     # Name of a cluster subnet group to be associated with this cluster.
+  # cluster_type                         = ""     # The cluster type to use.
+  # cluster_version                      = ""     # The version of the Amazon Redshift engine software that you want to deploy on the cluster.
+  # database_name                        = ""     # The name of the first database to be created when the cluster is created.
+  # default_iam_role_arn                 = ""     # ARN for the IAM role that was set as default for the cluster when the cluster was created.
+  # elastic_ip                           = ""     # The Elastic IP (EIP) address for the cluster.
+  # encrypted                            = ""     # If true , the data in the cluster is encrypted at rest.
+  # enhanced_vpc_routing                 = false  # If true , enhanced VPC routing is enabled.
+  # final_snapshot_identifier            = ""     # The identifier of the final snapshot that is to be created immediately before deleting the cluster.
+  # iam_roles                            = []     # A list of IAM Role ARNs to associate with the cluster.
+  # kms_key_id                           = ""     # The ARN for the KMS encryption key.
+  # maintenance_track_name               = ""     # The name of the maintenance track for the restored cluster.
+  # manage_master_password               = false  # Whether to use AWS SecretsManager to manage the cluster admin credentials.
+  # manual_snapshot_retention_period     = 0      # The default number of days to retain a manual snapshot.
+  # master_password                      = ""     # Password for the master DB user.
+  # master_password_secret_kms_key_id    = ""     # ID of the KMS key used to encrypt the cluster admin credentials secret.
+  # master_password_wo                   = ""     # Password for the master DB user.
+  # master_password_wo_version           = 0      # Required when master_password_wo is set.
+  # master_username                      = ""     # Username for the master DB user.
+  # multi_az                             = false  # Specifies if the Redshift cluster is multi-AZ.
+  # number_of_nodes                      = 0      # The number of compute nodes in the cluster.
+  # owner_account                        = ""     # The AWS customer account used to create or copy the snapshot.
+  # port                                 = 0      # The port number on which the cluster accepts incoming connections.
+  # preferred_maintenance_window         = ""     # The weekly time range (in UTC) during which automated cluster maintenance can occur.
+  # publicly_accessible                  = false  # If true, the cluster can be accessed from a public network.
+  # region                               = ""     # Region where this resource will be managed.
+  # skip_final_snapshot                  = false  # Determines whether a final snapshot of the cluster is created before Amazon Redshift deletes the...
+  # snapshot_arn                         = ""     # The ARN of the snapshot from which to create the new cluster.
+  # snapshot_cluster_identifier          = ""     # The name of the cluster the source snapshot was created from.
+  # snapshot_identifier                  = ""     # The name of the snapshot from which to create the new cluster.
+  # tags                                 = {}     # A map of tags to assign to the resource.
+  # vpc_security_group_ids               = []     # List of VPC security groups to be associated with the cluster.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_redshift_cluster</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Redshift Cluster resource.</description>
+</snippet>

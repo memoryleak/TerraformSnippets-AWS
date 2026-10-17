@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_networkflowmonitor_scope" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # A map of tags to assign to the resource.
+  # target {}  # The targets to define the scope to be monitored.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_networkflowmonitor_scope</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Network Flow Monitor Scope.</description>
+</snippet>

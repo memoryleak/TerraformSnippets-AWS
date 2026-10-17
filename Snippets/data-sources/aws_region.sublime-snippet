@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_region" "${1:name}" {
+  # endpoint = ""  # EC2 endpoint of the region to select.
+  # region   = ""  # Full name of the region to select (e.g.
+}
+]]></content>
+<tabTrigger>data_aws_region</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific AWS Region</description>
+</snippet>

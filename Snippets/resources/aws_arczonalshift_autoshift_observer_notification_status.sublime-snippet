@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_arczonalshift_autoshift_observer_notification_status" "${1:name}" {
+  status = "${2:status}"  # Autoshift observer notification status.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_arczonalshift_autoshift_observer_notification_status</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages the autoshift observer notification status for AWS Application Recovery Controller Zonal...</description>
+</snippet>

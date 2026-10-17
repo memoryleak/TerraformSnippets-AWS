@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_prefix_list" "${1:name}" {
+  # name           = ""  # Name of the prefix list to select.
+  # prefix_list_id = ""  # ID of the prefix list to select.
+  # region         = ""  # Region where this resource will be managed.
+  # filter {}  # Configuration block(s) for filtering.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_prefix_list</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific prefix list</description>
+</snippet>

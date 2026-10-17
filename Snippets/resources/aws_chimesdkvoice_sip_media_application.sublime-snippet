@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_chimesdkvoice_sip_media_application" "${1:name}" {
+  aws_region = "${2:aws_region}"  # The AWS Region in which the AWS Chime SDK Voice Sip Media Application is created.
+  name       = "${3:name}"        # The name of the AWS Chime SDK Voice Sip Media Application.
+  endpoints {
+    lambda_arn = "${4:lambda_arn}"
+  }
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value mapping of resource tags.
+}
+]]></content>
+<tabTrigger>aws_chimesdkvoice_sip_media_application</tabTrigger>
+<scope>source.terraform</scope>
+<description>A ChimeSDKVoice SIP Media Application is a managed object that passes values from a SIP rule to a...</description>
+</snippet>

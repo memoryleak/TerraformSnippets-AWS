@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_quicksight_key_registration" "${1:name}" {
+  # aws_account_id = ""  # AWS account ID.
+  # region         = ""  # Region where this resource will be managed.
+  # key_registration {}  # Registered keys.
+}
+]]></content>
+<tabTrigger>aws_quicksight_key_registration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Registers customer managed keys in a Amazon QuickSight account.</description>
+</snippet>

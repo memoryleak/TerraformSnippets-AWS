@@ -1,0 +1,30 @@
+<snippet>
+<content><![CDATA[
+resource "aws_imagebuilder_container_recipe" "${1:name}" {
+  container_type = "${2:container_type}"  # The type of the container to create.
+  name           = "${3:name}"            # The name of the container recipe.
+  parent_image   = "${4:parent_image}"
+  version        = "${5:version}"
+  component {
+    component_arn = "${6:component_arn}"
+  }
+  target_repository {
+    repository_name = "${7:repository_name}"
+    service         = "${8:service}"
+  }
+
+  # description              = ""  # The description of the container recipe.
+  # dockerfile_template_data = ""  # The Dockerfile template used to build the image as an inline data blob.
+  # dockerfile_template_uri  = ""  # The Amazon S3 URI for the Dockerfile that will be used to build the container image.
+  # kms_key_id               = ""  # The KMS key used to encrypt the container image.
+  # platform_override        = ""  # Specifies the operating system platform when you use a custom base image.
+  # region                   = ""  # Region where this resource will be managed.
+  # tags                     = {}  # Key-value map of resource tags for the container recipe.
+  # working_directory        = ""  # The working directory to be used during build and test workflows.
+  # instance_configuration {}  # Configuration block used to configure an instance for building and testing container images.
+}
+]]></content>
+<tabTrigger>aws_imagebuilder_container_recipe</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manage an Image Builder Container Recipe</description>
+</snippet>

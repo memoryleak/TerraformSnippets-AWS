@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_emr_block_public_access_configuration" "${1:name}" {
+  block_public_security_group_rules = ${2:false}  # Enable or disable EMR Block Public Access.
+
+  # region = ""  # Region where this resource will be managed.
+  # permitted_public_security_group_rule_range {}  # Configuration block for defining permitted public security group rule port ranges.
+}
+]]></content>
+<tabTrigger>aws_emr_block_public_access_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS EMR Block Public Access Configuration.</description>
+</snippet>

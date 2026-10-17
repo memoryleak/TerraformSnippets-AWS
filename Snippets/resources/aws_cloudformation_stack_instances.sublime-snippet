@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudformation_stack_instances" "${1:name}" {
+  stack_set_name = "${2:stack_set_name}"  # Name of the stack set.
+
+  # accounts            = []     # Accounts where you want to create stack instances in the specified regions.
+  # call_as             = ""     # Whether you are acting as an account administrator in the organization's management account or as...
+  # parameter_overrides = {}     # Key-value map of input parameters to override from the stack set for these instances.
+  # region              = ""     # Region where this resource will be managed.
+  # regions             = []     # Regions where you want to create stack instances in the specified accounts.
+  # retain_stacks       = false  # Whether to remove the stack instances from the stack set, but not delete the stacks.
+  # deployment_targets {}  # AWS Organizations accounts for which to create stack instances in the regions.
+  # operation_preferences {}  # Preferences for how AWS CloudFormation performs a stack set operation.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_cloudformation_stack_instances</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages CloudFormation stack instances.</description>
+</snippet>

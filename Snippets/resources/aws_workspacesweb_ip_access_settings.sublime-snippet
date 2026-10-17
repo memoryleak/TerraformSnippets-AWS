@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_workspacesweb_ip_access_settings" "${1:name}" {
+  display_name = "${2:display_name}"  # The display name of the IP access settings.
+
+  # additional_encryption_context = {}  # Additional encryption context for the IP access settings.
+  # customer_managed_key          = ""  # ARN of the customer managed KMS key.
+  # description                   = ""  # The description of the IP access settings.
+  # region                        = ""  # Region where this resource will be managed.
+  # tags                          = {}  # Map of tags assigned to the resource.
+  # ip_rule {}  # The IP rules of the IP access settings.
+}
+]]></content>
+<tabTrigger>aws_workspacesweb_ip_access_settings</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS WorkSpaces Web IP Access Settings.</description>
+</snippet>

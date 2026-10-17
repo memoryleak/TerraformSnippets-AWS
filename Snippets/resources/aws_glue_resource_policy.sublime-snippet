@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_glue_resource_policy" "${1:name}" {
+  policy = "${2:policy}"  # Policy to be applied to the aws glue data catalog.
+
+  # enable_hybrid = ""  # Whether you are using both methods to grant cross-account.
+  # region        = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_glue_resource_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to configure the aws glue resource policy.</description>
+</snippet>

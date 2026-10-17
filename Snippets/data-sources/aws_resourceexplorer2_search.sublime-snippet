@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_resourceexplorer2_search" "${1:name}" {
+  query_string = "${2:query_string}"  # String that includes keywords and filters that specify the resources that you want to include in...
+
+  # region   = ""  # Region where this resource will be managed.
+  # view_arn = ""  # ARN of the view to use for the query.
+}
+]]></content>
+<tabTrigger>data_aws_resourceexplorer2_search</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS Resource Explorer Search.</description>
+</snippet>

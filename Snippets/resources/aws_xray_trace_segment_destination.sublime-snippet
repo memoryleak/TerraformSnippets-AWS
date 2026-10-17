@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_xray_trace_segment_destination" "${1:name}" {
+  destination = "${2:destination}"  # Destination of trace segments.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_xray_trace_segment_destination</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages the destination of data sent to PutTraceSegments by AWS X-Ray.</description>
+</snippet>

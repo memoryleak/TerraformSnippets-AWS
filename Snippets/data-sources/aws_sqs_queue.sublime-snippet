@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_sqs_queue" "${1:name}" {
+  name = "${2:name}"  # Name of the queue to match.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_sqs_queue</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on an Amazon Simple Queue Service (SQS) Queue</description>
+</snippet>

@@ -1,0 +1,44 @@
+<snippet>
+<content><![CDATA[
+resource "aws_docdb_cluster" "${1:name}" {
+  # allow_major_version_upgrade     = false  # A value that indicates whether major version upgrades are allowed.
+  # apply_immediately               = false  # Specifies whether any cluster modifications
+  # availability_zones              = []     # A list of EC2 Availability Zones that instances in the DB cluster can be created in.
+  # backup_retention_period         = 0      # The days to retain backups for.
+  # cluster_identifier              = ""     # The cluster identifier.
+  # cluster_identifier_prefix       = ""     # Creates a unique cluster identifier beginning with the specified prefix.
+  # cluster_members                 = []
+  # db_cluster_parameter_group_name = ""     # A cluster parameter group to associate with the cluster.
+  # db_subnet_group_name            = ""     # A DB subnet group to associate with this DB instance.
+  # deletion_protection             = false  # A boolean value that indicates whether the DB cluster has deletion protection enabled.
+  # enabled_cloudwatch_logs_exports = []     # List of log types to export to CloudWatch.
+  # engine                          = ""     # The name of the database engine to be used for this DB cluster.
+  # engine_version                  = ""     # The database engine version.
+  # final_snapshot_identifier       = ""     # The name of your final DB snapshot when this DB cluster is deleted.
+  # global_cluster_identifier       = ""     # The global cluster identifier specified on aws_docdb_global_cluster.
+  # kms_key_id                      = ""     # The ARN for the KMS encryption key.
+  # manage_master_user_password     = false  # Set to true to allow Amazon DocumentDB to manage the master user password in AWS Secrets Manager.
+  # master_password                 = ""     # Password for the master DB user.
+  # master_password_wo              = ""     # Password for the master DB user.
+  # master_password_wo_version      = 0      # Required when master_password_wo is set.
+  # master_username                 = ""     # Username for the master DB user.
+  # network_type                    = ""     # The network type of the DB cluster (IPV4 or DUAL).
+  # port                            = 0      # The port on which the DB accepts connections
+  # preferred_backup_window         = ""     # The daily time range during which automated backups are created if automated backups are enabled...
+  # preferred_maintenance_window    = ""     # The weekly time range during which system maintenance can occur, in (UTC) e.g., wed:04:00-wed:04:30
+  # region                          = ""     # Region where this resource will be managed.
+  # skip_final_snapshot             = false  # Determines whether a final DB snapshot is created before the DB cluster is deleted.
+  # snapshot_identifier             = ""     # Specifies whether or not to create this cluster from a snapshot.
+  # storage_encrypted               = false  # Specifies whether the DB cluster is encrypted.
+  # storage_type                    = ""     # The storage type to associate with the DB cluster.
+  # tags                            = {}     # A map of tags to assign to the DB cluster.
+  # vpc_security_group_ids          = []     # List of VPC security groups to associate
+  # restore_to_point_in_time {}  # A configuration block for restoring a DB instance to an arbitrary point in time.
+  # serverless_v2_scaling_configuration {}  # Scaling configuration of an Amazon DocumentDB Serverless cluster.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_docdb_cluster</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a DocumentDB Aurora Cluster</description>
+</snippet>

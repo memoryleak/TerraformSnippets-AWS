@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_dashboard" "${1:name}" {
+  dashboard_body = "${2:dashboard_body}"  # The detailed information about the dashboard, including what widgets are included and their locat...
+  dashboard_name = "${3:dashboard_name}"  # The name of the dashboard.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_dashboard</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudWatch Dashboard resource.</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_kinesis_stream" "${1:name}" {
+  name = "${2:name}"  # Name of the Kinesis Stream.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_kinesis_stream</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides a Kinesis Stream data source.</description>
+</snippet>

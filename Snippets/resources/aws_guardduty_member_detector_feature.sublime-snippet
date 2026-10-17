@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_guardduty_member_detector_feature" "${1:name}" {
+  account_id  = "${2:account_id}"   # Member account ID to be updated.
+  detector_id = "${3:detector_id}"  # Amazon GuardDuty detector ID.
+  name        = "${4:name}"         # Name of the detector feature.
+  status      = "${5:status}"       # Status of the detector feature.
+
+  # region = ""  # Region where this resource will be managed.
+  # additional_configuration {}  # Additional feature configuration block.
+}
+]]></content>
+<tabTrigger>aws_guardduty_member_detector_feature</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage an Amazon GuardDuty member account detector feature</description>
+</snippet>

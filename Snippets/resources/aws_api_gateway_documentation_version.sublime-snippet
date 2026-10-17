@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_api_gateway_documentation_version" "${1:name}" {
+  rest_api_id = "${2:rest_api_id}"  # ID of the associated Rest API
+  version     = "${3:version}"      # Version identifier of the API documentation snapshot.
+
+  # description = ""  # Description of the API documentation version.
+  # region      = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_api_gateway_documentation_version</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage an API Gateway Documentation Version.</description>
+</snippet>

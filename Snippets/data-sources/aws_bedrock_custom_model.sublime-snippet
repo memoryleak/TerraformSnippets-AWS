@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_bedrock_custom_model" "${1:name}" {
+  model_id = "${2:model_id}"  # Name or ARN of the custom model.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_bedrock_custom_model</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific Amazon Bedrock custom model.</description>
+</snippet>

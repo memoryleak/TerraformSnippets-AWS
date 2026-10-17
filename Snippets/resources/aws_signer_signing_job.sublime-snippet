@@ -1,0 +1,25 @@
+<snippet>
+<content><![CDATA[
+resource "aws_signer_signing_job" "${1:name}" {
+  profile_name = "${2:profile_name}"  # The name of the profile to initiate the signing operation.
+  destination {
+    s3 {
+      bucket = "${3:bucket}"
+    }
+  }
+  source {
+    s3 {
+      bucket  = "${4:bucket}"
+      key     = "${5:key}"
+      version = "${6:version}"
+    }
+  }
+
+  # ignore_signing_job_failure = false  # Set this argument to true to ignore signing job failures and retrieve failed status and reason.
+  # region                     = ""     # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_signer_signing_job</tabTrigger>
+<scope>source.terraform</scope>
+<description>Creates a Signer Signing Job.</description>
+</snippet>

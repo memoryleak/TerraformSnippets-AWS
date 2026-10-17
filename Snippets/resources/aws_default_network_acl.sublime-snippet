@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_default_network_acl" "${1:name}" {
+  default_network_acl_id = "${2:default_network_acl_id}"  # Network ACL ID to manage.
+
+  # region     = ""  # Region where this resource will be managed.
+  # subnet_ids = []  # List of Subnet IDs to apply the ACL to.
+  # tags       = {}  # Map of tags to assign to the resource.
+  # egress {}  # Configuration block for an egress rule.
+  # ingress {}  # Configuration block for an ingress rule.
+}
+]]></content>
+<tabTrigger>aws_default_network_acl</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manage a default network ACL.</description>
+</snippet>

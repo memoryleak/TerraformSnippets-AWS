@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpclattice_listener" "${1:name}" {
+  name     = "${2:name}"      # Name of the listener.
+  protocol = "${3:protocol}"  # Protocol for the listener.
+  default_action {
+  }
+
+  # port               = 0   # Listener port.
+  # region             = ""  # Region where this resource will be managed.
+  # service_arn        = ""  # ARN of the VPC Lattice service.
+  # service_identifier = ""  # ID of the VPC Lattice service.
+  # tags               = {}  # Map of tags to assign to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_vpclattice_listener</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS VPC Lattice Listener.</description>
+</snippet>

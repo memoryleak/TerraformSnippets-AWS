@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iot_provisioning_template" "${1:name}" {
+  name                  = "${2:name}"                   # The name of the fleet provisioning template.
+  provisioning_role_arn = "${3:provisioning_role_arn}"  # The role ARN for the role associated with the fleet provisioning template.
+  template_body         = "${4:template_body}"          # The JSON formatted contents of the fleet provisioning template.
+
+  # description = ""     # The description of the fleet provisioning template.
+  # enabled     = false  # True to enable the fleet provisioning template, otherwise false.
+  # region      = ""     # Region where this resource will be managed.
+  # tags        = {}     # A map of tags to assign to the resource.
+  # type        = ""     # The type you define in a provisioning template.
+  # pre_provisioning_hook {}  # Creates a pre-provisioning hook template.
+}
+]]></content>
+<tabTrigger>aws_iot_provisioning_template</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an IoT fleet provisioning template.</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_securityhub_aggregator_v2" "${1:name}" {
+  region_linking_mode = "${2:region_linking_mode}"  # Determines how Regions are linked to the aggregator.
+
+  # linked_regions = []  # List of Regions linked to the aggregation Region.
+  # region         = ""  # Region where this resource will be managed.
+  # tags           = {}  # Map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_securityhub_aggregator_v2</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Security Hub V2 cross-region finding aggregator.</description>
+</snippet>

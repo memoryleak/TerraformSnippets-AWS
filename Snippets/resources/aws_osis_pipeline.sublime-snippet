@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_osis_pipeline" "${1:name}" {
+  max_units                   = ${2:0}                              # The maximum pipeline capacity, in Ingestion Compute Units (ICUs).
+  min_units                   = ${3:0}                              # The minimum pipeline capacity, in Ingestion Compute Units (ICUs).
+  pipeline_configuration_body = "${4:pipeline_configuration_body}"  # The pipeline configuration in YAML format.
+  pipeline_name               = "${5:pipeline_name}"                # Name of the pipeline.
+
+  # pipeline_role_arn = ""  # ARN of the IAM role that grants the pipeline permission to access AWS resources.
+  # region            = ""  # Region where this resource will be managed.
+  # tags              = {}  # A map of tags to assign to the pipeline.
+  # buffer_options {}  # Key-value pairs to configure persistent buffering for the pipeline.
+  # encryption_at_rest_options {}  # Key-value pairs to configure encryption for data that is written to a persistent buffer.
+  # log_publishing_options {}  # Key-value pairs to configure log publishing.
+  # timeouts {}
+  # vpc_options {}  # Container for the values required to configure VPC access for the pipeline.
+}
+]]></content>
+<tabTrigger>aws_osis_pipeline</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS OpenSearch Ingestion Pipeline.</description>
+</snippet>

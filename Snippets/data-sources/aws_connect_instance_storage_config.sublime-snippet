@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_connect_instance_storage_config" "${1:name}" {
+  association_id = "${2:association_id}"  # The existing association identifier that uniquely identifies the resource type and storage config...
+  instance_id    = "${3:instance_id}"     # Reference to the hosting Amazon Connect Instance
+  resource_type  = "${4:resource_type}"   # A valid resource type.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_connect_instance_storage_config</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific Amazon Connect Instance Storage Config.</description>
+</snippet>

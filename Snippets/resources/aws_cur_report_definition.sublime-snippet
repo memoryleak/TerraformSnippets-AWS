@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cur_report_definition" "${1:name}" {
+  additional_schema_elements = [${2}]              # A list of schema elements.
+  compression                = "${3:compression}"  # Compression format for report.
+  format                     = "${4:format}"       # Format for report.
+  report_name                = "${5:report_name}"  # Unique name for the report.
+  s3_bucket                  = "${6:s3_bucket}"    # Name of the existing S3 bucket to hold generated reports.
+  s3_prefix                  = "${7:s3_prefix}"    # Report path prefix.
+  s3_region                  = "${8:s3_region}"    # Region of the existing S3 bucket to hold generated reports.
+  time_unit                  = "${9:time_unit}"    # The frequency on which report data are measured and displayed.
+
+  # additional_artifacts   = []     # A list of additional artifacts.
+  # refresh_closed_reports = false  # Set to true to update your reports after they have been finalized if AWS detects charges related...
+  # report_versioning      = ""     # Overwrite the previous version of each report or to deliver the report in addition to the previou...
+  # tags                   = {}     # Key-value pairs of resource tags to assign to the DataSync Location.
+}
+]]></content>
+<tabTrigger>aws_cur_report_definition</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Cost and Usage Report Definition.</description>
+</snippet>

@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3control_multi_region_access_point" "${1:name}" {
+  details {
+    name = "${2:name}"
+    region {
+      bucket = "${3:bucket}"
+    }
+  }
+
+  # account_id = ""  # AWS account ID for the owner of the buckets for which you want to create a Multi-Region Access Po...
+  # region     = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_s3control_multi_region_access_point</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage an S3 Multi-Region Access Point associated with specified buckets.</description>
+</snippet>

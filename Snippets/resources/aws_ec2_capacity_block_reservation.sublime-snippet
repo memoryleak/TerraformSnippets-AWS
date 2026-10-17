@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_capacity_block_reservation" "${1:name}" {
+  capacity_block_offering_id = "${2:capacity_block_offering_id}"  # The Capacity Block Reservation ID.
+  instance_platform          = "${3:instance_platform}"           # The type of operating system for which to reserve capacity.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # A map of tags to assign to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ec2_capacity_block_reservation</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an EC2 Capacity Block Reservation.</description>
+</snippet>

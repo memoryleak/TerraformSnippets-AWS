@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_media_convert_queue" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_media_convert_queue</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Retrieve information about a AWS Elemental MediaConvert Queue.</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dynamodb_kinesis_streaming_destination" "${1:name}" {
+  stream_arn = "${2:stream_arn}"  # The ARN for a Kinesis data stream.
+  table_name = "${3:table_name}"  # The name of the DynamoDB table.
+
+  # approximate_creation_date_time_precision = ""  # Toggle for the precision of Kinesis data stream timestamp.
+  # region                                   = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_dynamodb_kinesis_streaming_destination</tabTrigger>
+<scope>source.terraform</scope>
+<description>Enables a Kinesis streaming destination for a DynamoDB table</description>
+</snippet>

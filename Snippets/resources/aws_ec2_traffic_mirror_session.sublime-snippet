@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_traffic_mirror_session" "${1:name}" {
+  network_interface_id     = "${2:network_interface_id}"      # ID of the source network interface.
+  session_number           = ${3:0}                           # - The session number determines the order in which sessions are evaluated when an interface is us...
+  traffic_mirror_filter_id = "${4:traffic_mirror_filter_id}"  # ID of the traffic mirror filter to be used
+  traffic_mirror_target_id = "${5:traffic_mirror_target_id}"  # ID of the traffic mirror target to be used
+
+  # description        = ""  # A description of the traffic mirror session.
+  # packet_length      = 0   # The number of bytes in each packet to mirror.
+  # region             = ""  # Region where this resource will be managed.
+  # tags               = {}  # Key-value map of resource tags.
+  # virtual_network_id = 0   # - The VXLAN ID for the Traffic Mirror session.
+}
+]]></content>
+<tabTrigger>aws_ec2_traffic_mirror_session</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Traffic mirror session</description>
+</snippet>

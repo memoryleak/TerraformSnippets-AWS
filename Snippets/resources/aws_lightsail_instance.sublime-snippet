@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lightsail_instance" "${1:name}" {
+  availability_zone = "${2:availability_zone}"  # Availability Zone in which to create your instance.
+  blueprint_id      = "${3:blueprint_id}"       # ID for a virtual private server image.
+  bundle_id         = "${4:bundle_id}"          # Bundle of specification information.
+  name              = "${5:name}"               # Name of the Lightsail Instance.
+
+  # ip_address_type = ""  # IP address type of the Lightsail Instance.
+  # key_pair_name   = ""  # Name of your key pair.
+  # region          = ""  # Region where this resource will be managed.
+  # tags            = {}  # Map of tags to assign to the resource.
+  # user_data       = ""  # Single lined launch script as a string to configure server with additional user data.
+  # add_on {}  # Add-on configuration for the instance.
+}
+]]></content>
+<tabTrigger>aws_lightsail_instance</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Lightsail Instance.</description>
+</snippet>

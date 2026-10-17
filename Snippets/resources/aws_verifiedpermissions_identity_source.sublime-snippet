@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_verifiedpermissions_identity_source" "${1:name}" {
+  policy_store_id = "${2:policy_store_id}"  # ID of the policy store in which you want to store this identity source.
+
+  # principal_entity_type = ""  # Namespace and data type of the principals generated for identities authenticated by the new ident...
+  # region                = ""  # Region where this resource will be managed.
+  # configuration {}  # Details required to communicate with the identity provider (IdP) associated with this identity so...
+}
+]]></content>
+<tabTrigger>aws_verifiedpermissions_identity_source</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Verified Permissions Identity Source.</description>
+</snippet>

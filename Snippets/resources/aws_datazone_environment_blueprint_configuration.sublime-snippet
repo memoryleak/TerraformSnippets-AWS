@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_datazone_environment_blueprint_configuration" "${1:name}" {
+  domain_id                = "${2:domain_id}"                 # ID of the Domain.
+  enabled_regions          = [${3}]
+  environment_blueprint_id = "${4:environment_blueprint_id}"  # ID of the Environment Blueprint
+
+  # global_parameters      = {}  # A map of global parameters to configure for the blueprint across all regions.
+  # manage_access_role_arn = ""  # ARN of the manage access role with which this blueprint is created.
+  # provisioning_role_arn  = ""  # ARN of the provisioning role with which this blueprint is created.
+  # region                 = ""  # Region where this resource will be managed.
+  # regional_parameters    = {}  # Parameters for each region in which the blueprint is enabled
+}
+]]></content>
+<tabTrigger>aws_datazone_environment_blueprint_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS DataZone Environment Blueprint Configuration.</description>
+</snippet>

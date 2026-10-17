@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudcontrolapi_resource" "${1:name}" {
+  desired_state = "${2:desired_state}"  # JSON string matching the CloudFormation resource type schema with desired configuration.
+  type_name     = "${3:type_name}"      # CloudFormation resource type name.
+
+  # region          = ""  # Region where this resource will be managed.
+  # role_arn        = ""  # ARN of the IAM Role to assume for operations.
+  # schema          = ""  # JSON string of the CloudFormation resource type schema which is used for plan time validation whe...
+  # type_version_id = ""  # Identifier of the CloudFormation resource type version.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_cloudcontrolapi_resource</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Cloud Control API Resource.</description>
+</snippet>

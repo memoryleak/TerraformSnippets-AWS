@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_vpc_endpoint_associations" "${1:name}" {
+  vpc_endpoint_id = "${2:vpc_endpoint_id}"  # ID of the specific VPC Endpoint to retrieve.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_vpc_endpoint_associations</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details of Resource and Service Network associations to a VPC Endpoint.</description>
+</snippet>

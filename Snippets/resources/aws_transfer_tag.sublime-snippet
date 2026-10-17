@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_transfer_tag" "${1:name}" {
+  key          = "${2:key}"           # Tag name.
+  resource_arn = "${3:resource_arn}"  # ARN of the Transfer Family resource to tag.
+  value        = "${4:value}"         # Tag value.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_transfer_tag</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an individual Transfer Family resource tag</description>
+</snippet>

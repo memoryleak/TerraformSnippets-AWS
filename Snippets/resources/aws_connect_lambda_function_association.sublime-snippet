@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_connect_lambda_function_association" "${1:name}" {
+  function_arn = "${2:function_arn}"  # ARN of the Lambda Function, omitting any version or alias qualifier.
+  instance_id  = "${3:instance_id}"   # The identifier of the Amazon Connect instance.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_connect_lambda_function_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides details about a specific Connect Lambda Function Association.</description>
+</snippet>

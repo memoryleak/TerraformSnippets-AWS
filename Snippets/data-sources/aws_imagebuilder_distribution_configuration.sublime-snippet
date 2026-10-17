@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_imagebuilder_distribution_configuration" "${1:name}" {
+  arn = "${2:arn}"  # ARN of the distribution configuration.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_imagebuilder_distribution_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an Image Builder Distribution Configuration</description>
+</snippet>

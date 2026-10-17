@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_gamelift_build" "${1:name}" {
+  name             = "${2:name}"              # Name of the build
+  operating_system = "${3:operating_system}"  # Operating system that the game server binaries are built to run on.
+  storage_location {
+    bucket   = "${4:bucket}"
+    key      = "${5:key}"
+    role_arn = "${6:role_arn}"
+  }
+
+  # region  = ""  # Region where this resource will be managed.
+  # tags    = {}  # Key-value map of resource tags.
+  # version = ""  # Version that is associated with this build.
+}
+]]></content>
+<tabTrigger>aws_gamelift_build</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a GameLift Build resource.</description>
+</snippet>

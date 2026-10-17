@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_quicksight_group" "${1:name}" {
+  group_name = "${2:group_name}"  # Name of the group that you want to match.
+
+  # aws_account_id = ""  # AWS account ID.
+  # namespace      = ""  # QuickSight namespace.
+  # region         = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_quicksight_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Use this data source to fetch information about a QuickSight Group.</description>
+</snippet>

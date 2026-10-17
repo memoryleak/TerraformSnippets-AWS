@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+data "aws_alb_listener" "${1:name}" {
+  # arn               = ""
+  # load_balancer_arn = ""
+  # port              = 0
+  # region            = ""
+  # tags              = {}
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_alb_listener</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: aws_alb_listener</description>
+</snippet>

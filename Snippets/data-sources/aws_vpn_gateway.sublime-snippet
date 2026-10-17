@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+data "aws_vpn_gateway" "${1:name}" {
+  # amazon_side_asn   = ""  # Autonomous System Number (ASN) for the Amazon side of the specific VPN Gateway to retrieve.
+  # attached_vpc_id   = ""  # ID of a VPC attached to the specific VPN Gateway to retrieve.
+  # availability_zone = ""  # Availability Zone of the specific VPN Gateway to retrieve.
+  # region            = ""  # Region where this resource will be managed.
+  # state             = ""  # State of the specific VPN Gateway to retrieve.
+  # tags              = {}  # Map of tags, each pair of which must exactly match a pair on the desired VPN Gateway.
+  # filter {}  # Custom filter block as described below.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_vpn_gateway</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific VPN gateway.</description>
+</snippet>

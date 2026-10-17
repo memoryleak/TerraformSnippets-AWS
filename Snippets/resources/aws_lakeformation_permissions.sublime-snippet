@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lakeformation_permissions" "${1:name}" {
+  permissions = [${2}]            # List of permissions granted to the principal.
+  principal   = "${3:principal}"  # Principal to be granted the permissions on the resource.
+
+  # catalog_id                    = ""     # Identifier for the Data Catalog.
+  # catalog_resource              = false  # Whether the permissions are to be granted for the Data Catalog.
+  # permissions_with_grant_option = []     # Subset of permissions which the principal can pass.
+  # region                        = ""     # Region where this resource will be managed.
+  # data_cells_filter {}  # Configuration block for a data cells filter resource.
+  # data_location {}  # Configuration block for a data location resource.
+  # database {}  # Configuration block for a database resource.
+  # lf_tag {}  # Configuration block for an LF-tag resource.
+  # lf_tag_policy {}  # Configuration block for an LF-tag policy resource.
+  # table {}  # Configuration block for a table resource.
+  # table_with_columns {}  # Configuration block for a table with columns resource.
+}
+]]></content>
+<tabTrigger>aws_lakeformation_permissions</tabTrigger>
+<scope>source.terraform</scope>
+<description>Grants permissions to the principal to access metadata in the Data Catalog and data organized in...</description>
+</snippet>

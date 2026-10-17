@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_serverlessapplicationrepository_application" "${1:name}" {
+  application_id = "${2:application_id}"  # ARN of the application.
+
+  # region           = ""  # Region where this resource will be managed.
+  # semantic_version = ""  # Requested version of the application.
+}
+]]></content>
+<tabTrigger>data_aws_serverlessapplicationrepository_application</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on a AWS Serverless Application Repository application</description>
+</snippet>

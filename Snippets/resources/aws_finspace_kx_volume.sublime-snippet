@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_finspace_kx_volume" "${1:name}" {
+  availability_zones = [${2}]                 # Identifier of the AWS Availability Zone IDs.
+  az_mode            = "${3:az_mode}"         # Number of availability zones you want to assign per volume.
+  environment_id     = "${4:environment_id}"  # Unique identifier for the kdb environment, whose clusters can attach to the volume.
+  name               = "${5:name}"            # Unique name for the volume that you want to create.
+  type               = "${6:type}"            # Type of file system volume.
+
+  # description = ""  # Description of the volume.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Key-value pairs to label the volume.
+  # nas1_configuration {}  # Configuration for the Network attached storage (NAS_1) file system volume.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_finspace_kx_volume</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS FinSpace Kx Volume.</description>
+</snippet>

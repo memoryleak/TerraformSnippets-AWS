@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_detective_graph" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # A map of tags to assign to the instance.
+}
+]]></content>
+<tabTrigger>aws_detective_graph</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage an Amazon Detective graph.</description>
+</snippet>

@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_rekognition_stream_processor" "${1:name}" {
+  name     = "${2:name}"      # Name of the Stream Processor.
+  role_arn = "${3:role_arn}"  # Amazon Resource Number (ARN) of the IAM role that allows access to the stream processor.
+
+  # kms_key_id = ""  # Optional parameter for label detection stream processors.
+  # region     = ""  # Region where this resource will be managed.
+  # tags       = {}  # Map of tags to assign to the resource.
+  # data_sharing_preference {}  # See data_sharing_preference.
+  # input {}  # Input video stream.
+  # notification_channel {}  # Amazon Simple Notification Service topic to which Amazon Rekognition publishes the completion sta...
+  # output {}  # Kinesis data stream stream or Amazon S3 bucket location to which Amazon Rekognition Video puts th...
+  # regions_of_interest {}  # Locations in the frames where Amazon Rekognition checks for objects or people.
+  # settings {}  # Input parameters used in a streaming video analyzed by a stream processor.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_rekognition_stream_processor</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Rekognition Stream Processor.</description>
+</snippet>

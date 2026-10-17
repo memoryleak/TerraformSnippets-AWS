@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ssoadmin_application_assignment" "${1:name}" {
+  application_arn = "${2:application_arn}"  # ARN of the application.
+  principal_id    = "${3:principal_id}"     # An identifier for an object in IAM Identity Center, such as a user or group.
+  principal_type  = "${4:principal_type}"   # Entity type for which the assignment will be created.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_ssoadmin_application_assignment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS SSO Admin Application Assignment.</description>
+</snippet>

@@ -1,0 +1,25 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudfront_cache_policy" "${1:name}" {
+  name = "${2:name}"  # Unique name used to identify the cache policy.
+  parameters_in_cache_key_and_forwarded_to_origin {
+    cookies_config {
+      cookie_behavior = "${3:cookie_behavior}"
+    }
+    headers_config {
+    }
+    query_strings_config {
+      query_string_behavior = "${4:query_string_behavior}"
+    }
+  }
+
+  # comment     = ""  # Description for the cache policy.
+  # default_ttl = 0   # Amount of time, in seconds, that objects are allowed to remain in the CloudFront cache before Clo...
+  # max_ttl     = 0   # Maximum amount of time, in seconds, that objects stay in the CloudFront cache before CloudFront s...
+  # min_ttl     = 0   # Minimum amount of time, in seconds, that objects should remain in the CloudFront cache before a n...
+}
+]]></content>
+<tabTrigger>aws_cloudfront_cache_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Use the aws_cloudfront_cache_policy resource to manage cache policies for CloudFront distributions.</description>
+</snippet>

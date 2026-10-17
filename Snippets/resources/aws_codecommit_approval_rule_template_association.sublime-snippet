@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_codecommit_approval_rule_template_association" "${1:name}" {
+  approval_rule_template_name = "${2:approval_rule_template_name}"  # The name for the approval rule template.
+  repository_name             = "${3:repository_name}"              # The name of the repository that you want to associate with the template.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_codecommit_approval_rule_template_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Associates a CodeCommit Approval Rule Template with a Repository.</description>
+</snippet>

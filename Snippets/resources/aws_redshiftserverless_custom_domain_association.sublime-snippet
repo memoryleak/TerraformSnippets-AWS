@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_redshiftserverless_custom_domain_association" "${1:name}" {
+  custom_domain_certificate_arn = "${2:custom_domain_certificate_arn}"  # ARN of the certificate for the custom domain association.
+  custom_domain_name            = "${3:custom_domain_name}"             # Custom domain to associate with the workgroup.
+  workgroup_name                = "${4:workgroup_name}"                 # Name of the workgroup.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_redshiftserverless_custom_domain_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Redshift Serverless Custom Domain Association.</description>
+</snippet>

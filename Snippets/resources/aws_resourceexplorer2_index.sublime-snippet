@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_resourceexplorer2_index" "${1:name}" {
+  type = "${2:type}"  # The type of the index.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value map of resource tags.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_resourceexplorer2_index</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage a Resource Explorer index in the current AWS Region.</description>
+</snippet>

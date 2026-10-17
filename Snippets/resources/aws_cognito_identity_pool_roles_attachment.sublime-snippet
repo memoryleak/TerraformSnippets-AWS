@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cognito_identity_pool_roles_attachment" "${1:name}" {
+  identity_pool_id = "${2:identity_pool_id}"
+  roles            = {${3}}
+
+  # region = ""  # Region where this resource will be managed.
+  # role_mapping {}
+}
+]]></content>
+<tabTrigger>aws_cognito_identity_pool_roles_attachment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AWS Cognito Identity Pool Roles Attachment.</description>
+</snippet>

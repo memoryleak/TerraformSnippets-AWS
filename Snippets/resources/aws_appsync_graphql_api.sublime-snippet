@@ -1,0 +1,28 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appsync_graphql_api" "${1:name}" {
+  authentication_type = "${2:authentication_type}"  # Authentication type.
+  name                = "${3:name}"                 # User-supplied name for the GraphQL API.
+
+  # api_type                      = ""     # API type.
+  # introspection_config          = ""     # Sets the value of the GraphQL API to enable (ENABLED) or disable (DISABLED) introspection.
+  # merged_api_execution_role_arn = ""     # ARN of the execution role when api_type is set to MERGED.
+  # query_depth_limit             = 0      # Maximum depth a query can have in a single request.
+  # region                        = ""     # Region where this resource will be managed.
+  # resolver_count_limit          = 0      # Maximum number of resolvers that can be invoked in a single request.
+  # schema                        = ""     # Schema definition, in GraphQL schema language format.
+  # tags                          = {}     # Map of tags to assign to the resource.
+  # visibility                    = ""     # Sets the value of the GraphQL API to public (GLOBAL) or private (PRIVATE).
+  # xray_enabled                  = false  # Whether tracing with X-ray is enabled.
+  # additional_authentication_provider {}  # One or more additional authentication providers for the GraphQL API.
+  # enhanced_metrics_config {}  # Enables and controls the enhanced metrics feature.
+  # lambda_authorizer_config {}  # Nested argument containing Lambda authorizer configuration.
+  # log_config {}  # Nested argument containing logging configuration.
+  # openid_connect_config {}  # Nested argument containing OpenID Connect configuration.
+  # user_pool_config {}  # Amazon Cognito User Pool configuration.
+}
+]]></content>
+<tabTrigger>aws_appsync_graphql_api</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AppSync GraphQL API.</description>
+</snippet>

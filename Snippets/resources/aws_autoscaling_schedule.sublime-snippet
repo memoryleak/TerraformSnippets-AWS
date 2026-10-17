@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_autoscaling_schedule" "${1:name}" {
+  autoscaling_group_name = "${2:autoscaling_group_name}"  # The name of the Auto Scaling group.
+  scheduled_action_name  = "${3:scheduled_action_name}"   # The name of this scaling action.
+
+  # desired_capacity = 0   # The initial capacity of the Auto Scaling group after the scheduled action runs and the capacity i...
+  # end_time         = ""  # The date and time for the recurring schedule to end, in UTC with the format "YYYY-MM-DDThh:mm:ssZ...
+  # max_size         = 0   # The maximum size of the Auto Scaling group.
+  # min_size         = 0   # The minimum size of the Auto Scaling group.
+  # recurrence       = ""  # The recurring schedule for this action specified using the Unix cron syntax format.
+  # region           = ""  # Region where this resource will be managed.
+  # start_time       = ""  # The date and time for the recurring schedule to start, in UTC with the format "YYYY-MM-DDThh:mm:s...
+  # time_zone        = ""  # Specifies the time zone for a cron expression.
+}
+]]></content>
+<tabTrigger>aws_autoscaling_schedule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AutoScaling Schedule resource.</description>
+</snippet>

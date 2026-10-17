@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+data "aws_ami" "${1:name}" {
+  # allow_unsafe_filter = false  # If true, allow unsafe filter values.
+  # executable_users    = []     # Limit search to users with *explicit* launch permission on the image.
+  # include_deprecated  = false  # If true, all deprecated AMIs are included in the response.
+  # most_recent         = false  # If more than one result is returned, use the most recent AMI.
+  # name_regex          = ""     # Regex string to apply to the AMI list returned by AWS.
+  # owners              = []     # List of AMI owners to limit search.
+  # region              = ""     # Region where this resource will be managed.
+  # tags                = {}
+  # uefi_data           = ""     # Base64 representation of the non-volatile UEFI variable store.
+  # filter {}  # One or more name/value pairs to filter off of.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_ami</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on an Amazon Machine Image (AMI).</description>
+</snippet>

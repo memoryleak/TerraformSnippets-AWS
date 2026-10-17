@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_subnet_cidr_reservation" "${1:name}" {
+  cidr_block       = "${2:cidr_block}"        # The CIDR block for the reservation.
+  reservation_type = "${3:reservation_type}"  # The type of reservation to create.
+  subnet_id        = "${4:subnet_id}"         # The ID of the subnet to create the reservation for.
+
+  # description = ""  # A brief description of the reservation.
+  # region      = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_ec2_subnet_cidr_reservation</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a subnet CIDR reservation resource.</description>
+</snippet>

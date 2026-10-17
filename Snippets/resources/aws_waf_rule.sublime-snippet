@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_waf_rule" "${1:name}" {
+  metric_name = "${2:metric_name}"  # The name or description for the Amazon CloudWatch metric of this rule.
+  name        = "${3:name}"         # The name or description of the rule.
+
+  # tags = {}  # Key-value map of resource tags.
+  # predicates {}  # The objects to include in a rule (documented below).
+}
+]]></content>
+<tabTrigger>aws_waf_rule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a AWS WAF rule resource.</description>
+</snippet>

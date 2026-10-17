@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_notifications_managed_notification_account_contact_association" "${1:name}" {
+  contact_identifier                     = "${2:contact_identifier}"                      # A unique value of an Account Contact Type to associate with the ManagedNotificationConfiguration.
+  managed_notification_configuration_arn = "${3:managed_notification_configuration_arn}"  # ARN of the managed notification configuration to associate the account contact with.
+}
+]]></content>
+<tabTrigger>aws_notifications_managed_notification_account_contact_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS User Notifications Managed Notification Account Contact As...</description>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_vpc_ipam_pools" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # filter {}  # Custom filter block as described below.
+}
+]]></content>
+<tabTrigger>data_aws_vpc_ipam_pools</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Returns details about IPAM pools that match the search parameters provided.</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_quicksight_folder_membership" "${1:name}" {
+  folder_id   = "${2:folder_id}"    # Identifier for the folder.
+  member_id   = "${3:member_id}"    # ID of the asset (the dashboard, analysis, or dataset).
+  member_type = "${4:member_type}"  # Type of the member.
+
+  # aws_account_id = ""  # AWS account ID.
+  # region         = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_quicksight_folder_membership</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS QuickSight Folder Membership.</description>
+</snippet>

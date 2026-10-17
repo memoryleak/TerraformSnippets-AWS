@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lexv2models_bot_version" "${1:name}" {
+  bot_id               = "${2:bot_id}"  # Idientifier of the bot to create the version for.
+  locale_specification = {${3}}         # Specifies the locales that Amazon Lex adds to this version.
+
+  # bot_version = ""
+  # description = ""  # A description of the version.
+  # region      = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_lexv2models_bot_version</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Lex V2 Models Bot Version.</description>
+</snippet>

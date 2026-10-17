@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_kms_alias" "${1:name}" {
+  name = "${2:name}"  # Display name of the alias.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_kms_alias</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on a AWS Key Management Service (KMS) Alias</description>
+</snippet>

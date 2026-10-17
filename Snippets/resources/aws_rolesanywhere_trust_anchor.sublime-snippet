@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_rolesanywhere_trust_anchor" "${1:name}" {
+  name = "${2:name}"  # The name of the Trust Anchor.
+  source {
+    source_type = "${3:source_type}"
+    source_data {
+    }
+  }
+
+  # enabled = false  # Whether or not the Trust Anchor should be enabled.
+  # tags    = {}     # A map of tags to assign to the resource.
+  # notification_settings {}
+}
+]]></content>
+<tabTrigger>aws_rolesanywhere_trust_anchor</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Roles Anywhere Trust Anchor resource</description>
+</snippet>

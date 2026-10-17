@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_quicksight_theme" "${1:name}" {
+  base_theme_id = "${2:base_theme_id}"  # ID of the theme that a custom theme will inherit from.
+  name          = "${3:name}"           # Display name of the theme.
+  theme_id      = "${4:theme_id}"       # Identifier of the theme.
+
+  # aws_account_id      = ""  # AWS account ID.
+  # region              = ""  # Region where this resource will be managed.
+  # tags                = {}  # Key-value map of resource tags.
+  # version_description = ""  # Description of the current theme version being created/updated.
+  # configuration {}  # Theme configuration, which contains the theme display properties.
+  # permissions {}  # Set of resource permissions on the theme.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_quicksight_theme</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a QuickSight Theme.</description>
+</snippet>

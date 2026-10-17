@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_ssoadmin_permission_sets" "${1:name}" {
+  instance_arn = "${2:instance_arn}"  # ARN of the SSO Instance associated with the permission set.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_ssoadmin_permission_sets</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source returning the ARN of all AWS SSO Admin Permission Sets.</description>
+</snippet>

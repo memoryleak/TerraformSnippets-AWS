@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+data "aws_ec2_transit_gateway_route_table_routes" "${1:name}" {
+  transit_gateway_route_table_id = "${2:transit_gateway_route_table_id}"  # Identifier of EC2 Transit Gateway Route Table.
+  filter {
+    name   = "${3:name}"
+    values = [${4}]
+  }
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_ec2_transit_gateway_route_table_routes</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides informations for routes of a specific transit gateway</description>
+</snippet>

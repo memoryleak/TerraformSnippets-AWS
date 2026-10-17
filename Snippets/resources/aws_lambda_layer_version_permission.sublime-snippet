@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lambda_layer_version_permission" "${1:name}" {
+  action         = "${2:action}"        # Action that will be allowed.
+  layer_name     = "${3:layer_name}"    # Name or ARN of the Lambda Layer.
+  principal      = "${4:principal}"     # AWS account ID that should be able to use your Lambda Layer.
+  statement_id   = "${5:statement_id}"  # Unique identifier for the permission statement.
+  version_number = ${6:0}               # Version of Lambda Layer to grant access to.
+
+  # organization_id = ""     # AWS Organization ID that should be able to use your Lambda Layer.
+  # region          = ""     # Region where this resource will be managed.
+  # skip_destroy    = false  # Whether to retain the permission when the resource is destroyed.
+}
+]]></content>
+<tabTrigger>aws_lambda_layer_version_permission</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Lambda Layer Version Permission.</description>
+</snippet>

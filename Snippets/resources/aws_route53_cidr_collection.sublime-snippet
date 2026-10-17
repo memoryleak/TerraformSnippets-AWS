@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_route53_cidr_collection" "${1:name}" {
+  name = "${2:name}"  # Unique name for the CIDR collection.
+}
+]]></content>
+<tabTrigger>aws_route53_cidr_collection</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Route53 CIDR collection resource.</description>
+</snippet>

@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_rds_cluster_endpoint" "${1:name}" {
+  cluster_endpoint_identifier = "${2:cluster_endpoint_identifier}"  # Identifier to use for the new endpoint.
+  cluster_identifier          = "${3:cluster_identifier}"           # Cluster identifier.
+  custom_endpoint_type        = "${4:custom_endpoint_type}"         # Type of the endpoint.
+
+  # excluded_members = []  # List of DB instance identifiers that aren't part of the custom endpoint group.
+  # region           = ""  # Region where this resource will be managed.
+  # static_members   = []  # List of DB instance identifiers that are part of the custom endpoint group.
+  # tags             = {}  # Key-value map of resource tags.
+}
+]]></content>
+<tabTrigger>aws_rds_cluster_endpoint</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an RDS Aurora Cluster Endpoint</description>
+</snippet>

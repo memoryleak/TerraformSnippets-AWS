@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_codebuild_report_group" "${1:name}" {
+  name = "${2:name}"  # The name of a Report Group.
+  type = "${3:type}"  # The type of the Report Group.
+  export_config {
+    type = "${4:type}"
+  }
+
+  # delete_reports = false  # If true, deletes any reports that belong to a report group before deleting the report group.
+  # region         = ""     # Region where this resource will be managed.
+  # tags           = {}     # Key-value mapping of resource tags.
+}
+]]></content>
+<tabTrigger>aws_codebuild_report_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CodeBuild Report Group resource.</description>
+</snippet>

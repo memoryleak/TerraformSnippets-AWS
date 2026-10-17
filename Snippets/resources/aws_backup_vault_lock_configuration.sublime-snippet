@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_backup_vault_lock_configuration" "${1:name}" {
+  backup_vault_name = "${2:backup_vault_name}"  # Name of the backup vault to add a lock configuration for.
+
+  # changeable_for_days = 0   # Number of days before the lock date.
+  # max_retention_days  = 0   # Maximum retention period that the vault retains its recovery points.
+  # min_retention_days  = 0   # Minimum retention period that the vault retains its recovery points.
+  # region              = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_backup_vault_lock_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AWS Backup vault lock configuration resource.</description>
+</snippet>

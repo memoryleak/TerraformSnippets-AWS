@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ami_launch_permission" "${1:name}" {
+  image_id = "${2:image_id}"  # ID of the AMI.
+
+  # account_id              = ""  # AWS account ID for the launch permission.
+  # group                   = ""  # Name of the group for the launch permission.
+  # organization_arn        = ""  # ARN of an organization for the launch permission.
+  # organizational_unit_arn = ""  # ARN of an organizational unit for the launch permission.
+  # region                  = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_ami_launch_permission</tabTrigger>
+<scope>source.terraform</scope>
+<description>Adds a launch permission to an Amazon Machine Image (AMI).</description>
+</snippet>

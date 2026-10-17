@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_securitylake_aws_log_source" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # source {}  # Specify the natively-supported AWS service to add as a source in Security Lake.
+}
+]]></content>
+<tabTrigger>aws_securitylake_aws_log_source</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an Amazon Security Lake AWS Log Source.</description>
+</snippet>

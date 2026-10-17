@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudfront_origin_request_policy" "${1:name}" {
+  name = "${2:name}"  # Unique name to identify the origin request policy.
+  cookies_config {
+    cookie_behavior = "${3:cookie_behavior}"
+  }
+  headers_config {
+  }
+  query_strings_config {
+    query_string_behavior = "${4:query_string_behavior}"
+  }
+
+  # comment = ""  # Comment to describe the origin request policy.
+}
+]]></content>
+<tabTrigger>aws_cloudfront_origin_request_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Determines the values that CloudFront includes in requests that it sends to the origin.</description>
+</snippet>

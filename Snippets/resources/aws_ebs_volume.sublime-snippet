@@ -1,0 +1,25 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ebs_volume" "${1:name}" {
+  availability_zone = "${2:availability_zone}"  # Availability zone where the EBS volume will exist.
+
+  # encrypted                  = false  # If true, the disk will be encrypted.
+  # final_snapshot             = false  # If true, snapshot will be created before volume deletion.
+  # iops                       = 0      # Amount of IOPS to provision for the disk.
+  # kms_key_id                 = ""     # ARN for the KMS encryption key.
+  # multi_attach_enabled       = false  # Specifies whether to enable Amazon EBS Multi-Attach.
+  # outpost_arn                = ""     # ARN of the Outpost.
+  # region                     = ""     # Region where this resource will be managed.
+  # size                       = 0      # Size of the drive in GiBs.
+  # snapshot_id                = ""
+  # tags                       = {}     # A map of tags to assign to the resource.
+  # throughput                 = 0      # Throughput that the volume supports, in MiB/s.
+  # type                       = ""     # Type of EBS volume.
+  # volume_initialization_rate = 0      # EBS provisioned rate for volume initialization, in MiB/s, at which to download the snapshot block...
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ebs_volume</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an elastic block storage resource.</description>
+</snippet>

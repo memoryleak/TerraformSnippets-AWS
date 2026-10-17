@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_grafana_role_association" "${1:name}" {
+  role         = "${2:role}"          # Grafana role.
+  workspace_id = "${3:workspace_id}"  # Workspace ID.
+
+  # group_ids = []  # AWS SSO group IDs to be assigned the role given in role.
+  # region    = ""  # Region where this resource will be managed.
+  # user_ids  = []  # AWS SSO user IDs to be assigned the role given in role.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_grafana_role_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Amazon Managed Grafana workspace role association resource.</description>
+</snippet>

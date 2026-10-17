@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+resource "aws_finspace_kx_dataview" "${1:name}" {
+  auto_update    = ${2:false}             # Whether to apply all the future additions and corrections automatically to the dataview when you...
+  az_mode        = "${3:az_mode}"         # Number of availability zones you want to assign per cluster.
+  database_name  = "${4:database_name}"   # Name of the database where you want to create a dataview.
+  environment_id = "${5:environment_id}"  # Unique identifier for the KX environment.
+  name           = "${6:name}"            # Unique identifier for the dataview.
+
+  # availability_zone_id = ""     # Identifier of the availability zones.
+  # changeset_id         = ""     # Unique identifier of the changeset of the database that you want to use to ingest data.
+  # description          = ""     # Description for the dataview.
+  # read_write           = false  # Whether to make the dataview writable to perform database maintenance.
+  # region               = ""     # Region where this resource will be managed.
+  # tags                 = {}     # Key-value mapping of resource tags.
+  # segment_configurations {}  # Configuration that contains the database path of the data that you want to place on each selected...
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_finspace_kx_dataview</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS FinSpace Kx Dataview.</description>
+</snippet>

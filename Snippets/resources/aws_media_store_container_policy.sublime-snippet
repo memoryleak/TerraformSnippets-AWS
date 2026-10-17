@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_media_store_container_policy" "${1:name}" {
+  container_name = "${2:container_name}"  # Name of the container.
+  policy         = "${3:policy}"          # Contents of the policy.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_media_store_container_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a MediaStore Container Policy.</description>
+</snippet>

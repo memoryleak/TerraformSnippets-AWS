@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_datazone_environment_blueprint" "${1:name}" {
+  domain_id = "${2:domain_id}"  # ID of the domain.
+  managed   = ${3:false}
+  name      = "${4:name}"       # Name of the blueprint.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_datazone_environment_blueprint</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS DataZone Environment Blueprint.</description>
+</snippet>

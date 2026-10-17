@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_nat_gateway_eip_association" "${1:name}" {
+  allocation_id  = "${2:allocation_id}"   # The ID of the Elastic IP Allocation to associate with the NAT Gateway.
+  nat_gateway_id = "${3:nat_gateway_id}"  # The ID of the NAT Gateway to associate the Elastic IP Allocation to.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_nat_gateway_eip_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS VPC NAT Gateway EIP Association.</description>
+</snippet>

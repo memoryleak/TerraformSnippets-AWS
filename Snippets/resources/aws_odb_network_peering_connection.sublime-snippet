@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_odb_network_peering_connection" "${1:name}" {
+  display_name    = "${2:display_name}"     # Display name of the ODB network peering connection.
+  peer_network_id = "${3:peer_network_id}"  # Unique identifier of the ODB peering connection.
+
+  # odb_network_arn    = ""  # ARN of the ODB network that initiates the peering connection.
+  # odb_network_id     = ""  # Unique identifier of the ODB network that initiates the peering connection.
+  # peer_network_cidrs = []
+  # region             = ""  # Region where this resource will be managed.
+  # tags               = {}  # Map of tags to assign to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_odb_network_peering_connection</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing oracle database network peering resource in AWS.</description>
+</snippet>

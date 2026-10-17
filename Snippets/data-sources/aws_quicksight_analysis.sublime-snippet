@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_quicksight_analysis" "${1:name}" {
+  analysis_id = "${2:analysis_id}"  # Identifier for the analysis.
+
+  # aws_account_id = ""  # AWS account ID.
+  # region         = ""  # Region where this resource will be managed.
+  # tags           = {}
+}
+]]></content>
+<tabTrigger>data_aws_quicksight_analysis</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Use this data source to fetch information about a QuickSight Analysis.</description>
+</snippet>

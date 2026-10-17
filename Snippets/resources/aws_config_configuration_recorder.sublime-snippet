@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_config_configuration_recorder" "${1:name}" {
+  role_arn = "${2:role_arn}"  # ARN of the IAM role.
+
+  # name   = ""  # The name of the configuration recorder.
+  # region = ""  # Region where this resource will be managed.
+  # recording_group {}  # Recording group - see below.
+  # recording_mode {}  # Recording mode - see below.
+}
+]]></content>
+<tabTrigger>aws_config_configuration_recorder</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AWS Config Configuration Recorder.</description>
+</snippet>

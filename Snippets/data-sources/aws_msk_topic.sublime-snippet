@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_msk_topic" "${1:name}" {
+  cluster_arn = "${2:cluster_arn}"  # ARN of the MSK cluster.
+  name        = "${3:name}"         # Name of the MSK topic.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_msk_topic</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on an Amazon MSK Topic</description>
+</snippet>

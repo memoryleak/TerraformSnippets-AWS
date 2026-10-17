@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3_bucket" "${1:name}" {
+  # bucket              = ""     # Name of the bucket.
+  # bucket_namespace    = ""     # Namespace for the bucket.
+  # bucket_prefix       = ""     # Creates a unique bucket name beginning with the specified prefix.
+  # force_destroy       = false  # Boolean that indicates all objects (including any locked objects) should be deleted from the buck...
+  # object_lock_enabled = false  # Whether this bucket has an Object Lock configuration enabled.
+  # region              = ""     # Region where this resource will be managed.
+  # tags                = {}     # Map of tags to assign to the bucket.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_s3_bucket</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a S3 bucket resource.</description>
+</snippet>

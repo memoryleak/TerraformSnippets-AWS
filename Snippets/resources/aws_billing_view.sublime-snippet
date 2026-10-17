@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_billing_view" "${1:name}" {
+  name = "${2:name}"  # Name of the custom billing view to be created.
+
+  # description  = ""  # Description of the custom billing view.
+  # source_views = []  # List of ARNs of the source data views for the custom billing view.
+  # tags         = {}  # Key-value map of tags associated with the billing view being created.
+  # data_filter_expression {}  # Filter Cost Explorer APIs using the expression.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_billing_view</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Billing View.</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+data "aws_connect_contact_flow_module" "${1:name}" {
+  instance_id = "${2:instance_id}"  # Reference to the hosting Amazon Connect Instance
+
+  # contact_flow_module_id = ""  # Returns information on a specific Contact Flow Module by contact flow module ID
+  # name                   = ""  # Returns information on a specific Contact Flow Module by name
+  # region                 = ""  # Region where this resource will be managed.
+  # tags                   = {}
+}
+]]></content>
+<tabTrigger>data_aws_connect_contact_flow_module</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific Amazon Connect Contact Flow Module.</description>
+</snippet>

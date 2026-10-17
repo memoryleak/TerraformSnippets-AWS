@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_eks_addon" "${1:name}" {
+  addon_name   = "${2:addon_name}"    # Name of the EKS add-on.
+  cluster_name = "${3:cluster_name}"  # Name of the EKS Cluster.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_eks_addon</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Retrieve information about an EKS add-on</description>
+</snippet>

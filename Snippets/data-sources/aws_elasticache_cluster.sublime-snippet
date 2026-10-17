@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_elasticache_cluster" "${1:name}" {
+  cluster_id = "${2:cluster_id}"  # Group identifier.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_elasticache_cluster</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on an ElastiCache Cluster resource.</description>
+</snippet>

@@ -1,0 +1,24 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appstream_image_builder" "${1:name}" {
+  instance_type = "${2:instance_type}"  # Instance type to use when launching the image builder.
+  name          = "${3:name}"           # Unique name for the image builder.
+
+  # appstream_agent_version        = ""     # Version of the AppStream 2.0 agent to use for this image builder.
+  # description                    = ""     # Description to display.
+  # display_name                   = ""     # Human-readable friendly name for the AppStream image builder.
+  # enable_default_internet_access = false  # Enables or disables default internet access for the image builder.
+  # iam_role_arn                   = ""     # ARN of the IAM role to apply to the image builder.
+  # image_arn                      = ""     # ARN of the public, private, or shared image to use.
+  # image_name                     = ""     # Name of the image used to create the image builder.
+  # region                         = ""     # Region where this resource will be managed.
+  # tags                           = {}     # Map of tags to assign to the instance.
+  # access_endpoint {}  # Set of interface VPC endpoint (interface endpoint) objects.
+  # domain_join_info {}  # Configuration block for the name of the directory and organizational unit (OU) to use to join the...
+  # vpc_config {}  # Configuration block for the VPC configuration for the image builder.
+}
+]]></content>
+<tabTrigger>aws_appstream_image_builder</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AppStream image builder</description>
+</snippet>

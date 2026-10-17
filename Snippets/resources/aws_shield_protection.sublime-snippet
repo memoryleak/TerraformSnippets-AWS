@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_shield_protection" "${1:name}" {
+  name         = "${2:name}"          # A friendly name for the Protection you are creating.
+  resource_arn = "${3:resource_arn}"  # ARN of the resource to be protected.
+
+  # tags = {}  # Key-value map of resource tags.
+}
+]]></content>
+<tabTrigger>aws_shield_protection</tabTrigger>
+<scope>source.terraform</scope>
+<description>Enables AWS Shield Advanced for a specific AWS resource.</description>
+</snippet>

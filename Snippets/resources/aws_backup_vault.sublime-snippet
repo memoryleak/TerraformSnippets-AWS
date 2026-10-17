@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_backup_vault" "${1:name}" {
+  name = "${2:name}"  # Name of the backup vault to create.
+
+  # force_destroy = false  # Whether to delete all recovery points stored in the vault so that the vault can be destroyed with...
+  # kms_key_arn   = ""     # Server-side encryption key that is used to protect your backups.
+  # region        = ""     # Region where this resource will be managed.
+  # tags          = {}     # Metadata that you can assign to help organize the resources that you create.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_backup_vault</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AWS Backup vault resource.</description>
+</snippet>

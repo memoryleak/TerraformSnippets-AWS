@@ -1,0 +1,27 @@
+<snippet>
+<content><![CDATA[
+resource "aws_route" "${1:name}" {
+  route_table_id = "${2:route_table_id}"  # The ID of the routing table.
+
+  # carrier_gateway_id          = ""  # Identifier of a carrier gateway.
+  # core_network_arn            = ""  # ARN of a core network.
+  # destination_cidr_block      = ""  # The destination CIDR block.
+  # destination_ipv6_cidr_block = ""  # The destination IPv6 CIDR block.
+  # destination_prefix_list_id  = ""  # The ID of a managed prefix list destination.
+  # egress_only_gateway_id      = ""  # Identifier of a VPC Egress Only Internet Gateway.
+  # gateway_id                  = ""  # Identifier of a VPC internet gateway or a virtual private gateway.
+  # local_gateway_id            = ""  # Identifier of a Outpost local gateway.
+  # nat_gateway_id              = ""  # Identifier of a VPC NAT gateway.
+  # network_interface_id        = ""  # Identifier of an EC2 network interface.
+  # odb_network_arn             = ""  # ARN of an ODB network.
+  # region                      = ""  # Region where this resource will be managed.
+  # transit_gateway_id          = ""  # Identifier of an EC2 Transit Gateway.
+  # vpc_endpoint_id             = ""  # Identifier of a VPC Endpoint.
+  # vpc_peering_connection_id   = ""  # Identifier of a VPC peering connection.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_route</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to create a routing entry in a VPC routing table.</description>
+</snippet>

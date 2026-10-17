@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ecs_daemon" "${1:name}" {
+  capacity_provider_arns     = [${2}]                             # Set of capacity provider ARNs to use for the daemon.
+  daemon_task_definition_arn = "${3:daemon_task_definition_arn}"  # ARN of the daemon task definition to use for the daemon.
+  name                       = "${4:name}"                        # Name of the daemon.
+
+  # cluster_arn             = ""     # ARN of the ECS cluster where the daemon will run.
+  # enable_ecs_managed_tags = false  # Whether to enable Amazon ECS managed tags for the tasks within the daemon.
+  # enable_execute_command  = false  # Whether to enable Amazon ECS Exec for the tasks within the daemon.
+  # propagate_tags          = ""     # Whether to propagate tags from the daemon to tasks.
+  # region                  = ""     # Region where this resource will be managed.
+  # tags                    = {}     # Key-value map of resource tags.
+  # deployment_configuration {}  # Configuration for daemon deployments.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ecs_daemon</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an ECS Daemon resource.</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+data "aws_wafv2_managed_rule_group" "${1:name}" {
+  name        = "${2:name}"         # Managed rule group name.
+  scope       = "${3:scope}"        # Whether this is for a global resource type, such as a Amazon CloudFront distribution.
+  vendor_name = "${4:vendor_name}"  # Managed rule group vendor name.
+
+  # region       = ""  # Region where this resource will be managed.
+  # version_name = ""  # Version of the rule group.
+}
+]]></content>
+<tabTrigger>data_aws_wafv2_managed_rule_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: High-level information for a managed rule group.</description>
+</snippet>

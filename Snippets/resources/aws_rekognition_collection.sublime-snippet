@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_rekognition_collection" "${1:name}" {
+  collection_id = "${2:collection_id}"  # Name of the collection
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags assigned to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_rekognition_collection</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Rekognition Collection.</description>
+</snippet>

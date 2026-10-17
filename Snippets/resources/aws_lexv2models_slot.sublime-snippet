@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lexv2models_slot" "${1:name}" {
+  bot_id      = "${2:bot_id}"       # Identifier of the bot associated with the slot.
+  bot_version = "${3:bot_version}"  # Version of the bot associated with the slot.
+  intent_id   = "${4:intent_id}"    # Identifier of the intent that contains the slot.
+  locale_id   = "${5:locale_id}"    # Identifier of the language and locale that the slot will be used in.
+  name        = "${6:name}"         # Name of the slot.
+
+  # description  = ""  # Description of the slot.
+  # region       = ""  # Region where this resource will be managed.
+  # slot_type_id = ""  # Unique identifier for the slot type associated with this slot.
+  # multiple_values_setting {}  # Whether the slot returns multiple values in one response.
+  # obfuscation_setting {}  # Determines how slot values are used in Amazon CloudWatch logs.
+  # sub_slot_setting {}  # Specifications for the constituent sub slots and the expression for the composite slot.
+  # timeouts {}
+  # value_elicitation_setting {}  # Prompts that Amazon Lex sends to the user to elicit a response that provides the value for the slot.
+}
+]]></content>
+<tabTrigger>aws_lexv2models_slot</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Lex V2 Models Slot.</description>
+</snippet>

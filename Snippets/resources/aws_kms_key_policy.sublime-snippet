@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_kms_key_policy" "${1:name}" {
+  key_id = "${2:key_id}"  # ID of the KMS Key to attach the policy.
+  policy = "${3:policy}"  # Valid policy JSON document.
+
+  # bypass_policy_lockout_safety_check = false  # Whether to bypass the key policy lockout safety check.
+  # region                             = ""     # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_kms_key_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Attaches a policy to a KMS Key.</description>
+</snippet>

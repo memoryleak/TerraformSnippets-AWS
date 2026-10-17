@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lexv2models_bot_locale" "${1:name}" {
+  bot_id                           = "${2:bot_id}"       # Identifier of the bot to create the locale for.
+  bot_version                      = "${3:bot_version}"  # Version of the bot to create the locale for.
+  locale_id                        = "${4:locale_id}"    # Identifier of the language and locale that the bot will be used in.
+  n_lu_intent_confidence_threshold = ${5:0}              # Determines the threshold where Amazon Lex will insert the AMAZON.FallbackIntent, AMAZON.KendraSea...
+
+  # description = ""  # Description of the bot locale.
+  # name        = ""
+  # region      = ""  # Region where this resource will be managed.
+  # timeouts {}
+  # voice_settings {}  # Amazon Polly voice ID that Amazon Lex uses for voice interaction with the user.
+}
+]]></content>
+<tabTrigger>aws_lexv2models_bot_locale</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Lex V2 Models Bot Locale.</description>
+</snippet>

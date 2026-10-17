@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+resource "aws_connect_user" "${1:name}" {
+  instance_id          = "${2:instance_id}"         # Specifies the identifier of the hosting Amazon Connect Instance.
+  name                 = "${3:name}"                # The user name for the account.
+  routing_profile_id   = "${4:routing_profile_id}"  # The identifier of the routing profile for the user.
+  security_profile_ids = [${5}]                     # A list of identifiers for the security profiles for the user.
+  phone_config {
+    phone_type = "${6:phone_type}"
+  }
+
+  # directory_user_id  = ""  # The identifier of the user account in the directory used for identity management.
+  # hierarchy_group_id = ""  # The identifier of the hierarchy group for the user.
+  # password           = ""  # The password for the user account.
+  # region             = ""  # Region where this resource will be managed.
+  # tags               = {}  # Tags to apply to the user.
+  # identity_info {}  # A block that contains information about the identity of the user.
+}
+]]></content>
+<tabTrigger>aws_connect_user</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides details about a specific Amazon Connect User</description>
+</snippet>

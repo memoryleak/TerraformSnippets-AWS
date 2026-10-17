@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+data "aws_alb_target_group" "${1:name}" {
+  # arn                               = ""
+  # load_balancing_anomaly_mitigation = ""
+  # name                              = ""
+  # region                            = ""
+  # tags                              = {}
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_alb_target_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: aws_alb_target_group</description>
+</snippet>

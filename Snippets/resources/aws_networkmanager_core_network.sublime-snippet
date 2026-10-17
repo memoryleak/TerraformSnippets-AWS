@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_networkmanager_core_network" "${1:name}" {
+  global_network_id = "${2:global_network_id}"  # ID of the global network that a core network will be a part of.
+
+  # base_policy_document = ""     # Sets the base policy document for the core network.
+  # base_policy_regions  = []     # List of regions to add to the base policy.
+  # create_base_policy   = false  # Whether to create a base policy when a core network is created or updated.
+  # description          = ""     # Description of the Core Network.
+  # tags                 = {}     # Key-value tags for the Core Network.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_networkmanager_core_network</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Network Manager Core Network.</description>
+</snippet>

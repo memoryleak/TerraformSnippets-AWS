@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_route53_traffic_policy" "${1:name}" {
+  document = "${2:document}"  # Policy document.
+  name     = "${3:name}"      # Name of the traffic policy.
+
+  # comment = ""  # Comment for the traffic policy.
+}
+]]></content>
+<tabTrigger>aws_route53_traffic_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Route53 Traffic Policy</description>
+</snippet>

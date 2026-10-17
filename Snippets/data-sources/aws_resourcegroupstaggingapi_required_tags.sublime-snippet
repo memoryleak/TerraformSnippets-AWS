@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_resourcegroupstaggingapi_required_tags" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_resourcegroupstaggingapi_required_tags</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Lists required tags for supported resource types in an AWS account.</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_route53recoveryreadiness_cell" "${1:name}" {
+  cell_name = "${2:cell_name}"  # Unique name describing the cell.
+
+  # cells = []  # List of cell arns to add as nested fault domains within this cell.
+  # tags  = {}  # Key-value mapping of resource tags.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_route53recoveryreadiness_cell</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AWS Route 53 Recovery Readiness Cell</description>
+</snippet>

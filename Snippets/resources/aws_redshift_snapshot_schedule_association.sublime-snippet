@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_redshift_snapshot_schedule_association" "${1:name}" {
+  cluster_identifier  = "${2:cluster_identifier}"   # The cluster identifier.
+  schedule_identifier = "${3:schedule_identifier}"  # The snapshot schedule identifier.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_redshift_snapshot_schedule_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Association Redshift Cluster and Snapshot Schedule resource.</description>
+</snippet>

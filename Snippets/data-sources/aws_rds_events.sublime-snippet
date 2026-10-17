@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+data "aws_rds_events" "${1:name}" {
+  # duration          = 0   # Number of minutes to look back from now.
+  # end_time          = ""  # End of the time interval, in RFC3339 format.
+  # event_categories  = []  # Set of event categories to filter on, e.g.
+  # region            = ""  # Region where this resource will be managed.
+  # source_identifier = ""  # Identifier of the source, such as a DB instance or DB cluster identifier.
+  # source_type       = ""  # Type of source.
+  # start_time        = ""  # Start of the time interval, in RFC3339 format.
+}
+]]></content>
+<tabTrigger>data_aws_rds_events</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about RDS events.</description>
+</snippet>

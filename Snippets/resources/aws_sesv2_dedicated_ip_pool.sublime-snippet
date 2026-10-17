@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sesv2_dedicated_ip_pool" "${1:name}" {
+  pool_name = "${2:pool_name}"  # Name of the dedicated IP pool.
+
+  # region       = ""  # Region where this resource will be managed.
+  # scaling_mode = ""  # IP pool scaling mode.
+  # tags         = {}  # Map of tags to assign to the pool.
+}
+]]></content>
+<tabTrigger>aws_sesv2_dedicated_ip_pool</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS SESv2 (Simple Email V2) Dedicated IP Pool.</description>
+</snippet>

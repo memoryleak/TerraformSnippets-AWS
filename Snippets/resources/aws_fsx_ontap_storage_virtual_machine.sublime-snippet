@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_fsx_ontap_storage_virtual_machine" "${1:name}" {
+  file_system_id = "${2:file_system_id}"  # ID of the Amazon FSx ONTAP File System that this SVM will be created on.
+  name           = "${3:name}"            # Name of the SVM.
+
+  # region                     = ""  # Region where this resource will be managed.
+  # root_volume_security_style = ""  # Root volume security style.
+  # svm_admin_password         = ""  # Password to use when logging on to the SVM using a secure shell (SSH) connection to the SVM's man...
+  # tags                       = {}  # Map of tags to assign to the storage virtual machine.
+  # active_directory_configuration {}  # Configuration block that Amazon FSx uses to join the FSx ONTAP Storage Virtual Machine(SVM) to yo...
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_fsx_ontap_storage_virtual_machine</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a FSx Storage Virtual Machine.</description>
+</snippet>

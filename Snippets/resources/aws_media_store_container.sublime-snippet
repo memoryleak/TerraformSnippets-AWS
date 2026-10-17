@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_media_store_container" "${1:name}" {
+  name = "${2:name}"  # Name of the container.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_media_store_container</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a MediaStore Container.</description>
+</snippet>

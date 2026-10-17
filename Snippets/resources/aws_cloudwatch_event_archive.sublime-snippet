@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_event_archive" "${1:name}" {
+  event_source_arn = "${2:event_source_arn}"  # ARN of the event bus associated with the archive.
+  name             = "${3:name}"              # Name of the archive.
+
+  # description        = ""  # Description for the archive.
+  # event_pattern      = ""  # Event pattern to use to filter events sent to the archive.
+  # kms_key_identifier = ""  # Identifier of the AWS KMS customer managed key for EventBridge to use, if you choose to use a cus...
+  # region             = ""  # Region where this resource will be managed.
+  # retention_days     = 0   # The maximum number of days to retain events in the new event archive.
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_event_archive</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an EventBridge event archive resource.</description>
+</snippet>

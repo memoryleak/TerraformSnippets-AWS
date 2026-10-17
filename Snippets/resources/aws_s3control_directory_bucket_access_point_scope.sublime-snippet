@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3control_directory_bucket_access_point_scope" "${1:name}" {
+  account_id = "${2:account_id}"  # AWS account ID that owns the specified access point.
+  name       = "${3:name}"        # Name of the access point that you want to apply the scope to.
+
+  # region = ""  # Region where this resource will be managed.
+  # scope {}  # .
+}
+]]></content>
+<tabTrigger>aws_s3control_directory_bucket_access_point_scope</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage the access point scope for a directory bucket.</description>
+</snippet>

@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_imagebuilder_workflow" "${1:name}" {
+  name    = "${2:name}"     # Name of the workflow.
+  type    = "${3:type}"     # Type of the workflow.
+  version = "${4:version}"  # Version of the workflow.
+
+  # change_description = ""  # Change description of the workflow.
+  # data               = ""  # Inline YAML string with data of the workflow.
+  # description        = ""  # Description of the workflow.
+  # kms_key_id         = ""  # ARN of the KMS Key used to encrypt the workflow.
+  # region             = ""  # Region where this resource will be managed.
+  # tags               = {}  # Key-value map of resource tags for the workflow.
+  # uri                = ""  # S3 URI with data of the workflow.
+}
+]]></content>
+<tabTrigger>aws_imagebuilder_workflow</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS EC2 Image Builder Workflow.</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+data "aws_route53_zone" "${1:name}" {
+  # enable_accelerated_recovery = false
+  # name                        = ""     # Hosted Zone name of the desired Hosted Zone.
+  # private_zone                = false  # Filter to only private Hosted Zones.
+  # tags                        = {}     # A map of tags, each pair of which must exactly match a pair on the desired Hosted Zone.
+  # vpc_id                      = ""     # Filter to private Hosted Zones associated with the specified vpc_id.
+  # zone_id                     = ""     # Directly return the Hosted Zone with the specified Zone ID.
+}
+]]></content>
+<tabTrigger>data_aws_route53_zone</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific Route 53 Hosted Zone</description>
+</snippet>

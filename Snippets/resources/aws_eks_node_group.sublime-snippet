@@ -1,0 +1,37 @@
+<snippet>
+<content><![CDATA[
+resource "aws_eks_node_group" "${1:name}" {
+  cluster_name  = "${2:cluster_name}"   # Name of the EKS Cluster.
+  node_role_arn = "${3:node_role_arn}"  # ARN of the IAM Role that provides permissions for the EKS Node Group.
+  subnet_ids    = [${4}]                # Identifiers of EC2 Subnets to associate with the EKS Node Group.
+  scaling_config {
+    desired_size = ${5:0}
+    max_size     = ${6:0}
+    min_size     = ${7:0}
+  }
+
+  # ami_type               = ""     # Type of AMI associated with the EKS Node Group.
+  # capacity_type          = ""     # Type of capacity associated with the EKS Node Group.
+  # disk_size              = 0      # Disk size in GiB for worker nodes.
+  # force_update_version   = false  # Force version update if existing pods are unable to be drained due to a pod disruption budget issue.
+  # instance_types         = []     # List of instance types associated with the EKS Node Group.
+  # labels                 = {}     # Key-value map of Kubernetes labels.
+  # node_group_name        = ""     # Name of the EKS Node Group.
+  # node_group_name_prefix = ""     # Creates a unique name beginning with the specified prefix.
+  # region                 = ""     # Region where this resource will be managed.
+  # release_version        = ""     # AMI version of the EKS Node Group.
+  # tags                   = {}     # Key-value map of resource tags.
+  # version                = ""     # Kubernetes version.
+  # launch_template {}  # Configuration block with Launch Template settings.
+  # node_repair_config {}  # The node auto repair configuration for the node group.
+  # remote_access {}  # Configuration block with remote access settings.
+  # taint {}  # The Kubernetes taints to be applied to the nodes in the node group.
+  # timeouts {}
+  # update_config {}  # Configuration block with update settings.
+  # warm_pool_config {}  # Configuration block with EC2 Auto Scaling warm pool settings.
+}
+]]></content>
+<tabTrigger>aws_eks_node_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an EKS Node Group</description>
+</snippet>

@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sagemaker_pipeline" "${1:name}" {
+  pipeline_display_name = "${2:pipeline_display_name}"  # The display name of the pipeline.
+  pipeline_name         = "${3:pipeline_name}"          # The name of the pipeline.
+
+  # pipeline_definition  = ""  # The JSON pipeline definition of the pipeline.
+  # pipeline_description = ""  # A description of the pipeline.
+  # region               = ""  # Region where this resource will be managed.
+  # role_arn             = ""  # The ARN of the IAM role the pipeline will execute as.
+  # tags                 = {}  # A map of tags to assign to the resource.
+  # parallelism_configuration {}  # This is the configuration that controls the parallelism of the pipeline.
+  # pipeline_definition_s3_location {}  # The location of the pipeline definition stored in Amazon S3.
+}
+]]></content>
+<tabTrigger>aws_sagemaker_pipeline</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a SageMaker AI Pipeline resource.</description>
+</snippet>

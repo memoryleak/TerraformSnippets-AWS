@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_codestarconnections_host" "${1:name}" {
+  name              = "${2:name}"               # The name of the host to be created.
+  provider_endpoint = "${3:provider_endpoint}"  # The endpoint of the infrastructure to be represented by the host after it is created.
+  provider_type     = "${4:provider_type}"      # The name of the external provider where your third-party code repository is configured.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+  # vpc_configuration {}  # The VPC configuration to be provisioned for the host.
+}
+]]></content>
+<tabTrigger>aws_codestarconnections_host</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CodeStar Host</description>
+</snippet>

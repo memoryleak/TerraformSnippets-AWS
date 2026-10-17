@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_workspaces_workspace" "${1:name}" {
+  # directory_id = ""  # ID of the directory for the WorkSpace.
+  # region       = ""  # Region where this resource will be managed.
+  # tags         = {}
+  # user_name    = ""  # User name of the user for the WorkSpace.
+  # workspace_id = ""  # ID of the WorkSpace.
+}
+]]></content>
+<tabTrigger>data_aws_workspaces_workspace</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information about a WorkSpace in AWS Workspaces Service.</description>
+</snippet>

@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sagemaker_endpoint_configuration" "${1:name}" {
+  production_variants {
+  }
+
+  # execution_role_arn = ""  # ARN of an IAM role that SageMaker AI can assume to perform actions on your behalf.
+  # kms_key_arn        = ""  # ARN of a AWS KMS key that SageMaker AI uses to encrypt data on the storage volume attached to the...
+  # name               = ""  # Name of the endpoint configuration.
+  # name_prefix        = ""  # Unique endpoint configuration name beginning with the specified prefix.
+  # region             = ""  # Region where this resource will be managed.
+  # tags               = {}  # Mapping of tags to assign to the resource.
+  # async_inference_config {}  # How an endpoint performs asynchronous inference.
+  # data_capture_config {}  # Parameters to capture input/output of SageMaker AI models endpoints.
+  # shadow_production_variants {}  # Models that you want to host at this endpoint in shadow mode with production traffic replicated f...
+}
+]]></content>
+<tabTrigger>aws_sagemaker_endpoint_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a SageMaker AI Endpoint Configuration resource.</description>
+</snippet>

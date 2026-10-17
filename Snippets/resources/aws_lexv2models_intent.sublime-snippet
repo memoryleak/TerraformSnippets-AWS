@@ -1,0 +1,29 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lexv2models_intent" "${1:name}" {
+  bot_id      = "${2:bot_id}"       # Identifier of the bot associated with this intent.
+  bot_version = "${3:bot_version}"  # Version of the bot associated with this intent.
+  locale_id   = "${4:locale_id}"    # Identifier of the language and locale where this intent is used.
+  name        = "${5:name}"         # Name of the intent.
+
+  # description             = ""  # Description of the intent.
+  # parent_intent_signature = ""  # Identifier for the built-in intent to base this intent on.
+  # region                  = ""  # Region where this resource will be managed.
+  # closing_setting {}  # Configuration block for the response that Amazon Lex sends to the user when the intent is closed.
+  # confirmation_setting {}  # Configuration block for prompts that Amazon Lex sends to the user to confirm the completion of an...
+  # dialog_code_hook {}  # Configuration block for invoking the alias Lambda function for each user input.
+  # fulfillment_code_hook {}  # Configuration block for invoking the alias Lambda function when the intent is ready for fulfillment.
+  # initial_response_setting {}  # Configuration block for the response that is sent to the user at the beginning of a conversation,...
+  # input_context {}  # Configuration blocks for contexts that must be active for this intent to be considered by Amazon...
+  # kendra_configuration {}  # Configuration block for information required to use the AMAZON.KendraSearchIntent intent to conne...
+  # output_context {}  # Configuration blocks for contexts that the intent activates when it is fulfilled.
+  # qna_intent_configuration {}  # Configuration block for QnA intent settings.
+  # sample_utterance {}  # Configuration block for strings that a user might say to signal the intent.
+  # slot_priority {}  # Configuration block for a new list of slots and their priorities that are contained by the intent.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_lexv2models_intent</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Lex V2 Models Intent.</description>
+</snippet>

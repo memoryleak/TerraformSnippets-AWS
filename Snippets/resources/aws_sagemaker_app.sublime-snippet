@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sagemaker_app" "${1:name}" {
+  app_name  = "${2:app_name}"   # The name of the app.
+  app_type  = "${3:app_type}"   # The type of app.
+  domain_id = "${4:domain_id}"  # The domain ID.
+
+  # region            = ""  # Region where this resource will be managed.
+  # space_name        = ""  # The name of the space.
+  # tags              = {}  # A map of tags to assign to the resource.
+  # user_profile_name = ""  # The user profile name.
+  # resource_spec {}  # Instance type and the ARN of the SageMaker AI image created on the instance.
+}
+]]></content>
+<tabTrigger>aws_sagemaker_app</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a SageMaker AI App resource.</description>
+</snippet>

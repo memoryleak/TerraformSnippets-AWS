@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_backup_global_settings" "${1:name}" {
+  global_settings = {${2}}  # Resources and their opt-in preferences for the account.
+}
+]]></content>
+<tabTrigger>aws_backup_global_settings</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AWS Backup Global Settings resource.</description>
+</snippet>

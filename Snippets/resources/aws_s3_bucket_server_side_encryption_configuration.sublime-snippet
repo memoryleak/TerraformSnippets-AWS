@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3_bucket_server_side_encryption_configuration" "${1:name}" {
+  bucket = "${2:bucket}"  # ID (name) of the bucket.
+  rule {
+  }
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_s3_bucket_server_side_encryption_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a S3 bucket server-side encryption configuration resource.</description>
+</snippet>

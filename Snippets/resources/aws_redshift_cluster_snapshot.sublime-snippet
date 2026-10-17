@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_redshift_cluster_snapshot" "${1:name}" {
+  cluster_identifier  = "${2:cluster_identifier}"   # The cluster identifier for which you want a snapshot.
+  snapshot_identifier = "${3:snapshot_identifier}"  # A unique identifier for the snapshot that you are requesting.
+
+  # manual_snapshot_retention_period = 0   # The number of days that a manual snapshot is retained.
+  # region                           = ""  # Region where this resource will be managed.
+  # tags                             = {}  # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_redshift_cluster_snapshot</tabTrigger>
+<scope>source.terraform</scope>
+<description>Creates a Redshift cluster snapshot</description>
+</snippet>

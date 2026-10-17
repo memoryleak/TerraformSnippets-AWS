@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3tables_table_bucket_policy" "${1:name}" {
+  resource_policy  = "${2:resource_policy}"   # Amazon Web Services resource-based policy document in JSON format.
+  table_bucket_arn = "${3:table_bucket_arn}"  # ARN referencing the Table Bucket that owns this policy.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_s3tables_table_bucket_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an Amazon S3 Tables Table Bucket Policy.</description>
+</snippet>

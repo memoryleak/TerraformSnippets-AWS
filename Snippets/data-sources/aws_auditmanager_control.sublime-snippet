@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_auditmanager_control" "${1:name}" {
+  name = "${2:name}"  # Name of the control.
+  type = "${3:type}"  # Type of control.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_auditmanager_control</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS Audit Manager Control.</description>
+</snippet>

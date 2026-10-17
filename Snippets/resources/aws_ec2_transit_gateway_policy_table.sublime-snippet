@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_transit_gateway_policy_table" "${1:name}" {
+  transit_gateway_id = "${2:transit_gateway_id}"  # EC2 Transit Gateway identifier.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value tags for the EC2 Transit Gateway Policy Table.
+}
+]]></content>
+<tabTrigger>aws_ec2_transit_gateway_policy_table</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an EC2 Transit Gateway Policy Table</description>
+</snippet>

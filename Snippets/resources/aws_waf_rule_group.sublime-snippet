@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_waf_rule_group" "${1:name}" {
+  metric_name = "${2:metric_name}"  # A friendly name for the metrics from the rule group
+  name        = "${3:name}"         # Name of the rule group.
+
+  # tags = {}  # Key-value map of resource tags.
+  # activated_rule {}  # A list of activated rules, see below
+}
+]]></content>
+<tabTrigger>aws_waf_rule_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a AWS WAF rule group resource.</description>
+</snippet>

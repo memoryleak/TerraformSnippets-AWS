@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_devicefarm_upload" "${1:name}" {
+  name        = "${2:name}"         # The upload's file name.
+  project_arn = "${3:project_arn}"  # The ARN of the project for the upload.
+  type        = "${4:type}"         # The upload's upload type.
+
+  # content_type = ""  # The upload's content type (for example, application/octet-stream).
+  # region       = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_devicefarm_upload</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Devicefarm upload</description>
+</snippet>

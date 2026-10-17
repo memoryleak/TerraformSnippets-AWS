@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_vpn_connection" "${1:name}" {
+  # region            = ""  # Region where this resource will be managed.
+  # vpn_connection_id = ""  # Identifier of the EC2 VPN Connection.
+  # filter {}  # Configuration block(s) for filtering.
+}
+]]></content>
+<tabTrigger>data_aws_vpn_connection</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Fetches details of a Site-to-Site VPN connection.</description>
+</snippet>

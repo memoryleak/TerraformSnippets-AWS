@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_autoscaling_notification" "${1:name}" {
+  group_names   = [${2}]            # List of Auto Scaling group Names
+  notifications = [${3}]            # List of Notification Types that trigger
+  topic_arn     = "${4:topic_arn}"  # Topic ARN for notifications to be sent through
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_autoscaling_notification</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AutoScaling Group with Notification support</description>
+</snippet>

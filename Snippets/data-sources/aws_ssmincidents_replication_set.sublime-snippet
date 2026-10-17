@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_ssmincidents_replication_set" "${1:name}" {
+  # tags = {}
+}
+]]></content>
+<tabTrigger>data_aws_ssmincidents_replication_set</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an incident replication set in AWS Systems Manager Incident Ma...</description>
+</snippet>

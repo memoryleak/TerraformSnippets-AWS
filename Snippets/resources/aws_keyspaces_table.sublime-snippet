@@ -1,0 +1,31 @@
+<snippet>
+<content><![CDATA[
+resource "aws_keyspaces_table" "${1:name}" {
+  keyspace_name = "${2:keyspace_name}"  # Name of the keyspace that the table is going to be created in.
+  table_name    = "${3:table_name}"     # Name of the table.
+  schema_definition {
+    column {
+      name = "${4:name}"
+      type = "${5:type}"
+    }
+    partition_key {
+      name = "${6:name}"
+    }
+  }
+
+  # default_time_to_live = 0   # Default Time to Live setting in seconds for the table.
+  # region               = ""  # Region where this resource will be managed.
+  # tags                 = {}  # Map of tags to assign to the resource.
+  # capacity_specification {}  # Read/write throughput capacity mode for the table.
+  # client_side_timestamps {}  # Enables client-side timestamps for the table.
+  # comment {}  # Description of the table.
+  # encryption_specification {}  # Encryption key management for encryption at rest for the table.
+  # point_in_time_recovery {}  # Enables or disables point-in-time recovery for the table.
+  # timeouts {}
+  # ttl {}  # Enables Time to Live custom settings for the table.
+}
+]]></content>
+<tabTrigger>aws_keyspaces_table</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Keyspaces Table.</description>
+</snippet>

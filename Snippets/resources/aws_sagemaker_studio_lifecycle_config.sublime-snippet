@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sagemaker_studio_lifecycle_config" "${1:name}" {
+  studio_lifecycle_config_app_type = "${2:studio_lifecycle_config_app_type}"  # The App type that the Lifecycle Configuration is attached to.
+  studio_lifecycle_config_content  = "${3:studio_lifecycle_config_content}"   # The content of your Studio Lifecycle Configuration script.
+  studio_lifecycle_config_name     = "${4:studio_lifecycle_config_name}"      # The name of the Studio Lifecycle Configuration to create.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_sagemaker_studio_lifecycle_config</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a SageMaker AI Studio Lifecycle Config resource.</description>
+</snippet>

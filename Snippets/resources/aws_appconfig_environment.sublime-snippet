@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appconfig_environment" "${1:name}" {
+  application_id = "${2:application_id}"  # AppConfig application ID.
+  name           = "${3:name}"            # Name for the environment.
+
+  # description = ""  # Description of the environment.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Map of tags to assign to the resource.
+  # monitor {}  # Set of Amazon CloudWatch alarms to monitor during the deployment process.
+}
+]]></content>
+<tabTrigger>aws_appconfig_environment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AppConfig Environment resource.</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sesv2_dedicated_ip_assignment" "${1:name}" {
+  destination_pool_name = "${2:destination_pool_name}"  # Dedicated IP address.
+  ip                    = "${3:ip}"                     # Dedicated IP address.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_sesv2_dedicated_ip_assignment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS SESv2 (Simple Email V2) Dedicated IP Assignment.</description>
+</snippet>

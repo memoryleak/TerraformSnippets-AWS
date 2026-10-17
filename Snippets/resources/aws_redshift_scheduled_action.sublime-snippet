@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_redshift_scheduled_action" "${1:name}" {
+  iam_role = "${2:iam_role}"  # The IAM role to assume to run the scheduled action.
+  name     = "${3:name}"      # The scheduled action name.
+  schedule = "${4:schedule}"  # The schedule of action.
+  target_action {
+  }
+
+  # description = ""     # The description of the scheduled action.
+  # enable      = false  # Whether to enable the scheduled action.
+  # end_time    = ""     # The end time in UTC when the schedule is active, in UTC RFC3339 format(for example, YYYY-MM-DDTHH...
+  # region      = ""     # Region where this resource will be managed.
+  # start_time  = ""     # The start time in UTC when the schedule is active, in UTC RFC3339 format(for example, YYYY-MM-DDT...
+}
+]]></content>
+<tabTrigger>aws_redshift_scheduled_action</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Redshift Scheduled Action resource.</description>
+</snippet>

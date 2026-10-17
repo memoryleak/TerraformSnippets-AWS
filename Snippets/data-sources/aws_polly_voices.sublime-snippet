@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_polly_voices" "${1:name}" {
+  # engine                            = ""     # Engine used by Amazon Polly when processing input text for speech synthesis.
+  # include_additional_language_codes = false  # Whether to return any bilingual voices that use the specified language as an additional language.
+  # language_code                     = ""     # Language identification tag for filtering the list of voices returned.
+  # region                            = ""     # Region where this resource will be managed.
+  # voices {}
+}
+]]></content>
+<tabTrigger>data_aws_polly_voices</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS Polly Voices.</description>
+</snippet>

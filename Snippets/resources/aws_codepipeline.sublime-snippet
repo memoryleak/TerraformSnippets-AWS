@@ -1,0 +1,32 @@
+<snippet>
+<content><![CDATA[
+resource "aws_codepipeline" "${1:name}" {
+  name     = "${2:name}"      # The name of the pipeline.
+  role_arn = "${3:role_arn}"  # Service role ARN that grants AWS CodePipeline permission to make calls to AWS services on your be...
+  artifact_store {
+    location = "${4:location}"
+    type     = "${5:type}"
+  }
+  stage {
+    name = "${6:name}"
+    action {
+      category = "${7:category}"
+      name     = "${8:name}"
+      owner    = "${9:owner}"
+      provider = "${10:provider}"
+      version  = "${11:version}"
+    }
+  }
+
+  # execution_mode = ""
+  # pipeline_type  = ""  # Type of the pipeline.
+  # region         = ""  # Region where this resource will be managed.
+  # tags           = {}  # A map of tags to assign to the resource.
+  # trigger {}  # A trigger block.
+  # variable {}  # A pipeline-level variable block.
+}
+]]></content>
+<tabTrigger>aws_codepipeline</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CodePipeline</description>
+</snippet>

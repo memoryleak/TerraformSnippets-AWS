@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dsql_cluster_policy" "${1:name}" {
+  identifier = "${2:identifier}"  # Identifier of the Aurora DSQL Cluster.
+  policy     = "${3:policy}"      # Resource-based policy document as JSON.
+
+  # bypass_policy_lockout_safety_check = false  # Whether to bypass the policy lockout safety check.
+  # region                             = ""     # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_dsql_cluster_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an Amazon Aurora DSQL Cluster Policy.</description>
+</snippet>

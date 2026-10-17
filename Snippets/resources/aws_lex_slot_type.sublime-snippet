@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lex_slot_type" "${1:name}" {
+  name = "${2:name}"  # The name of the slot type.
+  enumeration_value {
+    value = "${3:value}"
+  }
+
+  # create_version           = false
+  # description              = ""     # A description of the slot type.
+  # region                   = ""     # Region where this resource will be managed.
+  # value_selection_strategy = ""     # Determines the slot resolution strategy that Amazon Lex
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_lex_slot_type</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides details about a specific Amazon Lex Slot Type</description>
+</snippet>

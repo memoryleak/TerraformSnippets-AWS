@@ -1,0 +1,27 @@
+<snippet>
+<content><![CDATA[
+data "aws_route" "${1:name}" {
+  route_table_id = "${2:route_table_id}"  # ID of the specific Route Table containing the Route entry.
+
+  # carrier_gateway_id          = ""  # EC2 Carrier Gateway ID of the Route belonging to the Route Table.
+  # core_network_arn            = ""  # Core network ARN of the Route belonging to the Route Table.
+  # destination_cidr_block      = ""  # CIDR block of the Route belonging to the Route Table.
+  # destination_ipv6_cidr_block = ""  # IPv6 CIDR block of the Route belonging to the Route Table.
+  # destination_prefix_list_id  = ""  # ID of a managed prefix list destination of the Route belonging to the Route Table.
+  # egress_only_gateway_id      = ""  # Egress Only Gateway ID of the Route belonging to the Route Table.
+  # gateway_id                  = ""  # Gateway ID of the Route belonging to the Route Table.
+  # instance_id                 = ""  # Instance ID of the Route belonging to the Route Table.
+  # local_gateway_id            = ""  # Local Gateway ID of the Route belonging to the Route Table.
+  # nat_gateway_id              = ""  # NAT Gateway ID of the Route belonging to the Route Table.
+  # network_interface_id        = ""  # Network Interface ID of the Route belonging to the Route Table.
+  # odb_network_arn             = ""  # ODB network ARN of the Route belonging to the Route Table.
+  # region                      = ""  # Region where this resource will be managed.
+  # transit_gateway_id          = ""  # EC2 Transit Gateway ID of the Route belonging to the Route Table.
+  # vpc_peering_connection_id   = ""  # VPC Peering Connection ID of the Route belonging to the Route Table.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_route</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific Route</description>
+</snippet>

@@ -1,0 +1,28 @@
+<snippet>
+<content><![CDATA[
+resource "aws_docdb_cluster_instance" "${1:name}" {
+  cluster_identifier = "${2:cluster_identifier}"  # Identifier of the aws_docdb_cluster in which to launch this instance.
+  instance_class     = "${3:instance_class}"      # Instance class to use.
+
+  # apply_immediately               = false  # Whether any database modifications are applied immediately, or during the next maintenance window.
+  # auto_minor_version_upgrade      = false  # Parameter does not apply to Amazon DocumentDB.
+  # availability_zone               = ""     # EC2 Availability Zone that the DB instance is created in.
+  # ca_cert_identifier              = ""     # Identifier of the certificate authority (CA) certificate for the DB instance.
+  # certificate_rotation_restart    = ""
+  # copy_tags_to_snapshot           = false  # Copy all DB instance tags to snapshots.
+  # enable_performance_insights     = false  # Value that indicates whether to enable Performance Insights for the DB Instance.
+  # engine                          = ""     # Name of the database engine to be used for the DocumentDB instance.
+  # identifier                      = ""     # The identifier for the DocumentDB instance, if omitted, Terraform will assign a random, unique id...
+  # identifier_prefix               = ""     # Creates a unique identifier beginning with the specified prefix.
+  # performance_insights_kms_key_id = ""     # KMS key identifier is the key ARN, key ID, alias ARN, or alias name for the KMS key.
+  # preferred_maintenance_window    = ""     # Window to perform maintenance in.
+  # promotion_tier                  = 0      # Failover Priority setting on instance level.
+  # region                          = ""     # Region where this resource will be managed.
+  # tags                            = {}     # Map of tags to assign to the instance.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_docdb_cluster_instance</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an DocumentDB Cluster Resource Instance</description>
+</snippet>

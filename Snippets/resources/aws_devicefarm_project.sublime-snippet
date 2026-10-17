@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_devicefarm_project" "${1:name}" {
+  name = "${2:name}"  # The name of the project
+
+  # default_job_timeout_minutes = 0   # Sets the execution timeout value (in minutes) for a project.
+  # region                      = ""  # Region where this resource will be managed.
+  # tags                        = {}  # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_devicefarm_project</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Devicefarm project</description>
+</snippet>

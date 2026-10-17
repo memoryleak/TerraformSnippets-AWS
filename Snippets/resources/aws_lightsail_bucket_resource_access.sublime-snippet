@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lightsail_bucket_resource_access" "${1:name}" {
+  bucket_name   = "${2:bucket_name}"    # Name of the bucket to grant access to.
+  resource_name = "${3:resource_name}"  # Name of the resource to grant bucket access.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_lightsail_bucket_resource_access</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages access permissions between Lightsail resources and buckets.</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_inspector_assessment_target" "${1:name}" {
+  name = "${2:name}"  # The name of the assessment target.
+
+  # region             = ""  # Region where this resource will be managed.
+  # resource_group_arn = ""
+}
+]]></content>
+<tabTrigger>aws_inspector_assessment_target</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Inspector Classic Assessment Target.</description>
+</snippet>

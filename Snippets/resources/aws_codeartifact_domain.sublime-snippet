@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_codeartifact_domain" "${1:name}" {
+  domain = "${2:domain}"  # The name of the domain to create.
+
+  # encryption_key = ""  # Encryption key for the domain.
+  # region         = ""  # Region where this resource will be managed.
+  # tags           = {}  # Key-value map of resource tags.
+}
+]]></content>
+<tabTrigger>aws_codeartifact_domain</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CodeArtifact Domain resource.</description>
+</snippet>

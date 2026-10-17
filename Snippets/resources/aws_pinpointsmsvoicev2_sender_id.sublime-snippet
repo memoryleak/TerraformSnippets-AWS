@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_pinpointsmsvoicev2_sender_id" "${1:name}" {
+  iso_country_code = "${2:iso_country_code}"  # Two-character code, in ISO 3166-1 alpha-2 format, for the country or region.
+  sender_id        = "${3:sender_id}"         # Alphanumeric sender ID to request.
+
+  # deletion_protection_enabled = false  # Whether deletion protection is enabled.
+  # message_types               = []     # Type of message.
+  # region                      = ""     # Region where this resource will be managed.
+  # tags                        = {}     # Map of tags assigned to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_pinpointsmsvoicev2_sender_id</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an End User Messaging SMS Sender ID.</description>
+</snippet>

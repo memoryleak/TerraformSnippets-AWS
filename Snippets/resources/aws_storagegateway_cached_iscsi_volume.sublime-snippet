@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_storagegateway_cached_iscsi_volume" "${1:name}" {
+  gateway_arn          = "${2:gateway_arn}"           # ARN of the gateway.
+  network_interface_id = "${3:network_interface_id}"  # The network interface of the gateway on which to expose the iSCSI target.
+  target_name          = "${4:target_name}"           # The name of the iSCSI target used by initiators to connect to the target and as a suffix for the...
+  volume_size_in_bytes = ${5:0}                       # The size of the volume in bytes.
+
+  # kms_encrypted     = false  # Set to true to use Amazon S3 server side encryption with your own AWS KMS key, or false to use a...
+  # kms_key           = ""     # ARN of the AWS KMS key used for Amazon S3 server side encryption.
+  # region            = ""     # Region where this resource will be managed.
+  # snapshot_id       = ""     # The snapshot ID of the snapshot to restore as the new cached volumeE.g., snap-1122aabb.
+  # source_volume_arn = ""     # The ARN for an existing volume.
+  # tags              = {}     # Key-value map of resource tags.
+}
+]]></content>
+<tabTrigger>aws_storagegateway_cached_iscsi_volume</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Storage Gateway cached iSCSI volume</description>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_route53_query_log" "${1:name}" {
+  cloudwatch_log_group_arn = "${2:cloudwatch_log_group_arn}"  # CloudWatch log group ARN to send query logs.
+  zone_id                  = "${3:zone_id}"                   # Route53 hosted zone ID to enable query logs.
+}
+]]></content>
+<tabTrigger>aws_route53_query_log</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Route53 query logging configuration resource.</description>
+</snippet>

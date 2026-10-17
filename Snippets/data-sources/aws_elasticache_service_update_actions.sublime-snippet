@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_elasticache_service_update_actions" "${1:name}" {
+  # cache_cluster_id      = ""  # ID of Cache Cluster to list updates for.
+  # region                = ""  # Region where this resource will be managed.
+  # replication_group_id  = ""  # ID of Replication Group to list updates for.
+  # service_update_status = []  # Service update statuses to include in list.
+}
+]]></content>
+<tabTrigger>data_aws_elasticache_service_update_actions</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an AWS ElastiCache Service Update Actions.</description>
+</snippet>

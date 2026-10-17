@@ -1,0 +1,51 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3_object_copy" "${1:name}" {
+  bucket = "${2:bucket}"  # Name of the bucket to put the file in.
+  key    = "${3:key}"     # Name of the object once it is in the bucket.
+  source = "${4:source}"  # Source object for the copy operation.
+
+  # acl                           = ""     # Canned ACL to apply.
+  # bucket_key_enabled            = false  # Whether to use an S3 Bucket Key for object encryption with server-side encryption using KMS (SSE-...
+  # cache_control                 = ""     # Caching behavior along the request/reply chain.
+  # checksum_algorithm            = ""     # Algorithm used to create the checksum for the object.
+  # content_disposition           = ""     # Presentational information for the object.
+  # content_encoding              = ""     # Content encodings that have been applied to the object and thus what decoding mechanisms must be...
+  # content_language              = ""     # Language the content is in e.g., en-US or en-GB.
+  # content_type                  = ""     # Standard MIME type describing the format of the object data, e.g., application/octet-stream.
+  # copy_if_match                 = ""     # Copies the object if its entity tag (ETag) matches the specified tag.
+  # copy_if_modified_since        = ""     # Copies the object if it has been modified since the specified time, in RFC3339 format.
+  # copy_if_none_match            = ""     # Copies the object if its entity tag (ETag) is different than the specified ETag.
+  # copy_if_unmodified_since      = ""     # Copies the object if it hasn't been modified since the specified time, in RFC3339 format.
+  # customer_algorithm            = ""     # Algorithm to use when encrypting the object (for example, AES256).
+  # customer_key                  = ""     # Customer-provided encryption key for Amazon S3 to use in encrypting data.
+  # customer_key_md5              = ""     # 128-bit MD5 digest of the encryption key according to RFC 1321.
+  # expected_bucket_owner         = ""     # Account ID of the expected destination bucket owner.
+  # expected_source_bucket_owner  = ""     # Account ID of the expected source bucket owner.
+  # expires                       = ""     # Date and time at which the object is no longer cacheable, in RFC3339 format.
+  # force_destroy                 = false  # Allow the object to be deleted by removing any legal hold on any object version.
+  # kms_encryption_context        = ""     # AWS KMS Encryption Context to use for object encryption.
+  # kms_key_id                    = ""     # AWS KMS Key ARN to use for object encryption.
+  # metadata                      = {}     # Map of keys/values to provision metadata (will be automatically prefixed by x-amz-meta-, note tha...
+  # metadata_directive            = ""     # Whether the metadata is copied from the source object or replaced with metadata provided in the r...
+  # object_lock_legal_hold_status = ""     # Legal hold status to apply to the specified object.
+  # object_lock_mode              = ""     # Object lock retention mode that you want to apply to this object.
+  # object_lock_retain_until_date = ""     # Date and time, in RFC3339 format, when this object's object lock will expire.
+  # region                        = ""     # Region where this resource will be managed.
+  # request_payer                 = ""     # Confirms that the requester knows that they will be charged for the request.
+  # server_side_encryption        = ""     # Server-side encryption of the object in S3.
+  # source_customer_algorithm     = ""     # Algorithm to use when decrypting the source object (for example, AES256).
+  # source_customer_key           = ""     # Customer-provided encryption key for Amazon S3 to use to decrypt the source object.
+  # source_customer_key_md5       = ""     # 128-bit MD5 digest of the encryption key according to RFC 1321.
+  # storage_class                 = ""     # Desired storage class for the object.
+  # tagging_directive             = ""     # Whether the object tag-set is copied from the source object or replaced with tag-set provided in...
+  # tags                          = {}     # Map of tags to assign to the object.
+  # website_redirect              = ""     # Target URL for website redirect.
+  # grant {}  # Configuration block for header grants.
+  # override_provider {}
+}
+]]></content>
+<tabTrigger>aws_s3_object_copy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource for copying an S3 object.</description>
+</snippet>

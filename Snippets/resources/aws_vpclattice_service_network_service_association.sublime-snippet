@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpclattice_service_network_service_association" "${1:name}" {
+  service_identifier         = "${2:service_identifier}"          # ID or Amazon Resource Identifier (ARN) of the service.
+  service_network_identifier = "${3:service_network_identifier}"  # ID or Amazon Resource Identifier (ARN) of the service network.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value mapping of resource tags.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_vpclattice_service_network_service_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS VPC Lattice Service Network Service Association.</description>
+</snippet>

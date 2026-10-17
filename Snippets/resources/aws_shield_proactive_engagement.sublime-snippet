@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_shield_proactive_engagement" "${1:name}" {
+  enabled = ${2:false}  # Boolean value indicating if Proactive Engagement should be enabled or not.
+
+  # emergency_contact {}  # One or more emergency contacts.
+}
+]]></content>
+<tabTrigger>aws_shield_proactive_engagement</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing a AWS Shield Proactive Engagement.</description>
+</snippet>

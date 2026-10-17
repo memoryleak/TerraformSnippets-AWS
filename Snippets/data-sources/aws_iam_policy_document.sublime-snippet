@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_iam_policy_document" "${1:name}" {
+  # override_policy_documents = []
+  # policy_id                 = ""
+  # source_policy_documents   = []
+  # version                   = ""
+  # statement {}
+}
+]]></content>
+<tabTrigger>data_aws_iam_policy_document</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Generates an IAM policy document in JSON format</description>
+</snippet>

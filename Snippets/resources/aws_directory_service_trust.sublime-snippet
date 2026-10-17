@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_directory_service_trust" "${1:name}" {
+  directory_id       = "${2:directory_id}"        # ID of the Directory.
+  remote_domain_name = "${3:remote_domain_name}"  # Fully qualified domain name of the remote Directory.
+  trust_direction    = "${4:trust_direction}"     # The direction of the Trust relationship.
+  trust_password     = "${5:trust_password}"      # Password for the Trust.
+
+  # conditional_forwarder_ip_addrs          = []     # Set of IPv4 addresses for the DNS server associated with the remote Directory.
+  # delete_associated_conditional_forwarder = false  # Whether to delete the conditional forwarder when deleting the Trust relationship.
+  # region                                  = ""     # Region where this resource will be managed.
+  # selective_auth                          = ""     # Whether to enable selective authentication.
+  # trust_type                              = ""     # Type of the Trust relationship.
+}
+]]></content>
+<tabTrigger>aws_directory_service_trust</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a trust relationship between two Active Directory Directories.</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lambda_function_scaling_config" "${1:name}" {
+  function_name = "${2:function_name}"  # Name or ARN of the Lambda function.
+  qualifier     = "${3:qualifier}"      # Qualifier for the scaling configuration.
+
+  # region = ""  # Region where this resource will be managed.
+  # function_scaling_config {}  # Scaling configuration block.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_lambda_function_scaling_config</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages the scaling configuration for an AWS Lambda function.</description>
+</snippet>

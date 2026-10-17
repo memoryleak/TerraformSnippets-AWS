@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lambda_runtime_management_config" "${1:name}" {
+  function_name = "${2:function_name}"  # Name or ARN of the Lambda function.
+
+  # qualifier           = ""  # Version of the function.
+  # region              = ""  # Region where this resource will be managed.
+  # runtime_version_arn = ""  # ARN of the runtime version.
+  # update_runtime_on   = ""  # Runtime update mode.
+}
+]]></content>
+<tabTrigger>aws_lambda_runtime_management_config</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Lambda Runtime Management Config.</description>
+</snippet>

@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+resource "aws_route53_resolver_endpoint" "${1:name}" {
+  direction          = "${2:direction}"  # Direction of DNS queries to or from the Route 53 Resolver endpoint.
+  security_group_ids = [${3}]            # ID of one or more security groups that you want to use to control access to this VPC.
+  ip_address {
+    subnet_id = "${4:subnet_id}"
+  }
+
+  # name                               = ""     # Friendly name of the Route 53 Resolver endpoint.
+  # protocols                          = []     # Protocols you want to use for the Route 53 Resolver endpoint.
+  # region                             = ""     # Region where this resource will be managed.
+  # resolver_endpoint_type             = ""     # Endpoint IP type.
+  # rni_enhanced_metrics_enabled       = false  # Boolean indicating whether RNI enhanced metrics are enabled for the Resolver endpoint.
+  # tags                               = {}     # Map of tags to assign to the resource.
+  # target_name_server_metrics_enabled = false  # Boolean indicating whether target name server metrics are enabled for the outbound Resolver endpo...
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_route53_resolver_endpoint</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Route 53 Resolver endpoint resource.</description>
+</snippet>

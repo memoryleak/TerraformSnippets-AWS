@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3control_access_grants_instance_resource_policy" "${1:name}" {
+  policy = "${2:policy}"  # Policy document.
+
+  # account_id = ""  # AWS account ID for the S3 Access Grants instance.
+  # region     = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_s3control_access_grants_instance_resource_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage an S3 Access Grants instance resource policy.</description>
+</snippet>

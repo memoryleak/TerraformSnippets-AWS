@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_cloudwatch_event_bus" "${1:name}" {
+  name = "${2:name}"  # Name of the event bus.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_cloudwatch_event_bus</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on an EventBridge (Cloudwatch) Event Bus.</description>
+</snippet>

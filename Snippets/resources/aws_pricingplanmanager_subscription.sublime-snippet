@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_pricingplanmanager_subscription" "${1:name}" {
+  plan_family   = "${2:plan_family}"  # Pricing plan family to subscribe to, such as CloudFront.
+  plan_tier     = "${3:plan_tier}"    # Tier level for the subscription, such as FREE, PRO, BUSINESS, or PREMIUM.
+  resource_arns = [${4}]              # Set of ARNs of the AWS resources to include in the subscription, between 1 and 10 entries.
+
+  # approval_mode = ""  # Whether the subscription requires explicit approval before billing starts.
+  # usage_level   = ""  # Usage level within the plan tier.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_pricingplanmanager_subscription</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Pricing Plan Manager Subscription.</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_apigatewayv2_api" "${1:name}" {
+  api_id = "${2:api_id}"  # API identifier.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_apigatewayv2_api</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific Amazon API Gateway Version 2 API.</description>
+</snippet>

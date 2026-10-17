@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sagemaker_human_task_ui" "${1:name}" {
+  human_task_ui_name = "${2:human_task_ui_name}"  # The name of the Human Task UI.
+  ui_template {
+  }
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_sagemaker_human_task_ui</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a SageMaker AI Human Task UI resource.</description>
+</snippet>

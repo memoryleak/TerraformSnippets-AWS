@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_api_gateway_domain_name" "${1:name}" {
+  domain_name = "${2:domain_name}"  # Fully-qualified domain name to look up.
+
+  # domain_name_id = ""  # Identifier for the domain name resource.
+  # region         = ""  # Region where this resource will be managed.
+  # tags           = {}
+}
+]]></content>
+<tabTrigger>data_aws_api_gateway_domain_name</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on a custom domain name for use with AWS API Gateway.</description>
+</snippet>

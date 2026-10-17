@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_connect_phone_number" "${1:name}" {
+  country_code = "${2:country_code}"  # The ISO country code.
+  target_arn   = "${3:target_arn}"    # ARN for Amazon Connect instances that phone numbers are claimed to.
+  type         = "${4:type}"          # The type of phone number.
+
+  # description = ""  # The description of the phone number.
+  # prefix      = ""  # The prefix of the phone number that is used to filter available phone numbers.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Tags to apply to the Phone Number.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_connect_phone_number</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides details about a specific Amazon Connect Phone Number.</description>
+</snippet>

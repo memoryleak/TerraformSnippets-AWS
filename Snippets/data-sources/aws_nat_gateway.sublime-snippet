@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+data "aws_nat_gateway" "${1:name}" {
+  # region    = ""  # Region where this resource will be managed.
+  # state     = ""  # State of the NAT Gateway (pending | failed | available | deleting | deleted ).
+  # subnet_id = ""  # ID of subnet that the NAT Gateway resides in.
+  # tags      = {}  # Map of tags, each pair of which must exactly match
+  # vpc_id    = ""  # ID of the VPC that the NAT Gateway resides in.
+  # filter {}  # Custom filter block as described below.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_nat_gateway</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific VPC NAT Gateway.</description>
+</snippet>

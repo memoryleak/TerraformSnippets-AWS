@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_wafv2_web_acl_logging_configuration" "${1:name}" {
+  log_destination_configs = [${2}]               # Configuration block that allows you to associate Amazon Kinesis Data Firehose, CloudWatch Log log...
+  resource_arn            = "${3:resource_arn}"  # ARN of the web ACL that you want to associate with log_destination_configs.
+
+  # region = ""  # Region where this resource will be managed.
+  # logging_filter {}  # Configuration block that specifies which web requests are kept in the logs and which are dropped.
+  # redacted_fields {}  # Configuration for parts of the request that you want to keep out of the logs.
+}
+]]></content>
+<tabTrigger>aws_wafv2_web_acl_logging_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Create a resource for WAFv2 Web ACL Logging Configuration.</description>
+</snippet>

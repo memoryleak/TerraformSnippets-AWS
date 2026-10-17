@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_tag" "${1:name}" {
+  key         = "${2:key}"          # The tag name.
+  resource_id = "${3:resource_id}"  # The ID of the EC2 resource to manage the tag for.
+  value       = "${4:value}"        # The value of the tag.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_ec2_tag</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an individual EC2 resource tag</description>
+</snippet>

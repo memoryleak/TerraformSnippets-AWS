@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lightsail_lb_stickiness_policy" "${1:name}" {
+  cookie_duration = ${2:0}          # Cookie duration in seconds.
+  enabled         = ${3:false}      # Whether to enable session stickiness for the load balancer.
+  lb_name         = "${4:lb_name}"  # Name of the load balancer to which you want to enable session stickiness.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_lightsail_lb_stickiness_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages session stickiness for a Lightsail Load Balancer.</description>
+</snippet>

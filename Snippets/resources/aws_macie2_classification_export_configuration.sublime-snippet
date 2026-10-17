@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_macie2_classification_export_configuration" "${1:name}" {
+  s3_destination {
+    bucket_name = "${2:bucket_name}"
+    kms_key_arn = "${3:kms_key_arn}"
+  }
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_macie2_classification_export_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage Classification Results - Export Configuration</description>
+</snippet>

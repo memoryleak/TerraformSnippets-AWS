@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_servicecatalog_provisioning_artifact" "${1:name}" {
+  product_id = "${2:product_id}"  # Identifier of the product.
+
+  # accept_language             = ""     # Language code.
+  # active                      = false  # Whether the product version is active.
+  # description                 = ""     # Description of the provisioning artifact (i.e., version), including how it differs from the previ...
+  # disable_template_validation = false  # Whether AWS Service Catalog stops validating the specified provisioning artifact template even if...
+  # guidance                    = ""     # Information set by the administrator to provide guidance to end users about which provisioning ar...
+  # name                        = ""     # Name of the provisioning artifact (for example, v1, v2beta).
+  # region                      = ""     # Region where this resource will be managed.
+  # template_physical_id        = ""     # Template source as the physical ID of the resource that contains the template.
+  # template_url                = ""     # Template source as URL of the CloudFormation template in Amazon S3.
+  # type                        = ""     # Type of provisioning artifact.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_servicecatalog_provisioning_artifact</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Service Catalog Provisioning Artifact</description>
+</snippet>

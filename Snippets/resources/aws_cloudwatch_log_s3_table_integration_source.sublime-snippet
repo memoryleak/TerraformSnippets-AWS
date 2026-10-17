@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_log_s3_table_integration_source" "${1:name}" {
+  integration_arn = "${2:integration_arn}"  # ARN of the aws_observabilityadmin_s3_table_integration to associate the data source with.
+
+  # region = ""  # Region where this resource will be managed.
+  # data_source {}  # Data source to associate with the S3 Table Integration.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_log_s3_table_integration_source</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a CloudWatch Logs S3 Table Integration data source association.</description>
+</snippet>

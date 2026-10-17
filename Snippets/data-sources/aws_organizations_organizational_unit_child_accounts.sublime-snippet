@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_organizations_organizational_unit_child_accounts" "${1:name}" {
+  parent_id = "${2:parent_id}"  # The parent ID of the accounts.
+}
+]]></content>
+<tabTrigger>data_aws_organizations_organizational_unit_child_accounts</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get all direct child accounts under a parent organizational unit.</description>
+</snippet>

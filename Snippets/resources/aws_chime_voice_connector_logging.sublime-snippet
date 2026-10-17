@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_chime_voice_connector_logging" "${1:name}" {
+  voice_connector_id = "${2:voice_connector_id}"  # The Amazon Chime Voice Connector ID.
+
+  # enable_media_metric_logs = false  # When true, enables logging of detailed media metrics for Voice Connectors to Amazon CloudWatch logs.
+  # enable_sip_logs          = false  # When true, enables SIP message logs for sending to Amazon CloudWatch Logs.
+  # region                   = ""     # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_chime_voice_connector_logging</tabTrigger>
+<scope>source.terraform</scope>
+<description>Adds a logging configuration for the specified Amazon Chime Voice Connector.</description>
+</snippet>

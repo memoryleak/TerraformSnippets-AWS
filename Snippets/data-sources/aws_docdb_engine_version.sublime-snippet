@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_docdb_engine_version" "${1:name}" {
+  # engine                 = ""  # DB engine.
+  # parameter_group_family = ""  # Name of a specific DB parameter group family.
+  # preferred_versions     = []  # Ordered list of preferred engine versions.
+  # region                 = ""  # Region where this resource will be managed.
+  # version                = ""  # Version of the DB engine.
+}
+]]></content>
+<tabTrigger>data_aws_docdb_engine_version</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Information about a DocumentDB engine version.</description>
+</snippet>

@@ -1,0 +1,25 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_capacity_reservation" "${1:name}" {
+  availability_zone = "${2:availability_zone}"  # The Availability Zone in which to create the Capacity Reservation.
+  instance_count    = ${3:0}                    # The number of instances for which to reserve capacity.
+  instance_platform = "${4:instance_platform}"  # The type of operating system for which to reserve capacity.
+  instance_type     = "${5:instance_type}"      # The instance type for which to reserve capacity.
+
+  # ebs_optimized           = false  # Indicates whether the Capacity Reservation supports EBS-optimized instances.
+  # end_date                = ""     # The date and time at which the Capacity Reservation expires.
+  # end_date_type           = ""     # Indicates the way in which the Capacity Reservation ends.
+  # ephemeral_storage       = false  # Indicates whether the Capacity Reservation supports instances with temporary, block-level storage.
+  # instance_match_criteria = ""     # Indicates the type of instance launches that the Capacity Reservation accepts.
+  # outpost_arn             = ""     # ARN of the Outpost on which to create the Capacity Reservation.
+  # placement_group_arn     = ""     # ARN of the cluster placement group in which to create the Capacity Reservation.
+  # region                  = ""     # Region where this resource will be managed.
+  # tags                    = {}     # A map of tags to assign to the resource.
+  # tenancy                 = ""     # Indicates the tenancy of the Capacity Reservation.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ec2_capacity_reservation</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an EC2 Capacity Reservation.</description>
+</snippet>

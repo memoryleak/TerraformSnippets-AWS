@@ -1,0 +1,29 @@
+<snippet>
+<content><![CDATA[
+resource "aws_datasync_location_hdfs" "${1:name}" {
+  agent_arns = [${2}]  # A list of DataSync Agent ARNs with which this location will be associated.
+  name_node {
+    hostname = "${3:hostname}"
+    port     = ${4:0}
+  }
+
+  # authentication_type       = ""  # The type of authentication used to determine the identity of the user.
+  # block_size                = 0   # The size of data blocks to write into the HDFS cluster.
+  # kerberos_keytab           = ""  # The Kerberos key table (keytab) that contains mappings between the defined Kerberos principal and...
+  # kerberos_keytab_base64    = ""  # Use instead of kerberos_keytab to pass base64-encoded binary data directly.
+  # kerberos_krb5_conf        = ""  # The krb5.conf file that contains the Kerberos configuration information.
+  # kerberos_krb5_conf_base64 = ""  # Use instead of kerberos_krb5_conf to pass base64-encoded binary data directly.
+  # kerberos_principal        = ""  # The Kerberos principal with access to the files and folders on the HDFS cluster.
+  # kms_key_provider_uri      = ""  # The URI of the HDFS cluster's Key Management Server (KMS).
+  # region                    = ""  # Region where this resource will be managed.
+  # replication_factor        = 0   # The number of DataNodes to replicate the data to when writing to the HDFS cluster.
+  # simple_user               = ""  # The user name used to identify the client on the host operating system.
+  # subdirectory              = ""  # A subdirectory in the HDFS cluster.
+  # tags                      = {}  # Key-value pairs of resource tags to assign to the DataSync Location.
+  # qop_configuration {}  # The Quality of Protection (QOP) configuration specifies the Remote Procedure Call (RPC) and data...
+}
+]]></content>
+<tabTrigger>aws_datasync_location_hdfs</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS DataSync HDFS Location</description>
+</snippet>

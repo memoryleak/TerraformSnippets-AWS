@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_guardduty_ipset" "${1:name}" {
+  activate    = ${2:false}          # Whether to start using the uploaded IPSet.
+  detector_id = "${3:detector_id}"  # Detector ID of the GuardDuty.
+  format      = "${4:format}"       # Format of the file that contains the IPSet.
+  location    = "${5:location}"     # URI of the file that contains the IPSet.
+  name        = "${6:name}"         # Friendly name to identify the IPSet.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value map of resource tags.
+}
+]]></content>
+<tabTrigger>aws_guardduty_ipset</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage a GuardDuty IPSet</description>
+</snippet>

@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appflow_connector_profile" "${1:name}" {
+  connection_mode = "${2:connection_mode}"  # Connection mode and specifies whether it is public or private.
+  connector_type  = "${3:connector_type}"   # Type of connector.
+  name            = "${4:name}"             # Name of the connector profile.
+  connector_profile_config {
+    connector_profile_credentials {
+    }
+    connector_profile_properties {
+    }
+  }
+
+  # connector_label = ""  # Label of the connector.
+  # kms_arn         = ""  # ARN of the KMS key you provide for encryption.
+  # region          = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_appflow_connector_profile</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AppFlow Connector Profile resource.</description>
+</snippet>

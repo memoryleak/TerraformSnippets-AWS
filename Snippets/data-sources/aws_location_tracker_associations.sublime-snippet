@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_location_tracker_associations" "${1:name}" {
+  tracker_name = "${2:tracker_name}"  # Name of the tracker resource associated with a geofence collection.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_location_tracker_associations</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Retrieve information about Location Service Tracker Associations.</description>
+</snippet>

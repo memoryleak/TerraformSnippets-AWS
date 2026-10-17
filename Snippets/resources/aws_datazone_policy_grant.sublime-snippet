@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_datazone_policy_grant" "${1:name}" {
+  domain_identifier = "${2:domain_identifier}"  # Identifier of the domain where the policy grant is created.
+  entity_identifier = "${3:entity_identifier}"  # Identifier of the entity to which the policy grant applies.
+  entity_type       = "${4:entity_type}"        # Type of entity to which the policy grant applies.
+  policy_type       = "${5:policy_type}"        # Type of the managed policy.
+
+  # region = ""  # Region where this resource will be managed.
+  # detail {}  # Policy grant detail.
+  # principal {}  # Principal to which the policy grant applies.
+}
+]]></content>
+<tabTrigger>aws_datazone_policy_grant</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS DataZone Policy Grant.</description>
+</snippet>

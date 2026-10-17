@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ebs_snapshot_block_public_access" "${1:name}" {
+  state = "${2:state}"  # The mode in which to enable "Block public access for snapshots" for the region.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_ebs_snapshot_block_public_access</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages EBS snapshot public access block configuration.</description>
+</snippet>

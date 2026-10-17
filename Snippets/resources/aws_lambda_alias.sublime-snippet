@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lambda_alias" "${1:name}" {
+  function_name    = "${2:function_name}"     # Name or ARN of the Lambda function.
+  function_version = "${3:function_version}"  # Lambda function version for which you are creating the alias.
+  name             = "${4:name}"              # Name for the alias.
+
+  # description = ""  # Description of the alias.
+  # region      = ""  # Region where this resource will be managed.
+  # routing_config {}  # Lambda alias' route configuration settings.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_lambda_alias</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Lambda Alias.</description>
+</snippet>

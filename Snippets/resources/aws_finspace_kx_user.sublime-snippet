@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_finspace_kx_user" "${1:name}" {
+  environment_id = "${2:environment_id}"  # Unique identifier for the KX environment.
+  iam_role       = "${3:iam_role}"        # IAM role ARN to be associated with the user.
+  name           = "${4:name}"            # Unique identifier for the user.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value mapping of resource tags.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_finspace_kx_user</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS FinSpace Kx User.</description>
+</snippet>

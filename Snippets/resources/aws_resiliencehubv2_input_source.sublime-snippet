@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_resiliencehubv2_input_source" "${1:name}" {
+  service_arn = "${2:service_arn}"  # ARN of the service this input source belongs to.
+
+  # region = ""  # Region where this resource will be managed.
+  # resource_configuration {}  # Resource configuration for an input source.
+}
+]]></content>
+<tabTrigger>aws_resiliencehubv2_input_source</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Resilience Hub V2 Input Source.</description>
+</snippet>

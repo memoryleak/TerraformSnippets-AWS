@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dms_replication_subnet_group" "${1:name}" {
+  replication_subnet_group_description = "${2:replication_subnet_group_description}"  # Description for the subnet group.
+  replication_subnet_group_id          = "${3:replication_subnet_group_id}"           # Name for the replication subnet group.
+  subnet_ids                           = [${4}]                                       # List of at least 2 EC2 subnet IDs for the subnet group.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_dms_replication_subnet_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a DMS (Data Migration Service) subnet group resource.</description>
+</snippet>

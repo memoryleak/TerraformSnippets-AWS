@@ -1,0 +1,55 @@
+<snippet>
+<content><![CDATA[
+resource "aws_elasticache_replication_group" "${1:name}" {
+  description          = "${2:description}"           # User-created description for the replication group.
+  replication_group_id = "${3:replication_group_id}"  # Replication group identifier.
+
+  # apply_immediately           = false  # Specifies whether any modifications are applied immediately, or during the next maintenance window.
+  # at_rest_encryption_enabled  = ""     # Whether to enable encryption at rest.
+  # auth_token                  = ""     # Password used to access a password protected server.
+  # auth_token_update_strategy  = ""     # Strategy used when modifying auth_token or auth_token_wo on an existing replication group.
+  # auth_token_wo               = ""     # Password used to access a password protected server, whose value will not be stored in state.
+  # auth_token_wo_version       = 0      # Required when auth_token_wo is set.
+  # auto_minor_version_upgrade  = ""     # Specifies whether minor version engine upgrades will be applied automatically to the underlying C...
+  # automatic_failover_enabled  = false  # Specifies whether a read-only replica will be automatically promoted to read/write primary if the...
+  # cluster_mode                = ""     # Specifies whether cluster mode is enabled or disabled.
+  # data_tiering_enabled        = false  # Enables data tiering.
+  # durability                  = ""     # Specifies the durability mode for the replication group.
+  # engine                      = ""     # Name of the cache engine to be used for the clusters in this replication group.
+  # engine_version              = ""     # Version number of the cache engine to be used for the cache clusters in this replication group.
+  # final_snapshot_identifier   = ""     # The name of your final node group (shard) snapshot.
+  # global_replication_group_id = ""     # The ID of the global replication group to which this replication group should belong.
+  # ip_discovery                = ""     # The IP version to advertise in the discovery protocol.
+  # kms_key_id                  = ""     # The ARN of the key that you wish to use if encrypting at rest.
+  # maintenance_window          = ""     # Specifies the weekly time range for when maintenance on the cache cluster is performed.
+  # multi_az_enabled            = false  # Specifies whether to enable Multi-AZ Support for the replication group.
+  # network_type                = ""     # The IP versions for cache cluster connections.
+  # node_type                   = ""     # Instance class to be used.
+  # notification_topic_arn      = ""     # ARN of an SNS topic to send ElastiCache notifications to.
+  # num_cache_clusters          = 0      # Number of cache clusters (primary and replicas) this replication group will have.
+  # num_node_groups             = 0      # Number of node groups (shards) for this Redis replication group.
+  # parameter_group_name        = ""     # Name of the parameter group to associate with this replication group.
+  # port                        = 0      # Port number on which each of the cache nodes will accept connections.
+  # preferred_cache_cluster_azs = []     # List of EC2 availability zones in which the replication group's cache clusters will be created.
+  # region                      = ""     # Region where this resource will be managed.
+  # replicas_per_node_group     = 0      # Number of replica nodes in each node group.
+  # security_group_ids          = []     # IDs of one or more Amazon VPC security groups associated with this replication group.
+  # security_group_names        = []     # Names of one or more Amazon VPC security groups associated with this replication group.
+  # snapshot_arns               = []     # List of ARNs that identify Redis RDB snapshot files stored in Amazon S3.
+  # snapshot_name               = ""     # Name of a snapshot from which to restore data into the new node group.
+  # snapshot_retention_limit    = 0      # Number of days for which ElastiCache will retain automatic cache cluster snapshots before deletin...
+  # snapshot_window             = ""     # Daily time range (in UTC) during which ElastiCache will begin taking a daily snapshot of your cac...
+  # subnet_group_name           = ""     # Name of the cache subnet group to be used for the replication group.
+  # tags                        = {}     # Map of tags to assign to the resource.
+  # transit_encryption_enabled  = false  # Whether to enable encryption in transit.
+  # transit_encryption_mode     = ""     # A setting that enables clients to migrate to in-transit encryption with no downtime.
+  # user_group_ids              = []     # User Group ID to associate with the replication group.
+  # log_delivery_configuration {}  # Specifies the destination and format of Redis OSS/Valkey SLOWLOG or Redis OSS/Valkey Engine Log.
+  # node_group_configuration {}  # Configuration block for node groups (shards).
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_elasticache_replication_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an ElastiCache Replication Group resource.</description>
+</snippet>

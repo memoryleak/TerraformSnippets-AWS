@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cognito_identity_pool" "${1:name}" {
+  identity_pool_name = "${2:identity_pool_name}"
+
+  # allow_classic_flow               = false
+  # allow_unauthenticated_identities = false
+  # developer_provider_name          = ""
+  # openid_connect_provider_arns     = []
+  # region                           = ""     # Region where this resource will be managed.
+  # saml_provider_arns               = []
+  # supported_login_providers        = {}
+  # tags                             = {}     # A map of tags to assign to the Identity Pool.
+  # cognito_identity_providers {}
+}
+]]></content>
+<tabTrigger>aws_cognito_identity_pool</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AWS Cognito Identity Pool.</description>
+</snippet>

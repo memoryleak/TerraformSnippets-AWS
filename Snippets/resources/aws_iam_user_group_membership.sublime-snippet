@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iam_user_group_membership" "${1:name}" {
+  groups = [${2}]       # A list of IAM Groups to add the user to
+  user   = "${3:user}"  # The name of the IAM User to add to groups
+}
+]]></content>
+<tabTrigger>aws_iam_user_group_membership</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource for adding an IAM User to IAM Groups without conflicting with itself.</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_securityhub_standards_control_association" "${1:name}" {
+  association_status  = "${2:association_status}"   # The desired enablement status of the control in the standard.
+  security_control_id = "${3:security_control_id}"  # The unique identifier for the security control whose enablement status you want to update.
+  standards_arn       = "${4:standards_arn}"        # ARN of the standard in which you want to update the control's enablement status.
+
+  # region         = ""  # Region where this resource will be managed.
+  # updated_reason = ""  # The reason for updating the control's enablement status in the standard.
+}
+]]></content>
+<tabTrigger>aws_securityhub_standards_control_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Security Hub Standards Control Association.</description>
+</snippet>

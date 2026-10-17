@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_verifiedpermissions_policy_store" "${1:name}" {
+  # deletion_protection = ""  # Whether the policy store can be deleted.
+  # description         = ""  # Description of the Policy Store.
+  # region              = ""  # Region where this resource will be managed.
+  # tags                = {}  # Key-value mapping of resource tags.
+  # validation_settings {}  # Validation settings for the policy store.
+}
+]]></content>
+<tabTrigger>aws_verifiedpermissions_policy_store</tabTrigger>
+<scope>source.terraform</scope>
+<description>This is a Terraform resource for managing an AWS Verified Permissions Policy Store.</description>
+</snippet>

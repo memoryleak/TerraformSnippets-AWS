@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cleanrooms_collaboration" "${1:name}" {
+  creator_display_name     = "${2:creator_display_name}"  # - Name for the member record for the collaboration creator.
+  creator_member_abilities = [${3}]                       # - List of member abilities for the creator of the collaboration.
+  description              = "${4:description}"           # - Description for a collaboration.
+  name                     = "${5:name}"                  # - Name of the collaboration.
+  query_log_status         = "${6:query_log_status}"      # Whether members of the collaboration can enable query logs within their own memberships.
+
+  # analytics_engine = ""  # Analytics engine used by the collaboration.
+  # region           = ""  # Region where this resource will be managed.
+  # tags             = {}  # Key value pairs which tag the collaboration.
+  # data_encryption_metadata {}  # Collection of settings which determine how the c3r client will encrypt data for use within this c...
+  # member {}  # Additional members of the collaboration which will be invited to join the collaboration.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_cleanrooms_collaboration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Clean Rooms Collaboration.</description>
+</snippet>

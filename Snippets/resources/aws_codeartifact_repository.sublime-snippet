@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_codeartifact_repository" "${1:name}" {
+  domain     = "${2:domain}"      # The domain that contains the created repository.
+  repository = "${3:repository}"  # The name of the repository to create.
+
+  # description  = ""  # The description of the repository.
+  # domain_owner = ""  # The account number of the AWS account that owns the domain.
+  # region       = ""  # Region where this resource will be managed.
+  # tags         = {}  # Key-value map of resource tags.
+  # external_connections {}  # An array of external connections associated with the repository.
+  # upstream {}  # A list of upstream repositories to associate with the repository.
+}
+]]></content>
+<tabTrigger>aws_codeartifact_repository</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CodeArtifact Repository resource.</description>
+</snippet>

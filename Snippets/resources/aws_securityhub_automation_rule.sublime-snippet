@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_securityhub_automation_rule" "${1:name}" {
+  description = "${2:description}"  # The description of the rule.
+  rule_name   = "${3:rule_name}"    # The name of the rule.
+  rule_order  = ${4:0}              # An integer ranging from 1 to 1000 that represents the order in which the rule action is applied t...
+
+  # is_terminal = false  # Specifies whether a rule is the last to be applied with respect to a finding that matches the rul...
+  # region      = ""     # Region where this resource will be managed.
+  # rule_status = ""     # Whether the rule is active after it is created.
+  # tags        = {}
+  # actions {}  # A block that specifies one or more actions to update finding fields if a finding matches the cond...
+  # criteria {}  # A block that specifies a set of ASFF finding field attributes and corresponding expected values t...
+}
+]]></content>
+<tabTrigger>aws_securityhub_automation_rule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Security Hub Automation Rule.</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3_bucket_analytics_configuration" "${1:name}" {
+  bucket = "${2:bucket}"  # Name of the bucket this analytics configuration is associated with.
+  name   = "${3:name}"    # Unique identifier of the analytics configuration for the bucket.
+
+  # region = ""  # Region where this resource will be managed.
+  # filter {}  # Object filtering that accepts a prefix, tags, or a logical AND of prefix and tags (documented bel...
+  # storage_class_analysis {}  # Configuration for the analytics data export (documented below).
+}
+]]></content>
+<tabTrigger>aws_s3_bucket_analytics_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a S3 bucket analytics configuration resource.</description>
+</snippet>

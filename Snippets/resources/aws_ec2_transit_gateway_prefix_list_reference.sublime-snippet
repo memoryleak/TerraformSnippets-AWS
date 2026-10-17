@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_transit_gateway_prefix_list_reference" "${1:name}" {
+  prefix_list_id                 = "${2:prefix_list_id}"                  # Identifier of EC2 Prefix List.
+  transit_gateway_route_table_id = "${3:transit_gateway_route_table_id}"  # Identifier of EC2 Transit Gateway Route Table.
+
+  # blackhole                     = false  # Indicates whether to drop traffic that matches the Prefix List.
+  # region                        = ""     # Region where this resource will be managed.
+  # transit_gateway_attachment_id = ""     # Identifier of EC2 Transit Gateway Attachment.
+}
+]]></content>
+<tabTrigger>aws_ec2_transit_gateway_prefix_list_reference</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an EC2 Transit Gateway Prefix List Reference</description>
+</snippet>

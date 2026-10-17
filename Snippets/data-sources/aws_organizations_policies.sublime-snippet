@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_organizations_policies" "${1:name}" {
+  filter = "${2:filter}"  # The type of policies to be returned in the response.
+}
+]]></content>
+<tabTrigger>data_aws_organizations_policies</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS Organizations Policies.</description>
+</snippet>

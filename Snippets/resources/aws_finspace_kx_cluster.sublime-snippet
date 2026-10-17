@@ -1,0 +1,37 @@
+<snippet>
+<content><![CDATA[
+resource "aws_finspace_kx_cluster" "${1:name}" {
+  az_mode        = "${2:az_mode}"         # Number of availability zones to assign per cluster.
+  environment_id = "${3:environment_id}"  # Unique identifier for the KX environment.
+  name           = "${4:name}"            # Unique name for the cluster that you want to create.
+  release_label  = "${5:release_label}"   # Version of FinSpace Managed kdb to run.
+  type           = "${6:type}"            # Type of KDB database.
+  vpc_configuration {
+    ip_address_type    = "${7:ip_address_type}"
+    security_group_ids = [${8}]
+    subnet_ids         = [${9}]
+    vpc_id             = "${10:vpc_id}"
+  }
+
+  # availability_zone_id   = ""  # Availability zone identifiers for the requested regions.
+  # command_line_arguments = {}  # List of key-value pairs to make available inside the cluster.
+  # description            = ""  # Description of the cluster.
+  # execution_role         = ""  # IAM role that defines a set of permissions associated with a cluster.
+  # initialization_script  = ""  # Path to Q program that will be run at launch of a cluster.
+  # region                 = ""  # Region where this resource will be managed.
+  # tags                   = {}  # Key-value mapping of resource tags.
+  # auto_scaling_configuration {}  # Configuration based on which FinSpace will scale in or scale out nodes in your cluster.
+  # cache_storage_configurations {}  # Configurations for a read only cache storage associated with a cluster.
+  # capacity_configuration {}  # Structure for the metadata of a cluster.
+  # code {}  # Details of the custom code that you want to use inside a cluster when analyzing data.
+  # database {}  # KX database that will be available for querying.
+  # savedown_storage_configuration {}  # Size and type of the temporary storage that is used to hold data during the savedown process.
+  # scaling_group_configuration {}  # Structure that stores the configuration details of a scaling group.
+  # tickerplant_log_configuration {}  # Configuration to store Tickerplant logs.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_finspace_kx_cluster</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS FinSpace Kx Cluster.</description>
+</snippet>

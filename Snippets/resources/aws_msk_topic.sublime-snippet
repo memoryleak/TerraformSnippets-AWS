@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_msk_topic" "${1:name}" {
+  cluster_arn        = "${2:cluster_arn}"  # ARN that uniquely identifies MSK Cluster.
+  name               = "${3:name}"         # Name of Topic.
+  partition_count    = ${4:0}              # Number of partitions for Topic.
+  replication_factor = ${5:0}              # Replication factor for Topic.
+
+  # configs = ""  # Explicit configured Kafka configuration in JSON format for Topic.
+  # region  = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_msk_topic</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Managed Streaming for Kafka Topic.</description>
+</snippet>

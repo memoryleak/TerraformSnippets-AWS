@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_transfer_host_key" "${1:name}" {
+  server_id = "${2:server_id}"  # Server ID.
+
+  # description      = ""  # Text description.
+  # host_key_body    = ""  # Private key portion of an SSH key pair.
+  # host_key_body_wo = ""  # Write-only private key portion of an SSH key pair, guaranteed not to be written to plan or state...
+  # region           = ""  # Region where this resource will be managed.
+  # tags             = {}  # Map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_transfer_host_key</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a host key for a server.</description>
+</snippet>

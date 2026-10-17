@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_lb_trust_store" "${1:name}" {
+  # arn    = ""  # Full ARN of the trust store.
+  # name   = ""  # Unique name of the trust store.
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_lb_trust_store</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides a Load Balancer Trust Store data source.</description>
+</snippet>

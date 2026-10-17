@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_networkfirewall_logging_configuration" "${1:name}" {
+  firewall_arn = "${2:firewall_arn}"  # ARN of the Network Firewall firewall.
+  logging_configuration {
+    log_destination_config {
+      log_destination      = {${3}}
+      log_destination_type = "${4:log_destination_type}"
+      log_type             = "${5:log_type}"
+    }
+  }
+
+  # enable_monitoring_dashboard = false  # Whether to enable the detailed firewall monitoring dashboard on the firewall.
+  # region                      = ""     # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_networkfirewall_logging_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AWS Network Firewall Logging Configuration resource.</description>
+</snippet>

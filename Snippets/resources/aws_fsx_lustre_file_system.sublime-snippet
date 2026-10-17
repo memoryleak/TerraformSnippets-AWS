@@ -1,0 +1,40 @@
+<snippet>
+<content><![CDATA[
+resource "aws_fsx_lustre_file_system" "${1:name}" {
+  subnet_ids = [${2}]  # List of IDs for the subnets that the file system will be accessible from.
+
+  # auto_import_policy                = ""     # How Amazon FSx keeps your file and directory listings up to date as you add or modify objects in...
+  # automatic_backup_retention_days   = 0      # Number of days to retain automatic backups.
+  # backup_id                         = ""     # ID of the source backup to create the filesystem from.
+  # copy_tags_to_backups              = false  # Whether to copy tags for the file system to backups.
+  # daily_automatic_backup_start_time = ""     # Recurring daily time, in the format HH:MM.
+  # data_compression_type             = ""     # Sets the data compression configuration for the file system.
+  # deployment_type                   = ""     # Filesystem deployment type.
+  # drive_cache_type                  = ""     # Type of drive cache used by PERSISTENT_1 filesystems that are provisioned with HDD storage_type.
+  # efa_enabled                       = false  # Adds support for Elastic Fabric Adapter (EFA) and GPUDirect Storage (GDS) to Lustre.
+  # export_path                       = ""     # S3 URI (with optional prefix) where the root of your Amazon FSx file system is exported.
+  # file_system_type_version          = ""     # Sets the Lustre version for the file system.
+  # final_backup_tags                 = {}     # Map of tags to apply to the file system's final backup.
+  # import_path                       = ""     # S3 URI (with optional prefix) that you're using as the data repository for your FSx for Lustre fi...
+  # imported_file_chunk_size          = 0      # For files imported from a data repository, this value determines the stripe count and maximum amo...
+  # kms_key_id                        = ""     # ARN for the KMS Key to encrypt the file system at rest, applicable for PERSISTENT_1 and PERSISTEN...
+  # per_unit_storage_throughput       = 0      # Amount of read and write throughput for each 1 tebibyte of storage, in MB/s/TiB, required for the...
+  # region                            = ""     # Region where this resource will be managed.
+  # security_group_ids                = []     # List of IDs for the security groups that apply to the specified network interfaces created for fi...
+  # skip_final_backup                 = false  # When enabled, will skip the default final backup taken when the file system is deleted.
+  # storage_capacity                  = 0      # Storage capacity (GiB) of the file system.
+  # storage_type                      = ""     # Filesystem storage type.
+  # tags                              = {}     # Map of tags to assign to the file system.
+  # throughput_capacity               = 0      # Throughput in MBps required for the INTELLIGENT_TIERING storage type.
+  # weekly_maintenance_start_time     = ""     # Preferred start time (in d:HH:MM format) to perform weekly maintenance, in the UTC time zone.
+  # data_read_cache_configuration {}
+  # log_configuration {}  # Lustre logging configuration used when creating an Amazon FSx for Lustre file system.
+  # metadata_configuration {}  # Lustre metadata configuration used when creating an Amazon FSx for Lustre file system.
+  # root_squash_configuration {}  # Lustre root squash configuration used when creating an Amazon FSx for Lustre file system.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_fsx_lustre_file_system</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a FSx Lustre File System.</description>
+</snippet>

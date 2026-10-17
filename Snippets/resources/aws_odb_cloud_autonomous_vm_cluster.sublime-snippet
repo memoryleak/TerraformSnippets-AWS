@@ -1,0 +1,30 @@
+<snippet>
+<content><![CDATA[
+resource "aws_odb_cloud_autonomous_vm_cluster" "${1:name}" {
+  autonomous_data_storage_size_in_tbs   = ${2:0}               # Data storage size allocated for Autonomous Databases in the Autonomous VM cluster, in TB.
+  cpu_core_count_per_node               = ${3:0}               # Number of CPU cores enabled per node in the Autonomous VM cluster.
+  db_servers                            = [${4}]               # Database servers in the Autonomous VM cluster.
+  display_name                          = "${5:display_name}"  # Display name of the Autonomous VM cluster.
+  memory_per_oracle_compute_unit_in_gbs = ${6:0}               # Amount of memory allocated per Oracle Compute Unit, in GB.
+  scan_listener_port_non_tls            = ${7:0}               # SCAN listener port for non-TLS (TCP) protocol.
+  scan_listener_port_tls                = ${8:0}               # SCAN listener port for TLS (TCP) protocol.
+  total_container_databases             = ${9:0}               # Total number of Autonomous Container Databases that can be created with the allocated local storage.
+
+  # cloud_exadata_infrastructure_arn = ""     # Exadata infrastructure ARN.
+  # cloud_exadata_infrastructure_id  = ""     # Exadata infrastructure ID.
+  # description                      = ""     # Description of the Autonomous VM cluster.
+  # is_mtls_enabled_vm_cluster       = false  # Whether mutual TLS (mTLS) authentication is enabled for the Autonomous VM cluster.
+  # license_model                    = ""     # License model for the Autonomous VM cluster.
+  # odb_network_arn                  = ""     # ARN of the ODB network associated with this Autonomous VM Cluster.
+  # odb_network_id                   = ""     # Unique identifier of the ODB network associated with this Autonomous VM Cluster.
+  # region                           = ""     # Region where this resource will be managed.
+  # tags                             = {}     # Map of tags to assign to the exadata infrastructure.
+  # time_zone                        = ""     # Time zone of the Autonomous VM cluster.
+  # maintenance_window {}  # Maintenance window of the Autonomous VM cluster.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_odb_cloud_autonomous_vm_cluster</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource managing cloud autonomous vm cluster in AWS for Oracle Database@AWS.</description>
+</snippet>

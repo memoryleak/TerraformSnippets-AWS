@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_apprunner_connection" "${1:name}" {
+  connection_name = "${2:connection_name}"  # Name of the connection.
+  provider_type   = "${3:provider_type}"    # Source repository provider.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value map of resource tags.
+}
+]]></content>
+<tabTrigger>aws_apprunner_connection</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an App Runner Connection.</description>
+</snippet>

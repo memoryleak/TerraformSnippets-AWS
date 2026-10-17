@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_licensemanager_license_configuration" "${1:name}" {
+  license_counting_type = "${2:license_counting_type}"  # Dimension to use to track license inventory.
+  name                  = "${3:name}"                   # Name of the license configuration.
+
+  # description              = ""     # Description of the license configuration.
+  # license_count            = 0      # Number of licenses managed by the license configuration.
+  # license_count_hard_limit = false  # Sets the number of available licenses as a hard limit.
+  # license_rules            = []     # Array of configured License Manager rules.
+  # region                   = ""     # Region where this resource will be managed.
+  # tags                     = {}     # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_licensemanager_license_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a License Manager license configuration resource.</description>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_agentregistry_registry" "${1:name}" {
+  registry_id = "${2:registry_id}"  # Identifier of the registry to retrieve.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_agentregistry_registry</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an AWS Agent Registry registry.</description>
+</snippet>

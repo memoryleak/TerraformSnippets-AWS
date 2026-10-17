@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudfront_monitoring_subscription" "${1:name}" {
+  distribution_id = "${2:distribution_id}"  # The ID of the distribution that you are enabling metrics for.
+  monitoring_subscription {
+    realtime_metrics_subscription_config {
+      realtime_metrics_subscription_status = "${3:realtime_metrics_subscription_status}"
+    }
+  }
+}
+]]></content>
+<tabTrigger>aws_cloudfront_monitoring_subscription</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudFront monitoring subscription resource.</description>
+</snippet>

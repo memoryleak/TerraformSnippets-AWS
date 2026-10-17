@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+data "aws_route53_traffic_policy_document" "${1:name}" {
+  # record_type    = ""
+  # start_endpoint = ""
+  # start_rule     = ""
+  # version        = ""
+  # endpoint {}
+  # rule {}
+}
+]]></content>
+<tabTrigger>data_aws_route53_traffic_policy_document</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Generates an Route53 traffic policy document in JSON format</description>
+</snippet>

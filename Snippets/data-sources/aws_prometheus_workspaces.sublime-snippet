@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_prometheus_workspaces" "${1:name}" {
+  # alias_prefix = ""  # Limits results to workspaces with aliases that begin with this value.
+  # region       = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_prometheus_workspaces</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Gets the aliases, ARNs, and workspace IDs of Amazon Prometheus workspaces.</description>
+</snippet>

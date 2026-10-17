@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudfront_public_key" "${1:name}" {
+  encoded_key = "${2:encoded_key}"  # The encoded public key that you want to add to CloudFront to use with features like field-level e...
+
+  # comment     = ""  # An optional comment about the public key.
+  # name        = ""  # The name for the public key.
+  # name_prefix = ""  # The name for the public key.
+}
+]]></content>
+<tabTrigger>aws_cloudfront_public_key</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudFront Public Key which you add to CloudFront to use with features like field-leve...</description>
+</snippet>

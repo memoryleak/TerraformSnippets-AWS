@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_identitystore_group" "${1:name}" {
+  identity_store_id = "${2:identity_store_id}"  # Identity Store ID associated with the Single Sign-On Instance.
+
+  # group_id = ""  # The identifier for a group in the Identity Store.
+  # region   = ""  # Region where this resource will be managed.
+  # alternate_identifier {}
+}
+]]></content>
+<tabTrigger>data_aws_identitystore_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on an Identity Store Group</description>
+</snippet>

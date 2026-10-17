@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+data "aws_cloudwatch_log_data_protection_policy_document" "${1:name}" {
+  name = "${2:name}"  # The name of the data protection policy document.
+  statement {
+    data_identifiers = [${3}]
+    operation {
+    }
+  }
+
+  # description = ""
+  # version     = ""
+  # configuration {}
+}
+]]></content>
+<tabTrigger>data_aws_cloudwatch_log_data_protection_policy_document</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Generates a CloudWatch Log Group Data Protection Policy document in JSON format</description>
+</snippet>

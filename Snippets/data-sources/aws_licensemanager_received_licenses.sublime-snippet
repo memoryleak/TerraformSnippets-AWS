@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_licensemanager_received_licenses" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # filter {}  # Custom filter block as described below.
+}
+]]></content>
+<tabTrigger>data_aws_licensemanager_received_licenses</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information about a set of license manager received licenses</description>
+</snippet>

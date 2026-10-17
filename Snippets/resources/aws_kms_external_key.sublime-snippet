@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_kms_external_key" "${1:name}" {
+  # bypass_policy_lockout_safety_check = false  # Whether to disable the policy lockout check performed when creating or updating the key's policy.
+  # deletion_window_in_days            = 0      # Duration in days after which the key is deleted after destruction of the resource.
+  # description                        = ""     # Description of the key.
+  # enabled                            = false  # Whether the key is enabled.
+  # key_material_base64                = ""     # Base64 encoded 256-bit symmetric encryption key material to import.
+  # key_spec                           = ""     # Whether the key contains a symmetric key or an asymmetric key pair and the encryption algorithms...
+  # key_usage                          = ""     # Intended use of the key.
+  # multi_region                       = false  # Whether the KMS key is a multi-Region (true) or regional (false) key.
+  # policy                             = ""     # Key policy JSON document.
+  # region                             = ""     # Region where this resource will be managed.
+  # tags                               = {}     # Key-value map of tags to assign to the key.
+  # valid_to                           = ""     # Time at which the imported key material expires.
+}
+]]></content>
+<tabTrigger>aws_kms_external_key</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a single-Region or multi-Region primary KMS key that uses external key material.</description>
+</snippet>

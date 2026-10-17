@@ -1,0 +1,28 @@
+<snippet>
+<content><![CDATA[
+resource "aws_fms_policy" "${1:name}" {
+  exclude_resource_tags = ${2:false}   # Whether resources with the tags specified in resource_tags are excluded from protection.
+  name                  = "${3:name}"  # Friendly name of the AWS Firewall Manager Policy.
+  security_service_policy_data {
+    type = "${4:type}"
+  }
+
+  # delete_all_policy_resources        = false  # If true, the request will also perform a clean-up process.
+  # delete_unused_fm_managed_resources = false  # If true, Firewall Manager will automatically remove protections from resources that leave the pol...
+  # description                        = ""     # Description of the AWS Network Firewall firewall policy.
+  # region                             = ""     # Region where this resource will be managed.
+  # remediation_enabled                = false  # Whether the policy is automatically applied to resources that already exist in the account.
+  # resource_set_ids                   = []     # Set of resource set IDs associated with the policy.
+  # resource_tag_logical_operator      = ""     # Controls how multiple resource tags are combined: with AND, so that a resource must have all tags...
+  # resource_tags                      = {}     # Map of resource tags that, if present, filter protections on resources based on exclude_resource_...
+  # resource_type                      = ""     # Resource type to protect.
+  # resource_type_list                 = []     # List of resource types to protect.
+  # tags                               = {}     # Key-value mapping of resource tags.
+  # exclude_map {}  # Map of lists of accounts and OUs to exclude from the policy.
+  # include_map {}  # Map of lists of accounts and OUs to include in the policy.
+}
+]]></content>
+<tabTrigger>aws_fms_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to create an AWS Firewall Manager policy</description>
+</snippet>

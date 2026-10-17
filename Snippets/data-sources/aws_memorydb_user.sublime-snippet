@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_memorydb_user" "${1:name}" {
+  user_name = "${2:user_name}"  # Name of the user.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_memorydb_user</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides information about a MemoryDB User.</description>
+</snippet>

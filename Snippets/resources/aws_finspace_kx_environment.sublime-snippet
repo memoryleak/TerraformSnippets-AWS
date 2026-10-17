@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_finspace_kx_environment" "${1:name}" {
+  kms_key_id = "${2:kms_key_id}"  # KMS key ID to encrypt your data in the FinSpace environment.
+  name       = "${3:name}"        # Name of the KX environment that you want to create.
+
+  # description = ""  # Description for the KX environment.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Key-value mapping of resource tags.
+  # custom_dns_configuration {}  # List of DNS server name and server IP.
+  # timeouts {}
+  # transit_gateway_configuration {}  # Transit gateway and network configuration that is used to connect the KX environment to an intern...
+}
+]]></content>
+<tabTrigger>aws_finspace_kx_environment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS FinSpace Kx Environment.</description>
+</snippet>

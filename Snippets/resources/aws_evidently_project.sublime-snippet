@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_evidently_project" "${1:name}" {
+  name = "${2:name}"  # A name for the project.
+
+  # description = ""  # Specifies the description of the project.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Tags to apply to the project.
+  # data_delivery {}  # A block that contains information about where Evidently is to store evaluation events for longer...
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_evidently_project</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudWatch Evidently Project resource.</description>
+</snippet>

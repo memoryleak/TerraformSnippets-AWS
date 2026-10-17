@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_inspector2_organization_configuration" "${1:name}" {
+  auto_enable {
+    ec2 = ${2:false}
+    ecr = ${3:false}
+  }
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_inspector2_organization_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an Amazon Inspector Organization Configuration.</description>
+</snippet>

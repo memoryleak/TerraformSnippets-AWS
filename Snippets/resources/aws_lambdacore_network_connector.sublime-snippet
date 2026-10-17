@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lambdacore_network_connector" "${1:name}" {
+  name          = "${2:name}"           # Name of the network connector, unique within the account and Region.
+  operator_role = "${3:operator_role}"  # ARN of the IAM role that the network connector service assumes to manage elastic network interfac...
+
+  # region = ""  # Region where this resource will be managed.
+  # configuration {}  # Network configuration of the connector.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_lambdacore_network_connector</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Lambda Network Connector for routing MicroVM egress traffic through a VPC.</description>
+</snippet>

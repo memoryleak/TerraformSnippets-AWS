@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_db_instance_automated_backups_replication" "${1:name}" {
+  source_db_instance_arn = "${2:source_db_instance_arn}"  # ARN of the source DB instance for the replicated automated backups, for example, arn:aws:rds:us-w...
+
+  # kms_key_id       = ""  # AWS KMS key identifier for encryption of the replicated automated backups.
+  # pre_signed_url   = ""  # URL that contains a Signature Version 4 signed request for the StartDBInstanceAutomatedBackupsRep...
+  # region           = ""  # Region where this resource will be managed.
+  # retention_period = 0   # Retention period for the replicated automated backups, defaults to 7.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_db_instance_automated_backups_replication</tabTrigger>
+<scope>source.terraform</scope>
+<description>Enables replication of automated backups to a different AWS Region.</description>
+</snippet>

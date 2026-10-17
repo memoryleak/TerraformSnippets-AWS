@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_efs_file_system" "${1:name}" {
+  # creation_token = ""  # Restricts the list to the file system with this creation token.
+  # file_system_id = ""  # ID that identifies the file system (e.g., fs-ccfc0d65).
+  # region         = ""  # Region where this resource will be managed.
+  # tags           = {}  # Restricts the list to the file system with these tags.
+}
+]]></content>
+<tabTrigger>data_aws_efs_file_system</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides an Elastic File System (EFS) File System data source.</description>
+</snippet>

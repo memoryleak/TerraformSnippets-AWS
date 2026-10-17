@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_odb_network_peering_connections" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_odb_network_peering_connections</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for retrieving all database network peering connections in Oracle Database@...</description>
+</snippet>

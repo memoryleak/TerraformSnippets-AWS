@@ -1,0 +1,43 @@
+<snippet>
+<content><![CDATA[
+resource "aws_codebuild_project" "${1:name}" {
+  name         = "${2:name}"          # Project's name.
+  service_role = "${3:service_role}"  # ARN of the AWS Identity and Access Management (IAM) role that
+  artifacts {
+    type = "${4:type}"
+  }
+  environment {
+    compute_type = "${5:compute_type}"
+    image        = "${6:image}"
+    type         = "${7:type}"
+  }
+  source {
+    type = "${8:type}"
+  }
+
+  # auto_retry_limit       = 0      # Specify a maximum number of additional automatic retries after a failed build.
+  # badge_enabled          = false  # Generates a publicly-accessible URL for the projects build badge.
+  # build_timeout          = 0      # Number of minutes, from 5 to 2160 (36 hours), for AWS CodeBuild to wait until timing out
+  # concurrent_build_limit = 0      # Specify a maximum number of concurrent builds for the project.
+  # description            = ""     # Short description of the project.
+  # encryption_key         = ""     # KMS customer master key (CMK) to be used for encrypting
+  # project_visibility     = ""     # Specifies the visibility of the project's builds.
+  # queued_timeout         = 0      # Number of minutes, from 5 to 480 (8 hours), a build is allowed to be queued before it
+  # region                 = ""     # Region where this resource will be managed.
+  # resource_access_role   = ""     # The ARN of the IAM role that enables CodeBuild to access the CloudWatch Logs and
+  # source_version         = ""     # Version of the build input to be built for this project.
+  # tags                   = {}     # Map of tags to assign to the resource.
+  # build_batch_config {}  # Defines the batch build options for the project.
+  # cache {}  # Configuration block.
+  # file_system_locations {}  # A set of file system locations to mount inside the build.
+  # logs_config {}  # Configuration block.
+  # secondary_artifacts {}  # Configuration block.
+  # secondary_source_version {}  # Configuration block.
+  # secondary_sources {}  # Configuration block.
+  # vpc_config {}  # Configuration block.
+}
+]]></content>
+<tabTrigger>aws_codebuild_project</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CodeBuild Project resource.</description>
+</snippet>

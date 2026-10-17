@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_backup_plan" "${1:name}" {
+  plan_id = "${2:plan_id}"  # Backup plan ID.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_backup_plan</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an AWS Backup plan.</description>
+</snippet>

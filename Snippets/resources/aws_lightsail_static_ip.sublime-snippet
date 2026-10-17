@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lightsail_static_ip" "${1:name}" {
+  name = "${2:name}"  # Name for the allocated static IP.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_lightsail_static_ip</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Lightsail Static IP.</description>
+</snippet>

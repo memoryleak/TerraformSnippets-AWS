@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iam_user_policies_exclusive" "${1:name}" {
+  policy_names = [${2}]            # A list of inline policy names to be assigned to the user.
+  user_name    = "${3:user_name}"  # IAM user name.
+}
+]]></content>
+<tabTrigger>aws_iam_user_policies_exclusive</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for maintaining exclusive management of inline policies assigned to an AWS IAM...</description>
+</snippet>

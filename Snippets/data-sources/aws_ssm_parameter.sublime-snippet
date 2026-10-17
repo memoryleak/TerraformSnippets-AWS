@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_ssm_parameter" "${1:name}" {
+  name = "${2:name}"  # Name of the parameter.
+
+  # region          = ""     # Region where this resource will be managed.
+  # with_decryption = false  # Whether to return decrypted SecureString value.
+}
+]]></content>
+<tabTrigger>data_aws_ssm_parameter</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides a SSM Parameter Data Source</description>
+</snippet>

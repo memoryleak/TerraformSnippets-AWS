@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatchomni_space" "${1:name}" {
+  data_access_role_arn = "${2:data_access_role_arn}"  # ARN of the IAM role CloudWatch Omni assumes to access data.
+  domain_id            = "${3:domain_id}"             # ID of the CloudWatch Omni domain the space belongs to.
+  name                 = "${4:name}"                  # Name of the space.
+
+  # agent_core_evaluation_role_arn = ""  # ARN of the IAM role used by AgentCore online evaluation.
+  # region                         = ""  # Region where this resource is managed.
+  # encryption_configuration {}  # Encryption of the space's data at rest.
+}
+]]></content>
+<tabTrigger>aws_cloudwatchomni_space</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a CloudWatch Omni Space.</description>
+</snippet>

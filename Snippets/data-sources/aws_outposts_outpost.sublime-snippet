@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_outposts_outpost" "${1:name}" {
+  # arn      = ""  # ARN.
+  # name     = ""  # Name of the Outpost.
+  # owner_id = ""  # AWS Account identifier of the Outpost owner.
+  # region   = ""  # Region where this resource will be managed.
+  # tags     = {}
+}
+]]></content>
+<tabTrigger>data_aws_outposts_outpost</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an Outposts Outpost</description>
+</snippet>

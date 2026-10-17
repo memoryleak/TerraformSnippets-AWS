@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_db_option_group" "${1:name}" {
+  engine_name          = "${2:engine_name}"           # Name of the engine that this option group should be associated with.
+  major_engine_version = "${3:major_engine_version}"  # Major version of the engine that this option group should be associated with.
+
+  # name                     = ""     # Name of the option group.
+  # name_prefix              = ""     # Creates a unique name beginning with the specified prefix.
+  # option_group_description = ""     # Description of the option group.
+  # region                   = ""     # Region where this resource will be managed.
+  # skip_destroy             = false  # Set to true if you do not wish the option group to be deleted at destroy time, and instead just r...
+  # tags                     = {}     # Map of tags to assign to the resource.
+  # option {}  # Options to apply.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_db_option_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an RDS DB option group resource.</description>
+</snippet>

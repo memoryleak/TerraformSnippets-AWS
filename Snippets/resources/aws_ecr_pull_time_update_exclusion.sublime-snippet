@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ecr_pull_time_update_exclusion" "${1:name}" {
+  principal_arn = "${2:principal_arn}"  # ARN of the IAM principal to exclude from having image pull times recorded.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_ecr_pull_time_update_exclusion</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS ECR (Elastic Container Registry) Pull Time Update Exclusion.</description>
+</snippet>

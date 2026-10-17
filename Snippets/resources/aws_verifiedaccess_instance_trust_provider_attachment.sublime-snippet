@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_verifiedaccess_instance_trust_provider_attachment" "${1:name}" {
+  verifiedaccess_instance_id       = "${2:verifiedaccess_instance_id}"        # ID of the Verified Access instance to attach the Trust Provider to.
+  verifiedaccess_trust_provider_id = "${3:verifiedaccess_trust_provider_id}"  # ID of the Verified Access trust provider.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_verifiedaccess_instance_trust_provider_attachment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing a Verified Access Instance Trust Provider Attachment.</description>
+</snippet>

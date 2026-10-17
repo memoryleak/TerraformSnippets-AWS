@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_macie2_invitation_accepter" "${1:name}" {
+  administrator_account_id = "${2:administrator_account_id}"  # AWS account ID for the account that sent the invitation.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_macie2_invitation_accepter</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage an Amazon Macie Invitation Accepter.</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_internet_gateway_attachment" "${1:name}" {
+  internet_gateway_id = "${2:internet_gateway_id}"  # The ID of the internet gateway.
+  vpc_id              = "${3:vpc_id}"               # The ID of the VPC.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_internet_gateway_attachment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to create a VPC Internet Gateway Attachment.</description>
+</snippet>

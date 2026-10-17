@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ce_anomaly_monitor" "${1:name}" {
+  monitor_type = "${2:monitor_type}"  # The possible type values.
+  name         = "${3:name}"          # The name of the monitor.
+
+  # monitor_dimension     = ""  # The dimensions to evaluate.
+  # monitor_specification = ""  # A valid JSON representation for the Expression object.
+  # tags                  = {}  # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_ce_anomaly_monitor</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CE Cost Anomaly Monitor</description>
+</snippet>

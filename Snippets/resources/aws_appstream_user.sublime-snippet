@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appstream_user" "${1:name}" {
+  authentication_type = "${2:authentication_type}"  # Authentication type for the user.
+  user_name           = "${3:user_name}"            # Email address of the user.
+
+  # enabled                 = false  # Whether the user in the user pool is enabled.
+  # first_name              = ""     # First name, or given name, of the user.
+  # last_name               = ""     # Last name, or surname, of the user.
+  # region                  = ""     # Region where this resource will be managed.
+  # send_email_notification = false  # Send an email notification.
+}
+]]></content>
+<tabTrigger>aws_appstream_user</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AppStream user</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_kendra_experience" "${1:name}" {
+  experience_id = "${2:experience_id}"  # Identifier of the Experience.
+  index_id      = "${3:index_id}"       # Identifier of the index that contains the Experience.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_kendra_experience</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific Amazon Kendra Experience.</description>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_organizations_organizational_unit" "${1:name}" {
+  name      = "${2:name}"       # Name of the organizational unit
+  parent_id = "${3:parent_id}"  # Parent ID of the organizational unit.
+}
+]]></content>
+<tabTrigger>data_aws_organizations_organizational_unit</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for getting an AWS Organizations Organizational Unit.</description>
+</snippet>

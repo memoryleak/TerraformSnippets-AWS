@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_cloudwatch_event_connection" "${1:name}" {
+  name = "${2:name}"  # Name of the connection.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_cloudwatch_event_connection</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides an EventBridge connection data source.</description>
+</snippet>

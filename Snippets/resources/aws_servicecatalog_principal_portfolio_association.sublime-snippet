@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_servicecatalog_principal_portfolio_association" "${1:name}" {
+  portfolio_id  = "${2:portfolio_id}"   # Portfolio identifier.
+  principal_arn = "${3:principal_arn}"  # Principal ARN.
+
+  # accept_language = ""  # Language code.
+  # principal_type  = ""  # Principal type.
+  # region          = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_servicecatalog_principal_portfolio_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Service Catalog Principal Portfolio Association</description>
+</snippet>

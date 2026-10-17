@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_connect_security_profile" "${1:name}" {
+  instance_id = "${2:instance_id}"  # Specifies the identifier of the hosting Amazon Connect Instance.
+  name        = "${3:name}"         # Specifies the name of the Security Profile.
+
+  # description = ""  # Specifies the description of the Security Profile.
+  # permissions = []  # Specifies a list of permissions assigned to the security profile.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Tags to apply to the Security Profile.
+}
+]]></content>
+<tabTrigger>aws_connect_security_profile</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides details about a specific Amazon Connect Security Profile.</description>
+</snippet>

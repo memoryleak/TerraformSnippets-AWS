@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_verifiedaccess_trust_provider" "${1:name}" {
+  policy_reference_name = "${2:policy_reference_name}"  # Identifier to be used when working with policy rules.
+  trust_provider_type   = "${3:trust_provider_type}"    # Type of trust provider can be either user or device-based.
+
+  # description                = ""  # Description for the AWS Verified Access trust provider.
+  # device_trust_provider_type = ""  # Type of device-based trust provider.
+  # region                     = ""  # Region where this resource will be managed.
+  # tags                       = {}  # Key-value mapping of resource tags.
+  # user_trust_provider_type   = ""  # Type of user-based trust provider.
+  # device_options {}  # Block of options for device identity based trust providers.
+  # native_application_oidc_options {}  # OpenID Connect details for a Native Application OIDC, user-identity based trust provider.
+  # oidc_options {}  # OpenID Connect details for an oidc-type, user-identity based trust provider.
+  # sse_specification {}  # Block of options in use for server side encryption.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_verifiedaccess_trust_provider</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing a Verified Access Trust Provider.</description>
+</snippet>

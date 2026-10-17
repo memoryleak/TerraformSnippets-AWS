@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_organizations_organization" "${1:name}" {
+  # aws_service_access_principals = []     # List of AWS service principal names for which you want to enable integration with your organization.
+  # enabled_policy_types          = []     # List of Organizations policy types to enable in the Organization Root.
+  # feature_set                   = ""     # Specify ALL (default) or CONSOLIDATED_BILLING.
+  # return_organization_only      = false  # Return (as attributes) only the results of the DescribeOrganization API to avoid API limits.
+}
+]]></content>
+<tabTrigger>aws_organizations_organization</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to create an organization.</description>
+</snippet>

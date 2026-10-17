@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_eks_access_policy_association" "${1:name}" {
+  cluster_name  = "${2:cluster_name}"   # Name of the EKS Cluster.
+  policy_arn    = "${3:policy_arn}"     # The ARN of the access policy that you're associating.
+  principal_arn = "${4:principal_arn}"  # The IAM Principal ARN which requires Authentication access to the EKS cluster.
+  access_scope {
+    type = "${5:type}"
+  }
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_eks_access_policy_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Access Entry Policy Association for an EKS Cluster.</description>
+</snippet>

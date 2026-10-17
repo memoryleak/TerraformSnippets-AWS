@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_costoptimizationhub_preferences" "${1:name}" {
+  # member_account_discount_visibility = ""  # Customize whether the member accounts can see the "After Discounts" savings estimates.
+  # savings_estimation_mode            = ""  # Customize how estimated monthly savings are calculated.
+}
+]]></content>
+<tabTrigger>aws_costoptimizationhub_preferences</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing AWS Cost Optimization Hub Preferences.</description>
+</snippet>

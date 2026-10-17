@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_rds_certificate" "${1:name}" {
+  certificate_identifier = "${2:certificate_identifier}"  # Certificate identifier.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_rds_certificate</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS RDS (Relational Database) Certificate.</description>
+</snippet>

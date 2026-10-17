@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_qbusiness_application" "${1:name}" {
+  display_name                 = "${2:display_name}"                  # Name of the Amazon Q application.
+  iam_service_role_arn         = "${3:iam_service_role_arn}"          # ARN of an IAM role with permissions to access your Amazon CloudWatch logs and metrics.
+  identity_center_instance_arn = "${4:identity_center_instance_arn}"  # ARN of the IAM Identity Center instance you are either creating for — or connecting to — your Ama...
+
+  # description = ""  # Description of the Amazon Q application.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Key-value map of resource tags.
+  # attachments_configuration {}  # Information about whether file upload functionality is activated or deactivated for your end user.
+  # encryption_configuration {}  # Information about encryption configuration.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_qbusiness_application</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Q Business Application resource.</description>
+</snippet>

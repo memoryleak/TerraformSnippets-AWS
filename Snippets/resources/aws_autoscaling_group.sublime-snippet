@@ -1,0 +1,54 @@
+<snippet>
+<content><![CDATA[
+resource "aws_autoscaling_group" "${1:name}" {
+  max_size = ${2:0}  # Maximum size of the Auto Scaling group.
+  min_size = ${3:0}  # Minimum size of the Auto Scaling group.
+
+  # availability_zones               = []     # A list of Availability Zones where instances in the Auto Scaling group can be created.
+  # capacity_rebalance               = false  # Whether capacity rebalance is enabled.
+  # context                          = ""     # Reserved.
+  # default_cooldown                 = 0      # Amount of time, in seconds, after a scaling activity completes before another scaling activity ca...
+  # default_instance_warmup          = 0      # Amount of time, in seconds, until a newly launched instance can contribute to the Amazon CloudWat...
+  # desired_capacity                 = 0      # Number of Amazon EC2 instances that
+  # desired_capacity_type            = ""     # The unit of measurement for the value specified for desired_capacity.
+  # enabled_metrics                  = []     # List of metrics to collect.
+  # force_delete                     = false  # Allows deleting the Auto Scaling group without waiting
+  # force_delete_warm_pool           = false  # Allows deleting the Auto Scaling group without waiting for all instances in the warm pool to term...
+  # health_check_grace_period        = 0      # Time (in seconds) after instance comes into service before checking health.
+  # health_check_type                = ""     # "EC2" or "ELB".
+  # ignore_failed_scaling_activities = false  # Whether to ignore failed Auto Scaling scaling activities while waiting for capacity.
+  # launch_configuration             = ""     # Name of the launch configuration to use.
+  # load_balancers                   = []     # List of elastic load balancer names to add to the Auto Scaling
+  # max_instance_lifetime            = 0      # Maximum amount of time, in seconds, that an instance can be in service, values must be either equ...
+  # metrics_granularity              = ""     # Granularity to associate with the metrics to collect.
+  # min_elb_capacity                 = 0      # Setting this causes Terraform to wait for
+  # name                             = ""     # Name of the Auto Scaling group.
+  # name_prefix                      = ""     # Creates a unique name beginning with the specified
+  # placement_group                  = ""     # Name of the placement group into which you'll launch your instances, if any.
+  # protect_from_scale_in            = false  # Whether newly launched instances
+  # region                           = ""     # Region where this resource will be managed.
+  # service_linked_role_arn          = ""     # ARN of the service-linked role that the ASG will use to call other AWS services
+  # suspended_processes              = []     # List of processes to suspend for the Auto Scaling group.
+  # target_group_arns                = []     # Set of aws_lb_target_group ARNs, for use with Application or Network Load Balancing.
+  # termination_policies             = []     # List of policies to decide how the instances in the Auto Scaling group should be terminated.
+  # vpc_zone_identifier              = []     # List of subnet IDs to launch resources in.
+  # wait_for_capacity_timeout        = ""     # Maximum
+  # wait_for_elb_capacity            = 0      # Setting this will cause Terraform to wait
+  # availability_zone_distribution {}
+  # capacity_reservation_specification {}
+  # initial_lifecycle_hook {}  # One or more
+  # instance_lifecycle_policy {}  # If this block is configured, adds an instance lifecycle policy to the specified Auto Scaling group.
+  # instance_maintenance_policy {}  # If this block is configured, add a instance maintenance policy to the specified Auto Scaling group.
+  # instance_refresh {}  # If this block is configured, start an
+  # launch_template {}  # Nested argument with Launch template specification to use to launch instances.
+  # mixed_instances_policy {}  # Configuration block containing settings to define launch targets for Auto Scaling groups.
+  # tag {}  # Configuration block(s) containing resource tags.
+  # timeouts {}
+  # traffic_source {}  # Attaches one or more traffic sources to the specified Auto Scaling group.
+  # warm_pool {}  # If this block is configured, add a Warm Pool
+}
+]]></content>
+<tabTrigger>aws_autoscaling_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Auto Scaling Group resource.</description>
+</snippet>

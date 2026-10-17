@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_budgets_budget" "${1:name}" {
+  name = "${2:name}"  # Name of the budget.
+
+  # account_id  = ""  # ID of the target account for the budget.
+  # name_prefix = ""  # Prefix of the budget name.
+  # tags        = {}
+}
+]]></content>
+<tabTrigger>data_aws_budgets_budget</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS Web Services Budgets Budget.</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_connect_bot_association" "${1:name}" {
+  instance_id = "${2:instance_id}"  # The identifier of the Amazon Connect instance.
+  lex_bot {
+    name = "${3:name}"
+  }
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_connect_bot_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Associates an Amazon Connect instance to an Amazon Lex (V1) bot</description>
+</snippet>

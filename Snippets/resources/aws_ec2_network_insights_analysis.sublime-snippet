@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_network_insights_analysis" "${1:name}" {
+  network_insights_path_id = "${2:network_insights_path_id}"  # ID of the Network Insights Path to run an analysis on.
+
+  # filter_in_arns      = []     # A list of ARNs for resources the path must traverse.
+  # region              = ""     # Region where this resource will be managed.
+  # tags                = {}     # Map of tags to assign to the resource.
+  # wait_for_completion = false  # If enabled, the resource will wait for the Network Insights Analysis status to change to succeede...
+}
+]]></content>
+<tabTrigger>aws_ec2_network_insights_analysis</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Network Insights Analysis resource.</description>
+</snippet>

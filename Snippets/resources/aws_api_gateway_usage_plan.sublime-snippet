@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_api_gateway_usage_plan" "${1:name}" {
+  name = "${2:name}"  # Name of the usage plan.
+
+  # description  = ""  # Description of a usage plan.
+  # product_code = ""  # AWS Marketplace product identifier to associate with the usage plan as a SaaS product on AWS Mark...
+  # region       = ""  # Region where this resource will be managed.
+  # tags         = {}  # Key-value map of resource tags.
+  # api_stages {}  # Associated API stages of the usage plan.
+  # quota_settings {}  # Quota settings of the usage plan.
+  # throttle_settings {}  # Throttling limits of the usage plan.
+}
+]]></content>
+<tabTrigger>aws_api_gateway_usage_plan</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an API Gateway Usage Plan.</description>
+</snippet>

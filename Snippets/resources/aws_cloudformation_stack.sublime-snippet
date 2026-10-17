@@ -1,0 +1,25 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudformation_stack" "${1:name}" {
+  name = "${2:name}"  # Stack name.
+
+  # capabilities       = []     # A list of capabilities.
+  # disable_rollback   = false  # Set to true to disable rollback of the stack if stack creation failed.
+  # iam_role_arn       = ""     # The ARN of an IAM role that AWS CloudFormation assumes to create the stack.
+  # notification_arns  = []     # A list of SNS topic ARNs to publish stack related events.
+  # on_failure         = ""     # Action to be taken if stack creation fails.
+  # parameters         = {}     # A map of Parameter structures that specify input parameters for the stack.
+  # policy_body        = ""     # Structure containing the stack policy body.
+  # policy_url         = ""     # Location of a file containing the stack policy.
+  # region             = ""     # Region where this resource will be managed.
+  # tags               = {}     # Map of resource tags to associate with this stack.
+  # template_body      = ""     # Structure containing the template body (max size: 51,200 bytes).
+  # template_url       = ""     # Location of a file containing the template body (max size: 460,800 bytes).
+  # timeout_in_minutes = 0      # The amount of time that can pass before the stack status becomes CREATE_FAILED.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_cloudformation_stack</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudFormation Stack resource.</description>
+</snippet>

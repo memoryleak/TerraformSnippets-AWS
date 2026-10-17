@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_sagemaker_prebuilt_ecr_image" "${1:name}" {
+  repository_name = "${2:repository_name}"  # Name of the repository, which is generally the algorithm or library.
+
+  # dns_suffix = ""  # DNS suffix to use in the registry path.
+  # image_tag  = ""  # Image tag for the Docker image.
+  # region     = ""  # Region to use in the registry path.
+}
+]]></content>
+<tabTrigger>data_aws_sagemaker_prebuilt_ecr_image</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information about prebuilt Amazon SageMaker AI Docker images.</description>
+</snippet>

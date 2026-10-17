@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_api_gateway_request_validator" "${1:name}" {
+  name        = "${2:name}"         # Name of the request validator
+  rest_api_id = "${3:rest_api_id}"  # ID of the associated Rest API
+
+  # region                      = ""     # Region where this resource will be managed.
+  # validate_request_body       = false  # Boolean whether to validate request body.
+  # validate_request_parameters = false  # Boolean whether to validate request parameters.
+}
+]]></content>
+<tabTrigger>aws_api_gateway_request_validator</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an API Gateway Request Validator.</description>
+</snippet>

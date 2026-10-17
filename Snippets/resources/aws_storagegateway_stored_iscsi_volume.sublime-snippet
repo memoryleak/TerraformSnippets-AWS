@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_storagegateway_stored_iscsi_volume" "${1:name}" {
+  disk_id                = "${2:disk_id}"               # The unique identifier for the gateway local disk that is configured as a stored volume.
+  gateway_arn            = "${3:gateway_arn}"           # ARN of the gateway.
+  network_interface_id   = "${4:network_interface_id}"  # The network interface of the gateway on which to expose the iSCSI target.
+  preserve_existing_data = ${5:false}                   # Specify this field as true if you want to preserve the data on the local disk.
+  target_name            = "${6:target_name}"           # The name of the iSCSI target used by initiators to connect to the target and as a suffix for the...
+
+  # kms_encrypted = false  # true to use Amazon S3 server side encryption with your own AWS KMS key, or false to use a key man...
+  # kms_key       = ""     # ARN of the AWS KMS key used for Amazon S3 server side encryption.
+  # region        = ""     # Region where this resource will be managed.
+  # snapshot_id   = ""     # The snapshot ID of the snapshot to restore as the new stored volumeE.g., snap-1122aabb.
+  # tags          = {}     # Key-value mapping of resource tags.
+}
+]]></content>
+<tabTrigger>aws_storagegateway_stored_iscsi_volume</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Storage Gateway stored iSCSI volume</description>
+</snippet>

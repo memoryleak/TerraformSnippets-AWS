@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_elasticache_global_replication_group" "${1:name}" {
+  global_replication_group_id_suffix = "${2:global_replication_group_id_suffix}"  # The suffix name of a Global Datastore.
+  primary_replication_group_id       = "${3:primary_replication_group_id}"        # The ID of the primary cluster that accepts writes and will replicate updates to the secondary clu...
+
+  # automatic_failover_enabled           = false  # Specifies whether read-only replicas will be automatically promoted to read/write primary if the...
+  # cache_node_type                      = ""     # The instance class used.
+  # engine                               = ""     # The name of the cache engine to be used for the clusters in this global replication group.
+  # engine_version                       = ""     # Engine version to use for the Global Replication Group.
+  # global_replication_group_description = ""     # A user-created description for the global replication group.
+  # num_node_groups                      = 0      # The number of node groups (shards) on the global replication group.
+  # parameter_group_name                 = ""     # An ElastiCache Parameter Group to use for the Global Replication Group.
+  # region                               = ""     # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_elasticache_global_replication_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an ElastiCache Global Replication Group resource.</description>
+</snippet>

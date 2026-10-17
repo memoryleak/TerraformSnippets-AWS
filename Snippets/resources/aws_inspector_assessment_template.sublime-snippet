@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_inspector_assessment_template" "${1:name}" {
+  duration           = ${2:0}             # The duration of the inspector run.
+  name               = "${3:name}"        # The name of the assessment template.
+  rules_package_arns = [${4}]             # The rules to be used during the run.
+  target_arn         = "${5:target_arn}"  # The assessment target ARN to attach the template to.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value map of tags for the Inspector assessment template.
+  # event_subscription {}  # A block that enables sending notifications about a specified assessment template event to a desig...
+}
+]]></content>
+<tabTrigger>aws_inspector_assessment_template</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Inspector Classic Assessment Template.</description>
+</snippet>

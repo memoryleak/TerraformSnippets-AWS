@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_route53recoverycontrolconfig_safety_rule" "${1:name}" {
+  control_panel_arn = "${2:control_panel_arn}"  # ARN of the control panel in which this safety rule will reside.
+  name              = "${3:name}"               # Name describing the safety rule.
+  wait_period_ms    = ${4:0}                    # Evaluation period, in milliseconds (ms), during which any request against the target routing cont...
+  rule_config {
+    inverted  = ${5:false}
+    threshold = ${6:0}
+    type      = "${7:type}"
+  }
+
+  # asserted_controls = []  # Routing controls that are part of transactions that are evaluated to determine if a request to ch...
+  # gating_controls   = []  # Gating controls for the new gating rule.
+  # tags              = {}  # A map of tags to assign to the resource.
+  # target_controls   = []  # Routing controls that can only be set or unset if the specified rule_config evaluates to true for...
+}
+]]></content>
+<tabTrigger>aws_route53recoverycontrolconfig_safety_rule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AWS Route 53 Recovery Control Config Safety Rule</description>
+</snippet>

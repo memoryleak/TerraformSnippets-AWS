@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudfront_trust_store" "${1:name}" {
+  name = "${2:name}"  # Name of the trust store.
+
+  # tags = {}  # Key-value tags for the place index.
+  # ca_certificates_bundle_source {}  # Configuration block for the CA certificates bundle source.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_cloudfront_trust_store</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS CloudFront Trust Store.</description>
+</snippet>

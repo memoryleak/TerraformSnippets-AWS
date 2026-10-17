@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sagemaker_labeling_job" "${1:name}" {
+  label_attribute_name = "${2:label_attribute_name}"  # Attribute name to use for the label in the output manifest file.
+  labeling_job_name    = "${3:labeling_job_name}"     # Name of the labeling job.
+  role_arn             = "${4:role_arn}"              # ARN of IAM role that Amazon SageMaker assumes to perform tasks during data labeling.
+
+  # label_category_config_s3_uri = ""  # S3 URI of the file that defines the categories used to label the data objects.
+  # region                       = ""  # Region where this resource will be managed.
+  # stopping_conditions          = []  # Conditions for stopping a labeling job.
+  # tags                         = {}  # A mapping of tags to assign to the resource.
+  # human_task_config {}  # Configuration information required for human workers to complete a labeling task.
+  # input_config {}  # Input data for the labeling job.
+  # labeling_job_algorithms_config {}  # Information required to perform automated data labeling..
+  # output_config {}  # Location of the output data.
+}
+]]></content>
+<tabTrigger>aws_sagemaker_labeling_job</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manage an Amazon SageMaker labeling job.</description>
+</snippet>

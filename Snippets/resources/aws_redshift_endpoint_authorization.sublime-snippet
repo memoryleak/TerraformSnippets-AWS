@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_redshift_endpoint_authorization" "${1:name}" {
+  account            = "${2:account}"             # The Amazon Web Services account ID to grant access to.
+  cluster_identifier = "${3:cluster_identifier}"  # The cluster identifier of the cluster to grant access to.
+
+  # force_delete = false  # Indicates whether to force the revoke action.
+  # region       = ""     # Region where this resource will be managed.
+  # vpc_ids      = []     # VPC identifiers to grant access to.
+}
+]]></content>
+<tabTrigger>aws_redshift_endpoint_authorization</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Redshift Endpoint Authorization resource.</description>
+</snippet>

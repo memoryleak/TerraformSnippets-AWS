@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_emr_instance_fleet" "${1:name}" {
+  cluster_id = "${2:cluster_id}"  # ID of the EMR Cluster to attach to.
+
+  # name                      = ""  # Friendly name given to the instance fleet.
+  # region                    = ""  # Region where this resource will be managed.
+  # target_on_demand_capacity = 0   # The target capacity of On-Demand units for the instance fleet, which determines how many On-Deman...
+  # target_spot_capacity      = 0   # The target capacity of Spot units for the instance fleet, which determines how many Spot instance...
+  # instance_type_configs {}  # Configuration block for instance fleet
+  # launch_specifications {}  # Configuration block for launch specification
+}
+]]></content>
+<tabTrigger>aws_emr_instance_fleet</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Elastic MapReduce Cluster Instance Fleet</description>
+</snippet>

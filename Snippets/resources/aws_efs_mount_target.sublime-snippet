@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_efs_mount_target" "${1:name}" {
+  file_system_id = "${2:file_system_id}"  # The ID of the file system for which the mount target is intended.
+  subnet_id      = "${3:subnet_id}"       # The ID of the subnet to add the mount target in.
+
+  # ip_address      = ""  # The address (within the address range of the specified subnet) at
+  # ip_address_type = ""  # IP address type for the mount target.
+  # ipv6_address    = ""  # IPv6 address to use.
+  # region          = ""  # Region where this resource will be managed.
+  # security_groups = []  # A list of up to 5 VPC security group IDs (that must
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_efs_mount_target</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Elastic File System (EFS) mount target.</description>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_shield_subscription" "${1:name}" {
+  # auto_renew   = ""     # Toggle for automated renewal of the subscription.
+  # skip_destroy = false  # Skip attempting to disable automated renewal upon destruction.
+}
+]]></content>
+<tabTrigger>aws_shield_subscription</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Shield Subscription.</description>
+</snippet>

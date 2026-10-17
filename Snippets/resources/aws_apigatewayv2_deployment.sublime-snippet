@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_apigatewayv2_deployment" "${1:name}" {
+  api_id = "${2:api_id}"  # API identifier.
+
+  # description = ""  # Description for the deployment resource.
+  # region      = ""  # Region where this resource will be managed.
+  # triggers    = {}  # Map of arbitrary keys and values that, when changed, will trigger a redeployment.
+}
+]]></content>
+<tabTrigger>aws_apigatewayv2_deployment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Amazon API Gateway Version 2 deployment.</description>
+</snippet>

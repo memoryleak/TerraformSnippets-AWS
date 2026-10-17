@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_outposts_capacity_task" "${1:name}" {
+  outpost_identifier = "${2:outpost_identifier}"  # ID or ARN of the Outpost on which to run the capacity task.
+
+  # asset_id                          = ""  # ID of a specific Outposts asset (hardware server) to target for the capacity task.
+  # order_id                          = ""  # ID of the Amazon Web Services Outposts order associated with the capacity task.
+  # region                            = ""  # Region where this resource will be managed.
+  # task_action_on_blocking_instances = ""  # Action to take if running instances block the capacity task.
+  # instance_pool {}  # One or more instance_pool blocks defining the desired instance-type layout for the Outpost.
+  # instances_to_exclude {}  # Single instances_to_exclude block specifying user-owned running instances that must not be stoppe...
+  # timeouts {}  # Configuration block with timeouts.
+}
+]]></content>
+<tabTrigger>aws_outposts_capacity_task</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Outposts Capacity Task.</description>
+</snippet>

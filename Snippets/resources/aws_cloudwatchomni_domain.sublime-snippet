@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatchomni_domain" "${1:name}" {
+  identity_providers = [${2}]       # Set of identity providers that users can sign in with.
+  name               = "${3:name}"  # Name of the domain.
+
+  # region = ""  # Region where this resource will be managed.
+  # identity_provider_configuration {}  # Identity provider configuration.
+}
+]]></content>
+<tabTrigger>aws_cloudwatchomni_domain</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Amazon CloudWatch Omni domain.</description>
+</snippet>

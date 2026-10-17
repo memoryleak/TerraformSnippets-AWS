@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ami_copy" "${1:name}" {
+  name              = "${2:name}"               # Region-unique name for the AMI.
+  source_ami_id     = "${3:source_ami_id}"      # ID of the AMI to copy.
+  source_ami_region = "${4:source_ami_region}"  # Region from which the AMI will be copied.
+
+  # deprecation_time        = ""
+  # description             = ""
+  # destination_outpost_arn = ""     # ARN of the Outpost to which to copy the AMI.
+  # encrypted               = false  # Whether the destination snapshots of the copied image should be encrypted.
+  # kms_key_id              = ""     # Full ARN of the KMS Key to use when encrypting the snapshots of an image during a copy operation.
+  # region                  = ""     # Region where this resource will be managed.
+  # tags                    = {}     # Map of tags to assign to the resource.
+  # ebs_block_device {}
+  # ephemeral_block_device {}
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ami_copy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Duplicates an existing Amazon Machine Image (AMI)</description>
+</snippet>

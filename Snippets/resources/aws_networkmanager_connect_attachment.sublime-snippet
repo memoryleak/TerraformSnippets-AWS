@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_networkmanager_connect_attachment" "${1:name}" {
+  core_network_id         = "${2:core_network_id}"          # ID of a core network where you want to create the attachment.
+  edge_location           = "${3:edge_location}"            # Region where the edge is located.
+  transport_attachment_id = "${4:transport_attachment_id}"  # ID of the attachment between the two connections.
+  options {
+  }
+
+  # routing_policy_label = ""  # The routing policy label to apply to the Connect attachment for traffic routing decisions.
+  # tags                 = {}  # Key-value tags for the attachment.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_networkmanager_connect_attachment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Network Manager Connect Attachment.</description>
+</snippet>

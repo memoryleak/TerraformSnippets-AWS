@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_kendra_data_source" "${1:name}" {
+  index_id = "${2:index_id}"  # Identifier of the index for your Amazon Kendra data source.
+  name     = "${3:name}"      # Name for your data source connector.
+  type     = "${4:type}"      # Type of data source repository.
+
+  # description   = ""  # Description for the Data Source connector.
+  # language_code = ""  # Code for a language.
+  # region        = ""  # Region where this resource will be managed.
+  # role_arn      = ""  # ARN of a role with permission to access the data source connector.
+  # schedule      = ""  # Sets the frequency for Amazon Kendra to check the documents in your Data Source repository and up...
+  # tags          = {}  # Key-value map of resource tags.
+  # configuration {}  # Configuration information to connect to your Data Source repository.
+  # custom_document_enrichment_configuration {}  # Configuration information for altering document metadata and content during the document ingestio...
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_kendra_data_source</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Kendra Data Source.</description>
+</snippet>

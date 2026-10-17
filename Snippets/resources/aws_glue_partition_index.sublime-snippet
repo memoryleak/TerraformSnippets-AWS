@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_glue_partition_index" "${1:name}" {
+  database_name = "${2:database_name}"  # Name of the metadata database where the table metadata resides.
+  table_name    = "${3:table_name}"     # Name of the table.
+  partition_index {
+  }
+
+  # catalog_id = ""  # Catalog ID where the table resides.
+  # region     = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_glue_partition_index</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Glue Partition Index.</description>
+</snippet>

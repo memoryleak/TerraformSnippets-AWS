@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appstream_directory_config" "${1:name}" {
+  directory_name                          = "${2:directory_name}"  # Fully qualified name of the directory.
+  organizational_unit_distinguished_names = [${3}]                 # Distinguished names of the organizational units for computer accounts.
+  service_account_credentials {
+    account_name     = "${4:account_name}"
+    account_password = "${5:account_password}"
+  }
+
+  # region = ""  # Region where this resource will be managed.
+  # certificate_based_auth_properties {}  # Configuration block for the certificate-based authentication properties used to authenticate SAML...
+}
+]]></content>
+<tabTrigger>aws_appstream_directory_config</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AppStream Directory Config</description>
+</snippet>

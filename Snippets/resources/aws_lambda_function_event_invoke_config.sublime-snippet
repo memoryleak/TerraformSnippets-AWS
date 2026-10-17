@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lambda_function_event_invoke_config" "${1:name}" {
+  function_name = "${2:function_name}"  # Name or ARN of the Lambda Function, omitting any version or alias qualifier.
+
+  # maximum_event_age_in_seconds = 0   # Maximum age of a request that Lambda sends to a function for processing in seconds.
+  # maximum_retry_attempts       = 0   # Maximum number of times to retry when the function returns an error.
+  # qualifier                    = ""  # Lambda Function published version, \$LATEST, or Lambda Alias name.
+  # region                       = ""  # Region where this resource will be managed.
+  # destination_config {}  # Configuration block with destination configuration.
+}
+]]></content>
+<tabTrigger>aws_lambda_function_event_invoke_config</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Lambda Function Event Invoke Config.</description>
+</snippet>

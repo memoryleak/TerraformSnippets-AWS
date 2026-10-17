@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_media_package_channel" "${1:name}" {
+  channel_id = "${2:channel_id}"  # Unique identifier describing the channel
+
+  # description = ""  # Description of the channel
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_media_package_channel</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AWS Elemental MediaPackage Channel.</description>
+</snippet>

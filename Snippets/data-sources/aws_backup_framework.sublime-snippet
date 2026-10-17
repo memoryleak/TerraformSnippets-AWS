@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_backup_framework" "${1:name}" {
+  name = "${2:name}"  # Backup framework name.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_backup_framework</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an AWS Backup Framework.</description>
+</snippet>

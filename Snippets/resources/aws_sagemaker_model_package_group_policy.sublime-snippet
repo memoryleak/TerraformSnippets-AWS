@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sagemaker_model_package_group_policy" "${1:name}" {
+  model_package_group_name = "${2:model_package_group_name}"  # The name of the model package group.
+  resource_policy          = "${3:resource_policy}"
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_sagemaker_model_package_group_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a SageMaker AI Model Package Group Policy resource.</description>
+</snippet>

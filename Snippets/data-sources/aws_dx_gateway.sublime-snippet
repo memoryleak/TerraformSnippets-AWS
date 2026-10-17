@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_dx_gateway" "${1:name}" {
+  name = "${2:name}"  # Name of the gateway to retrieve.
+
+  # tags = {}
+}
+]]></content>
+<tabTrigger>data_aws_dx_gateway</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Retrieve information about a Direct Connect Gateway</description>
+</snippet>

@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_oam_link" "${1:name}" {
+  label_template  = "${2:label_template}"   # Human-readable name to use to identify this source account when you are viewing data from it in t...
+  resource_types  = [${3}]                  # Types of data that the source account shares with the monitoring account.
+  sink_identifier = "${4:sink_identifier}"  # Identifier of the sink to use to create this link.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # A map of tags to assign to the resource.
+  # link_configuration {}  # Configuration for creating filters that specify that only some metric namespaces or log groups ar...
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_oam_link</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS CloudWatch Observability Access Manager Link.</description>
+</snippet>

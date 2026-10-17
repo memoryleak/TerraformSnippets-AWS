@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_resiliencehubv2_policy" "${1:name}" {
+  name = "${2:name}"  # Name of the policy.
+
+  # description     = ""     # Description of the policy.
+  # kms_key_id      = ""     # KMS key ARN.
+  # region          = ""     # Region where this resource will be managed.
+  # sharing_enabled = false  # Whether the policy is shared with other member accounts of the organization.
+  # tags            = {}     # Map of tags to assign to the resource.
+  # availability_slo {}  # Availability SLO configuration.
+  # data_recovery {}  # Data recovery configuration.
+  # multi_az {}  # Multi-AZ disaster recovery configuration.
+  # multi_region {}  # Multi-region disaster recovery configuration.
+}
+]]></content>
+<tabTrigger>aws_resiliencehubv2_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Resilience Hub V2 Policy.</description>
+</snippet>

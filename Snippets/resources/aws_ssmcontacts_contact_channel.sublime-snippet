@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ssmcontacts_contact_channel" "${1:name}" {
+  contact_id = "${2:contact_id}"  # ARN of the AWS SSM Contact that the contact channel belongs to.
+  name       = "${3:name}"        # Name of the contact channel.
+  type       = "${4:type}"        # Type of the contact channel.
+  delivery_address {
+    simple_address = "${5:simple_address}"
+  }
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_ssmcontacts_contact_channel</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS SSM Contacts Contact Channel.</description>
+</snippet>

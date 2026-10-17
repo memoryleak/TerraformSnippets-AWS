@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_workspacesweb_portal" "${1:name}" {
+  # additional_encryption_context = {}  # Additional encryption context for the customer managed key.
+  # authentication_type           = ""  # Authentication type for the portal.
+  # browser_settings_arn          = ""  # ARN of the browser settings to use for the portal.
+  # customer_managed_key          = ""  # ARN of the customer managed key.
+  # display_name                  = ""  # Display name of the portal.
+  # instance_type                 = ""  # Instance type for the portal.
+  # max_concurrent_sessions       = 0   # Maximum number of concurrent sessions for the portal.
+  # region                        = ""  # Region where this resource will be managed.
+  # tags                          = {}  # Key-value map of resource tags.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_workspacesweb_portal</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS WorkSpaces Web Portal.</description>
+</snippet>

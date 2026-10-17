@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_auditmanager_assessment_delegation" "${1:name}" {
+  assessment_id  = "${2:assessment_id}"   # Identifier for the assessment.
+  control_set_id = "${3:control_set_id}"  # Assessment control set name.
+  role_arn       = "${4:role_arn}"        # ARN of the IAM role.
+  role_type      = "${5:role_type}"       # Type of customer persona.
+
+  # comment = ""  # Comment describing the delegation request.
+  # region  = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_auditmanager_assessment_delegation</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Audit Manager Assessment Delegation.</description>
+</snippet>

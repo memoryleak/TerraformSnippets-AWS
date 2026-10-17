@@ -1,0 +1,33 @@
+<snippet>
+<content><![CDATA[
+resource "aws_odb_cloud_vm_cluster" "${1:name}" {
+  cpu_core_count           = ${2:0}                  # Number of CPU cores to enable on the VM cluster.
+  data_storage_size_in_tbs = ${3:0}                  # Size of the data disk group, in terabytes (TBs), to allocate for the VM cluster.
+  db_servers               = [${4}]                  # List of database servers for the VM cluster.
+  display_name             = "${5:display_name}"     # User-friendly name for the VM cluster.
+  gi_version               = "${6:gi_version}"       # Valid Oracle Grid Infrastructure (GI) software version.
+  hostname_prefix          = "${7:hostname_prefix}"  # Host name prefix for the VM cluster.
+  ssh_public_keys          = [${8}]                  # Public key portion of one or more key pairs used for SSH access to the VM cluster.
+
+  # cloud_exadata_infrastructure_arn = ""     # ARN of the Exadata infrastructure for this VM cluster.
+  # cloud_exadata_infrastructure_id  = ""     # Unique identifier of the Exadata infrastructure for this VM cluster.
+  # cluster_name                     = ""     # Name of the Grid Infrastructure (GI) cluster.
+  # db_node_storage_size_in_gbs      = 0      # Amount of local node storage, in gigabytes (GBs), to allocate for the VM cluster.
+  # is_local_backup_enabled          = false  # Whether to enable database backups to local Exadata storage for the VM cluster.
+  # is_sparse_diskgroup_enabled      = false  # Whether to create a sparse disk group for the VM cluster.
+  # license_model                    = ""     # Oracle license model to apply to the VM cluster.
+  # memory_size_in_gbs               = 0      # Amount of memory, in gigabytes (GBs), to allocate for the VM cluster.
+  # odb_network_arn                  = ""     # ARN of the ODB network for the VM cluster.
+  # odb_network_id                   = ""     # Unique identifier of the ODB network for the VM cluster.
+  # region                           = ""     # Region where this resource will be managed.
+  # scan_listener_port_tcp           = 0      # Port number for TCP connections to the single client access name (SCAN) listener.
+  # tags                             = {}     # Map of tags to assign to the exadata infrastructure.
+  # timezone                         = ""     # Configured time zone of the VM cluster.
+  # data_collection_options {}  # Set of preferences for the various diagnostic collection options for the VM cluster.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_odb_cloud_vm_cluster</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing cloud vm cluster resource in AWS for Oracle Database@AWS.</description>
+</snippet>

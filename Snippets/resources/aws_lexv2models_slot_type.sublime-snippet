@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lexv2models_slot_type" "${1:name}" {
+  bot_id      = "${2:bot_id}"       # Identifier of the bot associated with this slot type.
+  bot_version = "${3:bot_version}"  # Version of the bot associated with this slot type.
+  locale_id   = "${4:locale_id}"    # Identifier of the language and locale where this slot type is used.
+  name        = "${5:name}"         # Name of the slot type.
+
+  # description                = ""  # Description of the slot type.
+  # parent_slot_type_signature = ""  # Built-in slot type used as a parent of this slot type.
+  # region                     = ""  # Region where this resource will be managed.
+  # composite_slot_type_setting {}  # Specifications for a composite slot type.
+  # external_source_setting {}  # Type of external information used to create the slot type.
+  # slot_type_values {}  # List of SlotTypeValue objects that defines the values that the slot type can take.
+  # timeouts {}
+  # value_selection_setting {}  # Determines the strategy that Amazon Lex uses to select a value from the list of possible values.
+}
+]]></content>
+<tabTrigger>aws_lexv2models_slot_type</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Lex V2 Models Slot Type.</description>
+</snippet>

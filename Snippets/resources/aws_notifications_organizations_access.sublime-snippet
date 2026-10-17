@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_notifications_organizations_access" "${1:name}" {
+  enabled = ${2:false}  # Whether to enable organizations access for AWS User Notifications in AWS Organizations.
+
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_notifications_organizations_access</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing AWS User Notifications Organizations Access.</description>
+</snippet>

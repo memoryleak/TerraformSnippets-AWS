@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ecr_registry_scanning_configuration" "${1:name}" {
+  scan_type = "${2:scan_type}"  # the scanning type to set for the registry.
+
+  # region = ""  # Region where this resource will be managed.
+  # rule {}  # One or multiple blocks specifying scanning rules to determine which repository filters are used a...
+}
+]]></content>
+<tabTrigger>aws_ecr_registry_scanning_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Elastic Container Registry Scanning Configuration.</description>
+</snippet>

@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_emr_instance_group" "${1:name}" {
+  cluster_id    = "${2:cluster_id}"
+  instance_type = "${3:instance_type}"
+
+  # autoscaling_policy  = ""     # The Auto Scaling policy document.
+  # bid_price           = ""     # If set, the bid price for each EC2 instance in the instance group, expressed in USD.
+  # configurations_json = ""     # A JSON string for supplying list of configurations specific to the EMR instance group.
+  # ebs_optimized       = false
+  # instance_count      = 0
+  # name                = ""
+  # region              = ""     # Region where this resource will be managed.
+  # ebs_config {}
+}
+]]></content>
+<tabTrigger>aws_emr_instance_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Elastic MapReduce Cluster Instance Group</description>
+</snippet>

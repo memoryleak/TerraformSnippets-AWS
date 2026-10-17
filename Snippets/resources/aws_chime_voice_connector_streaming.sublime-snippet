@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_chime_voice_connector_streaming" "${1:name}" {
+  data_retention     = ${2:0}                     # The retention period, in hours, for the Amazon Kinesis data.
+  voice_connector_id = "${3:voice_connector_id}"  # The Amazon Chime Voice Connector ID.
+
+  # disabled                       = false  # When true, media streaming to Amazon Kinesis is turned off.
+  # region                         = ""     # Region where this resource will be managed.
+  # streaming_notification_targets = []     # The streaming notification targets.
+  # media_insights_configuration {}  # The media insights configuration.
+}
+]]></content>
+<tabTrigger>aws_chime_voice_connector_streaming</tabTrigger>
+<scope>source.terraform</scope>
+<description>The streaming configuration associated with an Amazon Chime Voice Connector.</description>
+</snippet>

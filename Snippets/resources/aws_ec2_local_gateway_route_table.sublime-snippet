@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_local_gateway_route_table" "${1:name}" {
+  local_gateway_id = "${2:local_gateway_id}"  # Identifier of the EC2 Local Gateway.
+  mode             = "${3:mode}"              # Mode of the Local Gateway Route Table.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value map of resource tags.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ec2_local_gateway_route_table</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an EC2 Local Gateway Route Table</description>
+</snippet>

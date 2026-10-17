@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_waf_ipset" "${1:name}" {
+  name = "${2:name}"  # Name of the WAF IP set.
+}
+]]></content>
+<tabTrigger>data_aws_waf_ipset</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Retrieves an AWS WAF IP set id.</description>
+</snippet>

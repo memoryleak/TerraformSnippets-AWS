@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_quicksight_ip_restriction" "${1:name}" {
+  enabled = ${2:false}  # Whether IP rules are turned on.
+
+  # aws_account_id                       = ""  # AWS account ID.
+  # ip_restriction_rule_map              = {}  # Map of allowed IPv4 CIDR ranges and descriptions.
+  # region                               = ""  # Region where this resource will be managed.
+  # vpc_endpoint_id_restriction_rule_map = {}  # Map of allowed VPC endpoint IDs and descriptions.
+  # vpc_id_restriction_rule_map          = {}  # Map of VPC IDs and descriptions.
+}
+]]></content>
+<tabTrigger>aws_quicksight_ip_restriction</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages the content and status of IP rules.</description>
+</snippet>

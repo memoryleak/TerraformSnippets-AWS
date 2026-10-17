@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_datasync_location_azure_blob" "${1:name}" {
+  agent_arns          = [${2}]                      # A list of DataSync Agent ARNs with which this location will be associated.
+  authentication_type = "${3:authentication_type}"  # The authentication method DataSync uses to access your Azure Blob Storage.
+  container_url       = "${4:container_url}"        # The URL of the Azure Blob Storage container involved in your transfer.
+
+  # access_tier  = ""  # The access tier that you want your objects or files transferred into.
+  # blob_type    = ""  # The type of blob that you want your objects or files to be when transferring them into Azure Blob...
+  # region       = ""  # Region where this resource will be managed.
+  # subdirectory = ""  # Path segments if you want to limit your transfer to a virtual directory in the container.
+  # tags         = {}  # Key-value pairs of resource tags to assign to the DataSync Location.
+  # sas_configuration {}  # The SAS configuration that allows DataSync to access your Azure Blob Storage.
+}
+]]></content>
+<tabTrigger>aws_datasync_location_azure_blob</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS DataSync Microsoft Azure Blob Storage Location</description>
+</snippet>

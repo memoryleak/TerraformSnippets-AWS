@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_msk_configuration" "${1:name}" {
+  name              = "${2:name}"               # Name of the configuration.
+  server_properties = "${3:server_properties}"  # Contents of the server.properties file.
+
+  # description    = ""  # Description of the configuration.
+  # kafka_versions = []  # List of Apache Kafka versions which can use this configuration.
+  # region         = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_msk_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an Amazon Managed Streaming for Kafka configuration</description>
+</snippet>

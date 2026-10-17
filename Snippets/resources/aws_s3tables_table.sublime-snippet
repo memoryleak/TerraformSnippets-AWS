@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3tables_table" "${1:name}" {
+  format           = "${2:format}"            # Format of the table.
+  name             = "${3:name}"              # Name of the table.
+  namespace        = "${4:namespace}"         # Name of the namespace for this table.
+  table_bucket_arn = "${5:table_bucket_arn}"  # ARN referencing the Table Bucket that contains this Namespace.
+
+  # encryption_configuration  = {}  # Single table bucket encryption configuration object.
+  # maintenance_configuration = {}  # Single table bucket maintenance configuration object.
+  # region                    = ""  # Region where this resource will be managed.
+  # tags                      = {}  # Key-value map of resource tags.
+  # metadata {}  # Details about the table metadata.
+}
+]]></content>
+<tabTrigger>aws_s3tables_table</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an Amazon S3 Tables Table.</description>
+</snippet>

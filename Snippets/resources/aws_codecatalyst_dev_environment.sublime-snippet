@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+resource "aws_codecatalyst_dev_environment" "${1:name}" {
+  instance_type = "${2:instance_type}"  # The Amazon EC2 instance type to use for the Dev Environment.
+  project_name  = "${3:project_name}"   # The name of the project in the space.
+  space_name    = "${4:space_name}"     # The name of the space.
+  ides {
+  }
+  persistent_storage {
+    size = ${5:0}
+  }
+
+  # alias                      = ""
+  # inactivity_timeout_minutes = 0   # The amount of time the Dev Environment will run without any activity detected before stopping, in...
+  # region                     = ""  # Region where this resource will be managed.
+  # repositories {}  # The source repository that contains the branch to clone into the Dev Environment.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_codecatalyst_dev_environment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS CodeCatalyst Devenvironment.</description>
+</snippet>

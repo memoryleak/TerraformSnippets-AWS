@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_amplify_webhook" "${1:name}" {
+  app_id      = "${2:app_id}"       # Unique ID for an Amplify app.
+  branch_name = "${3:branch_name}"  # Name for a branch that is part of the Amplify app.
+
+  # description = ""  # Description for a webhook.
+  # region      = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_amplify_webhook</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Amplify Webhook resource.</description>
+</snippet>

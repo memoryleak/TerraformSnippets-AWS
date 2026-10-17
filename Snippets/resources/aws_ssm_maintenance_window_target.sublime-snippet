@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ssm_maintenance_window_target" "${1:name}" {
+  resource_type = "${2:resource_type}"  # The type of target being registered with the Maintenance Window.
+  window_id     = "${3:window_id}"      # The ID of the maintenance window to register the target with.
+  targets {
+    key    = "${4:key}"
+    values = [${5}]
+  }
+
+  # description       = ""  # The description of the maintenance window target.
+  # name              = ""  # The name of the maintenance window target.
+  # owner_information = ""  # User-provided value that will be included in any CloudWatch events raised while running tasks for...
+  # region            = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_ssm_maintenance_window_target</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an SSM Maintenance Window Target resource</description>
+</snippet>

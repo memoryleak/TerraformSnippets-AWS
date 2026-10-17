@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_wafv2_web_acl" "${1:name}" {
+  scope = "${2:scope}"  # Specifies whether this is for an AWS CloudFront distribution or for a regional application.
+
+  # name         = ""  # Name of the WAFv2 Web ACL.
+  # region       = ""  # Region where this resource will be managed.
+  # resource_arn = ""  # ARN of the AWS resource associated with the Web ACL.
+}
+]]></content>
+<tabTrigger>data_aws_wafv2_web_acl</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Retrieves the summary of a WAFv2 Web ACL.</description>
+</snippet>

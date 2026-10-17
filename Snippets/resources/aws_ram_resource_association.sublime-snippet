@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ram_resource_association" "${1:name}" {
+  resource_arn       = "${2:resource_arn}"        # ARN of the resource to associate with the RAM Resource Share.
+  resource_share_arn = "${3:resource_share_arn}"  # ARN of the RAM Resource Share.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_ram_resource_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Resource Access Manager (RAM) Resource Association.</description>
+</snippet>

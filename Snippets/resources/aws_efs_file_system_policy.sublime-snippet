@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_efs_file_system_policy" "${1:name}" {
+  file_system_id = "${2:file_system_id}"  # The ID of the EFS file system.
+  policy         = "${3:policy}"          # The JSON formatted file system policy for the EFS file system.
+
+  # bypass_policy_lockout_safety_check = false  # A flag to indicate whether to bypass the aws_efs_file_system_policy lockout safety check.
+  # region                             = ""     # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_efs_file_system_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Elastic File System (EFS) File System Policy resource.</description>
+</snippet>

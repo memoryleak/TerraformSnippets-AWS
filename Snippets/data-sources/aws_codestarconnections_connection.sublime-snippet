@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_codestarconnections_connection" "${1:name}" {
+  # arn    = ""  # CodeStar Connection ARN.
+  # name   = ""  # CodeStar Connection name.
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_codestarconnections_connection</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about CodeStar Connection</description>
+</snippet>

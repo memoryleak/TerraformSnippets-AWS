@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpc_route_server" "${1:name}" {
+  amazon_side_asn = ${2:0}  # Border Gateway Protocol (BGP) Autonomous System Number (ASN) for the appliance.
+
+  # persist_routes            = ""     # Whether routes should be persisted after all BGP sessions are terminated.
+  # persist_routes_duration   = 0      # Number of minutes a route server will wait after BGP is re-established to unpersist the routes in...
+  # region                    = ""     # Region where this resource will be managed.
+  # sns_notifications_enabled = false  # Whether to enable SNS notifications for route server events.
+  # tags                      = {}     # Map of tags to assign to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_vpc_route_server</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing a VPC Route Server.</description>
+</snippet>

@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ivs_recording_configuration" "${1:name}" {
+  destination_configuration {
+    s3 {
+      bucket_name = "${2:bucket_name}"
+    }
+  }
+
+  # name                               = ""  # Recording Configuration name.
+  # recording_reconnect_window_seconds = 0   # If a broadcast disconnects and then reconnects within the specified interval, the multiple stream...
+  # region                             = ""  # Region where this resource will be managed.
+  # tags                               = {}  # A map of tags to assign to the resource.
+  # thumbnail_configuration {}  # Object containing information to enable/disable the recording of thumbnails for a live session an...
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ivs_recording_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS IVS (Interactive Video) Recording Configuration.</description>
+</snippet>

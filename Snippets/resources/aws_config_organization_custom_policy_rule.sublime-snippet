@@ -1,0 +1,25 @@
+<snippet>
+<content><![CDATA[
+resource "aws_config_organization_custom_policy_rule" "${1:name}" {
+  name           = "${2:name}"            # Name of the rule.
+  policy_runtime = "${3:policy_runtime}"  # Runtime system for policy rules.
+  policy_text    = "${4:policy_text}"     # Policy definition containing the rule logic.
+  trigger_types  = [${5}]                 # List of notification types that trigger AWS Config to run an evaluation for the rule.
+
+  # debug_log_delivery_accounts = []  # List of accounts that you can enable debug logging for.
+  # description                 = ""  # Description of the rule.
+  # excluded_accounts           = []  # List of AWS account identifiers to exclude from the rule.
+  # input_parameters            = ""  # A string in JSON format that is passed to the AWS Config Rule Lambda Function.
+  # maximum_execution_frequency = ""  # Maximum frequency with which AWS Config runs evaluations for a rule, if the rule is triggered at...
+  # region                      = ""  # Region where this resource will be managed.
+  # resource_id_scope           = ""  # Identifier of the AWS resource to evaluate.
+  # resource_types_scope        = []  # List of types of AWS resources to evaluate.
+  # tag_key_scope               = ""  # Tag key of AWS resources to evaluate.
+  # tag_value_scope             = ""  # Tag value of AWS resources to evaluate.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_config_organization_custom_policy_rule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Config Organization Custom Policy.</description>
+</snippet>

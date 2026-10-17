@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_servicequotas_template_association" "${1:name}" {
+  # region       = ""     # Region where this resource will be managed.
+  # skip_destroy = false  # Skip disassociating the quota increase template upon destruction.
+}
+]]></content>
+<tabTrigger>aws_servicequotas_template_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Service Quotas Template Association.</description>
+</snippet>

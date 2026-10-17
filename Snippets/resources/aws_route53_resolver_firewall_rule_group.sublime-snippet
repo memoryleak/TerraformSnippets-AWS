@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_route53_resolver_firewall_rule_group" "${1:name}" {
+  name = "${2:name}"  # A name that lets you identify the rule group, to manage and use it.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_route53_resolver_firewall_rule_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Route 53 Resolver DNS Firewall rule group resource.</description>
+</snippet>

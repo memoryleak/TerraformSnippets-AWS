@@ -1,0 +1,24 @@
+<snippet>
+<content><![CDATA[
+resource "aws_elastic_beanstalk_environment" "${1:name}" {
+  application = "${2:application}"  # Name of the application that contains the version
+  name        = "${3:name}"         # A unique name for this Environment.
+
+  # cname_prefix           = ""  # Prefix to use for the fully qualified DNS name of
+  # description            = ""  # Short description of the Environment
+  # platform_arn           = ""  # The ARN of the Elastic Beanstalk Platform
+  # poll_interval          = ""  # The time between polling the AWS API to
+  # region                 = ""  # Region where this resource will be managed.
+  # solution_stack_name    = ""  # A solution stack to base your environment
+  # tags                   = {}  # A set of tags to apply to the Environment.
+  # template_name          = ""  # The name of the Elastic Beanstalk Configuration
+  # tier                   = ""  # Elastic Beanstalk Environment tier.
+  # version_label          = ""  # The name of the Elastic Beanstalk Application Version
+  # wait_for_ready_timeout = ""  # (Default 20m) The maximum
+  # setting {}  # Option settings to configure the new Environment.
+}
+]]></content>
+<tabTrigger>aws_elastic_beanstalk_environment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Elastic Beanstalk Environment Resource</description>
+</snippet>

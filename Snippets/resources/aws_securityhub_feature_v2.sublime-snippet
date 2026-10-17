@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_securityhub_feature_v2" "${1:name}" {
+  feature_name   = "${2:feature_name}"    # Name of the opt-in feature to enable.
+  feature_status = "${3:feature_status}"  # Current enablement status of the feature.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_securityhub_feature_v2</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an opt-in Security Hub V2 feature for this AWS account.</description>
+</snippet>

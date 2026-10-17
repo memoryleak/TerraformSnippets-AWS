@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_route53recoveryreadiness_resource_set" "${1:name}" {
+  resource_set_name = "${2:resource_set_name}"  # Unique name describing the resource set.
+  resource_set_type = "${3:resource_set_type}"  # Type of the resources in the resource set.
+  resources {
+  }
+
+  # tags = {}  # Key-value mapping of resource tags.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_route53recoveryreadiness_resource_set</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AWS Route 53 Recovery Readiness Resource Set</description>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_detective_organization_admin_account" "${1:name}" {
+  account_id = "${2:account_id}"  # AWS account identifier to designate as a delegated administrator for Detective.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_detective_organization_admin_account</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Detective Organization Admin Account</description>
+</snippet>

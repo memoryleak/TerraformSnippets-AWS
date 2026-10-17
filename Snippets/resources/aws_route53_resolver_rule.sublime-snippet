@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_route53_resolver_rule" "${1:name}" {
+  domain_name = "${2:domain_name}"  # DNS queries for this domain name are forwarded to the IP addresses that are specified using targe...
+  rule_type   = "${3:rule_type}"    # Rule type.
+
+  # name                 = ""  # Friendly name that lets you easily find a rule in the Resolver dashboard in the Route 53 console.
+  # region               = ""  # Region where this resource will be managed.
+  # resolver_endpoint_id = ""
+  # tags                 = {}  # Map of tags to assign to the resource.
+  # target_ip {}  # Configuration block(s) indicating the IPs that you want Resolver to forward DNS queries to (docum...
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_route53_resolver_rule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Route53 Resolver rule.</description>
+</snippet>

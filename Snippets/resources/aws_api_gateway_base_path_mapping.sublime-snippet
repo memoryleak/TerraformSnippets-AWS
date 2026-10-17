@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_api_gateway_base_path_mapping" "${1:name}" {
+  api_id      = "${2:api_id}"       # ID of the API to connect.
+  domain_name = "${3:domain_name}"  # Already-registered domain name to connect the API to.
+
+  # base_path      = ""  # Path segment that must be prepended to the path when accessing the API via this mapping.
+  # domain_name_id = ""  # Identifier for the domain name resource.
+  # region         = ""  # Region where this resource will be managed.
+  # stage_name     = ""  # Name of a specific deployment stage to expose at the given path.
+}
+]]></content>
+<tabTrigger>aws_api_gateway_base_path_mapping</tabTrigger>
+<scope>source.terraform</scope>
+<description>Connects a custom domain with a deployed API</description>
+</snippet>

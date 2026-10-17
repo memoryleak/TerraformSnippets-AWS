@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+data "aws_appmesh_virtual_service" "${1:name}" {
+  mesh_name = "${2:mesh_name}"  # Name of the service mesh in which the virtual service exists.
+  name      = "${3:name}"       # Name of the virtual service.
+
+  # mesh_owner = ""  # AWS account ID of the service mesh's owner.
+  # region     = ""  # Region where this resource will be managed.
+  # tags       = {}
+}
+]]></content>
+<tabTrigger>data_aws_appmesh_virtual_service</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS App Mesh Virtual Service.</description>
+</snippet>

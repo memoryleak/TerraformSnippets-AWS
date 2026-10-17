@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpc_ipam_resource_discovery_association" "${1:name}" {
+  ipam_id                    = "${2:ipam_id}"                     # ID of the IPAM to associate.
+  ipam_resource_discovery_id = "${3:ipam_resource_discovery_id}"  # ID of the Resource Discovery to associate.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags to add to the IPAM resource discovery association resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_vpc_ipam_resource_discovery_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an IPAM Resource Discovery Association resource.</description>
+</snippet>

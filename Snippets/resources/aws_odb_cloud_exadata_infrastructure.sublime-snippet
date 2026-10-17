@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+resource "aws_odb_cloud_exadata_infrastructure" "${1:name}" {
+  availability_zone_id = "${2:availability_zone_id}"  # AZ ID of the AZ where the Exadata infrastructure is located.
+  display_name         = "${3:display_name}"          # User-friendly name for the Exadata infrastructure.
+  shape                = "${4:shape}"                 # Model name of the Exadata infrastructure.
+
+  # availability_zone                = ""  # Name of the Availability Zone (AZ) where the Exadata infrastructure is located.
+  # compute_count                    = 0   # Number of compute instances that the Exadata infrastructure is located.
+  # customer_contacts_to_send_to_oci = []  # Email addresses of contacts to receive notification from Oracle about maintenance updates for the...
+  # database_server_type             = ""  # Database server model type of the Exadata infrastructure.
+  # region                           = ""  # Region where this resource will be managed.
+  # storage_count                    = 0   # Number of storage servers that are activated for the Exadata infrastructure.
+  # storage_server_type              = ""  # Storage server model type of the Exadata infrastructure.
+  # tags                             = {}  # Map of tags to assign to the exadata infrastructure.
+  # maintenance_window {}
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_odb_cloud_exadata_infrastructure</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing exadata infrastructure resource for Oracle Database@AWS.</description>
+</snippet>

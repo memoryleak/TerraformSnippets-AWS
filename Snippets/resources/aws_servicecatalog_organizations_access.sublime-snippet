@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_servicecatalog_organizations_access" "${1:name}" {
+  enabled = ${2:false}  # Whether to enable AWS Organizations access.
+
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_servicecatalog_organizations_access</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages Service Catalog Organizations Access</description>
+</snippet>

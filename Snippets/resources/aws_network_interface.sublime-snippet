@@ -1,0 +1,34 @@
+<snippet>
+<content><![CDATA[
+resource "aws_network_interface" "${1:name}" {
+  subnet_id = "${2:subnet_id}"  # Subnet ID to create the ENI in.
+
+  # description               = ""     # Description for the network interface.
+  # enable_primary_ipv6       = false  # Enables assigning a primary IPv6 Global Unicast Address (GUA) to the network interface (ENI) in d...
+  # interface_type            = ""     # Type of network interface to create.
+  # ipv4_prefix_count         = 0      # Number of IPv4 prefixes that AWS automatically assigns to the network interface.
+  # ipv4_prefixes             = []     # One or more IPv4 prefixes assigned to the network interface.
+  # ipv6_address_count        = 0      # Number of IPv6 addresses to assign to a network interface.
+  # ipv6_address_list         = []     # List of private IPs to assign to the ENI in sequential order.
+  # ipv6_address_list_enabled = false  # Whether ipv6_address_list is allowed and controls the IPs to assign to the ENI and ipv6_addresses...
+  # ipv6_addresses            = []     # One or more specific IPv6 addresses from the IPv6 CIDR block range of your subnet.
+  # ipv6_prefix_count         = 0      # Number of IPv6 prefixes that AWS automatically assigns to the network interface.
+  # ipv6_prefixes             = []     # One or more IPv6 prefixes assigned to the network interface.
+  # private_ip                = ""
+  # private_ip_list           = []     # List of private IPs to assign to the ENI in sequential order.
+  # private_ip_list_enabled   = false  # Whether private_ip_list is allowed and controls the IPs to assign to the ENI and private_ips and...
+  # private_ips               = []     # List of private IPs to assign to the ENI without regard to order.
+  # private_ips_count         = 0      # Number of secondary private IPs to assign to the ENI.
+  # region                    = ""     # Region where this resource will be managed.
+  # security_groups           = []     # List of security group IDs to assign to the ENI.
+  # source_dest_check         = false  # Whether to enable source destination checking for the ENI.
+  # tags                      = {}     # Map of tags to assign to the resource.
+  # attachment {}  # Configuration block to define the attachment of the ENI.
+  # connection_tracking_specification {}  # Configures the connection tracking timeouts for the network interface.
+  # ena_srd_specification {}  # Configures ENA Express for the network interface.
+}
+]]></content>
+<tabTrigger>aws_network_interface</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Elastic network interface (ENI) resource.</description>
+</snippet>

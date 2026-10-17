@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_elastic_beanstalk_application" "${1:name}" {
+  name = "${2:name}"  # Name of the application
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_elastic_beanstalk_application</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Retrieve information about an Elastic Beanstalk Application</description>
+</snippet>

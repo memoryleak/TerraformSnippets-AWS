@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_route53_hosted_zone_dnssec" "${1:name}" {
+  hosted_zone_id = "${2:hosted_zone_id}"  # Identifier of the Route 53 Hosted Zone.
+
+  # signing_status = ""  # Hosted Zone signing status.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_route53_hosted_zone_dnssec</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages Route 53 Hosted Zone DNSSEC</description>
+</snippet>

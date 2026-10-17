@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_iam_user" "${1:name}" {
+  user_name = "${2:user_name}"  # Friendly IAM user name to match.
+
+  # tags = {}
+}
+]]></content>
+<tabTrigger>data_aws_iam_user</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on a Amazon IAM user</description>
+</snippet>

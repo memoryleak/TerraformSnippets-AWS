@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_efs_access_point" "${1:name}" {
+  file_system_id = "${2:file_system_id}"  # ID of the file system for which the access point is intended.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value mapping of resource tags.
+  # posix_user {}  # Operating system user and group applied to all file system requests made using the access point.
+  # root_directory {}  # Directory on the Amazon EFS file system that the access point provides access to.
+}
+]]></content>
+<tabTrigger>aws_efs_access_point</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Elastic File System (EFS) access point.</description>
+</snippet>

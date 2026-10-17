@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_imagebuilder_image_recipe" "${1:name}" {
+  arn = "${2:arn}"  # ARN of the image recipe.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_imagebuilder_image_recipe</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an Image Builder Image Recipe</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_bedrockagent_agent_versions" "${1:name}" {
+  agent_id = "${2:agent_id}"  # Unique identifier of the agent.
+
+  # region = ""  # Region where this resource will be managed.
+  # agent_version_summaries {}
+}
+]]></content>
+<tabTrigger>data_aws_bedrockagent_agent_versions</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about AWS Bedrock Agents Agent Versions.</description>
+</snippet>

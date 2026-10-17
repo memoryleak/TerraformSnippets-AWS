@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_devopsguru_service_integration" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # kms_server_side_encryption {}  # Information about whether DevOps Guru is configured to encrypt server-side data using KMS.
+  # logs_anomaly_detection {}  # Information about whether DevOps Guru is configured to perform log anomaly detection on Amazon Cl...
+  # ops_center {}  # Information about whether DevOps Guru is configured to create an OpsItem in AWS Systems Manager O...
+}
+]]></content>
+<tabTrigger>aws_devopsguru_service_integration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS DevOps Guru Service Integration.</description>
+</snippet>

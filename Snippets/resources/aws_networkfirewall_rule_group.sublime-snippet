@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_networkfirewall_rule_group" "${1:name}" {
+  capacity = ${2:0}       # The maximum number of operating resources that this rule group can use.
+  name     = "${3:name}"  # A friendly name of the rule group.
+  type     = "${4:type}"  # Whether the rule group is stateless (containing stateless rules) or stateful (containing stateful...
+
+  # description = ""  # A friendly description of the rule group.
+  # region      = ""  # Region where this resource will be managed.
+  # rules       = ""  # The stateful rule group rules specifications in Suricata file format, with one rule per line.
+  # tags        = {}  # A map of key:value pairs to associate with the resource.
+  # encryption_configuration {}  # KMS encryption configuration settings.
+  # rule_group {}  # A configuration block that defines the rule group rules.
+}
+]]></content>
+<tabTrigger>aws_networkfirewall_rule_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AWS Network Firewall Rule Group resource.</description>
+</snippet>

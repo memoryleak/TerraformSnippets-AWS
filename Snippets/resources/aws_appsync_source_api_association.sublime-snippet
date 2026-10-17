@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_appsync_source_api_association" "${1:name}" {
+  # description                   = ""  # Description of the source API being merged.
+  # merged_api_arn                = ""  # ARN of the merged API.
+  # merged_api_id                 = ""  # ID of the merged API.
+  # region                        = ""  # Region where this resource will be managed.
+  # source_api_arn                = ""  # ARN of the source API.
+  # source_api_association_config = []  # Source API Association configuration.
+  # source_api_id                 = ""  # ID of the source API.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_appsync_source_api_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS AppSync Source API Association.</description>
+</snippet>

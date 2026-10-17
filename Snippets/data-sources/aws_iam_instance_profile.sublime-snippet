@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_iam_instance_profile" "${1:name}" {
+  name = "${2:name}"  # Friendly IAM instance profile name to match.
+}
+]]></content>
+<tabTrigger>data_aws_iam_instance_profile</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on a Amazon IAM Instance Profile</description>
+</snippet>

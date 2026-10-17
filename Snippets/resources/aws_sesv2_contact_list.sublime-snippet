@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sesv2_contact_list" "${1:name}" {
+  contact_list_name = "${2:contact_list_name}"  # Name of the contact list.
+
+  # description = ""  # Description of what the contact list is about.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Key-value map of resource tags for the contact list.
+  # topic {}  # Configuration block(s) with topic for the contact list.
+}
+]]></content>
+<tabTrigger>aws_sesv2_contact_list</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS SESv2 (Simple Email V2) Contact List.</description>
+</snippet>

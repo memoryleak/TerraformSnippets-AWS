@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_acmpca_certificate" "${1:name}" {
+  certificate_authority_arn   = "${2:certificate_authority_arn}"    # ARN of the certificate authority.
+  certificate_signing_request = "${3:certificate_signing_request}"  # Certificate Signing Request in PEM format.
+  signing_algorithm           = "${4:signing_algorithm}"            # Algorithm to use to sign certificate requests.
+  validity {
+    type  = "${5:type}"
+    value = "${6:value}"
+  }
+
+  # api_passthrough = ""  # Specifies X.509 certificate information to be included in the issued certificate.
+  # region          = ""  # Region where this resource will be managed.
+  # template_arn    = ""  # Template to use when issuing a certificate.
+}
+]]></content>
+<tabTrigger>aws_acmpca_certificate</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to issue a certificate using AWS Certificate Manager Private Certificate Auth...</description>
+</snippet>

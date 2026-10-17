@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ecr_pull_through_cache_rule" "${1:name}" {
+  ecr_repository_prefix = "${2:ecr_repository_prefix}"  # The repository name prefix to use when caching images from the source registry.
+  upstream_registry_url = "${3:upstream_registry_url}"  # The registry URL of the upstream registry to use as the source.
+
+  # credential_arn             = ""  # ARN of the Secret which will be used to authenticate against the registry.
+  # custom_role_arn            = ""  # The ARN of the IAM role associated with the pull through cache rule.
+  # region                     = ""  # Region where this resource will be managed.
+  # upstream_repository_prefix = ""  # The upstream repository prefix associated with the pull through cache rule.
+}
+]]></content>
+<tabTrigger>aws_ecr_pull_through_cache_rule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Elastic Container Registry Pull Through Cache Rule.</description>
+</snippet>

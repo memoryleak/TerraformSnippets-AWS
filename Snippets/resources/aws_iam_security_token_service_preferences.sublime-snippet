@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iam_security_token_service_preferences" "${1:name}" {
+  global_endpoint_token_version = "${2:global_endpoint_token_version}"  # The version of the STS global endpoint token.
+}
+]]></content>
+<tabTrigger>aws_iam_security_token_service_preferences</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an IAM Security Token Service Preferences resource.</description>
+</snippet>

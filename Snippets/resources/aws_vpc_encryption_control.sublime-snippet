@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpc_encryption_control" "${1:name}" {
+  mode   = "${2:mode}"    # Mode to enable for VPC Encryption Control.
+  vpc_id = "${3:vpc_id}"  # ID of the VPC the VPC Encryption Control is linked to.
+
+  # egress_only_internet_gateway_exclusion = ""  # Whether to exclude Egress-Only Internet Gateways from encryption enforcement.
+  # elastic_file_system_exclusion          = ""  # Whether to exclude Elastic File System (EFS) from encryption enforcement.
+  # internet_gateway_exclusion             = ""  # Whether to exclude Internet Gateways from encryption enforcement.
+  # lambda_exclusion                       = ""  # Whether to exclude Lambda Functions from encryption enforcement.
+  # nat_gateway_exclusion                  = ""  # Whether to exclude NAT Gateways from encryption enforcement.
+  # region                                 = ""  # Region where this resource will be managed.
+  # tags                                   = {}  # Map of tags to assign to the resource.
+  # virtual_private_gateway_exclusion      = ""  # Whether to exclude Virtual Private Gateways from encryption enforcement.
+  # vpc_lattice_exclusion                  = ""  # Whether to exclude VPC Lattice from encryption enforcement.
+  # vpc_peering_exclusion                  = ""  # Whether to exclude peered VPCs from encryption enforcement.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_vpc_encryption_control</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a VPC Encryption Control.</description>
+</snippet>

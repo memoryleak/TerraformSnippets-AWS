@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+data "aws_fsx_openzfs_snapshot" "${1:name}" {
+  # most_recent  = false  # If more than one result is returned, use the most recent snapshot.
+  # name         = ""     # Name of the snapshot.
+  # region       = ""     # Region where this resource will be managed.
+  # snapshot_ids = []     # Returns information on a specific snapshot_id.
+  # tags         = {}
+  # filter {}  # Configuration block.
+}
+]]></content>
+<tabTrigger>data_aws_fsx_openzfs_snapshot</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on an Amazon FSx for OpenZFS snapshot.</description>
+</snippet>

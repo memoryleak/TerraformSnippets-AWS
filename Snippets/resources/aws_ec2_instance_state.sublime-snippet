@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_instance_state" "${1:name}" {
+  instance_id = "${2:instance_id}"  # ID of the instance.
+  state       = "${3:state}"        # - State of the instance.
+
+  # force  = false  # Whether to request a forced stop when state is stopped.
+  # region = ""     # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ec2_instance_state</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an EC2 instance state resource.</description>
+</snippet>

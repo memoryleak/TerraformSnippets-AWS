@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sagemaker_user_profile" "${1:name}" {
+  domain_id         = "${2:domain_id}"          # The ID of the associated Domain.
+  user_profile_name = "${3:user_profile_name}"  # The name for the User Profile.
+
+  # region                         = ""  # Region where this resource will be managed.
+  # single_sign_on_user_identifier = ""  # A specifier for the type of value specified in single_sign_on_user_value.
+  # single_sign_on_user_value      = ""  # The username of the associated AWS Single Sign-On User for this User Profile.
+  # tags                           = {}  # A map of tags to assign to the resource.
+  # user_settings {}  # The user settings.
+}
+]]></content>
+<tabTrigger>aws_sagemaker_user_profile</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a SageMaker AI User Profile resource.</description>
+</snippet>

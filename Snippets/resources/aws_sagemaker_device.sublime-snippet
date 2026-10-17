@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sagemaker_device" "${1:name}" {
+  device_fleet_name = "${2:device_fleet_name}"  # The name of the Device Fleet.
+  device {
+    device_name = "${3:device_name}"
+  }
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_sagemaker_device</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a SageMaker AI Device resource.</description>
+</snippet>

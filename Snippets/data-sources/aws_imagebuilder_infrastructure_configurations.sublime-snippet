@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_imagebuilder_infrastructure_configurations" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # filter {}  # Configuration block(s) for filtering.
+}
+]]></content>
+<tabTrigger>data_aws_imagebuilder_infrastructure_configurations</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on Image Builder Infrastructure Configurations.</description>
+</snippet>

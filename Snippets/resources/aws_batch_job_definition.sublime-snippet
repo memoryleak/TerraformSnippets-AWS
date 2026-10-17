@@ -1,0 +1,25 @@
+<snippet>
+<content><![CDATA[
+resource "aws_batch_job_definition" "${1:name}" {
+  name = "${2:name}"  # Name of the job definition.
+  type = "${3:type}"  # Type of job definition.
+
+  # container_properties       = ""     # Valid container properties provided as a single valid JSON document.
+  # deregister_on_new_revision = false  # When updating a job definition a new revision is created.
+  # ecs_properties             = ""     # Valid ECS properties provided as a single valid JSON document.
+  # node_properties            = ""     # Valid node properties provided as a single valid JSON document.
+  # parameters                 = {}     # Parameter substitution placeholders to set in the job definition.
+  # platform_capabilities      = []     # Platform capabilities required by the job definition.
+  # propagate_tags             = false  # Whether to propagate the tags from the job definition to the corresponding Amazon ECS task.
+  # region                     = ""     # Region where this resource will be managed.
+  # scheduling_priority        = 0      # Scheduling priority of the job definition.
+  # tags                       = {}     # Key-value map of resource tags.
+  # eks_properties {}  # Valid EKS properties.
+  # retry_strategy {}  # Retry strategy to use for failed jobs that are submitted with this job definition.
+  # timeout {}  # Timeout for jobs so that if a job runs longer, AWS Batch terminates the job.
+}
+]]></content>
+<tabTrigger>aws_batch_job_definition</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Batch Job Definition resource.</description>
+</snippet>

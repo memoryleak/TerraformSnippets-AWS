@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+data "aws_route53_resolver_rules" "${1:name}" {
+  # name_regex           = ""  # Regex string to filter resolver rule names.
+  # owner_id             = ""
+  # region               = ""  # Region where this resource will be managed.
+  # resolver_endpoint_id = ""
+  # rule_type            = ""
+  # share_status         = ""
+}
+]]></content>
+<tabTrigger>data_aws_route53_resolver_rules</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a set of Route53 Resolver rules</description>
+</snippet>

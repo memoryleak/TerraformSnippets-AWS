@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_connect_phone_number_contact_flow_association" "${1:name}" {
+  contact_flow_id = "${2:contact_flow_id}"  # Contact flow ID.
+  instance_id     = "${3:instance_id}"      # Amazon Connect instance ID.
+  phone_number_id = "${4:phone_number_id}"  # Phone number ID.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_connect_phone_number_contact_flow_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Associates a flow with a phone number claimed to an Amazon Connect instance.</description>
+</snippet>

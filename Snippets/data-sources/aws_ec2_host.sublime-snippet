@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_ec2_host" "${1:name}" {
+  # host_id = ""  # ID of the Dedicated Host.
+  # region  = ""  # Region where this resource will be managed.
+  # tags    = {}
+  # filter {}  # Configuration block.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_ec2_host</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on an EC2 Host.</description>
+</snippet>

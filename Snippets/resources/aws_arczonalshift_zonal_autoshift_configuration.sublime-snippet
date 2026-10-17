@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_arczonalshift_zonal_autoshift_configuration" "${1:name}" {
+  resource_arn           = "${2:resource_arn}"            # The ARN of the managed resource to configure zonal autoshift for (e.g., an Application Load Balan...
+  zonal_autoshift_status = "${3:zonal_autoshift_status}"  # The status of zonal autoshift.
+
+  # allowed_windows = []  # List of time windows during which practice runs are allowed, in the format Day:HH:MM-Day:HH:MM (e...
+  # blocked_dates   = []  # List of dates when practice runs should not be started, in the format YYYY-MM-DD.
+  # blocked_windows = []  # List of time windows during which practice runs should not be started, in the format Day:HH:MM-Da...
+  # region          = ""  # AWS region where the resource is deployed.
+  # blocking_alarms {}  # List of CloudWatch alarms that can block practice runs when in alarm state.
+  # outcome_alarms {}  # List of CloudWatch alarms monitored during practice runs.
+}
+]]></content>
+<tabTrigger>aws_arczonalshift_zonal_autoshift_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Application Recovery Controller Zonal Shift Zonal Autoshift Configuration.</description>
+</snippet>

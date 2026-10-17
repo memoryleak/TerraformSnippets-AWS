@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_emr_studio_session_mapping" "${1:name}" {
+  identity_type      = "${2:identity_type}"       # Specifies whether the identity to map to the Amazon EMR Studio is a USER or a GROUP.
+  session_policy_arn = "${3:session_policy_arn}"  # ARN for the session policy that will be applied to the user or group.
+  studio_id          = "${4:studio_id}"           # The ID of the Amazon EMR Studio to which the user or group will be mapped.
+
+  # identity_id   = ""  # The globally unique identifier (GUID) of the user or group from the Amazon Web Services SSO Ident...
+  # identity_name = ""  # The name of the user or group from the Amazon Web Services SSO Identity Store.
+  # region        = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_emr_studio_session_mapping</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an Elastic MapReduce Studio</description>
+</snippet>

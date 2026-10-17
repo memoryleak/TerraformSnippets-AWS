@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpc_endpoint_connection_notification" "${1:name}" {
+  connection_events           = [${2}]                              # One or more endpoint events for which to receive notifications.
+  connection_notification_arn = "${3:connection_notification_arn}"  # ARN of the SNS topic for the notifications.
+
+  # region                  = ""  # Region where this resource will be managed.
+  # vpc_endpoint_id         = ""  # ID of the VPC Endpoint to receive notifications for.
+  # vpc_endpoint_service_id = ""  # ID of the VPC Endpoint Service to receive notifications for.
+}
+]]></content>
+<tabTrigger>aws_vpc_endpoint_connection_notification</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a VPC Endpoint connection notification resource.</description>
+</snippet>

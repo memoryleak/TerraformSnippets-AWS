@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_workspacesweb_data_protection_settings" "${1:name}" {
+  display_name = "${2:display_name}"  # The display name of the data protection settings.
+
+  # additional_encryption_context = {}  # Additional encryption context for the data protection settings.
+  # customer_managed_key          = ""  # ARN of the customer managed KMS key.
+  # description                   = ""  # The description of the data protection settings.
+  # region                        = ""  # Region where this resource will be managed.
+  # tags                          = {}  # Map of tags assigned to the resource.
+  # inline_redaction_configuration {}  # The inline redaction configuration of the data protection settings.
+}
+]]></content>
+<tabTrigger>aws_workspacesweb_data_protection_settings</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS WorkSpaces Web Data Protection Settings.</description>
+</snippet>

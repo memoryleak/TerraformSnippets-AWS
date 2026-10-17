@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrockagentcore_browser_profile" "${1:name}" {
+  name = "${2:name}"  # Name of the browser profile.
+
+  # description = ""  # Description of the browser profile.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Map of tags assigned to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_bedrockagentcore_browser_profile</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Bedrock AgentCore Browser Profile.</description>
+</snippet>

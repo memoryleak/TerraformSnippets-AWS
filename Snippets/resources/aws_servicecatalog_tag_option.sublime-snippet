@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_servicecatalog_tag_option" "${1:name}" {
+  key   = "${2:key}"    # Tag option key.
+  value = "${3:value}"  # Tag option value.
+
+  # active = false  # Whether tag option is active.
+  # region = ""     # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_servicecatalog_tag_option</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a Service Catalog Tag Option</description>
+</snippet>

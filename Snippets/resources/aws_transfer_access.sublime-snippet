@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_transfer_access" "${1:name}" {
+  external_id = "${2:external_id}"  # SID of a group in the directory connected to the Transfer Server (e.g., S-1-1-12-1234567890-12345...
+  server_id   = "${3:server_id}"    # Server ID of the Transfer Server (e.g., s-12345678)
+
+  # home_directory      = ""  # Landing directory (folder) for a user when they log in to the server using their SFTP client.
+  # home_directory_type = ""  # Type of landing directory (folder) you mapped for your users' home directory.
+  # policy              = ""  # IAM JSON policy document that scopes down user access to portions of their Amazon S3 bucket.
+  # region              = ""  # Region where this resource will be managed.
+  # role                = ""  # ARN of an IAM role that allows the service to controls your user’s access to your Amazon S3 bucket.
+  # home_directory_mappings {}  # Logical directory mappings that specify what S3 paths and keys should be visible to your user and...
+  # posix_profile {}  # Full POSIX identity, including user ID (Uid), group ID (Gid), and any secondary groups IDs (Secon...
+}
+]]></content>
+<tabTrigger>aws_transfer_access</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a AWS Transfer Access resource.</description>
+</snippet>

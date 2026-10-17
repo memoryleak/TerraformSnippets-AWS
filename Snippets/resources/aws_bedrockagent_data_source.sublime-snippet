@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrockagent_data_source" "${1:name}" {
+  knowledge_base_id = "${2:knowledge_base_id}"  # Unique identifier of the knowledge base to which the data source belongs.
+  name              = "${3:name}"               # Name of the data source.
+
+  # data_deletion_policy = ""  # Data deletion policy for a data source.
+  # description          = ""  # Description of the data source.
+  # region               = ""  # Region where this resource will be managed.
+  # data_source_configuration {}  # Details about how the data source is stored.
+  # server_side_encryption_configuration {}  # Details about the configuration of the server-side encryption.
+  # timeouts {}
+  # vector_ingestion_configuration {}  # Details about how to ingest the documents in the data source.
+}
+]]></content>
+<tabTrigger>aws_bedrockagent_data_source</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Agents for Amazon Bedrock Data Source.</description>
+</snippet>

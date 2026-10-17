@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_account_regions" "${1:name}" {
+  # account_id                 = ""  # AWS account ID.
+  # region_opt_status_contains = []  # A list of region opt-in statuses to filter the results.
+}
+]]></content>
+<tabTrigger>data_aws_account_regions</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing AWS Account Management Regions.</description>
+</snippet>

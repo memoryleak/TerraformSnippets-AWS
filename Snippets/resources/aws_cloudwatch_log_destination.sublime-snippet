@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_log_destination" "${1:name}" {
+  name       = "${2:name}"        # A name for the log destination.
+  role_arn   = "${3:role_arn}"    # The ARN of an IAM role that grants Amazon CloudWatch Logs permissions to put data into the target.
+  target_arn = "${4:target_arn}"  # The ARN of the target Amazon Kinesis stream resource for the destination.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_log_destination</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudWatch Logs destination.</description>
+</snippet>

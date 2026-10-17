@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_arcregionswitch_route53_health_checks" "${1:name}" {
+  plan_arn = "${2:plan_arn}"  # ARN of the ARC Region Switch Plan.
+}
+]]></content>
+<tabTrigger>data_aws_arcregionswitch_route53_health_checks</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing Amazon ARC Region Switch Route53 Health Checks.</description>
+</snippet>

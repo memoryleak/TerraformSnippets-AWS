@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_main_route_table_association" "${1:name}" {
+  route_table_id = "${2:route_table_id}"  # ID of the Route Table to set as the new main route table for the target VPC
+  vpc_id         = "${3:vpc_id}"          # ID of the VPC whose main route table should be set
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_main_route_table_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource for managing the main routing table of a VPC.</description>
+</snippet>

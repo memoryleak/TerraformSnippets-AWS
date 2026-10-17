@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_directory_service_log_subscription" "${1:name}" {
+  directory_id   = "${2:directory_id}"    # ID of directory.
+  log_group_name = "${3:log_group_name}"  # Name of the CloudWatch log group to which the logs should be published.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_directory_service_log_subscription</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Log subscription for AWS Directory Service that pushes logs to CloudWatch.</description>
+</snippet>

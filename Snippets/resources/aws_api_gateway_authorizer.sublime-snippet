@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_api_gateway_authorizer" "${1:name}" {
+  name        = "${2:name}"         # Name of the authorizer
+  rest_api_id = "${3:rest_api_id}"  # ID of the associated REST API
+
+  # authorizer_credentials           = ""  # Credentials required for the authorizer.
+  # authorizer_result_ttl_in_seconds = 0   # TTL of cached authorizer results in seconds.
+  # authorizer_uri                   = ""  # Authorizer's URI.
+  # identity_source                  = ""  # Source of the identity in an incoming request.
+  # identity_validation_expression   = ""  # Validation expression for the incoming identity.
+  # provider_arns                    = []  # List of the Amazon Cognito user pool ARNs.
+  # region                           = ""  # Region where this resource will be managed.
+  # type                             = ""  # Type of the authorizer.
+}
+]]></content>
+<tabTrigger>aws_api_gateway_authorizer</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an API Gateway Authorizer.</description>
+</snippet>

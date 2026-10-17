@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_gamelift_script" "${1:name}" {
+  name = "${2:name}"  # Name of the script
+
+  # region   = ""  # Region where this resource will be managed.
+  # tags     = {}  # Key-value map of resource tags.
+  # version  = ""  # Version that is associated with this script.
+  # zip_file = ""  # Data object containing your Realtime scripts and dependencies as a zip  file.
+  # storage_location {}  # Information indicating where your game script files are stored.
+}
+]]></content>
+<tabTrigger>aws_gamelift_script</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a GameLift Script resource.</description>
+</snippet>

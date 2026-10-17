@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_opensearch_application" "${1:name}" {
+  name = "${2:name}"  # The unique name of the OpenSearch application.
+
+  # kms_key_arn = ""  # ARN of the KMS key used to encrypt the application's data at rest.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # A map of tags to assign to the resource.
+  # app_config {}  # Configuration block(s) for OpenSearch application settings.
+  # data_source {}  # Configuration block(s) for data sources to link to the OpenSearch application.
+  # iam_identity_center_options {}  # Configuration block for integrating AWS IAM Identity Center with the OpenSearch application.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_opensearch_application</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AWS OpenSearch Application resource.</description>
+</snippet>

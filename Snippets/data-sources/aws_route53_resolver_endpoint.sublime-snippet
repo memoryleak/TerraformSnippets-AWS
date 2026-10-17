@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_route53_resolver_endpoint" "${1:name}" {
+  # region               = ""  # Region where this resource will be managed.
+  # resolver_endpoint_id = ""  # ID of the Route53 Resolver Endpoint.
+  # filter {}  # One or more name/value pairs to use as filters.
+}
+]]></content>
+<tabTrigger>data_aws_route53_resolver_endpoint</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific Route 53 Resolver Endpoint</description>
+</snippet>

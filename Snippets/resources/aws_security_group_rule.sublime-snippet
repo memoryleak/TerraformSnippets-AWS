@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+resource "aws_security_group_rule" "${1:name}" {
+  from_port         = ${2:0}                    # Start port (or ICMP type number if protocol is "icmp" or "icmpv6").
+  protocol          = "${3:protocol}"           # Protocol.
+  security_group_id = "${4:security_group_id}"  # Security group to apply this rule to.
+  to_port           = ${5:0}                    # End port (or ICMP code if protocol is "icmp").
+  type              = "${6:type}"               # Type of rule being created.
+
+  # cidr_blocks              = []     # List of CIDR blocks.
+  # description              = ""     # Description of the rule.
+  # ipv6_cidr_blocks         = []     # List of IPv6 CIDR blocks.
+  # prefix_list_ids          = []     # List of Prefix List IDs.
+  # region                   = ""     # Region where this resource will be managed.
+  # self                     = false  # Whether the security group itself will be added as a source to this ingress rule.
+  # source_security_group_id = ""     # Security group ID to allow access to/from, depending on the type.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_security_group_rule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an security group rule resource.</description>
+</snippet>

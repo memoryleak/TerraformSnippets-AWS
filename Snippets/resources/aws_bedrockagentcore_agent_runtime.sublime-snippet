@@ -1,0 +1,25 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrockagentcore_agent_runtime" "${1:name}" {
+  agent_runtime_name = "${2:agent_runtime_name}"  # Name of the agent runtime.
+  role_arn           = "${3:role_arn}"            # ARN of the IAM role that the agent runtime assumes to access AWS services.
+
+  # description             = ""  # Description of the agent runtime.
+  # environment_variables   = {}  # Map of environment variables to pass to the container.
+  # lifecycle_configuration = []  # Runtime session and resource lifecycle configuration for the agent runtime.
+  # platform_version        = ""  # Platform version that controls how the agent runtime starts your agent.
+  # region                  = ""  # Region where this resource will be managed.
+  # tags                    = {}  # Key-value map of resource tags.
+  # agent_runtime_artifact {}  # Artifact configuration for the agent runtime, either a container image or code stored in Amazon S3.
+  # authorizer_configuration {}  # Authorization configuration for authenticating incoming requests.
+  # filesystem_configuration {}  # List of filesystems to mount into the agent runtime.
+  # network_configuration {}  # Network configuration for the agent runtime.
+  # protocol_configuration {}  # Protocol configuration for the agent runtime.
+  # request_header_configuration {}  # Configuration for HTTP request headers that will be passed through to the runtime.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_bedrockagentcore_agent_runtime</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Bedrock AgentCore Agent Runtime.</description>
+</snippet>

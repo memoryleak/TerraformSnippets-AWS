@@ -1,0 +1,24 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrock_custom_model" "${1:name}" {
+  base_model_identifier = "${2:base_model_identifier}"  # ARN of the base model.
+  custom_model_name     = "${3:custom_model_name}"      # Name for the custom model.
+  hyperparameters       = {${4}}                        # Parameters related to tuning the model.
+  job_name              = "${5:job_name}"               # Name for the customization job.
+  role_arn              = "${6:role_arn}"               # ARN of an IAM role that Bedrock can assume to perform tasks on your behalf.
+
+  # custom_model_kms_key_id = ""  # Key ARN used to encrypt the custom model at rest.
+  # customization_type      = ""  # Customization type.
+  # region                  = ""  # Region where this resource will be managed.
+  # tags                    = {}  # Map of tags to assign to the customization job and custom model.
+  # output_data_config {}  # S3 location for the output data.
+  # timeouts {}
+  # training_data_config {}  # Information about the training dataset.
+  # validation_data_config {}  # Information about the validation dataset.
+  # vpc_config {}  # Configuration parameters for the private VPC that contains the resources you are using for this job.
+}
+]]></content>
+<tabTrigger>aws_bedrock_custom_model</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Amazon Bedrock custom model.</description>
+</snippet>

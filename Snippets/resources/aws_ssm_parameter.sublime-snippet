@@ -1,0 +1,25 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ssm_parameter" "${1:name}" {
+  name = "${2:name}"  # Name of the parameter.
+  type = "${3:type}"  # Type of the parameter.
+
+  # allowed_pattern  = ""     # Regular expression used to validate the parameter value.
+  # arn              = ""
+  # data_type        = ""     # Data type of the parameter.
+  # description      = ""     # Description of the parameter.
+  # insecure_value   = ""     # Value of the parameter.
+  # key_id           = ""     # KMS key ID or ARN for encrypting a SecureString.
+  # overwrite        = false  # Overwrite an existing parameter.
+  # region           = ""     # Region where this resource will be managed.
+  # tags             = {}     # Map of tags to assign to the object.
+  # tier             = ""     # Parameter tier to assign to the parameter.
+  # value            = ""     # Value of the parameter.
+  # value_wo         = ""     # Value of the parameter.
+  # value_wo_version = 0      # Required when value_wo is set.
+}
+]]></content>
+<tabTrigger>aws_ssm_parameter</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a SSM Parameter resource</description>
+</snippet>

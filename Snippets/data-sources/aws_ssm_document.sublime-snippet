@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_ssm_document" "${1:name}" {
+  name = "${2:name}"  # The name of the document.
+
+  # document_format  = ""  # The format of the document.
+  # document_version = ""  # The document version.
+  # region           = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_ssm_document</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides a SSM Document data source</description>
+</snippet>

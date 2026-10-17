@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_metric_stream" "${1:name}" {
+  firehose_arn  = "${2:firehose_arn}"   # ARN of the Amazon Kinesis Firehose delivery stream to use for this metric stream.
+  output_format = "${3:output_format}"  # Output format for the stream.
+  role_arn      = "${4:role_arn}"       # ARN of the IAM role that this metric stream will use to access Amazon Kinesis Firehose resources.
+
+  # include_linked_accounts_metrics = false
+  # name                            = ""     # Friendly name of the metric stream.
+  # name_prefix                     = ""     # Creates a unique friendly name beginning with the specified prefix.
+  # region                          = ""     # Region where this resource will be managed.
+  # tags                            = {}     # Map of tags to assign to the resource.
+  # exclude_filter {}  # List of exclusive metric filters.
+  # include_filter {}  # List of inclusive metric filters.
+  # statistics_configuration {}  # For each entry in this array, you specify one or more metrics and the list of additional statisti...
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_metric_stream</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudWatch Metric Stream resource.</description>
+</snippet>

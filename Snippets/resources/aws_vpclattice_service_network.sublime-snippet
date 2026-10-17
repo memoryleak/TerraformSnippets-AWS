@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpclattice_service_network" "${1:name}" {
+  name = "${2:name}"  # Name of the service network
+
+  # auth_type = ""  # Type of IAM policy.
+  # region    = ""  # Region where this resource will be managed.
+  # tags      = {}  # Key-value mapping of resource tags.
+}
+]]></content>
+<tabTrigger>aws_vpclattice_service_network</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS VPC Lattice Service Network.</description>
+</snippet>

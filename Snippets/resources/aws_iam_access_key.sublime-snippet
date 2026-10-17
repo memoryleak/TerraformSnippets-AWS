@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_iam_access_key" "${1:name}" {
+  user = "${2:user}"  # IAM user to associate with this access key.
+
+  # pgp_key = ""  # Either a base-64 encoded PGP public key, or a keybase username in the form keybase:some_person_th...
+  # status  = ""  # Access key status to apply.
+}
+]]></content>
+<tabTrigger>aws_iam_access_key</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an IAM access key.</description>
+</snippet>

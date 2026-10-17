@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_s3_bucket_notification" "${1:name}" {
+  bucket = "${2:bucket}"  # Name of the bucket for notification configuration.
+
+  # eventbridge = false  # Whether to enable Amazon EventBridge notifications.
+  # region      = ""     # Region where this resource will be managed.
+  # lambda_function {}  # Notification configuration to a Lambda Function.
+  # queue {}  # Notification configuration to SQS Queue.
+  # topic {}  # Notification configuration to SNS Topic.
+}
+]]></content>
+<tabTrigger>aws_s3_bucket_notification</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a S3 Bucket Notification Configuration</description>
+</snippet>

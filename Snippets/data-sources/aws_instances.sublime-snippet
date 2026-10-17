@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_instances" "${1:name}" {
+  # instance_state_names = []  # List of instance states that should be applicable to the desired instances.
+  # instance_tags        = {}  # Map of tags, each pair of which must
+  # region               = ""  # Region where this resource will be managed.
+  # filter {}  # One or more filters to apply to the search.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_instances</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on an Amazon EC2 instances.</description>
+</snippet>

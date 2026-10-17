@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_glue_data_quality_ruleset" "${1:name}" {
+  name    = "${2:name}"     # Name of the data quality ruleset.
+  ruleset = "${3:ruleset}"  # Data Quality Definition Language (DQDL) ruleset.
+
+  # description = ""  # Description of the data quality ruleset.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Key-value map of resource tags.
+  # target_table {}  # Configuration block specifying a target table associated with the data quality ruleset.
+}
+]]></content>
+<tabTrigger>aws_glue_data_quality_ruleset</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Glue Data Quality Ruleset.</description>
+</snippet>

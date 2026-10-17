@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_customer_gateway" "${1:name}" {
+  type = "${2:type}"  # The type of customer gateway.
+
+  # bgp_asn          = ""  # The gateway's Border Gateway Protocol (BGP) Autonomous System Number (ASN).
+  # bgp_asn_extended = ""  # The gateway's Border Gateway Protocol (BGP) Autonomous System Number (ASN).
+  # certificate_arn  = ""  # ARN for the customer gateway certificate.
+  # device_name      = ""  # A name for the customer gateway device.
+  # ip_address       = ""  # The IPv4 address for the customer gateway device's outside interface.
+  # region           = ""  # Region where this resource will be managed.
+  # tags             = {}  # Tags to apply to the gateway.
+}
+]]></content>
+<tabTrigger>aws_customer_gateway</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a customer gateway inside a VPC.</description>
+</snippet>

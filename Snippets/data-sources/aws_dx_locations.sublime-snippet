@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_dx_locations" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_dx_locations</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Retrieve information about the AWS Direct Connect locations in the current AWS Region.</description>
+</snippet>

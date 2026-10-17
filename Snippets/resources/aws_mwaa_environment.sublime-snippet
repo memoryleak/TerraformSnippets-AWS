@@ -1,0 +1,41 @@
+<snippet>
+<content><![CDATA[
+resource "aws_mwaa_environment" "${1:name}" {
+  dag_s3_path        = "${2:dag_s3_path}"         # Relative path to the DAG folder on your Amazon S3 storage bucket.
+  execution_role_arn = "${3:execution_role_arn}"  # ARN of the task execution role that the Amazon MWAA and its environment can assume.
+  name               = "${4:name}"                # Name of the Apache Airflow Environment.
+  source_bucket_arn  = "${5:source_bucket_arn}"   # ARN of your Amazon S3 storage bucket.
+  network_configuration {
+    security_group_ids = [${6}]
+    subnet_ids         = [${7}]
+  }
+
+  # airflow_configuration_options    = {}  # Airflow override options.
+  # airflow_version                  = ""  # Airflow version of your environment, will be set by default to the latest version that MWAA suppo...
+  # endpoint_management              = ""  # Whether the VPC endpoints configured for the environment are created and managed by the customer...
+  # environment_class                = ""  # Environment class for the cluster.
+  # kms_key                          = ""  # ARN of your KMS key that you want to use for encryption.
+  # max_webservers                   = 0   # Maximum number of web servers that you want to run in your environment.
+  # max_workers                      = 0   # Maximum number of workers that can be automatically scaled up.
+  # min_webservers                   = 0   # Minimum number of web servers that you want to run in your environment.
+  # min_workers                      = 0   # Minimum number of workers that you want to run in your environment.
+  # plugins_s3_object_version        = ""  # Version of the plugins.zip file you want to use.
+  # plugins_s3_path                  = ""  # Relative path to the plugins.zip file on your Amazon S3 storage bucket.
+  # region                           = ""  # Region where this resource will be managed.
+  # requirements_s3_object_version   = ""  # Version of the requirements.txt file you want to use.
+  # requirements_s3_path             = ""  # Relative path to the requirements.txt file on your Amazon S3 storage bucket.
+  # schedulers                       = 0   # Number of schedulers that you want to run in your environment.
+  # startup_script_s3_object_version = ""  # Version of the startup shell script you want to use.
+  # startup_script_s3_path           = ""  # Relative path to the script hosted in your bucket.
+  # tags                             = {}  # Map of resource tags to associate with the resource.
+  # webserver_access_mode            = ""  # Whether the webserver should be accessible over the internet or via your specified VPC.
+  # weekly_maintenance_window_start  = ""  # Start date for the weekly maintenance window.
+  # worker_replacement_strategy      = ""  # Worker replacement strategy.
+  # logging_configuration {}  # Apache Airflow logs you want to send to Amazon CloudWatch Logs.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_mwaa_environment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Creates a MWAA Environment</description>
+</snippet>

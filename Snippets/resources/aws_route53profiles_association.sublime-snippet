@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_route53profiles_association" "${1:name}" {
+  name        = "${2:name}"         # Name of the Profile Association.
+  profile_id  = "${3:profile_id}"   # ID of the profile associated with the VPC.
+  resource_id = "${4:resource_id}"  # Resource ID of the VPC the profile to be associated with.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags to assign to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_route53profiles_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Route 53 Profiles Association.</description>
+</snippet>

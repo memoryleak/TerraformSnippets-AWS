@@ -1,9 +1,0 @@
-<snippet>
-<content><![CDATA[
-resource "aws_sfn_activity" "aws_sfn_activity_${1:suffix}" {
-	name = "${3:Required}"
-}
-]]></content>
-<tabTrigger>aws_sfn_activity</tabTrigger>
-<scope>source.terraform</scope>
-</snippet>

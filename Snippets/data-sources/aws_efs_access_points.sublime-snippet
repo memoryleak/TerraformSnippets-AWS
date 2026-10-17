@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+data "aws_efs_access_points" "${1:name}" {
+  file_system_id = "${2:file_system_id}"  # EFS File System identifier.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_efs_access_points</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides information about multiple Elastic File System (EFS) Access Points.</description>
+</snippet>

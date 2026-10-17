@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_guardduty_filter" "${1:name}" {
+  action      = "${2:action}"       # Action that is to be applied to the findings that match the filter.
+  detector_id = "${3:detector_id}"  # ID of a GuardDuty detector, attached to your account.
+  name        = "${4:name}"         # Name of your filter.
+  rank        = ${5:0}              # Position of the filter in the list of current filters.
+  finding_criteria {
+    criterion {
+      field = "${6:field}"
+    }
+  }
+
+  # description = ""  # Description of the filter.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Tags that you want to add to the Filter resource.
+}
+]]></content>
+<tabTrigger>aws_guardduty_filter</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage a GuardDuty filter</description>
+</snippet>

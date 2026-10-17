@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_datazone_form_type" "${1:name}" {
+  domain_identifier         = "${2:domain_identifier}"          # Identifier of the domain.
+  name                      = "${3:name}"                       # Name of the form type.
+  owning_project_identifier = "${4:owning_project_identifier}"  # Identifier of project that owns the form type.
+
+  # description = ""  # Description of form type.
+  # region      = ""  # Region where this resource will be managed.
+  # status      = ""  # Status of form type.
+  # model {}  # Object of the model of the form type that contains the following attributes.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_datazone_form_type</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS DataZone Form Type.</description>
+</snippet>

@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpc_dhcp_options" "${1:name}" {
+  # domain_name                       = ""  # the suffix domain name to use by default when resolving non Fully Qualified Domain Names.
+  # domain_name_servers               = []  # List of name servers to configure in /etc/resolv.conf.
+  # ipv6_address_preferred_lease_time = ""  # How frequently, in seconds, a running instance with an IPv6 assigned to it goes through DHCPv6 le...
+  # netbios_name_servers              = []  # List of NETBIOS name servers.
+  # netbios_node_type                 = ""  # NetBIOS node type (1, 2, 4, or 8).
+  # ntp_servers                       = []  # List of NTP servers to configure.
+  # region                            = ""  # Region where this resource will be managed.
+  # tags                              = {}  # Map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_vpc_dhcp_options</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a VPC DHCP Options resource.</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_networkmanager_connection" "${1:name}" {
+  connection_id     = "${2:connection_id}"      # ID of the specific connection to retrieve.
+  global_network_id = "${3:global_network_id}"  # ID of the Global Network of the connection to retrieve.
+
+  # tags = {}
+}
+]]></content>
+<tabTrigger>data_aws_networkmanager_connection</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an existing Network Manager connection.</description>
+</snippet>

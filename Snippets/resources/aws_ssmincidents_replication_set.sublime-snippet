@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ssmincidents_replication_set" "${1:name}" {
+  # tags = {}  # Key-value map of resource tags.
+  # regions {}  # The replication set's Regions.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ssmincidents_replication_set</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an incident replication set for AWS Systems Manager Incident Mana...</description>
+</snippet>

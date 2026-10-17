@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_elasticache_user" "${1:name}" {
+  access_string = "${2:access_string}"  # Access permissions string used for this user.
+  engine        = "${3:engine}"         # The current supported values are redis, valkey (case insensitive).
+  user_id       = "${4:user_id}"        # The ID of the user.
+  user_name     = "${5:user_name}"      # The username of the user.
+
+  # no_password_required = false  # Indicates a password is not required for this user.
+  # passwords            = []     # Passwords used for this user.
+  # passwords_wo         = ""     # Write-only password for this user.
+  # passwords_wo_version = 0      # Required when passwords_wo is set.
+  # region               = ""     # Region where this resource will be managed.
+  # tags                 = {}     # A list of tags to be added to this resource.
+  # authentication_mode {}  # Denotes the user's authentication properties.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_elasticache_user</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an ElastiCache user.</description>
+</snippet>

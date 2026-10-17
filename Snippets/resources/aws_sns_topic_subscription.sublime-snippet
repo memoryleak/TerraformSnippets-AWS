@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sns_topic_subscription" "${1:name}" {
+  endpoint  = "${2:endpoint}"   # Endpoint to send data to.
+  protocol  = "${3:protocol}"   # Protocol to use.
+  topic_arn = "${4:topic_arn}"  # ARN of the SNS topic to subscribe to.
+
+  # confirmation_timeout_in_minutes = 0      # Integer indicating number of minutes to wait in retrying mode for fetching subscription ARN befor...
+  # delivery_policy                 = ""     # JSON String with the delivery policy (retries, backoff, etc.) that will be used in the subscripti...
+  # endpoint_auto_confirms          = false  # Whether the endpoint is capable of auto confirming subscription (e.g., PagerDuty).
+  # filter_policy                   = ""     # JSON String with the filter policy that will be used in the subscription to filter messages seen...
+  # filter_policy_scope             = ""     # Whether the filter_policy applies to MessageAttributes (default) or MessageBody.
+  # raw_message_delivery            = false  # Whether to enable raw message delivery (the original message is directly passed, not wrapped in J...
+  # redrive_policy                  = ""     # JSON String with the redrive policy that will be used in the subscription.
+  # region                          = ""     # Region where this resource will be managed.
+  # replay_policy                   = ""     # JSON String with the archived message replay policy that will be used in the subscription.
+  # subscription_role_arn           = ""     # ARN of the IAM role to publish to Kinesis Data Firehose delivery stream.
+}
+]]></content>
+<tabTrigger>aws_sns_topic_subscription</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource for subscribing to SNS topics.</description>
+</snippet>

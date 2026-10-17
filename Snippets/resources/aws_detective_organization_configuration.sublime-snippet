@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_detective_organization_configuration" "${1:name}" {
+  auto_enable = ${2:false}        # When this setting is enabled, all new accounts that are created in, or added to, the organization...
+  graph_arn   = "${3:graph_arn}"  # ARN of the Detective behavior graph.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_detective_organization_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages the Detective Organization Configuration</description>
+</snippet>

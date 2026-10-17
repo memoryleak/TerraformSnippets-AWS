@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_fis_target_account_configuration" "${1:name}" {
+  account_id             = "${2:account_id}"              # Account ID of the target account.
+  experiment_template_id = "${3:experiment_template_id}"  # Experiment Template ID.
+
+  # description = ""  # Description of the target account.
+  # region      = ""  # Region where this resource will be managed.
+  # role_arn    = ""  # ARN of the IAM Role for the target account.
+}
+]]></content>
+<tabTrigger>aws_fis_target_account_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS FIS (Fault Injection Simulator) Target Account Configuration.</description>
+</snippet>

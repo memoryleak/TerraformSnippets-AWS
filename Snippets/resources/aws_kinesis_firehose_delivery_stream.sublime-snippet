@@ -1,0 +1,30 @@
+<snippet>
+<content><![CDATA[
+resource "aws_kinesis_firehose_delivery_stream" "${1:name}" {
+  destination = "${2:destination}"  # Destination where the data is delivered.
+  name        = "${3:name}"         # Name to identify the stream.
+
+  # arn            = ""
+  # destination_id = ""  # Identifier of the destination for the delivery stream.
+  # region         = ""  # Region where this resource will be managed.
+  # tags           = {}  # Map of tags to assign to the resource.
+  # version_id     = ""  # Version identifier of the delivery stream.
+  # elasticsearch_configuration {}  # Configuration options when destination is elasticsearch.
+  # extended_s3_configuration {}  # Enhanced configuration options for the s3 destination.
+  # http_endpoint_configuration {}  # Configuration options when destination is http_endpoint.
+  # iceberg_configuration {}  # Configuration options when destination is iceberg.
+  # kinesis_source_configuration {}  # Stream and role ARNs for a Kinesis data stream used as the source for a delivery stream.
+  # msk_source_configuration {}  # Configuration for the Amazon MSK cluster to be used as the source for a delivery stream.
+  # opensearch_configuration {}  # Configuration options when destination is opensearch.
+  # opensearchserverless_configuration {}  # Configuration options when destination is opensearchserverless.
+  # redshift_configuration {}  # Configuration options when destination is redshift.
+  # server_side_encryption {}  # Encrypt at rest options.
+  # snowflake_configuration {}  # Configuration options when destination is snowflake.
+  # splunk_configuration {}  # Configuration options when destination is splunk.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_kinesis_firehose_delivery_stream</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a AWS Kinesis Firehose Delivery Stream</description>
+</snippet>

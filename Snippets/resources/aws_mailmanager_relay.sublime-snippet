@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_mailmanager_relay" "${1:name}" {
+  name        = "${2:name}"         # Name of the relay.
+  server_name = "${3:server_name}"  # Hostname of the SMTP server.
+  server_port = ${4:0}              # Port of the SMTP server.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags assigned to the resource.
+  # authentication {}  # Authentication configuration for the relay.
+}
+]]></content>
+<tabTrigger>aws_mailmanager_relay</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS SES Mail Manager Relay.</description>
+</snippet>

@@ -1,0 +1,27 @@
+<snippet>
+<content><![CDATA[
+resource "aws_m2_environment" "${1:name}" {
+  engine_type   = "${2:engine_type}"    # Engine type must be microfocus or bluage.
+  instance_type = "${3:instance_type}"  # M2 Instance Type.
+  name          = "${4:name}"           # Name of the runtime environment.
+
+  # apply_changes_during_maintenance_window = false  # Whether to apply configuration changes during the preferred maintenance window instead of immedia...
+  # description                             = ""     # Description of the runtime environment.
+  # engine_version                          = ""     # Specific version of the engine for the Environment.
+  # force_update                            = false  # Force update the environment even if applications are running.
+  # kms_key_id                              = ""     # ARN of the KMS key to use for the Environment.
+  # preferred_maintenance_window            = ""     # Configures the maintenance window that you want for the runtime environment.
+  # publicly_accessible                     = false  # Allow applications deployed to this environment to be publicly accessible.
+  # region                                  = ""     # Region where this resource will be managed.
+  # security_group_ids                      = []     # List of security group IDs.
+  # subnet_ids                              = []     # List of subnet IDs to deploy environment to.
+  # tags                                    = {}     # Key-value tags for the place index.
+  # high_availability_config {}
+  # storage_configuration {}
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_m2_environment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Mainframe Modernization Environment.</description>
+</snippet>

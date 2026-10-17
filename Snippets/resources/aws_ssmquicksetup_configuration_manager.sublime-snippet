@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ssmquicksetup_configuration_manager" "${1:name}" {
+  name = "${2:name}"  # Configuration manager name.
+
+  # description = ""  # Description of the configuration manager.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Map of tags assigned to the resource.
+  # configuration_definition {}  # Definition of the Quick Setup configuration that the configuration manager deploys.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_ssmquicksetup_configuration_manager</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS SSM Quick Setup Configuration Manager.</description>
+</snippet>

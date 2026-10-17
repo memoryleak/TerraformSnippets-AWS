@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dx_lag" "${1:name}" {
+  connections_bandwidth = "${2:connections_bandwidth}"  # The bandwidth of the individual dedicated connections bundled by the LAG.
+  location              = "${3:location}"               # The AWS Direct Connect location in which the LAG should be allocated.
+  name                  = "${4:name}"                   # The name of the LAG.
+
+  # connection_id = ""     # The ID of an existing dedicated connection to migrate to the LAG.
+  # force_destroy = false  # A boolean that indicates all connections associated with the LAG should be deleted so that the LA...
+  # provider_name = ""     # The name of the service provider associated with the LAG.
+  # region        = ""     # Region where this resource will be managed.
+  # tags          = {}     # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_dx_lag</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Direct Connect LAG.</description>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+data "aws_glue_connection" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}
+}
+]]></content>
+<tabTrigger>data_aws_glue_connection</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an AWS Glue Connection.</description>
+</snippet>

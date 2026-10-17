@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dataexchange_revision" "${1:name}" {
+  data_set_id = "${2:data_set_id}"  # The dataset ID.
+
+  # comment = ""  # An optional comment about the revision.
+  # region  = ""  # Region where this resource will be managed.
+  # tags    = {}  # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_dataexchange_revision</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a DataExchange Revision</description>
+</snippet>

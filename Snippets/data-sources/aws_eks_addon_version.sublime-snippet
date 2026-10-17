@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+data "aws_eks_addon_version" "${1:name}" {
+  addon_name         = "${2:addon_name}"          # Name of the EKS add-on.
+  kubernetes_version = "${3:kubernetes_version}"  # Version of the EKS Cluster.
+
+  # most_recent = false  # Determines if the most recent or default version of the addon should be returned.
+  # region      = ""     # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_eks_addon_version</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Retrieve information about versions of an EKS add-on</description>
+</snippet>

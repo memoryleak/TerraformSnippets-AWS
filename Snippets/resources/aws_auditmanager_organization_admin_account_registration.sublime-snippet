@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_auditmanager_organization_admin_account_registration" "${1:name}" {
+  admin_account_id = "${2:admin_account_id}"  # Identifier for the organization administrator account.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_auditmanager_organization_admin_account_registration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing AWS Audit Manager Organization Admin Account Registration.</description>
+</snippet>

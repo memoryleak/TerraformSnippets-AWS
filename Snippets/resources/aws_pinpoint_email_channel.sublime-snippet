@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_pinpoint_email_channel" "${1:name}" {
+  application_id = "${2:application_id}"  # Application ID.
+  from_address   = "${3:from_address}"    # Email address used to send emails from.
+  identity       = "${4:identity}"        # ARN of an identity verified with SES.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_pinpoint_email_channel</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an End User Messaging Email Channel resource.</description>
+</snippet>

@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_networkfirewall_vpc_endpoint_association" "${1:name}" {
+  firewall_arn = "${2:firewall_arn}"
+  vpc_id       = "${3:vpc_id}"
+
+  # description = ""
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Map of resource tags to associate with the resource.
+  # subnet_mapping {}
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_networkfirewall_vpc_endpoint_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a firewall endpoint for an AWS Network Firewall firewall.</description>
+</snippet>

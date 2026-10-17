@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_wafv2_regex_pattern_set" "${1:name}" {
+  scope = "${2:scope}"  # Specifies whether this is for an AWS CloudFront distribution or for a regional application.
+
+  # description = ""  # A friendly description of the regular expression pattern set.
+  # name        = ""  # A friendly name of the regular expression pattern set.
+  # name_prefix = ""  # Creates a unique name beginning with the specified prefix.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # An array of key:value pairs to associate with the resource.
+  # regular_expression {}  # One or more blocks of regular expression patterns that you want AWS WAF to search for, such as B[...
+}
+]]></content>
+<tabTrigger>aws_wafv2_regex_pattern_set</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides an AWS WAFv2 Regex Pattern Set resource.</description>
+</snippet>

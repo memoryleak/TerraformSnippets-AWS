@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_glue_partition" "${1:name}" {
+  database_name    = "${2:database_name}"  # Name of the metadata database where the table metadata resides.
+  partition_values = [${3}]                # Values that define the partition.
+  table_name       = "${4:table_name}"     # Name of the table.
+
+  # catalog_id = ""  # ID of the Glue Catalog and database to create the table in.
+  # parameters = {}  # Properties associated with this table, as a list of key-value pairs.
+  # region     = ""  # Region where this resource will be managed.
+  # storage_descriptor {}  # Storage descriptor object containing information about the physical storage of this table.
+}
+]]></content>
+<tabTrigger>aws_glue_partition</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Glue Partition.</description>
+</snippet>

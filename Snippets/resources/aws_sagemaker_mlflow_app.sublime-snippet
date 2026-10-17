@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sagemaker_mlflow_app" "${1:name}" {
+  artifact_store_uri = "${2:artifact_store_uri}"  # S3 URI for a general purpose bucket to use as the MLflow App artifact store.
+  name               = "${3:name}"                # MLflow app name.
+  role_arn           = "${4:role_arn}"            # ARN for an IAM role in your account that the MLflow App uses to access the artifact store in Amaz...
+
+  # account_default_status          = ""  # Indicates whether this MLflow app is the default for the entire account.
+  # default_domain_id_list          = []  # List of SageMaker domain IDs for which this MLflow App is used as the default.
+  # model_registration_mode         = ""  # Whether to enable or disable automatic registration of new MLflow models to the SageMaker Model R...
+  # region                          = ""  # Region where this resource will be managed.
+  # tags                            = {}  # A map of tags to assign to the resource.
+  # weekly_maintenance_window_start = ""  # Day and time of the week in Coordinated Universal Time (UTC) 24-hour standard time that weekly ma...
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_sagemaker_mlflow_app</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a SageMaker AI MLflow App resource.</description>
+</snippet>

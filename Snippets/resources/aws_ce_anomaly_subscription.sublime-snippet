@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ce_anomaly_subscription" "${1:name}" {
+  frequency        = "${2:frequency}"  # The frequency that anomaly reports are sent.
+  monitor_arn_list = [${3}]            # A list of cost anomaly monitors.
+  name             = "${4:name}"       # The name for the subscription.
+  subscriber {
+    address = "${5:address}"
+    type    = "${6:type}"
+  }
+
+  # account_id = ""  # The unique identifier for the AWS account in which the anomaly subscription ought to be created.
+  # tags       = {}  # A map of tags to assign to the resource.
+  # threshold_expression {}  # An Expression object used to specify the anomalies that you want to generate alerts for.
+}
+]]></content>
+<tabTrigger>aws_ce_anomaly_subscription</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CE Cost Anomaly Subscription</description>
+</snippet>

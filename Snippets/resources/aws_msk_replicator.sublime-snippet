@@ -1,0 +1,28 @@
+<snippet>
+<content><![CDATA[
+resource "aws_msk_replicator" "${1:name}" {
+  replicator_name            = "${2:replicator_name}"             # Name of the replicator.
+  service_execution_role_arn = "${3:service_execution_role_arn}"  # ARN of the IAM role used by the replicator to access resources in the customer's account (e.g sou...
+  kafka_cluster {
+  }
+  replication_info_list {
+    target_compression_type = "${4:target_compression_type}"
+    consumer_group_replication {
+      consumer_groups_to_replicate = [${5}]
+    }
+    topic_replication {
+      topics_to_replicate = [${6}]
+    }
+  }
+
+  # description = ""  # Summary description of the replicator.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Map of tags to assign to the resource.
+  # log_delivery {}  # Configuration block for delivering replicator logs to customer destinations.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_msk_replicator</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS Managed Streaming for Kafka Replicator.</description>
+</snippet>

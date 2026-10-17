@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_redshift_hsm_configuration" "${1:name}" {
+  description                   = "${2:description}"                    # A text description of the HSM configuration to be created.
+  hsm_configuration_identifier  = "${3:hsm_configuration_identifier}"   # The identifier to be assigned to the new Amazon Redshift HSM configuration.
+  hsm_ip_address                = "${4:hsm_ip_address}"                 # The IP address that the Amazon Redshift cluster must use to access the HSM.
+  hsm_partition_name            = "${5:hsm_partition_name}"             # The name of the partition in the HSM where the Amazon Redshift clusters will store their database...
+  hsm_partition_password        = "${6:hsm_partition_password}"         # The password required to access the HSM partition.
+  hsm_server_public_certificate = "${7:hsm_server_public_certificate}"  # The HSMs public certificate file.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_redshift_hsm_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Creates an HSM configuration that contains the information required by an Amazon Redshift cluster...</description>
+</snippet>

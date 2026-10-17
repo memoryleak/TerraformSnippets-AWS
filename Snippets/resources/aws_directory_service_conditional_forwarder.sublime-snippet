@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_directory_service_conditional_forwarder" "${1:name}" {
+  directory_id       = "${2:directory_id}"        # ID of directory.
+  dns_ips            = [${3}]                     # A list of forwarder IP addresses.
+  remote_domain_name = "${4:remote_domain_name}"  # The fully qualified domain name of the remote domain for which forwarders will be used.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_directory_service_conditional_forwarder</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a conditional forwarder for managed Microsoft AD in AWS Directory Service.</description>
+</snippet>

@@ -1,0 +1,27 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudtrail" "${1:name}" {
+  name           = "${2:name}"            # Name of the trail.
+  s3_bucket_name = "${3:s3_bucket_name}"  # Name of the S3 bucket designated for publishing log files.
+
+  # cloud_watch_logs_group_arn    = ""     # Log group name using an ARN that represents the log group to which CloudTrail logs will be delive...
+  # cloud_watch_logs_role_arn     = ""     # Role for the CloudWatch Logs endpoint to assume to write to a user’s log group.
+  # enable_log_file_validation    = false  # Whether log file integrity validation is enabled.
+  # enable_logging                = false  # Enables logging for the trail.
+  # include_global_service_events = false  # Whether the trail is publishing events from global services such as IAM to the log files.
+  # is_multi_region_trail         = false  # Whether the trail is created in the current region or in all regions.
+  # is_organization_trail         = false  # Whether the trail is an AWS Organizations trail.
+  # kms_key_id                    = ""     # KMS key ARN to use to encrypt the logs delivered by CloudTrail.
+  # region                        = ""     # Region where this resource will be managed.
+  # s3_key_prefix                 = ""     # S3 key prefix that follows the name of the bucket you have designated for log file delivery.
+  # sns_topic_name                = ""     # Name of the Amazon SNS topic defined for notification of log file delivery.
+  # tags                          = {}     # Map of tags to assign to the trail.
+  # advanced_event_selector {}  # Specifies an advanced event selector for enabling data event logging.
+  # event_selector {}  # Specifies an event selector for enabling data event logging.
+  # insight_selector {}  # Configuration block for identifying unusual operational activity.
+}
+]]></content>
+<tabTrigger>aws_cloudtrail</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudTrail resource.</description>
+</snippet>

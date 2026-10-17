@@ -1,0 +1,24 @@
+<snippet>
+<content><![CDATA[
+resource "aws_evidently_launch" "${1:name}" {
+  name    = "${2:name}"     # The name for the new launch.
+  project = "${3:project}"  # The name or ARN of the project that is to contain the new launch.
+  groups {
+    feature   = "${4:feature}"
+    name      = "${5:name}"
+    variation = "${6:variation}"
+  }
+
+  # description        = ""  # Specifies the description of the launch.
+  # randomization_salt = ""  # When Evidently assigns a particular user session to a launch, it must use a randomization ID to d...
+  # region             = ""  # Region where this resource will be managed.
+  # tags               = {}  # Tags to apply to the launch.
+  # metric_monitors {}  # One or up to three blocks that define the metrics that will be used to monitor the launch perform...
+  # scheduled_splits_config {}  # A block that defines the traffic allocation percentages among the feature variations during each...
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_evidently_launch</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a CloudWatch Evidently Launch resource.</description>
+</snippet>

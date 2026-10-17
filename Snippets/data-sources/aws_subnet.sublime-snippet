@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+data "aws_subnet" "${1:name}" {
+  # availability_zone    = ""     # Availability zone where the subnet must reside.
+  # availability_zone_id = ""     # ID of the Availability Zone for the subnet.
+  # cidr_block           = ""     # CIDR block of the desired subnet.
+  # default_for_az       = false  # Whether the desired subnet must be the default subnet for its associated availability zone.
+  # ipv6_cidr_block      = ""     # IPv6 CIDR block of the desired subnet.
+  # region               = ""     # Region where this resource will be managed.
+  # state                = ""     # State that the desired subnet must have.
+  # tags                 = {}     # Map of tags, each pair of which must exactly match a pair on the desired subnet.
+  # vpc_id               = ""     # ID of the VPC that the desired subnet belongs to.
+  # filter {}  # Configuration block.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>data_aws_subnet</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about a specific VPC subnet</description>
+</snippet>

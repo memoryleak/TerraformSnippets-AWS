@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_rolesanywhere_profile" "${1:name}" {
+  name = "${2:name}"  # The name of the Profile.
+
+  # accept_role_session_name    = false  # Whether or not a custom role session name is accepted.
+  # duration_seconds            = 0      # The number of seconds the vended session credentials are valid for.
+  # enabled                     = false  # Whether or not the Profile is enabled.
+  # managed_policy_arns         = []     # A list of managed policy ARNs that apply to the vended session credentials.
+  # require_instance_properties = false  # Specifies whether instance properties are required in CreateSession requests with this profile.
+  # role_arns                   = []     # A list of IAM roles that this profile can assume
+  # session_policy              = ""     # A session policy that applies to the trust boundary of the vended session credentials.
+  # tags                        = {}     # A map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_rolesanywhere_profile</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Roles Anywhere Profile resource</description>
+</snippet>

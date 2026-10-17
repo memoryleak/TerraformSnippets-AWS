@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_ip_ranges" "${1:name}" {
+  services = [${2}]  # Filter IP ranges by services.
+
+  # regions = []  # Filter IP ranges by regions (or include all regions, if
+  # url     = ""  # Custom URL for source JSON file.
+}
+]]></content>
+<tabTrigger>data_aws_ip_ranges</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Get information on AWS IP ranges.</description>
+</snippet>

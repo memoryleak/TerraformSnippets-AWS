@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpclattice_access_log_subscription" "${1:name}" {
+  destination_arn     = "${2:destination_arn}"      # ARN of the log destination.
+  resource_identifier = "${3:resource_identifier}"  # ID or Amazon Resource Identifier (ARN) of the service network or service.
+
+  # region                   = ""  # Region where this resource will be managed.
+  # service_network_log_type = ""  # Type of log that monitors your Amazon VPC Lattice service networks.
+  # tags                     = {}  # Key-value mapping of resource tags.
+}
+]]></content>
+<tabTrigger>aws_vpclattice_access_log_subscription</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS VPC Lattice Service Network or Services Access log subscri...</description>
+</snippet>

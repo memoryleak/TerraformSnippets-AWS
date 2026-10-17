@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_medialive_input" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_medialive_input</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Terraform data source for managing an AWS Elemental MediaLive Input.</description>
+</snippet>

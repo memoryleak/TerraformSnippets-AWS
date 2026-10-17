@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+resource "aws_quicksight_dashboard" "${1:name}" {
+  dashboard_id        = "${2:dashboard_id}"         # Identifier for the dashboard.
+  name                = "${3:name}"                 # Display name for the dashboard.
+  version_description = "${4:version_description}"  # Description of the current dashboard version being created/updated.
+
+  # aws_account_id = ""  # AWS account ID.
+  # region         = ""  # Region where this resource will be managed.
+  # tags           = {}  # Key-value map of resource tags.
+  # theme_arn      = ""  # ARN of the theme that is being used for this dashboard.
+  # dashboard_publish_options {}  # Options for publishing the dashboard.
+  # definition {}  # Detailed dashboard definition.
+  # parameters {}  # Parameters for the creation of the dashboard, which you want to use to override the default setti...
+  # permissions {}  # Set of resource permissions on the dashboard.
+  # source_entity {}  # Entity that you are using as a source when you create the dashboard (template).
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_quicksight_dashboard</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a QuickSight Dashboard.</description>
+</snippet>

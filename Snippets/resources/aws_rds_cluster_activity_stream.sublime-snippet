@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_rds_cluster_activity_stream" "${1:name}" {
+  kms_key_id   = "${2:kms_key_id}"    # AWS KMS key identifier for encrypting messages in the database activity stream.
+  mode         = "${3:mode}"          # Mode of the database activity stream.
+  resource_arn = "${4:resource_arn}"  # ARN of the DB cluster.
+
+  # engine_native_audit_fields_included = false  # Whether the database activity stream includes engine-native audit fields.
+  # region                              = ""     # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_rds_cluster_activity_stream</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages RDS Aurora Cluster Database Activity Streams</description>
+</snippet>

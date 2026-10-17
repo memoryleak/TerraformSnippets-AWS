@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_location_map" "${1:name}" {
+  map_name = "${2:map_name}"  # The name for the map resource.
+  configuration {
+    style = "${3:style}"
+  }
+
+  # description = ""  # An optional description for the map resource.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Key-value tags for the map.
+}
+]]></content>
+<tabTrigger>aws_location_map</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a Location Service Map.</description>
+</snippet>

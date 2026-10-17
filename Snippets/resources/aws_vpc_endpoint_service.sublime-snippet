@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpc_endpoint_service" "${1:name}" {
+  acceptance_required = ${2:false}  # Whether or not VPC endpoint connection requests to the service must be accepted by the service ow...
+
+  # allowed_principals         = []  # ARNs of one or more principals allowed to discover the endpoint service.
+  # gateway_load_balancer_arns = []  # ARNs of one or more Gateway Load Balancers for the endpoint service.
+  # network_load_balancer_arns = []  # ARNs of one or more Network Load Balancers for the endpoint service.
+  # private_dns_name           = ""  # Private DNS name for the service.
+  # region                     = ""  # Region where this resource will be managed.
+  # supported_ip_address_types = []  # Supported IP address types.
+  # supported_regions          = []  # Set of regions from which service consumers can access the service.
+  # tags                       = {}  # Map of tags to assign to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_vpc_endpoint_service</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a VPC Endpoint Service resource.</description>
+</snippet>

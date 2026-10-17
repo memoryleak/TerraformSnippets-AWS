@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_vpc_endpoint_private_dns" "${1:name}" {
+  private_dns_enabled = ${2:false}              # Whether to associate a private hosted zone with the VPC.
+  vpc_endpoint_id     = "${3:vpc_endpoint_id}"  # VPC endpoint identifier.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_vpc_endpoint_private_dns</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for enabling private DNS on an AWS VPC (Virtual Private Cloud) Endpoint.</description>
+</snippet>

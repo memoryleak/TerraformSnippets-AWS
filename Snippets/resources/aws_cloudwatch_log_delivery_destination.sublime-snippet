@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatch_log_delivery_destination" "${1:name}" {
+  name = "${2:name}"  # The name for this delivery destination.
+
+  # delivery_destination_type = ""  # The type of delivery destination.
+  # output_format             = ""  # The format of the logs that are sent to this delivery destination.
+  # region                    = ""  # Region where this resource will be managed.
+  # tags                      = {}  # A map of tags to assign to the resource.
+  # delivery_destination_configuration {}  # The AWS resource that will receive the logs.
+}
+]]></content>
+<tabTrigger>aws_cloudwatch_log_delivery_destination</tabTrigger>
+<scope>source.terraform</scope>
+<description>Terraform resource for managing an AWS CloudWatch Logs Delivery Destination.</description>
+</snippet>

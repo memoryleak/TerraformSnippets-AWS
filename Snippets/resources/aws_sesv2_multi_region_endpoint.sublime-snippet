@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sesv2_multi_region_endpoint" "${1:name}" {
+  endpoint_name = "${2:endpoint_name}"  # Name of the multi-region endpoint.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags assigned to the resource.
+  # details {}  # Configuration details for the endpoint.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_sesv2_multi_region_endpoint</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS SESv2 (Simple Email V2) Multi Region Endpoint.</description>
+</snippet>

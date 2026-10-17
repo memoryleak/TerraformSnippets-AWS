@@ -1,0 +1,40 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lambda_event_source_mapping" "${1:name}" {
+  function_name = "${2:function_name}"  # Name or ARN of the Lambda function that will be subscribing to events.
+
+  # batch_size                           = 0      # Largest number of records that Lambda will retrieve from your event source at the time of invocat...
+  # bisect_batch_on_function_error       = false  # Whether to split the batch in two and retry if the function returns an error.
+  # enabled                              = false  # Whether the mapping is enabled.
+  # event_source_arn                     = ""     # Event source ARN - required for Kinesis stream, DynamoDB stream, SQS queue, MQ broker, MSK cluste...
+  # function_response_types              = []     # List of current response type enums applied to the event source mapping for AWS Lambda checkpoint...
+  # kms_key_arn                          = ""     # ARN of the KMS customer managed key that Lambda uses to encrypt your function's filter criteria.
+  # maximum_batching_window_in_seconds   = 0      # Maximum amount of time to gather records before invoking the function, in seconds (between 0 and...
+  # maximum_record_age_in_seconds        = 0      # Maximum age of a record that Lambda sends to a function for processing.
+  # maximum_retry_attempts               = 0      # Maximum number of times to retry when the function returns an error.
+  # parallelization_factor               = 0      # Number of batches to process from each shard concurrently.
+  # queues                               = []     # Name of the Amazon MQ broker destination queue to consume.
+  # region                               = ""     # Region where this resource will be managed.
+  # starting_position                    = ""     # Position in the stream where AWS Lambda should start reading.
+  # starting_position_timestamp          = ""     # Timestamp in RFC3339 format of the data record which to start reading when using starting_positio...
+  # tags                                 = {}     # Map of tags to assign to the object.
+  # topics                               = []     # Name of the Kafka topics.
+  # tumbling_window_in_seconds           = 0      # Duration in seconds of a processing window for AWS Lambda streaming analytics.
+  # use_resource_timeout_for_propagation = false  # Whether to apply resource level timeout values while retrying eventually consistent API operations.
+  # amazon_managed_kafka_event_source_config {}  # Additional configuration block for Amazon Managed Kafka sources.
+  # destination_config {}  # Amazon SQS queue, Amazon SNS topic or Amazon S3 bucket (only available for Kafka sources) destina...
+  # document_db_event_source_config {}  # Configuration settings for a DocumentDB event source.
+  # filter_criteria {}  # Criteria to use for event filtering Kinesis stream, DynamoDB stream, SQS queue event sources.
+  # metrics_config {}  # CloudWatch metrics configuration of the event source.
+  # provisioned_poller_config {}  # Event poller configuration for the event source.
+  # scaling_config {}  # Scaling configuration of the event source.
+  # self_managed_event_source {}  # For Self Managed Kafka sources, the location of the self managed cluster.
+  # self_managed_kafka_event_source_config {}  # Additional configuration block for Self Managed Kafka sources.
+  # source_access_configuration {}  # For Self Managed Kafka sources, the access configuration for the source.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_lambda_event_source_mapping</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Lambda Event Source Mapping.</description>
+</snippet>

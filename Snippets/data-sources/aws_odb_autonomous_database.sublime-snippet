@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_odb_autonomous_database" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_odb_autonomous_database</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an Oracle Database@AWS Autonomous Database Serverless instance.</description>
+</snippet>

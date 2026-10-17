@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+resource "aws_shield_protection_health_check_association" "${1:name}" {
+  health_check_arn     = "${2:health_check_arn}"      # ARN of the Route53 Health Check resource which will be associated to the protected resource.
+  shield_protection_id = "${3:shield_protection_id}"  # The ID of the protected resource.
+}
+]]></content>
+<tabTrigger>aws_shield_protection_health_check_association</tabTrigger>
+<scope>source.terraform</scope>
+<description>Creates an association between a Route53 Health Check and a Shield Advanced protected resource.</description>
+</snippet>

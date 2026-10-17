@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_organizations_resource_policy" "${1:name}" {
+  content = "${2:content}"  # Content for the resource policy.
+
+  # tags = {}  # Key-value map of resource tags.
+}
+]]></content>
+<tabTrigger>aws_organizations_resource_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a resource to manage an AWS Organizations resource policy.</description>
+</snippet>
