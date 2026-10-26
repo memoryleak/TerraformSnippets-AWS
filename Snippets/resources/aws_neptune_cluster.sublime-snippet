@@ -20,6 +20,7 @@ resource "aws_neptune_cluster" "${1:name}" {
   # neptune_cluster_parameter_group_name  = ""     # Cluster parameter group to associate with the cluster.
   # neptune_instance_parameter_group_name = ""
   # neptune_subnet_group_name             = ""     # Neptune subnet group to associate with this Neptune instance.
+  # network_type                          = ""     # Network type of the Neptune cluster.
   # port                                  = 0      # Port on which the Neptune accepts connections.
   # preferred_backup_window               = ""     # Daily time range during which automated backups are created if automated backups are enabled usin...
   # preferred_maintenance_window          = ""     # Weekly time range during which system maintenance can occur, in (UTC) e.g., wed:04:00-wed:04:30

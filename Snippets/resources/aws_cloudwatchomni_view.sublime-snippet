@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatchomni_view" "${1:name}" {
+  definition = "${2:definition}"  # SQL query that defines the view.
+  name       = "${3:name}"        # Name of the view.
+
+  # description = ""  # Description of the view.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Map of tags assigned to the resource.
+}
+]]></content>
+<tabTrigger>aws_cloudwatchomni_view</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Amazon CloudWatch Omni view.</description>
+</snippet>

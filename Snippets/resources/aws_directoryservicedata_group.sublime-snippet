@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_directoryservicedata_group" "${1:name}" {
+  directory_id     = "${2:directory_id}"      # ID of the Directory that's associated with the group.
+  sam_account_name = "${3:sam_account_name}"  # SAM account name of the group.
+
+  # group_scope = ""  # Scope of the AD group.
+  # group_type  = ""  # Type of the AD group.
+  # region      = ""  # Region where the group is managed.
+}
+]]></content>
+<tabTrigger>aws_directoryservicedata_group</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a group in an AWS Directory Service directory.</description>
+</snippet>

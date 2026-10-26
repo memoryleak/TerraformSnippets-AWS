@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_directory_service_directory_setting" "${1:name}" {
+  directory_id = "${2:directory_id}"  # ID of the directory.
+  name         = "${3:name}"          # Name of the directory setting.
+  value        = "${4:value}"         # Value of the directory setting.
+
+  # region = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_directory_service_directory_setting</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a single setting for an AWS Directory Service directory.</description>
+</snippet>

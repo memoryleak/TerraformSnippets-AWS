@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+resource "aws_sagemaker_inference_component" "${1:name}" {
+  endpoint_name = "${2:endpoint_name}"  # Name of an existing endpoint where you host the inference component.
+  name          = "${3:name}"           # Unique name to assign to the inference component.
+
+  # region       = ""  # Region where this resource will be managed.
+  # tags         = {}  # Map of tags to assign to the resource.
+  # variant_name = ""  # Name of an existing production variant where you host the inference component.
+  # deployment_config {}  # Deployment configuration for the inference component, which controls the rollout strategy and rol...
+  # runtime_config {}  # Runtime settings for a model that is deployed with an inference component.
+  # specification {}  # Details about the resources to deploy with this inference component.
+  # specifications {}  # List of specification objects for the inference component, one per instance type.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_sagemaker_inference_component</tabTrigger>
+<scope>source.terraform</scope>
+<description>Provides a SageMaker AI Inference Component resource.</description>
+</snippet>

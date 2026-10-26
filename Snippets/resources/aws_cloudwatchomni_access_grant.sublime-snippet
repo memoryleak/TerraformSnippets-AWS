@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatchomni_access_grant" "${1:name}" {
+  domain_id  = "${2:domain_id}"   # ID of the CloudWatch Omni domain that contains the space.
+  name       = "${3:name}"        # Name of the access grant.
+  permission = "${4:permission}"  # Permission to grant.
+  space_id   = "${5:space_id}"    # ID of the CloudWatch Omni space to scope the grant to.
+
+  # region = ""  # Region where this resource is managed.
+  # tags   = {}  # Map of tags assigned to the resource.
+  # principal {}  # Principal receiving the grant.
+  # scoped_action {}  # Group of actions to allow, with the resource scopes and conditions that limit them.
+}
+]]></content>
+<tabTrigger>aws_cloudwatchomni_access_grant</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a CloudWatch Omni Access Grant.</description>
+</snippet>
