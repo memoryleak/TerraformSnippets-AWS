@@ -6,7 +6,7 @@ resource "aws_guardduty_organization_configuration_feature" "${1:name}" {
   name        = "${4:name}"         # Name of the feature that will be configured for the organization.
 
   # region = ""  # Region where this resource will be managed.
-  # additional_configuration {}  # Additional feature configuration block for features EKS_RUNTIME_MONITORING or RUNTIME_MONITORING.
+  # additional_configuration {}  # Additional feature configuration block for features EKS_RUNTIME_MONITORING or RUNTIME_MONITORING,...
 }
 ]]></content>
 <tabTrigger>aws_guardduty_organization_configuration_feature</tabTrigger>

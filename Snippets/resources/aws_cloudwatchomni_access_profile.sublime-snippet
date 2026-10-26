@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatchomni_access_profile" "${1:name}" {
+  name     = "${2:name}"      # Name of the access profile.
+  space_id = "${3:space_id}"  # ID of the space that contains the access profile.
+
+  # description = ""  # Description of the access profile.
+  # region      = ""  # Region where this resource will be managed.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_cloudwatchomni_access_profile</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Amazon CloudWatch Omni access profile.</description>
+</snippet>

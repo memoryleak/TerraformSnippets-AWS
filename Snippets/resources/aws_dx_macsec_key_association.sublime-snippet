@@ -1,15 +1,19 @@
 <snippet>
 <content><![CDATA[
 resource "aws_dx_macsec_key_association" "${1:name}" {
-  connection_id = "${2:connection_id}"  # The ID of the dedicated Direct Connect connection.
+  connection_id = "${2:connection_id}"  # ID of the dedicated Direct Connect connection.
 
-  # cak        = ""  # The MAC Security (MACsec) CAK to associate with the dedicated connection.
-  # ckn        = ""  # The MAC Security (MACsec) CKN to associate with the dedicated connection.
-  # region     = ""  # Region where this resource will be managed.
-  # secret_arn = ""  # ARN of the MAC Security (MACsec) secret key to associate with the dedicated connection.
+  # cak            = ""  # MAC Security (MACsec) CAK to associate with the dedicated connection.
+  # cak_wo         = ""  # Write-only MAC Security (MACsec) CAK to associate with the dedicated connection.
+  # cak_wo_version = 0   # Positive integer used to trigger replacement when cak_wo changes.
+  # ckn            = ""  # MAC Security (MACsec) CKN to associate with the dedicated connection.
+  # ckn_wo         = ""  # Write-only MAC Security (MACsec) CKN to associate with the dedicated connection.
+  # ckn_wo_version = 0   # Positive integer used to trigger replacement when ckn_wo changes.
+  # region         = ""  # Region where this resource will be managed.
+  # secret_arn     = ""  # ARN of the MAC Security (MACsec) secret key to associate with the dedicated connection.
 }
 ]]></content>
 <tabTrigger>aws_dx_macsec_key_association</tabTrigger>
 <scope>source.terraform</scope>
-<description>Provides a MAC Security (MACSec) secret key resource for use with Direct Connect.</description>
+<description>Manages a MAC Security (MACSec) secret key association for use with Direct Connect.</description>
 </snippet>

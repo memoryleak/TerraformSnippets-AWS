@@ -6,7 +6,7 @@ resource "aws_guardduty_detector_feature" "${1:name}" {
   status      = "${4:status}"       # Status of the detector feature.
 
   # region = ""  # Region where this resource will be managed.
-  # additional_configuration {}  # Additional feature configuration block for featuresEKS_RUNTIME_MONITORING or RUNTIME_MONITORING.
+  # additional_configuration {}  # Additional feature configuration block for features EKS_RUNTIME_MONITORING, RUNTIME_MONITORING or...
 }
 ]]></content>
 <tabTrigger>aws_guardduty_detector_feature</tabTrigger>
