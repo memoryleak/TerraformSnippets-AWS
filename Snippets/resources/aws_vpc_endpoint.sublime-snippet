@@ -16,7 +16,7 @@ resource "aws_vpc_endpoint" "${1:name}" {
   # service_region             = ""     # AWS region of the VPC Endpoint Service.
   # subnet_ids                 = []     # ID of one or more subnets in which to create a network interface for the endpoint.
   # tags                       = {}     # Map of tags to assign to the resource.
-  # vpc_endpoint_type          = ""     # VPC endpoint type, Gateway, GatewayLoadBalancer,Interface, Resource or ServiceNetwork.
+  # vpc_endpoint_type          = ""     # VPC endpoint type, Gateway, GatewayLoadBalancer, Interface, Resource, ServiceNetwork or Tunnel.
   # dns_options {}  # DNS options for the endpoint.
   # subnet_configuration {}  # Subnet configuration for the endpoint, used to select specific IPv4 and/or IPv6 addresses to the...
   # timeouts {}

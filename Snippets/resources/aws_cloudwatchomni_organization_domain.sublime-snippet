@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatchomni_organization_domain" "${1:name}" {
+  domain_access_role_arn = "${2:domain_access_role_arn}"  # ARN of the IAM role that CloudWatch Omni assumes to access the organization.
+  identity_providers     = [${3}]                         # Set of identity providers that users can sign in with.
+  name                   = "${4:name}"                    # Name of the domain.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags assigned to the resource.
+  # identity_provider_configuration {}  # Identity provider configuration.
+}
+]]></content>
+<tabTrigger>aws_cloudwatchomni_organization_domain</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Amazon CloudWatch Omni organization domain.</description>
+</snippet>

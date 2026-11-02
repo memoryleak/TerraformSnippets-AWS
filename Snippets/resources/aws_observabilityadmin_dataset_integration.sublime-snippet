@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_observabilityadmin_dataset_integration" "${1:name}" {
+  role_arn = "${2:role_arn}"  # ARN of the IAM role that grants CloudWatch permission to access the resources needed for the data...
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value map of resource tags.
+}
+]]></content>
+<tabTrigger>aws_observabilityadmin_dataset_integration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a CloudWatch Observability Admin Dataset Integration.</description>
+</snippet>

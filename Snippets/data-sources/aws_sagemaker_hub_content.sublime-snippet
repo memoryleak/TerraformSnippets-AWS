@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+data "aws_sagemaker_hub_content" "${1:name}" {
+  hub_content_name = "${2:hub_content_name}"  # Name of the hub content.
+  hub_content_type = "${3:hub_content_type}"  # Type of the hub content.
+  hub_name         = "${4:hub_name}"          # Name of the hub that contains the content.
+
+  # hub_content_version = ""  # Version of the hub content.
+  # region              = ""  # Region where this data source will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_sagemaker_hub_content</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an AWS SageMaker AI Hub Content.</description>
+</snippet>
