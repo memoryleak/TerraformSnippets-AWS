@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_devopsagent_asset" "${1:name}" {
+  agent_space_id = "${2:agent_space_id}"  # Identifier of the Agent Space containing the asset.
+  asset_type     = "${3:asset_type}"      # Type of asset.
+
+  # metadata = ""  # JSON document describing the asset.
+  # region   = ""  # Region where this resource will be managed.
+  # content {}  # Content to upload.
+}
+]]></content>
+<tabTrigger>aws_devopsagent_asset</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS DevOps Agent Asset.</description>
+</snippet>

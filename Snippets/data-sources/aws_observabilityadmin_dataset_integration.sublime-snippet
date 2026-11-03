@@ -1,0 +1,10 @@
+<snippet>
+<content><![CDATA[
+data "aws_observabilityadmin_dataset_integration" "${1:name}" {
+  # region = ""  # Region where this data source will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_observabilityadmin_dataset_integration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about the CloudWatch Observability Admin Dataset Integration for the current acc...</description>
+</snippet>

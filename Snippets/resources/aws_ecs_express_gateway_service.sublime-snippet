@@ -6,6 +6,7 @@ resource "aws_ecs_express_gateway_service" "${1:name}" {
 
   # cluster               = ""     # Name or ARN of the ECS cluster.
   # cpu                   = ""     # Number of CPU units used by the task.
+  # cpu_architecture      = ""     # CPU architecture of the tasks.
   # health_check_path     = ""     # Path for health check requests.
   # memory                = ""     # Amount of memory (in MiB) used by the task.
   # network_configuration = []     # Network configuration for the service.

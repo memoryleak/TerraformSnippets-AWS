@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_cloudwatchomni_dashboard" "${1:name}" {
+  body     = "${2:body}"      # Dashboard definition, as a JSON document with a panels array.
+  name     = "${3:name}"      # Name of the dashboard.
+  space_id = "${4:space_id}"  # ID of the space that contains the dashboard.
+
+  # description = ""  # Description of the dashboard.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Map of tags assigned to the resource.
+}
+]]></content>
+<tabTrigger>aws_cloudwatchomni_dashboard</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Amazon CloudWatch Omni dashboard.</description>
+</snippet>

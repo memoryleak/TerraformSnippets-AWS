@@ -46,6 +46,7 @@ resource "aws_db_instance" "${1:name}" {
   # monitoring_interval                   = 0      # Interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB in...
   # monitoring_role_arn                   = ""     # ARN for the IAM role that permits RDS to send enhanced monitoring metrics to CloudWatch Logs.
   # multi_az                              = false  # Whether the RDS instance is multi-AZ.
+  # multi_tenant                          = false  # Whether to use the multi-tenant configuration of the Oracle CDB architecture.
   # nchar_character_set_name              = ""     # National character set is used in the NCHAR, NVARCHAR2, and NCLOB data types for Oracle instances.
   # network_type                          = ""     # Network type of the DB instance.
   # option_group_name                     = ""     # Name of the DB option group to associate.
