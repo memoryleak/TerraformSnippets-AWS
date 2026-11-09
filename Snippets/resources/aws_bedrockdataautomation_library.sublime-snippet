@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrockdataautomation_library" "${1:name}" {
+  name = "${2:name}"  # Name of the library.
+
+  # description = ""  # Description of the library.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Map of tags assigned to the resource.
+  # encryption_configuration {}  # Encryption settings for the library.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_bedrockdataautomation_library</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Amazon Bedrock Data Automation Library.</description>
+</snippet>
