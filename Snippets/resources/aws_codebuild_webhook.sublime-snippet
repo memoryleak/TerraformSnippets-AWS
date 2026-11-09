@@ -4,7 +4,7 @@ resource "aws_codebuild_webhook" "${1:name}" {
   project_name = "${2:project_name}"  # The name of the build project.
 
   # branch_filter   = ""     # A regular expression used to determine which branches get built.
-  # build_type      = ""     # The type of build this webhook will trigger.
+  # build_type      = ""     # Type of build this webhook triggers.
   # manual_creation = false  # If true, CodeBuild doesn't create a webhook in GitHub and instead returns payload_url and secret...
   # region          = ""     # Region where this resource will be managed.
   # filter_group {}  # Information about the webhook's trigger.

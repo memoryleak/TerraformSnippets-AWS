@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_networksecuritymanager_rule" "${1:name}" {
+  configuration = "${2:configuration}"  # Firewall configuration of the rule, as a JSON document.
+  firewall_type = "${3:firewall_type}"  # Firewall type of the rule.
+  name          = "${4:name}"           # Name of the rule.
+  type          = "${5:type}"           # Type of the rule.
+
+  # description  = ""     # Description of the rule.
+  # is_published = false  # Whether to publish the rule.
+  # region       = ""     # Region where this resource will be managed.
+  # tags         = {}     # Map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_networksecuritymanager_rule</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Network Security Manager Rule.</description>
+</snippet>
