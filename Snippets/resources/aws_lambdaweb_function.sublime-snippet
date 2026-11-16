@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lambdaweb_function" "${1:name}" {
+  function_name = "${2:function_name}"  # Web function name.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Key-value map of resource tags.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_lambdaweb_function</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Lambda Web function.</description>
+</snippet>

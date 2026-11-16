@@ -15,7 +15,7 @@ resource "aws_storagegateway_gateway" "${1:name}" {
   # region                                      = ""     # Region where this resource will be managed.
   # smb_file_share_visibility                   = false  # Specifies whether the shares on this gateway appear when listing shares.
   # smb_guest_password                          = ""     # Guest password for Server Message Block (SMB) file shares.
-  # smb_security_strategy                       = ""     # Specifies the type of security strategy.
+  # smb_security_strategy                       = ""     # Type of security strategy.
   # tags                                        = {}     # Key-value map of resource tags.
   # tape_drive_type                             = ""     # Type of tape drive to use for tape gateway.
   # maintenance_start_time {}  # The gateway's weekly maintenance start time information, including day and time of the week.

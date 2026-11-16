@@ -12,6 +12,7 @@ resource "aws_elasticache_global_replication_group" "${1:name}" {
   # num_node_groups                      = 0      # The number of node groups (shards) on the global replication group.
   # parameter_group_name                 = ""     # An ElastiCache Parameter Group to use for the Global Replication Group.
   # region                               = ""     # Region where this resource will be managed.
+  # tags                                 = {}     # Key-value map of resource tags.
   # timeouts {}
 }
 ]]></content>

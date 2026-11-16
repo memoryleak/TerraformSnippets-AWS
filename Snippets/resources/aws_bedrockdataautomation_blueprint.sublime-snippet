@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrockdataautomation_blueprint" "${1:name}" {
+  name   = "${2:name}"    # Name of the blueprint.
+  schema = "${3:schema}"  # JSON schema of the blueprint, defining the fields to extract.
+  type   = "${4:type}"    # Modality of the blueprint.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags assigned to the resource.
+  # encryption_configuration {}  # Encryption settings for the blueprint.
+}
+]]></content>
+<tabTrigger>aws_bedrockdataautomation_blueprint</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Amazon Bedrock Data Automation Blueprint.</description>
+</snippet>

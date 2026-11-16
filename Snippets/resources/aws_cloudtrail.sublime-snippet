@@ -12,6 +12,7 @@ resource "aws_cloudtrail" "${1:name}" {
   # is_multi_region_trail         = false  # Whether the trail is created in the current region or in all regions.
   # is_organization_trail         = false  # Whether the trail is an AWS Organizations trail.
   # kms_key_id                    = ""     # KMS key ARN to use to encrypt the logs delivered by CloudTrail.
+  # recursive_logging             = false  # Whether CloudTrail logs events it generates when delivering log files to the trail's destinations...
   # region                        = ""     # Region where this resource will be managed.
   # s3_key_prefix                 = ""     # S3 key prefix that follows the name of the bucket you have designated for log file delivery.
   # sns_topic_name                = ""     # Name of the Amazon SNS topic defined for notification of log file delivery.

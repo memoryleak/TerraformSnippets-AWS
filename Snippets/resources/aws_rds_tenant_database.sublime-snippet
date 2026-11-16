@@ -1,0 +1,25 @@
+<snippet>
+<content><![CDATA[
+resource "aws_rds_tenant_database" "${1:name}" {
+  db_instance_identifier = "${2:db_instance_identifier}"  # Identifier of the DB instance that contains the tenant database.
+  master_username        = "${3:master_username}"         # Name of the master user for the tenant database.
+  tenant_db_name         = "${4:tenant_db_name}"          # Name of the tenant database.
+
+  # character_set_name              = ""     # Character set of the tenant database.
+  # final_snapshot_identifier       = ""     # Name of the DB snapshot created when the tenant database is deleted.
+  # manage_master_user_password     = false  # Whether to manage the master user password with AWS Secrets Manager.
+  # master_user_password            = ""     # Password for the master user.
+  # master_user_password_wo         = ""     # Password for the master user.
+  # master_user_password_wo_version = 0      # Version of master_user_password_wo.
+  # master_user_secret_kms_key_id   = ""     # ARN, ID, or alias of the AWS KMS key used to encrypt the Secrets Manager secret when manage_maste...
+  # nchar_character_set_name        = ""     # National character set of the tenant database.
+  # region                          = ""     # Region where this resource will be managed.
+  # skip_final_snapshot             = false  # Whether to skip the final DB snapshot when the tenant database is deleted.
+  # tags                            = {}     # Map of tags assigned to the resource.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_rds_tenant_database</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages a tenant database (pluggable database, PDB) in an RDS for Oracle CDB instance in the mult...</description>
+</snippet>

@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_networksecuritymanager_template" "${1:name}" {
+  firewall_type = "${2:firewall_type}"  # Firewall type of the template.
+  name          = "${3:name}"           # Name of the template.
+  rule_arns     = [${4}]                # Ordered list of ARNs of the rules to associate with the template.
+
+  # description  = ""     # Description of the template.
+  # is_published = false  # Whether to publish the template.
+  # region       = ""     # Region where this resource will be managed.
+  # tags         = {}     # Map of tags to assign to the resource.
+}
+]]></content>
+<tabTrigger>aws_networksecuritymanager_template</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Network Security Manager Template.</description>
+</snippet>

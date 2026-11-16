@@ -1,0 +1,19 @@
+<snippet>
+<content><![CDATA[
+resource "aws_networksecuritymanager_policy" "${1:name}" {
+  firewall_type = "${2:firewall_type}"  # Firewall type of the policy.
+  name          = "${3:name}"           # Name of the policy.
+  priority      = ${4:0}                # Priority of the policy.
+
+  # description  = ""     # Description of the policy.
+  # is_published = false  # Whether to publish the policy.
+  # region       = ""     # Region where this resource will be managed.
+  # tags         = {}     # Map of tags assigned to the resource.
+  # configuration {}  # Settings that control the policy's behavior.
+  # template_or_rule {}  # Ordered list of templates and rules to associate with the policy.
+}
+]]></content>
+<tabTrigger>aws_networksecuritymanager_policy</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Network Security Manager Policy.</description>
+</snippet>

@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+resource "aws_lambdaweb_function_endpoint" "${1:name}" {
+  auth_type     = "${2:auth_type}"      # Authentication mode.
+  endpoint_name = "${3:endpoint_name}"  # Name of the endpoint, up to 64 characters.
+  endpoint_type = "${4:endpoint_type}"  # Endpoint type.
+  function_name = "${5:function_name}"  # Name of the function this endpoint belongs to, up to 64 characters.
+
+  # auto_deployment_mode = ""  # Deployment mode.
+  # description          = ""  # Description of the endpoint.
+  # region               = ""  # Region where this resource will be managed.
+  # regions              = []  # Regions the endpoint spans.
+  # revision_weight {}  # Traffic routing.
+  # scaling_config {}  # Scaling limits for the endpoint.
+  # throttle_config {}  # Request throttling for the endpoint.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_lambdaweb_function_endpoint</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Lambda Web endpoint.</description>
+</snippet>

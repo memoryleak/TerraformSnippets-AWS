@@ -1,0 +1,18 @@
+<snippet>
+<content><![CDATA[
+resource "aws_networksecuritymanager_deployment" "${1:name}" {
+  name        = "${2:name}"       # Name of the deployment.
+  policy_arns = [${3}]            # Set of ARNs of the policies to deploy.
+  scope_arn   = "${4:scope_arn}"  # ARN of the scope that selects the accounts and resources the policies apply to.
+
+  # description  = ""     # Description of the deployment.
+  # is_published = false  # Whether to publish the deployment.
+  # region       = ""     # Region where this resource will be managed.
+  # tags         = {}     # Map of tags to assign to the resource.
+  # configuration {}  # Settings for the deployment.
+}
+]]></content>
+<tabTrigger>aws_networksecuritymanager_deployment</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Network Security Manager Deployment.</description>
+</snippet>

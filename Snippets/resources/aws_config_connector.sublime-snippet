@@ -1,0 +1,12 @@
+<snippet>
+<content><![CDATA[
+resource "aws_config_connector" "${1:name}" {
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags to assign to the resource.
+  # connector_configuration {}  # Provider-specific configuration for connecting to the third-party cloud service provider.
+}
+]]></content>
+<tabTrigger>aws_config_connector</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Config connector to a third-party cloud service provider.</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+<content><![CDATA[
+resource "aws_networksecuritymanager_admin_account" "${1:name}" {
+  account_id = "${2:account_id}"  # AWS account ID to set as a Network Security Manager administrator account.
+  priority   = ${3:0}             # Priority of the administrator account, between 1 and 10.
+
+  # region = ""  # Region where this resource will be managed.
+  # admin_scope {}  # Scope of what the administrator account can manage.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_networksecuritymanager_admin_account</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Network Security Manager Admin Account.</description>
+</snippet>
