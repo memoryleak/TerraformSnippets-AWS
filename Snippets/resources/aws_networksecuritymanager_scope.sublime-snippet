@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_networksecuritymanager_scope" "${1:name}" {
+  name = "${2:name}"  # Name of the scope.
+
+  # description  = ""     # Description of the scope.
+  # is_published = false  # Whether to publish the scope.
+  # region       = ""     # Region where this resource will be managed.
+  # tags         = {}     # Map of tags to assign to the resource.
+  # scope_configuration {}  # Accounts and resources that are in scope.
+}
+]]></content>
+<tabTrigger>aws_networksecuritymanager_scope</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS Network Security Manager Scope.</description>
+</snippet>

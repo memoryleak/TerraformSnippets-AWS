@@ -1,0 +1,17 @@
+<snippet>
+<content><![CDATA[
+resource "aws_dsql_stream" "${1:name}" {
+  cluster_identifier = "${2:cluster_identifier}"  # ID of the cluster for which to create the stream.
+  format             = "${3:format}"              # Format of the stream records.
+  ordering           = "${4:ordering}"            # Ordering mode for the stream.
+
+  # region = ""  # Region where this resource will be managed.
+  # tags   = {}  # Map of tags assigned to the resource.
+  # target_definition {}  # Target destination configuration for the stream.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_dsql_stream</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS DSQL Stream.</description>
+</snippet>

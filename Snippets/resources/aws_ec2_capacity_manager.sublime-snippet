@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+resource "aws_ec2_capacity_manager" "${1:name}" {
+  enabled = ${2:false}  # Whether to enable EC2 Capacity Manager for the account in the configured Region.
+
+  # organizations_access = false  # Whether to enable cross-account data aggregation for AWS Organizations.
+  # region               = ""     # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>aws_ec2_capacity_manager</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages EC2 Capacity Manager settings for the current AWS account.</description>
+</snippet>

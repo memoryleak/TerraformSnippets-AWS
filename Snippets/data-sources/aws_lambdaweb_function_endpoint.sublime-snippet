@@ -1,0 +1,13 @@
+<snippet>
+<content><![CDATA[
+data "aws_lambdaweb_function_endpoint" "${1:name}" {
+  endpoint_name = "${2:endpoint_name}"  # Name of the endpoint.
+  function_name = "${3:function_name}"  # Name of the function the endpoint belongs to.
+
+  # region = ""  # Region where this resource will be managed.
+}
+]]></content>
+<tabTrigger>data_aws_lambdaweb_function_endpoint</tabTrigger>
+<scope>source.terraform</scope>
+<description>Data source: Provides details about an AWS Lambda Web endpoint.</description>
+</snippet>

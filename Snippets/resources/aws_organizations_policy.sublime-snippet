@@ -7,7 +7,7 @@ resource "aws_organizations_policy" "${1:name}" {
   # description  = ""     # A description to assign to the policy.
   # skip_destroy = false  # If set to true, destroy will **not** delete the policy and instead just remove the resource from...
   # tags         = {}     # Key-value map of resource tags.
-  # type         = ""     # The type of policy to create.
+  # type         = ""     # Type of policy to create.
 }
 ]]></content>
 <tabTrigger>aws_organizations_policy</tabTrigger>

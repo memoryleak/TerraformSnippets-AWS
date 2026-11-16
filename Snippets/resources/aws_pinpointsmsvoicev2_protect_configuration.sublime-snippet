@@ -1,0 +1,16 @@
+<snippet>
+<content><![CDATA[
+resource "aws_pinpointsmsvoicev2_protect_configuration" "${1:name}" {
+  # deletion_protection_enabled = false  # Whether deletion protection is enabled.
+  # mms_country_rules           = {}     # Map of two-character ISO 3166-1 alpha-2 country codes to protect status for MMS messages.
+  # rcs_country_rules           = {}     # Map of two-character ISO 3166-1 alpha-2 country codes to protect status for RCS messages.
+  # region                      = ""     # Region where this resource will be managed.
+  # sms_country_rules           = {}     # Map of two-character ISO 3166-1 alpha-2 country codes to protect status for SMS messages.
+  # tags                        = {}     # Map of tags assigned to the resource.
+  # voice_country_rules         = {}     # Map of two-character ISO 3166-1 alpha-2 country codes to protect status for voice messages.
+}
+]]></content>
+<tabTrigger>aws_pinpointsmsvoicev2_protect_configuration</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an AWS End User Messaging SMS Protect Configuration.</description>
+</snippet>

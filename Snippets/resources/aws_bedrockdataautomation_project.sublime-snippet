@@ -1,0 +1,21 @@
+<snippet>
+<content><![CDATA[
+resource "aws_bedrockdataautomation_project" "${1:name}" {
+  name = "${2:name}"  # Name of the project.
+
+  # description = ""  # Description of the project.
+  # region      = ""  # Region where this resource will be managed.
+  # tags        = {}  # Map of tags assigned to the resource.
+  # type        = ""  # Type of API the project works with.
+  # custom_output_configuration {}  # Blueprints used for custom output.
+  # data_automation_library_configuration {}  # Data automation libraries used by the project.
+  # encryption_configuration {}  # Encryption settings for the project.
+  # override_configuration {}  # Processing overrides for each modality.
+  # standard_output_configuration {}  # Standard output to extract for each modality.
+  # timeouts {}
+}
+]]></content>
+<tabTrigger>aws_bedrockdataautomation_project</tabTrigger>
+<scope>source.terraform</scope>
+<description>Manages an Amazon Bedrock Data Automation Project.</description>
+</snippet>

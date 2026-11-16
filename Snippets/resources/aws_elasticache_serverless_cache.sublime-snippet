@@ -4,6 +4,7 @@ resource "aws_elasticache_serverless_cache" "${1:name}" {
   engine = "${2:engine}"  # Name of the cache engine to be used for this cache cluster.
   name   = "${3:name}"    # The Cluster name which serves as a unique identifier to the serverless cache
 
+  # connection_type          = ""  # Connectivity option for the cache.
   # daily_snapshot_time      = ""  # The daily time that snapshots will be created from the new serverless cache.
   # description              = ""  # User-provided description for the serverless cache.
   # kms_key_id               = ""  # ARN of the customer managed key for encrypting the data at rest.
